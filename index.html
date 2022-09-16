@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Spell Compendium</title>
+<link href="styles/compendium.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="navbar" id="navbar">
+	<button id="navbar_compendium">Compendium</button>
+	<button id="navbar_create_spell">Create New Spell</button>
+</div>
+<h1 class="title">Spell Compendium</h1>
+<div class="content" id="content">
+	<div id="div_compendium">
+	</div>
+	<div id="div_create_spell" hidden>
+		<form id="spell_creation" align="center">
+			<table class="spell"><tbody>
+				<tr><td class="spellname" colspan=2><input type="text" class="spellname" name="name"></input></td></tr>
+				<tr><td class="spelltier" colspan=2>Tier <input type="text" class="spelltier" name="tier"></input></td></tr>
+				<tr><td class="spellheaders">Tags:</td><td class="spelltags"><input type="text" class="spelldata" name="tags"></input></td></tr>
+				<tr><td class="spellheaders">Cost:</td><td class="spelldata"><input type="text" class="spelldata" name="cost"></input></td></tr>
+				<tr><td class="spellheaders">Range:</td><td class="spelldata"><input type="text" class="spelldata" name ="range"></input></td></tr>
+				<tr><td class="spellheaders">Duration:</td><td class="spelldata"><input type="text" class="spelldata" name="duration"></input></td></tr>
+				<tr><td class="spelldesc" colspan=2><textarea class="spelldesc" name="desc"></textarea></td></tr>
+				<tr><td class="spellheaders">Empower:</td><td class="spelldesc"><input type="text" class="spelldesc" name="empower"></input></td></tr>
+			</tbody></table>
+			<button type="submit">Create Spell</button>
+		</form>
+		<form id="spell_parse" align="center">
+			<div><textarea class="spelltext" name="spelltext" rows=16 cols=120></textarea></div>
+			<button type="submit">Parse Spell</button>
+		</form>
+	</div>
+</div>
+<script src="src/navbar.js"></script>
+<script src="src/spell_compendium.js"></script>
+<script src="src/spell_creation.js"></script>
+</body>
+
+</html>

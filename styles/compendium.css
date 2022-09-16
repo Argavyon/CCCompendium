@@ -1,0 +1,60 @@
+body {
+	background-color: Linen;
+}
+h1 {
+	text-align: center;
+}
+div.navbar {
+	text-align: center;
+}
+div.navbar button {
+	display: inline;
+	padding: 6px;
+	margin: 0px;
+}
+div.content {
+}
+table.spell {
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	background-color: Ivory;
+}
+td.spellname {
+	font-weight: bold;
+	text-align: center;
+}
+td.spelltier {
+	text-align: center;
+	font-style: italic;
+}
+td.spellheaders {
+	font-weight: bold;
+}
+td.spelltags {
+	font-weight: bold;
+	font-style: italic;
+}
+td.spelldata {
+
+}
+td.spelldesc {
+
+}
+input.spellname {
+	font-weight: bold;
+}
+input.spelltier {
+	font-style: italic;
+}
+input.spelldata {
+	width: 100%;
+}
+textarea.spelldesc {
+	width: 100%;
+}
+input.spelldesc {
+	width: 100%;
+}
+input.spelltext {
+}
