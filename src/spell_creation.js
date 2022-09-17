@@ -51,6 +51,6 @@ spellParse.onsubmit = function (event) {
 	spellObject.empower = spellObject.empower.trim();
 	spellObject.empower = spellObject.empower.replaceAll('\n', '<br>');
 	
-	download(`${spellObject.name}.json`, JSON.stringify(spellObject));
-	// console.log(spellObject);
+	// download(`${spellObject.name}.json`, JSON.stringify(spellObject));
+	console.log(JSON.stringify(spellObject));
 };

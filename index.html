@@ -3,18 +3,41 @@
 <head>
 <title>Spell Compendium</title>
 <link href="styles/compendium.css" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
 <div class="navbar" id="navbar">
-	<button id="navbar_compendium">Compendium</button>
+	<button id="navbar_compendium">Spell Compendium</button>
 	<button id="navbar_create_spell">Create New Spell</button>
 </div>
-<h1 class="title">Spell Compendium</h1>
 <div class="content" id="content">
 	<div id="div_compendium">
+		<h1 class="title">Spell Compendium</h1>
+		<div id="compendium_content" class="flexbox">
+			<div id="compendium_left" style="font-weight: bold;">
+				<div>TAGS</div>
+			</div>
+			<div id="compendium_right" style="width:900px">
+				<div class="flexbox">
+					<button value="0" class="selector" id="tier1">Tier 1</button>
+					<button value="0" class="selector" id="tier2">Tier 2</button>
+					<button value="0" class="selector" id="tier3">Tier 3</button>
+					<button value="0" class="selector" id="tier4">Tier 4</button>
+					<button value="0" class="selector" id="tier5">Tier 5</button>
+					<button value="0" class="selector" id="tier6">Tier 6</button>
+					<button value="0" class="selector" id="tier7">Tier 7</button>
+					<button value="0" class="selector" id="tier8">Tier 8</button>
+					<button value="0" class="selector" id="tier9">Tier 9</button>
+				</div>
+				<table><tbody id="spelltable">
+					<tr style="font-weight: bold;"><td>Name</td><td>Tier</td><td>Range</td><td>Duration</td><td>Tags</td></tr>
+				</tbody></table>
+			</div>
+		</div>
 	</div>
 	<div id="div_create_spell" hidden>
+		<h1 class="title">Spell Creation</h1>
 		<form id="spell_creation" align="center">
 			<table class="spell"><tbody>
 				<tr><td class="spellname" colspan=2><input type="text" class="spellname" name="name"></input></td></tr>

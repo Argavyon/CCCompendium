@@ -14,6 +14,10 @@ div.navbar button {
 }
 div.content {
 }
+div.flexbox {
+	display: flex;
+	justify-content: center;
+}
 table.spell {
 	margin-left: auto;
 	margin-right: auto;
@@ -57,4 +61,16 @@ input.spelldesc {
 	width: 100%;
 }
 input.spelltext {
+}
+td {
+	padding-left: 12px;
+}
+.selector {
+	width: 100%;
+}
+.selector[value="1"] {
+	background-color: Blue;
+}
+.selector[value="2"] {
+	background-color: Red;
 }
