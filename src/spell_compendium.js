@@ -101,19 +101,20 @@ function generate_brief_spell_table(spellDatabase, tag_select, tag_filter, tier_
     oldTable.parentNode.replaceChild(newTable, oldTable);
 }
 
-async function loadDatabase(spellDatabase) {
-    const response = await fetch('https://api.github.com/repos/Argavyon/CCCompendium/contents/data/spells');
-    const fileList = await response.json();
-    for (var file of fileList) {
-        const response = await fetch(file.download_url);
-        const spellData = await response.json();
-        spellDatabase.push(spellData);
-    }
-}
+// async function loadDatabase(spellDatabase) {
+    // const response = await fetch('https://api.github.com/repos/Argavyon/CCCompendium/contents/data/spells');
+    // const fileList = await response.json();
+    // for (var file of fileList) {
+        // const response = await fetch(file.download_url);
+        // const spellData = await response.json();
+        // spellDatabase.push(spellData);
+    // }
+// }
 
-async function main() {
-    const spellDatabase = [];
-    await loadDatabase(spellDatabase);
+// async function main() {
+function main() {
+    // const spellDatabase = [];
+    // await loadDatabase(spellDatabase);
 
     const tag_list = [];
     const compendiumLeft = document.querySelector('#compendium_left');
