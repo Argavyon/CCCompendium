@@ -23,6 +23,18 @@ div.tierselect {
 	display: flex;
 	justify-content: center;
 }
+div.tagselect {
+	display: flex;
+	flex-direction: column;
+}
+@media only screen and (hover: none) and (pointer: coarse){
+	div.tagselect {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+
 table.spell {
 	margin-left: auto;
 	margin-right: auto;
@@ -71,10 +83,13 @@ td {
 	padding-left: 12px;
 }
 .selector {
-	width: 100%;
+	width: auto;
+}
+.tierselect .selector {
+	width: 20%;
 }
 .selector[value="1"] {
-	background-color: Blue;
+	background-color: Cyan;
 }
 .selector[value="2"] {
 	background-color: Red;

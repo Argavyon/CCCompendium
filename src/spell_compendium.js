@@ -131,7 +131,6 @@ async function main() {
     tag_list.forEach(tag => {
         const div = compendiumLeft.appendChild(document.createElement('button'));
         div.style.display = 'block';
-        div.style.width = '100%';
         div.textContent = tag;
         div.id = `tag_${tag.replaceAll(' ', '_')}`;
         div.className = 'selector';
