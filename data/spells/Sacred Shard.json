@@ -1,10 +1,1 @@
-{
-	"name": "Sacred Shard",
-	"tier": 1,
-	"tags": ["Conjuration", "Physical", "Radiant", "Holy"],
-	"cost": "2 AP",
-	"range": "60 feet",
-	"duration": "1 minute",
-	"desc": "A longsword-sized shard of holy metal descends from the sky onto a target point in range. If a creature is occupying the area, it must make a Dexterity saving throw or take 1d8 slashing and 1d8 radiant damage.<br><br>The shard can be picked up and wielded by you as a weapon. It is treated as a longsword that deals an additional 1d4 radiant damage on hit. No other creature can move the shard.",
-	"empower": "The shard gains a bonus to its attack and damage rolls equal to half your proficiency modifier, rounded down."
-}
+{"name":"Sacred Shard","tier":1,"tags":["Conjuration","Physical","Radiant","Holy"],"cost":"2 AP","range":"60 feet","duration":"1 minute","desc":"A longsword-sized shard of holy metal descends from the sky onto a target point in range. If a creature is occupying the area, it must make a Dexterity saving throw or take 1d8 slashing and 1d8 radiant damage.","empower":""}
