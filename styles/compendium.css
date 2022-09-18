@@ -17,6 +17,11 @@ div.content {
 div.flexbox {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
+}
+div.tierselect {
+	display: flex;
+	justify-content: center;
 }
 table.spell {
 	margin-left: auto;
