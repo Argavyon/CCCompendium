@@ -37,7 +37,7 @@ spellParse.onsubmit = function (event) {
 	const re_tags = String.raw`Tags: (?<tags>.+)`;
 	const re_cost = String.raw`Cost: (?<cost>.+)`;
 	const re_range = String.raw`Range: (?<range>.+)`;
-	const re_duration = String.raw`Duration: (?<duration>.+)`;
+	const re_duration = String.raw`(Duration: (?<duration>.+))?`;
 	const re_desc = String.raw`(?<desc>(.|\n)+?)`;
 	const re_empower = String.raw`(Empower: (?<empower>(.|\n)+))?`;
 	
@@ -47,6 +47,7 @@ spellParse.onsubmit = function (event) {
         const spellObject = match.groups;
         spellObject.tier = parseInt(spellObject.tier);
         spellObject.tags = spellObject.tags.split(',').map(str => str.trim());
+        spellObject.duration = spellObject.duration ?? 'Instantaneous';
         spellObject.desc = spellObject.desc.trim();
         spellObject.desc = spellObject.desc.replaceAll('\n', '<br>');
         spellObject.empower = spellObject.empower ?? '';
