@@ -23,7 +23,6 @@ spellCreation.onsubmit = function (event) {
 	spellObject.empower = spellObject.empower.replaceAll('\n', '<br>');
 	
 	download(`${spellObject.name}.json`, JSON.stringify(spellObject));
-	// console.log(spellObject);
 };
 
 const spellParse = document.querySelector('#spell_parse');
@@ -31,19 +30,32 @@ spellParse.onsubmit = function (event) {
 	event.preventDefault();
 	const spellFormData = new FormData(event.target);
 	const spellText = Object.fromEntries(spellFormData.entries()).spelltext;
-	
-	const re_name = String.raw`\*\*(?<name>.+)\*\*`;
-	const re_tier = String.raw`\*Tier (?<tier>\d+)\*`;
-	const re_tags = String.raw`Tags: (?<tags>.+)`;
-	const re_cost = String.raw`Cost: (?<cost>.+)`;
-	const re_range = String.raw`Range: (?<range>.+)`;
-	const re_duration = String.raw`(Duration: (?<duration>.+))?`;
-	const re_desc = String.raw`(?<desc>(.|\n)+?)`;
-	const re_empower = String.raw`(Empower: (?<empower>(.|\n)+))?`;
-	
-	const re = new RegExp([re_name, re_tier, re_tags, re_cost, re_range, re_duration, re_desc, re_empower].join('\n'));
-	const match = re.exec(spellText);
-    try {
+    
+    const spell_regex_1 = [
+        String.raw`(\*\*(?<name>.+)\*\*\n)`,
+        String.raw`(\*Tier (?<tier>\d+)\*\n)`,
+        String.raw`(Tags: (?<tags>.+)\n)`,
+        String.raw`(Cost: (?<cost>.+)\n)`,
+        String.raw`(Range: (?<range>.+)\n)`,
+        String.raw`(Duration: (?<duration>.+)\n)?`,
+        String.raw`(?<desc>(.|\n)+?)`,
+        String.raw`(Empower: (?<empower>(.|\n)+))`,
+    ];
+    const spell_regex_2 = [
+        String.raw`(\*\*(?<name>.+)\*\*\n)`,
+        String.raw`(\*Tier (?<tier>\d+)\*\n)`,
+        String.raw`(Tags: (?<tags>.+)\n)`,
+        String.raw`(Cost: (?<cost>.+)\n)`,
+        String.raw`(Range: (?<range>.+)\n)`,
+        String.raw`(Duration: (?<duration>.+)\n)?`,
+        String.raw`(?<desc>(.|\n)+)`
+    ];
+    
+	const re_1 = new RegExp(spell_regex_1.join(''));
+    const re_2 = new RegExp(spell_regex_2.join(''));
+	const match = re_1.exec(spellText) ?? re_2.exec(spellText);
+    
+    if (match !== null) {
         const spellObject = match.groups;
         spellObject.tier = parseInt(spellObject.tier);
         spellObject.tags = spellObject.tags.split(',').map(str => str.trim());
@@ -55,9 +67,11 @@ spellParse.onsubmit = function (event) {
         spellObject.empower = spellObject.empower.replaceAll('\n', '<br>');
         
         download(`${spellObject.name}.json`, JSON.stringify(spellObject));
-        // console.log(JSON.stringify(spellObject));
-    } catch (E) {
-        [re_name, re_tier, re_tags, re_cost, re_range, re_duration, re_desc, re_empower].forEach(re => console.log(spellText.match(re)));
-        throw E;
+        // console.log("Successful match:", match[0], '\n--------------------\n', spellObject);
+    } else {
+        const re_1 = new RegExp(spell_regex_1.join('?') + '?');
+        const re_2 = new RegExp(spell_regex_2.join('?') + '?');
+        
+        console.log("Failed match:", re_1.exec(spellText), re_2.exec(spellText));
     }
 };
