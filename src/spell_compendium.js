@@ -49,13 +49,15 @@ function spellCard(spellData) {
 	desc.colSpan = 2;
 	desc.innerHTML = spellData.desc;
 	
-	const empowerRow = cardBody.appendChild(document.createElement('tr'));
-	const empowerH = empowerRow.appendChild(document.createElement('td'));
-	const empowerD = empowerRow.appendChild(document.createElement('td'));
-	empowerH.className = 'spellheaders';
-	empowerD.className = 'spelldesc';
-	empowerH.textContent = 'Empower:';
-	empowerD.textContent = spellData.empower;
+    if (spellData.empower) {
+        const empowerRow = cardBody.appendChild(document.createElement('tr'));
+        const empowerH = empowerRow.appendChild(document.createElement('td'));
+        const empowerD = empowerRow.appendChild(document.createElement('td'));
+        empowerH.className = 'spellheaders';
+        empowerD.className = 'spelldesc';
+        empowerH.textContent = 'Empower:';
+        empowerD.textContent = spellData.empower;
+    }
 	
 	return card;
 }
