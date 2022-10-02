@@ -32,8 +32,8 @@ spellParse.onsubmit = function (event) {
 	const spellText = Object.fromEntries(spellFormData.entries()).spelltext;
     
     const spell_regex_1 = [
-        String.raw`(\*\*(?<name>.+)\*\*\n)`,
-        String.raw`(\*Tier (?<tier>\d+)\*\n)`,
+        String.raw`((\*\*)?(?<name>.+?)(\*\*)?\n)`,
+        String.raw`((\*)?Tier (?<tier>\d+)(\*)?\n)`,
         String.raw`(Tags: (?<tags>.+)\n)`,
         String.raw`(Cost: (?<cost>.+)\n)`,
         String.raw`(Range: (?<range>.+)\n)`,
@@ -42,8 +42,8 @@ spellParse.onsubmit = function (event) {
         String.raw`(Empower: (?<empower>(.|\n)+))`,
     ];
     const spell_regex_2 = [
-        String.raw`(\*\*(?<name>.+)\*\*\n)`,
-        String.raw`(\*Tier (?<tier>\d+)\*\n)`,
+        String.raw`((\*\*)?(?<name>.+?)(\*\*)?\n)`,
+        String.raw`((\*)?Tier (?<tier>\d+)(\*)?\n)`,
         String.raw`(Tags: (?<tags>.+)\n)`,
         String.raw`(Cost: (?<cost>.+)\n)`,
         String.raw`(Range: (?<range>.+)\n)`,
