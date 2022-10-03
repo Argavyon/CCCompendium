@@ -118,12 +118,12 @@ function main() {
     // const spellDatabase = [];
     // await loadDatabase(spellDatabase);
 
-    const tag_list = [];
+    const tag_list = {};
     const compendiumLeft = document.querySelector('#compendium_left');
     spellDatabase.forEach(spell => spell.tags.forEach(tag => {
-        if (!tag_list.includes(tag)) tag_list.push(tag);
+        if (!tag_list[tag]) tag_list[tag] = 1;
+        else tag_list[tag] += 1;
     }));
-    tag_list.sort();
 
     const tag_select = new Set();
     const tag_filter = new Set();
@@ -131,10 +131,10 @@ function main() {
     const tier_filter = new Set();
 
     // TAGS
-    tag_list.forEach(tag => {
+    Object.entries(tag_list).sort().forEach(([tag, count]) => {
         const div = compendiumLeft.appendChild(document.createElement('button'));
         div.style.display = 'block';
-        div.textContent = tag;
+        div.textContent = `${tag} (${count})`;
         div.id = `tag_${tag.replaceAll(' ', '_')}`;
         div.className = 'selector';
         div.value = 0;
