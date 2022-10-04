@@ -88,36 +88,20 @@ function spellBrief(spellData) {
     return brief;
 }
 
-function generate_brief_spell_table(spellDatabase, tag_select, tag_filter, tier_select, tier_filter) {
+function generate_brief_spell_table(spellDatabase, tag_select, tier_select) {
     const oldTable = document.querySelector('#spelltable');
     const newTable = oldTable.cloneNode(false);
 
     spellDatabase.forEach(spell => {
-        if (tag_select.size > 0 && ![...tag_select].every(tag => spell.tags.includes(tag))) return;
+        if (tag_select.size > 0 && !spell.tags.some(tag => tag_select.has(tag))) return;
         if (tier_select.size > 0 && !tier_select.has(spell.tier)) return;
-        if (spell.tags.some(tag => tag_filter.has(tag))) return;
-        if (tier_filter.has(spell.tier)) return;
         newTable.appendChild(spellBrief(spell));
     });
 
     oldTable.parentNode.replaceChild(newTable, oldTable);
 }
 
-// async function loadDatabase(spellDatabase) {
-    // const response = await fetch('https://api.github.com/repos/Argavyon/CCCompendium/contents/data/spells');
-    // const fileList = await response.json();
-    // for (var file of fileList) {
-        // const response = await fetch(file.download_url);
-        // const spellData = await response.json();
-        // spellDatabase.push(spellData);
-    // }
-// }
-
-// async function main() {
 function main() {
-    // const spellDatabase = [];
-    // await loadDatabase(spellDatabase);
-
     const tag_list = {};
     const compendiumLeft = document.querySelector('#compendium_left');
     spellDatabase.forEach(spell => spell.tags.forEach(tag => {
@@ -126,9 +110,8 @@ function main() {
     }));
 
     const tag_select = new Set();
-    const tag_filter = new Set();
     const tier_select = new Set();
-    const tier_filter = new Set();
+    const gen_spelltable = () => generate_brief_spell_table(spellDatabase, tag_select, tier_select);
 
     // TAGS
     Object.entries(tag_list).sort().forEach(([tag, count]) => {
@@ -146,16 +129,11 @@ function main() {
                     tag_select.add(tag);
                     break;
                 case 1:
-                    div.value = S+1;
-                    tag_select.delete(tag);
-                    tag_filter.add(tag);
-                    break;
-                case 2:
                     div.value = 0;
-                    tag_filter.delete(tag);
+                    tag_select.delete(tag);
                     break;
             }
-            generate_brief_spell_table(spellDatabase, tag_select, tag_filter, tier_select, tier_filter);
+            gen_spelltable();
         }
     });
     
@@ -172,23 +150,18 @@ function main() {
                     tier_select.add(tier);
                     break;
                 case 1:
-                    tier_button.value = S+1;
-                    tier_select.delete(tier);
-                    tier_filter.add(tier);
-                    break;
-                case 2:
                     tier_button.value = 0;
-                    tier_filter.delete(tier);
+                    tier_select.delete(tier);
                     break;
             }
-            generate_brief_spell_table(spellDatabase, tag_select, tag_filter, tier_select, tier_filter);
+            gen_spelltable();
         }
     }
 
     const CC = document.querySelector('#compendium_right');
     CC.appendChild(spellCard(spellDatabase[0]));
 
-    generate_brief_spell_table(spellDatabase, tag_select, tag_filter, tier_select, tier_filter);
+    gen_spelltable();
 }
 
 main();
