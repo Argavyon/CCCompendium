@@ -11,17 +11,24 @@
 	<meta property="og:description" content="Browse Conquest & Creation spells and other features">
 	<meta property="og:image" content="https://argavyon.github.io/CCCompendium/preview.png">
 
+	<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+	
+	<!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script> -->
+	<!-- <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script> -->
+	
 	<script src="data/SpellDB.js"></script>
 </head>
 
 <body>
 <div class="navbar" id="navbar">
-	<button id="navbar_compendium">Spell Compendium</button>
+	<button id="navbar_spell_compendium">Spell Compendium</button>
 	<button id="navbar_create_spell">Create New Spell</button>
+	<button id="navbar_class_compendium">Class Compendium</button>
 </div>
 <div class="content" id="content">
-	<div id="div_compendium">
-		<h1 class="title">Spell Compendium</h1>
+	<div id="div_spell_compendium">
+		<h2 class="title">Spell Compendium</h2>
 		<div id="compendium_content" class="flexbox">
 			<div id="compendium_left" class="tagselect">
 				<br>
@@ -48,7 +55,7 @@
 		</div>
 	</div>
 	<div id="div_create_spell" hidden>
-		<h1 class="title">Spell Creation</h1>
+		<h2 class="title">Spell Creation</h2>
 		<form id="spell_creation" align="center">
 			<table class="spell"><tbody>
 				<tr><td class="spellname" colspan=2><input type="text" class="spellname" name="name"></input></td></tr>
@@ -67,10 +74,16 @@
 			<button type="submit">Parse Spell</button>
 		</form>
 	</div>
+	<div id="div_class_compendium" hidden>
+		<h2 class="title">Class Compendium</h2>
+		<div id="class_compendium_content">
+		</div>
+	</div>
 </div>
 <script src="src/navbar.js"></script>
 <script src="src/spell_compendium.js"></script>
 <script src="src/spell_creation.js"></script>
+<script src="src/class_compendium.js"></script>
 </body>
 
 </html>

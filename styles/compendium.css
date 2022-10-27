@@ -1,7 +1,7 @@
 body {
 	background-color: Linen;
 }
-h1 {
+.title {
 	text-align: center;
 }
 div.navbar {
@@ -33,6 +33,28 @@ div.tagselect {
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
+}
+
+table.class {
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	background-color: Ivory;
+}
+td.classname {
+	font-weight: bold;
+	text-align: center;
+}
+td.classtype {
+	font-weight: bold;
+	text-align: center;
+	font-style: italic;
+}
+td.classheaders {
+	font-weight: bold;
+}
+td.classdata {
+	
 }
 
 table.spell {

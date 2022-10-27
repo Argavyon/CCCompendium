@@ -1,13 +1,14 @@
-const NB_comp = document.querySelector('#navbar_compendium');
-const NB_create = document.querySelector('#navbar_create_spell');
-const div_comp = document.querySelector('#div_compendium');
-const div_create = document.querySelector('#div_create_spell');
+const tabs = [
+    'spell_compendium',
+    'create_spell',
+    'class_compendium'
+];
+buttons = tabs.map(tab => document.querySelector(`#navbar_${tab}`));
+divs = tabs.map(tab => document.querySelector(`#div_${tab}`));
 
-NB_comp.onclick = function() {
-	div_comp.hidden = false;
-	div_create.hidden = true;
-};
-NB_create.onclick = function() {
-	div_comp.hidden = true;
-	div_create.hidden = false;		
-};
+buttons.forEach((button, i) => {
+    button.onclick = function() {
+        divs.forEach(div => {div.hidden = true});
+        divs[i].hidden = false;
+    };
+});
