@@ -11,15 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: |
-          echo 'const spellDatabase = [' > data/SpellDB.js
-          for i in data/spells/*.json
-          do
-            echo -en '\t' >> data/SpellDB.js
-            cat "$i" >> data/SpellDB.js
-            echo ',' >> data/SpellDB.js
-          done
-          echo '];' >> data/SpellDB.js
+      - run: python3 .github/workflows/createDB.py
       - uses: EndBug/add-and-commit@v9.1.0
         with:
           add: 'data/SpellDB.js'
