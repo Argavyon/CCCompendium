@@ -1,8 +1,9 @@
 import json
 import glob
-with open('data/SpellDB.js', 'w') as spellDB:
+with open('data/SpellDB.js', 'w') as DBfile:
     spell_list = []
     for i in glob.iglob('data/spells/*.json'):
         with open(i, 'r') as spellJSON:
             spell_list.append(json.load(spellJSON))
-    json.dump(spell_list, spellDB, sort_keys=True, indent=4)
+    spellDB = json.dumps(spell_list, sort_keys=True, indent=4)
+    print('const spellDatabase =', spellDB, file = DBfile)
