@@ -6,4 +6,4 @@ with open('data/SpellDB.js', 'w') as DBfile:
         with open(i, 'r') as spellJSON:
             spell_list.append(json.load(spellJSON))
     spellDB = json.dumps(spell_list, sort_keys=True, indent=4)
-    print('const spellDatabase =', spellDB, file = DBfile)
+    print('const spellDatabase = ', spellDB, ';', sep = '', file = DBfile)
