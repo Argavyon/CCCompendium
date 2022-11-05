@@ -5,6 +5,7 @@ on:
     - main
     paths:
     - 'data/spells/**'
+  workflow_dispatch:
 
 jobs:
   build:
