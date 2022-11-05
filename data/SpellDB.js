@@ -1,4 +1,4 @@
-[
+const spellDatabase = [
     {
         "cost": "2 AP",
         "desc": "You and all creatures you choose within range are magically bonded with the earth. All affected<br>creatures are unaffected by terrain hazards and penalties, and increase their movement speed<br>by 10 feet.<br>The spell ends for a creature if they are not touching the ground for more than 3 seconds.",
