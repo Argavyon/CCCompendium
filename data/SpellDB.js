@@ -155,6 +155,19 @@ const spellDatabase = [
     "empower": "Damage increases to 2d6 on both explosions. A creature that succeeds on their<br>saving throw takes half damage."
   },
   {
+    "name": "Aqualung",
+    "tier": 1,
+    "tags": [
+      "Transmutation",
+      "Water"
+    ],
+    "cost": "1 AP",
+    "range": "Self (30 foot radius)",
+    "duration": "1 hour",
+    "desc": "You create a bubble of controlled water and air that surrounds a 30 foot radius around you. Creatures you choose within this area can breathe underwater and gain a swim speed equal to their walking speed. They lose these benefits if they leave the area.",
+    "empower": "Radius increased to 45 feet."
+  },
+  {
     "name": "Spellsight",
     "tier": 1,
     "tags": [
@@ -1112,6 +1125,19 @@ const spellDatabase = [
     "empower": "Line length increased to 25 feet. All creatures affected take 1d8 radiant damage."
   },
   {
+    "name": "Healing Rains",
+    "tier": 2,
+    "tags": [
+      "Evocation",
+      "Water"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "1 minute",
+    "desc": "Soothing water sprinkles down in a 10 foot radius, 100 foot tall cylinder. When a creature starts their turn in the area, they are healed for 1d4 hit points.",
+    "empower": "You add your spellcasting stat to healing from this spell."
+  },
+  {
     "name": "Oathbound Gauntlet",
     "tier": 2,
     "tags": [
@@ -1498,6 +1524,20 @@ const spellDatabase = [
     "empower": "Maximum hit point costs are halved."
   },
   {
+    "name": "Steam Burst",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Fire",
+      "Water"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "Instantaneous",
+    "desc": "Scalding steam erupts from a target point on a solid surface within range, engulfing a 20 foot radius, 60 foot tall cylinder emanating from the target point. The steam can travel around corners. Creatures in the area must make a Constitution saving throw or take 7d6 fire damage, halved on a success.",
+    "empower": "Damage increased to 10d6."
+  },
+  {
     "name": "Precipice of Madness",
     "tier": 3,
     "tags": [
@@ -1606,6 +1646,21 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Path of Ice",
+    "tier": 4,
+    "tags": [
+      "Conjuration",
+      "Cold",
+      "Water",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self (90 foot long line)",
+    "duration": "10 minutes",
+    "desc": "You conjure a stream of water that covers a 10 foot wide line up to 90 feet long, which travels forward and away from you. Upon reaching the desired location, it freezes solid. Creatures in the path must make a Dexterity saving throw or be restrained and take 6d6 cold damage. A creature that succeeds takes half damage and moves out of the way of the path into the closest empty space.<br><br>The path remains for the duration of the spell. Each 5 foot square has 10 hit points, AC 10, and vulnerability to fire and bludgeoning damage, and shatters if its hit points are reduced to 0. A creature restrained by the spell can make a weapon attack against the nearest square, freeing itself if the square is destroyed.",
+    "empower": "Destroyed squares are restored at the start of each of your turns."
+  },
+  {
     "name": "Apostolic Fever",
     "tier": 4,
     "tags": [
@@ -1631,6 +1686,21 @@ const spellDatabase = [
     "range": "90 feet",
     "duration": "Instantaneous",
     "desc": "The shadow of a target creature within range animates, then casts one spell of tier 3 or lower that you know or that you have seen the target cast. The spell costs 0 AP.",
+    "empower": ""
+  },
+  {
+    "name": "Rite of Rebirth",
+    "tier": 5,
+    "tags": [
+      "Transmutation",
+      "Holy",
+      "Water",
+      "Ritual"
+    ],
+    "cost": "N/A",
+    "range": "Touch",
+    "duration": "Instantaneous",
+    "desc": "You submerge the touched creature or corpse in a body of water large enough to allow the target to be fully submerged. After one hour, during which you cannot move or take any other action, the target emerges from the water as a new creature.<br><br>The target becomes a humanoid species in its prime regardless of its original form or state. The exact species is randomly chosen. It keeps any prior class levels and talents. It may choose new traits, if applicable. It loses access to all species features and talents it had before, and gains its new species' features, as well as an equivalent amount of species talents according to its class levels, if applicable.<br><br>If the ritual is interrupted, the target's body is dissolved by the water.",
     "empower": ""
   },
   {
@@ -1784,6 +1854,22 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Abyssal Call",
+    "tier": 6,
+    "tags": [
+      "Conjuration",
+      "Eldritch",
+      "Summoning",
+      "Water",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "Self (60 foot radius)",
+    "duration": "1 minute",
+    "desc": "Black waters spread from yourself and form a 60 foot radius pool of water around you as you sink down into the depths, merging with a massive sea creature called from the deepest abysses of the ocean.<br><br>The sea creature is a Gargantuan creature. The spell fails if you cast it in a location that cannot fit the creature. It has AC 18, and 200 hit points, and cannot receive healing. It automatically succeeds on all saving throws. While it has at least one hit point, you have resistance to all damage taken, and the creature takes damage equal to the damage you take.<br><br>You and the creature can move anywhere within the pool of water during your turn, but cannot leave the water. You can spend 1 AP to make a tentacle attack, 2 AP to make two tentacle attacks, and 3 AP to make one tentacle attack on all creatures within 10 feet of you. The tentacle attack has a reach of 10 feet, uses your spellcasting stat to determine attack and damage bonuses, deals 3d10 bludgeoning damage on a hit, and grapples the target on a hit. You can only grapple one creature with each attack, no matter how many creatures you hit. At the start of each of your turns, grappled creatures take 2d10 bludgeoning damage.<br><br>The spell ends when you or the creature have been reduced to 0 or fewer hit points.",
+    "empower": ""
+  },
+  {
     "name": "Arcane Siphon",
     "tier": 7,
     "tags": [
@@ -1795,6 +1881,21 @@ const spellDatabase = [
     "range": "Self (60 foot radius)",
     "duration": "1 minute",
     "desc": "You reach out to all creatures and prepare to take in some of the magic they expend on their spells. Every time a creature within 60 feet casts a spell, you restore hit points and MP equal to the tier of the spell. You can spend 1 AP as a response to double the MP restored, dealing arcane damage to the target equal to twice the tier of the spell in the process.<br><br>In addition, you have resistance to damage from spells. When you are targeted by a spell, you restore hit points and MP equal to the tier of the spell.",
+    "empower": ""
+  },
+  {
+    "name": "Hydro Drill",
+    "tier": 7,
+    "tags": [
+      "Transmutation",
+      "Physical",
+      "Water",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "You engulf one of your arms in intensely-spinning water, forming a drill. You can use this drill as a weapon, using either your Strength, Dexterity, or spellcasting stat to determine its attack and damage bonuses. It deals 10d6 piercing damage on a hit, ignoring all effects that would reduce its damage. It deals 60 damage to objects.",
     "empower": ""
   },
   {
@@ -1841,6 +1942,19 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Tidal Wave",
+    "tier": 8,
+    "tags": [
+      "Conjuration",
+      "Water"
+    ],
+    "cost": "3 AP",
+    "range": "Self (90 foot square)",
+    "duration": "Instantaneous",
+    "desc": "Massive amounts of water swell beneath you to form a towering tidal wave that covers a 90 foot square in front of you. You are raised 150 feet into the air upon the wave as it gathers. All creatures in the area of effect are aware they are in the area.<br><br>At the start of your next turn, the wave crashes down on the target area, dealing 14d8 bludgeoning damage to everything in the area. Any object totally covered by the wave takes maximum damage. You move to any empty space within the area of effect.",
+    "empower": ""
+  },
+  {
     "name": "Hells Unleashed",
     "tier": 9,
     "tags": [
@@ -1879,6 +1993,20 @@ const spellDatabase = [
     "range": "Self",
     "duration": "1 minute",
     "desc": "You turn yourself into a being of pure magic for the duration of the spell. Choose a spell of tier 5 or lower without the Concentration tag that you know. You can cast that spell for 1 AP and 0 MP for the duration of this spell.",
+    "empower": ""
+  },
+  {
+    "name": "Drowned Beckons",
+    "tier": 9,
+    "tags": [
+      "Enchantment",
+      "Eldritch",
+      "Water"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "8 hours",
+    "desc": "Target creature must succeed on an Intuition saving throw. On a failure, it becomes charmed as inexplicable calls from the ocean beckon to it. It must use all its actions on each of its turns to find the nearest body of water to submerge itself in.<br><br>A submerged creature can repeat the saving throw at the end of each of its turns. On a success, the spell ends.<br><br>A creature that drowns while affected by this spell does not realize it is dead until another creature interacts with it, preventing it from being revived or reanimated until it realizes it is dead.<br><br>A creature that succeeds on its saving throw can't be targeted by this spell again.",
     "empower": ""
   },
   {
