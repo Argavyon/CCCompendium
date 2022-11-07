@@ -36,7 +36,7 @@ spellParse.onsubmit = function (event) {
         String.raw`((\*)?Tier (?<tier>\d+)(\*)?\n)`,
         String.raw`(Tags: (?<tags>.+)\n)`,
         String.raw`(Cost: (?<cost>.+)\n)`,
-        String.raw`(Range: (?<range>.+)\n)`,
+        String.raw`(Range: (?<range>.+)\n)?`,
         String.raw`(Duration: (?<duration>.+)\n)?`,
         String.raw`(?<desc>(.|\n)+?)`,
         String.raw`(Empower: (?<empower>(.|\n)+))`,
@@ -46,7 +46,7 @@ spellParse.onsubmit = function (event) {
         String.raw`((\*)?Tier (?<tier>\d+)(\*)?\n)`,
         String.raw`(Tags: (?<tags>.+)\n)`,
         String.raw`(Cost: (?<cost>.+)\n)`,
-        String.raw`(Range: (?<range>.+)\n)`,
+        String.raw`(Range: (?<range>.+)\n)?`,
         String.raw`(Duration: (?<duration>.+)\n)?`,
         String.raw`(?<desc>(.|\n)+)`
     ];
@@ -60,6 +60,7 @@ spellParse.onsubmit = function (event) {
         spellObject.tier = parseInt(spellObject.tier);
         spellObject.tags = spellObject.tags.split(',').map(str => str.trim());
         spellObject.duration = spellObject.duration ?? 'Instantaneous';
+        spellObject.range = spellObject.range ?? 'Self';
         spellObject.desc = spellObject.desc.trim();
         spellObject.desc = spellObject.desc.replaceAll('\n', '<br>');
         spellObject.empower = spellObject.empower ?? '';
