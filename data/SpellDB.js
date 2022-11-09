@@ -1031,6 +1031,19 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Circle of Warding",
+    "tier": 1,
+    "tags": [
+      "Abjuration",
+      "Summoning"
+    ],
+    "cost": "2 AP",
+    "range": "Self (10 foot radius)",
+    "duration": "24 hours",
+    "desc": "You inscribe a magic circle around you that repels outside forces. No summoned or reanimated creature can affect you in any way while you remain inside the circle, nor can they move through the circle.<br><br>The spell ends if you exit the circle.<br>(Reanimated is a condition applied by spells and effects that are very clearly Necromancy, such as Puppeteer. \"Natural\" undead not under a spell are unaffected.)",
+    "empower": ""
+  },
+  {
     "name": "Turnkey",
     "tier": 1,
     "tags": [
@@ -1370,6 +1383,20 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Containment Field",
+    "tier": 2,
+    "tags": [
+      "Abjuration",
+      "Summoning",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "30 feet",
+    "duration": "24 hours",
+    "desc": "You inscribe a magic circle in a 10 foot radius centered on target point. Non-summoned creatures can make a Willpower saving throw to attempt to exit the circle, ending the spell on a success. Unwilling creatures can make a Dexterity saving throw when this spell is cast to avoid being trapped inside the circle, moving to the nearest empty space on a success.<br><br>The circle prevents creatures from leaving. Summoned and reanimated creatures cannot target anything outside the circle with any effect or attack while inside. You can cast spells inside the circle, where they only affect anything inside the circle even if their range would exceed the area of the circle.<br><br>The spell ends if you enter the circle or cast this spell again.",
+    "empower": ""
+  },
+  {
     "name": "Magus's Entrenchment",
     "tier": 2,
     "tags": [
@@ -1467,6 +1494,20 @@ const spellDatabase = [
     "duration": "Instantaneous",
     "desc": "You channel your power into a slashing melee weapon you possess, then immediately make one attack against a creature in range. On a hit, it deals an additional 1d4 damage.<br><br>If a 4 is rolled on the bonus damage die, it deals an additional 50 damage.",
     "empower": "You have advantage on the attack roll."
+  },
+  {
+    "name": "Summon Harphest",
+    "tier": 3,
+    "tags": [
+      "Enchantment",
+      "Eldritch",
+      "Summoning"
+    ],
+    "cost": "2 AP",
+    "range": "Self (120 foot radius) ",
+    "duration": "10 minutes",
+    "desc": "You summon a Harphest - an intangible yet physical voice from the Sea of Possibility. It speaks honeyed madness into the ears of creatures within range. Now and at the start of each of your turns, up to six random creatures within range must make an Intuition saving throw. On a failure, on their next turn, they roll 1d20 to determine their action:<br>- On a roll of 1 to 5, the creature falls prone, screaming. Their turn ends.<br>- On a roll of 6 to 15, overlaying voices and visions distract the creature. They flail about, making one weapon attack on a random adjacent creature if possible. Their turn ends.<br>- On a roll of 16 to 20, the creature becomes frightened and loses 1 AP, but can act normally.<br><br>You cannot end this spell normally. You must make a DC 15 check with your spellcasting stat during your turn to end the spell. You have advantage on the check if you cast Containment Field during your turn.",
+    "empower": "You can choose one target creature each turn."
   },
   {
     "name": "War Machine",
@@ -1661,6 +1702,19 @@ const spellDatabase = [
     "empower": "Destroyed squares are restored at the start of each of your turns."
   },
   {
+    "name": "Warding Sphere",
+    "tier": 4,
+    "tags": [
+      "Abjuration",
+      "Summoning"
+    ],
+    "cost": "3 AP",
+    "range": "Self (30 foot radius)",
+    "duration": "1 minute",
+    "desc": "You inscribe multiple Circles of Warding onto every creature in range that you choose. These circles move with the owner. They are dispelled if the owner moves in a way that puts a summoned or reanimated creature inside.<br><br>A summoned creature can spend 3 AP to attempt to overcome a circle it is adjacent to. It makes a Willpower saving throw. On a success, the spell ends for that creature.",
+    "empower": "Duration increased to 10 minutes."
+  },
+  {
     "name": "Apostolic Fever",
     "tier": 4,
     "tags": [
@@ -1785,6 +1839,21 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Wintercraft",
+    "tier": 5,
+    "tags": [
+      "Evocation",
+      "Cold",
+      "Summoning",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute ",
+    "desc": "You channel intense winter magic to craft an object made of ice anywhere within the area of the spell. It can be up to a 10 foot by 10 foot cube in size. You can use 1 AP once on each of your turns for the duration of the spell to create another object.<br><br>Each object has 30 hit points, AC 10, and vulnerability to fire and bludgeoning damage. It is permanent until destroyed.",
+    "empower": "You can spend 1 AP to create an object twice per turn."
+  },
+  {
     "name": "Hellborn Unraveling",
     "tier": 5,
     "tags": [
@@ -1798,6 +1867,20 @@ const spellDatabase = [
     "duration": "Instantaneous",
     "desc": "Horrific power emanates from your palm into a 5 foot wide, 90 foot long line. The first creature in the path of the line must make a Constitution saving throw or take 4d6 fire, 4d6 unholy, and 4d6 arcane damage, halved on a success. If the creature is reduced to 0 or fewer hit points, it is obliterated with an unearthly screech, and the spell continues to the next creature in the line. If a creature is not obliterated, the spell ends without going any further.<br><br>Any creature damaged by the spell has all spell effects instantly dispelled. The line dispels all spell effects it travels through.",
     "empower": "Before the creature makes a saving throw, it takes 3d6 arcane damage."
+  },
+  {
+    "name": "Summon Sage",
+    "tier": 6,
+    "tags": [
+      "Conjuration",
+      "Summoning",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "5 feet",
+    "duration": "1 minute",
+    "desc": "You summon a sage - a benevolent humanoid symbiote from the Sea of Possibility. It establishes a mental connection with you upon arrival.<br><br>The sage is intangible and can't be affected by any effect other than the end of your spell. It takes its turn after yours. It has a walking speed of 20 feet, and knows every spell you know, using your MP to cast. It obeys your mental commands.<br><br>When the spell expires, the sage returns to the Sea of Possibility.",
+    "empower": ""
   },
   {
     "name": "Sacrosanct Wrath",
@@ -1884,6 +1967,21 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "The First Trumpet",
+    "tier": 7,
+    "tags": [
+      "Conjuration",
+      "Apocalyptic",
+      "Eldritch",
+      "Summoning"
+    ],
+    "cost": "4 AP",
+    "range": "120 feet",
+    "duration": "Instantaneous",
+    "desc": "You forcibly extract a creature from the Sea of Possibility. It can be any creature with a CS of 13 or lower, or a copy of a creature with no more than 13 class levels. It arrives at the target location.<br><br>The created creature is visibly wrong and distorted. Roll 1d6-2 for each stat and add the result to its current stat block. At the start of each of its turns, it heals itself for ten percent of its maximum hit points. It has 4 AP by default. It retains all features and talents of the intended creature.<br><br>The creature is not under your control and is hostile to all life not from the Sea of Possibility. It spends its actions trying to destroy all life not of the Sea of Possibility, prioritizing its summoner if they are in range. More intelligent creatures may make long term plans to cause as much destruction as possible. It lasts until reduced to 0 hit points, which causes it to disintegrate.<br><br>You cannot end this spell.",
+    "empower": ""
+  },
+  {
     "name": "Hydro Drill",
     "tier": 7,
     "tags": [
@@ -1955,6 +2053,20 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Circle of Power",
+    "tier": 8,
+    "tags": [
+      "Conjuration",
+      "Summoning",
+      "Sign"
+    ],
+    "cost": "3 AP",
+    "range": "30 feet",
+    "duration": "1 minute",
+    "desc": "You create a summoning circle with a radius of 30 feet centered on a target point within range. It has 8 charges. Each time you cast a spell with the Summoning tag while you are within the circle, a number of charges equal to the tier of the spell are consumed to reduce the cost to 0 AP. Once all charges are consumed, the circle fades away.<br><br>If you cast a spell that would exceed the number of remaining charges, the circle immediately fades away, and you must pay the original AP cost of the spell.",
+    "empower": ""
+  },
+  {
     "name": "Hells Unleashed",
     "tier": 9,
     "tags": [
@@ -1965,6 +2077,20 @@ const spellDatabase = [
     "range": "Self (60 foot radius)",
     "duration": "1 minute",
     "desc": "You reanimate every corpse within range. They keep all their capabilities they had in life, and are under your direct control for the duration of the spell.<br><br>You also animate 1d6+2 skeletons and 1d6+2 zombies within the area of the spell for the duration of the spell.<br><br>While this spell lasts, creatures you have animated by this spell or other Necromancy spells can't be reduced below 1 hit point.",
+    "empower": ""
+  },
+  {
+    "name": "Autosustaining Summoning",
+    "tier": 9,
+    "tags": [
+      "Transmutation",
+      "Summoning",
+      "Ritual"
+    ],
+    "cost": "N/A",
+    "range": "Touch",
+    "duration": "Instantaneous",
+    "desc": "You touch a magic effect with a duration of 10 minutes or more and attempt to modify the spell to last permanently. While you are casting this spell, the duration of the original effect is suspended.<br><br>After 8 hours of casting, the effect is made permanent. If it required concentration, it no longer requires concentration. It can no longer be ended unless dispelled.<br><br>This spell does not negate any other condition that would end a spell early. A spell that ends if the caster steps out of range will still end if the caster steps out of range even after the spell was made permanent.",
     "empower": ""
   },
   {
