@@ -103,10 +103,19 @@ function generate_brief_spell_table(spellDatabase, tag_select, tier_select) {
 
 function main() {
     const tag_list = {};
+    const f_tag_list = {};
+    const functional_tags = [
+        'Concentration', 'Control', 'Mobility', 'Ritual', 'Sign', 'Silent', 'Support', 'Utility'
+    ];
     const compendiumLeft = document.querySelector('#compendium_left');
     spellDatabase.forEach(spell => spell.tags.forEach(tag => {
-        if (!tag_list[tag]) tag_list[tag] = 1;
-        else tag_list[tag] += 1;
+        if (functional_tags.includes(tag)) {
+            if (!f_tag_list[tag]) f_tag_list[tag] = 1;
+            else f_tag_list[tag] += 1;
+        } else {
+            if (!tag_list[tag]) tag_list[tag] = 1;
+            else tag_list[tag] += 1;
+        }
     }));
 
     const tag_select = new Set();
