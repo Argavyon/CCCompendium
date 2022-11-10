@@ -123,7 +123,13 @@ function main() {
     const gen_spelltable = () => generate_brief_spell_table(spellDatabase, tag_select, tier_select);
 
     // TAGS
-    Object.entries(tag_list).sort().forEach(([tag, count]) => {
+    Object.entries(tag_list).sort((a, b) => {
+        if (a[1] == b[1]) {
+            return (a[0] == b[0]) ? 0 : (a[0] > b[0]) ? 1 : -1;
+        } else {
+            return Math.sign(b[1] - a[1]);
+        }
+    }).forEach(([tag, count]) => {
         const div = compendiumLeft.appendChild(document.createElement('button'));
         div.style.display = 'block';
         div.textContent = `${tag} (${count})`;
