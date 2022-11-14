@@ -1,4 +1,4 @@
-function spellCard(spellData) {
+function spellCard(spellData, functional_tags) {
 	const card = document.createElement('table');
 	const cardBody = card.appendChild(document.createElement('tbody'));
 	card.className = 'spell';
@@ -19,7 +19,10 @@ function spellCard(spellData) {
 	tagsH.className = 'spellheaders';
 	tagsD.className = 'spelltags';
 	tagsH.textContent = 'Tags:';
-	tagsD.textContent = spellData.tags.join(', ');
+	tagsD.innerHTML = spellData.tags
+        .map(tag => functional_tags.includes(tag) ? `<span class='fTag'>${tag}</span>` : tag)
+        .join(', ')
+    ;
 	
 	const costRow = cardBody.appendChild(document.createElement('tr'));
 	const costH = costRow.appendChild(document.createElement('td'));
@@ -62,7 +65,7 @@ function spellCard(spellData) {
 	return card;
 }
 
-function spellBrief(spellData) {
+function spellBrief(spellData, functional_tags) {
     const brief = document.createElement('tr');
     brief.id = `spell_${spellData.name.replaceAll(' ', '_')}`;
     
@@ -71,15 +74,17 @@ function spellBrief(spellData) {
         spellData.tier,
         spellData.range,
         spellData.duration,
-        spellData.tags.join(', ')
+        spellData.tags
+            .map(tag => functional_tags.includes(tag) ? `<span class='fTag'>${tag}</span>` : tag)
+            .join(', ')
     ].forEach(data => {
         const td = brief.appendChild(document.createElement('td'));
         td.className = 'spelldata';
-        td.textContent = data;
+        td.innerHTML = data;
     });
     
     brief.onclick = function() {
-        const card = spellCard(spellData);
+        const card = spellCard(spellData, functional_tags);
         const CR = document.querySelector('#compendium_right');
         CR.innerHTML = '';
         CR.appendChild(card);
@@ -88,14 +93,14 @@ function spellBrief(spellData) {
     return brief;
 }
 
-function generate_brief_spell_table(spellDatabase, tag_select, tier_select) {
+function generate_brief_spell_table(spellDatabase, tag_select, tier_select, functional_tags) {
     const oldTable = document.querySelector('#spelltable');
     const newTable = oldTable.cloneNode(false);
 
     spellDatabase.forEach(spell => {
         if (tag_select.size > 0 && !spell.tags.some(tag => tag_select.has(tag))) return;
         if (tier_select.size > 0 && !tier_select.has(spell.tier)) return;
-        newTable.appendChild(spellBrief(spell));
+        newTable.appendChild(spellBrief(spell, functional_tags));
     });
 
     oldTable.parentNode.replaceChild(newTable, oldTable);
@@ -105,7 +110,7 @@ function main() {
     const tag_list = {};
     const f_tag_list = {};
     const functional_tags = [
-        'Concentration', 'Control', 'Mobility', 'Ritual', 'Sign', 'Silent', 'Support', 'Utility'
+        'Concentration', 'Control', 'Mobility', 'Potent', 'Ritual', 'Sign', 'Silent', 'Support', 'Utility'
     ];
     const compendiumLeft = document.querySelector('#compendium_left');
     spellDatabase.forEach(spell => spell.tags.forEach(tag => {
@@ -120,7 +125,7 @@ function main() {
 
     const tag_select = new Set();
     const tier_select = new Set();
-    const gen_spelltable = () => generate_brief_spell_table(spellDatabase, tag_select, tier_select);
+    const gen_spelltable = () => generate_brief_spell_table(spellDatabase, tag_select, tier_select, functional_tags);
 
     // TAGS
     Object.entries(tag_list).sort((a, b) => {
@@ -174,7 +179,7 @@ function main() {
     }
 
     const CC = document.querySelector('#compendium_right');
-    CC.appendChild(spellCard(spellDatabase[0]));
+    CC.appendChild(spellCard(spellDatabase[0], functional_tags));
 
     gen_spelltable();
 }

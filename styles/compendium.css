@@ -27,7 +27,7 @@ div.tagselect {
 	display: flex;
 	flex-direction: column;
 }
-@media only screen and (hover: none) and (pointer: coarse){
+@media only screen and (hover: none) and (pointer: coarse) {
 	div.tagselect {
 		display: flex;
 		flex-direction: row;
@@ -55,6 +55,10 @@ td.classheaders {
 }
 td.classdata {
 	
+}
+span.fTag {
+	color: red;
+	font-style: italic;
 }
 
 table.spell {
