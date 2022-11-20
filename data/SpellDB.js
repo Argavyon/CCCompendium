@@ -318,6 +318,20 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Venomous Flow",
+    "tier": 1,
+    "tags": [
+      "Conjuration",
+      "Poison",
+      "Potent"
+    ],
+    "cost": "2 AP",
+    "range": "Self (30 foot line per tier)",
+    "duration": "Instantaneous",
+    "desc": "You create a wave of sludge-like poison that travels forth from you in a 15 foot wide line out to the maximum range of the spell. The width increases by 10 feet at tier 4 and 7. Creatures in the path must make a Dexterity saving throw or take 3d10 poison damage plus 2d10 additional damage for each tier above 1. A successful saving throw deals half damage. Plants and plant creatures take maximum damage from this spell.",
+    "empower": "Treat the spell as one tier higher."
+  },
+  {
     "name": "Aegis of Awe",
     "tier": 1,
     "tags": [
@@ -387,6 +401,20 @@ const spellDatabase = [
     "duration": "Instantaneous",
     "desc": "You conjure a being from beyond that devours the empty space between you and a target<br>creature up to 30 feet away from you. The creature is pulled directly adjacent to you, and<br>everything in a 30 foot long, 5 foot wide line is moved an equal distance towards you. Objects<br>that are not fully contained within the area are unaffected.",
     "empower": "Reduces the AP cost to 1."
+  },
+  {
+    "name": "Saint's Dust",
+    "tier": 1,
+    "tags": [
+      "Transmutation",
+      "Holy",
+      "Poison"
+    ],
+    "cost": "2 AP",
+    "range": "30 feet",
+    "duration": "24 hours",
+    "desc": "You scatter blessed dust in a 10 foot square within range. This dust does nothing to most creatures, but any undead creature that touches the dust by moving through it or interacting with a dusted object takes 2d6 radiant damage. A creature can only suffer this damage once on each of their turns, even if it would travel through dust created by multiple applications of this spell.",
+    "empower": "Area increased to 15 feet."
   },
   {
     "name": "Grass Slicer",
@@ -685,6 +713,20 @@ const spellDatabase = [
     "duration": "Instantaneous",
     "desc": "You attempt to intrude into a creature's mind and tear out a momentary but useful memory. The creature must make a Knowledge saving throw. On a failure, it takes 2d10 psychic damage, and you select an action it can't use on its next turn.",
     "empower": "Damage increased to 3d10. A successful save deals half damage."
+  },
+  {
+    "name": "Frenzy Bite",
+    "tier": 1,
+    "tags": [
+      "Evocation",
+      "Beast",
+      "Poison"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Two poisoned fangs sprout forth from your hand and fly at a target creature within range that you can see. It must make a Dexterity saving throw or take 2d4 poison damage.<br><br>If it failed its Dexterity saving throw, at the start of its next turn, the target must make a Willpower saving throw, with beasts having disadvantage. On a failure, the target takes an additional 1d6 poison damage and flies into a mad rage for that turn, gaining 1 AP and using their turn to attack the closest creature with all remaining AP. A creature reduced to 0 hit points from this damage only falls unconscious when their turn ends.",
+    "empower": "Initial damage increased to 3d4. Additional damage increased to 2d6."
   },
   {
     "name": "Fire Lash",
@@ -989,6 +1031,20 @@ const spellDatabase = [
     "empower": "Also burns away the weakest negative spell with a duration of 1 minute or less<br>affecting the creature. On a tie, you choose."
   },
   {
+    "name": "Conjure Feyblood",
+    "tier": 1,
+    "tags": [
+      "Conjuration",
+      "Fey",
+      "Poison"
+    ],
+    "cost": "2 AP",
+    "range": "Self",
+    "duration": "24 hours",
+    "desc": "You create enough Feyblood poison for a number of applications equal to your spellcasting stat. When applied to a weapon or piece of ammunition, Feyblood requires the target to make a DC 13 Constitution saving throw or be poisoned for 1 minute. A creature poisoned in this way is also charmed by all creatures it can see and does not realize it was wounded. It can't attack or cast spells while charmed in this way.<br><br>An affected creature that takes damage is no longer charmed, and can then repeat the saving throw against the poisoned condition immediately and at the end of each of its turns. On a success, the effect ends. An adjacent creature can use 2 AP to shake an affected creature free of the charmed condition.<br><br>Casting this spell again destroys all previously summoned applications. After 24 hours, all summoned applications dissolve harmlessly.",
+    "empower": "You add your proficiency modifier to the number of applications created."
+  },
+  {
     "name": "Haunting Chill",
     "tier": 1,
     "tags": [
@@ -1085,6 +1141,20 @@ const spellDatabase = [
     "empower": "The creature has disadvantage on their next attack roll or saving throw."
   },
   {
+    "name": "Dartskin",
+    "tier": 2,
+    "tags": [
+      "Transmutation",
+      "Poison",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Touch",
+    "duration": "1 hour",
+    "desc": "A creature you touch has their skin changed to produce powerful poison. Whenever a creature touches the target, they take 3d6 poison damage. This damage can only occur once between each of the target's turns. A creature that bites the target takes 25 poison damage and becomes poisoned until the end of their next turn.",
+    "empower": ""
+  },
+  {
     "name": "Holy Storm",
     "tier": 2,
     "tags": [
@@ -1136,6 +1206,19 @@ const spellDatabase = [
     "duration": "Instantaneous",
     "desc": "Two 15 foot long lines of fire descend upon a target creature in range, one parallel to you and one perpendicular to you, with the center of both lines centered on the target creature. Creatures in range must succeed on a Dexterity saving throw or take 3d8 fire damage, and the creature in the center must succeed on a Dexterity saving throw or take 5d8 fire damage. A successful saving throw reduces the damage by half.",
     "empower": "Line length increased to 25 feet. All creatures affected take 1d8 radiant damage."
+  },
+  {
+    "name": "Target Toxin",
+    "tier": 2,
+    "tags": [
+      "Conjuration",
+      "Poison"
+    ],
+    "cost": "1 AP",
+    "range": "Touch",
+    "duration": "1 hour",
+    "desc": "You enchant a weapon or piece of ammunition with a poison that tracks its victim. The next time the poisoned weapon damages a creature, it establishes a mental connection to you. You always know where the creature is for the remaining duration of the spell.<br><br>Every 10 minutes, the creature must make a Constitution saving throw. On a failure, they take 1d8 poison damage, and their highest stat drops by 1 for the duration of the spell. In the case of a tie, the creature chooses which stat is decreased.",
+    "empower": "Every 10 minutes, the creature's two highest stats drop by 1 on a failed saving throw instead."
   },
   {
     "name": "Healing Rains",
@@ -1215,6 +1298,19 @@ const spellDatabase = [
     "duration": "1 minute",
     "desc": "A target creature or object you touch becomes incredibly solid. They can't be moved by any outside force, and gain resistance to physical damage. Objects also become immune to other spells. Creatures have their AP reduced to 1 for the duration. Unwilling creatures can make a Constitution saving throw to avoid the effect, and can repeat it at the end of each of their turns to end the effect early.",
     "empower": ""
+  },
+  {
+    "name": "Ash Vision",
+    "tier": 2,
+    "tags": [
+      "Divination",
+      "Fire"
+    ],
+    "cost": "2 AP",
+    "range": "Self",
+    "duration": "1 hour",
+    "desc": "You toss an object no heavier than 10 pounds into the air, where it is instantly destroyed and transformed into ash that coats you. While you are covered in this ash, you can see a path that leads to the original owner as long as they still reside on the same plane as you.<br><br>The path can wind around obstacles and walls, but it does not take into account dangerous terrain or traps.<br><br>The spell ends if you are no longer covered in the ash.",
+    "empower": "Duration increased to 8 hours. The ash can't be washed away without the use of magic."
   },
   {
     "name": "Phantom Bows",
@@ -1538,6 +1634,20 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Intervention",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Holy",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "90 feet",
+    "duration": "1 hour",
+    "desc": "A subtle holy symbol of light is embedded in the target creature. If the creature would take damage that would reduce them to 0 or fewer hit points, the damage is negated, and they are healed for 6d6 hit points. The spell then ends.<br><br>A creature can't be targeted with this spell again until it completes a rest.",
+    "empower": ""
+  },
+  {
     "name": "Northern Cross",
     "tier": 3,
     "tags": [
@@ -1604,6 +1714,61 @@ const spellDatabase = [
     "duration": "1 minute",
     "desc": "Arcane energies fold around you and spin out into deadly seeking projectiles. Every creature you choose within range takes 1d4 arcane damage, and must succeed on a Dexterity saving throw or take 3d4 arcane damage, halved on a success.<br><br>At the start of each of your turns, you can repeat the damaging effect if you use all your AP and movement for the turn. Otherwise, the spell ends.",
     "empower": "Initial damage increased to 2d4."
+  },
+  {
+    "name": "Arcanist's Mist",
+    "tier": 3,
+    "tags": [
+      "Conjuration",
+      "Arcane",
+      "Poison",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "90 feet",
+    "duration": "10 minutes",
+    "desc": "A fog of whatever color you choose is unleashed into a 30 foot radius sphere, centered on a target point you can see. The fog spreads around corners and through openings. It obscures vision outside of the fog, but not into the fog.<br><br>Creatures inside the fog when it forms, and who start their turn inside or move into it during their turn, must make a Constitution saving throw. On a failure, they inhale the fog. For the duration of the spell, they have an aura around them of the same color as the fog, visible only to you. You can see this aura even through walls and other obstructions.<br><br>An affected creature that is targeted by one of your spells suffers additional poison damage equal to the MP cost of your spell.",
+    "empower": ""
+  },
+  {
+    "name": "Wine Wager",
+    "tier": 3,
+    "tags": [
+      "Enchantment",
+      "Poison"
+    ],
+    "cost": "3 AP",
+    "range": "Self",
+    "duration": "1 year",
+    "desc": "Target creature must succeed on an Intuition saving throw. On a failure, they become locked in a game of wits against you, as you create two glasses of wine. At least one glass of wine must be poisoned - a creature that drinks the poisoned wine takes 12d6 poison damage and must make a Constitution saving throw or fall unconscious for 1 hour.<br><br>The creature chooses which wine glass to drink from before both you and the creature drink at the same time. You cannot force the creature to choose, but it cannot leave without choosing before the spell ends. Once the creature drinks, you are compelled to drink as well.<br><br>The spell ends immediately if the creature takes damage from any other source other than this spell, or you are reduced to 0 or fewer hit points.<br><br>If you are clearly immune to poison damage, such as if you are undead or a construct, the creature automatically passes its Intuition saving throw.",
+    "empower": "Instead of the normal effect, a creature that drinks the poisoned wine is immediately affected by any one of your Poison tag spells."
+  },
+  {
+    "name": "Bane Barrier",
+    "tier": 3,
+    "tags": [
+      "Abjuration",
+      "Poison"
+    ],
+    "cost": "2 AP",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "desc": "As a response to being targeted by an attack or spell, you shield yourself with a barrier of sharp, poisonous quills. You have advantage on all saving throws and add your spellcasting stat to your AC until the start of your next turn. This can cause incoming attacks to miss.<br><br>If a creature was attempting to attack you in melee and missed, they must make a Constitution saving throw. On a failure, they take 6d4 poison damage and become poisoned for 1 minute. On a success, they take half damage and are not poisoned. They can repeat the saving throw at the end of each of their turns to end the poisoned effect early.",
+    "empower": "AP cost reduced by 1."
+  },
+  {
+    "name": "Distillation",
+    "tier": 3,
+    "tags": [
+      "Transmutation",
+      "Holy",
+      "Poison"
+    ],
+    "cost": "3 AP",
+    "range": "Self (60 foot radius) ",
+    "duration": "7 days",
+    "desc": "You pull in all the poison from a 60 foot radius around you, concentrating it into one vial. Every creature in range is cured of the poisoned condition, and all Poison tag spells in the area immediately end.<br><br>The created vial is lethally poisonous. If applied to a weapon or piece of ammunition, it deals an additional 2d6 poison damage the next time it deals damage. The damage increases by 1d6 for each poisoned creature and 3d6 for each Poison tag spell that was absorbed in the creation. If the vial's poison deals at least 5d6 damage, creatures damaged by it must make a Constitution saving throw or be paralyzed until the start of the attacker's next turn.",
+    "empower": ""
   },
   {
     "name": "Harness Fury",
@@ -1839,6 +2004,22 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Fangs of the Eartheater",
+    "tier": 5,
+    "tags": [
+      "Conjuration",
+      "Earth",
+      "Eldritch",
+      "Poison",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "120 feet",
+    "duration": "1 minute",
+    "desc": "Massive poisonous fangs 20 feet tall jut out of the ground, forming a ring with a radius of 60 feet centered on the target point. Any creature that touches the fangs takes 5d10 poison damage.<br><br>At the start of each of your turns, the ring shrinks by 5 feet. Any creature in the occupied space takes 5d10 poison damage and is pushed 5 feet away, towards the center.<br><br>The fangs leave behind difficult terrain as they move and tear apart the ground.",
+    "empower": ""
+  },
+  {
     "name": "Wintercraft",
     "tier": 5,
     "tags": [
@@ -1967,6 +2148,21 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "The Choir Above",
+    "tier": 7,
+    "tags": [
+      "Enchantment",
+      "Holy",
+      "Apocalyptic",
+      "Delayed"
+    ],
+    "cost": "9 AP",
+    "range": "1 mile",
+    "duration": "1 week",
+    "desc": "The heavens split open above a target point in range, as melodic heavenly voices sing of wonder, audible out to 1 mile. All creatures that can hear it must succeed on an Intuition saving throw or be caught up in the choir, doing nothing except singing for the duration of the spell. A creature that succeeds is immune to the spell until they finish a rest.<br><br>The choir protects those who sing with them. Any creature that attacks a singing creature is struck for 10d10 radiant damage, regardless if the attack hit or missed. Singing creatures are immune to all conditions and automatically succeed on all saving throws, taking no damage from spells. They do not need to eat, drink, or sleep while they sing.<br><br>When the spell ends, singing creatures are left with a sense of hope and wonder.",
+    "empower": ""
+  },
+  {
     "name": "The First Trumpet",
     "tier": 7,
     "tags": [
@@ -2067,6 +2263,21 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Apex of the Arcane",
+    "tier": 9,
+    "tags": [
+      "Abjuration",
+      "Arcane",
+      "Apocalyptic",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "Self (Minimum 120 foot radius)",
+    "duration": "Special",
+    "desc": "This spell can be cast as a ritual over the course of eight hours.<br><br>You create a dome of scintillating colors that envelops the area around you. This area is a 120 foot radius dome centered on you, increased by up to 1 mile when cast as a ritual.<br><br>Every spell cast through or within the dome restores MP to you equal to half the MP cost of the spell, rounded up. You can choose to instead expend MP equal to the spell's MP cost to cancel the spell's effect completely.<br><br>The duration when cast normally is 1 minute. When cast as a ritual, the duration is until dispelled.",
+    "empower": ""
+  },
+  {
     "name": "Hells Unleashed",
     "tier": 9,
     "tags": [
@@ -2077,6 +2288,21 @@ const spellDatabase = [
     "range": "Self (60 foot radius)",
     "duration": "1 minute",
     "desc": "You reanimate every corpse within range. They keep all their capabilities they had in life, and are under your direct control for the duration of the spell.<br><br>You also animate 1d6+2 skeletons and 1d6+2 zombies within the area of the spell for the duration of the spell.<br><br>While this spell lasts, creatures you have animated by this spell or other Necromancy spells can't be reduced below 1 hit point.",
+    "empower": ""
+  },
+  {
+    "name": "Sea Leak",
+    "tier": 9,
+    "tags": [
+      "Evocation",
+      "Eldritch",
+      "Poison",
+      "Apocalyptic"
+    ],
+    "cost": "3 AP",
+    "range": "Self (60 foot radius)",
+    "duration": "1 year",
+    "desc": "You puncture a hole that allows the Sea of Possibility to leak through, flooding a 60 foot radius sphere centered on you. Every creature in range loses all damage resistance, immunities, absorptions, and reflects, then must make a Constitution saving throw. On a failure, they become vulnerable to poison damage, then take 5d10 poison damage as the Sea of Possibility poisons their very existence.<br><br>Creatures that start their turn inside the area must repeat the Constitution saving throw. If they have failed the saving throw, they must instead make Willpower saving throws, taking 10d6 poison damage on a failed saving throw, and half damage on a success.<br><br>Creatures regain their damage resistances, immunities, absorptions, and reflects 1 hour after leaving the area.<br><br>A creature reduced to 0 or fewer hit points while inside the spell's area of effect immediately becomes absorbed by the Sea of Possibility.",
     "empower": ""
   },
   {
@@ -2091,6 +2317,20 @@ const spellDatabase = [
     "range": "Touch",
     "duration": "Instantaneous",
     "desc": "You touch a magic effect with a duration of 10 minutes or more and attempt to modify the spell to last permanently. While you are casting this spell, the duration of the original effect is suspended.<br><br>After 8 hours of casting, the effect is made permanent. If it required concentration, it no longer requires concentration. It can no longer be ended unless dispelled.<br><br>This spell does not negate any other condition that would end a spell early. A spell that ends if the caster steps out of range will still end if the caster steps out of range even after the spell was made permanent.",
+    "empower": ""
+  },
+  {
+    "name": "Return to the Feral",
+    "tier": 9,
+    "tags": [
+      "Enchantment",
+      "Beast",
+      "Apocalyptic"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "Until dispelled",
+    "desc": "All creatures with a Knowledge higher than -4 within a 40 foot radius sphere centered on a target point within range must succeed on an Intuition saving throw. On a failure, they become feral beasts incapable of anything other than basic survival instincts. Their Knowledge is set to -5, they lose the ability to speak, and they must attack any creature they see, moving as necessary to do so.<br><br>A creature damaged by an affected creature must also make an Intuition saving throw. On a failure, the spell spreads to them as well.<br><br>A creature that spends one week without damaging any creature is no longer affected by this spell. A creature that succeeds on their saving throw against this spell can't be affected by this spell again.",
     "empower": ""
   },
   {
@@ -2146,6 +2386,35 @@ const spellDatabase = [
     "range": "Self (90 foot cone)",
     "duration": "Instantaneous",
     "desc": "You call upon one of the ancient dragons that predates written history to breathe upon all creatures in range. They must make a saving throw using their lowest stat or take 20d8 damage of your choice and become frightened of you for 1 minute. A creature that succeeds takes half damage and becomes frightened of you until the end of your next turn. You can choose different damage types for each creature.",
+    "empower": ""
+  },
+  {
+    "name": "Sealed Fate",
+    "tier": 9,
+    "tags": [
+      "Divination",
+      "Apocalyptic"
+    ],
+    "cost": "3 AP",
+    "range": "Sight",
+    "duration": "Permanent",
+    "desc": "You learn every single event that will happen to target creature in the future. While you are alive, this path cannot be changed. A creature destined to die in one week's time, for instance, will always survive everything until that time, and will always succumb to what will kill them at the appointed time no matter what efforts are taken.<br><br>It is recommended not to cast this on yourself.",
+    "empower": ""
+  },
+  {
+    "name": "World of Ash",
+    "tier": 9,
+    "tags": [
+      "Evocation",
+      "Fire",
+      "Apocalyptic",
+      "Concentration",
+      "Delayed"
+    ],
+    "cost": "12 AP",
+    "range": "Self (1 mile radius)",
+    "duration": "Instantaneous",
+    "desc": "A ravaging wave of fire emanates from you in a 30 foot radius sphere.  Every object it touches is reduced to ash. Creatures other than you that touch the wave must make a Constitution saving throw or take 24d12 fire damage, halved on a success.<br><br>The area left behind is a blasted wasteland of ash and fire. While the wave is still traveling, creatures other than you that start their turn in the area must make a Constitution saving throw or take 8d12 fire damage, halved on a success.<br><br>At the start of each of your turns, the wave expands by 30 feet, plus 30 feet for every turn that has passed since you cast this spell. When it reaches the maximum range, the spell ends.<br><br>A creature that is reduced to 0 hit points by this spell is turned to ash.<br><br>If the spell ends early by any means, you take 30d12 fire damage. This damage cannot be prevented in any way. If you are reduced to 0 hit points in this way, you become ash. <br>(Delayed spells can be started without paying the full cost immediately. You must concentrate on the spell and pay at least 1 AP towards the cost every turn, or you lose concentration and the spell.)",
     "empower": ""
   }
 ];
