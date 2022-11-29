@@ -134,6 +134,19 @@ const spellDatabase = [
     "empower": "You also sense the current direction of the collection."
   },
   {
+    "name": "Waterspout Step",
+    "tier": 1,
+    "tags": [
+      "Evocation",
+      "Water"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "desc": "Water bursts from the ground beneath you and catapults you up to 60 feet into the air.",
+    "empower": "Removes the AP cost on this spell."
+  },
+  {
     "name": "Prying Mind",
     "tier": 1,
     "tags": [
@@ -203,6 +216,19 @@ const spellDatabase = [
     "empower": "Damage increased to 4d10. Self damage increased to 4."
   },
   {
+    "name": "Repulse",
+    "tier": 1,
+    "tags": [
+      "Evocation",
+      "Arcane"
+    ],
+    "cost": "2 AP",
+    "range": "Self (30 foot line)",
+    "duration": "Instantaneous",
+    "desc": "You push out arcane power in a 30 foot line. Creatures and objects in this line are pushed up to 30 feet away from you, stopping their movement early if they would enter an occupied space. Unwilling creatures can make a Strength saving throw to reduce the movement to 5 feet.",
+    "empower": "The range becomes Self (15 foot radius)."
+  },
+  {
     "name": "Arcane Bolt",
     "tier": 1,
     "tags": [
@@ -215,6 +241,19 @@ const spellDatabase = [
     "duration": "Instantaneous",
     "desc": "A solid bolt of pure magic forms from the palm of your hand and unerringly homes in on a<br>creature you can see within range, dealing 1d4+2 arcane damage on hit.",
     "empower": "For each time you Empower this spell, launch an additional bolt at another creature<br>within range. Multiple bolts can't strike the same creature."
+  },
+  {
+    "name": "Mystic Backhand",
+    "tier": 1,
+    "tags": [
+      "Evocation",
+      "Arcane"
+    ],
+    "cost": "1 AP",
+    "range": "30 feet",
+    "duration": "Instantaneous",
+    "desc": "As a response to any action, you fling a mystic bolt at a target within range, dealing 1d6 arcane damage.",
+    "empower": "Removes the AP cost on this spell."
   },
   {
     "name": "Wintercloak",
@@ -660,6 +699,22 @@ const spellDatabase = [
     "empower": "Damage increases to 2d6 on both explosions. A creature that succeeds on their<br>saving throw takes half damage."
   },
   {
+    "name": "Shark Shadow",
+    "tier": 1,
+    "tags": [
+      "Illusion",
+      "Water",
+      "Shadow",
+      "Beast",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self (90 foot radius)",
+    "duration": "1 minute",
+    "desc": "The ground in the area ripples as a shadowy fin surfaces, seemingly everywhere at once as it prowls the area.<br><br>When a creature you can see within range takes damage from a slashing or piercing attack, or a spell with the Water tag, you can command the shadow to emerge as a shark to attack the creature as a response. This deals 1d10 piercing damage, and causes the creature to bleed illusory blood for the duration of the spell. Additional attacks from the shark on such targets deal 2d10 damage instead.<br><br>A creature can only take damage from the shark once between each of your turns. You can make one attack as a response every turn for 0 AP, with subsequent attacks costing 1 AP.<br><br>The spell cannot reach targets not touching the ground inside the spell's area. If you leave the area, the spell ends.",
+    "empower": "You know the location of bleeding creatures within the area and can attack them even if you can't see them."
+  },
+  {
     "name": "Lashing Vines",
     "tier": 1,
     "tags": [
@@ -725,6 +780,19 @@ const spellDatabase = [
     "duration": "Instantaneous ",
     "desc": "This spell either mechanically locks or jams a doorway, or removes a mechanical lock or jam. If used to unlock a magical lock, make a contested spellcasting ability check against the source's spellcasting DC, dispelling the magical lock on a success.",
     "empower": ""
+  },
+  {
+    "name": "Aqua Screen",
+    "tier": 1,
+    "tags": [
+      "Abjuration",
+      "Water"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "You create a thin film of water 15 feet long, 5 feet tall, and 1 inch thick anywhere within range that you can see. Ranged attacks that pass through the water have disadvantage, and fire attacks or spells that pass through the water deal half damage.",
+    "empower": "Cost reduced to 1 AP."
   },
   {
     "name": "Brilliant Arrows",
@@ -897,6 +965,19 @@ const spellDatabase = [
     "empower": "Removes the AP cost on this spell."
   },
   {
+    "name": "Ether Twist",
+    "tier": 1,
+    "tags": [
+      "Transmutation",
+      "Arcane"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Target creature must make a Constitution saving throw or have their ethereal pattern forcibly modified, taking 2d8 arcane damage. Until the start of your next turn, the target is vulnerable to the next source of arcane damage, ignoring resistances and immunities.",
+    "empower": "Damage increased to 3d8. A successful saving throw deals half damage."
+  },
+  {
     "name": "Grass Slicer",
     "tier": 1,
     "tags": [
@@ -1030,6 +1111,19 @@ const spellDatabase = [
     "duration": "Instantaneous",
     "desc": "A thin wave of fire reaches out from your hand and lashes at a target creature within range. It<br>must make a Dexterity saving throw or take 3d6 fire damage.",
     "empower": "Damage increases to 4d6. On a successful saving throw, the creature takes half<br>damage instead."
+  },
+  {
+    "name": "Anticipate",
+    "tier": 1,
+    "tags": [
+      "Divination",
+      "Arcane"
+    ],
+    "cost": "2 AP",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "desc": "You look into the future to see any immediate threats. If a hostile creature you can see spends 3 AP on an action or begins to cast a spell before the start of your next turn, you can gain 3 AP as a response and immediately take an action before the creature can finish its own action. The spell then ends.",
+    "empower": "You can move up to half your movement speed in addition to taking one action."
   },
   {
     "name": "Whisperwind",
@@ -1645,6 +1739,20 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Akashic Record",
+    "tier": 3,
+    "tags": [
+      "Divination",
+      "Sign",
+      "Ritual"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "You create a temporary distortion that overlaps reality with the Plane of Revelation in a 30 foot circle centered on a point within range. The borders of the distortion are visible as a translucent wall of multicolored light with symbols both known and foreign flickering across it. Within this zone, the following effects occur:<br><br>-All creatures within the zone attempting to intentionally deceive another instantly fail. Anyone listening to them is intuitively aware that the information is false.<br>-All creatures within the zone fail at any attempts to conceal their presence, as luminous symbols flicker around them, describing them in snippets of divine language.<br>-All creatures within the zone can understand all languages, and their speech is understood by any creature that knows at least one language.<br>-All Divination spells cast by a creature within the zone have their AP cost reduced by 1, to a minimum of 1.<br>-All Divination spells cast by a creature within the zone that can be Empowered may be Empowered for 1 fewer MP per tier.<br><br>When cast as a Ritual, the duration is extended to 8 hours.",
+    "empower": ""
+  },
+  {
     "name": "Pillar of Fire",
     "tier": 3,
     "tags": [
@@ -1797,6 +1905,20 @@ const spellDatabase = [
     "duration": "10 minutes",
     "desc": "You summon a Harphest - an intangible yet physical voice from the Sea of Possibility. It speaks honeyed madness into the ears of creatures within range. Now and at the start of each of your turns, up to six random creatures within range must make an Intuition saving throw. On a failure, on their next turn, they roll 1d20 to determine their action:<br>- On a roll of 1 to 5, the creature falls prone, screaming. Their turn ends.<br>- On a roll of 6 to 15, overlaying voices and visions distract the creature. They flail about, making one weapon attack on a random adjacent creature if possible. Their turn ends.<br>- On a roll of 16 to 20, the creature becomes frightened and loses 1 AP, but can act normally.<br><br>You cannot end this spell normally. You must make a DC 15 check with your spellcasting stat during your turn to end the spell. You have advantage on the check if you cast Containment Field during your turn.",
     "empower": "You can choose one target creature each turn."
+  },
+  {
+    "name": "Eye of Laplace",
+    "tier": 3,
+    "tags": [
+      "Divination",
+      "Psychic",
+      "Eldritch"
+    ],
+    "cost": "2 AP",
+    "range": "Sight",
+    "duration": "Instant",
+    "desc": "You conjure a set of eye-shaped glyphs around a target that fire a burst of psychic energy. The target must make a Wil save. On a failure, they take 3d6 Psychic damage. In addition, one glyph remains attached to the target. You can simultaneously see from your location and from the location of all currently active Laplace glyphs, and locations you can see using a Laplace glyph are valid targeting locations for Sight range spells. If the target succeeds on their save, they take half damage and do not retain a glyph.<br><br>You may have a number of Laplace glyphs active at any one time equal to your spellcasting stat, minimum of 1. If you use Eye of Laplace on another target while at your maximum number of glyphs, the oldest glyph fades. Glyphs fade after 1 hour or if the creature they are attached to is knocked unconscious.<br><br>You may choose to forgo the damage when casting Eye of Laplace. A target may choose not to make a Wil save when targeted in this manner.",
+    "empower": "The damage is increased to 5d6. The target retains a glyph even if they succeed on their Wil save."
   },
   {
     "name": "Shadow Caster",
