@@ -310,6 +310,19 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Spectral Shift",
+    "tier": 1,
+    "tags": [
+      "Necromancy",
+      "Unholy"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "desc": "As a response to being targeted by a weapon attack, you turn yourself into an ethereal ghost. You are immune to physical damage until the start of your next turn, but vulnerable to fire and radiant damage. You can't make weapon attacks in this state.",
+    "empower": ""
+  },
+  {
     "name": "Sacred Border",
     "tier": 1,
     "tags": [
@@ -365,6 +378,20 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Beckon Rats",
+    "tier": 1,
+    "tags": [
+      "Conjuration",
+      "Beast",
+      "Disease"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "You call a swarm of biting rats to attack a 15 foot radius centered on a target point within range. Every creature you choose in the area must succeed on a Dexterity saving throw or take 1d4 piercing and 1d4 poison damage.<br><br>A creature that takes poison damage contracts the Ratbite disease. When it uses a hit die to recover hit points, it only restores hit points equal to its Constitution. It can make a Constitution saving throw after using a hit die during a break to attempt to recover from the disease.",
+    "empower": "Poison damage increased to 2d4. A successful saving throw deals half damage."
+  },
+  {
     "name": "Decipher Magic",
     "tier": 1,
     "tags": [
@@ -390,6 +417,19 @@ const spellDatabase = [
     "duration": "Instantaneous",
     "desc": "You fire a large solid bolt of lightning that locks on to a creature within range and moves 30 feet<br>closer. At the start of each of your turns, if it has not collided with a creature or object, it moves<br>30 feet closer to the target. On impact with anything, it deals 3d10 lightning damage. Seeker<br>Bolt's damage is reduced to 1d10 if it hits a creature within 30 feet.<br>A creature can make a ranged attack targeting the bolt to destroy it. The bolt has AC 16 and<br>discharges on impact with any ranged projectile, destroying the bolt.",
     "empower": "At the start of your next turn, the bolt flies 120 feet towards the target."
+  },
+  {
+    "name": "Disjunct",
+    "tier": 1,
+    "tags": [
+      "Conjuration",
+      "Space"
+    ],
+    "cost": "1 AP",
+    "range": "15 feet",
+    "duration": "Instantaneous",
+    "desc": "You teleport to target location within range. Any creature in that space is teleported to your former location.",
+    "empower": ""
   },
   {
     "name": "Envenomed Dart",
@@ -606,6 +646,20 @@ const spellDatabase = [
     "empower": "Initial damage increased to 3d4. Additional damage increased to 2d6."
   },
   {
+    "name": "Lightning Tether",
+    "tier": 1,
+    "tags": [
+      "Evocation",
+      "Lightning",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "30 feet",
+    "duration": "1 minute",
+    "desc": "You tether yourself to a target creature with a stream of electricity six inches wide. The tether has a maximum length of 60 feet, and moving farther than 60 feet from your target ends the spell.<br><br>When you move, the tether moves with you. Any creature that touches the tether or starts their turn inside the tether's area takes 1d8 lightning damage. A creature can only take this damage once between each of your turns.",
+    "empower": "Tether maximum range increased to 120 feet."
+  },
+  {
     "name": "Outburst",
     "tier": 1,
     "tags": [
@@ -644,6 +698,34 @@ const spellDatabase = [
     "duration": "1 minute",
     "desc": "Conjure a snake of translucent acid that is launched at a target within range. They must make a<br>Dexterity (save?), taking 2d6 acid damage on a failed save, or half as much on a successful<br>one.<br>At the start of each of your turns while the spell is active you can spend 1 AP to launch the<br>snake at another target.",
     "empower": ""
+  },
+  {
+    "name": "Minor Nightmare",
+    "tier": 1,
+    "tags": [
+      "Illusion",
+      "Summoning",
+      "Unholy",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "10 feet",
+    "duration": "1 minute",
+    "desc": "You conjure the image of a minor nightmare to appear before you in an empty space within range. When you cast this spell, and for 1 AP once on each of your turns, you can select a creature within 60 feet that can see the nightmare. The creature must succeed on an Intuition saving throw or be frightened of the nightmare until it can no longer see it, or you choose a new target.",
+    "empower": ""
+  },
+  {
+    "name": "Clay Coffin",
+    "tier": 1,
+    "tags": [
+      "Transmutation",
+      "Earth"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "The earth rises up to entrap a target creature within range that you can see. They must make a Dexterity saving throw or be encased in earth, unable to move or take actions until the encasing earth is destroyed.<br><br>The earth casing has 20 hit points and AC 10. It can be destroyed by other creatures attacking it, and all damage that creature would take is redirected to the casing. A trapped creature can make a Strength saving throw at the end of each of its turns. On a success, they instantly break free.",
+    "empower": "The earth casing has resistance to physical damage."
   },
   {
     "name": "Challenger's Charge",
@@ -686,6 +768,19 @@ const spellDatabase = [
     "empower": "Damage increased to 3d6. A successful saving throw deals half damage."
   },
   {
+    "name": "Rock Fling",
+    "tier": 1,
+    "tags": [
+      "Conjuration",
+      "Earth"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "You conjure and then fling a rock of 10 pounds at a target creature within range. It must succeed on a Dexterity saving throw or take 4d6 bludgeoning damage. If the creature is Medium size or smaller, they are also knocked prone.<br><br>If you are adjacent to a rock or similar earth object that weighs between 10 to 20 pounds, you can instead throw that object with this spell for 1 AP.",
+    "empower": "Range increased to 300 feet. Creatures have advantage on their saving throw if you are targeting a creature farther than 90 feet."
+  },
+  {
     "name": "Heat Shock",
     "tier": 1,
     "tags": [
@@ -715,6 +810,21 @@ const spellDatabase = [
     "empower": "You know the location of bleeding creatures within the area and can attack them even if you can't see them."
   },
   {
+    "name": "Shadowblind",
+    "tier": 1,
+    "tags": [
+      "Enchantment",
+      "Shadow",
+      "Silent",
+      "Still"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "10 minutes",
+    "desc": "Target creature must succeed on an Intuition saving throw or be struck shadowblind, seeing everything as shifting shadows with no color. They can't visually discern between different creatures beyond shape and silhouette, and fail any ability check that would require precise identification.",
+    "empower": "The spell can target up to three creatures within range."
+  },
+  {
     "name": "Lashing Vines",
     "tier": 1,
     "tags": [
@@ -740,6 +850,19 @@ const spellDatabase = [
     "duration": "Instantaneous",
     "desc": "A ghostly beam of dark magic extends from your palm to a creature you can sense, passing through all other objects and creatures. The target creature must succeed on a Constitution saving throw or take 3d6 unholy damage. A creature reduced to 0 hit points from this spell has their soul burned out of their body, leaving behind a body perfect for future use. Casting a Necromancy spell on such a body refunds half the MP cost used for the spell.",
     "empower": "Damage increases to 4d6. A creature that succeeds on the saving throw takes half damage."
+  },
+  {
+    "name": "Storm Spear",
+    "tier": 1,
+    "tags": [
+      "Evocation",
+      "Lightning"
+    ],
+    "cost": "2 AP",
+    "range": "120 feet",
+    "duration": "1 minute",
+    "desc": "You hurl a spear of lightning at a target creature within range that you can see, who must make a Dexterity saving throw or take 1d10 lightning damage.<br><br>For the duration of the spell, you can throw a second spear for 2 AP, and a third spear for 2 AP. The second spear deals 2d10 lightning damage on a failed saving throw, and the third spear deals 3d10 lightning damage on a failed saving throw. The spell ends after throwing a third spear.",
+    "empower": "A successful saving throw deals half damage."
   },
   {
     "name": "Carried Burden",
@@ -820,6 +943,20 @@ const spellDatabase = [
     "range": "60 feet",
     "duration": "1 minute",
     "desc": "Summons a small spirit of pure water to assist you. Choose a creature in range. The creature is protected by a thin shimmering veil. They gain a swimming speed equal to their walking speed, and have advantage on saving throws made against any psionic or sound based spell or effect.",
+    "empower": ""
+  },
+  {
+    "name": "Sudden Connection",
+    "tier": 1,
+    "tags": [
+      "Enchantment",
+      "Fey",
+      "Lightning"
+    ],
+    "cost": "2 AP",
+    "range": "Touch",
+    "duration": "8 hours",
+    "desc": "As you touch the target creature, it must succeed on an Intuition saving throw. On a failure, it becomes charmed by you for the duration. The target abruptly sees you as a friend, forgetting any prior misgivings it may have had towards you. When the spell ends, they keep this view of you.<br><br>The spell fails if you have damaged the creature within the past week, and ends immediately if the target takes damage. Creatures you are currently fighting automatically succeed on their saving throw. A creature that succeeds on their saving throw knows you tried to use magic to influence it.",
     "empower": ""
   },
   {
@@ -1002,6 +1139,19 @@ const spellDatabase = [
     "duration": "Instantaneous",
     "desc": "A creature at 0 hit points or a creature you are currently controlling with a Necromancy spell is struck with a jolt of electricity, and immediately takes one non-spell action that costs 2 AP or less. It has disadvantage on all rolls, and its targets have advantage on all required rolls.<br><br>A creature can only be targeted once per turn.",
     "empower": ""
+  },
+  {
+    "name": "Scourge",
+    "tier": 1,
+    "tags": [
+      "Evocation",
+      "Unholy"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "Instantaneous",
+    "desc": "A crackling blast of dark magic rushes from your chest towards a target creature within range that you can see. It must make a Dexterity saving throw or take 2d10 unholy damage. Creatures within 5 feet of the target take 1d10 unholy damage if the target fails their saving throw.",
+    "empower": "Increases secondary damage range to 10 feet. A successful saving throw deals half damage."
   },
   {
     "name": "Explosive Aegis",
@@ -1190,6 +1340,22 @@ const spellDatabase = [
     "duration": "Instantaneous",
     "desc": "You issue forth an accusation laced with your conviction. Up to two creatures within range must make a Willpower saving throw or take 2d6 radiant damage. Creatures that succeed take half damage.",
     "empower": "Damage increased to 3d6."
+  },
+  {
+    "name": "Amplify Gravity",
+    "tier": 1,
+    "tags": [
+      "Transmutation",
+      "Earth",
+      "Space",
+      "Concentration",
+      "Sign"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "You amplify the gravity affecting a 60 foot radius sphere centered on a point within range. Creatures that are inside the area can't move as a response to actions, can't take the Dash action, and fall 30 feet at the end of their turns if they are flying.<br><br>While you are inside the area, your Earth spells cost 1 less AP to cast, to a minimum of 1.<br><br>The spell ends if you leave the area.",
+    "empower": ""
   },
   {
     "name": "Tear the Veil",
