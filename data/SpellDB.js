@@ -1187,6 +1187,21 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Scarlet String",
+    "author": "Levi",
+    "tier": 1,
+    "tags": [
+      "Divination",
+      "Necromancy",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "1 mile",
+    "duration": "1 hour",
+    "desc": "Requires a drop of blood that was taken from the target within the last 24 hours.<br><br>You form a connection using a sample of blood to the original creature. For the duration, only visible to you is a transparent red thread that connects between the blood sample and the target, if they are in range.<br><br>If the target is dead and their soul is still within range, or the target has also cast Scarlet String using your blood and is within range, you can sense their mind, and can telepathically communicate. Either side may unilaterally cut off this connection at any time.",
+    "empower": "When you empower this spell, by offering a drop of your own blood, you may grant a willing creature within 30 feet of you the effects of this spell targeting yourself. (This uses the other creature's concentration)."
+  },
+  {
     "name": "Lull",
     "tier": 1,
     "tags": [
@@ -1268,6 +1283,21 @@ const spellDatabase = [
     "duration": "Instantaneous",
     "desc": "A creature at 0 hit points or a creature you are currently controlling with a Necromancy spell is struck with a jolt of electricity, and immediately takes one non-spell action that costs 2 AP or less. It has disadvantage on all rolls, and its targets have advantage on all required rolls.<br><br>A creature can only be targeted once per turn.",
     "empower": ""
+  },
+  {
+    "name": "Defenestrate",
+    "author": "Levi",
+    "tier": 1,
+    "tags": [
+      "Conjuration",
+      "Physical",
+      "Space"
+    ],
+    "cost": "2 AP",
+    "range": "Special",
+    "duration": "Instantaneous",
+    "desc": "As part of casting this spell, you make a proficient melee attack with your spellcasting modifier against a medium or smaller creature in your reach which has an open space behind them which can be obstructed by no more than 1 foot of solid material.<br><br>On a hit a magical portal opens behind the creature with a thin glass-like barrier on it, which you fling the creature through. The creature is shoved 5 feet away from you, taking 4d6 force damage from crashing through the barrier, and the creature always lands prone from the shock of passing through through shattering barrier. The portal then promptly closes behind them.<br><br>If for some reasons unknown the target is willing to be thrown through the portal, you may choose to deal  no damage to the target and not force them to land prone as the barrier shatters harmlessly.",
+    "empower": "Spacetime warps, you no longer need an open space behind your target, and may select the target destination of the target creature to be any open space you can see within 30 feet of you."
   },
   {
     "name": "Greetings of Gravity",
@@ -1408,6 +1438,22 @@ const spellDatabase = [
     "empower": "Treat the spell as one tier higher."
   },
   {
+    "name": "Shadowy Grasp",
+    "author": "Levi",
+    "tier": 1,
+    "tags": [
+      "Conjuration",
+      "Physical",
+      "Shadow",
+      "Silent"
+    ],
+    "cost": "1 AP",
+    "range": "Varies",
+    "duration": "1 minute",
+    "desc": "You manifest your shadow into the world as a phantasmal appendage of some sort. It can interact with objects as well as you can with your own hands or other limbs, but can lift no more than 1 pound.<br><br>When you first cast this spell and while this spell is active, once per turn you may use 1 AP to have the shadow attack, making an attack roll with your spellcasting modifier. On a hit the shadow deals 1d4 force damage.<br><br>The base reach of the shadow is 30 feet in bright light, 60 feet in dim light, and 120 feet in darkness.",
+    "empower": "Strengthen the shadow's corporeal form, doubling its reach and raising its damage to 1d6."
+  },
+  {
     "name": "Mindburst",
     "tier": 1,
     "tags": [
@@ -1514,6 +1560,21 @@ const spellDatabase = [
     "range": "60 feet",
     "duration": "1 minute",
     "desc": "You create gentle winds at a target point within range that extends out in a 30 foot long, 5 foot wide line, with the winds blowing in one direction you choose. When a creature you choose moves within the line in that same direction, all their movement while within the line only costs 5 feet.",
+    "empower": ""
+  },
+  {
+    "name": "Telltale",
+    "author": "Levi",
+    "tier": 1,
+    "tags": [
+      "Enchantment",
+      "Psychic",
+      "Spirit"
+    ],
+    "cost": "1 AP",
+    "range": "30 feet",
+    "duration": "1 minute",
+    "desc": "A target creature makes a Willpower saving throw. On a failed save, for the next minute that creature freely speaks every thought they have without noticing they are thinking out loud. These thoughts are in the primary language of the affected creature. If the creature cannot speak any language this spell fails.<br><br>If an affected creature notices at any point that another creature nearby has heard one of their thoughts, they will believe that they misspoke, and this spell immediately ends. A creature that succeeds on the initial Willpower save, or for whom this spell has ended, cannot be affected again for 1 day.",
     "empower": ""
   },
   {
@@ -1694,6 +1755,51 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Uri's Little Helper",
+    "author": "Uri de Vries",
+    "tier": 2,
+    "tags": [
+      "Enchantment",
+      "Control",
+      "Familiar"
+    ],
+    "cost": "3 AP",
+    "range": "touch",
+    "duration": "until dispelled",
+    "desc": "You touch a creature, putting it in a state of blind servitude. The creature must be no bigger than a Small creature, but can be either a Beast, Fiend, Aberration, Construct or Monstrosity, and may not be of level (?) or higher. If the creature is already under control of something else, its controller must make a spellcasting check to remain control of it.<br><br>For as long the creature is yours to control, you can command it to move or use any of its abilities. It understands your words even if it could not understand your language before, and shares a telepathic bond with you to communicate.<br><br>For another 3 AP, you may amplify your control of the creature, transferring your consciousness to your familiar. You are able to sense and speak as though you were your own. For as long you do, your original body remains unconscious in a state of trance. Using an action again relinquishes the consciousness from the familiar back to you.<br><br>The spell ends when you cast it again on a new creature, or if the familiar you have dies.",
+    "empower": ""
+  },
+  {
+    "name": "Hailstrom",
+    "author": "Levi",
+    "tier": 2,
+    "tags": [
+      "Conjuration",
+      "Water",
+      "Cold"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous / 1 turn",
+    "desc": "A violent vortex of small ice particles swirls in a 10-foot radius dome centered on target point. All creatures inside when this occurs must make a Constitution saving throw, taking 2d8 cold damage on a failed save or half as much on a success.<br><br>A cloud of super conductive frozen gases lingers in the area until the start of your next turn, acting as difficult terrain for creatures that aren't immune or resistant to cold damage. At the start of your next turn, the gasses collapse back into another vortex and repeat this spell's damage to all creatures inside, then dissipate. <br><br>When at least one creature in the cloud takes lightning damage from an attack or effect while this cloud remains, the cloud immediately repeats this spell's damage to all other creatures in the cloud, and all creatures that did not take lightning damage from the triggering attack or effect also receive half as much lightning damage.",
+    "empower": "Remove the AP cost of this spell."
+  },
+  {
+    "name": "Uri's Oasis",
+    "author": "Uri de Vries",
+    "tier": 2,
+    "tags": [
+      "Conjuration",
+      "Water",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "120ft",
+    "duration": "8 hours.",
+    "desc": "Point at a location within range. At the chosen point, a deposit of water emerges appearing in anything of your choice, or the following examples; A geyser emerges erupts from the ground, a pond fills up, or a river or waterfall flows from a higher point to the chosen area.<br><br>So long you are within range, the oasis keeps replenishing itself and can create water up to 1.000 gallons at a time, before excess starts to dissipate. The water is always considered clean and pure. Water consumed this way or stored in containers does not dissipate, even if the spell ends or it moves out of range.",
+    "empower": ""
+  },
+  {
     "name": "Gloom Crush",
     "tier": 2,
     "tags": [
@@ -1764,6 +1870,37 @@ const spellDatabase = [
     "empower": "Line length increased to 25 feet."
   },
   {
+    "name": "Valthrian's Pack Bond",
+    "author": "BFHNV",
+    "tier": 2,
+    "tags": [
+      "Enchantment",
+      "Psychic",
+      "Beast",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "Self (30 foot radius)",
+    "duration": "1 minute",
+    "desc": "You form a psychic bond of instinct between yourself and any number of creatures within range.  Each round, the first time an affected creature spends AP as a response, all other affected creatures gain 1 AP that can only be used for responses.",
+    "empower": "Affected creatures gain 2 AP instead."
+  },
+  {
+    "name": "Don't Trip Twice With The Same Stone",
+    "author": "Argavyon",
+    "tier": 2,
+    "tags": [
+      "Divination",
+      "Earth",
+      "Physical"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "1 hour",
+    "desc": "As a reaction to falling prone or as an action during your turn, you fall prone and gather the strands of fate to avoid falling again.<br>While this lasts and you are within 120 feet of the casting location, you cannot be knocked prone.",
+    "empower": ""
+  },
+  {
     "name": "Phoenix Wave",
     "tier": 2,
     "tags": [
@@ -1821,6 +1958,21 @@ const spellDatabase = [
     "empower": "Deals 2d10 psychic damage on a failed saving throw. Incorporeal creatures take 3d10 damage instead."
   },
   {
+    "name": "Teleport Projectile",
+    "author": "BFHNV",
+    "tier": 2,
+    "tags": [
+      "Conjuration",
+      "Physical",
+      "Space"
+    ],
+    "cost": "1 AP",
+    "range": "30 feet",
+    "duration": "Instantaneous",
+    "desc": "As a response to a ranged attack within range missing or piercing through its target, you create a small portal in its path that redirects it.  Choose a direction and a space within range for the projectile to emerge from.  If you attempt to redirect the projectile to hit a creature, make an attack roll based on your spellcasting stat.  Damage is rolled as if the original attacker had hit.",
+    "empower": "Removes the AP cost of this spell."
+  },
+  {
     "name": "Shockwave",
     "tier": 2,
     "tags": [
@@ -1859,6 +2011,19 @@ const spellDatabase = [
     "range": "Sight",
     "duration": "Instantaneous",
     "desc": "As a response to a creature you can see damaging you, you gesture and set the attacker ablaze, dealing 2d6 fire damage, plus 1d6 fire damage for each tier higher than 2. If cast as a tier 5 spell or higher,  the target must make a Dexterity saving throw or take an additional 3d6 fire damage.",
+    "empower": ""
+  },
+  {
+    "name": "Ingest",
+    "author": "Uri de Vries",
+    "tier": 2,
+    "tags": [
+      "Enchantment"
+    ],
+    "cost": "1 AP",
+    "range": "5ft / touch",
+    "duration": "1 hour",
+    "desc": "You usher a word in a whisper, which may only be a noun or a name. As the whisper is told, the words manifest as an illusory leech that enters another creature's ear of your choice. While the leech is in place, you'll know every phrase in which the word is said or written, or heard or seen by the host, so long you're still on the same plane.<br><br>For as long the leech is in place, you may spend an additional 2 AP. If you do, you may have the leech try to delve into it's host's brain. It must make an intelligence saving throw. On a fail, you may either have the host spill all its knowledge about the chosen word, or forget everything they know about it, but not both. On a fail or success, the spell then ends.",
     "empower": ""
   },
   {
@@ -1997,6 +2162,21 @@ const spellDatabase = [
     "empower": "Fire an additional ray at another target, or fire a second ray at the same target to impose disadvantage on the initial saving throw."
   },
   {
+    "name": "Greymane's Stonefist",
+    "author": "Argavyon ",
+    "tier": 2,
+    "tags": [
+      "Transmutation",
+      "Earth",
+      "Physical"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "During your turn or as a reaction to being dealt physical damage, you cover one of your limbs (or, if you lack limbs, create one that can only be used for a single attack) with stone. Your next unarmed attack will deal 2d6 bonus bludgeoning damage and end this spell.<br>You may do an unarmed attack once as part of casting this spell.<br>While this spell lasts, you gain resistance to your choice of slashing, piercing or bludgeoning damage.",
+    "empower": "You cast two of your limbs with stone, with your next two unarmed strikes dealing bonus damage. The resistance from this spell lasts for the full 1 minute duration."
+  },
+  {
     "name": "Hex of Exhaustion",
     "tier": 2,
     "tags": [
@@ -2079,6 +2259,21 @@ const spellDatabase = [
     "duration": "1 minute",
     "desc": "You throw a magically created gauntlet at a target creature that can see you, challenging it to a duel. It must make a Willpower saving throw. On a failure, both you and your target are locked into a duel with each other. Any attack or spell from either duelist that does not target or include either duelist automatically fails.<br><br>You must make a Willpower saving throw to end the effect early. Otherwise, the spell only ends when one creature is reduced to 0 or fewer hit points.",
     "empower": "You have resistance to all damage taken outside of the duel."
+  },
+  {
+    "name": "Dragon's Roar",
+    "author": "Soreile",
+    "tier": 2,
+    "tags": [
+      "Illusion",
+      "Draconic",
+      "Psychic"
+    ],
+    "cost": "2 AP",
+    "range": "30 foot radius",
+    "duration": "Instant",
+    "desc": "You create a grand illusion of an ancient dragon for an instant, and it looses a mighty roar that rattles the minds of those who hear it. All targets in range must make an Intuition saving throw. On a failure, on their next turn they are frightened.",
+    "empower": "All targets also take 2d6 psychic damage, halved on a successful save."
   },
   {
     "name": "Seek History",
@@ -2181,6 +2376,37 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Will of the Wisps",
+    "author": "Levi",
+    "tier": 2,
+    "tags": [
+      "Summoning",
+      "Fae",
+      "Necromancy"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 hour",
+    "desc": "You summon several mischievous spirits that possess the body of a recently deceased creature. For the duration, the recently deceased creature is reanimated under the control of the spirits inhabiting the body. You have no control over the reanimated creature, the spirits have full access to the memories and skills of the deceased creature and will act as they wish, able to act and speak as the creature did in life, but cannot cast spells. As you cast this spell, you may give an instruction or ask a question that is within 10 or less words. The spirits will adhere to your instruction to the best of their interpretation, or answer your question truthfully.",
+    "empower": "You convince the impatient and fickle spirits to raise your word limit to 20."
+  },
+  {
+    "name": "Rasping Call of the Undead King",
+    "author": "Zombehking",
+    "tier": 2,
+    "tags": [
+      "Necromancy",
+      "Unholy",
+      "Cold",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "60' long 5' wide line",
+    "duration": "1 minute",
+    "desc": "Conjure the fetid breath from the First Zombie, spreading it around you indiscriminately. In a line from you, creatures must make a Constitution saving throw. On a failure, they take 4d8 cold damage, and for the duration of the concentration take an additional 2d8 cold damage from undead and spells with the Necromancy tag. On a success, they take half damage and no other effect.",
+    "empower": "Creatures that fail the saving throw are additionally frightened of you."
+  },
+  {
     "name": "Windsense",
     "tier": 2,
     "tags": [
@@ -2193,6 +2419,21 @@ const spellDatabase = [
     "duration": "1 hour",
     "desc": "You become acutely aware of all shifts in the wind. You gain the following benefits: <br>>You have advantage on rolls to detect movement.<br>>You impose disadvantage on creatures making ranged attacks against you from more than 60 feet away.<br>>You have advantage on saving throws against Wind spells, and suffer no effect from them on a successful saving throw.",
     "empower": ""
+  },
+  {
+    "name": "Source Warp",
+    "author": "Levi",
+    "tier": 2,
+    "tags": [
+      "Transmutation",
+      "Water",
+      "Poison"
+    ],
+    "cost": "2 AP",
+    "range": "Touch",
+    "duration": "Instantaneous / 1 hour",
+    "desc": "You touch a body of water of no more than 10 cubic feet and alter its properties. You may choose to either purify the water, completely removing any poisons, disease, and magical effects in it, or corrupt the water, fundamentally changing its properties. <br><br>If you choose to corrupt the water, you must have another liquid on hand to use as reference. This spell consumes the liquid to transmute a volume of water up to 10x the amount of liquid consumed. For the duration, the affected water has all the non-magical properties of the reference liquid, though on inspection it remains normal water.",
+    "empower": "Corrupt effect lasts 1 day instead."
   },
   {
     "name": "Silver Screen",
@@ -2279,6 +2520,22 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Strength of the Land",
+    "author": "Levi",
+    "tier": 2,
+    "tags": [
+      "Abjuration",
+      "Physical",
+      "Earth",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "The energy of the earth beneath your feet flows through you and stabilizes you. For the duration, as long as you are on the ground, you are proficient in all Strength rolls and you have advantage on any saving throw against an effect that would forcibly move you or knock you prone.<br><br>If you have the Earth tag, this spell does not require concentration.<br><br>If you have the Water tag, you incorporate some fluidity to your stubbornness, and can choose to automatically succeed on saving throws against effects that would forcibly move you or knock you prone.",
+    "empower": ""
+  },
+  {
     "name": "Vanish",
     "tier": 2,
     "tags": [
@@ -2317,6 +2574,21 @@ const spellDatabase = [
     "duration": "1 minute",
     "desc": "You gain the ability to fire deadly spheres of draconic magic. When you cast this spell, choose a damage type other than slashing, piercing, or bludgeoning. You can spend up to 3 AP during your turns to make a ranged attack using your spellcasting modifier. On hit, the attack deals 1d8 damage of that type in a 15 foot long, 5 foot wide line extending through the target per AP spent.",
     "empower": "Base damage increased by 1d8."
+  },
+  {
+    "name": "Stuttershock",
+    "author": "BFHNV",
+    "tier": 2,
+    "tags": [
+      "Evocation",
+      "Lightning",
+      "Psychic"
+    ],
+    "cost": "2 AP",
+    "range": "30 feet",
+    "duration": "Instantaneous",
+    "desc": "As a response to a creature making an attack, you send a large shock through their nervous system, disrupting their movement.  The creature takes 2d6 lightning damage and has disadvantage on attack rolls for the rest of their turn.",
+    "empower": "On the creature's next turn, you can spend 1 AP once to repeat the effect."
   },
   {
     "name": "Grove of Warding",
@@ -2402,6 +2674,21 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Kaya's Blazing Star",
+    "author": "Soreile",
+    "tier": 2,
+    "tags": [
+      "Evocation",
+      "Radiant",
+      "Space"
+    ],
+    "cost": "2 AP",
+    "range": "Self",
+    "duration": "Instant",
+    "desc": "You cloak yourself in star-fire and rocket through the air towards a point that you choose. You must have a line of sight to the point (creatures and difficult terrain do not count as obscuring your sight), and the maximum distance to the point is twice your remaining movement speed for the turn. Every creature between yourself and your destination must make a Dexterity saving throw or take 2d6 radiant damage and 1d6 bludgeoning damage. On a success, they only take 1d6 Radiant damage. <br><br>If the target location is occupied, the creature occupying the space must also make a Dexterity throw; if they fail, they take 2d6 radiant damage, 2d6 bludgeoning damage, and are also pushed 5 feet into an adjacent square and knocked prone. On a success, they take 2d6 radiant damage.<br><br>You are moved to the target location, consuming your remaining movement for the turn. This movement does not trigger attacks of opportunity, and ignores difficult terrain.",
+    "empower": "All creatures within a 5 foot radius of the target point must make a Dexterity save or take 2d6 radiant damage, 2d6 bludgeoning damage and be knocked prone, and any creature at the exact target point has disadvantage on their Dexterity save."
+  },
+  {
     "name": "Wisp's Light",
     "tier": 2,
     "tags": [
@@ -2485,6 +2772,22 @@ const spellDatabase = [
     "empower": "The puddle expands to 15 feet."
   },
   {
+    "name": "Bloom Snapdragon",
+    "author": "Zombehking",
+    "tier": 2,
+    "tags": [
+      "Conjuration",
+      "Plant",
+      "Draconic",
+      "Summoning"
+    ],
+    "cost": "2 AP",
+    "range": "30'",
+    "duration": "1 minute",
+    "desc": "Create a 5' tall and wide Snapdragon bush at a target point within range. It's dragon-like flowers bite and snarl at anything that comes within 5' of the bush. Creatures in the area must make a Willpower saving throw against your Spell Save DC, taking 2d8 piercing damage and becoming Frightened of the bush for the duration. They can repeat the saving throw at the end of each of their turns, ending the effect on a success.<br><br>Creatures who are shoved or moved into the bush take double damage without a saving throw.",
+    "empower": "The bush is 10' wide and tall instead. The damage is halved on a successful save instead of negated."
+  },
+  {
     "name": "Projection",
     "tier": 2,
     "tags": [
@@ -2551,6 +2854,21 @@ const spellDatabase = [
     "duration": "Instantaneous",
     "desc": "As a response to being targeted by an attack or spell, you shield yourself with a barrier of sharp, poisonous quills. You have advantage on all saving throws and add your spellcasting stat to your AC until the start of your next turn. This can cause incoming attacks to miss.<br><br>If a creature was attempting to attack you in melee and missed, they must make a Constitution saving throw. On a failure, they take 6d4 poison damage and become poisoned for 1 minute. On a success, they take half damage and are not poisoned. They can repeat the saving throw at the end of each of their turns to end the poisoned effect early.",
     "empower": "AP cost reduced by 1."
+  },
+  {
+    "name": "Maxwell's Convulsion",
+    "author": "Levi",
+    "tier": 3,
+    "tags": [
+      "Transmutation",
+      "Cold",
+      "Fire"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Select two 20-foot cubes in range. These areas must be entirely within the cast range of this spell, cannot overlap, and must touch each other at at least one point, edge, or side. Heat energy is magically sucked out of one area and forcibly injected into the other area.<br><br>In the cold area, all creatures inside must make a Constitution saving throw, taking 4d8 cold damage on failed save or half as much on a success. All exposed water immediately freezes and fires are put out as temperatures drastically drop.<br><br>In the hot area, all creatures inside must make a Constitution saving throw, taking 4d8 fire damage on failed save or half as much on a success. All exposed water immediately vaporizes and most dry flammable materials spontaneously ignite as temperatures sharply rise.<br><br>If the caster has the fire tag, you may now change the size of the hot area to a 15-foot cube or 25-foot cube, and creatures inside take 5d8 damage instead.<br><br>If the caster has the cold tag, you may now change the size of the cold area to a 15-foot cube or 25-foot cube, and creatures inside take 5d8 damage instead.",
+    "empower": "The maximum cast range is increased to 120 feet, and the areas no longer need to touch each other."
   },
   {
     "name": "Equinox Clash",
@@ -2638,6 +2956,21 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Plasma Chain",
+    "author": "Levi",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Fire",
+      "Lightning"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet (Special)",
+    "duration": "1 minute",
+    "desc": "You launch a stream of pure energy at a target creature in range. Upon reaching that creature, the energy can then jump through any number of other creatures of your choice, provided the total distance covered by the energy including the initial distance to reach the primary target is less than or equal to 60 feet.<br><br>All creatures the energy jumps through must make a Constitution saving throw, taking 2d6 fire damage and 2d6 lightning damage on a failed save, or half as much on a success.<br><br>All affected creatures become charged with free ions for up to 1 minute. The next time a charged creature receives fire or lightning damage, that damage increases by 2d6 of the other type, then this effect ends on them.<br><br>If the caster has the fire tag, fire damage dealt by this spell and its lingering effect changes from d6s to d8s.<br>If the caster has the lightning tag, lightning damage dealt by this spell and its lingering effect changes from d6s to d8s.",
+    "empower": "Range increases to 90 feet."
+  },
+  {
     "name": "Vineghast Calling",
     "tier": 3,
     "tags": [
@@ -2651,6 +2984,20 @@ const spellDatabase = [
     "range": "30 feet",
     "duration": "1 hour",
     "desc": "You call upon the vengeful spirits of the dead to give life to a vineghast, a fearsome creature bearing multiple weapons. It takes its turn after yours, and while you concentrate on this spell, it obeys your mental commands.<br><br>If you stop concentrating on this spell, the vineghast breaks free from your control, and spends all its turns moving to and attacking the nearest creature for the remaining duration of the spell.",
+    "empower": ""
+  },
+  {
+    "name": "Impulse",
+    "author": "Uri de Vries",
+    "tier": 3,
+    "tags": [
+      "Divination",
+      "Time"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "1 minute (Concentration?)",
+    "desc": "State an action, or course of (possible-) actions made by you. If any of the actions made requires checks, attacks or saving throws to be made, you or that creature relevant to the roll makes those rolls.<br><br>You gain insight in what the possible outcome would be, without that either of the events has happened yet or that other costs have been made yet to perform them. The time you can peer ahead can be no larger than 6 (or however long one 'round' is) seconds.<br><br>If or when the forecasted events are to your approval, you may let them enroll as forecast, using all results, before the spell ends. Otherwise, you may discard the forecast and continue the duration of this spell.",
     "empower": ""
   },
   {
@@ -2692,6 +3039,20 @@ const spellDatabase = [
     "range": "Self (30 foot radius)",
     "duration": "1 minute",
     "desc": "A brilliant constellation forms 200 feet above you, creating a cylinder that covers a 30 foot radius centered on you. This area has the following effects: <br>- When a creature is healed, you can choose to add your spellcasting stat to the healing received. <br>- Shadow and Unholy spells in the area are dispelled. Creatures inside can't be targeted or affected by Shadow or Unholy spells, and a creature affected by them that enters the area is freed of their effects.<br>- Your Holy spells cost 1 less AP, to a minimum of 1 AP, while you are in the area.",
+    "empower": ""
+  },
+  {
+    "name": "Neutralization",
+    "author": "Zombehking",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Acid"
+    ],
+    "cost": "2 AP",
+    "range": "30'",
+    "duration": "Instantaneous",
+    "desc": "You wash a creature with a mild acid and base, neutralizing everything about them. The target creature loses all persistent effects (not permanent effects), whether they are good or bad. An unwilling target can make a Dexterity saving throw to avoid the effect.",
     "empower": ""
   },
   {
@@ -2968,6 +3329,20 @@ const spellDatabase = [
     "range": "Self (60 foot radius) ",
     "duration": "7 days",
     "desc": "You pull in all the poison from a 60 foot radius around you, concentrating it into one vial. Every creature in range is cured of the poisoned condition, and all Poison tag spells in the area immediately end.<br><br>The created vial is lethally poisonous. If applied to a weapon or piece of ammunition, it deals an additional 2d6 poison damage the next time it deals damage. The damage increases by 1d6 for each poisoned creature and 3d6 for each Poison tag spell that was absorbed in the creation. If the vial's poison deals at least 5d6 damage, creatures damaged by it must make a Constitution saving throw or be paralyzed until the start of the attacker's next turn.",
+    "empower": ""
+  },
+  {
+    "name": "Catalog",
+    "author": "Uri de Vries",
+    "tier": 3,
+    "tags": [
+      "Divination",
+      "Knowledge"
+    ],
+    "cost": "3 AP",
+    "range": "Self",
+    "duration": "1 Hour",
+    "desc": "Choose a spell (other than this one) that you currently know and another spell you don't know. You forget the chosen spell, and instead gain knowledge of the new spell until the spell ends. The chosen spells must be of a spellbook fit for your class.",
     "empower": ""
   },
   {
