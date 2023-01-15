@@ -33,6 +33,7 @@ spellParse.onsubmit = function (event) {
     
     const spell_regex_1 = [
         String.raw`((\*\*)?(?<name>.+?)(\*\*)?\n)`,
+        String.raw`(Author: (?<author>.+)\n)?`,
         String.raw`((\*)?Tier (?<tier>\d+)(\*)?\n)`,
         String.raw`(Tags: (?<tags>.+)\n)`,
         String.raw`(Cost: (?<cost>.+)\n)`,
@@ -43,6 +44,7 @@ spellParse.onsubmit = function (event) {
     ];
     const spell_regex_2 = [
         String.raw`((\*\*)?(?<name>.+?)(\*\*)?\n)`,
+        String.raw`(Author: (?<author>.+)\n)?`,
         String.raw`((\*)?Tier (?<tier>\d+)(\*)?\n)`,
         String.raw`(Tags: (?<tags>.+)\n)`,
         String.raw`(Cost: (?<cost>.+)\n)`,
@@ -57,10 +59,11 @@ spellParse.onsubmit = function (event) {
     
     if (match !== null) {
         const spellObject = match.groups;
+        spellObject.author = spellObject.author ?? '';
         spellObject.tier = parseInt(spellObject.tier);
         spellObject.tags = spellObject.tags.split(',').map(str => str.trim());
-        spellObject.duration = spellObject.duration ?? 'Instantaneous';
         spellObject.range = spellObject.range ?? 'Self';
+        spellObject.duration = spellObject.duration ?? 'Instantaneous';
         spellObject.desc = spellObject.desc.trim();
         spellObject.desc = spellObject.desc.replaceAll('\n', '<br>');
         spellObject.empower = spellObject.empower ?? '';
