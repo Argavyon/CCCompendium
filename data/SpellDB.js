@@ -1798,6 +1798,22 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Madden Beasts",
+    "author": "",
+    "tier": 2,
+    "tags": [
+      "Enchantment",
+      "Disease",
+      "Beast",
+      "Psychic"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet ",
+    "duration": "1 hour",
+    "desc": "All beasts in a 15 foot radius centered on target point you can see must succeed on an Intuition saving throw or be driven berserk. They must attack the nearest creature they can see, and they must move to the nearest creature with all available movement if they can't currently attack a creature.<br><br>A beast that ends its turn without attacking takes 2d6 psychic damage.<br><br>Affected beasts can attempt the saving throw again upon reducing a creature to 0 or fewer hit points or taking psychic damage. On a success, the spell ends.",
+    "empower": ""
+  },
+  {
     "name": "Gloom Crush",
     "tier": 2,
     "tags": [
@@ -1897,6 +1913,23 @@ const spellDatabase = [
     "duration": "1 hour",
     "desc": "As a reaction to falling prone or as an action during your turn, you fall prone and gather the strands of fate to avoid falling again.<br>While this lasts and you are within 120 feet of the casting location, you cannot be knocked prone.",
     "empower": ""
+  },
+  {
+    "name": "Compromise Existence",
+    "author": "",
+    "tier": 2,
+    "tags": [
+      "Abjuration",
+      "Arcane",
+      "Disease",
+      "Eldritch",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "Target creature must make a Willpower saving throw. On a failure, an otherworldly plague seeps into every part of its being. It loses all resistances and immunities for the duration.<br><br>A creature can repeat the saving throw at the end of each of its turns. On a success, the spell ends early.<br><br>A creature reduced to 0 or fewer hit points while affected by this spell has their body utterly torn apart and returned to the Sea of Possibility.",
+    "empower": "One nullified resistance or immunity of your choice becomes a vulnerability."
   },
   {
     "name": "Phoenix Wave",
@@ -2288,6 +2321,20 @@ const spellDatabase = [
     "duration": "Instantaneous",
     "desc": "You touch an object and learn of the object's creator, when it was created, and where it was created.<br><br>If the object was not created by a creature, the spell will inform you of such. Otherwise, it will give the creator's name and species.",
     "empower": "You also learn the identities of who touched or used this object in the last 24 hours."
+  },
+  {
+    "name": "Plague Boils",
+    "author": "",
+    "tier": 2,
+    "tags": [
+      "Necromancy",
+      "Disease"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Up to 3 creatures within range must succeed on a Constitution saving throw or take 3d10 poison damage as large, pulsing boils emerge from their skin. A creature that succeeds takes half damage and does not have boils emerge.<br><br>At the start of your next turn, the boils explode, and any creature within 10 feet of the target must succeed on a Constitution saving throw or take 2d10 poison damage. A creature that succeeds takes half damage.",
+    "empower": "Damage increased by 1d10 on creation of the boils and explosion of the boils."
   },
   {
     "name": "Target Toxin",
@@ -2685,6 +2732,20 @@ const spellDatabase = [
     "duration": "Instant",
     "desc": "You cloak yourself in star-fire and rocket through the air towards a point that you choose. You must have a line of sight to the point (creatures and difficult terrain do not count as obscuring your sight), and the maximum distance to the point is twice your remaining movement speed for the turn. Every creature between yourself and your destination must make a Dexterity saving throw or take 2d6 radiant damage and 1d6 bludgeoning damage. On a success, they only take 1d6 Radiant damage. <br><br>If the target location is occupied, the creature occupying the space must also make a Dexterity throw; if they fail, they take 2d6 radiant damage, 2d6 bludgeoning damage, and are also pushed 5 feet into an adjacent square and knocked prone. On a success, they take 2d6 radiant damage.<br><br>You are moved to the target location, consuming your remaining movement for the turn. This movement does not trigger attacks of opportunity, and ignores difficult terrain.",
     "empower": "All creatures within a 5 foot radius of the target point must make a Dexterity save or take 2d6 radiant damage, 2d6 bludgeoning damage and be knocked prone, and any creature at the exact target point has disadvantage on their Dexterity save."
+  },
+  {
+    "name": "Disable Sensation",
+    "author": "",
+    "tier": 2,
+    "tags": [
+      "Necromancy",
+      "Disease"
+    ],
+    "cost": "1 AP",
+    "range": "Touch",
+    "duration": "1 minute",
+    "desc": "Target creature loses all feeling of sensation. They have disadvantage on Strength and Dexterity rolls, but automatically succeed on Constitution saving throws. An unwilling creature can make a Constitution saving throw to avoid the effect.",
+    "empower": ""
   },
   {
     "name": "Wisp's Light",
