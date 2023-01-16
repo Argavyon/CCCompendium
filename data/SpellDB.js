@@ -252,8 +252,7 @@ const spellDatabase = [
     "tier": 1,
     "tags": [
       "Conjuration",
-      "Spirit",
-      "Healing"
+      "Spirit"
     ],
     "cost": "1 AP",
     "range": "Self (30 foot radius)",
@@ -1097,8 +1096,7 @@ const spellDatabase = [
     "tags": [
       "Evocation",
       "Fire",
-      "Holy",
-      "Healing"
+      "Holy"
     ],
     "cost": "2 AP",
     "range": "60 feet",
@@ -2381,7 +2379,7 @@ const spellDatabase = [
     "tier": 2,
     "tags": [
       "Summoning",
-      "Fae",
+      "Fey",
       "Necromancy"
     ],
     "cost": "2 AP",
@@ -3234,6 +3232,23 @@ const spellDatabase = [
     "empower": "The damage is increased to 5d6. The target retains a glyph even if they succeed on their Wil save."
   },
   {
+    "name": "Vexatious Pilgrimage",
+    "author": "",
+    "tier": 3,
+    "tags": [
+      "Conjuration",
+      "Spirit",
+      "Poison",
+      "Disease",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "You invite a pilgrimage of malign spirits into the area around you. Now and at the start of each of your turns, up to 3 creatures within range are targeted by a Vexatious Traveler spell.",
+    "empower": "Vexatious Traveler becomes empowered for the duration."
+  },
+  {
     "name": "Dispel Magic",
     "tier": 3,
     "tags": [
@@ -3336,8 +3351,7 @@ const spellDatabase = [
     "author": "Uri de Vries",
     "tier": 3,
     "tags": [
-      "Divination",
-      "Knowledge"
+      "Divination"
     ],
     "cost": "3 AP",
     "range": "Self",
