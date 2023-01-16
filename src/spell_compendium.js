@@ -110,7 +110,7 @@ function main() {
     const tag_list = {};
     const f_tag_list = {};
     const functional_tags = [
-        'Concentration', 'Control', 'Mobility', 'Potent', 'Ritual', 'Sign', 'Silent', 'Support', 'Utility'
+        'Concentration', 'Control', 'Mobility', 'Potent', 'Ritual', 'Sign', 'Silent', 'Still', 'Support', 'Utility'
     ];
     const compendiumLeft = document.querySelector('#compendium_left');
     spellDatabase.forEach(spell => spell.tags.forEach(tag => {
