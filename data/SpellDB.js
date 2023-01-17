@@ -1900,6 +1900,22 @@ const spellDatabase = [
     "empower": "Affected creatures gain 2 AP instead."
   },
   {
+    "name": "Wolfcall",
+    "author": "",
+    "tier": 2,
+    "tags": [
+      "Conjuration",
+      "Beast",
+      "Summoning",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "10 feet",
+    "duration": "8 hours",
+    "desc": "You call two wolves to your side. They obey your mental commands and fight until slain. When the spell ends, they vanish into the wind to wherever they came.<br><br>If the spell ends early, the wolves remain, but no longer obey your commands. They may still be allied to you depending on how you treated them.",
+    "empower": "Summons a third wolf."
+  },
+  {
     "name": "Don't Trip Twice With The Same Stone",
     "author": "Argavyon",
     "tier": 2,
@@ -1945,6 +1961,22 @@ const spellDatabase = [
     "duration": "Instantaneous",
     "desc": "Channeling the healing flames of the phoenix, you loose a wave of fire that radiates out from you in a 30 foot radius sphere. All creatures in range other than you must either make a Constitution saving throw or take 2d6 fire damage, or be healed for 2d6 hit points. You choose whether a creature is damaged or healed.<br><br>Flammable objects in the area burst into brilliant flames that shed light out to 30 feet.",
     "empower": "You are healed for 2d6 hit points. A successful saving throw deals half damage."
+  },
+  {
+    "name": "Feedback Blast",
+    "author": "",
+    "tier": 2,
+    "tags": [
+      "Evocation",
+      "Acid",
+      "Arcane",
+      "Poison"
+    ],
+    "cost": "2 AP",
+    "range": "Self (15 foot cone)",
+    "duration": "Instantaneous",
+    "desc": "Magically charged acid blasts forth in a 15 foot cone from your hands. Creatures in the area must make a Dexterity saving throw or take 8d4 acid damage. Creatures that succeed take half damage.<br><br>If any creature is affected by a spell, the acid seeps into the connection and feeds back into the original caster. The caster of that spell takes 10d4 acid damage and has disadvantage on any saving throw made to maintain concentration.",
+    "empower": "Range increased to 20 foot cone."
   },
   {
     "name": "Wildfire",
@@ -2379,6 +2411,21 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Etched Unveiling",
+    "author": "",
+    "tier": 2,
+    "tags": [
+      "Divination",
+      "Acid",
+      "Ritual"
+    ],
+    "cost": "N/A",
+    "range": "Touch",
+    "duration": "Instantaneous",
+    "desc": "Over the span of one minute, you brush your hand across a surface or object, leaving trace amounts of acid that work their way into the object. After one minute, the acid will have etched the name of all creatures that have touched the object or surface within the past 24 hours.<br><br>If the amount of names exceeds the amount of space on the target, only a blot of acid damage will be shown.",
+    "empower": ""
+  },
+  {
     "name": "Overgrowth",
     "tier": 2,
     "tags": [
@@ -2734,6 +2781,21 @@ const spellDatabase = [
     "empower": "All creatures within a 5 foot radius of the target point must make a Dexterity save or take 2d6 radiant damage, 2d6 bludgeoning damage and be knocked prone, and any creature at the exact target point has disadvantage on their Dexterity save."
   },
   {
+    "name": "Sludgify",
+    "author": "",
+    "tier": 2,
+    "tags": [
+      "Transmutation",
+      "Acid",
+      "Potent"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "1 minute ",
+    "desc": "You transform a 10 foot square, increased by 5 feet per cast tier, into a pool of acid 5 feet deep. Non-magical objects completely contained in the area sink into the acid and are destroyed. The pool is difficult terrain and deals 3d4 acid damage per 5 feet moved within.",
+    "empower": ""
+  },
+  {
     "name": "Disable Sensation",
     "author": "",
     "tier": 2,
@@ -2745,6 +2807,34 @@ const spellDatabase = [
     "range": "Touch",
     "duration": "1 minute",
     "desc": "Target creature loses all feeling of sensation. They have disadvantage on Strength and Dexterity rolls, but automatically succeed on Constitution saving throws. An unwilling creature can make a Constitution saving throw to avoid the effect.",
+    "empower": ""
+  },
+  {
+    "name": "Caustic Burst",
+    "author": "",
+    "tier": 2,
+    "tags": [
+      "Conjuration",
+      "Acid"
+    ],
+    "cost": "1 AP",
+    "range": "Self (5 foot radius) ",
+    "duration": "Instantaneous",
+    "desc": "Acid bursts from your body and deals 2d6 acid damage to all creatures within 5 feet.",
+    "empower": "Range increases to Self (10 foot radius)."
+  },
+  {
+    "name": "Savagery",
+    "author": "",
+    "tier": 2,
+    "tags": [
+      "Enchantment",
+      "Beast"
+    ],
+    "cost": "1-3 AP",
+    "range": "90 feet",
+    "duration": "Instantaneous",
+    "desc": "Target creature immediately makes one melee weapon attack per AP spent on the spell, targeting the last creature it attacked in melee. Each attack additionally deals 1d6 psychic damage to the attacker through overexertion.<br><br>If a beast is targeted, it makes one additional attack.<br><br>An unwilling creature can make an Intuition saving throw to avoid the effect on a success.",
     "empower": ""
   },
   {
