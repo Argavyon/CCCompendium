@@ -7,6 +7,13 @@ function spellCard(spellData, functional_tags) {
 	spellName.className = 'spellname';
 	spellName.colSpan = 2;
 	spellName.textContent = spellData.name;
+    
+    if (spellData.author) {
+        const author = cardBody.appendChild(document.createElement('tr')).appendChild(document.createElement('td'));
+        author.className = 'spelltier';
+        author.colSpan = 2;
+        author.textContent = `by ${spellData.author}`;
+    }
 	
 	const tier = cardBody.appendChild(document.createElement('tr')).appendChild(document.createElement('td'));
 	tier.className = 'spelltier';
