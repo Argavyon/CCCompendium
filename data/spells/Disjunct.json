@@ -1,1 +1,1 @@
-{"name":"Disjunct","tier":1,"tags":["Conjuration","Space"],"cost":"1 AP","range":"15 feet","duration":"Instantaneous","desc":"You teleport to target location within range. Any creature in that space is teleported to your former location.","empower":""}
+{"name": "Disjunct", "tier": 1, "tags": ["Conjuration", "Space"], "cost": "1 AP", "range": "15 feet", "duration": "Instantaneous", "desc": "You teleport to target location within range. Any creature in that space is teleported to your former location.", "empower": "", "author": "CrusaderDroid"}

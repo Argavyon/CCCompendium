@@ -1,1 +1,1 @@
-{"name":"Healing Touch","tier":1,"tags":["Evocation","Holy"],"cost":"1 to 3 AP","range":"Touch","duration":"Instantaneous","desc":"A creature you touch heals 1d6 hit points per AP spent.","empower":"You add your spellcasting stat to each die rolled."}
+{"name": "Healing Touch", "tier": 1, "tags": ["Evocation", "Holy"], "cost": "1 to 3 AP", "range": "Touch", "duration": "Instantaneous", "desc": "A creature you touch heals 1d6 hit points per AP spent.", "empower": "You add your spellcasting stat to each die rolled.", "author": "CrusaderDroid"}

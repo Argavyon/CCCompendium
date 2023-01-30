@@ -1,1 +1,1 @@
-{"name":"Vanish","tier":2,"tags":["Illusion","Concentration"],"cost":"1 AP","range":"Touch","duration":"15 minutes","desc":"Target creature becomes invisible. The spell ends if the creature attacks or casts a spell.","empower":"Removes the AP cost on the spell."}
+{"name": "Vanish", "tier": 2, "tags": ["Illusion", "Concentration"], "cost": "1 AP", "range": "Touch", "duration": "15 minutes", "desc": "Target creature becomes invisible. The spell ends if the creature attacks or casts a spell.", "empower": "Removes the AP cost on the spell.", "author": "CrusaderDroid"}
