@@ -59,7 +59,7 @@ spellParse.onsubmit = function (event) {
     
     if (match !== null) {
         const spellObject = match.groups;
-        spellObject.author = spellObject.author ?? '';
+        spellObject.author = spellObject.author ?? 'CrusaderDroid';
         spellObject.tier = parseInt(spellObject.tier);
         spellObject.tags = spellObject.tags.split(',').map(str => str.trim());
         spellObject.range = spellObject.range ?? 'Self';
