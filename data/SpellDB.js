@@ -1912,6 +1912,20 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Forked Lightning",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Evocation",
+      "Lightning"
+    ],
+    "cost": "2 AP",
+    "range": "Self (60 foot cone) ",
+    "duration": "Instantaneous",
+    "desc": "You strike out with thin bolts of lightning from your fingertips at up to three targets within range, who must make a Dexterity saving throw or take 3d8 lightning damage, halved on a success.",
+    "empower": "Targets two additional creatures."
+  },
+  {
     "name": "Hex of Exhaustion",
     "tier": 2,
     "tags": [
@@ -2675,6 +2689,35 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Magnetize",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Transmutation",
+      "Lightning"
+    ],
+    "cost": "1 AP",
+    "range": "Touch",
+    "duration": "1 hour",
+    "desc": "A targeted surface or object you touch that fits within a 10 foot cube becomes magnetized. When any metal object or weapon would come within 5 feet of the object, it is attracted to the magnetized object and stays there.<br><br>A creature that is carrying an affected object can make a Strength saving throw to resist having their object pulled to the magnetized object. A creature can use 2 AP to make a Strength saving throw to dislodge an object from the magnetized object.",
+    "empower": "The duration becomes 8 hours."
+  },
+  {
+    "name": "Flashburst",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Illusion",
+      "Lightning",
+      "Radiant"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "You create and then hurl a spherical mix of light and electricity to the target point, where it explodes in a 20 foot radius. Creatures in the area must succeed on a Constitution saving throw or be blinded and deafened for 1 minute. A creature that succeeds is deafened until the start of their turn.<br><br>A creature can repeat the saving throw at the start of each of their turns. On a success, the effect ends early.",
+    "empower": "Range increased to 90 feet."
+  },
+  {
     "name": "Death Blossom",
     "tier": 2,
     "tags": [
@@ -2689,6 +2732,20 @@ const spellDatabase = [
     "desc": "A corpse you can see within range has a flower bloom from it. The flower can be ground into a deadly powder that invites death into the target when consumed.<br><br>A creature that ingests the powder becomes afflicted. At the start of each of its turns, it must succeed on a Constitution saving throw or have one hit die destroyed. If no hit dice are remaining, the creature's maximum and current hit points are halved, and the effect ends. A creature that makes two consecutive successes ends the effect early.",
     "empower": "Affected creatures can't receive any healing.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Vampiric Touch",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Necromancy",
+      "Unholy"
+    ],
+    "cost": "2 AP",
+    "range": "Touch",
+    "duration": "Instantaneous",
+    "desc": "Target creature must make a Constitution saving throw or take 4d6 unholy damage, halved on a success. You are healed for half of the damage dealt.",
+    "empower": "You are healed for the damage dealt instead."
   },
   {
     "name": "Stuttershock",
