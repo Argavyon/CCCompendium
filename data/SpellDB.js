@@ -136,8 +136,6 @@ const spellDatabase = [
       "Transmutation",
       "Earth",
       "Spirit",
-      "Support",
-      "Mobility",
       "Concentration"
     ],
     "cost": "2 AP",
@@ -211,8 +209,7 @@ const spellDatabase = [
     "tier": 1,
     "tags": [
       "Transmutation",
-      "Physical",
-      "Mobility"
+      "Physical"
     ],
     "cost": "1 AP",
     "range": "30 feet",
@@ -240,8 +237,7 @@ const spellDatabase = [
     "tier": 1,
     "tags": [
       "Divination",
-      "Universal",
-      "Utility"
+      "Universal"
     ],
     "cost": "1 AP",
     "range": "120 feet",
@@ -1035,7 +1031,6 @@ const spellDatabase = [
     "tags": [
       "Enchantment",
       "Eldritch",
-      "Control",
       "Concentration"
     ],
     "cost": "2 AP",
@@ -1095,8 +1090,7 @@ const spellDatabase = [
     "name": "Aim True",
     "tier": 1,
     "tags": [
-      "Divination",
-      "Support"
+      "Divination"
     ],
     "cost": "1 AP",
     "range": "Touch",
@@ -1404,8 +1398,7 @@ const spellDatabase = [
     "tags": [
       "Conjuration",
       "Eldritch",
-      "Space",
-      "Utility"
+      "Space"
     ],
     "cost": "2 AP",
     "range": "Self",
@@ -1479,7 +1472,6 @@ const spellDatabase = [
       "Conjuration",
       "Spirit",
       "Shadow",
-      "Control",
       "Concentration"
     ],
     "cost": "2 AP",
@@ -1883,8 +1875,7 @@ const spellDatabase = [
     "tier": 1,
     "tags": [
       "Enchantment",
-      "Fey",
-      "Control"
+      "Fey"
     ],
     "cost": "2 AP",
     "range": "60 feet",
@@ -1985,7 +1976,6 @@ const spellDatabase = [
     "tier": 2,
     "tags": [
       "Enchantment",
-      "Control",
       "Familiar"
     ],
     "cost": "3 AP",
