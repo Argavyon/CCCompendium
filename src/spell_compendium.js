@@ -27,7 +27,7 @@ function spellCard(spellData, functional_tags) {
 	tagsD.className = 'spelltags';
 	tagsH.textContent = 'Tags:';
 	tagsD.innerHTML = spellData.tags
-        .map(tag => functional_tags.includes(tag) ? `<span class='fTag'>${tag}</span>` : tag)
+        .map(tag => tag in functional_tags ? `<span class='fTag' title='${functional_tags[tag]}'>${tag}</span>` : tag)
         .join(', ')
     ;
 	
@@ -82,7 +82,7 @@ function spellBrief(spellData, functional_tags) {
         spellData.range,
         spellData.duration,
         spellData.tags
-            .map(tag => functional_tags.includes(tag) ? `<span class='fTag'>${tag}</span>` : tag)
+            .map(tag => tag in functional_tags ? `<span class='fTag' title='${functional_tags[tag]}'>${tag}</span>` : tag)
             .join(', ')
     ].forEach(data => {
         const td = brief.appendChild(document.createElement('td'));
@@ -116,12 +116,18 @@ function generate_brief_spell_table(spellDatabase, tag_select, tier_select, func
 function main() {
     const tag_list = {};
     const f_tag_list = {};
-    const functional_tags = [
-        'Concentration', 'Control', 'Delayed', 'Mobility', 'Potent', 'Ritual', 'Sign', 'Silent', 'Still', 'Support', 'Utility'
-    ];
+    const functional_tags = {
+        Concentration: 'You need to concentrate on this spell. Taking damage forces you to make a Constitution saving throw against DC 10 or half the damage done, whichever is higher. On a failure, the spell ends. When you cast a spell with Concentration while you are concentrating on a different spell, the first spell ends. You lose concentration if you are at 0 hit points.',
+        Delayed: 'You can pay for this spell\'s AP cost over multiple turns. While you have at least 1 AP set towards the spell, you are concentrating on the spell.',
+        Potent: 'You can cast this spell at a higher tier for an increased effect.',
+        Sign: 'This spell creates a field around you that does not move. It ends if you leave the field or cast another Sign spell.',
+        Ritual: 'This spell takes too much time to cast during combat.',
+        Silent: 'You do not need to speak to cast this spell.',
+        Still: 'You do not need to move to cast this spell.',
+    };
     const compendiumLeft = document.querySelector('#compendium_left');
     spellDatabase.forEach(spell => spell.tags.forEach(tag => {
-        if (functional_tags.includes(tag)) {
+        if (tag in functional_tags) {
             if (!f_tag_list[tag]) f_tag_list[tag] = 1;
             else f_tag_list[tag] += 1;
         } else {
