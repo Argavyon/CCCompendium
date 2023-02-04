@@ -1555,6 +1555,21 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Echocatch",
+    "author": "Levi",
+    "tier": 1,
+    "tags": [
+      "Conjuration",
+      "Wind",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self",
+    "duration": "1 hour ",
+    "desc": "When you cast this spell, you begin recording all sounds around you or from a specific direction until the spell ends. You may end the spell at will anytime. When the spell ends, the recorded sounds manifest as a very small packet of air, and you have up to 1 minute to store it in an airtight container before it breaks. If stored, the packet does not break until the seal of the container is opened. When the packet breaks, the recorded sounds are released and can be heard by any nearby creatures exactly as they were recorded, as if originating from the location where the packet broke.",
+    "empower": ""
+  },
+  {
     "name": "Blessed Meal",
     "tier": 1,
     "tags": [
@@ -2365,6 +2380,23 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Primordial Droplet",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Evocation",
+      "Eldritch",
+      "Holy",
+      "Unholy",
+      "Delayed"
+    ],
+    "cost": "5 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "You wrest a droplet of pure power from creation itself and bestow it upon a target creature you can see within range. They are healed for 4d10 hit points. For 1 minute, one of their stats you choose is increased by 1.<br><br>A creature reduced to 0 or fewer hit points while affected by this spell has primordial power burst from their body, horribly mangling it and rendering it unusable for most forms of reanimation.",
+    "empower": "Choose two stats to increase by 1."
+  },
+  {
     "name": "Elder's Rebuke",
     "tier": 2,
     "tags": [
@@ -2480,6 +2512,23 @@ const spellDatabase = [
     "desc": "As a response to a creature you can see damaging you, you gesture and set the attacker ablaze, dealing 2d6 fire damage, plus 1d6 fire damage for each tier higher than 2. If cast as a tier 5 spell or higher,  the target must make a Dexterity saving throw or take an additional 3d6 fire damage.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Hush",
+    "author": "Levi",
+    "tier": 2,
+    "tags": [
+      "Abjuration",
+      "Wind",
+      "Concentration",
+      "Silent",
+      "Potent"
+    ],
+    "cost": "2 AP",
+    "range": "Self (5 foot radius)",
+    "duration": "1 hour",
+    "desc": "The air around you becomes calm and still. This effect moves with you for the duration. Any sound that would be created in the radius of this spell dissipates, and sounds from outside cannot penetrate in.<br><br>Wind spells of lower level than the level this spell is cast at cannot be cast inside the radius of this spell  and their effects cannot pass through its edges.",
+    "empower": ""
   },
   {
     "name": "Sludgify",
@@ -3002,6 +3051,20 @@ const spellDatabase = [
     "empower": "Range increases to Self (10 foot radius)."
   },
   {
+    "name": "Setting Suns of the Sea",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Conjuration",
+      "Eldritch"
+    ],
+    "cost": "1-3 AP",
+    "range": "60 feet ",
+    "duration": "1 minute",
+    "desc": "For each AP spent, you pull a dying sun from the Sea of Possibility and place it in an empty space within range. It radiates something resembling light out to 10 feet.<br><br>Any creature that ends their turn in the light takes 1d8 psychic damage. Any creature that takes damage from this spell twice becomes afflicted with madness. At the start of their turn, they must succeed on an Intuition saving throw or immediately attack the nearest creature, moving as necessary. They can repeat the saving throw at the end of each of their turns. On a success, the creature is no longer maddened and can't be maddened by this spell again.",
+    "empower": "Creates two additional suns."
+  },
+  {
     "name": "Stern Warning",
     "tier": 2,
     "tags": [
@@ -3166,6 +3229,21 @@ const spellDatabase = [
     "desc": "You project a field around you that amplifies the gravity in the area. You and all other creatures inside have your movement reduced to 5 feet and cannot fly. Other creatures take 1d6 bludgeoning damage at the start of each of their turns. Creatures in the area that are flying crash to the ground, taking 1d6 bludgeoning damage per 5 feet fallen.<br><br>Once on each of your turns, you can spend 1 AP to intensify the effect on a creature within range. It must succeed on a Strength saving throw or take 1d12 bludgeoning damage and be knocked prone.",
     "empower": "Your movement speed is halved instead.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Airlock",
+    "author": "Levi",
+    "tier": 2,
+    "tags": [
+      "Conjuration",
+      "Wind",
+      "Space"
+    ],
+    "cost": "1 AP",
+    "range": "30 feet",
+    "duration": "1 hour",
+    "desc": "A vacuum sphere of 10 foot radius appears centered on target point. For the duration, all air and sounds inside cannot travel outside and vice versa.<br><br>This spell can be destroyed by any Wind spell that deals damage, or even a sufficiently strong gust of natural wind.",
+    "empower": ""
   },
   {
     "name": "Unholy Rupture",
@@ -3487,6 +3565,20 @@ const spellDatabase = [
     "desc": "You create a temporary distortion that overlaps reality with the Plane of Revelation in a 30 foot circle centered on a point within range. The borders of the distortion are visible as a translucent wall of multicolored light with symbols both known and foreign flickering across it. Within this zone, the following effects occur:<br><br>-All creatures within the zone attempting to intentionally deceive another instantly fail. Anyone listening to them is intuitively aware that the information is false.<br>-All creatures within the zone fail at any attempts to conceal their presence, as luminous symbols flicker around them, describing them in snippets of divine language.<br>-All creatures within the zone can understand all languages, and their speech is understood by any creature that knows at least one language.<br>-All Divination spells cast by a creature within the zone have their AP cost reduced by 1, to a minimum of 1.<br>-All Divination spells cast by a creature within the zone that can be Empowered may be Empowered for 1 fewer MP per tier.<br><br>When cast as a Ritual, the duration is extended to 8 hours.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Lightningrod",
+    "author": "Levi",
+    "tier": 3,
+    "tags": [
+      "Transmutation",
+      "Lightning"
+    ],
+    "cost": "2 AP",
+    "range": "Touch (1 mile)",
+    "duration": "1 hour",
+    "desc": "When you cast this spell, you charge and link to a metallic object of medium or smaller size. You always know the location of the object if it is within range and not completely obstructed by non-conductive materials.<br><br>At any time within the duration, you may spend 1 AP to transform into pure energy and move instantly to the location of the charged object. This spell then ends.",
+    "empower": "Raise the range and duration to 10 miles and 8 hours respectively."
   },
   {
     "name": "Mass Edit Perception",
@@ -4317,6 +4409,20 @@ const spellDatabase = [
     "desc": "From your current location, you create a line of ethereal glass 10 feet tall that extends out to 60 feet. Choose one side of the glass - all creatures up to 30 feet away from the glass on that side are reflected as shadowy figures on the other side, preserving their relative position to the mirror.<br><br>The shadows take their turn immediately after the original. They are under your complete mental control and are otherwise an exact copy of the original creature.<br><br>At the start of your next turn, the glass and all shadows disappear.",
     "empower": "One shadow immediately takes a turn.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Reinkarnation",
+    "author": "Levi",
+    "tier": 5,
+    "tags": [
+      "Necromancy",
+      "Fey"
+    ],
+    "cost": "3 AP",
+    "range": "Touch",
+    "duration": "1 minute / Varies",
+    "desc": "You call upon the spirit of a deceased creature using an image of its likeness in life. This spell fails if the intended spirit does not recognize the image as a depiction of itself, or rejects the invitation.<br><br>If successful, the spirit appears as an ethereal reconstruction of its appearance in life anchored to the image, and is maintained this way for up to 1 minute. The spirit can be spoken to and respond, and has all of its memories and personality in life, but it cannot interact with the material plane or move more than 5ft away from the image. The spirit is not under the caster's control, and may end the spell at any time by choosing to depart.<br><br>While a spirit is successfully anchored to its image, and the image is placed (or directly drawn) on an intact corpse of the same species as the spirit was in life which has been dead for less than 1 hour, if the spirit is willing, it may possess the corpse and revive in that body. When this occurs, the resultant revived creature's features morph to some degree to resemble the spirit's original appearance over the next 24 hours, and during this time this spell can be dispelled targeting the revived creature. After this period passes, the spell becomes permanent and can no longer be dispelled. The spell instead becomes permanent immediately if the intact corpse originally belonged to the spirit in the first place.",
+    "empower": ""
   },
   {
     "name": "Wintercraft",
