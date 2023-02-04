@@ -1278,21 +1278,6 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
-    "name": "Dragon Claws",
-    "tier": 1,
-    "tags": [
-      "Transmutation",
-      "Draconic",
-      "Physical"
-    ],
-    "cost": "1 AP",
-    "range": "Self",
-    "duration": "1 minute",
-    "desc": "You transform your hands into large dragon claws. They use either your Strength or your<br>Dexterity to determine your attack and damage bonus, and deal 1d8 slashing damage on a hit.<br>You can't attack with your claws if they are carrying a weapon or shield.<br>While the spell is active, you can make one attack with your claws for 1 AP if both hands are<br>empty.",
-    "empower": "The claws grow sharper and deal 1d10 damage instead. A creature struck twice in<br>one turn by your claws takes bonus damage equal to your spellcasting modifier.",
-    "author": "CrusaderDroid"
-  },
-  {
     "name": "Corpse Explosion",
     "tier": 1,
     "tags": [
@@ -2826,6 +2811,22 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Unwavering Protection",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Abjuration",
+      "Holy",
+      "Concentration",
+      "Delayed"
+    ],
+    "cost": "6 AP",
+    "range": "Self (60 foot radius)",
+    "duration": "1 minute",
+    "desc": "Holy power spirals out from you and shields yourself and creatures in range that you choose. This magic follows you as you move. You gain 3d6+10 temporary hit points for the duration of the spell. Each creature you choose that starts their turn within range has their temporary hit points set equal to your temporary hit points if it would be higher. The spell ends when you run out of temporary hit points.",
+    "empower": "You gain +10 temporary hit points."
+  },
+  {
     "name": "Wildfire",
     "tier": 2,
     "tags": [
@@ -3092,6 +3093,21 @@ const spellDatabase = [
     "desc": "A wave of verdant energy sweeps forth in a 15 foot wide, 60 foot long line extending from you. Grass and other plants in the area quickly grow and turn the area into difficult terrain. Creatures caught in the growth must make a Dexterity saving throw or be restrained. They can spend 2 AP to make a Strength saving throw to free themselves.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Vital Surge",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Evocation",
+      "Holy",
+      "Potent"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Target creature is surged with life magic. They are cured of the blinded, deafened, paralyzed, poisoned, and stunned conditions, and any diseases they are suffering from are removed. Dispels Poison and Disease tag spells from the target of equal or lesser tier than the tier this spell is cast at.",
+    "empower": "The target also restores the use of one spent hit die and heals 2d8 hit points."
   },
   {
     "name": "Greymane's Stonefist",
