@@ -3539,6 +3539,22 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Hall of Mirrors",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Illusion",
+      "Fey",
+      "Radiant",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self (60 foot radius)",
+    "duration": "1 minute",
+    "desc": "You scatter ethereal mirrors all over a 60 foot radius around yourself. While in this area, when you are attacked, attacking creatures must roll 1d20 first. On a roll of 15 or lower, they strike at a mirror image of yourself and do no damage to you.<br><br>Creatures you damage ignore this effect on their next turn.<br><br>The spell ends if you leave the area.",
+    "empower": ""
+  },
+  {
     "name": "Skimmer",
     "author": "CrusaderDroid",
     "tier": 3,
@@ -3597,6 +3613,20 @@ const spellDatabase = [
     "empower": "Raise the range and duration to 10 miles and 8 hours respectively."
   },
   {
+    "name": "Typhoon Wave",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Transmutation",
+      "Wind"
+    ],
+    "cost": "2 AP",
+    "range": "120 feet",
+    "duration": "Instantaneous",
+    "desc": "The winds in a 30 foot radius centered on a target point you can see intensify to powerful levels. Every creature in the area must succeed on a Strength saving throw or take 5d6 bludgeoning damage and be moved 10 feet in any direction into an empty space. Creatures adjacent to an object they can hold onto have advantage on the saving throw.",
+    "empower": "Damage increased to 6d6. Radius increased to 40 feet."
+  },
+  {
     "name": "Mass Edit Perception",
     "tier": 3,
     "tags": [
@@ -3610,6 +3640,35 @@ const spellDatabase = [
     "desc": "This spell is similar to Edit Perception, except every creature within range that can see you must make an Intuition saving throw or be affected. You know which creatures have succeeded on their saving throws.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Blacklight",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Necromancy",
+      "Radiant"
+    ],
+    "cost": "3 AP",
+    "range": "Touch",
+    "duration": "1 hour",
+    "desc": "A target item becomes imbued with a black light that shines out to 60 feet. Reanimated creatures within the light have the duration on any spell reanimating them suspended.",
+    "empower": "The duration becomes 24 hours."
+  },
+  {
+    "name": "Grand Ray",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Radiant",
+      "Delayed"
+    ],
+    "cost": "3 AP",
+    "range": "Self (300 foot line)",
+    "duration": "Instantaneous",
+    "desc": "You blast a focused beam of light out in a 15 foot wide, 300 foot long line away from you. Creatures that are not behind cover in this line must make a Constitution saving throw or take 6d10 Radiant damage, halved on a success. Creatures in the center 5 feet of the line are also blinded on a failed saving throw until the end of your next turn.",
+    "empower": "Damage increases to 7d10. If any creature is reduced to 0 or fewer hit points by this spell, refund 1 AP."
   },
   {
     "name": "Crucible Forge",
@@ -3657,6 +3716,21 @@ const spellDatabase = [
     "duration": "Instantaneous",
     "desc": "Select two 20-foot cubes in range. These areas must be entirely within the cast range of this spell, cannot overlap, and must touch each other at at least one point, edge, or side. Heat energy is magically sucked out of one area and forcibly injected into the other area.<br><br>In the cold area, all creatures inside must make a Constitution saving throw, taking 4d8 cold damage on failed save or half as much on a success. All exposed water immediately freezes and fires are put out as temperatures drastically drop.<br><br>In the hot area, all creatures inside must make a Constitution saving throw, taking 4d8 fire damage on failed save or half as much on a success. All exposed water immediately vaporizes and most dry flammable materials spontaneously ignite as temperatures sharply rise.<br><br>If the caster has the fire tag, you may now change the size of the hot area to a 15-foot cube or 25-foot cube, and creatures inside take 5d8 damage instead.<br><br>If the caster has the cold tag, you may now change the size of the cold area to a 15-foot cube or 25-foot cube, and creatures inside take 5d8 damage instead.",
     "empower": "The maximum cast range is increased to 120 feet, and the areas no longer need to touch each other."
+  },
+  {
+    "name": "Prismatic Eye",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Divination",
+      "Radiant",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "1 mile",
+    "duration": "1 hour",
+    "desc": "You create a pair of invisible eyes. One eye floats 30 feet above a point within 30 feet of you, while the other eye flies to a point within 1 mile that you can see. The distant eye scans everything in a 60 foot radius around it, which the nearby eye projects onto the ground directly below it. The distant eye can detect hidden or invisible creatures this way, but cannot see through objects or into containers.<br><br>You can move either eye for 2 AP. The spell ends if you cast it again.",
+    "empower": ""
   },
   {
     "name": "Wind Wall",
@@ -3778,6 +3852,21 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Exile to the Sky",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Abjuration",
+      "Wind",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "1 minute",
+    "desc": "Target creature must succeed on a Dexterity saving throw or be thrown 600 feet into the air and suspended there, unable to take any action.<br><br>The spell fails if the creature cannot be lifted the full height. When the spell ends, the creature harmlessly lands in its original space.",
+    "empower": ""
+  },
+  {
     "name": "Standoff",
     "tier": 3,
     "tags": [
@@ -3825,6 +3914,20 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Wind Shift",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Wind"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Target creature moves up to 30 feet in any direction. They must end this movement on solid ground.",
+    "empower": "You can choose to swap places with the creature instead of moving them."
+  },
+  {
     "name": "Impulse",
     "author": "Uri de Vries",
     "tier": 3,
@@ -3851,6 +3954,20 @@ const spellDatabase = [
     "desc": "The target creature's perception on reality subtly changes. They suffer no ill effects until they fail a roll. Upon failing a roll while the spell is active they must make an Intuition saving throw. On a failure, eldritch forms appear to intrude upon reality, driving the creature into a berserk frenzy. It can take no other actions other than to spend all AP on moving and attacking the nearest creature.<br><br>If the creature cannot or does not attack during a turn, it makes an Intuition saving throw. On a success, the eldritch forms fade away until the creature fails another roll and then fails its saving throw.",
     "empower": "The creature can't roll with advantage for the duration of the spell.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Arise",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Necromancy",
+      "Unholy"
+    ],
+    "cost": "3 AP",
+    "range": "30 feet",
+    "duration": "15 minutes",
+    "desc": "Up to three corpses within range become infused with unholy magic and rise to life as either skeletons or zombies, as chosen by you. They take their turn after yours.<br><br>A skeleton or zombie reanimated by this spell that is reduced to 0 hit points disintegrates.",
+    "empower": "Targets up to five corpses."
   },
   {
     "name": "Bane Barrier",
@@ -4089,6 +4206,21 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Air Ride",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Transmutation",
+      "Wind",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self",
+    "duration": "1 hour",
+    "desc": "You gain a flight speed equal to your walking speed for the duration.",
+    "empower": "Also affects all creatures you choose within 5 feet of you. A creature that ends their turn more than 5 feet away from you falls to the ground."
+  },
+  {
     "name": "Steam Burst",
     "tier": 3,
     "tags": [
@@ -4130,6 +4262,23 @@ const spellDatabase = [
     "range": "20 feet",
     "duration": "1 minute",
     "desc": "Transmute a piece of metal or stone into the large statue of a dragon, occupying an empty square within range. The statue has 20 AC, 80 HP and resists all damage from ranged attacks.<br>When you summon it, and for 1 AP once per turn afterwards, you can command it to move up to 20ft and then attack with either its breath of its claws.<br>The claws deal 2d8 slashing damage on a 10ft arc, with a to-hit bonus equal to your spellcasting modifier, and the breath deals 1d12 fire damage on a 30ft cone on a failed Dexterity save with your spell DC.",
+    "empower": ""
+  },
+  {
+    "name": "Endless Revelation",
+    "author": "BFHNV",
+    "tier": 3,
+    "tags": [
+      "Divination",
+      "Radiant",
+      "Eldritch",
+      "Potent",
+      "Sign"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "Brilliant light shines from a point within range, piercing through everything in a 30-foot radius.  You can see everything in the area in perfect detail at all times.  Shadow spells of equal or lower tier within the area or overlapping with it have no effect.<br><br>Radiant spells cast in the area cost 2 less AP, to a minimum of 1.",
     "empower": ""
   },
   {
