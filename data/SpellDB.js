@@ -102,6 +102,22 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Pixie Play",
+    "author": "Levi",
+    "tier": 1,
+    "tags": [
+      "Conjuration",
+      "Fey",
+      "Plant",
+      "Summoning"
+    ],
+    "cost": "1-3 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "For each AP spent to cast this spell, you summon a tiny sprite which then proceeds to inhabit a nearby plant. Each sprite must choose a different plant, and if not enough are available the extra sprites leave. <br><br>As a response to a creature moving within 5 feet of an affected plant, for 0 AP you may command the sprite inhabiting the plant to manipulate the plant to trip the creature. The creature must succeed on a Dexterity saving throw or fall prone and immediately end their movement this turn. This can only take effect if the creature is no more than one size larger than the affected plant. The sprite then leaves.<br><br>If a target plant is also a creature, you may trigger this effect in response to the plant creature attempting to move, targeting itself.",
+    "empower": ""
+  },
+  {
     "name": "Clay Coffin",
     "tier": 1,
     "tags": [
@@ -3656,6 +3672,22 @@ const spellDatabase = [
     "empower": "The duration becomes 24 hours."
   },
   {
+    "name": "Full Bloom",
+    "author": "Levi",
+    "tier": 3,
+    "tags": [
+      "Abjuration",
+      "Fey",
+      "Plant",
+      "Sign"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "Boundless life energy floods a 30 foot radius sphere centered on a point in range. Plants inside the area are instantly revived if dead, and revitalized. Any creature that starts its turn in the area can choose to absorb some of this life energy to either recover health equal to a roll of one of their largest hit dice, or end one poison or disease affecting them. This effect doubles its healing for Fey and Plants. This effect does not occur for Constructs or Undead.<br><br>While inside the area, your Fey spells have their AP costs reduced by 1, to a minimum of 1.<br><br>While inside the area, your Plant spells may be empowered by paying the MP cost of a spell one tier lower instead of the spell's own tier.",
+    "empower": ""
+  },
+  {
     "name": "Grand Ray",
     "author": "CrusaderDroid",
     "tier": 3,
@@ -4428,6 +4460,24 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Pandemonium",
+    "author": "Levi",
+    "tier": 4,
+    "tags": [
+      "Enchantment",
+      "Physical",
+      "Psychic",
+      "Unholy",
+      "Delayed",
+      "Sign"
+    ],
+    "cost": "4 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "Countless frenzied voices whispering of curses and violence and maddened anguished cries suffuse the air in a 30 foot radius sphere centered on target point.<br><br>Creatures that start their turn inside the area gain 1 AP, and cannot take any action on their turn until they first take the Attack action, unless they cannot. Fiends gain 2 AP instead.<br><br>Creatures inside the area cannot target any creature outside the area with an attack, spell, or feature unless they are no valid targets inside the area. Creatures inside the area cannot target a point outside the area to aim a spell or feature unless there are no valid target points inside the area.<br><br>As long as there is at least one other creature inside the area, creatures inside the area cannot willingly move outside the area. Those that attempt to do so must make a  Willpower saving throw. On a success they can leave the area, on a failure their movement ends this turn. A creature that succeeds this saving throw must succeed again if reenter the area after leaving then attempt to leave again.<br><br>While inside the area, your weapon attacks and damaging spells deal an additional die of damage.",
+    "empower": ""
+  },
+  {
     "name": "Killing Wave",
     "tier": 4,
     "tags": [
@@ -4484,6 +4534,23 @@ const spellDatabase = [
     "desc": "Creatures in a 15 foot radius, 300 foot tall cylinder centered on a target point you can see become targeted by a large storm cloud, which strikes down with lightning. Creatures must make a Dexterity saving throw now and each time they spend AP during their next turn. They take 6d8 lightning damage on a failure, halved on a success.",
     "empower": "Radius increased to 20 feet.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Gate of Purgation",
+    "author": "Levi",
+    "tier": 4,
+    "tags": [
+      "Abjuration",
+      "Fire",
+      "Holy",
+      "Delayed",
+      "Sign"
+    ],
+    "cost": "6 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "Ethereal white flames fill the air in a 30 foot radius and 30 foot high cylinder rising from target point. The flames provide bright light in the area and cast dim light out to a radius of an additional 90 feet.<br><br>For Undead, Fiends, and Urthings, or any creature whose body is inhabited by a soul or other external consciousness that is not their original, the flames cause intense debilitating pain. When one of these creatures enters or touches the flames for the first time on each of their turns, they immediately lose concentration, their AP is lowered by 3, and their movement is lowered by half of their speed. Additionally the flames are difficult terrain for these creatures, and these creatures cannot gain HP, temporary HP, MP, AP, or additional movement as long as they are touching the flames.<br><br>For any other creature, touching the flames gives them advantage on saving throws against all magical effects as long as they are touching the flames.<br><br>While inside the area, your Fire and Holy spells apply the effects of being touched by this spell's purifying flames to targets hit until the start of their next turn.<br><br>Note: I wrote Tier 4 but it might be worth much more than that in certain circumstances, so idk.",
+    "empower": ""
   },
   {
     "name": "Unshackled by Death",
