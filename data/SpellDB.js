@@ -4238,6 +4238,21 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Blackened Edifice",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Conjuration",
+      "Earth",
+      "Unholy"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet ",
+    "duration": "1 hour",
+    "desc": "A tower of black stone rises from the earth at a target empty area, occupying a cylinder with a radius of 10 feet and a height of 20 feet, topped with an ornate, reflective jet black glass obelisk. The spell fails if there is insufficient room for this construction.<br><br>The tower emanates unholy energy. Undead and reanimated creatures that start their turn within 60 feet gain temporary hit points equal to your spellcasting stat at the start of each of their turns.<br><br>You can spend 1 AP once per turn to have the obelisk blast a target creature within 120 feet with a ray of unholy magic. It must make a Constitution saving throw or take 2d6 unholy damage. Undead and reanimated creatures are healed for the same amount instead, even if they don't normally absorb unholy damage.<br><br>The tower has AC 14 and 120 hit points. Casting this spell again while a tower already exists destroys the first tower.",
+    "empower": "The obelisk can target a second creature, but it must be Undead or reanimated."
+  },
+  {
     "name": "Air Ride",
     "author": "CrusaderDroid",
     "tier": 3,
@@ -4474,7 +4489,7 @@ const spellDatabase = [
     "cost": "4 AP",
     "range": "60 feet",
     "duration": "1 minute",
-    "desc": "Countless frenzied voices whispering of curses and violence and maddened anguished cries suffuse the air in a 30 foot radius sphere centered on target point.<br><br>Creatures that start their turn inside the area gain 1 AP, and cannot take any action on their turn until they first take the Attack action, unless they cannot. Fiends gain 2 AP instead.<br><br>Creatures inside the area cannot target any creature outside the area with an attack, spell, or feature unless they are no valid targets inside the area. Creatures inside the area cannot target a point outside the area to aim a spell or feature unless there are no valid target points inside the area.<br><br>As long as there is at least one other creature inside the area, creatures inside the area cannot willingly move outside the area. Those that attempt to do so must make a  Willpower saving throw. On a success they can leave the area, on a failure their movement ends this turn. A creature that succeeds this saving throw must succeed again if reenter the area after leaving then attempt to leave again.<br><br>While inside the area, your weapon attacks and damaging spells deal an additional die of damage.",
+    "desc": "Countless frenzied voices whispering of curses and violence and maddened anguished cries suffuse the air in a 30 foot radius sphere centered on target point.<br><br>Creatures that start their turn inside the area gain 1 AP, and cannot take any action on their turn until they first take the Attack action, unless they cannot. Fiends gain 2 AP instead.<br><br>Creatures inside the area cannot target any creature outside the area with an attack, spell, or feature unless there are no valid targets inside the area. Creatures inside the area cannot target a point outside the area to aim a spell or feature unless there are no valid target points inside the area.<br><br>As long as there is at least one other creature inside the area, creatures inside the area cannot willingly move outside the area. Those that attempt to do so must make a  Willpower saving throw. On a success they can leave the area, on a failure their movement ends this turn. A creature that succeeds this saving throw must succeed again if they reenter the area after leaving then attempt to leave again.<br><br>While inside the area, your weapon attacks and damaging spells deal an additional die of damage.",
     "empower": ""
   },
   {
