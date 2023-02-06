@@ -4281,6 +4281,22 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Dread Coagulation",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Necromancy",
+      "Acid",
+      "Summoning",
+      "Water"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "1 hour",
+    "desc": "You spread thin webs of acidic liquid through any number of corpses in range, and cause them to congeal together into a mindless acidic blob under your direct control. Its starting location is any empty space within range.<br><br>The blob has AC 16 and 30 hit points, plus 10 hit points for every corpse used in its creation. It takes the size of the largest corpse used, gaining an additional 20 hit points for every size category above Medium. It is resistant to slashing, bludgeoning, and piercing damage, absorbs acid damage, and is vulnerable to fire and cold damage.<br><br>The blob is an unintelligent creature incapable of self-action. It does not take turns of its own. You must telepathically command it during your turn using 1 AP to have the blob take a turn, and can only do this once per turn. It has a movement speed of 20 feet, uses your spellcasting stat for all saving throws, and can make an acidic touch attack using your proficiency modifier and spellcasting stat to determine attack bonuses. On a hit, it deals 3d10 acid damage plus your spellcasting stat, absorbing the creature if it would reduce it to 0 or fewer hit points and restoring 10 hit points. The blob can squeeze through openings as small as one inch, although doing so requires its full movement for the turn.<br><br>Creatures that move through the blob's space must make a Dexterity saving throw or take 3d10 acid damage.",
+    "empower": ""
+  },
+  {
     "name": "Kuinu's Coordination",
     "tier": 3,
     "tags": [
