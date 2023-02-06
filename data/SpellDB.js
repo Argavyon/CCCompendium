@@ -4459,6 +4459,21 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Liquidate",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Transmutation",
+      "Acid",
+      "Water"
+    ],
+    "cost": "1 AP",
+    "range": "Self ",
+    "duration": "Instantaneous",
+    "desc": "Your body melts into a puddle covering your prior space. You can't be targeted, but can't cast any other spells or attack. You can still move. At the start of your next turn, you reform into your normal form.<br><br>If the terrain you are on is damaged or destroyed, you take 30 damage and reduce your maximum hit points by the same amount, as your liquid body is broken up and disrupted, inflicting grievous injuries when you reform.",
+    "empower": "Removes the AP cost on this spell."
+  },
+  {
     "name": "Accelerate",
     "tier": 3,
     "tags": [
@@ -4486,6 +4501,20 @@ const spellDatabase = [
     "desc": "You strike a deal with forces from beyond. When you start your turn at 0 hit points while the spell is active, you must cast a spell. The spell costs 0 AP, but uses your maximum hit points instead of your MP for its cost. You cannot receive healing while at 0 hit points for the duration of the spell.<br><br>You can make a Willpower saving throw against your own spell DC at the end of each of your turns. On a success, the spell ends immediately. You cannot end the spell otherwise.",
     "empower": "Maximum hit point costs are halved.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Blooded Spite",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Transmutation",
+      "Acid"
+    ],
+    "cost": "1 AP",
+    "range": "Self ",
+    "duration": "1 minute",
+    "desc": "Your blood, or similar bodily liquid, becomes highly acidic. Taking slashing or piercing damage sprays that blood in a 15 foot long jet towards the attacker, damaging all creatures in the way for 2d4 acid damage.",
+    "empower": "Damage increased to 4d4."
   },
   {
     "name": "Incinerate Magic",
