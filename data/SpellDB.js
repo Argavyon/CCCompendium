@@ -3510,6 +3510,20 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Caustic Plunge",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Conjuration",
+      "Acid"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "A 20 foot square area within range sinks 3 feet into a pool of acid. Creatures standing in this area take 2d6 damage immediately. The acid remains for 1 minute as difficult terrain, and creatures that start their turn inside or step inside for the first time during their turn take 2d6 acid damage.",
+    "empower": "Affects a 30 foot square."
+  },
+  {
     "name": "Pillar of Fire",
     "tier": 3,
     "tags": [
@@ -3569,6 +3583,20 @@ const spellDatabase = [
     "duration": "1 minute",
     "desc": "You scatter ethereal mirrors all over a 60 foot radius around yourself. While in this area, when you are attacked, attacking creatures must roll 1d20 first. On a roll of 15 or lower, they strike at a mirror image of yourself and do no damage to you.<br><br>Creatures you damage ignore this effect on their next turn.<br><br>The spell ends if you leave the area.",
     "empower": ""
+  },
+  {
+    "name": "Hijack",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Enchantment",
+      "Psychic"
+    ],
+    "cost": "3 AP",
+    "range": "120 feet",
+    "duration": "Instantaneous",
+    "desc": "Target creature immediately moves up to half its movement speed and takes one action that costs 2 AP or less. You choose the target for that action, if applicable.<br><br>Unwilling creatures can make an Intuition saving throw to prevent being controlled.",
+    "empower": "Costs 2 AP."
   },
   {
     "name": "Skimmer",
@@ -3870,6 +3898,21 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Open Book",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Divination",
+      "Psychic",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self",
+    "duration": "15 minutes",
+    "desc": "You see the surface thoughts of any creature whose eyes you can see. You can see these thoughts as long as you can maintain eye contact with them. In addition to any information you may gather, you have advantage on attack rolls against them as well as ability checks to influence them, and they have disadvantage on attack rolls against you.",
+    "empower": ""
+  },
+  {
     "name": "Boundary of Death",
     "tier": 3,
     "tags": [
@@ -3896,6 +3939,35 @@ const spellDatabase = [
     "range": "90 feet",
     "duration": "1 minute",
     "desc": "Target creature must succeed on a Dexterity saving throw or be thrown 600 feet into the air and suspended there, unable to take any action.<br><br>The spell fails if the creature cannot be lifted the full height. When the spell ends, the creature harmlessly lands in its original space.",
+    "empower": ""
+  },
+  {
+    "name": "Reposition",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Conjuration",
+      "Space"
+    ],
+    "cost": "1 AP",
+    "range": "30 feet",
+    "duration": "Instantaneous",
+    "desc": "Target creature within range is teleported to target empty space within range.<br><br>The spell fails if the creature does not end on solid ground.",
+    "empower": ""
+  },
+  {
+    "name": "Rejection",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Abjuration",
+      "Psychic",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self (10 foot radius) ",
+    "duration": "1 minute",
+    "desc": "You create an intense field that fills a 10 foot radius around you. Attacks and spells of equal or lower tier fail to penetrate the field. Creatures that try to pass the field must make an Intuition saving throw. On a failure, they are instead stunned until the start of your next turn and knocked backwards 5 feet.<br><br>Your movement speed is halved for the duration of the spell.",
     "empower": ""
   },
   {
@@ -3958,6 +4030,20 @@ const spellDatabase = [
     "duration": "1 minute",
     "desc": "You channel a part of your life into a strong, temporary barrier. Pay up to half of your current hit points to gain temporary hit points equal to twice that amount for the duration.<br><br>While the temporary hit points remain from this spell, you can't receive healing, but you are immune to unholy damage and vulnerable to radiant damage.",
     "empower": "You can expend hit dice to power the spell instead. Roll each hit die and add double the amount of healing you would normally receive as temporary hit points."
+  },
+  {
+    "name": "Mind Lance",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Divination",
+      "Psychic"
+    ],
+    "cost": "3 AP",
+    "range": "Self (60 foot line)",
+    "duration": "Instantaneous",
+    "desc": "A crippling burst of mental information floods out from you into every creature in a 15 foot wide, 60 foot long line. They must make an Intuition saving throw or take 4d10 psychic damage and be stunned until the end of their next turn. A creature that succeeds takes half damage and loses 1 AP on their next turn instead.",
+    "empower": "Damage increased to 5d10."
   },
   {
     "name": "Wind Shift",
