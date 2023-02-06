@@ -149,8 +149,13 @@ function main() {
         }
     }).forEach(([tag, count]) => {
         const div = compendiumLeft.appendChild(document.createElement('button'));
+        const img = div.appendChild(document.createElement('img'));
+        const text = div.appendChild(document.createElement('div'));
+        img.width = 14;
+        img.style.paddingRight = '2px';
+        text.textContent = `${tag} (${count})`;
+        text.style.display = 'inline';
         div.style.display = 'block';
-        div.textContent = `${tag} (${count})`;
         div.id = `tag_${tag.replaceAll(' ', '_')}`;
         div.className = 'selector';
         div.value = 0;
