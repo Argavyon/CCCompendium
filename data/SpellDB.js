@@ -4223,6 +4223,20 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Unholy Wave",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Necromancy",
+      "Unholy"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Soul-searing unholy magic sinks into the target creature, dealing 2d6 unholy damage.<br><br>At the end of the creature's next turn, that magic explodes outwards in a 20 foot radius. The target and every creature in range must succeed on a Constitution saving throw or take 6d6 unholy damage, halved on a success.<br><br>If the initial damage reduces a creature to 0 or fewer hit points, they immediately trigger the wave.",
+    "empower": "You can choose which creatures take damage from either part of this spell."
+  },
+  {
     "name": "Heat Haze",
     "tier": 3,
     "tags": [
