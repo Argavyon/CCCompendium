@@ -4219,6 +4219,22 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Call Flora Vindicator",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Conjuration",
+      "Plant",
+      "Summoning",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "30 feet",
+    "duration": "1 minute",
+    "desc": "At target point within range, a seed drops into the ground. Within the span of six seconds, it blooms into a towering plant creature of indeterminate type, bristling with spines, vines, carnivorous plants, and heavy bark.<br><br>The flora vindicator is a Large plant creature with AC 16 and 150 hit points, with a movement speed of 20 feet. It takes its turn after yours and uses your spellcasting stat for all of its attack and damage rolls and saving throws. It can fire needles at up to three targets within 60 feet for 1d8 piercing damage for 1 AP, or slam a creature within 15 feet with a vine for 2d8 bludgeoning damage for 2 AP. It tries to automatically grapple creatures that it attacks with its vines or who attack it in melee, and it has no limit to how many creatures it can grapple. It can move freely even when grappling creatures.<br><br>Whenever you take damage outside of your turn, the flora vindicator gains 1 AP on its next turn.",
+    "empower": "Removes the Concentration tag from this spell."
+  },
+  {
     "name": "Precipice of Madness",
     "tier": 3,
     "tags": [
