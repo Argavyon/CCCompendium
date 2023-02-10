@@ -336,6 +336,35 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Webweaver",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Conjuration",
+      "Forbidden (Arachnid)"
+    ],
+    "cost": "2 AP",
+    "range": "Self (30 foot radius)",
+    "duration": "1 hour",
+    "desc": "You leap up and create a web directly beneath you that spans a 30 foot radius. The web needs at least two objects on opposite ends to anchor to, or it falls flat and ends immediately.<br><br>Creatures other than you that are in the area of the web when it is first created, or step into the area of the web, must succeed on a Dexterity saving throw or be restrained by the web. They can make a Strength saving throw for 2 AP during their turn to tear themselves free.<br><br>You can freely traverse this web, and ignore difficult terrain in the web. You can move 2 feet for every 1 foot of movement spent as long as you move on your web.<br><br>Casting this spell again destroys the first web. Webs are destroyed instantly if anything in the area is targeted by an attack or spell that does fire damage.",
+    "empower": "Casting this spell again does not destroy the first web. You can maintain a number of webs equal to your proficiency modifier before destroying the oldest web."
+  },
+  {
+    "name": "Song of Beginning",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Enchantment",
+      "Forbidden (Song)",
+      "Delayed"
+    ],
+    "cost": "9 AP",
+    "range": "Self (60 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "You begin to sing a song about the start of a grand adventure, invigorating the spirits of your allies. If you spend at least 1 AP during your turn towards casting this spell, creatures you choose within range become inspired. Inspired creatures add 1 to every roll they make, and can survive being reduced to 0 or fewer hit points once per rest, instead being reduced to 1 hit point. The effect vanishes if creatures leave the area of the spell or if you do not spend at least 1 AP on trying to cast the spell.<br><br>When completed, you form the energy from the song into a sphere of focused magic that is flung at a location within range. Creatures in a 15 foot radius of the impact point must succeed on an Intuition saving throw or take 3d6 radiant and 3d6 psychic damage, halved on a success. Inspired creatures are unaffected.",
+    "empower": "Inspired creatures gain temporary hit points until the start of your next turn equal to your proficiency modifier times the number of AP spent."
+  },
+  {
     "name": "Arcane Bolt",
     "tier": 1,
     "tags": [
@@ -1086,6 +1115,20 @@ const spellDatabase = [
     "desc": "You tether yourself to a target creature with a stream of electricity six inches wide. The tether has a maximum length of 60 feet, and moving farther than 60 feet from your target ends the spell.<br><br>When you move, the tether moves with you. Any creature that touches the tether or starts their turn inside the tether's area takes 1d8 lightning damage. A creature can only take this damage once between each of your turns.",
     "empower": "Tether maximum range increased to 120 feet.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Soul of the Ursine",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Transmutation",
+      "Forbidden (Werebear)"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "15 minutes",
+    "desc": "You align your soul with the soul of the First Bear. Your movement speed increases by 10 feet, you have advantage on grapple attacks and Constitution saving throws, and you have resistance to damage dealt to your maximum hit points. If you have claws and they deal less than 1d10 damage, they are increased to 1d10 damage.",
+    "empower": "Removes the AP cost on this spell."
   },
   {
     "name": "Brilliant Arrows",
@@ -1913,6 +1956,20 @@ const spellDatabase = [
     "desc": "You layer ice over a 60 foot long, 5 foot wide, 6 inch thick line. The ice must have at least one end on solid ground, and cannot be at an angle steeper than 15 degrees.<br><br>The ice forms a traversable path, even over water. Creatures ignore difficult terrain when traveling on the path.",
     "empower": "Double either the width or the length of the path.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Rappel",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Transmutation",
+      "Forbidden (Arachnid)"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "desc": "A thread of web bursts from your body and pulls you up 300 feet onto an ethereal web. Any time before the end of your next turn, you can choose to drop down next to a creature within 60 feet, or a creature restrained by an Arachnid spell.",
+    "empower": "You can move up to 30 feet along the web before choosing a location to drop down."
   },
   {
     "name": "Projection",
@@ -3111,6 +3168,21 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Song of Victory",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Illusion",
+      "Forbidden (Song)",
+      "Delayed"
+    ],
+    "cost": "9 AP",
+    "range": "Self (60 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "You begin to sing a song about comrades facing a great evil. If you spend at least 1 AP during your turn towards casting this spell, illusory warriors appear in the area to reinforce creatures you choose. Those creatures can, once per turn, gain advantage on one attack roll they make, or instead add an additional 1d6 psychic damage to their weapon damage.<br><br>When completed, the magic forms the projection of a powerful lance that is hurled forward towards a target within 300 feet that you can see. Creatures in a 5 foot wide line between you and the target must make a Dexterity saving throw or take 4d10 piercing damage, halved on a success. The targeted creature takes 4d10 piercing damage and must succeed on a Willpower saving throw or take 4d10 psychic damage, halved on a success.",
+    "empower": "The illusory warriors instead increase damage by 1d10."
+  },
+  {
     "name": "Vital Surge",
     "author": "CrusaderDroid",
     "tier": 2,
@@ -3381,6 +3453,20 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Wild Rage",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Transmutation",
+      "Forbidden (Werebear)"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "15 minutes",
+    "desc": "Rage descends upon you, empowering you to strike down attackers. Whenever you take damage, you must move up to two times your movement speed towards your attacker and immediately make one weapon attack against them if you are within melee range. This attack deals an additional 1d10 damage on hit.",
+    "empower": "Removes the AP cost on this spell."
+  },
+  {
     "name": "Vigor Transfusion",
     "tier": 2,
     "tags": [
@@ -3643,6 +3729,20 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Thornbind",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Conjuration",
+      "Plant"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "1 minute",
+    "desc": "Thorned vines burst from the ground in a 20 foot radius centered on target point you can see within range, and attempt to grab all creatures in the area. A creature must succeed on a Dexterity saving throw or take 4d6 piercing damage and be restrained for the duration.<br><br>During their turn, a creature can choose to take 1d6 piercing damage once per turn to make a Strength saving throw. On a success, they are freed.<br><br>The vines can be cut apart or burned by a creature that can deal slashing or fire damage that spends 3 AP to free an adjacent restrained creature.",
+    "empower": "Damage required to make a saving throw increases to 2d6."
+  },
+  {
     "name": "Lightningrod",
     "author": "Levi",
     "tier": 3,
@@ -3669,6 +3769,20 @@ const spellDatabase = [
     "duration": "Instantaneous",
     "desc": "The winds in a 30 foot radius centered on a target point you can see intensify to powerful levels. Every creature in the area must succeed on a Strength saving throw or take 5d6 bludgeoning damage and be moved 10 feet in any direction into an empty space. Creatures adjacent to an object they can hold onto have advantage on the saving throw.",
     "empower": "Damage increased to 6d6. Radius increased to 40 feet."
+  },
+  {
+    "name": "Imitation",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Illusion",
+      "Shadow"
+    ],
+    "cost": "X AP",
+    "range": "Variable",
+    "duration": "Instantaneous",
+    "desc": "You craft shadow magic into a potent illusion taking the form of any tier 1 or 2 spell without the Concentration tag, a Forbidden tag, or a range of Self, and unleash it. This works similarly to the chosen spell, except that it uses this spell's tags, and all saving throws are changed to Knowledge saving throws.<br><br>A creature that succeeds on any saving throw caused by the illusory spell takes no damage and ignores all effects of the spell until it ends.",
+    "empower": ""
   },
   {
     "name": "Mass Edit Perception",
@@ -3698,6 +3812,37 @@ const spellDatabase = [
     "duration": "1 hour",
     "desc": "A target item becomes imbued with a black light that shines out to 60 feet. Reanimated creatures within the light have the duration on any spell reanimating them suspended.",
     "empower": "The duration becomes 24 hours."
+  },
+  {
+    "name": "Song of Pride",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Enchantment",
+      "Forbidden (Song)",
+      "Delayed"
+    ],
+    "cost": "9 AP",
+    "range": "Self (60 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "You begin to sing a song of overconfident heroes becoming complacent in the face of danger. If you spend at least 1 AP during your turn towards casting this spell, this pride begins to seep into the area around you. Creatures you choose within range add your spellcasting stat to their attack rolls, and take additional damage from weapons and spells equal to your spellcasting stat. An unwilling creature can make an Intuition saving throw to avoid being affected each turn.<br><br>Upon completing this spell, that moment of pride sinks into the spirit of affected creatures, for better or worse. For each affected creature, they either add your spellcasting stat to their attack rolls for 1 minute, or add your spellcasting stat to the damage taken from weapons and spells for 1 minute. You choose which effect applies to them.",
+    "empower": "Reduces the AP cost by 3."
+  },
+  {
+    "name": "Infiltration",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Divination",
+      "Shadow",
+      "Still",
+      "Silent"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 week",
+    "desc": "Your shadow extends out to target creature's shadow and touches it, attempting to place a part of itself into their shadow. They must succeed on a Willpower saving throw, or the transfer is complete. You gain knowledge of the creature's location relative to yours as well as a precise knowledge of every action the creature does and every word the creature speaks.<br><br>Even on a successful saving throw, the creature does not know you targeted it with this spell unless they have the Shadow tag.",
+    "empower": ""
   },
   {
     "name": "Full Bloom",
@@ -4102,6 +4247,20 @@ const spellDatabase = [
     "empower": "Targets up to five corpses."
   },
   {
+    "name": "Hunting Threads",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Conjuration",
+      "Forbidden (Arachnid)"
+    ],
+    "cost": "1 AP",
+    "range": "Self (120 foot cone)",
+    "duration": "Instantaneous",
+    "desc": "You fire up to five silken threads out at creatures you can see within range. They must succeed on a Dexterity saving throw or be restrained by the threads until the end of your next turn.<br><br>You can spend 1 AP before the spell ends to pull any number of creatures restrained by this spell up to 60 feet closer to you. A restrained creature can make a Strength saving throw to resist the effect. On a success, they are pulled 10 feet instead.<br><br>The thread is unbreakable, but does not require any physical strength to maintain, even if creatures are hanging in mid-air.",
+    "empower": ""
+  },
+  {
     "name": "Bane Barrier",
     "tier": 3,
     "tags": [
@@ -4295,6 +4454,35 @@ const spellDatabase = [
     "duration": "1 hour",
     "desc": "You spread thin webs of acidic liquid through any number of corpses in range, and cause them to congeal together into a mindless acidic blob under your direct control. Its starting location is any empty space within range.<br><br>The blob has AC 16 and 30 hit points, plus 10 hit points for every corpse used in its creation. It takes the size of the largest corpse used, gaining an additional 20 hit points for every size category above Medium. It is resistant to slashing, bludgeoning, and piercing damage, absorbs acid damage, and is vulnerable to fire and cold damage.<br><br>The blob is an unintelligent creature incapable of self-action. It does not take turns of its own. You must telepathically command it during your turn using 1 AP to have the blob take a turn, and can only do this once per turn. It has a movement speed of 20 feet, uses your spellcasting stat for all saving throws, and can make an acidic touch attack using your proficiency modifier and spellcasting stat to determine attack bonuses. On a hit, it deals 3d10 acid damage plus your spellcasting stat, absorbing the creature if it would reduce it to 0 or fewer hit points and restoring 10 hit points. The blob can squeeze through openings as small as one inch, although doing so requires its full movement for the turn.<br><br>Creatures that move through the blob's space must make a Dexterity saving throw or take 3d10 acid damage.",
     "empower": ""
+  },
+  {
+    "name": "Ursa Major",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Transmutation",
+      "Forbidden (Werebear)"
+    ],
+    "cost": "3 AP",
+    "range": "Self ",
+    "duration": "15 minutes",
+    "desc": "You take the Mantle of the First Bear and transform yourself into a ferocious werebear. You gain the following benefits for the duration of the spell: <br><br>>Your Strength, Dexterity, and Constitution increase by 2. This can take you past +5 or +6 in a stat.<br>>Your hands can be used as claws, which deal 1d6 slashing damage on a hit. Your claws ignore resistance and immunity to slashing damage.<br>>Your movement speed increases by 5 feet for every Werebear spell affecting you, including this one.<br>>Your damage with your claws increases by 1 for every Werebear spell affecting you, including this one.<br>>After taking damage to your hit points, you gain temporary hit points equal to your Constitution (minimum 1) until the start of your next turn.<br>>You can make an additional attack when taking the Attack action. This stacks with Extra Attack.",
+    "empower": "Removes the AP cost on this spell."
+  },
+  {
+    "name": "Revolution of Shadows",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Conjuration",
+      "Shadow",
+      "Silent"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "Instantaneous",
+    "desc": "In a 30 foot area centered on a target point you can see, every creature you choose within that area has their shadow rise up to stab them in the back. They must make a Dexterity saving throw or take 5d6 piercing damage, halved on a success.<br><br>A creature reduced to 0 or fewer hit points from this spell is overtaken by their shadow instead. For 1 minute, they are reanimated and become a puppet under your control, able to either move or make one weapon attack during their turn, but not both.",
+    "empower": "Damage increased to 7d6."
   },
   {
     "name": "Kuinu's Coordination",
@@ -4532,6 +4720,20 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Vigilance of the First Bear",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Transmutation",
+      "Forbidden (Werebear)"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "15 minutes",
+    "desc": "You take on the senses of the First Bear, that which roots out danger before it can strike. You gain the following benefits: <br><br>>You have perfect knowledge of the location of all creatures within 90 feet of you, and you cannot be blinded, deafened, charmed, or frightened. <br>>You have advantage on Intuition saving throws. <br>>For every AP you spend on making weapon attacks, you gain 1 AP at the end of your turn. This AP is lost at the start of your next turn.<br>>Creatures that make a weapon attack provoke a response attack from you. You can move up to two times your movement speed as part of this response attack.",
+    "empower": "Removes the AP cost on this spell."
+  },
+  {
     "name": "Force of Will",
     "tier": 4,
     "tags": [
@@ -4666,6 +4868,21 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Song of the End",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Evocation",
+      "Forbidden (Song)",
+      "Delayed"
+    ],
+    "cost": "9 AP",
+    "range": "Self (60 feet)",
+    "duration": "Instantaneous",
+    "desc": "You begin to sing a song about the downfall of a kingdom, overturned by a vengeful god. If you spend at least 1 AP during your turn towards casting this spell, you gain temporary hit points equal to five times your spellcasting stat per AP spent.<br><br>While casting, all creatures within range immediately know you are casting a powerful spell. Most sentient creatures with means will attempt to target you to force you to stop. Creatures with fewer hit dice than your level must instead make an Intuition saving throw or be frightened for 1 minute and take any measures required to leave the area of effect.<br><br>When completed, a devastating wave of force rushes from you and blasts the area of the spell. Creatures within range take 8d10+20 arcane damage, and must make an Intuition saving throw or take 4d10 psychic damage, halved on a success. Terrain in the area is utterly destroyed, leaving a hollowed out hole. Objects that fit completely within the area are destroyed.<br><br>A creature reduced to 0 or fewer hit points by this spell is disintegrated.",
+    "empower": "A number of creatures equal to your spellcasting stat within range are unaffected by this spell."
+  },
+  {
     "name": "Harness Fury",
     "tier": 4,
     "tags": [
@@ -4710,6 +4927,20 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Offering for the Young",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Conjuration",
+      "Forbidden (Arachnid)"
+    ],
+    "cost": "2 AP",
+    "range": "30 feet",
+    "duration": "1 minute",
+    "desc": "A spherical, infested web is hurled at a target creature within range, who must succeed on a Dexterity saving throw or take 6d12 poison damage and be restrained as the sphere breaks and wraps around the creature. On a successful saving throw, the creature takes half damage and is not restrained, and the spell immediately ends.<br><br>A creature restrained by this spell is subject to a unique poison that turns them into a brooding ground for spiders. At the start of each of their turns, they must make a Constitution saving throw or take 2d12 poison damage, halved on a success. At the end of each of their turns while restrained, they can make a Strength saving throw to break free on a success, but this does not stop the poison damage by itself. A creature that succeeds at two consecutive Constitution saving throws against this spell ends the spell early.<br><br>A creature reduced to 0 or fewer hit points by this spell has spiders burst from their body, including one spider that rapidly accelerates in growth to a giant spider. It obeys your mental commands loyally until death.",
+    "empower": "Creates two giant spiders instead."
+  },
+  {
     "name": "Gate of Purgation",
     "author": "Levi",
     "tier": 4,
@@ -4725,6 +4956,21 @@ const spellDatabase = [
     "duration": "1 minute",
     "desc": "Ethereal white flames fill the air in a 30 foot radius and 30 foot high cylinder rising from target point. The flames provide bright light in the area and cast dim light out to a radius of an additional 90 feet.<br><br>For Undead, Fiends, and Urthings, or any creature whose body is inhabited by a soul or other external consciousness that is not their original, the flames cause intense debilitating pain. When one of these creatures enters or touches the flames for the first time on each of their turns, they immediately lose concentration, their AP is lowered by 3, and their movement is lowered by half of their speed. Additionally the flames are difficult terrain for these creatures, and these creatures cannot gain HP, temporary HP, MP, AP, or additional movement as long as they are touching the flames.<br><br>For any other creature, touching the flames gives them advantage on saving throws against all magical effects as long as they are touching the flames.<br><br>While inside the area, your Fire and Holy spells apply the effects of being touched by this spell's purifying flames to targets hit until the start of their next turn.<br><br>Note: I wrote Tier 4 but it might be worth much more than that in certain circumstances, so idk.",
     "empower": ""
+  },
+  {
+    "name": "Song of Hope",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Enchantment",
+      "Forbidden (Song)",
+      "Delayed"
+    ],
+    "cost": "9 AP",
+    "range": "Self (60 feet)",
+    "duration": "Instantaneous",
+    "desc": "You begin to sing a song about a young survivor finding a treasure of hope in the ruins of their kingdom. If you spend at least 1 AP during your turn towards casting this spell, peace and hope befall all creatures within range. If they take the Attack action or cast a spell that would deal damage or force a saving throw, they must make an Intuition saving throw first. On a failure, their action is canceled and they lose the AP. A creature that fails two Intuition saving throws in a row from this spell is instead charmed by you until you stop casting or they take damage. Beasts within range are immediately charmed by you and do nothing except listen to your song.<br><br>When completed, a brilliant sphere of divine energy ascends and scatters many rays of light throughout the area. Creatures you choose heal a number of hit points equal to half of their missing hit points, and have all negative spells and effects on them ended. You can choose to revive any creature that died within the area while you were casting this spell and isn't reanimated, restoring one quarter of their maximum hit points and setting them to that value. This spell mends bodily damage upon revival, such as missing limbs, but cannot affect disintegrated creatures.",
+    "empower": "Range increased to 90 feet."
   },
   {
     "name": "Unshackled by Death",
@@ -4755,6 +5001,35 @@ const spellDatabase = [
     "desc": "Massive poisonous fangs 20 feet tall jut out of the ground, forming a ring with a radius of 60 feet centered on the target point. Any creature that touches the fangs takes 5d10 poison damage.<br><br>At the start of each of your turns, the ring shrinks by 5 feet. Any creature in the occupied space takes 5d10 poison damage and is pushed 5 feet away, towards the center.<br><br>The fangs leave behind difficult terrain as they move and tear apart the ground.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Unstoppable Rage",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Transmutation",
+      "Forbidden (Werebear)"
+    ],
+    "cost": "1 AP",
+    "range": "Self ",
+    "duration": "15 minutes",
+    "desc": "You invoke a primal rage and let it act through you. Whenever you take damage, you can choose to roll one of your available hit dice to heal yourself equal to twice the value rolled. Whenever you reduce a creature to 0 or fewer hit points, you steal one of their hit dice for yourself until the spell ends. You can act normally even at 0 hit points, although you will die if your maximum hit points reach 0.",
+    "empower": "Removes the AP cost on this spell."
+  },
+  {
+    "name": "That Which Waits",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Transmutation",
+      "Forbidden (Arachnid)",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self",
+    "duration": "1 hour",
+    "desc": "You take the form of a massive spider, its appearance shaped according to your desire. For the duration, you have the following effects: <br><br>>Your size increases by one category.<br>>Your equipment melds into your new form and can't be used by you.<br>>Substitute your spellcasting stat for all Strength, Dexterity, and Constitution attack rolls or saving throws.<br>>You gain a vicious bite attack that deals 2d8 piercing damage and requires a Constitution saving throw from the target. On a failure, they take an additional 2d8 poison damage and are paralyzed until the end of your next turn. You use your spellcasting stat to determine attack and damage bonuses.<br>>Arachnid spells cost 1 AP less to cast, to a minimum of 0.<br>>Your movement speed increases by 15 feet. You gain a climb speed equal to your walking speed. You ignore difficult terrain.",
+    "empower": ""
   },
   {
     "name": "Dragonstrike",
