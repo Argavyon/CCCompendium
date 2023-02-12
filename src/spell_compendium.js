@@ -1,3 +1,7 @@
+function ftag_desc(functional_tags, tag) {
+    return functional_tags.find(f_tag => tag.includes(f_tag));
+}
+
 function spellCard(spellData, functional_tags) {
 	const card = document.createElement('table');
 	const cardBody = card.appendChild(document.createElement('tbody'));
@@ -27,7 +31,7 @@ function spellCard(spellData, functional_tags) {
 	tagsD.className = 'spelltags';
 	tagsH.textContent = 'Tags:';
 	tagsD.innerHTML = spellData.tags
-        .map(tag => tag in functional_tags ? `<span class='fTag' title='${functional_tags[tag]}'>${tag}</span>` : tag)
+        .map(tag => functional_tags.some(f_tag => tag.includes(f_tag)) ? `<span class='fTag' title='${ftag_desc(functional_tags, tag)}'>${tag}</span>` : tag)
         .join(', ')
     ;
 	
@@ -82,7 +86,7 @@ function spellBrief(spellData, functional_tags) {
         spellData.range,
         spellData.duration,
         spellData.tags
-            .map(tag => tag in functional_tags ? `<span class='fTag' title='${functional_tags[tag]}'>${tag}</span>` : tag)
+            .map(tag => functional_tags.some(f_tag => tag.includes(f_tag)) ? `<span class='fTag' title='${ftag_desc(functional_tags, tag)}'>${tag}</span>` : tag)
             .join(', ')
     ].forEach(data => {
         const td = brief.appendChild(document.createElement('td'));
@@ -119,6 +123,7 @@ function main() {
     const functional_tags = {
         Concentration: 'You need to concentrate on this spell. Taking damage forces you to make a Constitution saving throw against DC 10 or half the damage done, whichever is higher. On a failure, the spell ends. When you cast a spell with Concentration while you are concentrating on a different spell, the first spell ends. You lose concentration if you are at 0 hit points.',
         Delayed: 'You can pay for this spell&apos;s AP cost over multiple turns. While you have at least 1 AP set towards the spell, you are concentrating on the spell.',
+        Forbidden: 'You can&apos;t learn this spell normally. You need a general talent that automatically unlocks these spells for you once taken.',
         Potent: 'You can cast this spell at a higher tier for an increased effect.',
         Sign: 'This spell creates a field around you that does not move. It ends if you leave the field or cast another Sign spell.',
         Ritual: 'This spell takes too much time to cast during combat.',
@@ -127,7 +132,7 @@ function main() {
     };
     const compendiumLeft = document.querySelector('#compendium_left');
     spellDatabase.forEach(spell => spell.tags.forEach(tag => {
-        if (tag in functional_tags) {
+        if (functional_tags.some(f_tag => tag.includes(f_tag))) {
             if (!f_tag_list[tag]) f_tag_list[tag] = 1;
             else f_tag_list[tag] += 1;
         } else {
