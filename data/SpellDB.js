@@ -3743,6 +3743,21 @@ const spellDatabase = [
     "empower": "Damage required to make a saving throw increases to 2d6."
   },
   {
+    "name": "Beastshape",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Transmutation",
+      "Beast",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self",
+    "duration": "1 hour",
+    "desc": "You transform yourself into a beast with hit dice equal to or less than your character level. Your equipment merges into your new form and can't be used.<br><br>While you are transformed, you use your new form's stats if they are greater than yours. You lose access to your species features and talents, and gain your form's features and attacks. You can't cast non-Beast spells, and Beast spells have their AP cost increased by 1.<br><br>You are forced back into your original form if reduced to 0 or fewer hit points.",
+    "empower": "You gain temporary hit points equal to twice the form's hit dice. While they remain, damage doesn't provoke concentration checks."
+  },
+  {
     "name": "Lightningrod",
     "author": "Levi",
     "tier": 3,
@@ -3861,6 +3876,21 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Icewall",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Conjuration",
+      "Cold",
+      "Delayed"
+    ],
+    "cost": "9 AP",
+    "range": "90 feet ",
+    "duration": "1 hour",
+    "desc": "You create nine 10 foot cubes of ice and place them in any unoccupied space within range. Each cube must be adjacent to at least one other cube. Each cube has AC 10 and 30 hit points and vulnerability to fire.<br><br>You can cast this spell before you finish paying the full AP cost. You instead create a number of cubes equal to the AP you paid.",
+    "empower": "You can carve the cubes as you create them to make shapes, such as stairs or a sculpture."
+  },
+  {
     "name": "Grand Ray",
     "author": "CrusaderDroid",
     "tier": 3,
@@ -3874,6 +3904,21 @@ const spellDatabase = [
     "duration": "Instantaneous",
     "desc": "You blast a focused beam of light out in a 15 foot wide, 300 foot long line away from you. Creatures that are not behind cover in this line must make a Constitution saving throw or take 6d10 Radiant damage, halved on a success. Creatures in the center 5 feet of the line are also blinded on a failed saving throw until the end of your next turn.",
     "empower": "Damage increases to 7d10. If any creature is reduced to 0 or fewer hit points by this spell, refund 1 AP."
+  },
+  {
+    "name": "Savage Rampage",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Transmutation",
+      "Beast",
+      "Physical"
+    ],
+    "cost": "3 AP",
+    "range": "Self (30 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "Sheer primal power overtakes you. Make one weapon attack with your currently equipped weapon on every creature you choose within range. You deal an additional 3d6 damage on hit.",
+    "empower": "Recover 1 AP for each creature reduced to 0 or fewer hit points, up to 3 AP."
   },
   {
     "name": "Crucible Forge",
@@ -4131,6 +4176,20 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Stormwrath",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Lightning"
+    ],
+    "cost": "2 AP",
+    "range": "120 feet",
+    "duration": "Instantaneous",
+    "desc": "You call down three lightning bolts that each strike a 10 foot radius area centered on target points you can see. Creatures in the area must make a Dexterity saving throw or take 6d6 lightning damage, halved on a success. A creature can only take damage from this spell once, even if multiple bolts overlap.",
+    "empower": "Adds two additional bolts."
+  },
+  {
     "name": "Plasma Chain",
     "author": "Levi",
     "tier": 3,
@@ -4144,6 +4203,23 @@ const spellDatabase = [
     "duration": "1 minute",
     "desc": "You launch a stream of pure energy at a target creature in range. Upon reaching that creature, the energy can then jump through any number of other creatures of your choice, provided the total distance covered by the energy including the initial distance to reach the primary target is less than or equal to 60 feet.<br><br>All creatures the energy jumps through must make a Constitution saving throw, taking 2d6 fire damage and 2d6 lightning damage on a failed save, or half as much on a success.<br><br>All affected creatures become charged with free ions for up to 1 minute. The next time a charged creature receives fire or lightning damage, that damage increases by 2d6 of the other type, then this effect ends on them.<br><br>If the caster has the fire tag, fire damage dealt by this spell and its lingering effect changes from d6s to d8s.<br>If the caster has the lightning tag, lightning damage dealt by this spell and its lingering effect changes from d6s to d8s.",
     "empower": "Range increases to 90 feet."
+  },
+  {
+    "name": "Earth Ally",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Conjuration",
+      "Earth",
+      "Spirit",
+      "Summoning",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self",
+    "duration": "15 minutes",
+    "desc": "You call forth a benign ethereal spirit from the earth, granted great power over the earth.<br><br>At the start of each of your turns, the spirit can do one of the following, as chosen by you: <br><br>>The spirit raises up to three stone pillars, each occupying a 5 foot cube, within 30 feet of you. It can raise the same pillar multiple times, and it can target occupied spaces. It can't raise a pillar that would crush a creature due to insufficient space.<br>>The spirit creates or removes difficult terrain in a 20 foot cube within 30 feet of you.<br>>The spirit carves a 15 foot cube area within 30 feet. It can take any shape you desire, such as stairs or a sculpture.<br>>The spirit imbues you with earth magic, granting you temporary hit points equal to twice your spellcasting stat until the start of your next turn. While the temporary hit points remain, you are resistant to slashing, piercing, and bludgeoning damage and immune to Earth spells, but your movement speed is halved.",
+    "empower": ""
   },
   {
     "name": "Vineghast Calling",
@@ -4352,6 +4428,19 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Protect",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Abjuration"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "desc": "You can cast this in response to any effect that would damage you or force you to make a saving throw outside of your turn.<br><br>You are immune to everything until the start of your next turn. You can't take any further responses.<br><br>After casting this spell, increase its AP cost by 10. Reduce its cost by 1 at the start of each of your turns until it returns to normal.",
+    "empower": ""
+  },
+  {
     "name": "False World",
     "tier": 3,
     "tags": [
@@ -4380,6 +4469,22 @@ const spellDatabase = [
     "desc": "You conjure a set of eye-shaped glyphs around a target that fire a burst of psychic energy. The target must make a Wil save. On a failure, they take 3d6 Psychic damage. In addition, one glyph remains attached to the target. You can simultaneously see from your location and from the location of all currently active Laplace glyphs, and locations you can see using a Laplace glyph are valid targeting locations for Sight range spells. If the target succeeds on their save, they take half damage and do not retain a glyph.<br><br>You may have a number of Laplace glyphs active at any one time equal to your spellcasting stat, minimum of 1. If you use Eye of Laplace on another target while at your maximum number of glyphs, the oldest glyph fades. Glyphs fade after 1 hour or if the creature they are attached to is knocked unconscious.<br><br>You may choose to forgo the damage when casting Eye of Laplace. A target may choose not to make a Wil save when targeted in this manner.",
     "empower": "The damage is increased to 5d6. The target retains a glyph even if they succeed on their Wil save.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Snowflake Mirage",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Illusion",
+      "Cold",
+      "Fey",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "1 minute",
+    "desc": "Illusory, feytouched snow rains down on a 60 foot radius area within range. Choose a creature within range that you can see when you cast this spell. The snowflakes project the image of that creature everywhere within the area. Creatures have disadvantage on attack rolls while within the area, and if they target the projected creature, can only hit them on a roll of 20. Creatures also have disadvantage on all Intuition checks to search for or detect other creatures within the area.<br><br>Any portion of the area affected by a Fire spell is burned up and no longer affected by this spell.",
+    "empower": ""
   },
   {
     "name": "Neutralization",
@@ -4472,6 +4577,20 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Ward from Beasts",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Abjuration",
+      "Beast"
+    ],
+    "cost": "3 AP",
+    "range": "Self (300 foot radius)",
+    "duration": "8 hours",
+    "desc": "A magic totem is planted into the ground that emanates an aura out to 300 feet. Beasts outside of this aura can't enter. Beasts inside deal only half damage with their attacks and experience an intense antipathy that makes them want to leave the aura.<br><br>The spell ends if the totem is destroyed.",
+    "empower": ""
+  },
+  {
     "name": "Ursa Major",
     "author": "CrusaderDroid",
     "tier": 3,
@@ -4541,6 +4660,20 @@ const spellDatabase = [
     "desc": "You channel powerful war magic. When you take the Attack action, you can also cast a Physical spell with an AP cost of 2 or less as part of the Attack action without consuming additional AP.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Harden Flesh",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Abjuration",
+      "Earth"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "Your flesh becomes hard as rock, and roughly about as flexible. You have resistance to slashing, piercing, bludgeoning, and fire damage, but your movement speed is halved and you have disadvantage on Dexterity saving throws and ability checks.",
+    "empower": ""
   },
   {
     "name": "Unholy Wave",
@@ -4691,6 +4824,20 @@ const spellDatabase = [
     "desc": "Target creature gains 2 AP on each of their turns for the duration.<br><br>When the spell ends, the target creature is stunned until the end of their next turn.",
     "empower": "Bonus AP increased to 3.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Quake",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Earth"
+    ],
+    "cost": "3 AP",
+    "range": "Self (30 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "The earth around you splits, fragments, and cracks as it shakes violently. Creatures other than you within range take 3d6 bludgeoning damage, and must make a Strength saving throw or fall prone and take 2d6 additional bludgeoning damage.<br><br>The area is difficult terrain afterwards. A creature already in difficult terrain takes 2d6 additional damage from falling prone from failing the saving throw.<br><br>This spell has no effect on creatures not touching the ground. Creatures underground are vulnerable to the damage from this spell.",
+    "empower": "You can choose which creatures are affected. The terrain beneath unaffected creatures does not become difficult terrain."
   },
   {
     "name": "Dark Pact",
