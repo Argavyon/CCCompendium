@@ -1,5 +1,7 @@
 function ftag_desc(functional_tags, tag) {
-    return functional_tags.find(f_tag => tag.includes(f_tag));
+    return functional_tags[
+        Object.keys(functional_tags).find(f_tag => tag.includes(f_tag))
+    ];
 }
 
 function spellCard(spellData, functional_tags) {
@@ -31,7 +33,7 @@ function spellCard(spellData, functional_tags) {
 	tagsD.className = 'spelltags';
 	tagsH.textContent = 'Tags:';
 	tagsD.innerHTML = spellData.tags
-        .map(tag => functional_tags.some(f_tag => tag.includes(f_tag)) ? `<span class='fTag' title='${ftag_desc(functional_tags, tag)}'>${tag}</span>` : tag)
+        .map(tag => Object.keys(functional_tags).some(f_tag => tag.includes(f_tag)) ? `<span class='fTag' title='${ftag_desc(functional_tags, tag)}'>${tag}</span>` : tag)
         .join(', ')
     ;
 	
@@ -86,7 +88,7 @@ function spellBrief(spellData, functional_tags) {
         spellData.range,
         spellData.duration,
         spellData.tags
-            .map(tag => functional_tags.some(f_tag => tag.includes(f_tag)) ? `<span class='fTag' title='${ftag_desc(functional_tags, tag)}'>${tag}</span>` : tag)
+            .map(tag => Object.keys(functional_tags).some(f_tag => tag.includes(f_tag)) ? `<span class='fTag' title='${ftag_desc(functional_tags, tag)}'>${tag}</span>` : tag)
             .join(', ')
     ].forEach(data => {
         const td = brief.appendChild(document.createElement('td'));
@@ -132,7 +134,7 @@ function main() {
     };
     const compendiumLeft = document.querySelector('#compendium_left');
     spellDatabase.forEach(spell => spell.tags.forEach(tag => {
-        if (functional_tags.some(f_tag => tag.includes(f_tag))) {
+        if (Object.keys(functional_tags).some(f_tag => tag.includes(f_tag))) {
             if (!f_tag_list[tag]) f_tag_list[tag] = 1;
             else f_tag_list[tag] += 1;
         } else {
