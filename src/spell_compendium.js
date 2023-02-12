@@ -118,7 +118,7 @@ function main() {
     const f_tag_list = {};
     const functional_tags = {
         Concentration: 'You need to concentrate on this spell. Taking damage forces you to make a Constitution saving throw against DC 10 or half the damage done, whichever is higher. On a failure, the spell ends. When you cast a spell with Concentration while you are concentrating on a different spell, the first spell ends. You lose concentration if you are at 0 hit points.',
-        Delayed: 'You can pay for this spell\'s AP cost over multiple turns. While you have at least 1 AP set towards the spell, you are concentrating on the spell.',
+        Delayed: 'You can pay for this spell&apos;s AP cost over multiple turns. While you have at least 1 AP set towards the spell, you are concentrating on the spell.',
         Potent: 'You can cast this spell at a higher tier for an increased effect.',
         Sign: 'This spell creates a field around you that does not move. It ends if you leave the field or cast another Sign spell.',
         Ritual: 'This spell takes too much time to cast during combat.',
