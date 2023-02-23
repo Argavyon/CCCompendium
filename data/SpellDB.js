@@ -3786,6 +3786,21 @@ const spellDatabase = [
     "empower": "Also affects all creatures you choose within 5 feet of you. A creature that ends their turn more than 5 feet away from you falls to the ground."
   },
   {
+    "name": "Spell Vector",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Transmutation",
+      "Arcane",
+      "Disease"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "Target creature is magically edited to copy and spread spell effects affecting it to any creature it touches. If the target uses a touch range attack or spell, strikes a creature in melee, shoves or drags a creature, or is the target of any of the prior actions, they copy all currently existing spell effects on them to the touched creature, except for this spell.<br><br>When the spell ends, all shared effects on other creatures also end.",
+    "empower": "Duration increased to 15 minutes."
+  },
+  {
     "name": "Umbral Stalker",
     "tier": 3,
     "tags": [
@@ -3962,6 +3977,21 @@ const spellDatabase = [
     "empower": "Damage increased to 7d6."
   },
   {
+    "name": "Preserve Integrity",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Abjuration",
+      "Space",
+      "Potent"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "8 hours",
+    "desc": "You spatially seal off a 60 foot radius area centered on target point within range. Space and Summoning spells of equal or lower tier in the same area can't be cast. Summoned creatures can't enter the area and are immediately expelled. Creature corpses inside the area can't be reanimated.<br><br>You can cast this spell over the course of 15 minutes. If you do so, the MP cost is halved.",
+    "empower": "Duration becomes 24 hours."
+  },
+  {
     "name": "Ursa Major",
     "author": "CrusaderDroid",
     "tier": 3,
@@ -3974,6 +4004,21 @@ const spellDatabase = [
     "duration": "15 minutes",
     "desc": "You take the Mantle of the First Bear and transform yourself into a ferocious werebear. You gain the following benefits for the duration of the spell: <br><br>>Your Strength, Dexterity, and Constitution increase by 2. This can take you past +5 or +6 in a stat.<br>>Your hands can be used as claws, which deal 1d6 slashing damage on a hit. Your claws ignore resistance and immunity to slashing damage.<br>>Your movement speed increases by 5 feet for every Werebear spell affecting you, including this one.<br>>Your damage with your claws increases by 1 for every Werebear spell affecting you, including this one.<br>>After taking damage to your hit points, you gain temporary hit points equal to your Constitution (minimum 1) until the start of your next turn.<br>>You can make an additional attack when taking the Attack action. This stacks with Extra Attack.",
     "empower": "Removes the AP cost on this spell."
+  },
+  {
+    "name": "Portal",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Conjuration",
+      "Space",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "120 feet",
+    "duration": "15 minutes",
+    "desc": "You create two portals, with each portal taking an empty space at a point within range that you can see. Any creature can freely travel through one portal to arrive at the other portal. Creatures can see the other destination through a portal. Spells and attacks can travel through the portal.",
+    "empower": ""
   },
   {
     "name": "Endless Revelation",
@@ -4108,6 +4153,21 @@ const spellDatabase = [
     "duration": "1 hour",
     "desc": "You create nine 10 foot cubes of ice and place them in any unoccupied space within range. Each cube must be adjacent to at least one other cube. Each cube has AC 10 and 30 hit points and vulnerability to fire.<br><br>You can cast this spell before you finish paying the full AP cost. You instead create a number of cubes equal to the AP you paid.",
     "empower": "You can carve the cubes as you create them to make shapes, such as stairs or a sculpture."
+  },
+  {
+    "name": "Vampiric Curse",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Necromancy",
+      "Disease",
+      "Radiant"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "Target creature you can see within range must succeed on a Constitution saving throw or have their skin changed to resemble a vampire's own skin. When exposed to direct sunlight, the creature immediately takes 2d10 radiant damage, increasing by 1d10 for each consecutive turn they end their turn in sunlight. They have disadvantage on attack rolls while in the sunlight.<br><br>A creature can repeat the saving throw at the end of each of their turns. On a success, the spell ends.",
+    "empower": "Grants vulnerability to radiant damage from other sources of radiant damage other than this spell."
   },
   {
     "name": "Quake",
@@ -4375,6 +4435,20 @@ const spellDatabase = [
     "desc": "Target creature must succeed on an Intuition saving throw. On a failure, they become locked in a game of wits against you, as you create two glasses of wine. At least one glass of wine must be poisoned - a creature that drinks the poisoned wine takes 12d6 poison damage and must make a Constitution saving throw or fall unconscious for 1 hour.<br><br>The creature chooses which wine glass to drink from before both you and the creature drink at the same time. You cannot force the creature to choose, but it cannot leave without choosing before the spell ends. Once the creature drinks, you are compelled to drink as well.<br><br>The spell ends immediately if the creature takes damage from any other source other than this spell, or you are reduced to 0 or fewer hit points.<br><br>If you are clearly immune to poison damage, such as if you are undead or a construct, the creature automatically passes its Intuition saving throw.",
     "empower": "Instead of the normal effect, a creature that drinks the poisoned wine is immediately affected by any one of your Poison tag spells.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Gifts for the Living",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Necromancy",
+      "Spirit"
+    ],
+    "cost": "3 AP",
+    "range": "Self (30 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "You call upon the spirits of the deceased for restoration to avoid their fate. Every non-reanimated creature you choose within range heals 2d12 hit points. Each corpse and reanimated creature within range adds an additional 1d12 hit points, to a maximum of 6d12 hit points.<br><br>Creatures healed by this spell must finish a rest before they can be healed by it again.",
+    "empower": "Also removes the poisoned condition and ends any disease effects on creatures."
   },
   {
     "name": "Blacklight",
@@ -4702,6 +4776,20 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Spacial Collapse",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Space"
+    ],
+    "cost": "3 AP",
+    "range": "90 feet",
+    "duration": "Instantaneous",
+    "desc": "Space in a 20 foot radius, 100 foot tall cylinder centered on target point within range you can see briefly collapses into an area the thickness of a coin before reverting back to normal in the same second. Creatures in the area must succeed on a Dexterity saving throw or take 6d4 damage, halved on a success, which cannot otherwise be reduced or prevented. Creatures that fail their Dexterity saving throw must also make an Intuition saving throw or be stunned until the end of their next turn.<br><br>Creatures in the area that are flying are immediately grounded.",
+    "empower": "Damage increases to 8d4."
+  },
+  {
     "name": "Unholy Wave",
     "author": "CrusaderDroid",
     "tier": 3,
@@ -4714,6 +4802,20 @@ const spellDatabase = [
     "duration": "Instantaneous",
     "desc": "Soul-searing unholy magic sinks into the target creature, dealing 2d6 unholy damage.<br><br>At the end of the creature's next turn, that magic explodes outwards in a 20 foot radius. The target and every creature in range must succeed on a Constitution saving throw or take 6d6 unholy damage, halved on a success.<br><br>If the initial damage reduces a creature to 0 or fewer hit points, they immediately trigger the wave.",
     "empower": "You can choose which creatures take damage from either part of this spell."
+  },
+  {
+    "name": "Outbreak",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Necromancy",
+      "Disease"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "Instantaneous",
+    "desc": "A virulent plague rips through a 20 foot radius area centered on a point within range you can see. Creatures in the area must make a Constitution saving throw or take 3d6 poison damage and become diseased by the spell for 1 minute. A successful saving throw deals half damage and avoids the disease.<br><br>Each time a diseased creature ends their turn adjacent to a creature, the diseased creature must make a Constitution saving throw or take 3d6 poison damage.",
+    "empower": "Damage increased to 4d6."
   },
   {
     "name": "Protect",
@@ -4928,6 +5030,22 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Guide to the Slain",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Necromancy",
+      "Draconic",
+      "Spirit",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "You take on the aspect of the one that carries souls to the afterlife, gaining some of its power. For the duration, creatures that die within 60 feet of you restore one hit die to you, and can be optionally sent to the afterlife, destroying their body. Reanimated and undead creatures must succeed on a Willpower saving throw when targeting you with an attack or spell, losing their turn on a failure. Your body turns partly ethereal, causing attacking creatures to roll 1d20 when attacking you with a weapon. On a roll of 10 or lower, the weapon harmlessly phases through you.",
+    "empower": ""
+  },
+  {
     "name": "Apostolic Fever",
     "tier": 4,
     "tags": [
@@ -4971,6 +5089,21 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Crush",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Evocation",
+      "Physical",
+      "Space"
+    ],
+    "cost": "3 AP",
+    "range": "90 feet",
+    "duration": "Instantaneous",
+    "desc": "Everything within a 30 foot radius of target point must make a Strength saving throw. On a failure, they are thrown as close to the center of the point as possible, and take 3d10 bludgeoning damage plus 1d10 bludgeoning damage for each additional creature or object of Medium or larger size pulled in, to a maximum of 4d10 additional damage. A creature that succeeds takes 2d10 bludgeoning damage and is moved 5 feet towards the point.<br><br>If multiple creatures or objects would occupy the same space, you choose which creature or object occupies what space.",
+    "empower": "Radius increased to 40 feet."
+  },
+  {
     "name": "Force of Will",
     "tier": 4,
     "tags": [
@@ -4982,6 +5115,67 @@ const spellDatabase = [
     "desc": "Raw magical force is expelled from you into a 15 foot radius sphere centered on you. You remove the frightened, charmed, and paralyzed conditions from you, and other creatures within range must make a Willpower saving throw or take 5d12 damage, halved on a success.",
     "empower": "Removes the AP cost from this spell.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Outbreak",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Necromancy",
+      "Disease"
+    ],
+    "cost": "1 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Target creature within range that is blinded, deafened, poisoned, paralyzed, stunned, or affected by a Disease spell emanates a black mist that spreads out to 30 feet. Creatures in range of the mist must make a Constitution saving throw or be afflicted with the same conditions as the target for the same duration.",
+    "empower": "The mist spreads to 60 feet. You and any creatures within 10 feet of you that you choose are immune."
+  },
+  {
+    "name": "Verminous Wave",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Conjuration",
+      "Beast",
+      "Disease",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "1 minute",
+    "desc": "A wave of clinging miasma emanates out in a 20 foot radius, centered on a target point in range that you can see. Creatures caught in the wave become afflicted by the miasma.<br><br>At the start of each afflicted creature's turn, all matter of vermin seem to appear from nowhere and swarm over all creatures within a 15 foot radius of the target. Everyone must make a Dexterity saving throw or take 3d4 poison and 3d4 piercing damage, halved on a success. Creatures afflicted with the miasma have disadvantage on the saving throw.<br><br>A creature able to submerge their body in water removes the miasma, ending the effect on them immediately.",
+    "empower": ""
+  },
+  {
+    "name": "Warp Field",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Abjuration",
+      "Space",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self (15 foot radius) ",
+    "duration": "1 minute",
+    "desc": "You create an immobile dome of warped space in the area. Weapon attacks from and against creatures in the dome to creatures outside the dome fail, as the dome sends the attack elsewhere.<br><br>The spell ends if you leave the dome.",
+    "empower": ""
+  },
+  {
+    "name": "The Conception",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Evocation",
+      "Draconic",
+      "Eldritch",
+      "Delayed"
+    ],
+    "cost": "6 AP",
+    "range": "Self (60 foot radius)",
+    "duration": "1 minute",
+    "desc": "You summon an image of the very first dragon, a being so disconnected from modern dragonkind that the mere image causes uncontrollable distress. Every creature within range that can see you must make an Intuition saving throw. On a failure, they are frightened for the duration, and spend their turns moving to the closest possible location to take the Hide action. On a success, they are frightened until the start of your next turn.<br><br>A creature that is Hiding can repeat the saving throw at the start of each of their turns. On a success, the effect ends for them.",
+    "empower": "Creatures that fail any saving throw from this spell take 1d20 psychic damage."
   },
   {
     "name": "Path of Ice",
@@ -5043,6 +5237,21 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Black Bile",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Necromancy",
+      "Disease",
+      "Water"
+    ],
+    "cost": "2 AP",
+    "range": "30 feet",
+    "duration": "Until cured",
+    "desc": "You invisibly contaminate a body of liquid within range. Any creature that drinks this liquid becomes afflicted by Black Bile, a withering disease causing the creature to cough out horrid globs of black bile upon drinking any liquid. The creature is poisoned for the duration, and always rolls the minimum value on all hit dice used for recovery. Each time the creature would drink something, it must make a Constitution saving throw. On a failure, it coughs out the liquid with horrid black bile mixed in, and takes 1d6 poison damage. Damage taken this way reduces the creature's maximum hit points by the same amount.<br><br>A creature that succeeds in three Constitution saving throws within 24 hours without any failures is on the path to recovery and has advantage on all future saving throws against this spell. A creature that achieves this again is cured on the next day.",
+    "empower": ""
+  },
+  {
     "name": "Song of the End",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -5056,6 +5265,20 @@ const spellDatabase = [
     "duration": "Instantaneous",
     "desc": "You begin to sing a song about the downfall of a kingdom, overturned by a vengeful god. If you spend at least 1 AP during your turn towards casting this spell, you gain temporary hit points equal to five times your spellcasting stat per AP spent.<br><br>While casting, all creatures within range immediately know you are casting a powerful spell. Most sentient creatures with means will attempt to target you to force you to stop. Creatures with fewer hit dice than your level must instead make an Intuition saving throw or be frightened for 1 minute and take any measures required to leave the area of effect.<br><br>When completed, a devastating wave of force rushes from you and blasts the area of the spell. Creatures within range take 8d10+20 arcane damage, and must make an Intuition saving throw or take 4d10 psychic damage, halved on a success. Terrain in the area is utterly destroyed, leaving a hollowed out hole. Objects that fit completely within the area are destroyed.<br><br>A creature reduced to 0 or fewer hit points by this spell is disintegrated.",
     "empower": "A number of creatures equal to your spellcasting stat within range are unaffected by this spell."
+  },
+  {
+    "name": "Disdain",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Evocation",
+      "Draconic"
+    ],
+    "cost": "1 AP",
+    "range": "30 feet",
+    "duration": "Instantaneous",
+    "desc": "You exhale dragonbreath at a target within range. The creature must succeed on a Dexterity saving throw or take 6d6 fire damage, halved on a success.<br><br>This spell refunds half its MP cost and 1 AP if the creature is reduced to 0 or fewer hit points by this spell.",
+    "empower": ""
   },
   {
     "name": "Warding Sphere",
@@ -5100,6 +5323,24 @@ const spellDatabase = [
     "desc": "The shadow of a target creature within range animates, then casts one spell of tier 3 or lower that you know or that you have seen the target cast. The spell costs 0 AP.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Exile",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Abjuration",
+      "Eldritch",
+      "Holy",
+      "Space",
+      "Unholy",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "Target creature must succeed on a Willpower saving throw or be removed from your current plane. If they are a native, they are set in a harmless demiplane and can repeat the saving throw at the end of each of their turns to return to their prior location.<br><br>If the creature is not from this plane, they are instead locked in a battle of wills with you. They are partially phased out of the plane and can't be targeted by anything. At the start of each of its turns, it makes a competing Willpower roll against your spellcasting stat. If it gets two consecutive successes or your concentration is broken, it ends the spell early and deals 4d12 psychic damage to you and stuns you until the end of your next turn from the backlash of the spell. If it gets two consecutive failures, it is banished from the plane for a year and a day, sent back to its native plane, and the spell ends.",
+    "empower": "An extraplanar creature is banished if it fails twice, even if it succeeds once after failing."
   },
   {
     "name": "Evaporate",
