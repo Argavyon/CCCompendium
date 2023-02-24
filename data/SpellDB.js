@@ -4999,6 +4999,21 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Storm Chains",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Evocation",
+      "Lightning",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "You cast chains of lightning from yourself to target creature, which are five feet long lines. At the start of each of their turns, or if a creature starts their turn inside the chain, they must make a Dexterity saving throw or take 3d8 lightning damage, halved on a success. If a target is more than 60 feet away from you, the chain breaks on them.<br><br>You can target a new creature for 1 AP during each of your turns. A creature can only take damage from this spell once between each of your turns.",
+    "empower": "Range increased to 90 feet. Chain range before breaking increased to 90 feet."
+  },
+  {
     "name": "Vigilance of the First Bear",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -5237,6 +5252,21 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Trance of Shared Minds",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Divination",
+      "Psychic",
+      "Ritual"
+    ],
+    "cost": "N/A",
+    "range": "30 feet ",
+    "duration": "24 hours",
+    "desc": "You spend 15 minutes with any number of creatures of equal or fewer hit dice than you within range, prepping their mind to receive a fragment of your knowledge. When the spell finishes, all targeted creatures share your proficiencies, share one weapon style you know, and share one tier 1 spell you know. Creatures in this trance can cast the shared spell using your MP if you choose to allow it.<br><br>You can choose to cast this spell without the Ritual tag for 3 AP, but it gains the Concentration tag and sets the duration to 1 minute.",
+    "empower": "Range increased to 60 feet."
+  },
+  {
     "name": "Black Bile",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -5265,6 +5295,22 @@ const spellDatabase = [
     "duration": "Instantaneous",
     "desc": "You begin to sing a song about the downfall of a kingdom, overturned by a vengeful god. If you spend at least 1 AP during your turn towards casting this spell, you gain temporary hit points equal to five times your spellcasting stat per AP spent.<br><br>While casting, all creatures within range immediately know you are casting a powerful spell. Most sentient creatures with means will attempt to target you to force you to stop. Creatures with fewer hit dice than your level must instead make an Intuition saving throw or be frightened for 1 minute and take any measures required to leave the area of effect.<br><br>When completed, a devastating wave of force rushes from you and blasts the area of the spell. Creatures within range take 8d10+20 arcane damage, and must make an Intuition saving throw or take 4d10 psychic damage, halved on a success. Terrain in the area is utterly destroyed, leaving a hollowed out hole. Objects that fit completely within the area are destroyed.<br><br>A creature reduced to 0 or fewer hit points by this spell is disintegrated.",
     "empower": "A number of creatures equal to your spellcasting stat within range are unaffected by this spell."
+  },
+  {
+    "name": "Wakevenom Thorn",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Conjuration",
+      "Plant",
+      "Poison",
+      "Silent"
+    ],
+    "cost": "1 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "A silent, poisonous thorn flies from you into a target creature within range that you can see. They must make a Constitution saving throw or be paralyzed. While paralyzed, they hallucinate that they are acting normally.<br><br>If the creature takes damage, they can make a Knowledge saving throw with advantage to realize they are hallucinating. On a success, they make a Constitution saving throw at the end of each of their turns or when they take damage. On a success, the spell ends.",
+    "empower": "Targets up to three creatures, each of whom cannot be more than 10 feet from another target."
   },
   {
     "name": "Disdain",
