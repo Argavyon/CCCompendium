@@ -58,6 +58,7 @@ table.class {
 	margin-right: auto;
 	width: 600px;
 	background-color: Ivory;
+	margin-bottom: 8px;
 }
 td.classname {
 	font-weight: bold;
