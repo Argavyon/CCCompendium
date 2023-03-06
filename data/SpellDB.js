@@ -1706,6 +1706,20 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Writ",
+    "author": "Levi",
+    "tier": 1,
+    "tags": [
+      "Transmutation",
+      "Universal"
+    ],
+    "cost": "0 AP",
+    "range": "Self",
+    "duration": "24 hours",
+    "desc": "You engrave onto a surface a mystical set of symbols and shapes that convey a message. As you cast this spell, describe one or more creatures that this message is intended for, and what your message is. This message must be 15 words or less.<br><br>The encoded message will appear as indecipherable abstract nonsense to any creature except the intended recipient(s) and the caster.<br><br>If the surface is disrupted or destroyed, the message is also lost.",
+    "empower": ""
+  },
+  {
     "name": "Bramble Block",
     "tier": 1,
     "tags": [
@@ -2679,6 +2693,20 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Oracle Eyes",
+    "author": "Levi",
+    "tier": 2,
+    "tags": [
+      "Divination",
+      "Potent"
+    ],
+    "cost": "1 AP",
+    "range": "Self (30 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "You open your mind to the cosmos, and briefly see the absolute truth of everything around you.<br><br>This flash of insight lasts only a fraction of a second, lest the overload of information destroys your psyche. When you cast this spell the following are revealed to you if they exist within the range of the spell:<br>>The number of creatures in range.<br>>If there are any creatures, objects, or pathways that are invisible or otherwise obscured or hidden.<br>>If there are any creatures, objects, or pathways currently under the effect of any magical illusion.<br><br>If cast at a higher tier, the radius of this spell is equal to 10 feet times the normal MP cost of a spell of that tier, regardless of the actual MP you spent to cast it.<br><br>Casting this spell more than once without taking a break or rest requires a successful Constitution check of DC 10, with each successive casting increasing the DC by 5. On a failure ,the spell fails as you overstrain your mind.",
+    "empower": ""
+  },
+  {
     "name": "Phantom Bows",
     "tier": 2,
     "tags": [
@@ -3594,6 +3622,23 @@ const spellDatabase = [
     "desc": "As a response to a creature you can see damaging you, you gesture and set the attacker ablaze, dealing 2d6 fire damage, plus 1d6 fire damage for each tier higher than 2. If cast as a tier 5 spell or higher,  the target must make a Dexterity saving throw or take an additional 3d6 fire damage.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Marionette Strings",
+    "author": "Levi",
+    "tier": 2,
+    "tags": [
+      "Enchantment",
+      "Psychic",
+      "Shadow",
+      "Concentration",
+      "Silent"
+    ],
+    "cost": "1 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "An infinitesimally thin thread of shadows is sent to a target creature in range. That creature must succeed on an Intuition saving throw or become unknowingly bound by the thread. A creature that succeeds on the saving throw is still bound, but are aware they are bound.<br><br>A creature aware they are bound by this spell may spend 1 AP at any time to end this spell on themselves.<br><br>While a creature is bound, you gain access to the following response actions. Each costs 1 AP, and the spell ends once you take one of these actions.<br>>In response to the creature attempting to cast a spell that is not Still, you disrupt their gesture, canceling the spell from being cast. The creature does not pay MP, but they do lose any AP that would have been spent, and cannot cast that spell again in the same turn.<br>>In response to the creature making an attack, you may change the target to any creature or object in range. If the creature is unwilling to attack the newly chosen target, the attack is made with disadvantage and only deals half damage on a hit.<br>>In response to the creature taking any action that requires rolling a d20, the creature automatically rolls a 1.",
+    "empower": ""
   },
   {
     "name": "Blackened Edifice",
@@ -5014,6 +5059,22 @@ const spellDatabase = [
     "empower": "Range increased to 90 feet. Chain range before breaking increased to 90 feet."
   },
   {
+    "name": "Invoke War",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Evocation",
+      "Arcane",
+      "Physical",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "You infuse the ambient magic with lethal intent, creating an ethereal semi-sentient being of war. It has 3 AP, which replenishes at the end of each of your turns, and marks out a 60 foot radius around it. Every time a creature in the area is attacked or targeted by a damaging spell, the being of war spends 1 AP as a response to launch its own attack on the same creature, using your spellcasting stat and proficiency modifier to determine its attack roll. If multiple creatures are targeted, it picks the creature with the highest amount of hit points, randomly choosing a target on ties. On a hit, it inflicts 4d6 arcane damage if the trigger was a spell, and 2d6 piercing damage if the trigger was a weapon attack.<br><br>If you lose your concentration on the spell, the being of war does not disappear, but becomes berserk. Every time it would attack, it additionally targets you if you are still in range.",
+    "empower": ""
+  },
+  {
     "name": "Vigilance of the First Bear",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -5104,6 +5165,21 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Sigil of Summoning",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Abjuration",
+      "Summoning",
+      "Potent"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "Special",
+    "desc": "You create a sigil on a surface within range that you can see. The sigil then serves as the center of a Summoning spell of lower tier than the tier this spell was cast at. If it has the Concentration tag, the sigil instead concentrates on the spell for you.<br><br>The sigil has AC 10 and 30 hit points, plus 15 per tier this spell is cast at. If destroyed, the spell ends. The surface the sigil is on cannot be destroyed or modified until the sigil is destroyed.<br><br>The first sigil is instantly destroyed if you cast this spell again.",
+    "empower": ""
+  },
+  {
     "name": "Crush",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -5119,6 +5195,57 @@ const spellDatabase = [
     "empower": "Radius increased to 40 feet."
   },
   {
+    "name": "Call Haunthollow",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Necromancy",
+      "Plant",
+      "Summoning",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "15 minutes",
+    "desc": "You call forth an ashen, pale tree that occupies a 10 foot radius, 20 foot tall cylinder at target location you can see. This tree has no greenery, but a hollow in the center of the tree emits an unearthly wailing that causes the infinite ashen vines within to shake and rattle.<br><br>At the start of each of your turns, the haunthollow sends a vine out to a creature corpse within 60 feet of it and reanimates the creature under its control. At the end of each of your turns, the haunthollow commands each creature to move up to half its movement speed and optionally make one weapon attack. You choose where each creature moves and who each creature attacks.<br><br>If no corpses are within range, the haunthollow instead launches a vine at whatever creature is in range with the lowest hit point count. The creature must make a Dexterity saving throw or take 3d6 unholy damage. A creature reduced to 0 hit points from this damage is instantly reanimated.<br><br>The haunthollow has AC 12 and 120 hit points. Its vines have AC 12, 10 hit points and are vulnerable to slashing, fire and radiant damage. Destroying a vine immediately ends the reanimation effect on that creature. Destroying the haunthollow ends the spell.<br><br>If your concentration is broken, the haunthollow no longer regards you as an ally or obeys your commands, and will command reanimated creatures to defend itself and attack the nearest living creature to itself.",
+    "empower": ""
+  },
+  {
+    "name": "Acidic Hail",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Conjuration",
+      "Acid",
+      "Cold",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "1 minute",
+    "desc": "Acidic hailstones fall from the sky, striking a 20 foot radius cylinder 100 feet tall. Creatures in the area when it is created and who start their turn in the area must succeed on a Dexterity saving throw or take 4d4 cold and 4d4 acid damage, halved on a success. The hailstones break apart on impact and transform the terrain into difficult terrain.<br><br>During your turn, you can spend 1 AP to move the hail up to 30 feet.",
+    "empower": "Damage increased to 6d4 cold damage and 6d4 acid damage."
+  },
+  {
+    "name": "Harbinger of Ill Futures",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Conjuration",
+      "Disease",
+      "Earth",
+      "Poison",
+      "Radiant",
+      "Apocalyptic",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "30 feet",
+    "duration": "1 minute",
+    "desc": "You summon a humanoid-shaped mass of rocks, each of which is imbued with a sickly green core. It shines this pale light out to 30 feet.<br><br>Creatures that start their turn in the light lose 1d6 maximum hit points and must make a Constitution saving throw. On a failure, they are poisoned, and lose 3d6 maximum hit points for each turn they start in range while poisoned in this way. A creature can repeat the saving throw if they end a turn out of the light, ending the poisoned effect on a success.<br><br>You can command the creature to move up to 30 feet at the start of each of your turns. It has AC 14 and 100 hit points, and crumbles into nothingness if destroyed. If it suffers fire damage, it begins to critically overheat. At the end of your next turn if it is still alive, it explodes, and every creature within 90 feet must succeed on a Constitution saving throw or take 12d6 fire damage, halved on a success. Damage taken this way can't be negated, and reduces your maximum hit points by twice the damage taken. The explosion area becomes permanently affected, causing creatures that end their turn inside to lose 1d6 maximum hit points.",
+    "empower": ""
+  },
+  {
     "name": "Force of Will",
     "tier": 4,
     "tags": [
@@ -5130,6 +5257,37 @@ const spellDatabase = [
     "desc": "Raw magical force is expelled from you into a 15 foot radius sphere centered on you. You remove the frightened, charmed, and paralyzed conditions from you, and other creatures within range must make a Willpower saving throw or take 5d12 damage, halved on a success.",
     "empower": "Removes the AP cost from this spell.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Guardian Angel",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Conjuration",
+      "Holy",
+      "Summoning",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Touch",
+    "duration": "15 minutes",
+    "desc": "You call forth a fragment of pure holy power to watch over the target creature. They can use your spellcasting stat instead of their own stats for any saving throw. If they would take damage that would reduce them to 0 or fewer hit points during the spell, they are instead healed to one half of their maximum hit points and have all conditions and negative spell effects removed. The spell then ends.<br><br>This spell can't be cast on the same target more than once per rest.",
+    "empower": ""
+  },
+  {
+    "name": "Soul Erosion",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Enchantment",
+      "Acid",
+      "Spirit"
+    ],
+    "cost": "3 AP",
+    "range": "Self (60 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "All creatures other than you within range must succeed on an Intuition saving throw. On a failure, acidic magic seeps into their soul and exposes their weakness. They become vulnerable to the next source of damage they take before the end of their next turn, and have disadvantage on all saving throws to end ongoing effects during their next turn and at the end of their next turn.",
+    "empower": ""
   },
   {
     "name": "Outbreak",
@@ -5193,6 +5351,20 @@ const spellDatabase = [
     "empower": "Creatures that fail any saving throw from this spell take 1d20 psychic damage."
   },
   {
+    "name": "Death Grip",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Transmutation",
+      "Acid"
+    ],
+    "cost": "1 AP",
+    "range": "Touch",
+    "duration": "Instantaneous",
+    "desc": "You transform the surface of one of your empty hands into a highly corrosive acid. The target creature must succeed on a Constitution saving throw or have 1d6 hit dice destroyed. If the creature has insufficient hit dice, it instead takes 20 acid damage for each hit die that would be destroyed.<br><br>Creatures you are grappling have disadvantage on the saving throw.",
+    "empower": ""
+  },
+  {
     "name": "Path of Ice",
     "tier": 4,
     "tags": [
@@ -5252,6 +5424,22 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Profound Disappointment",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Enchantment",
+      "Acid",
+      "Fey",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "30 feet ",
+    "duration": "1 hour",
+    "desc": "You speak your disappointment to a creature within range that can hear and understand you, lacing your words with a corrosive magic that crushes their will. The creature must succeed on an Intuition saving throw or be heavily affected by your words. For the duration of the spell, they have disadvantage on all ability checks, and are charmed by you. If they would make a Willpower roll, they must first roll 1d20. On a roll of 10 or lower, the creature automatically fails the roll.<br><br>If you damage the creature, it can repeat the saving throw. On a success, the spell ends.<br><br>A creature that succeeds on its initial saving throw knows you attempted to use magic to influence its mind, and can't be targeted by this spell again until it completes a rest.",
+    "empower": ""
+  },
+  {
     "name": "Trance of Shared Minds",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -5295,6 +5483,22 @@ const spellDatabase = [
     "duration": "Instantaneous",
     "desc": "You begin to sing a song about the downfall of a kingdom, overturned by a vengeful god. If you spend at least 1 AP during your turn towards casting this spell, you gain temporary hit points equal to five times your spellcasting stat per AP spent.<br><br>While casting, all creatures within range immediately know you are casting a powerful spell. Most sentient creatures with means will attempt to target you to force you to stop. Creatures with fewer hit dice than your level must instead make an Intuition saving throw or be frightened for 1 minute and take any measures required to leave the area of effect.<br><br>When completed, a devastating wave of force rushes from you and blasts the area of the spell. Creatures within range take 8d10+20 arcane damage, and must make an Intuition saving throw or take 4d10 psychic damage, halved on a success. Terrain in the area is utterly destroyed, leaving a hollowed out hole. Objects that fit completely within the area are destroyed.<br><br>A creature reduced to 0 or fewer hit points by this spell is disintegrated.",
     "empower": "A number of creatures equal to your spellcasting stat within range are unaffected by this spell."
+  },
+  {
+    "name": "First Dragon's Breath",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Evocation",
+      "Draconic",
+      "Eldritch",
+      "Delayed"
+    ],
+    "cost": "6 AP",
+    "range": "90 feet",
+    "duration": "Instantaneous",
+    "desc": "You pull forth the smallest fraction of the breath of the First Dragon, wholly obliterating a 15 foot wide, 60 foot long, 30 foot tall line, whose start and end points are both within range of the spell. All creatures in the area are frightened until the end of their next turn, and must make a Dexterity saving throw or take 4d6 fire damage, must make a Constitution saving throw or take 4d6 unholy damage, and must make an Intuition saving throw or take 4d6 psychic damage. Each successful saving throw reduces the respective damage by half. A creature that fails all three saving throws is frightened for one minute.<br><br>Objects fully contained in the area are utterly destroyed. Difficult terrain in the area is incinerated as the breath completely levels the ground.",
+    "empower": "Every failed saving throw deals 1d6+2 poison damage."
   },
   {
     "name": "Wakevenom Thorn",
@@ -5371,6 +5575,23 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Light Trickster",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Illusion",
+      "Fey",
+      "Radiant",
+      "Shadow",
+      "Summoning"
+    ],
+    "cost": "2 AP",
+    "range": "Self (300 foot radius)",
+    "duration": "1 minute",
+    "desc": "You call upon a capricious fey magic to manipulate both light and appearance in the area. At the start of each of your turns while you remain in the area, choose one of the following effects: <br>>A 30 foot radius area becomes brightly lit. A 30 foot radius area elsewhere that was previously lit becomes completely dark.<br>>Choose a creature you can see within range. All creatures within 30 feet of that creature appear as exact copies of that creature. This illusion fails to hold up to physical inspection.<br>>Choose a creature or object you can see within range. Up to ten duplicates of that creature or object appear in empty spaces within 30 feet of the target. If a targeted creature moves, you can spend 1 AP as a response to cause any number of duplicates to move as well, using the creature's movement speed as their own.<br><br>All effects last until the end of the spell.",
+    "empower": ""
+  },
+  {
     "name": "Exile",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -5402,6 +5623,44 @@ const spellDatabase = [
     "duration": "Instantaneous",
     "desc": "You instantly evaporate an amount of water that can fill a 40 foot cube, increased by 20 feet for each tier higher this spell is cast at. The water does not need to fit completely within the cube, but it must be from the same body of water.",
     "empower": ""
+  },
+  {
+    "name": "Surging Vessel",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Transmutation",
+      "Arcane",
+      "Eldritch",
+      "Holy",
+      "Psychic",
+      "Unholy",
+      "Concentration"
+    ],
+    "cost": "0 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "Power rushes through you as you open your body up to raw magic. For the duration, you use your spellcasting stat in place of your Strength, Dexterity, and Constitution, and have resistance to damage from spells.<br><br>At the end of each turn while this spell is active, you take damage equal to your spellcasting stat times the number of turns you've ended while concentrating on the spell.",
+    "empower": "You gain +1 to your spellcasting stat for the duration."
+  },
+  {
+    "name": "Harness Weather",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Transmutation",
+      "Cold",
+      "Lightning",
+      "Water",
+      "Wind",
+      "Concentration",
+      "Delayed"
+    ],
+    "cost": "9 AP",
+    "range": "Self (300 foot radius)",
+    "duration": "15 minutes",
+    "desc": "You take control of the weather in the surrounding area and can change it as you see fit. As part of casting this spell and for 2 AP during any of your turns, choose one of the following effects to take place anywhere in range: <br>>Intense winds blow in either a 30 foot long, 10 foot wide, 15 foot tall line, or a 30 foot radius sphere. Ranged weapon attacks that pass through automatically miss, and creatures that move through the area spend 2 feet of movement for every 1 foot moved.<br>>Hail storms down in a 20 foot radius, 100 foot tall cylinder. Creatures that enter the area or start their turn inside take 2d6 cold and 1d6 bludgeoning damage.<br>>Heavy rains pour down in a 30 foot radius, 100 foot tall cylinder, obscuring vision through the area and extinguishing fires. Creatures inside are resistant to fire damage.<br>>Lightning strikes a creature within range. They must make a Dexterity saving throw or take 8d12 lightning damage.<br>>Dark clouds blot out sunlight in a 60 foot radius area.<br><br>Any effects created by this spell last until the spell ends.",
+    "empower": "Reduces the AP cost to 6."
   },
   {
     "name": "Pandemonium",
@@ -5555,6 +5814,22 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Calling Card",
+    "author": "Levi",
+    "tier": 5,
+    "tags": [
+      "Conjuration",
+      "Space",
+      "Summoning",
+      "Ritual"
+    ],
+    "cost": "N/A",
+    "range": "Self",
+    "duration": "Indefinite",
+    "desc": "Spending 15 minutes on a ritual, you create a magical contract between you and another willing creature, manifesting in the form of a thin and small card.<br><br>When you hold the card in hand and will it to activate, the card disintegrates and the  other creature connected by the contract gains a general awareness of the situation and location around the destroyed card. They may then choose to accept or decline the summons.<br><br>If they accept, they teleport along with any objects they are carrying, though no more than their carrying capacity, to an open space within 5 feet of where the card was destroyed. This spell then ends. This spell fails if the card holder and other creature are not in the same plane.<br><br>A caster may have a number of Calling Card contracts active equal to their proficiency modifier. A creature on either end of an active Calling Card contract cannot be bound by another Calling Card contract.",
+    "empower": ""
+  },
+  {
     "name": "Wintercraft",
     "tier": 5,
     "tags": [
@@ -5705,6 +5980,25 @@ const spellDatabase = [
     "desc": "A thundering column of lightning descends from the sky onto a target creature you can see, blasting a 60 foot radius sphere with the shock wave. The target creature must make a Constitution saving throw or take 10d8 lightning damage plus 1d8 lightning damage for each other creature in the spell's area, halved on a success. The total damage cannot exceed 20d8. Other creatures must make a Constitution saving throw or take 8d8 lightning damage, halved on a success.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Ruler of the Weather",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Transmutation",
+      "Cold",
+      "Lightning",
+      "Water",
+      "Wind",
+      "Concentration",
+      "Delayed"
+    ],
+    "cost": "9 AP",
+    "range": "Self (300 foot radius)",
+    "duration": "1 hour",
+    "desc": "This spell is similar to Harness Weather, except that you choose two effects each time. You can choose the same effect twice in one turn.",
+    "empower": "Reduces the AP cost to 4."
   },
   {
     "name": "Abyssal Call",
