@@ -131,6 +131,7 @@ function main() {
         Ritual: 'This spell takes too much time to cast during combat.',
         Silent: 'You do not need to speak to cast this spell.',
         Still: 'You do not need to move to cast this spell.',
+        Cantrip: 'When cast, this spell is treated as a tier 1 spell in all regards, including MP cost.',
     };
     const compendiumLeft = document.querySelector('#compendium_left');
     spellDatabase.forEach(spell => spell.tags.forEach(tag => {
