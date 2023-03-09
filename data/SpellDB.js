@@ -3214,6 +3214,20 @@ const spellDatabase = [
     "empower": "Doubles the hit points of the block and removes its fire vulnerability."
   },
   {
+    "name": "Thought Jammer",
+    "author": "Levi",
+    "tier": 2,
+    "tags": [
+      "Evocation",
+      "Psychic"
+    ],
+    "cost": "1 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "A target creature has their thoughts disrupted. On that creature's next turn, they cannot take any action that they took in their previous turn.",
+    "empower": ""
+  },
+  {
     "name": "Eye of Fear",
     "tier": 2,
     "tags": [
@@ -4468,6 +4482,25 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "False Firmament",
+    "author": "Levi",
+    "tier": 3,
+    "tags": [
+      "Illusion",
+      "Eldritch",
+      "Lightning",
+      "Wind",
+      "Water",
+      "Space",
+      "Sign"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "A projection of the starry skies forms above you in a 60 foot radius dome centered on your position. The projection depicts the exact view of night sky above your current position regardless of distance and actual time of day.<br><br>Spells that require view of the sky or stars may be cast inside the area as if the caster has a view of the actual sky or stars.<br><br>The area is filled with dim light.<br><br>While inside the area, your spells that share any tag with this spell have their MP cost lowered as if they were a spell of one tier lower (no effect on tier 1 spells).<br><br>If you have the Illusion tag, when you cast this spell you may instead choose to project a modified view of the sky, altered as you wish. Creatures viewing the altered projection cannot discern if the projection is real or altered.",
+    "empower": ""
+  },
+  {
     "name": "Wine Wager",
     "tier": 3,
     "tags": [
@@ -5089,6 +5122,20 @@ const spellDatabase = [
     "empower": "Removes the AP cost on this spell."
   },
   {
+    "name": "Blood to Poison",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Necromancy",
+      "Poison"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "Target creature must succeed on a Constitution saving throw or have their blood begin changing into poison. They become poisoned, and at the start of each of their turns, must roll one of their hit dice, taking poison damage equal to the amount of healing they would normally receive. Damage dealt this way reduces maximum hit points by the same amount. A creature with no hit dice remaining instead falls unconscious for the duration of the spell.<br><br>The creature can repeat the saving throw at the end of each of their turns. On a success, the spell ends early, and they are no longer poisoned.",
+    "empower": "The first time the creature rolls a hit die, they roll three instead."
+  },
+  {
     "name": "Gate of Purgation",
     "author": "Levi",
     "tier": 4,
@@ -5103,6 +5150,21 @@ const spellDatabase = [
     "range": "60 feet",
     "duration": "1 minute",
     "desc": "Ethereal white flames fill the air in a 30 foot radius and 30 foot high cylinder rising from target point. The flames provide bright light in the area and cast dim light out to a radius of an additional 90 feet.<br><br>For Undead, Fiends, and Urthings, or any creature whose body is inhabited by a soul or other external consciousness that is not their original, the flames cause intense debilitating pain. When one of these creatures enters or touches the flames for the first time on each of their turns, they immediately lose concentration, their AP is lowered by 3, and their movement is lowered by half of their speed. Additionally the flames are difficult terrain for these creatures, and these creatures cannot gain HP, temporary HP, MP, AP, or additional movement as long as they are touching the flames.<br><br>For any other creature, touching the flames gives them advantage on saving throws against all magical effects as long as they are touching the flames.<br><br>While inside the area, your Fire and Holy spells apply the effects of being touched by this spell's purifying flames to targets hit until the start of their next turn.<br><br>Note: I wrote Tier 4 but it might be worth much more than that in certain circumstances, so idk.",
+    "empower": ""
+  },
+  {
+    "name": "Grasping Growth",
+    "author": "Levi",
+    "tier": 4,
+    "tags": [
+      "Conjuration",
+      "Plant",
+      "Concentration"
+    ],
+    "cost": "1-3 AP",
+    "range": "60 feet",
+    "duration": "1 minute ",
+    "desc": "You infuse energy into the ground and will new life to sprout in the form of thick vines in a 60 foot radius area centered on your current location.  For each AP spent to cast this spell you spawn one vine.<br><br>Each vine can be commanded to coil around one creature in range that is within 60 feet of the ground. A targeted creature must succeed on a Dexterity saving throw or become prone and restrained. An airborne creature caught by a vine is pulled down to the ground, suffering fall damage as necessary. Vines that miss their target retreat into the ground harmlessly. A creature restrained by this spell may repeat the save at the start of each of their turns to attempt to free themselves. Alternatively if a vine is destroyed, the restrained creature is freed. Vines have 10 AC, 20 HP, and a restrained creature has disadvantage on attacking the vines restraining them.<br><br>While this spell lasts, you may repeat the cast effect once on each of your turns at no additional MP cost, paying 1-3 AP each time, to spawn more vines.",
     "empower": ""
   },
   {
@@ -5211,6 +5273,37 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Spear of Seven Suns",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Evocation",
+      "Radiant",
+      "Concentration",
+      "Delayed"
+    ],
+    "cost": "6 AP",
+    "range": "Sight",
+    "duration": "1 minute",
+    "desc": "As part of beginning to cast this spell, designate a location or target creature that you can see. When you finish casting this spell, a pillar of light that occupies a cylinder with a radius of 10 feet and a height of 300 feet descends on the target. It takes 2d8 radiant damage, and must make a Dexterity saving throw or take 4d8 additional radiant damage, halved on a success.<br><br>At the start of each of your turns, if a creature was targeted, the pillar moves to center itself on the targeted creature. All creatures it moves through must make a Dexterity saving throw or take 4d8 radiant damage.",
+    "empower": "When the pillar moves through the targeted creature, it takes half damage on a successful saving throw instead of no damage."
+  },
+  {
+    "name": "Exalted Altar",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Transmutation",
+      "Earth",
+      "Holy"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "1 hour",
+    "desc": "You craft nonmagical stone within a 10 foot radius centered on a target point within range and turn it into an altar of holiness. Undead and reanimated creatures within 60 feet of the altar lose 1 hit die for every time they end their turn within range, and take damage equal to one-quarter of their maximum hit points if they have no more hit dice remaining.<br><br>When you cast a spell that restores hit points to a creature, the altar stores the MP cost of the spell. You can spend 1 AP during your turn to have the altar manifest all stored MP as a sphere of divine energy. The first creature to pick it up heals a number of hit points equal to the MP that was stored.<br><br>A creature that has died within range of the altar can be placed on the altar. When the spell ends, the creature is returned to life with 1 hit point.",
+    "empower": ""
+  },
+  {
     "name": "Acidic Hail",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -5257,6 +5350,55 @@ const spellDatabase = [
     "desc": "Raw magical force is expelled from you into a 15 foot radius sphere centered on you. You remove the frightened, charmed, and paralyzed conditions from you, and other creatures within range must make a Willpower saving throw or take 5d12 damage, halved on a success.",
     "empower": "Removes the AP cost from this spell.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Light of Truth",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Divination",
+      "Radiant",
+      "Potent",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self (300 foot cone) ",
+    "duration": "1 hour",
+    "desc": "You hold up one hand that continually shines a piercing light that illuminates the area. All falsehoods within are banished - creatures can't tell lies, hidden messages are revealed, and Illusion and Enchantment spells of equal or lower tier than this spell can't be cast, and have their effects ended immediately.<br><br>The light moves with your hand. You can't carry anything in that hand while concentrating on this spell, or the effect is suspended until your hand is free.",
+    "empower": ""
+  },
+  {
+    "name": "Mass Shadowblind",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Enchantment",
+      "Shadow",
+      "Silent",
+      "Still"
+    ],
+    "cost": "2 AP",
+    "range": "Self (90 foot radius)",
+    "duration": "10 minutes",
+    "desc": "This is similar to the spell Shadowblind, except that it targets any creature you choose within range that you can see.",
+    "empower": "No longer requires vision of any targets. You become aware of all possible targets when choosing who to affect, although you lose this awareness after casting the spell."
+  },
+  {
+    "name": "Thunderlord's Arrival",
+    "author": "Levi",
+    "tier": 4,
+    "tags": [
+      "Conjuration",
+      "Lightning",
+      "Wind",
+      "Space",
+      "Potent"
+    ],
+    "cost": "3 AP",
+    "range": "3 miles",
+    "duration": "Instantaneous",
+    "desc": "You and everything you are carrying streak into the sky as a bolt of pure lightning envelops you harmlessly. During this time you gain a birds eye view of the area around you and must select a point open to the sky. This point crackles with static electricity that nearby creatures can intuitively sense danger from.<br><br>At the start of your next turn, you crash down with a lightning bolt at the target point, dealing 4d6 lightning damage to creatures within 5 feet, and emitting a shockwave for 30 feet. Creatures hit by the shockwave are pushed back 5 feet if possible and must make a Dexterity saving throw, taking 8d6 force damage on a failed save or half as much on a success. Creatures that fail the save are knocked prone.<br><br>If cast at a higher tier you may bring 1 other creature with you for each tier past 4. These creatures must be touching you when this spell is cast, and will arrive at the target location harmlessly in the same relative position.",
+    "empower": ""
   },
   {
     "name": "Guardian Angel",
@@ -5455,6 +5597,20 @@ const spellDatabase = [
     "empower": "Range increased to 60 feet."
   },
   {
+    "name": "Gaian Rampart",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Abjuration",
+      "Earth"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "Until dispelled or destroyed",
+    "desc": "You create a 10 foot tall stone obelisk at target location within range. It has AC 16, 120 hit points, and resistance to slashing and piercing damage.<br><br>If another obelisk is within 60 feet, an impenetrable barrier of force interwoven with multicolored stones forms between the two obelisks. Only creatures you choose can pass through the barrier.<br><br>Any number of obelisks, either created by you or another creature, can be connected, so long as the resultant barriers do not intersect each other.",
+    "empower": ""
+  },
+  {
     "name": "Black Bile",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -5467,6 +5623,21 @@ const spellDatabase = [
     "range": "30 feet",
     "duration": "Until cured",
     "desc": "You invisibly contaminate a body of liquid within range. Any creature that drinks this liquid becomes afflicted by Black Bile, a withering disease causing the creature to cough out horrid globs of black bile upon drinking any liquid. The creature is poisoned for the duration, and always rolls the minimum value on all hit dice used for recovery. Each time the creature would drink something, it must make a Constitution saving throw. On a failure, it coughs out the liquid with horrid black bile mixed in, and takes 1d6 poison damage. Damage taken this way reduces the creature's maximum hit points by the same amount.<br><br>A creature that succeeds in three Constitution saving throws within 24 hours without any failures is on the path to recovery and has advantage on all future saving throws against this spell. A creature that achieves this again is cured on the next day.",
+    "empower": ""
+  },
+  {
+    "name": "Oak of All Arbor",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Conjuration",
+      "Plant",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "8 hours",
+    "desc": "You summon a massive oak tree, covering a 30 foot radius cylinder 300 feet tall, centered on a point within range. All creatures within the area are forcibly displaced to the nearest empty space. Any object fully contained within the area is destroyed. If the tree cannot grow to its full size, it splinters and breaks spectacularly, and all creatures within a 90 foot radius must succeed on a Dexterity saving throw or take 8d10 piercing damage, halved on a success.<br><br>The oak is laden with all manner of greenery, from flowers to fruit to vines to thorns. When you cast a Plant spell, you can cast it using any point on the oak to calculate range. You can have the oak concentrate on another Plant spell for you if you cast a spell in this manner. During your turn, you can adjust the oak's structure to allow for creatures to climb on it, or to prevent creatures from climbing on it.<br><br>The oak is indestructible, unless the spell ends, whereupon it withers and dies at the end of your next turn, fading away. Casting this spell again causes the first oak to wither and die.",
     "empower": ""
   },
   {
@@ -5531,6 +5702,22 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Telekinesis",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Evocation",
+      "Psychic",
+      "Concentration",
+      "Potent"
+    ],
+    "cost": "2 AP",
+    "range": "Self (60 foot radius)",
+    "duration": "1 minute",
+    "desc": "As part of casting this spell, and for 1 AP on each of your turns, you can move yourself or an object of up to 100 pounds, plus 100 more for each tier above 4 this spell was cast at, up to 60 feet in any direction. Objects currently held by a creature will also drag the creature along if they fail a Strength saving throw.<br><br>If an object would be moved into a creature's space, the creature must make their choice of a Strength or Dexterity saving throw or take 4d6 bludgeoning damage and be knocked away 5 feet and fall prone. The object then continues on its path. A successful Dexterity saving throw avoids the damage and being knocked away and falling prone. A successful Strength saving throw prevents all effects and stops the object immediately. Creatures can't make a Strength saving throw if the object is larger than they are.",
+    "empower": "You can choose to instead spend 3 AP to move up to two objects, or move yourself and one object."
+  },
+  {
     "name": "Warding Sphere",
     "tier": 4,
     "tags": [
@@ -5560,6 +5747,20 @@ const spellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Toxic Burst",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Evocation",
+      "Poison"
+    ],
+    "cost": "1-3 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "You cause additional poison to burst into the body of a poisoned creature within range. For each AP spent on the spell, they take 2d4 poison damage and have one hit die destroyed. If no hit dice are left, damage is increased to 2d12.",
+    "empower": "Destroys an additional hit die."
+  },
+  {
     "name": "Shadow Caster",
     "tier": 4,
     "tags": [
@@ -5573,6 +5774,21 @@ const spellDatabase = [
     "desc": "The shadow of a target creature within range animates, then casts one spell of tier 3 or lower that you know or that you have seen the target cast. The spell costs 0 AP.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Warshade",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Transmutation",
+      "Shadow",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "Your shadow comes to life in an adjacent empty space. It is a copy of you in your current condition, with shadowy versions of your current equipment that can't be removed or switched, and it takes its turn after you. It has all of your features and talents and styles and spells. It can only cast Shadow spells that don't require concentration, and it uses your MP for any spells it casts. It is under your complete mental control.<br><br>While this spell is active, either you or your shadow can pay 1 AP to pull either of you up to 60 feet towards the other.<br><br>Your shadow has hit points equal to your current hit points, and vanishes if it is reduced to 0 or fewer hit points.",
+    "empower": ""
   },
   {
     "name": "Light Trickster",
@@ -5592,6 +5808,22 @@ const spellDatabase = [
     "empower": ""
   },
   {
+    "name": "Comet",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Conjuration",
+      "Cold",
+      "Earth",
+      "Radiant"
+    ],
+    "cost": "2 AP",
+    "range": "Sight",
+    "duration": "Instantaneous",
+    "desc": "A 30 foot radius area centered on a point you can see is faintly marked with light. At the start of your next turn, a comet streaks down from the sky and impacts the target area. Anything in the center 5 feet takes 8d10 bludgeoning, 4d10 cold, and 4d10 radiant damage and becomes restrained by the comet. All other creatures in the area must succeed on a Dexterity saving throw or take 6d10 bludgeoning damage, 3d10 cold damage, and 3d10 radiant damage.<br><br>The comet remains in the location as a large object occupying a 10 foot radius.<br><br>The spell fails if the sky is not visible when you cast the spell, such as when you are indoors or underground.",
+    "empower": ""
+  },
+  {
     "name": "Exile",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -5608,6 +5840,21 @@ const spellDatabase = [
     "duration": "1 minute",
     "desc": "Target creature must succeed on a Willpower saving throw or be removed from your current plane. If they are a native, they are set in a harmless demiplane and can repeat the saving throw at the end of each of their turns to return to their prior location.<br><br>If the creature is not from this plane, they are instead locked in a battle of wills with you. They are partially phased out of the plane and can't be targeted by anything. At the start of each of its turns, it makes a competing Willpower roll against your spellcasting stat. If it gets two consecutive successes or your concentration is broken, it ends the spell early and deals 4d12 psychic damage to you and stuns you until the end of your next turn from the backlash of the spell. If it gets two consecutive failures, it is banished from the plane for a year and a day, sent back to its native plane, and the spell ends.",
     "empower": "An extraplanar creature is banished if it fails twice, even if it succeeds once after failing."
+  },
+  {
+    "name": "Crystalline Refraction",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Conjuration",
+      "Earth",
+      "Psychic"
+    ],
+    "cost": "2 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "Six shimmering crystal shards spin into existence and orbit around your head. While they remain, you can spend 1 AP as a response to making a Constitution saving throw to maintain concentration on a spell to destroy one shard and automatically succeed on the saving throw.<br><br>For 1 AP once per turn, you can instead fling a shard at high speed into a creature within 60 feet of you. It takes 2d8 piercing damage and has disadvantage on Constitution saving throws to concentrate on a spell until the start of its next turn.",
+    "empower": "Damage increased to 3d8."
   },
   {
     "name": "Evaporate",
@@ -5642,6 +5889,21 @@ const spellDatabase = [
     "duration": "1 minute",
     "desc": "Power rushes through you as you open your body up to raw magic. For the duration, you use your spellcasting stat in place of your Strength, Dexterity, and Constitution, and have resistance to damage from spells.<br><br>At the end of each turn while this spell is active, you take damage equal to your spellcasting stat times the number of turns you've ended while concentrating on the spell.",
     "empower": "You gain +1 to your spellcasting stat for the duration."
+  },
+  {
+    "name": "Feasting Forest",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Transmutation",
+      "Plant",
+      "Delayed"
+    ],
+    "cost": "4 AP",
+    "range": "300 feet",
+    "duration": "Instantaneous",
+    "desc": "Within a 60 foot radius centered on a target point within the area, all trees, plant life, and shrubbery that occupy at least a 5 foot cube are mutated and grow massive fangs and a grasping tongue. Each affected plant reaches out up to 10 feet towards a creature within their range, who must make their choice between a Strength or Dexterity saving throw. On a failure, the tongue grabs them and pulls them adjacent to the plant, restraining them and biting down on them for 4d10 piercing damage. Any plant that did not find a target not already targeted by another plant returns to normal.<br><br>Restrained creatures can spend 2 AP to repeat the saving throw. On a success, they free themselves, and the plant returns to normal. At the end of each of their turns, they take 4d10 piercing damage while restrained. A creature reduced to 0 hit points from this spell is devoured whole by the plant.",
+    "empower": "Each plant can reach up to 20 feet."
   },
   {
     "name": "Harness Weather",
@@ -5874,6 +6136,21 @@ const spellDatabase = [
     "desc": "From your current location, you create a line of ethereal glass 10 feet tall that extends out to 60 feet. Choose one side of the glass - all creatures up to 30 feet away from the glass on that side are reflected as shadowy figures on the other side, preserving their relative position to the mirror.<br><br>The shadows take their turn immediately after the original. They are under your complete mental control and are otherwise an exact copy of the original creature.<br><br>At the start of your next turn, the glass and all shadows disappear.",
     "empower": "One shadow immediately takes a turn.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Fog of Many Deaths",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Conjuration",
+      "Poison",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "90 feet",
+    "duration": "1 hour",
+    "desc": "You create a faintly multicolored fog in a 30 foot cube within range. Creatures in the fog when it is created and who start their turn inside must succeed on a Constitution saving throw. On a failure, they must roll 1d6. They are poisoned and have their speed halved until the start of their next turn on a roll of 1 or 2, are paralyzed until the start of their next turn on a roll of 3 or 4, and are unconscious on a roll of 5 or 6, woken only by taking damage or when the spell ends.<br><br>At the end of each of your turns, the fog expands its area by 5 feet, unless it is in an area of strong wind. It stops expanding once it covers a 60 foot cube.",
+    "empower": "Range increased to 300 feet."
   },
   {
     "name": "Rite of Rebirth",
