@@ -1,4 +1,6 @@
-function classCard(classData) {
+function classCard(Class) {
+    const classData = classDatabase[Class];
+    
     const card = document.createElement('table');
 	const cardBody = card.appendChild(document.createElement('tbody'));
 	card.className = 'class';
@@ -6,12 +8,12 @@ function classCard(classData) {
 	const className = cardBody.appendChild(document.createElement('tr')).appendChild(document.createElement('td'));
 	className.className = 'classname';
 	className.colSpan = 2;
-	className.textContent = classData.name;
+	className.textContent = Class;
 	
 	const classtype = cardBody.appendChild(document.createElement('tr')).appendChild(document.createElement('td'));
 	classtype.className = 'classtype';
 	classtype.colSpan = 2;
-	classtype.textContent = `d${classData.dice} ${classData.type}`;
+	classtype.textContent = `d${classData.Dice} ${classData.Type}`;
     
     const defensiveRow = cardBody.appendChild(document.createElement('tr'));
 	const defensiveH = defensiveRow.appendChild(document.createElement('td'));
@@ -19,7 +21,7 @@ function classCard(classData) {
     defensiveH.className = 'classheaders';
     defensiveD.className = 'classdata';
 	defensiveH.textContent = 'Defensive Stat:';
-	defensiveD.textContent = classData.defensive.join(', ');
+	defensiveD.textContent = classData.Defensive.join(', ');
     
     const proficienciesRow = cardBody.appendChild(document.createElement('tr'));
 	const proficienciesH = proficienciesRow.appendChild(document.createElement('td'));
@@ -27,30 +29,32 @@ function classCard(classData) {
 	proficienciesH.className = 'classheaders';
 	proficienciesD.className = 'classdata';
 	proficienciesH.textContent = 'Proficiencies:';
-	proficienciesD.textContent = classData.proficiencies.join(', ');
+	proficienciesD.textContent = classData.Proficiencies.join(', ');
     
     const gameplay = cardBody.appendChild(document.createElement('tr')).appendChild(document.createElement('td'));
 	gameplay.className = 'classdata';
 	gameplay.colSpan = 2;
-	gameplay.textContent = classData.gameplay;
+	gameplay.textContent = classData.Gameplay;
     gameplay.style.fontStyle = "italic";
     
     const flair = cardBody.appendChild(document.createElement('tr')).appendChild(document.createElement('td'));
 	flair.className = 'classdata';
 	flair.colSpan = 2;
-	flair.textContent = classData.flair;
+	flair.textContent = classData.Flair;
 	
 	return card;
 }
 
-function featureCard(featureData) {
+function featureCard(Class, Feature) {
+    const featureData = classDatabase[Class].Features[Feature];
+    
     const card = document.createElement('table');
 	const cardBody = card.appendChild(document.createElement('tbody'));
 	card.className = 'class';
 
     const featureName = cardBody.appendChild(document.createElement('tr')).appendChild(document.createElement('td'));
 	featureName.className = 'classname';
-    featureName.textContent = featureData.name;
+    featureName.textContent = Feature;
     
     const level = cardBody.appendChild(document.createElement('tr')).appendChild(document.createElement('td'));
 	level.className = 'classtype';
@@ -63,7 +67,9 @@ function featureCard(featureData) {
     return card;
 }
 
-function talentCard(talentData) {
+function talentCard(Talent) {
+    const talentData = talentDatabase[Talent];
+    
     const card = document.createElement('table');
 	const cardBody = card.appendChild(document.createElement('tbody'));
     card.className = 'class';
@@ -71,7 +77,7 @@ function talentCard(talentData) {
     const talentName = cardBody.appendChild(document.createElement('tr')).appendChild(document.createElement('td'));
     talentName.className = 'classname';
     talentName.colSpan = 2;
-	talentName.textContent = talentData.name;
+	talentName.textContent = Talent;
 
     if (talentData.prereq) {
         const prereqRow = cardBody.appendChild(document.createElement('tr'));
@@ -93,7 +99,9 @@ function talentCard(talentData) {
     return card;
 }
 
-function weaponStyleCard(styleData) {
+function weaponStyleCard(Style) {
+    const styleData = weaponStyleDatabase[Style];
+    
     const card = document.createElement('table');
 	const cardBody = card.appendChild(document.createElement('tbody'));
     card.className = 'class';
@@ -101,7 +109,7 @@ function weaponStyleCard(styleData) {
     const styleName = cardBody.appendChild(document.createElement('tr')).appendChild(document.createElement('td'));
 	styleName.className = 'classname';
     styleName.colSpan = 2;
-    styleName.textContent = styleData.name;
+    styleName.textContent = Style;
 
     Object.entries(styleData).filter(([attack, _]) => attack != 'name').forEach(([attack, desc]) => {
         const attackRow = cardBody.appendChild(document.createElement('tr'));
@@ -119,14 +127,16 @@ function weaponStyleCard(styleData) {
     return card;
 }
 
-function combatStyleCard(styleData) {
+function combatStyleCard(Style) {
+    const styleData = combatStyleDatabase[Style];
+    
     const card = document.createElement('table');
 	const cardBody = card.appendChild(document.createElement('tbody'));
     card.className = 'class';
     
     const styleName = cardBody.appendChild(document.createElement('tr')).appendChild(document.createElement('td'));
     styleName.className = 'classname';
-    styleName.textContent = styleData.name;
+    styleName.textContent = Style;
     
     const desc = cardBody.appendChild(document.createElement('tr')).appendChild(document.createElement('td'));
     desc.className = 'classdata';
@@ -135,14 +145,16 @@ function combatStyleCard(styleData) {
     return card;
 }
 
-function maneuverCard(maneuverData) {
+function maneuverCard(Maneuver) {
+    const maneuverData = maneuverDatabase[Maneuver];
+    
     const card = document.createElement('table');
 	const cardBody = card.appendChild(document.createElement('tbody'));
     card.className = 'class';
     
     const maneuverName = cardBody.appendChild(document.createElement('tr')).appendChild(document.createElement('td'));
 	maneuverName.className = 'classname';
-    maneuverName.textContent = maneuverData.name;
+    maneuverName.textContent = Maneuver;
     
     const desc = cardBody.appendChild(document.createElement('tr')).appendChild(document.createElement('td'));
     desc.className = 'classdata';
@@ -152,82 +164,30 @@ function maneuverCard(maneuverData) {
     return card;
 }
 
-const Dragonlord = {
-    class: {
-        name: 'Dragonlord',
-        type: 'Half-Caster',
-        dice: '10',
-        defensive: ['Dexterity', 'Willpower'],
-        proficiencies: ['Heavy Armor', 'Martial Weapons', 'Shields'],
-        flair: 'A difficult path with few adherents, the dragonlord channels the power and magic of dragons to do battle with their enemies. Fearsome and awe-inspiring, the proud few that succeed gather fame effortlessly, with even fewer still rumored to become dragons themselves.',
-        gameplay: 'Specialist in field control through terror and awe, sick nasty breath attacks and AoE cleaves.',
-    },
-    features: {
-        Spellcasting: {
-            name: 'Spellcasting',
-            level: 1,
-            desc: 'Your connection has granted you the ability to cast magic.<br>You gain access to the Draconic spell tag.<br>You are a half caster. Whatever that means right now. Willpower is used as your casting stat.'
-        },
-        'Draconic Rage': {
-            name: 'Draconic Rage',
-            level: 1,
-            desc: 'While you are affected by a Draconic spell and take the Attack action, you can choose to forgo one of your attacks to strike out at all creatures within a 5 foot radius of you. You make one attack against all creatures in range, dealing 1d12 slashing, piercing, or bludgeoning damage on a hit. You use the greater of your Strength, Dexterity, or Willpower to determine your attack and damage bonus, and you choose the type of damage dealt.<br>The damage increases by 1d12 at 5th, 10th, and 15th level.',
-        },
-        'Ambient Power': {
-            name: 'Ambient Power',
-            level: 1,
-            desc: 'When a Draconic spell cast on you ends, you regain 1 MP. When you cast a Draconic spell with no duration, you regain 1 MP.',
-        },
-    },
-};
-const Talents = {
-    'Dragon Breath': {
-        name: 'Dragon Breath',
-        class: ['Dragonlord'],
-        desc: 'You can spend 1 AP to make a breath attack. When you take this talent, choose the damage type of the breath attack, which cannot be changed. Your breath targets either a 10 foot radius around you or a 30 foot line. All targets must succeed on a Dexterity saving throw or take 1d6 damage. This damage increases by 1d6 at 10th and 20th level.',
-    },
-    'Mind and Soul': {
-        name: 'Mind and Soul',
-        class: ['Dragonlord'],
-        prereq: ['In Tune', 'Elder Dragon\'s Knowledge', 'Speaker of the Wyrmtongue'],
-        desc: 'Dragonlord becomes a full caster, increasing its MP to 12/level. Draconic spells you cast grant you temporary hit points equal to two times their tier until the start of your next turn. You are immune to the frightened condition while you are affected by a Draconic spell.',
-    },
-};
-const WeaponStyles = {
-    Dagger: {
-        name: 'Dagger',
-        'Quick Stab': 'Aims for an exposed part and stabs. Deals normal weapon damage. The weapon damage roll is doubled against a creature that can\'t move or with a movement speed of 0.',
-        Disembark: 'A careful thrust meant to secure an opening for you. Deals half weapon damage, and the target can\'t make attacks of opportunity against you even if you miss.',
-        Combo: 'A lethal strike that requires you to have struck your enemy already this turn with a different weapon other than another dagger. Damage die increased by 1d4.',
-    },
-};
-const CombatStyles = {
-    Skirmisher: {
-        name: 'Skirmisher',
-        desc: 'The first time you hit a creature with a weapon attack on your turn, you gain an additional 10 feet of movement for the rest of the turn. The bonus increases by 5 feet at 5th, 10th, and 15th level.',
-    },
-};
-const Maneuvers = {
-    'Quick Draw': {
-        name: 'Quick Draw',
-        class: ['Warrior#3'],
-        desc: 'You immediately draw a new weapon and attack with that weapon. On a successful hit, double the damage bonus from Strength or Dexterity.',
-    },
-};
-
 const content = document.querySelector('#class_compendium_content');
 
-content.appendChild(classCard(Dragonlord.class));
+content.appendChild(classCard('Dragonlord'));
 
-content.appendChild(featureCard(Dragonlord.features['Spellcasting']));
-content.appendChild(featureCard(Dragonlord.features['Draconic Rage']));
-content.appendChild(featureCard(Dragonlord.features['Ambient Power']));
+content.appendChild(featureCard('Dragonlord', 'Spellcasting'));
+content.appendChild(featureCard('Dragonlord', 'Draconic Rage'));
+content.appendChild(featureCard('Dragonlord', 'Ambient Power'));
 
-content.appendChild(talentCard(Talents['Dragon Breath']));
-content.appendChild(talentCard(Talents['Mind and Soul']));
+content.appendChild(talentCard('Dragon Breath'));
+content.appendChild(talentCard('Mind and Soul'));
 
-content.appendChild(weaponStyleCard(WeaponStyles['Dagger']));
+content.appendChild(weaponStyleCard('Dagger'));
 
-content.appendChild(combatStyleCard(CombatStyles['Skirmisher']));
+content.appendChild(combatStyleCard('Skirmisher'));
 
-content.appendChild(maneuverCard(Maneuvers['Quick Draw']));
+content.appendChild(maneuverCard('Quick Draw'));
+
+function download(filename, text) {
+	const element = document.createElement('a');
+	element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+	element.setAttribute('download', filename);
+	element.style.display = 'none';
+	
+	document.body.appendChild(element);
+	element.click();
+	document.body.removeChild(element);
+}

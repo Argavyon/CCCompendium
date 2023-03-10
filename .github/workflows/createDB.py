@@ -1,10 +1,15 @@
-import json
 import glob
-with open('data/SpellDB.js', 'w') as DBfile:
-    spell_list = []
-    for i in glob.iglob('data/spells/*.json'):
+import json
+import os
+import sys
+
+if len(sys.argv) < 2: exit -1
+DBname = sys.argv[1]
+
+with open(f'data/{DBname[0].upper() + DBname[1:]}DB.js', 'w') as DBfile:
+    dict = {}
+    for i in glob.iglob(f'data/{DBname}s/*.json'):
         with open(i, 'r') as spellJSON:
-            spell_list.append(json.load(spellJSON))
-    spell_list.sort(key = lambda spell: spell['tier'])
-    spellDB = json.dumps(spell_list, indent=2)
-    print('const spellDatabase = ', spellDB, ';', sep = '', file = DBfile)
+            dict[os.path.basename(i)] = json.load(spellJSON)
+    DBjson = json.dumps(dict, indent=2)
+    print(f'const {DBname}Database = ', DBjson, ';', sep = '', file = DBfile)

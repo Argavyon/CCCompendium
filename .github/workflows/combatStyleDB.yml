@@ -1,10 +1,10 @@
-name: SpellDB Workflow
+name: CombatStyleDB Workflow
 on:
   push:
     branches:
     - main
     paths:
-    - 'data/spells/**'
+    - 'data/combatStyles/**'
   workflow_dispatch:
 
 jobs:
@@ -13,14 +13,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - run: python3 .github/workflows/createSpellDB.py
+      - run: python3 .github/workflows/createDB.py combatStyle
       
       - uses: EndBug/add-and-commit@v9.1.0
         with:
-          add: 'data/SpellDB.js'
+          add: 'data/CombatStyleDB.js'
           author_name: Argavyon
           author_email: 75849479+Argavyon@users.noreply.github.com
           default_author: github_actor
           fetch: false
-          message: Auto-generated data/SpellDB.js
+          message: Auto-generated data/CombatStyleDB.js
           push: true
