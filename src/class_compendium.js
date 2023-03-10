@@ -1,5 +1,5 @@
 function classCard(Class) {
-    const classData = classDatabase[Class];
+    const classData = ClassDatabase[Class];
     
     const card = document.createElement('table');
 	const cardBody = card.appendChild(document.createElement('tbody'));
@@ -46,7 +46,7 @@ function classCard(Class) {
 }
 
 function featureCard(Class, Feature) {
-    const featureData = classDatabase[Class].Features[Feature];
+    const featureData = ClassDatabase[Class].Features[Feature];
     
     const card = document.createElement('table');
 	const cardBody = card.appendChild(document.createElement('tbody'));
@@ -68,7 +68,7 @@ function featureCard(Class, Feature) {
 }
 
 function talentCard(Talent) {
-    const talentData = talentDatabase[Talent];
+    const talentData = TalentDatabase[Talent];
     
     const card = document.createElement('table');
 	const cardBody = card.appendChild(document.createElement('tbody'));
@@ -100,7 +100,7 @@ function talentCard(Talent) {
 }
 
 function weaponStyleCard(Style) {
-    const styleData = weaponStyleDatabase[Style];
+    const styleData = WeaponStyleDatabase[Style];
     
     const card = document.createElement('table');
 	const cardBody = card.appendChild(document.createElement('tbody'));
@@ -128,7 +128,7 @@ function weaponStyleCard(Style) {
 }
 
 function combatStyleCard(Style) {
-    const styleData = combatStyleDatabase[Style];
+    const styleData = CombatStyleDatabase[Style];
     
     const card = document.createElement('table');
 	const cardBody = card.appendChild(document.createElement('tbody'));
@@ -146,7 +146,7 @@ function combatStyleCard(Style) {
 }
 
 function maneuverCard(Maneuver) {
-    const maneuverData = maneuverDatabase[Maneuver];
+    const maneuverData = ManeuverDatabase[Maneuver];
     
     const card = document.createElement('table');
 	const cardBody = card.appendChild(document.createElement('tbody'));
@@ -180,14 +180,3 @@ content.appendChild(weaponStyleCard('Dagger'));
 content.appendChild(combatStyleCard('Skirmisher'));
 
 content.appendChild(maneuverCard('Quick Draw'));
-
-function download(filename, text) {
-	const element = document.createElement('a');
-	element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-	element.setAttribute('download', filename);
-	element.style.display = 'none';
-	
-	document.body.appendChild(element);
-	element.click();
-	document.body.removeChild(element);
-}

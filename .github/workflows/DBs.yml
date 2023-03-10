@@ -1,0 +1,60 @@
+name: Autogenerate DBs
+on:
+  push:
+    branches:
+    - main
+    paths:
+    - 'data/**/**'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - uses: dorny/paths-filter@v2
+        id: changes
+        with:
+          filters: |
+            classes:
+              - 'data/classes/**'
+            combatStyles:
+              - 'data/combatStyles/**'
+            maneuvers:
+              - 'data/maneuvers/**'
+            spells:
+              - 'data/spells/**'
+            talents:
+              - 'data/talents/**'
+            weaponStyles:
+              - 'data/weaponStyles/**'
+      
+      - if: ${{github.events.type == 'WorkflowDispatch' || steps.changes.outputs.classes == 'true'}} 
+        run: python3 .github/workflows/createDB.py Class classes
+      
+      - if: ${{github.events.type == 'WorkflowDispatch' || steps.changes.outputs.combatStyles == 'true'}} 
+        run: python3 .github/workflows/createDB.py CombatStyle combatStyles
+      
+      - if: ${{github.events.type == 'WorkflowDispatch' || steps.changes.outputs.maneuvers == 'true'}} 
+        run: python3 .github/workflows/createDB.py Maneuver maneuvers
+      
+      - if: ${{github.events.type == 'WorkflowDispatch' || steps.changes.outputs.spells == 'true'}} 
+        run: python3 .github/workflows/createSpellDB.py
+      
+      - if: ${{github.events.type == 'WorkflowDispatch' || steps.changes.outputs.talents == 'true'}} 
+        run: python3 .github/workflows/createDB.py Talent talents
+      
+      - if: ${{github.events.type == 'WorkflowDispatch' || steps.changes.outputs.weaponStyles == 'true'}} 
+        run: python3 .github/workflows/createDB.py WeaponStyle weaponStyles
+      
+      - uses: EndBug/add-and-commit@v9.1.0
+        with:
+          add: 'data/*.js'
+          author_name: Argavyon
+          author_email: 75849479+Argavyon@users.noreply.github.com
+          default_author: github_actor
+          fetch: --force
+          message: Auto-generated DBs
+          push: true
+          

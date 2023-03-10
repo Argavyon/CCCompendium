@@ -3,12 +3,13 @@ import json
 import os
 import sys
 
-if len(sys.argv) < 2: exit -1
+if len(sys.argv) < 3: exit -1
 DBname = sys.argv[1]
+DataFolder = sys.argv[1]
 
-with open(f'data/{DBname[0].upper() + DBname[1:]}DB.js', 'w') as DBfile:
+with open(f'data/{DBname}DB.js', 'w') as DBfile:
     dict = {}
-    for i in glob.iglob(f'data/{DBname}s/*.json'):
+    for i in glob.iglob(f'data/{DataFolder}/*.json'):
         with open(i, 'r') as spellJSON:
             dict[os.path.basename(i)] = json.load(spellJSON)
     DBjson = json.dumps(dict, indent=2)

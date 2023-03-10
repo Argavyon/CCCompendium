@@ -106,11 +106,11 @@ function spellBrief(spellData, functional_tags) {
     return brief;
 }
 
-function generate_brief_spell_table(spellDatabase, tag_select, tier_select, functional_tags) {
+function generate_brief_spell_table(SpellDatabase, tag_select, tier_select, functional_tags) {
     const oldTable = document.querySelector('#spelltable');
     const newTable = oldTable.cloneNode(false);
 
-    spellDatabase.forEach(spell => {
+    SpellDatabase.forEach(spell => {
         if (tag_select.size > 0 && !spell.tags.some(tag => tag_select.has(tag))) return;
         if (tier_select.size > 0 && !tier_select.has(spell.tier)) return;
         newTable.appendChild(spellBrief(spell, functional_tags));
@@ -134,7 +134,7 @@ function main() {
         Cantrip: 'When cast, this spell is treated as a tier 1 spell in all regards, including MP cost.',
     };
     const compendiumLeft = document.querySelector('#compendium_left');
-    spellDatabase.forEach(spell => spell.tags.forEach(tag => {
+    SpellDatabase.forEach(spell => spell.tags.forEach(tag => {
         if (Object.keys(functional_tags).some(f_tag => tag.includes(f_tag))) {
             if (!f_tag_list[tag]) f_tag_list[tag] = 1;
             else f_tag_list[tag] += 1;
@@ -146,7 +146,7 @@ function main() {
 
     const tag_select = new Set();
     const tier_select = new Set();
-    const gen_spelltable = () => generate_brief_spell_table(spellDatabase, tag_select, tier_select, functional_tags);
+    const gen_spelltable = () => generate_brief_spell_table(SpellDatabase, tag_select, tier_select, functional_tags);
 
     // TAGS
     Object.entries(tag_list).sort((a, b) => {
@@ -205,7 +205,7 @@ function main() {
     }
 
     const CC = document.querySelector('#compendium_right');
-    CC.appendChild(spellCard(spellDatabase[0], functional_tags));
+    CC.appendChild(spellCard(SpellDatabase[0], functional_tags));
 
     gen_spelltable();
 }
