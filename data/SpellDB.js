@@ -1,4 +1,4 @@
-const spellDatabase = [
+const SpellDatabase = [
   {
     "name": "Torchlight",
     "tier": 1,
