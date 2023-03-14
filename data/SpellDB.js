@@ -5406,6 +5406,23 @@ const SpellDatabase = [
     "empower": "Removes the AP cost on this spell."
   },
   {
+    "name": "Petal Dance",
+    "author": "Levi",
+    "tier": 4,
+    "tags": [
+      "Conjuration",
+      "Fey",
+      "Plant",
+      "Wind",
+      "Concentration"
+    ],
+    "cost": "0 AP",
+    "range": "Self (60 foot radius)",
+    "duration": "1 minute",
+    "desc": "You enter into a trance, dancing to invoke the quintessence of springtime. While this spell is active, you cannot take any action except making attacks or devoting AP towards this spell, however you also permanently benefit from the effects of the disengage and dodge actions.<br><br>For each AP to devote to this spell, 2 glimmering flower petals appear and swirl around you, joining you in the dance. You may have a maximum of 6 petals around you at once. When this spell ends, any remaining petals linger until the end of your next turn.<br><br>Whenever you attack one or more creatures within 60 feet of you while this spell is active, 1 petal is consumed as it flies out at your targets. The targets must make a Dexterity saving throw, taking 2d6 slashing damage on a failed save, or half as much on a success.",
+    "empower": "Immediately create 3 petals when you cast this spell.<br>When cast at a higher tier, the range of this spell doubles for every tier above 4."
+  },
+  {
     "name": "Warshade",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -5419,6 +5436,20 @@ const SpellDatabase = [
     "duration": "1 minute",
     "desc": "Your shadow comes to life in an adjacent empty space. It is a copy of you in your current condition, with shadowy versions of your current equipment that can't be removed or switched, and it takes its turn after you. It has all of your features and talents and styles and spells. It can only cast Shadow spells that don't require concentration, and it uses your MP for any spells it casts. It is under your complete mental control.<br><br>While this spell is active, either you or your shadow can pay 1 AP to pull either of you up to 60 feet towards the other.<br><br>Your shadow has hit points equal to your current hit points, and vanishes if it is reduced to 0 or fewer hit points.",
     "empower": ""
+  },
+  {
+    "name": "Hex of Despair",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Enchantment",
+      "Unholy"
+    ],
+    "cost": "3 AP",
+    "range": "120 feet",
+    "duration": "1 minute",
+    "desc": "A black totem is created in an empty space adjacent to you, which focuses its magic on a target creature within range that you can see. Each time the creature fails a roll, it suffers a cumulative -1 penalty to all rolls, up to a maximum penalty equal to your spellcasting stat. The penalty is removed when the spell ends.<br><br>The target is made aware of the location of the totem. If they attack or damage the totem, it is destroyed and the spell ends immediately. If the totem is destroyed, you take 4d6 unholy damage from the backlash.",
+    "empower": "Prevents backlash from a destroyed totem."
   },
   {
     "name": "Grasping Growth",
@@ -5539,6 +5570,21 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "You begin to sing a song about the downfall of a kingdom, overturned by a vengeful god. If you spend at least 1 AP during your turn towards casting this spell, you gain temporary hit points equal to five times your spellcasting stat per AP spent.<br><br>While casting, all creatures within range immediately know you are casting a powerful spell. Most sentient creatures with means will attempt to target you to force you to stop. Creatures with fewer hit dice than your level must instead make an Intuition saving throw or be frightened for 1 minute and take any measures required to leave the area of effect.<br><br>When completed, a devastating wave of force rushes from you and blasts the area of the spell. Creatures within range take 8d10+20 arcane damage, and must make an Intuition saving throw or take 4d10 psychic damage, halved on a success. Terrain in the area is utterly destroyed, leaving a hollowed out hole. Objects that fit completely within the area are destroyed.<br><br>A creature reduced to 0 or fewer hit points by this spell is disintegrated.",
     "empower": "A number of creatures equal to your spellcasting stat within range are unaffected by this spell."
+  },
+  {
+    "name": "Chatter Curse",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Enchantment",
+      "Beast",
+      "Fey"
+    ],
+    "cost": "2 AP",
+    "range": "120 feet",
+    "duration": "1 minute",
+    "desc": "Target creature must succeed on an Intuition saving throw or have their head transformed to resemble a parrot. They continually and obnoxiously speak in a parody of their voice at all times. Creatures within 30 feet that can hear and understand the target can't have advantage on their rolls. You can exempt any number of creatures you see from being affected by this effect.<br><br>The target must also make a Willpower saving throw at the start of each of their turns. On a failure, they thoughtlessly speak about a secret they wanted to keep.",
+    "empower": ""
   },
   {
     "name": "Killing Wave",
@@ -5683,6 +5729,23 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Release",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Abjuration",
+      "Beast",
+      "Water",
+      "Concentration",
+      "Delayed"
+    ],
+    "cost": "6 AP",
+    "range": "120 feet",
+    "duration": "15 minutes",
+    "desc": "You break a seal between the boundary that separates the ground from the deep ocean, creating a portal on the ground at target point you can see, with a radius of 30 feet. The area in the portal becomes water, extending down infinitely, and is threatened by an abyssal denizen. Any creature that ends their turn in the water must make a Dexterity saving throw or be grabbed by the denizen's tentacles and pulled underwater 20 feet, taking 4d6 bludgeoning damage. Creatures without a swim speed have disadvantage on the saving throw.<br><br>At the start of each of an affected creature's turns while grabbed, it must repeat the saving throw. On a success, it breaks free and can swim back up and no longer needs to roll saving throws against this spell. On a failure, it is dragged down 20 more feet in addition to taking 4d6 bludgeoning damage.<br><br>If the spell ends, water first gushes out at high speed, enough to eject every creature in the water into the air. They are launched a number of feet into the air equal to the number of feet they were underwater.",
+    "empower": ""
+  },
+  {
     "name": "Guardian Angel",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -5776,6 +5839,22 @@ const SpellDatabase = [
     "empower": "Each plant can reach up to 20 feet."
   },
   {
+    "name": "The Crows",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Evocation",
+      "Beast",
+      "Spirit",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "Self (90 foot line) ",
+    "duration": "1 minute",
+    "desc": "You call forth an unceasing murder of spirit crows, flying forth from you in a 90 foot long, 25 foot wide, 10 foot tall line. The crows obstruct vision into and out of the area, making it impossible to see further than 5 feet. Creatures that move through the area use 2 feet of movement for every 1 foot traveled.<br><br>Creatures who start their turns in the area or who move into the area during their turn must make a Dexterity saving throw, taking 4d6 slashing damage on a failure and half damage on a success.<br><br>You can't move or take any other action while concentrating on the spell.",
+    "empower": "Damage increased to 6d6."
+  },
+  {
     "name": "Shadow Caster",
     "tier": 4,
     "tags": [
@@ -5864,6 +5943,21 @@ const SpellDatabase = [
     "empower": "The first time the creature rolls a hit die, they roll three instead."
   },
   {
+    "name": "Jetstream",
+    "author": "Levi",
+    "tier": 4,
+    "tags": [
+      "Evocation",
+      "Wind",
+      "Potent"
+    ],
+    "cost": "2 AP",
+    "range": "120 feet",
+    "duration": "Instantaneous",
+    "desc": "A 5 foot wide, 5 foot high, and up to 120 foot long air current attempts to form, shooting out a windblast in a straight line. All creatures caught in the windblast must make a Constitution saving throw, taking 8d6 force damage on a failed save or half as much on a success. Regardless, all creatures hit are forcibly moved out of the path of air current if possible. All objects struck by the windblast take twice as much damage. The windblast stops on the first object it strikes that it does not destroy, if it encounters one.<br><br>The violent air current created remains until the start of your next turn. Creatures cannot enter the wind current except from its origin point. Creatures may enter the wind current from its origin point to immediately move to the end point of the wind current without consuming movement. This movement can occur even if the air current crosses an area with no ground underneath it.<br><br>When cast at a higher tier, the range of this spell doubles for every tier above 4.",
+    "empower": ""
+  },
+  {
     "name": "Invoke War",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -5943,6 +6037,84 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Falling Leaves",
+    "author": "Levi",
+    "tier": 4,
+    "tags": [
+      "Abjuration",
+      "Plant",
+      "Wind",
+      "Sign"
+    ],
+    "cost": "2 AP",
+    "range": "Self (60 foot radius)",
+    "duration": "1 minute",
+    "desc": "A cylindrical 60 foot radius 120 foot high area around you is filled with dim light, dyed in rich shades of red and orange. Phantasmal yellowed or browning dried leaves of all sorts, flutter down constantly, fading away before they actually touch anything.<br><br>While inside the area, your Plant spells cost 1 less AP, and their MP cost is reduced equal to twice their tier. Additionally, your Wind spells that deal damage sweep up the phantasmal leaves, and add 1d8 additional slashing damage per tier of the spell to the damage dealt.<br><br>Plant spells inside the area which have a duration immediately end when any turn ends, with any conjured or summoned creatures and objects fading away.<br>every tier above 4.",
+    "empower": ""
+  },
+  {
+    "name": "Pride",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Enchantment",
+      "Draconic",
+      "Cantrip",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "1 minute ",
+    "desc": "You can't be frightened or charmed for the duration.",
+    "empower": "Remove the Concentration tag."
+  },
+  {
+    "name": "Soulbite",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Necromancy",
+      "Unholy",
+      "Cantrip"
+    ],
+    "cost": "1 AP",
+    "range": "30 feet",
+    "duration": "Instantaneous",
+    "desc": "Your soul lashes out and bites the target's soul. Make a spell attack(?) at advantage. If you hit, you deal damage equal to your level, and gain an equal amount of temporary hit points.<br><br>You can spend up to 2 additional AP to add the same number of additional attacks against different targets. Temporary hit points gained by this spell on the same turn can stack.",
+    "empower": ""
+  },
+  {
+    "name": "Infect Magic",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Abjuration",
+      "Arcane",
+      "Disease",
+      "Poison"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "You attempt to infect the connection between a spell effect with concentration and the spellcaster. You choose either the spell effect itself or a creature affected by the spell effect and target that effect. Its caster must make a saving throw using its spellcasting stat. On a failure, your infection overrides their control of the spell. For the duration of this spell, the original owner can no longer willingly end the spell. At the start of each of their turns, if their spell is still active, they take 3d10 poison damage, ignoring resistance and immunity, and have one hit die destroyed. If there are no more hit dice, the creature is vulnerable to the damage taken.<br><br>The creature makes Concentration saves as normal when damaged by other creatures or effects, but if they fail, their spell does not end. Instead, they take the same damage they would normally take at the start of their turn.<br><br>An affected creature can spend 2 AP to repeat the saving throw. On a success, both this spell and their concentrated spell end.",
+    "empower": ""
+  },
+  {
+    "name": "Inculcate Fear",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Enchantment",
+      "Disease",
+      "Psychic"
+    ],
+    "cost": "2 AP",
+    "range": "Touch",
+    "duration": "Until dispelled",
+    "desc": "You coat an object or creature in a transparent powder. When any other creature makes contact with the powder, it soaks through the sink and is absorbed into the bloodstream. The creature must then make a Constitution saving throw - on a failure, the powder takes hold and causes the creature to view whichever object or creature was covered in powder with extreme feelings of dread. Each time they see the object or creature, they must make an Intuition saving throw or be frightened of them for 1 hour, or until 1 minute passes while they are out of sight.",
+    "empower": ""
+  },
+  {
     "name": "Wintercraft",
     "tier": 5,
     "tags": [
@@ -5959,6 +6131,21 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Living Zombie",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Necromancy",
+      "Disease",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "Touch",
+    "duration": "8 hours",
+    "desc": "You touch a target creature at 0 hit points and deaden their nerves, allowing them to keep on taking action even when they should be dead. They gain temporary hit points equal to their normal maximum hit points. While they have these temporary hit points, they can't receive healing and lose 1 AP, but can otherwise take action normally during each of their turns.<br><br>When the spell ends, the target's maximum hit points are reduced to 1. If the spell ends due to all temporary hit points being lost, first calculate the excess damage, then reduce the target's maximum hit points to 1.",
+    "empower": ""
+  },
+  {
     "name": "Rite of Rebirth",
     "tier": 5,
     "tags": [
@@ -5973,6 +6160,21 @@ const SpellDatabase = [
     "desc": "You submerge the touched creature or corpse in a body of water large enough to allow the target to be fully submerged. After one hour, during which you cannot move or take any other action, the target emerges from the water as a new creature.<br><br>The target becomes a humanoid species in its prime regardless of its original form or state. The exact species is randomly chosen. It keeps any prior class levels and talents. It may choose new traits, if applicable. It loses access to all species features and talents it had before, and gains its new species' features, as well as an equivalent amount of species talents according to its class levels, if applicable.<br><br>If the ritual is interrupted, the target's body is dissolved by the water.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Forest Ally",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Conjuration",
+      "Beast",
+      "Cantrip"
+    ],
+    "cost": "2 AP",
+    "range": "30 feet ",
+    "duration": "1 hour",
+    "desc": "You summon a beast with 1 or 2 hit dice to an empty space within range. It takes its turn after yours and follows your mental commands. It vanishes when it reaches 0 hit points or the spell ends.<br><br>Casting this spell again causes the first creature to vanish.",
+    "empower": ""
   },
   {
     "name": "Earthsiege",
@@ -6002,6 +6204,37 @@ const SpellDatabase = [
     "duration": "1 minute / Varies",
     "desc": "You call upon the spirit of a deceased creature using an image of its likeness in life. This spell fails if the intended spirit does not recognize the image as a depiction of itself, or rejects the invitation.<br><br>If successful, the spirit appears as an ethereal reconstruction of its appearance in life anchored to the image, and is maintained this way for up to 1 minute. The spirit can be spoken to and respond, and has all of its memories and personality in life, but it cannot interact with the material plane or move more than 5ft away from the image. The spirit is not under the caster's control, and may end the spell at any time by choosing to depart.<br><br>While a spirit is successfully anchored to its image, and the image is placed (or directly drawn) on an intact corpse of the same species as the spirit was in life which has been dead for less than 1 hour, if the spirit is willing, it may possess the corpse and revive in that body. When this occurs, the resultant revived creature's features morph to some degree to resemble the spirit's original appearance over the next 24 hours, and during this time this spell can be dispelled targeting the revived creature. After this period passes, the spell becomes permanent and can no longer be dispelled. The spell instead becomes permanent immediately if the intact corpse originally belonged to the spirit in the first place.",
     "empower": ""
+  },
+  {
+    "name": "Baleful Glare",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Evocation",
+      "Fire",
+      "Cantrip",
+      "Silent",
+      "Still"
+    ],
+    "cost": "1 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "With a glare, target creature you can see bursts into flames and takes 2d12 fire damage.",
+    "empower": ""
+  },
+  {
+    "name": "Empower Beasts",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Transmutation",
+      "Beast"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "1 minute",
+    "desc": "You cause primal magics to surge through all beasts in a 20 foot radius centered on target point within range that you can see. For the duration, they gain the following benefits: <br>>Their current and maximum hit points are doubled or increased by 30, whichever is lower.<br>>At the start of their turns, they heal 1d6 hit points, plus your spellcasting stat.<br>>They use your proficiency modifier in place of theirs, and use your spellcasting stat to determine their attack and damage rolls. They deal additional damage on a hit equal to your proficiency modifier.<br>>Their movement speed increases by 20 feet.<br><br>A creature affected by this spell twice has the older version of this spell ended first.",
+    "empower": "Radius increased to 30 feet."
   },
   {
     "name": "Calling Card",
@@ -6053,6 +6286,21 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Revival",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Necromancy",
+      "Holy",
+      "Ritual"
+    ],
+    "cost": "N/A",
+    "range": "Touch",
+    "duration": "Instantaneous",
+    "desc": "After 15 minutes, target dead creature you touch is returned to life. Their maximum hit points are set to half of their highest value, and their current hit points are set equal to half of their maximum hit points.<br><br>The spell requires at least the head of the creature, and will recreate the body accordingly, replacing lost limbs and other disfigurements. The spell fails if there is no head, or if the creature's soul is unable to return to the body.",
+    "empower": "The creature's current hit points are set equal to their maximum hit points."
+  },
+  {
     "name": "World Ablaze",
     "tier": 5,
     "tags": [
@@ -6066,6 +6314,22 @@ const SpellDatabase = [
     "desc": "Target creature in range that you can see must succeed on an Intuition saving throw or fall victim to an illusion of a world on fire. To the target, flames appear to ignite everything and crackle and burn loudly, blocking vision and hearing of anything past 30 feet. On each of its turns, the target takes 3d6 fire damage.<br><br>A creature can repeat the saving throw at the end of each of its turns. On a success, the spell ends.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Summon Plague Eater",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Conjuration",
+      "Disease",
+      "Summoning",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute ",
+    "desc": "You call forth an ethereal plague eater - a vaguely animalistic being that devours sickness. It marks out a 60 foot radius around itself. If a creature in this area would take poison damage, the plague eater instead devours the poison damage, negating it entirely. If any other creature attempts to cast a Disease or Poison spell within range, the plague eater devours the spell, causing MP to be spent but preventing all other effects. If a creature would be poisoned, the plague eater devours the poison and prevents the condition from being applied.<br><br>At the end of each of your turns, the plague eater attacks one creature you choose within range. It must succeed on a Constitution saving throw or take 4d6 poison damage, increased by 2d6 damage each time it had eaten damage, poison, or a spell between your last turn and this turn, and become poisoned until the end of your next turn. A successful saving throw halves the damage and prevents being poisoned. Poisoned creatures are vulnerable to the damage from this spell.<br><br>If the plague eater devours three or more effects in one turn, it becomes berserk for the duration. A berserk plague eater must attack three targets within range each turn. You can choose which targets, but you must choose three targets when possible.",
+    "empower": ""
   },
   {
     "name": "Song of Hope",
@@ -6083,6 +6347,21 @@ const SpellDatabase = [
     "empower": "Range increased to 90 feet."
   },
   {
+    "name": "Borrowed Time",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Necromancy",
+      "Unholy",
+      "Delayed"
+    ],
+    "cost": "6 AP",
+    "range": "30 feet",
+    "duration": "6 hours",
+    "desc": "You reanimate the corpse of a creature within range and allow its soul to re-enter its body. Its maximum hit points are fully restored, and its current hit points are set equal to half its maximum hit points. You can impose conditions on the creature's ability to act when you cast this spell, but the creature is otherwise free to act as they please. <br><br>When the spell ends, the creature must make a DC 20 Constitution saving throw. On a success, their maximum hit points are reduced to 1, and they remain alive but no longer reanimated. On a failure, they die.<br><br>A creature reduced to 0 hit points while affected by this spell has their body begin to disintegrate. Unless they are brought back to life, the body will vanish after 1 hour.",
+    "empower": "Reduces the AP cost to 3."
+  },
+  {
     "name": "Agony",
     "tier": 5,
     "tags": [
@@ -6095,6 +6374,51 @@ const SpellDatabase = [
     "desc": "Cause a single target creature to be wracked with intense pain. They must make a Constitution saving throw. If they fail, they fall prone and cannot stand back up, they have 1 AP that cannot be used to deal damage, they cannot reserve AP for a reaction, and they take 5d8 necrotic damage. If they succeed, they only take 3d8 necrotic damage. A creature can repeat this saving throw at the end of each of their turns, ending the effect on a success.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Howl",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Conjuration",
+      "Beast",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self (90 foot radius)",
+    "duration": "1 minute",
+    "desc": "With a bloodcurling howl, you call for wolves to join you in battle. Two wolves appear anywhere within range, and remain for the duration of the spell. They take their turn after yours, and cannot be commanded. They will not attack any creatures you choose, and will otherwise attack the closest non-chosen creatures to them during their turn. They vanish upon being reduced to 0 hit points.<br><br>At the start of each of your turns, two more wolves appear.<br><br>When the spell ends, all wolves summoned by this spell vanish.",
+    "empower": "Summons an additional three wolves immediately."
+  },
+  {
+    "name": "Myriad Scales",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Transmutation",
+      "Draconic",
+      "Concentration"
+    ],
+    "cost": "2 AP ",
+    "range": "Self ",
+    "duration": "1 minute",
+    "desc": "Multiple layers of dragon scales coat your skin. You have resistance to all damage. If you are unarmored, your AC becomes 16 + your defensive stat.<br><br>You can choose to end the spell when you would be affected by an attack or spell to completely negate all damage and effects on yourself.",
+    "empower": ""
+  },
+  {
+    "name": "Walking Corpse",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Necromancy",
+      "Unholy",
+      "Cantrip"
+    ],
+    "cost": "2 AP",
+    "range": "30 feet",
+    "duration": "8 hours",
+    "desc": "You reanimate target corpse. It obeys your commands and takes its turn after yours. It has 1 hit point, can't take any actions, and has no access to any of its features. All it can do is move up to its movement speed.<br><br>When reduced to 0 hit points, the reanimated creature returns to being a corpse.",
+    "empower": "You target three corpses instead."
   },
   {
     "name": "That Which Waits",
@@ -6112,6 +6436,37 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Plague Burst",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Necromancy",
+      "Disease",
+      "Cantrip"
+    ],
+    "cost": "1 AP",
+    "range": "Self (15 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "You emit a wave of rotting disease around you. Creatures in range around you roll one hit die and take damage equal to the amount of healing they would have received. Damage dealt this way reduces maximum hit points by two times the amount. If a creature has no hit dice remaining, they are instead poisoned until the end of your next turn.",
+    "empower": ""
+  },
+  {
+    "name": "Repel the Weak",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Abjuration",
+      "Draconic",
+      "Psychic",
+      "Unholy"
+    ],
+    "cost": "1 AP",
+    "range": "Self (60 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "All frightened creatures in range immediately move up to their movement speed away from you. On their next turn, they lose 2 AP.",
+    "empower": "Frightened creatures will spend 1 AP as a response to take the Dash action before moving."
+  },
+  {
     "name": "Sable Reflection",
     "tier": 5,
     "tags": [
@@ -6125,6 +6480,22 @@ const SpellDatabase = [
     "desc": "From your current location, you create a line of ethereal glass 10 feet tall that extends out to 60 feet. Choose one side of the glass - all creatures up to 30 feet away from the glass on that side are reflected as shadowy figures on the other side, preserving their relative position to the mirror.<br><br>The shadows take their turn immediately after the original. They are under your complete mental control and are otherwise an exact copy of the original creature.<br><br>At the start of your next turn, the glass and all shadows disappear.",
     "empower": "One shadow immediately takes a turn.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Preymorph",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Transmutation",
+      "Beast",
+      "Fey",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet ",
+    "duration": "1 hour",
+    "desc": "Target creature within range that you can see must succeed on an Intuition saving throw or be turned into a (relatively) harmless prey animal, such as a deer or rabbit. The creature gains 10 temporary hit points, and retains its normal hit point total and its mental stats, but takes on the physical stats of its new form, can't speak, and loses access to all of its features and talents and spells. Its equipment merges into its new form and can't be used.<br><br>If the creature loses all of its temporary hit points, it transforms back to its original form.",
+    "empower": "The creature gains 30 additional temporary hit points."
   },
   {
     "name": "Fangs of the Eartheater",
@@ -6160,6 +6531,21 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Chimerize",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Transmutation",
+      "Beast",
+      "Eldritch"
+    ],
+    "cost": "2 AP",
+    "range": "Touch",
+    "duration": "1 hour",
+    "desc": "Target creature you touch gains a characteristic from any beast creature you have seen before. Choose one from the following list to keep until the spell ends: <br><br>>The beast's Strength, Dexterity, Constitution, or Intuition, if it would be higher than the target's stat<br>>All of a beast's movement speeds, if the target does not have them or if it would be greater<br>>One of the beast's features<br>>One of the beast's actions",
+    "empower": "You choose three times."
+  },
+  {
     "name": "Dragonstrike",
     "tier": 5,
     "tags": [
@@ -6172,6 +6558,21 @@ const SpellDatabase = [
     "desc": "You summon a dragon 600 feet above a target point within range, without allowing it to fully fly. It falls 300 feet immediately while screaming \"AUGH, ARGH, AUGH\" as it fails to fly. At the end of your next turn, it crashes down completely, dealing 14d12 bludgeoning damage in a 30 foot radius around its landing point before it vanishes.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Vicious Aspect",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Transmutation",
+      "Draconic",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self",
+    "duration": "1 hour",
+    "desc": "You immediately cast up to three other, different Draconic spells with a range of Self. You must pay the MP cost for each spell. They end when this spell ends.",
+    "empower": "Duration becomes 8 hours. Automatically empowers the selected spells if they are a lower tier than this spell."
   },
   {
     "name": "Unstoppable Rage",
@@ -6203,6 +6604,22 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Starsear",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Evocation",
+      "Radiant",
+      "Space",
+      "Cantrip"
+    ],
+    "cost": "2 AP",
+    "range": "120 feet",
+    "duration": "Instantaneous",
+    "desc": "Drop a star from the sky in a burst of cosmic power at a point within range. Creatures within 10' of that point must make a Dexterity saving throw, taking 4d4 radiant damage on a failed save, and half as much on a successful one. If this hits at least one creature, you can cause a second star to drop on a different point within 60' of the first point, but it must be at least 10' away from the first point.",
+    "empower": ""
+  },
+  {
     "name": "Fog of Many Deaths",
     "author": "CrusaderDroid",
     "tier": 5,
@@ -6229,6 +6646,20 @@ const SpellDatabase = [
     "desc": "You touch a target creature temporarily animated by a Necromancy spell and liberate it from death. The creature does not regain its original form, but all of its capabilities in life that were not dependent on its original body are returned to it, including class levels, features, talents, and spells.<br><br>The animating spell harmlessly ends. The creature is no longer under the direct control of the original caster. It may become hostile depending on its memories.<br><br>Learning this spell permanently endows the user with knowledge that persists beyond death. You can always cast this spell on yourself, ignoring all effects that would prohibit your ability to cast spells.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Unholy Vigor",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Necromancy",
+      "Unholy"
+    ],
+    "cost": "3 AP",
+    "range": "30 feet",
+    "duration": "Instantaneous",
+    "desc": "Target reanimated creature under your control gains 6 AP on its next turn and takes damage equal to half its current hit points.",
+    "empower": ""
   },
   {
     "name": "Godly Example",
