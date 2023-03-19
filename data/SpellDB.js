@@ -6084,6 +6084,23 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Gemstone Tangle",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Abjuration",
+      "Earth",
+      "Plant",
+      "Concentration",
+      "Delayed"
+    ],
+    "cost": "6 AP",
+    "range": "Self (30 foot radius)",
+    "duration": "1 minute",
+    "desc": "A sphere of myriad intertwining gem-encrusted vines projects from you out to 30 feet. Each time any creature moves 5 feet within the sphere, they touch a vine, unleashing a barrage of gem thorns at the intruder. They must make a Dexterity saving throw or take 3d6 piercing damage. A creature that fails their saving throw against this spell fails all successive saving throws against this spell for the duration of their turn.<br><br>You can't move or take any other action while concentrating on this spell.",
+    "empower": "Damage increased to 4d6. Damage dealt ignores resistance."
+  },
+  {
     "name": "Chimerize",
     "author": "CrusaderDroid",
     "tier": 5,
@@ -6147,6 +6164,22 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Thalassophobia",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Illusion",
+      "Psychic",
+      "Water",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "1 minute",
+    "desc": "Within a 15 foot radius sphere centered on target point you can see, all creatures within must succeed on an Intuition saving throw. On a failure, they believe they are deep underwater. They are blinded, frightened, and have their movement speed reduced to 5 feet.<br><br>If the creature has a swim speed, they are not frightened and their movement speed is not reduced.<br><br>A creature can repeat the saving throw at the end of each of their turns, with creatures with swim speeds having advantage. On a success, the spell ends.",
+    "empower": "Radius increased to 25 feet."
+  },
+  {
     "name": "Forest Ally",
     "author": "CrusaderDroid",
     "tier": 5,
@@ -6207,6 +6240,35 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Nova",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Evocation",
+      "Radiant"
+    ],
+    "cost": "2 AP",
+    "range": "120 feet",
+    "duration": "Instantaneous",
+    "desc": "Any number of creatures you choose within range that can see you are struck with beams of light bursting from your body, taking 3d10 radiant damage.",
+    "empower": "Damage increased to 4d10."
+  },
+  {
+    "name": "Vine Whip",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Conjuration",
+      "Plant",
+      "Cantrip"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "You create a long vine to use as a whip. It is treated as a whip, save that its reach is 30 feet and it deals 1d8 bludgeoning damage on a hit. You can use the vine to grab onto objects, although it grants you no additional strength beyond your own for pulling them closer to you.",
+    "empower": ""
+  },
+  {
     "name": "Plague Burst",
     "author": "CrusaderDroid",
     "tier": 5,
@@ -6219,6 +6281,20 @@ const SpellDatabase = [
     "range": "Self (15 foot radius)",
     "duration": "Instantaneous",
     "desc": "You emit a wave of rotting disease around you. Creatures in range around you roll one hit die and take damage equal to the amount of healing they would have received. Damage dealt this way reduces maximum hit points by two times the amount. If a creature has no hit dice remaining, they are instead poisoned until the end of your next turn.",
+    "empower": ""
+  },
+  {
+    "name": "The Last Light",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Abjuration",
+      "Radiant"
+    ],
+    "cost": "1 AP",
+    "range": "Touch",
+    "duration": "15 minutes",
+    "desc": "You imbue the touched creature with a faint light. They shed dim light out to 5 feet. Each time the creature takes damage, they shed bright light out to 5 feet and dim light out another 5 feet, with both increasing by 5 feet each time they take damage.<br><br>If the target is reduced to 0 hit points, the light within explodes outwards, striking all creatures within the bright light that the target chooses. Each such creature must succeed on a Constitution saving throw. On a failure, they are blinded for 1 minute and take 10d10 radiant damage. On a success, they take half damage and are blinded until the start of the target's next turn.",
     "empower": ""
   },
   {
@@ -6265,6 +6341,20 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "You begin to sing a song about a young survivor finding a treasure of hope in the ruins of their kingdom. If you spend at least 1 AP during your turn towards casting this spell, peace and hope befall all creatures within range. If they take the Attack action or cast a spell that would deal damage or force a saving throw, they must make an Intuition saving throw first. On a failure, their action is canceled and they lose the AP. A creature that fails two Intuition saving throws in a row from this spell is instead charmed by you until you stop casting or they take damage. Beasts within range are immediately charmed by you and do nothing except listen to your song.<br><br>When completed, a brilliant sphere of divine energy ascends and scatters many rays of light throughout the area. Creatures you choose heal a number of hit points equal to half of their missing hit points, and have all negative spells and effects on them ended. You can choose to revive any creature that died within the area while you were casting this spell and isn't reanimated, restoring one quarter of their maximum hit points and setting them to that value. This spell mends bodily damage upon revival, such as missing limbs, but cannot affect disintegrated creatures.",
     "empower": "Range increased to 90 feet."
+  },
+  {
+    "name": "Seed Burst",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Evocation",
+      "Plant"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "Instantaneous",
+    "desc": "You hurl a trio of seeds forward from you at any three target spaces within range that you can see. These seeds explode on impact in a 20 foot radius into raw vernal magic. Creatures in range of at least one of these explosions must succeed on a Dexterity saving throw or take 6d6 poison damage, halved on a success. Constructs cannot have resistance or immunity to damage from this spell, and are additionally restrained until the end of your next turn on a failure.<br><br>This spell instead empowers plant creatures. They gain 2 AP on their next turn.<br><br>Creatures in range of more than one explosion only take damage from one explosion.",
+    "empower": "Creates an additional seed."
   },
   {
     "name": "Melt",
@@ -6498,6 +6588,20 @@ const SpellDatabase = [
     "empower": "The creature's current hit points are set equal to their maximum hit points."
   },
   {
+    "name": "Titan Vine",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Conjuration",
+      "Plant"
+    ],
+    "cost": "2 AP",
+    "range": "Self (60 foot line) ",
+    "duration": "Instantaneous",
+    "desc": "A massive vine, 15 feet wide, bursts from your palms and zigzags through the ground in front of you into a 60 foot long line. Any creature in the way must make a Dexterity saving throw. On a success, they move out of the way into the nearest empty space. On a failure, they take 10d6 bludgeoning damage and are restrained until the start of your next turn. Your turn then ends.<br><br>At the start of your next turn, you rip the vine out of the ground, flinging every restrained creature 30 feet into the air and landing behind you. Their relative position to you is preserved - a creature 30 feet away will land 30 feet away from you. If a creature is moved into a space it cannot occupy, it stops its movement in the closest possible space immediately, takes 4d6 bludgeoning damage, and must make a Constitution saving throw or be stunned until the start of your next turn.",
+    "empower": "Adds 2d6 piercing damage from thorns. Creatures that succeed on the saving throw still take this damage."
+  },
+  {
     "name": "Inculcate Fear",
     "author": "CrusaderDroid",
     "tier": 5,
@@ -6628,6 +6732,20 @@ const SpellDatabase = [
     "duration": "1 minute",
     "desc": "You attempt to infect the connection between a spell effect with concentration and the spellcaster. You choose either the spell effect itself or a creature affected by the spell effect and target that effect. Its caster must make a saving throw using its spellcasting stat. On a failure, your infection overrides their control of the spell. For the duration of this spell, the original owner can no longer willingly end the spell. At the start of each of their turns, if their spell is still active, they take 3d10 poison damage, ignoring resistance and immunity, and have one hit die destroyed. If there are no more hit dice, the creature is vulnerable to the damage taken.<br><br>The creature makes Concentration saves as normal when damaged by other creatures or effects, but if they fail, their spell does not end. Instead, they take the same damage they would normally take at the start of their turn.<br><br>An affected creature can spend 2 AP to repeat the saving throw. On a success, both this spell and their concentrated spell end.",
     "empower": ""
+  },
+  {
+    "name": "Fog Blossom",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Illusion",
+      "Plant"
+    ],
+    "cost": "2 AP",
+    "range": "30 feet",
+    "duration": "Instantaneous",
+    "desc": "You create a white bulb at target point within range that you can see. At the start of your next turn, it blooms and spreads out a thick, white fog within a 30 foot radius around itself.<br><br>Creatures inside the fog can't see out of the fog and can only see 5 feet inside the fog. If they attempt to leave the fog, they must first make a Knowledge saving throw. On a failure, they instead use their remaining movement to move back towards the center of the fog. On a success, they can leave the fog.",
+    "empower": "Range increased to 90 feet."
   },
   {
     "name": "Night's Claim",
@@ -6898,6 +7016,21 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Fourfold Mirage",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Illusion",
+      "Radiant",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self (60 foot cone)",
+    "duration": "1 minute",
+    "desc": "You blast disorienting lights through a 60 foot cone, causing all creatures in range that can see it to make a Constitution saving throw. On a failure, they take 4d6 radiant damage and see four copies of every creature while they remain affected by the spell. On a success, they take half damage and no other effect.<br><br>A creature that is seeing multiple creatures must roll 1d20 when targeting any creature with an attack or spell. On a roll of 15 or lower, the attack or spell is aimed at a mirage and harmlessly misses. They can repeat the saving throw at the end of each of their turns, ending the effect early on a success.",
+    "empower": ""
+  },
+  {
     "name": "Flash Step",
     "author": "CrusaderDroid",
     "tier": 5,
@@ -6972,6 +7105,21 @@ const SpellDatabase = [
     "desc": "Massive poisonous fangs 20 feet tall jut out of the ground, forming a ring with a radius of 60 feet centered on the target point. Any creature that touches the fangs takes 5d10 poison damage.<br><br>At the start of each of your turns, the ring shrinks by 5 feet. Any creature in the occupied space takes 5d10 poison damage and is pushed 5 feet away, towards the center.<br><br>The fangs leave behind difficult terrain as they move and tear apart the ground.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Purge",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Evocation",
+      "Holy",
+      "Radiant"
+    ],
+    "cost": "3 AP",
+    "range": "90 feet",
+    "duration": "Instantaneous",
+    "desc": "Divine light crashes down in a 15 foot radius pillar with a height of 300 feet. Creatures in the area must succeed on a Constitution saving throw or take 6d6 radiant damage, halved on a success.<br><br>Undead and reanimated creatures inside instead lose 2d6 hit dice on a failed saving throw and take 6d12 radiant damage instead. On a success, they lose 1d6 hit dice and take half damage. If no more hit dice are left, any undead or reanimated creature in the center 5 feet is utterly obliterated, while other such creatures take additional radiant damage equal to half their maximum hit points.",
+    "empower": "Destroys an additional two hit dice on undead and reanimated creatures."
   },
   {
     "name": "Baleful Glare",
