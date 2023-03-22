@@ -259,6 +259,21 @@ const SpellDatabase = [
     "empower": "When you empower this spell, by offering a drop of your own blood, you may grant a willing creature within 30 feet of you the effects of this spell targeting yourself. (This uses the other creature's concentration)."
   },
   {
+    "name": "Memorial to the Fallen",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Conjuration",
+      "Forbidden (Worldshaping)",
+      "Ritual"
+    ],
+    "cost": "N/A",
+    "range": "30 feet",
+    "duration": "Instantaneous",
+    "desc": "You construct a reverent monument over 10 minutes in memory of a creature you knew who has died. The monument can take any shape within a 10 foot cube, centered on a point within range.<br><br>As long as the monument exists, the creature's soul can always choose to rest in the monument, ignoring all other spell and creature effects. While inhabited, creatures within 10 feet can make a DC 15 Intuition check to listen to the soul inside the monument. Even on a success, most of the message tends to be garbled, with only a few words being intelligible. Whether the creature succeeds or not, it can't attempt this again until it completes a rest.<br><br>Casting this spell again on an inhabited monument creates an ethereal body for 24 hours for the inhabitant. It can't move more than 10 feet from the monument. It can speak and be heard while in this body, and it can choose to vanish while in the body and not speak.",
+    "empower": "Empower this spell as if it was a tier 9 spell. Casting an empowered version on an inhabited monument creates a replica of the physical body of the creature, allowing for the creature to be revived within the duration."
+  },
+  {
     "name": "Split Second",
     "tier": 1,
     "tags": [
@@ -825,6 +840,20 @@ const SpellDatabase = [
     "desc": "A creature at 0 hit points or a creature you are currently controlling with a Necromancy spell is struck with a jolt of electricity, and immediately takes one non-spell action that costs 2 AP or less. It has disadvantage on all rolls, and its targets have advantage on all required rolls.<br><br>A creature can only be targeted once per turn.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Infernal Consumption",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Evocation",
+      "Forbidden (Hellfire)"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Obsidian flames attempt to envelop target creature within range that you can see. They must succeed on a Dexterity saving throw, taking 5d6 damage on a failure and half damage on a success. Half of the damage is fire, while the other half is unholy.<br><br>If this reduces the creature's hit points to 0 or lower, you steal one of their hit dice until you spend it or complete a rest.",
+    "empower": "Pay the empower cost in hit points instead of MP. Damage increased to 6d6. Steals two hit dice if it successfully reduces a creature to 0 or fewer hit points."
   },
   {
     "name": "Shark Shadow",
@@ -3151,6 +3180,20 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Lifefuel",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Evocation",
+      "Forbidden (Hellfire)"
+    ],
+    "cost": "0 AP",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "desc": "You spend your maximum hit points instead of MP for this spell, which cannot be reduced in cost. You burn up to three of your hit dice, rolling them and adding half of the value rolled to your MP.",
+    "empower": "Pay the empower cost in hit points instead of MP, and deduct it from your maximum hit points. You add the full value rolled to your MP instead."
+  },
+  {
     "name": "Kaya's Blazing Star",
     "author": "Soreile",
     "tier": 2,
@@ -3981,6 +4024,20 @@ const SpellDatabase = [
     "duration": "1 hour",
     "desc": "You create a pair of invisible eyes. One eye floats 30 feet above a point within 30 feet of you, while the other eye flies to a point within 1 mile that you can see. The distant eye scans everything in a 60 foot radius around it, which the nearby eye projects onto the ground directly below it. The distant eye can detect hidden or invisible creatures this way, but cannot see through objects or into containers.<br><br>You can move either eye for 2 AP. The spell ends if you cast it again.",
     "empower": ""
+  },
+  {
+    "name": "Hellbound Torrent",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Forbidden (Hellfire)"
+    ],
+    "cost": "0 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Streams of obsidian flames pour out of the air around you to target up to three creatures within range that you can see. They must succeed on a Dexterity saving throw or take 4d6 damage, halved on a success. Half of this damage is fire, and the other half is unholy.",
+    "empower": "Pay the empower cost in hit points instead of MP. Deduct the cost from your maximum hit points. You can cast this spell again this turn."
   },
   {
     "name": "Heat Haze",
@@ -5293,6 +5350,20 @@ const SpellDatabase = [
     "empower": "Range increased to 60 feet."
   },
   {
+    "name": "Touch of Torment",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Evocation",
+      "Forbidden (Hellfire)"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "Target creature becomes surrounded by flickering obsidian flames whispering of their final fate. Whenever they take fire damage, the flames flare up and deal an additional 1d6 fire damage. Whenever they take unholy damage, the flames whisper louder and impose disadvantage on their next attack roll.<br><br>A creature can spend 2 AP during their turn to make an Intuition saving throw to end the spell early on a success.",
+    "empower": "Pay the empower cost in hit points instead of MP. Fire damage increased to 2d6. Unholy damage imposes disadvantage on all attack rolls they make during their turn."
+  },
+  {
     "name": "Release",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -6164,6 +6235,21 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Finality and Flame",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Evocation",
+      "Forbidden (Hellfire)",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "You spend your maximum hit points instead of MP for this spell, which cannot be reduced in cost. You curse a target creature within range that you can see to a horrific fate, as obsidian flames dance along their skin. Each time they take damage while affected by this spell, one of their hit dice is destroyed. If no more hit dice are remaining, the flames seep into the creature and cause a terrible conflagration of fire in a 30 foot radius centered on the target. All creatures within range must succeed on a Dexterity saving throw or take 12d12 damage, halved on a success. Half of this damage is fire, while the other half is unholy. The original target automatically fails the saving throw and has their body obliterated if reduced to 0 hit points.<br><br>The spell ends if the explosion is triggered. The affected creature can make a Willpower saving throw during their turn for 3 AP to end the spell early on a success.",
+    "empower": "Pay the empower cost in hit points instead of MP, and deduct it from your maximum hit points. You instead target up to three creatures, all of whom must be within 10 feet of each other."
+  },
+  {
     "name": "Thalassophobia",
     "author": "CrusaderDroid",
     "tier": 5,
@@ -6481,6 +6567,23 @@ const SpellDatabase = [
     "empower": "The creature gains 30 additional temporary hit points."
   },
   {
+    "name": "Call Victorious Winds",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Evocation",
+      "Holy",
+      "Summoning",
+      "Wind",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self (90 foot radius) ",
+    "duration": "1 minute",
+    "desc": "You call forth an ethereal, divine wind spirit that oversees victory. Choose any number of creatures within range that you can see. Those creatures have advantage on all attack rolls and saving throws. Each time they successfully deal damage with any attack or spell, they deal an additional 1d6 damage. When an affected creature reduces another creature to 0 or fewer hit points, they additionally heal 3d6 hit points.<br><br>The spirit is fickle. If any affected creature is reduced to 0 or fewer hit points, or if you lose concentration on this spell, it will instead side with your opponents and grant its benefits to all creatures you are currently fighting. It will not switch sides again.<br><br>You can't end this spell early.",
+    "empower": ""
+  },
+  {
     "name": "Destructive Grasp",
     "author": "CrusaderDroid",
     "tier": 5,
@@ -6494,6 +6597,21 @@ const SpellDatabase = [
     "range": "Self",
     "duration": "15 minutes",
     "desc": "You create two large hands, crafted from acid, that mimic your hand movements. You can't be holding anything in your hands when you cast this spell.<br><br>Each hand can move up to 30 feet away from you. They are treated as if they have a Strength of 7, and you can carry objects, perform fine movements, and make mage weapon attacks with either hand. A successful hit deals 3d10 acid damage. You are also able to grapple, shove, and trip with each hand.<br><br>Any object touched by a hand takes 30 acid damage. Any creature that starts its turn touching a hand takes 3d10 acid damage.",
+    "empower": ""
+  },
+  {
+    "name": "Foresight",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Divination",
+      "Psychic",
+      "Cantrip"
+    ],
+    "cost": "1 AP",
+    "range": "90 feet",
+    "duration": "Instantaneous",
+    "desc": "Target creature's immediate thoughts are known to you. When the creature starts its next turn, you gain 2 AP and can immediately Ready an action.",
     "empower": ""
   },
   {
@@ -6734,6 +6852,20 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Tornado",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Evocation",
+      "Wind"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet ",
+    "duration": "1 minute",
+    "desc": "You create a tornado centered on target point within range that you can see, with a radius of 5, 10, or 15 feet, and a height of 30, 60, or 90 feet. The spell fails if the tornado has no room to reach its full size. When you cast this spell, designate a direction across the ground for the tornado to move in. <br><br>Whenever any creature or object touches the tornado and can be fully contained inside of it, including when the tornado is created, they are swept up and flung 30 feet in a random direction. If they collide with an object or creature, they stop moving, land in the nearest adjacent empty space, and take 6d6 bludgeoning damage and fall prone. The blocking object or creature must succeed on a Strength saving throw or take 6d6 bludgeoning damage, halved on a success.<br><br>At the start of each of your turns, the tornado moves 10 feet in the designated direction.",
+    "empower": "Size can be increased to a 20 foot radius and a 120 foot height."
+  },
+  {
     "name": "Fog Blossom",
     "author": "CrusaderDroid",
     "tier": 5,
@@ -6777,6 +6909,21 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Tailwinds",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Transmutation",
+      "Wind",
+      "Cantrip"
+    ],
+    "cost": "1 AP",
+    "range": "Self (30 foot line) ",
+    "duration": "Instantaneous",
+    "desc": "Strong winds come forth in a 5 foot wide, 30 foot long line extending from you, blowing away light objects and Tiny creatures until they are at the edge of the spell's range. All creatures moving in the same direction as the wind use 1 foot of movement speed for every 2 feet traveled. The wind disperses by the start of your next turn.",
+    "empower": ""
+  },
+  {
     "name": "Unstoppable Rage",
     "author": "CrusaderDroid",
     "tier": 5,
@@ -6789,6 +6936,22 @@ const SpellDatabase = [
     "duration": "15 minutes",
     "desc": "You invoke a primal rage and let it act through you. Whenever you take damage, you can choose to roll one of your available hit dice to heal yourself equal to twice the value rolled. Whenever you reduce a creature to 0 or fewer hit points, you steal one of their hit dice for yourself until the spell ends. You can act normally even at 0 hit points, although you will die if your maximum hit points reach 0.",
     "empower": "Removes the AP cost on this spell."
+  },
+  {
+    "name": "Weapon of Justice",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Conjuration",
+      "Holy",
+      "Physical",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "Self (special)",
+    "duration": "1 minute",
+    "desc": "Divine magic gathers in your hands and takes the shape of a weapon of your choice. With that weapon, you strike out in an area depending on the damage type of the weapon: a 10 foot radius around you for a bludgeoning weapon, a 15 foot cone for a slashing weapon, and a 20 foot line for a piercing weapon. Every creature in range must succeed on a Dexterity saving throw or take 8d10 radiant damage.<br><br>The weapon remains for the duration of the spell. Its damage type becomes radiant, and you are proficient with this weapon. It can be treated as a mage weapon.  Whenever you or an allied creature within 60 feet that you can see takes damage, your next weapon attack deals an additional 2d10 radiant damage on hit and requires the target to make a Constitution saving throw or be blinded until the start of your next turn.",
+    "empower": "The weapon deals an additional 1d10 radiant damage on every weapon attack."
   },
   {
     "name": "Null Pain",
@@ -6898,6 +7061,21 @@ const SpellDatabase = [
     "empower": "The oozemass immediately moves 15 feet upon being summoned."
   },
   {
+    "name": "Hydrate",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Conjuration",
+      "Water",
+      "Cantrip"
+    ],
+    "cost": "1 AP",
+    "range": "90 feet",
+    "duration": "Special",
+    "desc": "When you cast this spell, choose one of two effects: <br>>You create up to a 20 foot cube of water centered on a target point in range you can see. It is ordinary water, suitable for drinking, and obeys the laws of physics immediately after being created.<br>>You cause rain to fall in a 40 foot radius cylinder 100 feet tall for 1 hour. Enough water will fall by the duration to fill the entire area with up to 5 feet of water if it has nowhere else to go.",
+    "empower": ""
+  },
+  {
     "name": "Gravechill",
     "author": "CrusaderDroid",
     "tier": 5,
@@ -6910,6 +7088,20 @@ const SpellDatabase = [
     "duration": "1 minute",
     "desc": "The touched creature must succeed on a Constitution saving throw or be overtaken by a chill that grips their very soul. They take 6d10 cold damage, can't regain hit points or gain temporary hit points, and take 5 cold damage per 5 feet they move on their turn. A successful saving throw deals half damage and no other effect. The creature can repeat the saving throw at the end of each of their turns, ending the effect early on a success.<br><br>A creature that is reduced to 0 hit points while affected by this spell has their body freeze where it stands, preserving it in good condition. If a spell would reanimate this creature, it refunds MP equal to its tier to its caster.<br><br>If you are controlling a reanimated creature, you can have them deliver this spell with a touch instead of you.",
     "empower": "Initial damage increased to 9d10."
+  },
+  {
+    "name": "Skyward",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Evocation",
+      "Wind"
+    ],
+    "cost": "2 AP",
+    "range": "30 feet",
+    "duration": "Instantaneous",
+    "desc": "All creatures you choose within a 60 foot radius centered on target point within range you can see are flung up to 60 feet into the air by strong winds. Unwilling creatures can make a Strength saving throw to halve the distance moved.<br><br>Large creatures only move half as far. Huge creatures and larger are unaffected.",
+    "empower": ""
   },
   {
     "name": "Scrapstorm Blade",
@@ -7045,6 +7237,21 @@ const SpellDatabase = [
     "empower": "Reduces the AP cost by 1."
   },
   {
+    "name": "Cairn",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Conjuration",
+      "Earth",
+      "Cantrip"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "desc": "All adjacent empty spaces rumble. At the start of your next turn, 5 foot tall stone pillars erupt in those spaces, displacing any creature in those spaces into an adjacent empty space, prioritizing the original casting space.<br><br>The pillars have AC 10 and 15 hit points and remain until destroyed.",
+    "empower": ""
+  },
+  {
     "name": "Iceblood Fortitude",
     "author": "CrusaderDroid",
     "tier": 5,
@@ -7122,6 +7329,21 @@ const SpellDatabase = [
     "empower": "Destroys an additional two hit dice on undead and reanimated creatures."
   },
   {
+    "name": "Simple Summon",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Conjuration",
+      "Summoning",
+      "Cantrip"
+    ],
+    "cost": "1 AP",
+    "range": "30 feet",
+    "duration": "1 hour",
+    "desc": "You summon any creature with 1 hit die or any non-magical solid object that fits within a 5 foot cube. Summoned creatures obey your commands, but can't attack. Summoned objects have 5 hit points.",
+    "empower": ""
+  },
+  {
     "name": "Baleful Glare",
     "author": "CrusaderDroid",
     "tier": 5,
@@ -7136,6 +7358,21 @@ const SpellDatabase = [
     "range": "60 feet",
     "duration": "Instantaneous",
     "desc": "With a glare, target creature you can see bursts into flames and takes 2d12 fire damage.",
+    "empower": ""
+  },
+  {
+    "name": "Mend",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Evocation",
+      "Holy",
+      "Cantrip"
+    ],
+    "cost": "1 AP",
+    "range": "Touch",
+    "duration": "Instantaneous",
+    "desc": "Target creature or object heals 5 hit points.",
     "empower": ""
   },
   {
@@ -7200,6 +7437,38 @@ const SpellDatabase = [
     "duration": "1 hour ",
     "desc": "Your voice becomes booming thunder, audible out to 300 feet. Creatures that can hear you are deafened to everything but your voice. You can choose any number of creatures you can see when casting this spell to be unaffected.",
     "empower": "Remove the Concentration tag from this spell."
+  },
+  {
+    "name": "Reinforce",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Abjuration",
+      "Physical",
+      "Cantrip"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "desc": "You gain resistance to a damage type of your choice until the start of your next turn.",
+    "empower": ""
+  },
+  {
+    "name": "Command Aquatic Beasts",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Enchantment",
+      "Beast",
+      "Psychic",
+      "Water",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self (300 foot radius)",
+    "duration": "1 hour",
+    "desc": "You send out a wave that taps into the minds of all beasts that live in the water. Beasts with hit dice less than half your level are automatically charmed for the duration. Beasts with hit dice between half your level and your level must make an Intuition saving throw to avoid being charmed for the duration. Beasts with hit dice greater than your level can repeat the saving throw at the end of each of their turns while charmed to end the effect on them early.<br><br>Creatures charmed by this spell freely share all information with you telepathically, including what they have seen and are seeing as well as what they are feeling. They obey your mental commands.",
+    "empower": ""
   },
   {
     "name": "Starsear",
