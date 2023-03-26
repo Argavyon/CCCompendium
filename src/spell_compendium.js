@@ -123,15 +123,16 @@ function main() {
     const tag_list = {};
     const f_tag_list = {};
     const functional_tags = {
+        Cantrip: 'When cast, this spell is treated as a tier 1 spell in all regards, including MP cost.',
         Concentration: 'You need to concentrate on this spell. Taking damage forces you to make a Constitution saving throw against DC 10 or half the damage done, whichever is higher. On a failure, the spell ends. When you cast a spell with Concentration while you are concentrating on a different spell, the first spell ends. You lose concentration if you are at 0 hit points.',
         Delayed: 'You can pay for this spell&apos;s AP cost over multiple turns. While you have at least 1 AP set towards the spell, you are concentrating on the spell.',
         Forbidden: 'You can&apos;t learn this spell normally. You need a general talent that automatically unlocks these spells for you once taken.',
+        Mastery: 'If you have all the tags for this spell, reduce the MP cost of the spell by two tiers.',
         Potent: 'You can cast this spell at a higher tier for an increased effect.',
         Sign: 'This spell creates a field around you that does not move. It ends if you leave the field or cast another Sign spell.',
         Ritual: 'This spell takes too much time to cast during combat.',
         Silent: 'You do not need to speak to cast this spell.',
         Still: 'You do not need to move to cast this spell.',
-        Cantrip: 'When cast, this spell is treated as a tier 1 spell in all regards, including MP cost.',
     };
     const compendiumLeft = document.querySelector('#compendium_left');
     SpellDatabase.forEach(spell => spell.tags.forEach(tag => {
