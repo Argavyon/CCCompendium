@@ -160,6 +160,20 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Hundred Needles",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Evocation",
+      "Forbidden (Fairylock)"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "Instantaneous",
+    "desc": "Needles of black, glimmering light form around a target creature within range you can see, before thrusting themselves at the target. They are inflicted with 1 Fairylock, and must succeed at a Dexterity saving throw or take 1d6 piercing and 1d6 radiant damage and become afflicted with an additional 1 Fairylock.<br><br>Fairylock remains for 1 minute after its most recent application. For every AP a creature spends, it takes 1 damage per Fairylock it has.",
+    "empower": "Radiant damage increased to 2d6. Inflicts 2 Fairylock on a failed saving throw instead."
+  },
+  {
     "name": "Carried Burden",
     "tier": 1,
     "tags": [
@@ -2121,6 +2135,20 @@ const SpellDatabase = [
     "desc": "You slam the ground with enough force to rupture the spell's area. It becomes difficult terrain, and every creature in range must make a Strength saving throw or take 2d8 bludgeoning damage and be knocked prone. Creatures that succeed on their saving throw take half damage and are not knocked prone.",
     "empower": "Radius increased to 20 feet. Damage increased to 3d8.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Penumbral Chains",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Evocation",
+      "Forbidden (Fairylock)"
+    ],
+    "cost": "3 AP",
+    "range": "90 feet",
+    "duration": "Instantaneous",
+    "desc": "Black glimmering chains of light emerge from the ground and attempt to ensnare target creature within range you can see. They must make a Dexterity saving throw or take 2d6 bludgeoning and 2d6 radiant damage and be burdened by the chains until the end of their next turn. While burdened, they must spend 1 AP to move up to 10 feet, and can't move otherwise.",
+    "empower": "Reduce the AP cost of this spell by 1."
   },
   {
     "name": "Transfer Focus",
@@ -4337,6 +4365,20 @@ const SpellDatabase = [
     "empower": "The duration becomes 24 hours."
   },
   {
+    "name": "Distant Pillar",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Forbidden (Fairylock)"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "Instantaneous",
+    "desc": "A horizontal pillar of black, gleaming light forms and is launched at a target creature within range you can see. It must make a Dexterity saving throw or suffer 3 Fairylock, take 3d6 bludgeoning and 3d6 radiant damage, and be knocked backwards 30 feet. A successful saving throw deals half damage and prevents all other effects.<br><br>Fairylock remains for 1 minute after its most recent application. For every AP a creature spends, it takes 1 damage per Fairylock it has.",
+    "empower": "If cast after another Fairylock spell, remove the AP cost on this spell."
+  },
+  {
     "name": "Harden Flesh",
     "author": "CrusaderDroid",
     "tier": 3,
@@ -5194,6 +5236,20 @@ const SpellDatabase = [
     "duration": "1 minute",
     "desc": "A silent, poisonous thorn flies from you into a target creature within range that you can see. They must make a Constitution saving throw or be paralyzed. While paralyzed, they hallucinate that they are acting normally.<br><br>If the creature takes damage, they can make a Knowledge saving throw with advantage to realize they are hallucinating. On a success, they make a Constitution saving throw at the end of each of their turns or when they take damage. On a success, the spell ends.",
     "empower": "Targets up to three creatures, each of whom cannot be more than 10 feet from another target."
+  },
+  {
+    "name": "Power Lock",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Evocation",
+      "Forbidden (Fairylock)"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "1 minute",
+    "desc": "You flood a target creature's vision with black, glimmering lights, who must make an Intuition saving throw or take 3d6 psychic and 3d6 radiant damage and have their AP costs increased by 1 for the duration. A successful saving throw deals half damage with no other effects.<br><br>If a creature affected by Fairylock is targeted, the creature additionally spends all remaining AP at the end of each of their turns.<br><br>A creature can repeat the saving throw at the end of each of their turns, before spending AP as a result of this spell if applicable. On a success, the spell ends.",
+    "empower": "Reduces the AP cost by 1."
   },
   {
     "name": "The Conception",
@@ -6630,6 +6686,21 @@ const SpellDatabase = [
     "empower": "Width increased to 15 feet."
   },
   {
+    "name": "Black Shockwave",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Evocation",
+      "Forbidden (Fairylock)",
+      "Delayed"
+    ],
+    "cost": "4 AP",
+    "range": "Self (60 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "Black, glimmering light radiates from your uplifted hand into the area around you, sending out rippling waves. Creatures you choose have resistance to the first source of damage they take before the start of your next turn. All other creatures must succeed on a Constitution saving throw or take 4d6 bludgeoning damage and 4d6 radiant damage, halved on a success. Creatures that fail their saving throw deal half damage with all of their attacks and spells during their next turn.",
+    "empower": "Creatures you choose instead gain resistance to all damage before the start of your next turn."
+  },
+  {
     "name": "Dragonstrike",
     "tier": 5,
     "tags": [
@@ -7487,6 +7558,130 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Shadowbeast",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Illusion",
+      "Shadow",
+      "Concentration",
+      "Mastery"
+    ],
+    "cost": "2 AP",
+    "range": "Self ",
+    "duration": "1 minute",
+    "desc": "Your shadow transforms into one that matches a hideous quadrupedal beast. At the start of each of your turns, it tries to attack one creature within 30 feet you choose. They must make a Dexterity saving throw or take 6d6 piercing damage, halved on a success. At the end of each of your turns, it lies in wait and attacks the first creature to attack you within its range before the start of your next turn.<br><br>Your shadow is more malleable in this form. You can use it to manipulate objects from up to 30 feet away, and you gain a climb speed equal to your walking speed. You can take the Hide action for 1 AP as your shadow quickly obscures you. If you would be reduced to 0 hit points, your shadow intercepts the attack or spell, ending the spell immediately and preventing all effects that would have affected you.",
+    "empower": ""
+  },
+  {
+    "name": "Precision Warp",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Conjuration",
+      "Space",
+      "Mastery"
+    ],
+    "cost": "2 AP",
+    "range": "300 feet",
+    "duration": "Instantaneous",
+    "desc": "Up to six creatures you choose within range that you can see, of which you can be one of them, are teleported to any other location within range. You pick each individual destination for each creature. You can specify a particular destination, or give directions such as \"60 feet north, 10 feet up\".<br><br>Unwilling creatures can make a Willpower saving throw to avoid being teleported. Even if they fail, you can't teleport an unwilling creature more than 50 feet into the air.",
+    "empower": "Choose one: Double the amount of possible targets, or you no longer need line of sight to target a creature."
+  },
+  {
+    "name": "Annihilate",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Abjuration",
+      "Space"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Everything that fits in a 10 foot cube centered on target point within range that you can see must succeed on a Willpower saving throw. On a failure, it loses five hit dice. On a success, it takes 8d6 damage, which cannot be reduced or prevented. <br><br>Objects that are not held by a creature as well as creatures without enough hit dice that fail their saving throw are utterly annihilated as their core components are procedurally scattered across the plane.",
+    "empower": "Deals an additional 3d6 damage on both a successful save and a failed save."
+  },
+  {
+    "name": "Toxic Companion",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Enchantment",
+      "Fey",
+      "Poison",
+      "Shadow",
+      "Concentration",
+      "Silent",
+      "Still"
+    ],
+    "cost": "2 AP",
+    "range": "120 feet",
+    "duration": "15 minutes",
+    "desc": "Now and for 2 AP on any of your turns, you can choose a target creature within range that you can see to make an Intuition saving throw. On a failure, the creature's shadow speaks words into their mind, eroding their self-control. During their turn, you can spend 1 AP for the following actions:<br>>As a response to the creature making an attack, you can change the target of the attack and impose disadvantage on the attack.<br>>As a response to the creature moving, you can direct half of its movement for the turn, choosing where it moves. You can make this decision at any point during its movement.<br>>As a response to the creature beginning to cast a spell, you can force it to make a Constitution saving throw. On a failure, it loses the spell and its concentration, if it is concentrating on anything.<br>>You can influence the creature to speak up to twenty-five words of your choice. The creature believes the words are their own.<br>>You can have the shadow reach out and poison an adjacent creature's shadow. They become targeted by this spell for the remaining duration.<br><br>After using any of these actions, the creature can repeat the saving throw at the end of their turn. On a success, the spell ends for them.",
+    "empower": ""
+  },
+  {
+    "name": "Stoneshift",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Transmutation",
+      "Earth",
+      "Mastery"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "desc": "While touching a stone surface, you melt with the surface as if you were a liquid. In this state, you can travel along stone at a rate up to four times your movement speed. You can't take any other action in this form.<br><br>If the stone you are traveling on is destroyed, or if you move away from the stone, the spell ends.",
+    "empower": "The spell gains a duration of 1 minute. You can enter and exit stone for 1 AP during your turn while the spell persists."
+  },
+  {
+    "name": "Mass Shadow Caster",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Conjuration",
+      "Arcane",
+      "Shadow"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "Instantaneous",
+    "desc": "The shadows of all creatures in a 30 foot area centered on target point within range come to life, then cast a tier 1 spell you know. The spells cost 0 AP. Each shadow can choose different targets, but all of them cast the same spell. A creature that fails a saving throw against one spell fails all subsequent saving throws.",
+    "empower": ""
+  },
+  {
+    "name": "Quillburst",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Conjuration",
+      "Poison",
+      "Mastery"
+    ],
+    "cost": "2 AP",
+    "range": "Self (60 feet)",
+    "duration": "Instantaneous",
+    "desc": "Three waves of poisonous quills erupt around you and fly towards every creature you choose in range that you can see. They must make a Dexterity saving throw for each wave or take 3d8 poison damage and be poisoned until the end of your next turn. A successful saving throw deals half damage and does not poison, while a failed saving throw automatically fails all successive saving throws.",
+    "empower": "Choose one: radius increased to 90 feet, or add a fourth wave."
+  },
+  {
+    "name": "Terraform",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Transmutation",
+      "Earth",
+      "Mastery"
+    ],
+    "cost": "2 AP",
+    "range": "Self (60 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "You adjust the terrain around you to be anything you please, so long as it remains within the range of the spell.<br><br>If you have the Plant tag, you can also add greenery to the terrain you adjust.<br><br>The adjustments take place over a period of six seconds. Creatures that may be imperiled by the rapid changes can make a Dexterity saving throw to move up to half their movement speed on a success.",
+    "empower": "Choose one: radius increases to 90 feet, or this spell gains the Concentration tag and a duration of 1 minute, during which you can adjust the terrain at the start of each of your turns as long as you remain in the area."
+  },
+  {
     "name": "Abyssal Call",
     "tier": 6,
     "tags": [
@@ -7502,6 +7697,37 @@ const SpellDatabase = [
     "desc": "Black waters spread from yourself and form a 60 foot radius pool of water around you as you sink down into the depths, merging with a massive sea creature called from the deepest abysses of the ocean.<br><br>The sea creature is a Gargantuan creature. The spell fails if you cast it in a location that cannot fit the creature. It has AC 18, and 200 hit points, and cannot receive healing. It automatically succeeds on all saving throws. While it has at least one hit point, you have resistance to all damage taken, and the creature takes damage equal to the damage you take.<br><br>You and the creature can move anywhere within the pool of water during your turn, but cannot leave the water. You can spend 1 AP to make a tentacle attack, 2 AP to make two tentacle attacks, and 3 AP to make one tentacle attack on all creatures within 10 feet of you. The tentacle attack has a reach of 10 feet, uses your spellcasting stat to determine attack and damage bonuses, deals 3d10 bludgeoning damage on a hit, and grapples the target on a hit. You can only grapple one creature with each attack, no matter how many creatures you hit. At the start of each of your turns, grappled creatures take 2d10 bludgeoning damage.<br><br>The spell ends when you or the creature have been reduced to 0 or fewer hit points.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Banish Disease",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Abjuration",
+      "Disease",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self (30 foot radius) ",
+    "duration": "1 hour",
+    "desc": "You project a field of crackling energy centered on you that follows you as you move and sanitizes everything in the field. No other Disease spell can function in this area, and any other Disease spells that enter the area are dispelled on contact.<br><br>The purity of the area has additional benefits: creatures within have advantage on Constitution saving throws and resistance against poison damage, and any contamination inside the area is immediately purified. Creatures that receive healing in this area heal for an additional 2d6 hit points, up to a maximum amount of additional healing equal to the original value healed.",
+    "empower": "Choose one: radius is increased to 60 feet, or duration becomes 8 hours."
+  },
+  {
+    "name": "Usurper of the Slain",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Necromancy",
+      "Unholy",
+      "Delayed",
+      "Mastery"
+    ],
+    "cost": "6 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Permanently take control of up to 10 hit dice worth of undead creatures in a 60 foot radius centered on target area, starting with the creatures with the lowest hit dice. Creatures with more than 7 hit dice can make an Intuition saving throw to avoid the effect.<br><br>No effect on creatures with class levels.",
+    "empower": "Choose one: Reduce the cost by 3 AP, or double the amount of hit dice worth of undead affected. You can't affect any undead with more than 10 hit dice."
   },
   {
     "name": "Godly Example",
@@ -7532,6 +7758,37 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Skinrot",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Necromancy",
+      "Disease",
+      "Mastery"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "Up to 3 creatures within range must succeed on a Constitution saving throw. On a failure, they become afflicted with skinrot, a debilitating disease that causes skin to slough off on any physical contact harder than a shove. Whenever the creature takes damage from a weapon attack, they lose one hit die and take additional poison damage equal to one roll of that hit die. All damage from weapons they suffer while affected is deducted from their maximum hit points.<br><br>Creatures that have no skin or cannot be poisoned are immune to this spell. Affected creatures can repeat the saving throw on the end of each of their turns to end the effect early on a success.",
+    "empower": "Affects two additional targets."
+  },
+  {
+    "name": "Majesty",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Transmutation",
+      "Draconic",
+      "Delayed",
+      "Mastery"
+    ],
+    "cost": "2 AP",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "desc": "You end any number of spell effects or conditions on you. You heal 1d6 hit points for each effect or condition ended, and 1d6 hit points per tier of each Draconic spell ended.<br><br>Each time you cast this spell, the AP cost increases by 1 until you take a break or rest.",
+    "empower": "You don't need to concentrate on this spell, even when you can't pay the full cost immediately."
+  },
+  {
     "name": "Sacrosanct Wrath",
     "tier": 6,
     "tags": [
@@ -7544,6 +7801,20 @@ const SpellDatabase = [
     "desc": "A creature that has damaged you within the past year is suddenly blasted with a mighty pillar of light. The creature and all creatures within a 20 foot cylinder 300 feet tall must make a Dexterity saving throw or take 12d8 radiant damage, halved on a success.<br><br>A creature can't be targeted or take damage from this spell again until they finish a rest.",
     "empower": "Damage dealt to the main target reduces maximum hit points by the same amount.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Nausea Crash",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Enchantment",
+      "Disease"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Target creature you can see must make a Constitution saving throw. On a failure, overwhelming nausea causes the creature to violently retch, taking 8d6 poison damage and losing 3 AP on their next turn. On a success, they take half damage and lose 1 AP instead.<br><br>Creatures immune to being poisoned are unaffected by this spell.",
+    "empower": "Choose one: damage is increased to 12d6, range is increased to 300 feet, or the creature is stunned instead of losing AP."
   },
   {
     "name": "Ruler of the Weather",
@@ -7594,6 +7865,143 @@ const SpellDatabase = [
     "desc": "You summon a sage - a benevolent humanoid symbiote from the Sea of Possibility. It establishes a mental connection with you upon arrival.<br><br>The sage is intangible and can't be affected by any effect other than the end of your spell. It takes its turn after yours. It has a walking speed of 20 feet, and knows every spell you know, using your MP to cast. It obeys your mental commands.<br><br>When the spell expires, the sage returns to the Sea of Possibility.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Crushtide",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Conjuration",
+      "Water",
+      "Mastery"
+    ],
+    "cost": "2 AP",
+    "range": "Self (60 foot line)",
+    "duration": "Instantaneous",
+    "desc": "A wave of water 15 feet tall, 15 feet wide, and 60 feet long erupts in front of you, optionally carrying you to any point within the line. Creatures in the area must succeed on a Strength saving throw or take 8d6 bludgeoning damage and be knocked prone. A successful saving throw deals half damage and does not knock prone.<br><br>During your next turn, if you are still in the same area covered by the wave, you can spend 2 AP to cause a second wave, twice as tall, wide, and long, starting from the end point of the first wave. You can optionally choose to ride the wave to any point within the wave. Creatures in the wave must succeed on a Strength saving throw or take 8d6 bludgeoning damage and be knocked prone. A successful saving throw deals half damage and does not knock prone.",
+    "empower": "Damage increased to 10d6 on both waves."
+  },
+  {
+    "name": "Fey Law",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Enchantment",
+      "Eldritch",
+      "Fey"
+    ],
+    "cost": "3 AP",
+    "range": "Self (60 foot radius) ",
+    "duration": "1 minute",
+    "desc": "You impose on reality a law of your choosing. Choose up to three weapons or spells to outlaw when you cast this spell. All creatures in the area are bound by this law, and suffer 10d10 psychic damage each time they violate the law by attacking with that weapon or casting that spell. When the spell ends, all affected creatures are freed from the law.<br><br>No effect on creatures with a Knowledge of -3 or lower.",
+    "empower": ""
+  },
+  {
+    "name": "Mobius Capture",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Abjuration",
+      "Arcane",
+      "Space",
+      "Summoning"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet ",
+    "duration": "24 hours",
+    "desc": "You draw in a magical effect from a creature or area within range that you can see and trap it inside a specialized 5 foot radius sphere, created in an empty space within 30 feet of you. Until the sphere breaks, the spell is suspended and has no effect on anything or anyone.<br><br>The sphere has AC 10, 60 hit points, and is immune to weapon attacks. If it is destroyed, the spell resumes, targeting its original target. If the target is no longer in range, the spell travels as far as it can towards the target, then fizzles out with no further effect.<br><br>The sphere breaks if you cast this spell again. No effect against Apocalyptic spells.",
+    "empower": "Reduce the cost by 1 AP. Empower this only as a response to a creature casting a spell."
+  },
+  {
+    "name": "Dragonbless",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Transmutation",
+      "Draconic",
+      "Mastery"
+    ],
+    "cost": "1 AP",
+    "range": "30 feet",
+    "duration": "Instantaneous",
+    "desc": "You grant any creature within range that you see the same benefits as a Draconic spell currently affecting you. When the spell ends for you, it ends for the affected creature.",
+    "empower": "Targets up to three creatures."
+  },
+  {
+    "name": "Petrify",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Transmutation",
+      "Earth",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "15 minutes",
+    "desc": "Target creature within range that you can see must make a Constitution saving throw or become restrained as their body begins to turn to stone. At the end of their next turn, they must make a Constitution saving throw. On a success, they are restrained until the end of their next turn, as the petrification slowly withdraws. On a failure, they become petrified for the duration.<br><br>A petrified creature has resistance to slashing, piercing, and bludgeoning damage, but can't act at all. If reduced to 0 hit points, they shatter. If the spell reaches its full duration, 10 of the creature's hit dice are destroyed. If there are insufficient hit dice remaining, they are permanently petrified.",
+    "empower": "Range instead becomes Self (30 foot cone)."
+  },
+  {
+    "name": "Deathly Inversion",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Necromancy",
+      "Eldritch",
+      "Poison"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "24 hours",
+    "desc": "Up to three creatures within range must succeed on a Willpower saving throw or have their existence poisoned such that healing becomes lethal harm. For the duration of the spell, the next 100 hit points of healing they would receive instead damages them for the same amount.<br><br>A creature taking a break can spend hit dice to remove part of the effect without further damage. Each hit die spent removes 20 points from the threshold.",
+    "empower": "Choose one: range increased to 120 feet, or target two more creatures, or increase threshold to 150 hit points."
+  },
+  {
+    "name": "Summon Wyvern",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Conjuration",
+      "Draconic",
+      "Summoning",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "30 feet",
+    "duration": "1 hour",
+    "desc": "You summon a wyvern to an empty space within range that you can see. The wyvern obeys your mental commands and takes its turn immediately, interrupting your turn. It then takes its turn after your turn.<br><br>If you do not have the Summoning tag, the duration is reduced to 1 minute.<br><br>If you do not have the Draconic tag, the wyvern rebels against your unworthy control. You can't dismiss the wyvern by ending the spell early. If you lose concentration on the spell, the wyvern breaks free completely. It becomes hostile to everyone and prioritizes killing you over anything else.",
+    "empower": ""
+  },
+  {
+    "name": "Streaking Flame",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Evocation",
+      "Fire",
+      "Mastery"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "A thin, streaking bolt of flame flies towards a target creature within range that you can see. It must succeed on a Dexterity saving throw or take 8d6 fire damage, halved on a success.<br><br>The fire then attempts to bounce to another creature of your choice within 15 feet of the original creature, which must make the same saving throw, except the damage is reduced by 1d6. The flame continues to bounce between targets, reducing the damage by 1d6, until the damage is reduced to 0 or there are no valid targets to bounce to. A creature that fails a saving throw fails all successive saving throws from this spell.",
+    "empower": "Choose one: damage is increased to 9d8, or bounce range is increased to 30 feet."
+  },
+  {
+    "name": "False Confidence",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Illusion",
+      "Fey",
+      "Mastery"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "1 minute",
+    "desc": "The target must succeed on a Knowledge saving throw. On a failure, they feel as if their body is extraordinarily in shape. They have advantage on all attack rolls and ability checks they make. Each time they succeed on a roll with advantage, they acquire a token.<br><br>When the creature fails a roll with advantage, the spell unravels and reveals a wracked body overexerted by their force. They take 2d12 damage times the amount of tokens they have. This damage can't be reduced or negated. For the remainder of the spell, they have disadvantage on attack rolls and ability checks, and can't gain advantage.",
+    "empower": "Choose one: Range increased to 300 feet, or the spell gains the Silent and Still tags, or you target up to two additional creatures."
   },
   {
     "name": "Hydro Drill",
