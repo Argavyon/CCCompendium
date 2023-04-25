@@ -7631,6 +7631,21 @@ const SpellDatabase = [
     "empower": "Deals an additional 3d6 damage on both a successful save and a failed save."
   },
   {
+    "name": "Fatal Wrath",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Evocation",
+      "Arcane",
+      "Unholy"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Four bolts of black magic spring out from your hands, each homing in on a different creature you choose within range. They must make a Dexterity saving throw or take 8d6 damage, split evenly between arcane and unholy damage. A successful saving throw deals half damage.<br><br>If a reanimated creature is targeted, or if the target creature is reduced to 0 hit points, an additional bolt springs from them at any other creature within range you choose. You can target a previously targeted creature with these additional bolts. A creature that fails a saving throw against this spell fails all successive saving throws against this spell. These bolts cannot trigger additional bolts.",
+    "empower": "Fires two more bolts."
+  },
+  {
     "name": "Precision Warp",
     "author": "CrusaderDroid",
     "tier": 6,
@@ -7644,6 +7659,21 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "Up to six creatures you choose within range that you can see, of which you can be one of them, are teleported to any other location within range. You pick each individual destination for each creature. You can specify a particular destination, or give directions such as \"60 feet north, 10 feet up\".<br><br>Unwilling creatures can make a Willpower saving throw to avoid being teleported. Even if they fail, you can't teleport an unwilling creature more than 50 feet into the air.",
     "empower": "Choose one: Double the amount of possible targets, or you no longer need line of sight to target a creature."
+  },
+  {
+    "name": "Eyes of the Storm",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Divination",
+      "Lightning",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "Your eyes fill with lightning. You can't see normally, but you gain a top-down view of the surrounding area, able to see a 300 foot square centered on you. You can shift your vision to any area you please for 1 AP.<br><br>Nothing is hidden from you. You can see invisible and hidden creatures anywhere you are looking. You can choose to end this spell and fire a 5 foot wide, 5 foot tall bolt of lightning from your current location to target creature you can see. Every creature in the bolt must succeed on a Dexterity saving throw or take 14d6 lightning damage, halved on a success.",
+    "empower": ""
   },
   {
     "name": "Toxic Companion",
@@ -7681,6 +7711,50 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Echoing Blast",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Evocation",
+      "Fire",
+      "Delayed"
+    ],
+    "cost": "6 AP",
+    "range": "Sight",
+    "duration": "Instantaneous",
+    "desc": "Manifold waves of fire compress onto themselves in your hands, then fly towards a target point you can see. Upon reaching the point, every wave unfolds in the span of a quarter-second, creating a massive explosion of heat and flame. Every creature in a 90 foot radius is affected, depending on their distance to the center: <br>>Creatures in the center 5 feet must succeed on a Constitution saving throw or take 18d6 fire damage, halved on a success.<br>>Creatures within 30 feet of the center must succeed on a Constitution saving throw or take 14d6 fire damage, halved on a success.<br>>Creatures between 30 to 60 feet from the center must succeed on a Dexterity saving throw or take 10d6 fire damage, halved on a success.<br>>Creatures past 60 feet from the center must succeed on a Dexterity saving throw or take 6d6 fire damage.<br><br>The spell leaves behind a trail of ephemeral flames in the air that marks the path traveled from your hands to the target. It lingers for 1 hour.",
+    "empower": "Increase the die size from d6 to d10."
+  },
+  {
+    "name": "Invisible Death",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Illusion",
+      "Acid"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "15 minutes",
+    "desc": "You create a 10 foot cube of transparent, adhesive acid centered on target point in range that you can see. Any creature that is in the area when it is created must make a Dexterity saving throw or be ensnared in the spell.<br><br>The acid is invisible once created, unless darkened by magic. Any creature that moves into the acid is ensnared and stops moving immediately. Ensnared creatures can't move or take action unless an adjacent creature spends 2 AP to pull them free. Every minute, an ensnared creature takes 2d6 acid damage, then can make a Strength saving throw to free itself.",
+    "empower": ""
+  },
+  {
+    "name": "Encroaching Winter",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Conjuration",
+      "Cold",
+      "Mastery"
+    ],
+    "cost": "3 AP",
+    "range": "Self (90 feet)",
+    "duration": "1 minute ",
+    "desc": "An intense blizzard kicks up in the area around you for the duration, blocking all creatures' vision into the blizzard and restricting creatures inside to 15 feet of vision. You can place up to six 10 foot cubes of ice anywhere within the blizzard. They are indestructible, and vanish when the spell ends.",
+    "empower": ""
+  },
+  {
     "name": "Streaking Flame",
     "author": "CrusaderDroid",
     "tier": 6,
@@ -7709,6 +7783,21 @@ const SpellDatabase = [
     "duration": "1 minute",
     "desc": "The target must succeed on a Knowledge saving throw. On a failure, they feel as if their body is extraordinarily in shape. They have advantage on all attack rolls and ability checks they make. Each time they succeed on a roll with advantage, they acquire a token.<br><br>When the creature fails a roll with advantage, the spell unravels and reveals a wracked body overexerted by their force. They take 2d12 damage times the amount of tokens they have. This damage can't be reduced or negated. For the remainder of the spell, they have disadvantage on attack rolls and ability checks, and can't gain advantage.",
     "empower": "Choose one: Range increased to 300 feet, or the spell gains the Silent and Still tags, or you target up to two additional creatures."
+  },
+  {
+    "name": "Crystallize",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Necromancy",
+      "Cold",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "Up to three creatures within range that you can see must succeed on a Constitution saving throw or begin having parts of their body transformed into ice. They lose 1 AP and half of their movement speed during each of their turns. Every time they take cold damage, they must succeed on a Constitution saving throw or take 3d6 additional cold damage and lose 1 AP on their next turn. A creature reduced to 0 or fewer hit points while affected by this spell is fully crystallized and shatters if struck by any weapon attack.<br><br>A creature can use all of its remaining AP on each of its turns to repeat the saving throw. On a success, the spell ends for them.",
+    "empower": "Targets an additional two creatures."
   },
   {
     "name": "Summon Wyvern",
@@ -7774,6 +7863,34 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "You end any number of spell effects or conditions on you. You heal 1d6 hit points for each effect or condition ended, and 1d6 hit points per tier of each Draconic spell ended.<br><br>Each time you cast this spell, the AP cost increases by 1 until you take a break or rest.",
     "empower": "You don't need to concentrate on this spell, even when you can't pay the full cost immediately."
+  },
+  {
+    "name": "Arboreal Hammer",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Conjuration",
+      "Plant"
+    ],
+    "cost": "3 AP",
+    "range": "30 feet",
+    "duration": "Instantaneous",
+    "desc": "At target point you can see within range, a massive tree with a width of 25 feet and a height of 100 feet grows, then topples over in a 25 foot wide, 100 foot long line in target direction you choose. Creatures in the way must succeed on a Dexterity saving throw or take 10d10 bludgeoning damage, halved on a success. Creatures caught in the further half of the line are struck by branches for an additional 3d10 piercing damage.<br><br>If the tree can't grow to its full height, it grows as far as it can before it falls. The length of the line is equal to the tree's height.",
+    "empower": "Range increased to 90 feet."
+  },
+  {
+    "name": "Death Foreseen",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Divination",
+      "Unholy"
+    ],
+    "cost": "2 AP",
+    "range": "Sight",
+    "duration": "8 hours",
+    "desc": "Target creature must succeed on a Willpower saving throw. On a failure, you see the path that leads to the creature's demise. The creature has disadvantage on saving throws against effects you cause, and if the creature would take damage from you and have its hit points fall below the amount of damage taken, it is instantly killed.<br><br>The creature knows you have seen its death. If it damages you, it can repeat the saving throw. On a success, the spell ends.",
+    "empower": ""
   },
   {
     "name": "Banish Disease",
@@ -7942,6 +8059,21 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Corrosive Stream",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Conjuration",
+      "Acid",
+      "Mastery"
+    ],
+    "cost": "0 AP",
+    "range": "Self (30 foot line) ",
+    "duration": "Instantaneous",
+    "desc": "Corrosive acid bursts from your body and deals 3d8 acid damage to all creatures in the area of effect.",
+    "empower": "Damage increased to 5d8."
+  },
+  {
     "name": "Shadowbeast",
     "author": "CrusaderDroid",
     "tier": 6,
@@ -8002,6 +8134,21 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "Permanently take control of up to 10 hit dice worth of undead creatures in a 60 foot radius centered on target area, starting with the creatures with the lowest hit dice. Creatures with more than 7 hit dice can make an Intuition saving throw to avoid the effect.<br><br>No effect on creatures with class levels.",
     "empower": "Choose one: Reduce the cost by 3 AP, or double the amount of hit dice worth of undead affected. You can't affect any undead with more than 10 hit dice."
+  },
+  {
+    "name": "Entropic Dome",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Abjuration",
+      "Acid",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self (30 foot radius)",
+    "duration": "1 minute",
+    "desc": "You create a dome of acid that rapidly dissolves anything that crosses through. Ranged attacks that cross through the dome are dissolved harmlessly. Creatures that pass through the dome take 8d8 acid damage.<br><br>You can spend 2 AP during your turn to move the dome to center itself on you again. This does not inflict damage if a creature would pass through the dome. If you leave the dome, the spell ends.",
+    "empower": ""
   },
   {
     "name": "The First Trumpet",
