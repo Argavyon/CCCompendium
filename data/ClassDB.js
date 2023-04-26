@@ -2,6 +2,12 @@ const ClassDatabase = {
   "Dragonlord": {
     "Type": "Half-Caster",
     "Dice": "10",
+    "Talent Slots": [
+      2, 5, 8, 11, 14, 17, 20
+    ],
+    "Weapon Style Slots": [
+      2, 6, 12, 18
+    ],
     "Defensive": [
       "Dexterity",
       "Willpower"

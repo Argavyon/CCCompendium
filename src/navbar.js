@@ -1,7 +1,8 @@
 const tabs = [
     'spell_compendium',
     'create_spell',
-    'class_compendium'
+    'class_compendium',
+    'character_builder'
 ];
 buttons = tabs.map(tab => document.querySelector(`#navbar_${tab}`));
 divs = tabs.map(tab => document.querySelector(`#div_${tab}`));

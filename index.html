@@ -18,6 +18,7 @@
 	<button id="navbar_spell_compendium">Spell Compendium</button>
 	<button id="navbar_create_spell">Create New Spell</button>
 	<button id="navbar_class_compendium">Class Compendium</button>
+	<button id="navbar_character_builder">Character Builder (WIP)</button>
 </div>
 <div class="content" id="content">
 	<div id="div_spell_compendium">
@@ -75,30 +76,51 @@
 		<div id="class_compendium_content">
 		</div>
 	</div>
+	<div id="div_character_builder" hidden>
+		<h2 class="title">Character Builder</h2>
+		<center>
+			<table>
+				<style>
+					#div_character_builder th, #div_character_builder td {
+						width: 20%;
+						padding: 4px;
+						text-align: center;
+					}
+				</style>
+				<tbody id="character_builder_header_row"></tbody>
+				<tbody id="character_builder_content"></tbody>
+			</table>
+		</center>
+	</div>
 </div>
 <footer style="padding:10px">
     <center>
-		<b>Conquest & Creation</b>
-        <div><b>Copyright © 2022</b></div>
-        <div>CrusaderDroid</div>
-        <div>Soreile</div>
-		<br>
+		<table style="text-align: center;">
+			<tr>
+				<td style="padding: 6px; width: 50%;">
+					<b>Conquest & Creation</b>
+					<div><b>Copyright © 2022</b></div>
+					<div>CrusaderDroid</div>
+					<div>Soreile</div>
+					<br>
+					<b>Conquest & Creation Compendium</b>
+					<div><b>Copyright © 2022</b></div>
+					<div>Argavyon</div>
+				</td>
+				<td style="padding: 6px; width: 50%;">
+					<b>Conquest & Creation Spells</b>
+					<div><b>Copyright © 2022</b></div>
+					<div>Argavyon</div>
+					<div>BFHNV</div>
+					<div>CrusaderDroid</div>
+					<div>Levi</div>
+					<div>Soreile</div>
+					<div>Uri de Vries</div>
+					<div>Zombehking</div>
 
-		<b>Conquest & Creation Spells</b>
-        <div><b>Copyright © 2022</b></div>
-        <div>CrusaderDroid</div>
-        <div>Soreile</div>
-        <div>Argavyon</div>
-        <div>BFHNV</div>
-        <div>Levi</div>
-        <div>Uri de Vries</div>
-        <div>Zombehking</div>
-		<br>
-
-		<b>Spell Compendium</b>
-        <div><b>Copyright © 2022</b></div>
-        <div>Argavyon</div>
-        <br>
+				</td>
+			</tr>
+		</table>
 
 		<div><b>All Rights Reserved</b></div>
 		<br>
@@ -121,6 +143,7 @@
 <script src="src/spell_compendium.js"></script>
 <script src="src/spell_creation.js"></script>
 <script src="src/class_compendium.js"></script>
+<script src="src/character_builder.js"></script>
 </body>
 
 </html>
