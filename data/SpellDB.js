@@ -7617,6 +7617,22 @@ const SpellDatabase = [
     "empower": "The spell gains a duration of 1 minute. You can enter and exit stone for 1 AP during your turn while the spell persists."
   },
   {
+    "name": "Cyclone of Steel",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Transmutation",
+      "Physical",
+      "Concentration",
+      "Mastery"
+    ],
+    "cost": "3 AP",
+    "range": "Self (15 foot radius)",
+    "duration": "1 minute",
+    "desc": "You spin about rapidly as a torrent of sharp steel blades whirls into existence around you. Any creature that is within 15 feet of you at any point during your turn must make a Dexterity saving throw or take 8d6 slashing damage, halved on a success. A creature can only take damage from this spell once per turn. You are immune to Physical spells while concentrating on this spell.<br><br>At the start of each of your turns, you must pay 3 AP to continue concentrating on this spell. If you can't, the spell ends immediately.",
+    "empower": "Choose one - movement speed increases by 20 feet for the duration, or damage is increased to 10d6, or radius is increased to 20 feet."
+  },
+  {
     "name": "Edit Creation",
     "tier": 6,
     "tags": [
@@ -7769,6 +7785,37 @@ const SpellDatabase = [
     "empower": "Targets up to three creatures."
   },
   {
+    "name": "Rosetrap",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Conjuration",
+      "Plant",
+      "Mastery"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "15 minutes",
+    "desc": "You create six roses on any surface within range. Each rose must be at least 10 feet apart from any other rose created by this spell. You can choose any number of creatures when casting this spell to be unaffected.<br><br>When a creature moves within 10 feet of a rose, it triggers and bursts into a mass of writhing vines, reducing the triggering creature's movement to 0 for the  turn and forcing it to stop moving. Creatures within 20 feet must make a Dexterity saving throw or take 6d8 piercing damage and be restrained. Creatures that succeed take half damage and are not restrained.<br><br>A restrained creature can spend 1 AP to take 2d8 piercing damage and make a Strength saving throw. On a success, they break free from the entrapping rose. A restrained creature that takes slashing or fire damage is freed from being restrained.<br><br>The roses can be destroyed if the surface they are on is destroyed. If the rose is destroyed after being triggered, all affected creatures are freed.",
+    "empower": ""
+  },
+  {
+    "name": "Mass Beastshape",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Transmutation",
+      "Beast",
+      "Concentration",
+      "Mastery"
+    ],
+    "cost": "2 AP",
+    "range": "Self (30 foot radius) ",
+    "duration": "15 minutes",
+    "desc": "This spell is similar to Beastshape, except that it affects all willing creatures in range. You can choose a different shape for each affected creature.",
+    "empower": "Duration increased to 1 hour."
+  },
+  {
     "name": "Summon Wyvern",
     "author": "CrusaderDroid",
     "tier": 6,
@@ -7831,6 +7878,21 @@ const SpellDatabase = [
     "duration": "1 hour",
     "desc": "This spell is similar to Harness Weather, except that you choose two effects each time. You can choose the same effect twice in one turn.",
     "empower": "Reduces the AP cost to 4."
+  },
+  {
+    "name": "Companion Call",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Enchantment",
+      "Beast",
+      "Ritual"
+    ],
+    "cost": "N/A",
+    "range": "Touch",
+    "duration": "Permanent",
+    "desc": "You form a bond with target charmed beast with fewer hit dice than you. After remaining in contact for 15 minutes, it permanently becomes your faithful companion. You establish a telepathic link with it that allows you to command it as long as you are conscious. It gains hit dice until it ties your hit dice, and uses your proficiency modifier instead of its own. It adds your proficiency modifier to the damage it deals with all attacks. In combat, it takes its turn after yours.<br><br>You can't cast this spell again until your companion dies. If your companion is revived, the spell does not persist, although it still retains its memories of you.<br><br>A creature that is only temporarily transformed into a beast is never a valid target for this spell.",
+    "empower": ""
   },
   {
     "name": "Mass Shadow Caster",
@@ -7969,6 +8031,21 @@ const SpellDatabase = [
     "empower": "Choose one: creatures within 5 feet of the target automatically fail their saving throw, damage increased to 12d12, or radius increased to 45 feet."
   },
   {
+    "name": "Restore Health",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Evocation",
+      "Holy",
+      "Mastery"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Restoring magic pours over target creature in range that you can see. All Disease and Poison spells affecting them end immediately. The creature then rolls one of its remaining hit dice and heals a number of hit points equal to ten times the normal amount. If no hit dice are remaining, the creature instead heals 20 hit points and restores one hit die.",
+    "empower": ""
+  },
+  {
     "name": "Entropic Dome",
     "author": "CrusaderDroid",
     "tier": 6,
@@ -8072,6 +8149,23 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "A wave of water 15 feet tall, 15 feet wide, and 60 feet long erupts in front of you, optionally carrying you to any point within the line. Creatures in the area must succeed on a Strength saving throw or take 8d6 bludgeoning damage and be knocked prone. A successful saving throw deals half damage and does not knock prone.<br><br>During your next turn, if you are still in the same area covered by the wave, you can spend 2 AP to cause a second wave, twice as tall, wide, and long, starting from the end point of the first wave. You can optionally choose to ride the wave to any point within the wave. Creatures in the wave must succeed on a Strength saving throw or take 8d6 bludgeoning damage and be knocked prone. A successful saving throw deals half damage and does not knock prone.",
     "empower": "Damage increased to 10d6 on both waves."
+  },
+  {
+    "name": "Command Nature",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Enchantment",
+      "Beast",
+      "Plant",
+      "Concentration",
+      "Potent"
+    ],
+    "cost": "2 AP",
+    "range": "Self (120 foot radius) ",
+    "duration": "8 hours",
+    "desc": "You assert control over all of nature within a 120 foot radius around yourself that moves with you. You gain the following benefits: <br><br>>Beast and plant creatures with fewer hit dice than you that are not currently fighting you are charmed by you for the duration, even if they leave the range of the spell.<br>>You can command a charmed beast or plant creature during its turn for 1 AP. It follows your exact commands.<br>>Terrain is never difficult for you and any number of creatures you choose. At the start of each of your turns, choose any number of creatures in range. They always treat all terrain as difficult.<br>>You automatically take control of all Beast and Plant spells of equal or lower tier than this spell that are cast in range of this spell, or whose casters are in range or enter range while concentrating. You can choose new targets for each spell, and end spells freely. You do not need to concentrate on any such spells.",
+    "empower": ""
   },
   {
     "name": "Summon Sage",
@@ -8269,6 +8363,20 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "At target point you can see within range, a massive tree with a width of 25 feet and a height of 100 feet grows, then topples over in a 25 foot wide, 100 foot long line in target direction you choose. Creatures in the way must succeed on a Dexterity saving throw or take 10d10 bludgeoning damage, halved on a success. Creatures caught in the further half of the line are struck by branches for an additional 3d10 piercing damage.<br><br>If the tree can't grow to its full height, it grows as far as it can before it falls. The length of the line is equal to the tree's height.",
     "empower": "Range increased to 90 feet."
+  },
+  {
+    "name": "Arsenal Rain",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Conjuration",
+      "Physical"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "1 minute",
+    "desc": "A storm of assorted melee weapons rains down in a 30 foot radius, centered on target point within range. Creatures inside must make a Dexterity saving throw or take 10d10 damage, halved on a success. This damage is slashing, piercing, or bludgeoning damage, chosen for each creature affected. They remain embedded for the duration of the spell.<br><br>While you are in this area, you can pull out any weapon you choose from the ground and make an attack with it once per turn for 0 AP. On a successful hit, roll the weapon's damage dice an additional time.",
+    "empower": "Reduce the AP cost by 1."
   },
   {
     "name": "Abyssal Call",
@@ -8574,6 +8682,21 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Sacred Hope",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Evocation",
+      "Holy",
+      "Delayed"
+    ],
+    "cost": "6 AP",
+    "range": "Planar",
+    "duration": "Instantaneous",
+    "desc": "Any number of creatures you have known for at least 15 minutes have all of their hit points fully healed.<br><br>A creature must complete a rest before they can be affected by this spell again.",
+    "empower": "Removes the AP cost on this spell."
+  },
+  {
     "name": "World of Ash",
     "tier": 9,
     "tags": [
@@ -8605,6 +8728,21 @@ const SpellDatabase = [
     "desc": "You puncture a hole that allows the Sea of Possibility to leak through, flooding a 60 foot radius sphere centered on you. Every creature in range loses all damage resistance, immunities, absorptions, and reflects, then must make a Constitution saving throw. On a failure, they become vulnerable to poison damage, then take 5d10 poison damage as the Sea of Possibility poisons their very existence.<br><br>Creatures that start their turn inside the area must repeat the Constitution saving throw. If they have failed the saving throw, they must instead make Willpower saving throws, taking 10d6 poison damage on a failed saving throw, and half damage on a success.<br><br>Creatures regain their damage resistances, immunities, absorptions, and reflects 1 hour after leaving the area.<br><br>A creature reduced to 0 or fewer hit points while inside the spell's area of effect immediately becomes absorbed by the Sea of Possibility.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Stampede",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Conjuration",
+      "Beast",
+      "Delayed"
+    ],
+    "cost": "9 AP",
+    "range": "Self (60 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "Summon any number and type of beasts with 5 or fewer hit dice in any number of empty spaces within range. You may additionally summon up to four beasts with a combined hit dice total of forty or less.<br><br>The beasts are permanently charmed by you. They will generally attack your foes, although you cannot command them.",
+    "empower": "Radius increased to 90 feet."
   },
   {
     "name": "Apex of the Arcane",
