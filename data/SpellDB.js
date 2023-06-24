@@ -1468,10 +1468,10 @@ const SpellDatabase = [
       "Evocation",
       "Unholy"
     ],
-    "cost": "2 AP",
+    "cost": "1 AP",
     "range": "90 feet",
     "duration": "Instantaneous",
-    "desc": "A crackling blast of dark magic rushes from your chest towards a target creature within range that you can see. It must make a Dexterity saving throw or take 2d10 unholy damage. Creatures within 5 feet of the target take 1d10 unholy damage if the target fails their saving throw.",
+    "desc": "A crackling blast of dark magic rushes from your chest towards a target creature within range that you can see. It must make a Dexterity saving throw. On a failure, it and all other creatures within 5 feet of the target take 2d8 unholy damage, and you can recast this spell on a different creature.",
     "empower": "Increases secondary damage range to 10 feet. A successful saving throw deals half damage.",
     "author": "CrusaderDroid"
   },
