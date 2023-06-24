@@ -1674,7 +1674,7 @@ const SpellDatabase = [
     "cost": "2 AP",
     "range": "30 feet",
     "duration": "Instantaneous",
-    "desc": "You expel various waste products from alchemy in a 30 foot line. Creatures in the area of effect<br>must make a Dexterity saving throw or take 2d8 acid damage. Expunging this waste decreases<br>the cost of your next Transmutation spell before the end of your next turn by 1 AP.<br>~~Creatures without a soul are vulnerable to this spell's acid damage and take 3d8 acid<br>damage instead.~~",
+    "desc": "You expel various waste products from alchemy in a 30 foot long, 5 foot wide line. Creatures in the area of effect must make a Dexterity saving throw or take 2d8 acid damage. The acid remains until the start of your next turn, and any creature that steps in the area during their turn must make a Dexterity saving throw or take 2d8 acid damage.",
     "empower": "Creatures that fail the saving throw are also poisoned until the start of your next turn.",
     "author": "CrusaderDroid"
   },
