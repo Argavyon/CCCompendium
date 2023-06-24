@@ -9068,7 +9068,7 @@ const SpellDatabase = [
     "empower": ""
   },
   {
-    "name": "*A Single Path*",
+    "name": "A Single Path",
     "author": "neitherrhyme",
     "tier": 8,
     "tags": [
