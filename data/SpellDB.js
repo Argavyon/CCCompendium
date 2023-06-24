@@ -2598,6 +2598,20 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Bursting Boils",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Necromancy",
+      "Disease"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Up to 3 creatures within range must succeed on a Constitution saving throw or take 3d10 poison damage as large, pulsing boils emerge from their skin. A creature that succeeds takes half damage and does not have boils emerge.<br><br>At the start of your next turn, the boils explode, and any creature within 10 feet of the target must succeed on a Constitution saving throw or take 2d10 poison damage. A creature that succeeds takes half damage.",
+    "empower": "Damage increased by 1d10 on creation of the boils and explosion of the boils."
+  },
+  {
     "name": "Stagnant Air",
     "tier": 2,
     "tags": [
@@ -3552,20 +3566,6 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "You either pass concentration of a spell to a willing target creature, or begin concentrating on the spell the willing target creature was concentrating on. The target must have the Spellcasting feature to transfer concentration, and you must not be concentrating on a spell to take over concentrating from a creature.",
     "empower": "Range increased to 60 feet."
-  },
-  {
-    "name": "Plague Boils",
-    "author": "CrusaderDroid",
-    "tier": 2,
-    "tags": [
-      "Necromancy",
-      "Disease"
-    ],
-    "cost": "2 AP",
-    "range": "60 feet",
-    "duration": "Instantaneous",
-    "desc": "Up to 3 creatures within range must succeed on a Constitution saving throw or take 3d10 poison damage as large, pulsing boils emerge from their skin. A creature that succeeds takes half damage and does not have boils emerge.<br><br>At the start of your next turn, the boils explode, and any creature within 10 feet of the target must succeed on a Constitution saving throw or take 2d10 poison damage. A creature that succeeds takes half damage.",
-    "empower": "Damage increased by 1d10 on creation of the boils and explosion of the boils."
   },
   {
     "name": "Sorcerous Skinweave",
