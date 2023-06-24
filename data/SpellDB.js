@@ -9095,7 +9095,7 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
-    "name": "*Villainous Ascent*",
+    "name": "Villainous Ascent",
     "author": "neitherrhyme",
     "tier": 8,
     "tags": [
