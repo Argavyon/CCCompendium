@@ -1457,7 +1457,7 @@ const SpellDatabase = [
     "cost": "2 AP",
     "range": "60 feet",
     "duration": "1 minute",
-    "desc": "Target creature must succeed on a Constitution saving throw or take 2d6 poison damage as a horrific boil emerges from their skin.<br><br>A creature can strike the boil with a weapon attack, causing it to burst into a hideous dark cloud that fills a 10 foot radius sphere for 1 minute. Creatures that start their turn in the cloud take 1d6 poison damage and are poisoned until the start of their next turn.",
+    "desc": "Target creature must succeed on a Constitution saving throw or take 2d6 poison damage as a horrific boil emerges from their skin.<br><br>A creature that hits the victim with a weapon attack strikes the boil, causing it to burst into a hideous dark cloud that fills a 10 foot radius sphere for 1 minute. Creatures that start their turn in the cloud take 1d6 poison damage and are poisoned until the start of their next turn.",
     "empower": "",
     "author": "CrusaderDroid"
   },
