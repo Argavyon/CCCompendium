@@ -867,8 +867,8 @@ const SpellDatabase = [
     "cost": "2 AP",
     "range": "90 feet",
     "duration": "Instantaneous",
-    "desc": "A creature corpse or a dead creature reanimated by one of your spells within range that you can see explodes into black flames. All creatures within 10 feet of the corpse must make a Dexterity saving throw or take 1d10 fire damage and 1d10 unholy damage. The target corpse or creature is utterly destroyed.",
-    "empower": "Damage is increased to either 2d10 fire or 2d10 unholy. Creatures that succeed on their saving throw take half damage.",
+    "desc": "A creature corpse or a dead creature reanimated by one of your spells within range that you can see explodes into black flames. All creatures within 10 feet of the corpse must make a Dexterity saving throw or take 2d10 fire damage and 2d10 unholy damage. The target corpse or creature is utterly destroyed.",
+    "empower": "Choose one - either the fire or unholy damage is increased by 1d10 and a successful saving throw deals half damage, radius increased to 15 feet, or refund 2 AP when targeting a creature you have reanimated.",
     "author": "CrusaderDroid"
   },
   {
