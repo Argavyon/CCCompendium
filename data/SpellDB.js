@@ -1369,11 +1369,11 @@ const SpellDatabase = [
       "Beast"
     ],
     "cost": "2 AP",
-    "range": "60'",
+    "range": "60 feet",
     "duration": "1 minute",
-    "desc": "Conjure a snake of translucent acid that is launched at a target within range. They must make a<br>Dexterity (save?), taking 2d6 acid damage on a failed save, or half as much on a successful<br>one.<br>At the start of each of your turns while the spell is active you can spend 1 AP to launch the<br>snake at another target.",
+    "desc": "Conjure a snake of translucent acid that is launched at a target within range. They must make a Dexterity saving throw, taking 2d6 acid damage on a failed save, or half as much on a successful one.<br>At the start of each of your turns while the spell is active you can spend 1 AP to launch the snake at another target within 60 feet of you.",
     "empower": "",
-    "author": "CrusaderDroid"
+    "author": "Zombehking"
   },
   {
     "name": "Heat Shock",
