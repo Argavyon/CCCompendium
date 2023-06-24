@@ -9110,7 +9110,7 @@ const SpellDatabase = [
     "empower": ""
   },
   {
-    "name": "*The Last Song*",
+    "name": "The Last Song",
     "author": "neitherrhyme",
     "tier": 8,
     "tags": [
