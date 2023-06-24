@@ -898,7 +898,7 @@ const SpellDatabase = [
     "range": "Self",
     "duration": "8 hours",
     "desc": "You reinforce your body and make yourself immune to physical diseases as well as all spells with the Disease tag that have a tier equal to or lower than the tier you cast this spell at.",
-    "empower": "",
+    "empower": "Range becomes touch.",
     "author": "CrusaderDroid"
   },
   {
