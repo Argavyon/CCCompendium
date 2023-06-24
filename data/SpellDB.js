@@ -8734,7 +8734,7 @@ const SpellDatabase = [
     "empower": "Reduces the AP cost to 2."
   },
   {
-    "name": "*We All Go Together*",
+    "name": "We All Go Together",
     "author": "neitherrhyme",
     "tier": 7,
     "tags": [
