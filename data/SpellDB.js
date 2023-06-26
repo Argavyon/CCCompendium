@@ -155,7 +155,7 @@ const SpellDatabase = [
     "cost": "1 AP",
     "range": "Self",
     "duration": "Instantaneous",
-    "desc": "Magical force surrounds your fist. The next unarmed attack you make before the end of your<br>next turn that hits your target sends them flying backwards 30 feet. If they collide with another<br>creature or object during this movement, they immediately stop and are knocked prone and take<br>an additional 1d12 bludgeoning damage.",
+    "desc": "Magical force surrounds your fist. The next unarmed attack you make before the end of your next turn that hits your target sends them flying backwards 30 feet. If they collide with another creature or object during this movement, they immediately stop and are knocked prone and take an additional 1d12 bludgeoning damage.",
     "empower": "Removes the AP cost from this spell.",
     "author": "CrusaderDroid"
   },
@@ -257,7 +257,7 @@ const SpellDatabase = [
     "cost": "1 AP",
     "range": "120 feet",
     "duration": "1 minute",
-    "desc": "With a wave of your hand, a volley of three multicolored arrows of light fly forth. Up to three<br>creatures within range must make a Dexterity saving throw or take 1d8 radiant damage.<br><br>Hit or miss, the arrows remain embedded in whatever they strike, radiating bright light out to 10<br>feet and revealing hidden or invisible creatures within range for the duration. A creature with an<br>arrow stuck in them can spend 1 AP to crush it and end the effect.",
+    "desc": "With a wave of your hand, a volley of three multicolored arrows of light fly forth. Up to three creatures within range must make a Dexterity saving throw or take 1d8 radiant damage.<br><br>Hit or miss, the arrows remain embedded in whatever they strike, radiating bright light out to 10 feet and revealing hidden or invisible creatures within range for the duration. A creature with an arrow stuck in them can spend 1 AP to crush it and end the effect.",
     "empower": "Damage increases to 2d8. Fires an additional arrow at one more target.",
     "author": "CrusaderDroid"
   },
@@ -349,8 +349,8 @@ const SpellDatabase = [
     "cost": "3 AP",
     "range": "Self",
     "duration": "Instantaneous",
-    "desc": "You unleash a small portion of the world's pain upon a 15 foot cube adjacent to you. Creatures<br>inside must make an Intuition saving throw or take 2d10 damage. This damage has no type and<br>cannot be reduced or negated in any way.",
-    "empower": "Damage increased to 3d10. If the creature is vulnerable to a damage type, they are<br>vulnerable to damage from this spell.",
+    "desc": "You unleash a small portion of the world's pain upon a 15 foot cube adjacent to you. Creatures inside must make an Intuition saving throw or take 2d10 damage. This damage has no type and cannot be reduced or negated in any way.",
+    "empower": "Damage increased to 3d10. If the creature is vulnerable to a damage type, they are vulnerable to damage from this spell.",
     "author": "CrusaderDroid"
   },
   {
@@ -440,8 +440,8 @@ const SpellDatabase = [
     "cost": "2 AP",
     "range": "Self",
     "duration": "1 minute",
-    "desc": "Your eyes become portals that welcome stellar beings. You are blinded while the spell remains<br>active, but you can precisely sense the presence of creatures within 60 feet. Once on each of<br>your turns, you can spend 1 AP to fix your gaze upon a creature, who must succeed on an<br>Intuition saving throw or take 1d6 radiant damage and be frightened of you until the start of your<br>next turn.",
-    "empower": "Creatures remain frightened as long as they can see you. They can repeat the saving<br>throw at the end of each of their turns to end the effect early. A creature that is frightened and<br>targeted again takes an additional 1d6 psychic damage.",
+    "desc": "Your eyes become portals that welcome stellar beings. You are blinded while the spell remains active, but you can precisely sense the presence of creatures within 60 feet. Once on each of your turns, you can spend 1 AP to fix your gaze upon a creature, who must succeed on an<br>Intuition saving throw or take 1d6 radiant damage and be frightened of you until the start of your next turn.",
+    "empower": "Creatures remain frightened as long as they can see you. They can repeat the saving throw at the end of each of their turns to end the effect early. A creature that is frightened and targeted again takes an additional 1d6 psychic damage.",
     "author": "CrusaderDroid"
   },
   {
@@ -529,8 +529,8 @@ const SpellDatabase = [
     "cost": "2 AP",
     "range": "60 feet",
     "duration": "Instantaneous",
-    "desc": "A thin wave of fire reaches out from your hand and lashes at a target creature within range. It<br>must make a Dexterity saving throw or take 4d8 fire damage.",
-    "empower": "Damage increases to 5d8. On a successful saving throw, the creature takes half<br>damage instead.",
+    "desc": "A thin wave of fire reaches out from your hand and lashes at a target creature within range. It must make a Dexterity saving throw or take 4d8 fire damage.",
+    "empower": "Damage increases to 5d8. On a successful saving throw, the creature takes half damage instead.",
     "author": "CrusaderDroid"
   },
   {
@@ -661,8 +661,8 @@ const SpellDatabase = [
     "cost": "2 AP",
     "range": "60 feet",
     "duration": "1 minute",
-    "desc": "Pitch-black thread winds around a target creature in range that you can see, who must make a<br>Dexterity saving throw. On a failure, they become bound (can't use AP to attack or cast non-Still<br>spells) for the duration.<br>The spell ends automatically if the creature moves out of range. The creature can spend 2 AP to<br>make a Strength saving throw, breaking free on a success.",
-    "empower": "The spell no longer ends automatically when the creature moves out of range. AP<br>cost to attempt a save increases to 3.",
+    "desc": "Pitch-black thread winds around a target creature in range that you can see, who must make a<br>Dexterity saving throw. On a failure, they become bound (can't use AP to attack or cast non-Still spells) for the duration.<br>The spell ends automatically if the creature moves out of range. The creature can spend 2 AP to make a Strength saving throw, breaking free on a success.",
+    "empower": "The spell no longer ends automatically when the creature moves out of range. AP cost to attempt a save increases to 3.",
     "author": "CrusaderDroid"
   },
   {
@@ -837,8 +837,8 @@ const SpellDatabase = [
     "cost": "2 AP",
     "range": "Self",
     "duration": "1 minute",
-    "desc": "A scintillating swarm of snowflakes surrounds you, chilling the air nearby. You gain a number of<br>temporary hit points equal to 1d10 plus your spellcasting modifier. While the temporary hit points<br>remain, you are invisible if you are obscured and have not attacked or cast a spell on your last<br>turn. Your invisibility ends when you attack or cast a spell.",
-    "empower": "Also creates a cloud of fog in a 20 foot radius sphere centered on you, which remains<br>while you have temporary hit points from this spell. The fog lightly obscures creatures inside.",
+    "desc": "A scintillating swarm of snowflakes surrounds you, chilling the air nearby. You gain a number of temporary hit points equal to 1d10 plus your spellcasting modifier. While the temporary hit points remain, you are invisible if you are obscured and have not attacked or cast a spell on your last turn. Your invisibility ends when you attack or cast a spell.",
+    "empower": "Also creates a cloud of fog in a 20 foot radius sphere centered on you, which remains while you have temporary hit points from this spell. The fog lightly obscures creatures inside.",
     "author": "CrusaderDroid"
   },
   {
@@ -941,7 +941,7 @@ const SpellDatabase = [
     "cost": "2 AP",
     "range": "Self",
     "duration": "Instantaneous",
-    "desc": "You conjure a being from beyond that devours the empty space between you and a target<br>creature up to 30 feet away from you. The creature is pulled directly adjacent to you, and<br>everything in a 30 foot long, 5 foot wide line is moved an equal distance towards you. Objects<br>that are not fully contained within the area are unaffected.",
+    "desc": "You conjure a being from beyond that devours the empty space between you and a target creature up to 30 feet away from you. The creature is pulled directly adjacent to you, and everything in a 30 foot long, 5 foot wide line is moved an equal distance towards you. Objects that are not fully contained within the area are unaffected.",
     "empower": "Reduces the AP cost to 1.",
     "author": "CrusaderDroid"
   },
@@ -1116,7 +1116,7 @@ const SpellDatabase = [
     "cost": "2 AP",
     "range": "Self",
     "duration": "Instantaneous",
-    "desc": "You appear to transform yourself into three separate foxes. You can't attack or cast spells in this<br>form, but you can move each fox separately during your turn. Each fox shares your AC, and if a<br>fox would take damage, it disappears.<br>At the start of your next turn, you choose one fox to reveal as yourself. If only one fox is left<br>remaining, the spell ends immediately. If all remaining foxes take damage simultaneously,<br>choose one fox to reveal as yourself.",
+    "desc": "You appear to transform yourself into three separate foxes. You can't attack or cast spells in this form, but you can move each fox separately during your turn. Each fox shares your AC, and if a fox would take damage, it disappears.<br>At the start of your next turn, you choose one fox to reveal as yourself. If only one fox is left remaining, the spell ends immediately. If all remaining foxes take damage simultaneously, choose one fox to reveal as yourself.",
     "empower": "You transform into five foxes instead.",
     "author": "CrusaderDroid"
   },
@@ -1186,7 +1186,7 @@ const SpellDatabase = [
     "cost": "2 AP",
     "range": "60 feet",
     "duration": "1 minute",
-    "desc": "A target creature must make an Intuition saving throw or become gradually more drowsy. At the<br>start of each of their turns, their maximum AP is reduced by 1 for the duration of the spell. A<br>creature that reaches 0 AP falls asleep for the remaining duration, or until forcefully woken up<br>by damage or an adjacent creature spending 2 AP to stir them awake.",
+    "desc": "A target creature must make an Intuition saving throw or become gradually more drowsy. At the start of each of their turns, their maximum AP is reduced by 1 for the duration of the spell. A creature that reaches 0 AP falls asleep for the remaining duration, or until forcefully woken up by damage or an adjacent creature spending 2 AP to stir them awake.",
     "empower": "A creature that wakes up before the spell ends only has 1 AP on their next turn.",
     "author": "CrusaderDroid"
   },
@@ -1200,7 +1200,7 @@ const SpellDatabase = [
     "cost": "1 AP",
     "range": "Self",
     "duration": "Instantaneous",
-    "desc": "You ready an explosive field around yourself. The first time a creature damages you in melee<br>before your next turn, it detonates and deals 1d12 fire damage to your attacker.",
+    "desc": "You ready an explosive field around yourself. The first time a creature damages you in melee before your next turn, it detonates and deals 1d12 fire damage to your attacker.",
     "empower": "Damage increased to 2d12. Other creatures you choose within 5 feet must make a<br>Dexterity save or take the same damage.",
     "author": "CrusaderDroid"
   },
@@ -1256,7 +1256,7 @@ const SpellDatabase = [
     "cost": "1 AP",
     "range": "30 feet",
     "duration": "Instantaneous",
-    "desc": "You break into a dash, ignoring difficult terrain and other creatures in the way, before leaping<br>forward onto a target point within range and slamming down with great force. Creatures within 5<br>feet of the point of impact must make a Strength saving throw or take 1d6 bludgeoning damage.<br>Creatures that have taken damage from this spell can't move away from you during their next<br>turn until they have successfully hit you with a weapon attack.",
+    "desc": "You break into a dash, ignoring difficult terrain and other creatures in the way, before leaping forward onto a target point within range and slamming down with great force. Creatures within 5 feet of the point of impact must make a Strength saving throw or take 1d6 bludgeoning damage.<br>Creatures that have taken damage from this spell can't move away from you during their next turn until they have successfully hit you with a weapon attack.",
     "empower": "Range increased to 60 feet.",
     "author": "CrusaderDroid"
   },
@@ -1342,8 +1342,8 @@ const SpellDatabase = [
     "cost": "2 AP",
     "range": "60 feet",
     "duration": "Instantaneous",
-    "desc": "Blessed fire burns an injury on a creature you can see, healing 1d6+2 hit points. This healing<br>benefits from bonuses to fire damage. In addition, the target is cured of the poisoned condition.",
-    "empower": "Also burns away the weakest negative spell with a duration of 1 minute or less<br>affecting the creature. On a tie, you choose.",
+    "desc": "Blessed fire burns an injury on a creature you can see, healing 1d6+2 hit points. This healing benefits from bonuses to fire damage. In addition, the target is cured of the poisoned condition.",
+    "empower": "Also burns away the weakest negative spell with a duration of 1 minute or less affecting the creature. On a tie, you choose.",
     "author": "CrusaderDroid"
   },
   {
@@ -1385,8 +1385,8 @@ const SpellDatabase = [
     "cost": "2 AP",
     "range": "60 feet",
     "duration": "Instantaneous",
-    "desc": "A 10 foot radius area centered on target point explodes into flames. Creatures inside must make<br>a Dexterity saving throw or take 1d6 fire damage.<br>At the start of your next turn, a 20 foot radius area centered on the same point explodes into<br>flames. Creatures inside must make a Dexterity saving throw or take 1d6 fire damage.",
-    "empower": "Damage increases to 2d6 on both explosions. A creature that succeeds on their<br>saving throw takes half damage.",
+    "desc": "A 10 foot radius area centered on target point explodes into flames. Creatures inside must make a Dexterity saving throw or take 1d6 fire damage.<br>At the start of your next turn, a 20 foot radius area centered on the same point explodes into flames. Creatures inside must make a Dexterity saving throw or take 1d6 fire damage.",
+    "empower": "Damage increases to 2d6 on both explosions. A creature that succeeds on their saving throw takes half damage.",
     "author": "CrusaderDroid"
   },
   {
@@ -1414,7 +1414,7 @@ const SpellDatabase = [
     "cost": "1 AP",
     "range": "120 feet",
     "duration": "Instantaneous",
-    "desc": "You learn the properties of a specific magical effect in range. You know the spell's name, its<br>effects, and the level or overall strength of its original caster. When cast on a magic item, you<br>gain knowledge of its enchantment and any applicable conditions. When cast on a creature, you<br>can discern any spell effects affecting the creature as well as their properties.",
+    "desc": "You learn the properties of a specific magical effect in range. You know the spell's name, its effects, and the level or overall strength of its original caster. When cast on a magic item, you gain knowledge of its enchantment and any applicable conditions. When cast on a creature, you can discern any spell effects affecting the creature as well as their properties.",
     "empower": "",
     "author": "CrusaderDroid"
   },
@@ -1531,7 +1531,7 @@ const SpellDatabase = [
     "cost": "2 AP",
     "range": "Self (10 foot radius)",
     "duration": "1 minute",
-    "desc": "You and all creatures you choose within range are magically bonded with the earth. All affected<br>creatures are unaffected by terrain hazards and penalties, and increase their movement speed<br>by 10 feet.<br>The spell ends for a creature if they are not touching the ground for more than 3 seconds.",
+    "desc": "You and all creatures you choose within range are magically bonded with the earth. All affected creatures are unaffected by terrain hazards and penalties, and increase their movement speed by 10 feet.<br>The spell ends for a creature if they are not touching the ground for more than 3 seconds.",
     "empower": "",
     "author": "CrusaderDroid"
   },
@@ -1558,7 +1558,7 @@ const SpellDatabase = [
     "cost": "1 AP",
     "range": "Touch",
     "duration": "Instantaneous",
-    "desc": "The target's vision briefly improves to where they can see two seconds into the future. The<br>target adds your spellcasting modifier to the next ranged attack they make, and adds your<br>spellcasting modifier to the damage done by any critical hit they make.",
+    "desc": "The target's vision briefly improves to where they can see two seconds into the future. The target adds your spellcasting modifier to the next ranged attack they make, and adds your spellcasting modifier to the damage done by any critical hit they make.",
     "empower": "The target can't have disadvantage on the attack roll.",
     "author": "CrusaderDroid"
   },
@@ -1631,7 +1631,7 @@ const SpellDatabase = [
     "cost": "Up to 3 AP",
     "range": "Touch",
     "duration": "Instantaneous",
-    "desc": "You create a simple protective field around a target creature in range or in a 10 foot radius area<br>centered on yourself. For each AP spent to cast this, the ward has 3 temporary hit points.<br>Creatures inside a warded area use the ward's hit points first when taking damage.<br>At the start of your next turn, the ward fades.",
+    "desc": "You create a simple protective field around a target creature in range or in a 10 foot radius area centered on yourself. For each AP spent to cast this, the ward has 3 temporary hit points.<br>Creatures inside a warded area use the ward's hit points first when taking damage.<br>At the start of your next turn, the ward fades.",
     "empower": "Add your spellcasting modifier to the final hit point total.",
     "author": "CrusaderDroid"
   },
@@ -1734,7 +1734,7 @@ const SpellDatabase = [
     "cost": "2 AP",
     "range": "90 feet",
     "duration": "Instantaneous",
-    "desc": "A solid bolt of pure magic forms from the palm of your hand and unerringly homes in on a<br>creature you can see within range, dealing 1d4+2 arcane damage on hit.",
+    "desc": "A solid bolt of pure magic forms from the palm of your hand and unerringly homes in on a creature you can see within range, dealing 1d4+2 arcane damage on hit.",
     "empower": "Launch three additional bolts at other creatures within range. Multiple bolts can't strike the same creature.",
     "author": "CrusaderDroid"
   },
@@ -1792,7 +1792,7 @@ const SpellDatabase = [
     "cost": "2 AP",
     "range": "120 feet",
     "duration": "Instantaneous",
-    "desc": "You fire a large solid bolt of lightning that locks on to a creature within range and moves 30 feet<br>closer. At the start of each of your turns, if it has not collided with a creature or object, it moves<br>30 feet closer to the target. On impact with anything, it deals 3d10 lightning damage. Seeker<br>Bolt's damage is reduced to 1d10 if it hits a creature within 30 feet.<br>A creature can make a ranged attack targeting the bolt to destroy it. The bolt has AC 16 and<br>discharges on impact with any ranged projectile, destroying the bolt.",
+    "desc": "You fire a large solid bolt of lightning that locks on to a creature within range and moves 30 feet closer. At the start of each of your turns, if it has not collided with a creature or object, it moves<br>30 feet closer to the target. On impact with anything, it deals 3d10 lightning damage. Seeker<br>Bolt's damage is reduced to 1d10 if it hits a creature within 30 feet.<br>A creature can make a ranged attack targeting the bolt to destroy it. The bolt has AC 16 and discharges on impact with any ranged projectile, destroying the bolt.",
     "empower": "At the start of your next turn, the bolt flies 120 feet towards the target.",
     "author": "CrusaderDroid"
   },
@@ -1822,8 +1822,8 @@ const SpellDatabase = [
     "cost": "2 AP",
     "range": "60 feet",
     "duration": "Instantaneous",
-    "desc": "A malignant wandering spirit makes contact with a target creature, who must succeed on a<br>Constitution saving throw or suffer 2d6 poison damage. Roll 1d4 on a failed saving throw to<br>determine if the target is poisoned, blind, frightened, or paralyzed until the end of your next turn.",
-    "empower": "Damage increased to 3d6. On a successful saving throw, the target takes half<br>damage.",
+    "desc": "A malignant wandering spirit makes contact with a target creature, who must succeed on a<br>Constitution saving throw or suffer 2d6 poison damage. Roll 1d4 on a failed saving throw to determine if the target is poisoned, blind, frightened, or paralyzed until the end of your next turn.",
+    "empower": "Damage increased to 3d6. On a successful saving throw, the target takes half damage.",
     "author": "CrusaderDroid"
   },
   {
@@ -2640,7 +2640,7 @@ const SpellDatabase = [
     "cost": "2 AP",
     "range": "60 feet",
     "duration": "Instantaneous",
-    "desc": "You summon a seed of the great Flame Oak, attached to a creature, object, or point within<br>range. The seed sheds dim light in a 15 foot radius and lasts for 1 hour, at which point it<br>vanishes. At any point, you may spend 1 AP to cause all seeds you have summoned to<br>violently detonate. Creatures within 20 feet of the seed must make a Dexterity saving throw.<br>Targets take 4d6 fire damage on a failure, or half damage on a success. Creatures within the<br>area of multiple detonations only take damage from one.",
+    "desc": "You summon a seed of the great Flame Oak, attached to a creature, object, or point within range. The seed sheds dim light in a 15 foot radius and lasts for 1 hour, at which point it vanishes. At any point, you may spend 1 AP to cause all seeds you have summoned to violently detonate. Creatures within 20 feet of the seed must make a Dexterity saving throw.<br>Targets take 4d6 fire damage on a failure, or half damage on a success. Creatures within the area of multiple detonations only take damage from one.",
     "empower": "You summon an additional seed.",
     "author": "CrusaderDroid"
   },
@@ -5586,7 +5586,7 @@ const SpellDatabase = [
     "cost": "2 AP",
     "range": "Self (60 foot radius)",
     "duration": "1 minute",
-    "desc": "A cylindrical 60 foot radius 120 foot high area around you is filled with dim light, dyed in rich shades of red and orange. Phantasmal yellowed or browning dried leaves of all sorts, flutter down constantly, fading away before they actually touch anything.<br><br>While inside the area, your Plant spells cost 1 less AP, and their MP cost is reduced equal to twice their tier. Additionally, your Wind spells that deal damage sweep up the phantasmal leaves, and add 1d8 additional slashing damage per tier of the spell to the damage dealt.<br><br>Plant spells inside the area which have a duration immediately end when any turn ends, with any conjured or summoned creatures and objects fading away.<br>every tier above 4.",
+    "desc": "A cylindrical 60 foot radius 120 foot high area around you is filled with dim light, dyed in rich shades of red and orange. Phantasmal yellowed or browning dried leaves of all sorts, flutter down constantly, fading away before they actually touch anything.<br><br>While inside the area, your Plant spells cost 1 less AP, and their MP cost is reduced equal to twice their tier. Additionally, your Wind spells that deal damage sweep up the phantasmal leaves, and add 1d8 additional slashing damage per tier of the spell to the damage dealt.<br><br>Plant spells inside the area which have a duration immediately end when any turn ends, with any conjured or summoned creatures and objects fading away. every tier above 4.",
     "empower": ""
   },
   {
