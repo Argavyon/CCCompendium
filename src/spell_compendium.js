@@ -12,19 +12,19 @@ function spellCard(spellData, functional_tags) {
 	const spellName = cardBody.appendChild(document.createElement('tr')).appendChild(document.createElement('td'));
 	spellName.className = 'spellname';
 	spellName.colSpan = 2;
-	spellName.textContent = spellData.name;
+	spellName.innerHTML = spellData.name;
     
     if (spellData.author) {
         const author = cardBody.appendChild(document.createElement('tr')).appendChild(document.createElement('td'));
         author.className = 'spelltier';
         author.colSpan = 2;
-        author.textContent = `by ${spellData.author}`;
+        author.innerHTML = `by ${spellData.author}`;
     }
 	
 	const tier = cardBody.appendChild(document.createElement('tr')).appendChild(document.createElement('td'));
 	tier.className = 'spelltier';
 	tier.colSpan = 2;
-	tier.textContent = `Tier ${spellData.tier}`;
+	tier.innerHTML = `Tier ${spellData.tier}`;
 	
 	const tagsRow = cardBody.appendChild(document.createElement('tr'));
 	const tagsH = tagsRow.appendChild(document.createElement('td'));
@@ -43,7 +43,7 @@ function spellCard(spellData, functional_tags) {
 	costH.className = 'spellheaders';
 	costD.className = 'spelldata';
 	costH.textContent = 'Cost:';
-	costD.textContent = spellData.cost;
+	costD.innerHTML = spellData.cost;
 	
 	const rangeRow = cardBody.appendChild(document.createElement('tr'));
 	const rangeH = rangeRow.appendChild(document.createElement('td'));
@@ -51,7 +51,7 @@ function spellCard(spellData, functional_tags) {
 	rangeH.className = 'spellheaders';
 	rangeD.className = 'spelldata';
 	rangeH.textContent = 'Range:';
-	rangeD.textContent = spellData.range;
+	rangeD.innerHTML = spellData.range;
 	
 	const durationRow = cardBody.appendChild(document.createElement('tr'));
 	const durationH = durationRow.appendChild(document.createElement('td'));
@@ -59,7 +59,7 @@ function spellCard(spellData, functional_tags) {
 	durationH.className = 'spellheaders';
 	durationD.className = 'spelldata';
 	durationH.textContent = 'Duration:';
-	durationD.textContent = spellData.duration;
+	durationD.innerHTML = spellData.duration;
 	
 	const desc = cardBody.appendChild(document.createElement('tr')).appendChild(document.createElement('td'));
 	desc.colSpan = 2;
@@ -72,7 +72,7 @@ function spellCard(spellData, functional_tags) {
         empowerH.className = 'spellheaders';
         empowerD.className = 'spelldesc';
         empowerH.textContent = 'Empower:';
-        empowerD.textContent = spellData.empower;
+        empowerD.innerHTML = spellData.empower;
     }
 	
 	return card;
