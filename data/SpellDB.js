@@ -5424,6 +5424,22 @@ const SpellDatabase = [
     "empower": "Range increased to 90 feet. Chain range before breaking increased to 90 feet."
   },
   {
+    "name": "Superposition",
+    "author": "Levi",
+    "tier": 4,
+    "tags": [
+      "Illusion",
+      "Lightning",
+      "Space",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self (600 feet)",
+    "duration": "8 hours",
+    "desc": "Your body dissociates into two identical phantom images formed of energized particles which you can freely move separately, exploring different possibilities. If used in combat, the two bodies have their own movement speed, though they share your turn. The phantom images are both considered your true body, and share their senses with each other. Due to their uncertain and illusory nature, the phantom images have advantage on skill checks to perceive their surroundings or to hide their presence. Their existence is so thin that creatures more than 30 feet away cannot detect them with non-magical senses.<br><br>If at any point during this spell's duration, another creature becomes aware of one of your phantom images or the two bodies move out of range of each other the spell ends early. When the spell ends, you must choose one of the two bodies to be your true body, and the other phantom image dissipates into nonexistence as probability collapses onto that body and its actions being the true line of reality.<br><br>**Empower:** The range of this spell becomes Self (1 mile).",
+    "empower": ""
+  },
+  {
     "name": "Menagerie",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -5653,6 +5669,24 @@ const SpellDatabase = [
     "range": "30 feet",
     "duration": "1 minute",
     "desc": "You summon a humanoid-shaped mass of rocks, each of which is imbued with a sickly green core. It shines this pale light out to 30 feet.<br><br>Creatures that start their turn in the light lose 1d6 maximum hit points and must make a Constitution saving throw. On a failure, they are poisoned, and lose 3d6 maximum hit points for each turn they start in range while poisoned in this way. A creature can repeat the saving throw if they end a turn out of the light, ending the poisoned effect on a success.<br><br>You can command the creature to move up to 30 feet at the start of each of your turns. It has AC 14 and 100 hit points, and crumbles into nothingness if destroyed. If it suffers fire damage, it begins to critically overheat. At the end of your next turn if it is still alive, it explodes, and every creature within 90 feet must succeed on a Constitution saving throw or take 12d6 fire damage, halved on a success. Damage taken this way can't be negated, and reduces your maximum hit points by twice the damage taken. The explosion area becomes permanently affected, causing creatures that end their turn inside to lose 1d6 maximum hit points.",
+    "empower": ""
+  },
+  {
+    "name": "Fata Morgana",
+    "author": "Levi",
+    "tier": 4,
+    "tags": [
+      "Illusion",
+      "Water",
+      "Wind",
+      "Silent",
+      "Still",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "1 hour",
+    "desc": "A faint ethereal mist fills a 30 foot radius 60 foot high cylinder. While the spell lasts, you may freely alter what is visible and invisible inside the area, including creating convincing images of anything you can imagine. Creatures that are suspicious of what they perceive or even fully aware that they are inside an illusion can nevertheless not tell the difference between what is or is not real inside the illusion.<br><br>You have full awareness of the true position of everything inside the area even if you make it invisible.<br><br>If used in combat, the area inside this spell is difficult terrain for any creature without Truesight, and you may only adjust the area once at the start or end of each of your turns. This spell may grant invisibility to any creature or object inside the area, lasting until you remove it, they leave the area, or the spell ends.",
     "empower": ""
   },
   {
@@ -6010,6 +6044,23 @@ const SpellDatabase = [
     "range": "Self (60 foot radius)",
     "duration": "Instantaneous",
     "desc": "All creatures other than you within range must succeed on an Intuition saving throw. On a failure, acidic magic seeps into their soul and exposes their weakness. They become vulnerable to the next source of damage they take before the end of their next turn, and have disadvantage on all saving throws to end ongoing effects during their next turn and at the end of their next turn.",
+    "empower": ""
+  },
+  {
+    "name": "Doppelganger",
+    "author": "Levi",
+    "tier": 4,
+    "tags": [
+      "Illusion",
+      "Shadow",
+      "Concentration",
+      "Ritual",
+      "Mastery"
+    ],
+    "cost": "N/A",
+    "range": "120 feet",
+    "duration": "1 hour",
+    "desc": "As you cast this spell, you must have had sight of the target for at least 1 unbroken minute to record their appearance perfectly within 1 hour before actually activating the spell.<br><br>You craft pure darkness into a copy of the recorded creature, this copy is under your control, and is such an exact copy that it adds +10 to all skill checks and saving throws to falsify its identity pretending to be the actual creature. While the copy is active, you can share its senses, though you lose your own corresponding sense while borrowing the sense of the copy. The copy begins to rapidly dissipate back into shadows if it moves too far away from you. The copy has 10 HP, 0 STR, 0 DEX, 0 CON, and your KNO, INT, and WIL. The copy cannot attack or cast spells, but can otherwise interact with the world as any creature could.<br><br>If at any point the original creature sees the copy it has a instinctive sense of disgust and animosity towards the copy, recognizing it for what it is. For a creature that is aware of both the original creature and the copy at the same time, the copy loses its +10 bonus to skill checks and saving throws.",
     "empower": ""
   },
   {
@@ -8687,6 +8738,37 @@ const SpellDatabase = [
     "empower": "Choose one: duration increased to one hour, or always steals one piece of knowledge even on a successful saving throw."
   },
   {
+    "name": "Skyice Pathways",
+    "author": "CrusaderDroid",
+    "tier": 7,
+    "tags": [
+      "Conjuration",
+      "Cold",
+      "Lightning",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "120 feet",
+    "duration": "1 hour",
+    "desc": "Four bolts of ice-cold lightning fall from the sky and trace out up to four pathways of solid ice. Each pathway is a 5 foot wide, 30 foot long line that starts and ends at a target point within range. The pathways remain until the spell ends.<br><br>Creatures caught in the way of each pathway must succeed on a Dexterity saving throw. On a failure, they take 6d8 cold damage and are restrained inside the pathway. They can spend 2 AP during their turn to make a Strength saving throw to break free of the pathway, destroying the segment they occupy. A creature can only be affected by one pathway.",
+    "empower": "Duration increases to 8 hours. Restrained creatures must use 3 AP to make a saving throw."
+  },
+  {
+    "name": "Ill Tidings",
+    "author": "CrusaderDroid",
+    "tier": 7,
+    "tags": [
+      "Necromancy",
+      "Poison",
+      "Wind"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Sickened winds surround a target creature within range that you can see, and swirl out to either a 30 foot radius sphere centered on the target, or a 60 foot long, 15 foot wide, 10 foot tall line extending from the creature in any direction. Every creature in the winds must make a Constitution saving throw or be afflicted with every condition and every Poison spell affecting the targeted creature. Each effect incurred this way deals 4d6 poison damage.",
+    "empower": "The spell affects both a radius and a line."
+  },
+  {
     "name": "Castigation of the Unworthy",
     "author": "CrusaderDroid",
     "tier": 7,
@@ -8778,6 +8860,21 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Bursting Aura",
+    "author": "CrusaderDroid",
+    "tier": 7,
+    "tags": [
+      "Abjuration",
+      "Draconic",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "You begin to radiate large amounts of magic. Other creatures within 30 feet of you restore 1 MP at the start of each of their turns.<br><br>You can end this spell to unleash a devastating shockwave of magic, causing creatures within 30 feet of you to make a Dexterity saving throw or take 8d6 arcane damage and lose MP equal to half the damage taken. A creature that succeeds takes half damage and still takes MP damage equal to half the damage taken.",
+    "empower": "MP restoration increased to 3. Damage increased to 12d6."
+  },
+  {
     "name": "Earthquake",
     "author": "CrusaderDroid",
     "tier": 7,
@@ -8805,6 +8902,20 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "Any number of creatures in a 40 foot radius centered on target point within range that you can see heal 10d6 hit points.",
     "empower": "Add your spellcasting stat to every die rolled."
+  },
+  {
+    "name": "Contempt",
+    "author": "CrusaderDroid",
+    "tier": 7,
+    "tags": [
+      "Enchantment",
+      "Draconic"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "8 hours",
+    "desc": "Target creature with hit dice equal to or less than half your hit dice becomes frightened of you for the duration. It can't take any action other than the Dash and Disengage actions, and it must run from you at the start of each of its turns while it can still see you.",
+    "empower": "Range becomes Self (30 foot radius)."
   },
   {
     "name": "Hydro Drill",
@@ -8992,6 +9103,20 @@ const SpellDatabase = [
     "empower": "A fourth spirit casts a tier 4 spell."
   },
   {
+    "name": "Exhalation",
+    "author": "CrusaderDroid",
+    "tier": 7,
+    "tags": [
+      "Evocation",
+      "Draconic"
+    ],
+    "cost": "2 AP",
+    "range": "Self (60 foot cone)",
+    "duration": "Instantaneous",
+    "desc": "You exhale raw draconic magic outward in a 60 foot cone. All creatures within the area of effect must succeed on either a Dexterity, Constitution, or Intuition saving throw, chosen by the creature, or take 10d10 arcane damage, halved on a success. A creature loses all of their movement speed if they failed a Dexterity saving throw, loses all damage immunities if they failed a Constitution saving throw, and is frightened if they failed an Intuition saving throw. All effects last until the end of your next turn.",
+    "empower": ""
+  },
+  {
     "name": "Objection",
     "author": "CrusaderDroid",
     "tier": 7,
@@ -9020,6 +9145,21 @@ const SpellDatabase = [
     "duration": "1 minute",
     "desc": "Target creature's skin becomes diamond. They are immune to slashing, piercing, bludgeoning, fire, cold, and radiant damage. If they would take radiant damage, it instead is dealt to every other creature within 30 feet.",
     "empower": "Targets an additional creature."
+  },
+  {
+    "name": "Winter Court's Cruelty",
+    "author": "CrusaderDroid",
+    "tier": 7,
+    "tags": [
+      "Illusion",
+      "Cold",
+      "Fey"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "A 30 foot radius sphere centered on target point within range becomes subject to the whims of the fey. Creatures that start their turn inside must succeed on a Constitution saving throw or have their movement speed reduced to 5 feet until the end of their turn, as the temperature appears to drop precipitously. Whenever a creature in the area takes damage, they additionally take 2d6 additional cold damage. A creature reduced to 0 hit points while inside is frozen solid, and dies if shattered.",
+    "empower": ""
   },
   {
     "name": "Core Tap",
@@ -9065,6 +9205,20 @@ const SpellDatabase = [
     "range": "60 feet",
     "duration": "Instantaneous",
     "desc": "In response to a spell being cast within range, you can make an opposed spellcasting roll against the caster - both of you roll 1d20 and add your spellcasting stats. If you win, a brief tear between possibilities steals the magic from the target as an alternate version of yourself casts the spell instead. You choose all targets for the spell, if applicable.",
+    "empower": ""
+  },
+  {
+    "name": "Lifewrack Toxin",
+    "author": "CrusaderDroid",
+    "tier": 7,
+    "tags": [
+      "Conjuration",
+      "Poison"
+    ],
+    "cost": "2 AP",
+    "range": "Self",
+    "duration": "8 hours",
+    "desc": "You create three doses of lifewrack toxin, which can be applied to a weapon or piece of ammunition or dissolved in a liquid. A creature that ingests the poison or is damaged by a poisoned weapon must make a Constitution saving throw or be affected for the duration.<br><br>Whenever a creature poisoned by lifewrack toxin spends AP, they take 4 poison damage per AP spent. Whenever a creature makes an ability check, they must first roll 1d20. On a roll of 10 or below, a coughing fit seizes them, causing them to fail the ability check automatically. <br><br>A creature can spend 2 AP and one hit die to repeat the saving throw, ending the effect early on a success. The creature still takes damage on a successful saving throw from the spent AP.",
     "empower": ""
   },
   {
