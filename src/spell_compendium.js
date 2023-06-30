@@ -119,6 +119,23 @@ function generate_brief_spell_table(SpellDatabase, tag_select, tier_select, func
     oldTable.parentNode.replaceChild(newTable, oldTable);
 }
 
+function downloadSpell() {
+	const spell = document.querySelector("#compendium_right table");
+	if (spell) {
+		html2canvas(spell, { allowTaint: true }).then(function (canvas) {
+			const link = document.createElement("a");
+			document.body.appendChild(link);
+			link.download = `${spell.querySelector(".spellname").textContent}.png`;
+			link.href = canvas.toDataURL();
+			link.target = '_blank';
+			link.click();
+		});
+	} else {
+		confirm("No spell has been selected!");
+	}
+	
+}
+
 function main() {
     const tag_list = {};
     const f_tag_list = {};
@@ -209,6 +226,13 @@ function main() {
     CC.appendChild(spellCard(SpellDatabase[0], functional_tags));
 
     gen_spelltable();
+	
+	const downloadButton = document.querySelector("#compendium_right")
+		.appendChild(document.createElement('center'))
+		.appendChild(document.createElement('button'));
+	downloadButton.textContent = "DOWNLOAD";
+	downloadButton.style.textAlign = 'center';
+	downloadButton.onclick = downloadSpell;
 }
 
 main();
