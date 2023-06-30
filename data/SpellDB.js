@@ -2071,7 +2071,7 @@ const SpellDatabase = [
     "range": "Self",
     "duration": "Instantaneous",
     "desc": "You ready an explosive field around yourself. The first time a creature damages you in melee before your next turn, it detonates and deals 1d12 fire damage to your attacker.",
-    "empower": "Damage increased to 2d12. Other creatures you choose within 5 feet must make a<br>Dexterity save or take the same damage.",
+    "empower": "Damage increased to 2d12. Other creatures you choose within 5 feet must make a Dexterity save or take the same damage.",
     "author": "CrusaderDroid"
   },
   {
