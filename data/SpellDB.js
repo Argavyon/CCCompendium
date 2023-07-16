@@ -5758,6 +5758,20 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Outbreak",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Necromancy",
+      "Disease"
+    ],
+    "cost": "1 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Target creature within range that is blinded, deafened, poisoned, paralyzed, stunned, or affected by a Disease spell emanates a black mist that spreads out to 30 feet. Creatures in range of the mist must make a Constitution saving throw or be afflicted with the same conditions as the target for the same duration.",
+    "empower": "The mist spreads to 60 feet. You and any creatures within 10 feet of you that you choose are immune."
+  },
+  {
     "name": "Touch of Torment",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -6459,20 +6473,6 @@ const SpellDatabase = [
     "duration": "1 hour",
     "desc": "A faint ethereal mist fills a 30 foot radius 60 foot high cylinder. While the spell lasts, you may freely alter what is visible and invisible inside the area, including creating convincing images of anything you can imagine. Creatures that are suspicious of what they perceive or even fully aware that they are inside an illusion can nevertheless not tell the difference between what is or is not real inside the illusion.<br><br>You have full awareness of the true position of everything inside the area even if you make it invisible.<br><br>If used in combat, the area inside this spell is difficult terrain for any creature without Truesight, and you may only adjust the area once at the start or end of each of your turns. This spell may grant invisibility to any creature or object inside the area, lasting until you remove it, they leave the area, or the spell ends.",
     "empower": ""
-  },
-  {
-    "name": "Outbreak",
-    "author": "CrusaderDroid",
-    "tier": 4,
-    "tags": [
-      "Necromancy",
-      "Disease"
-    ],
-    "cost": "1 AP",
-    "range": "60 feet",
-    "duration": "Instantaneous",
-    "desc": "Target creature within range that is blinded, deafened, poisoned, paralyzed, stunned, or affected by a Disease spell emanates a black mist that spreads out to 30 feet. Creatures in range of the mist must make a Constitution saving throw or be afflicted with the same conditions as the target for the same duration.",
-    "empower": "The mist spreads to 60 feet. You and any creatures within 10 feet of you that you choose are immune."
   },
   {
     "name": "Storm Chains",
