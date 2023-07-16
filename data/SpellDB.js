@@ -3480,7 +3480,7 @@ const SpellDatabase = [
     "author": "Lupusam",
     "tier": 2,
     "tags": [
-      "Necromancy Disease",
+      "Necromancy, Disease",
       "Unholy",
       "Forbidden (Fungal)"
     ],
