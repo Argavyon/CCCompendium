@@ -4133,6 +4133,20 @@ const SpellDatabase = [
     "empower": "Costs 2 AP."
   },
   {
+    "name": "Epidemic",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Necromancy",
+      "Disease"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "Instantaneous",
+    "desc": "A virulent plague rips through a 20 foot radius area centered on a point within range you can see. Creatures in the area must make a Constitution saving throw or take 3d6 poison damage and become diseased by the spell for 1 minute. A successful saving throw deals half damage and avoids the disease.<br><br>Each time a diseased creature ends their turn adjacent to a creature, the diseased creature must make a Constitution saving throw or take 3d6 poison damage.",
+    "empower": "Damage increased to 4d6."
+  },
+  {
     "name": "Wind Wall",
     "tier": 3,
     "tags": [
@@ -4352,20 +4366,6 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "With a mighty leap, you arrive at target point you can see and physically reach, radiating draconic presence on arrival. Creatures within 30 feet must make an Intuition saving throw or be frightened of you until the end of their next turn. Every creature frightened this way grants you 1 AP, to a maximum of 6 AP.",
     "empower": "A creature that is frightened also takes 2d6 psychic damage. All creatures in range can't take responses against your actions."
-  },
-  {
-    "name": "Epidemic",
-    "author": "CrusaderDroid",
-    "tier": 3,
-    "tags": [
-      "Necromancy",
-      "Disease"
-    ],
-    "cost": "2 AP",
-    "range": "90 feet",
-    "duration": "Instantaneous",
-    "desc": "A virulent plague rips through a 20 foot radius area centered on a point within range you can see. Creatures in the area must make a Constitution saving throw or take 3d6 poison damage and become diseased by the spell for 1 minute. A successful saving throw deals half damage and avoids the disease.<br><br>Each time a diseased creature ends their turn adjacent to a creature, the diseased creature must make a Constitution saving throw or take 3d6 poison damage.",
-    "empower": "Damage increased to 4d6."
   },
   {
     "name": "Distant Pillar",
