@@ -4354,7 +4354,7 @@ const SpellDatabase = [
     "empower": "A creature that is frightened also takes 2d6 psychic damage. All creatures in range can't take responses against your actions."
   },
   {
-    "name": "Outbreak",
+    "name": "Epidemic",
     "author": "CrusaderDroid",
     "tier": 3,
     "tags": [
