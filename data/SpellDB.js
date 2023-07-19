@@ -896,6 +896,21 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Mud Spray",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Conjuration",
+      "Earth",
+      "Water"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Thick mud is launched at a 10 foot cube centered on target point within range you can see. Creatures in the area must make a Dexterity saving throw or take 2d8 bludgeoning damage and be blinded until they use 1 AP to clean the mud off their eyes.",
+    "empower": "Damage increased to 2d12. A successful saving throw deals half damage."
+  },
+  {
     "name": "Brilliant Arrows",
     "tier": 1,
     "tags": [
@@ -3474,6 +3489,21 @@ const SpellDatabase = [
     "duration": "1 hour",
     "desc": "The air around you becomes calm and still. This effect moves with you for the duration. Any sound that would be created in the radius of this spell dissipates, and sounds from outside cannot penetrate in.<br><br>Wind spells of lower level than the level this spell is cast at cannot be cast inside the radius of this spell  and their effects cannot pass through its edges.",
     "empower": ""
+  },
+  {
+    "name": "Creeping Death",
+    "author": "Lupusam",
+    "tier": 2,
+    "tags": [
+      "Necromancy, Disease",
+      "Unholy",
+      "Forbidden (Fungal)"
+    ],
+    "cost": "3 AP",
+    "range": "30 feet",
+    "duration": "Instantaneous",
+    "desc": "You spread noxious spores, infecting any number of creatures you choose within range that need to breathe. At the start of an infected creature's turn they must make a Constitution save, taking 2d6 poison damage on a failure, or ending the infection on a success. The infection lasts until the creature passes a constitution save or is cured by magical healing.<br>When an infected creature dies for any reason, you can control it forcing it to immediately take one full turn as you puppet the corpse through the spores, then the body rapidly decomposes.",
+    "empower": "Increase the damage on a failed save to 4d6, and an infected creature must pass 2 Constitution saves to end the infection."
   },
   {
     "name": "Hailstrom",
@@ -9728,6 +9758,35 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Armor Absolver",
+    "author": "CrusaderDroid",
+    "tier": 8,
+    "tags": [
+      "Conjuration",
+      "Acid"
+    ],
+    "cost": "2 AP",
+    "range": "30 feet",
+    "duration": "1 minute ",
+    "desc": "Intense acid sprays from your hand at target creature within range. They must make a Dexterity saving throw or take 10d10 acid damage and have their AC set to 10 + their Dexterity for the duration. A successful saving throw deals half damage with no other effect.",
+    "empower": "Targets a 30 foot cone instead."
+  },
+  {
+    "name": "Mortal Omen",
+    "author": "CrusaderDroid",
+    "tier": 8,
+    "tags": [
+      "Evocation",
+      "Disease",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "Self (30 foot radius)",
+    "duration": "1 minute",
+    "desc": "Your body emits a thick blackish-brown gas that covers a 30 foot sphere around you, following you as you move. You are immune to its effects and can see through it, but the area is heavily obscured for other creatures, and creatures that enter it during their turn or start their turn inside lose 1 AP, become vulnerable to poison damage, have disadvantage on their Constitution saving throws against Disease spells and disease effects, and must make a Constitution saving throw or take 3d10 poison damage and lose 2 AP coughing and hacking.<br><br>This spell is treated as if it was a disease. Effects that spread disease will spread this spell to affected creatures. They are not immune to its effects, but you are immune to any other creature's spell effect.",
+    "empower": ""
+  },
+  {
     "name": "A Single Path",
     "author": "neitherrhyme",
     "tier": 8,
@@ -9738,6 +9797,21 @@ const SpellDatabase = [
     "range": "Self",
     "duration": "Until Dispelled",
     "desc": "Designate an area of up to 50ft by 50ft. Over the course of an hour, you walk a path, entering this space at one point and leaving at another, which is determined to be the 'Correct' path. Any creature who enters the space afterwards who does not follow the 'Correct' path will find themselves back at the entry point. A creature subject to this effect may make a Knowledge save to notice something amiss. If they succeed at this save, they may make a Knowledge save to ignore the effect. Both saves can be made each time a creature finds itself at the entry point.",
+    "empower": ""
+  },
+  {
+    "name": "Tell the Tale",
+    "author": "CrusaderDroid",
+    "tier": 8,
+    "tags": [
+      "Enchantment",
+      "Fey",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "1 hour",
+    "desc": "You take on the role of a fairy tale protagonist, convincing reality itself to favor you. You automatically succeed all ability checks for the duration. <br><br>If the spell is ended early by losing your concentration through taking damage, the karmic debt incurred by tricking reality immediately becomes due. You have disadvantage on all rolls for the remainder of the normal duration, and can't take a break or rest during this time.",
     "empower": ""
   },
   {
@@ -9769,6 +9843,36 @@ const SpellDatabase = [
     "desc": "You create a summoning circle with a radius of 30 feet centered on a target point within range. It has 8 charges. Each time you cast a spell with the Summoning tag while you are within the circle, a number of charges equal to the tier of the spell are consumed to reduce the cost to 0 AP. Once all charges are consumed, the circle fades away.<br><br>If you cast a spell that would exceed the number of remaining charges, the circle immediately fades away, and you must pay the original AP cost of the spell.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Beautiful Imitation",
+    "author": "CrusaderDroid",
+    "tier": 8,
+    "tags": [
+      "Necromancy",
+      "Plant",
+      "Delayed"
+    ],
+    "cost": "9 AP",
+    "range": "30 feet",
+    "duration": "1 minute",
+    "desc": "When you begin casting this spell, a huge flower forms and occupies a 20 foot radius empty space. You can't cast this spell if there is no room for the flower. It has AC 15 and 300 hit points. If it is reduced to 0 hit points before you finish the spell, the spell is interrupted and you lose all MP spent.<br><br>When you first begin casting this spell, choose a creature you can see. When you finish, the flower blooms and unveils a copy of that creature, made of plant fiber. It is an exact copy of that creature in its current condition, save that its creature type is plant. It takes its turn after yours and unerringly follows your mental commands.",
+    "empower": "Duration increased to 15 minutes."
+  },
+  {
+    "name": "Sunstorm",
+    "author": "CrusaderDroid",
+    "tier": 8,
+    "tags": [
+      "Evocation",
+      "Radiant",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "Self (300 foot radius)",
+    "duration": "1 minute",
+    "desc": "Rays of sunlight fall from the sky and strike up to 3 creatures you choose within range, dealing 4d10 radiant damage and revealing their location to you for 1 minute.<br><br>At the start of each of your turns, you choose new creatures to be struck by sunlight. The maximum number of creatures you can target increases by 1 each turn.",
+    "empower": "Choose one - creatures are also blinded until the start of their turn, or damage increased to 6d10, or number of creatures begins at 6."
   },
   {
     "name": "Permafrost",
@@ -9930,6 +10034,21 @@ const SpellDatabase = [
     "empower": "Summon two hands. You command both hands at once with each action."
   },
   {
+    "name": "Idolatrous Image",
+    "author": "CrusaderDroid",
+    "tier": 8,
+    "tags": [
+      "Illusion",
+      "Lightning",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "1 mile",
+    "duration": "1 minute",
+    "desc": "In a flash of lightning, you create any image of your choosing anywhere within range, and select what creatures are unaffected by this spell. Every other creature that can see it must succeed on an Intuition saving throw or be blinded for the duration. The only thing they can see is the image.<br><br>A creature that takes damage can repeat the saving throw at the end of their next turn. On a success, they are no longer blinded.",
+    "empower": ""
+  },
+  {
     "name": "Hurricane",
     "author": "CrusaderDroid",
     "tier": 8,
@@ -9959,6 +10078,21 @@ const SpellDatabase = [
     "range": "Self (60 foot radius)",
     "duration": "Instantaneous",
     "desc": "You begin to sing a song about the end of all stories, and life begins to lower the curtain. If you spend at least 1 AP during your turn towards casting this spell, all creatures within range must succeed on a Intuition save or join the chorus. Creatures who have joined the chorus must spend 1 AP towards finishing The Last Song until either they are incapacitated or the spell is finished.   If creatures leave the area of the spell, they are treated as an extension of your casting until the spell ends. If you do not spend at least 1 AP on trying to cast the spell, the spell ends.<br><br>When completed, everything living in earshot of the sound begins to slowly crumble to nothing. All living things within range must succeed on a Constitution saving throw, or begin deteriorating, taking 10d12 damage on a success. Deteriorating creatures take 1d12 damage every hour. Each time they take damage from any source, Deteriorating creatures force all living things within 60ft to make the same save. Deteriorating can only be removed from individual creatures by dispelling.",
+    "empower": ""
+  },
+  {
+    "name": "The True Self",
+    "author": "CrusaderDroid",
+    "tier": 8,
+    "tags": [
+      "Enchantment",
+      "Shadow",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "You transform into a copy of the target creature, except distinctly more nightmarish. You gain access to all of the creature's features, actions, spells, talents, proficiencies, and weapon styles.<br><br>You must attack or cast a spell that affects the target creature at least once on each of your subsequent turns. If you do not, the spell ends.<br><br>If the target is reduced to 0 hit points, the duration is increased to 15 minutes, and you no longer need to attack the target.",
     "empower": ""
   },
   {
@@ -10005,6 +10139,21 @@ const SpellDatabase = [
     "duration": "1 minute",
     "desc": "Scintillating layers of acid and fire surround you. When you take damage from a weapon attack, acid bubbles and pops and spews forth, dealing 6d6 acid damage to the attacker and all other creatures in a 5 foot wide line to the attacker. When you take damage from a spell, waves of fire ignite the threads of magic and cause the offending caster to explode in a 15 foot radius, dealing 8d6 fire damage to the caster and all other creatures in range.",
     "empower": "Choose any number of willing creatures. They can't damage you and can't take damage from this spell for the duration."
+  },
+  {
+    "name": "Turn the Tide",
+    "author": "CrusaderDroid",
+    "tier": 8,
+    "tags": [
+      "Evocation",
+      "Holy",
+      "Delayed"
+    ],
+    "cost": "4 AP",
+    "range": "90 feet",
+    "duration": "Instantaneous",
+    "desc": "Four 10 foot radius spheres centered on points within range erupt into holy magic. For each creature within these spheres, choose one of the following: <br>>The creature must make a Reflex saving throw or take 10d6 radiant damage, halved on a success.<br>>The creature is healed for 10d6 hit points.",
+    "empower": "Radius of each sphere increased to 20 feet."
   },
   {
     "name": "Tidal Wave",
@@ -10114,6 +10263,36 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Arcanist's Shift",
+    "author": "CrusaderDroid",
+    "tier": 8,
+    "tags": [
+      "Abjuration",
+      "Arcane",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "You shift yourself onto an overlapping plane. You can't be targeted or affected or sensed by anything originating from your home plane, but you can still see as normal. You can't make weapon attacks, but you can move, interact with objects, and cast spells as normal.",
+    "empower": ""
+  },
+  {
+    "name": "Myriad Shadowthorns",
+    "author": "CrusaderDroid",
+    "tier": 8,
+    "tags": [
+      "Illusion",
+      "Shadow",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "60 feet",
+    "duration": "1 minute ",
+    "desc": "You create a 30 foot long, 1 foot wide wall of transparent shadows, extending upwards as far as the eye can see. When a projectile crosses the shadow, four thorns made of shadows appear inside the wall, close to the point of impact.<br><br>For 1 AP during each of your turns, you can either reposition the wall somewhere else within range, or choose to fire all collected thorns, targeting one creature per thorn. Creatures must make an Intuition saving throw or take 2d6 psychic damage per thorn targeting them, to a maximum of 16d6 damage. A successful saving throw deals half damage.",
+    "empower": ""
+  },
+  {
     "name": "Lupusam's Biologia",
     "author": "CrusaderDroid",
     "tier": 8,
@@ -10175,6 +10354,35 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Dragon Aspect",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Transmutation",
+      "Draconic"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "Choose any dragon creature. You transform yourself into a hybrid between yourself and the chosen creature. You gain all of its movement speeds, resistances, immunities, features, and actions. Reduce the AP cost of its actions by 1, to a minimum of 1.",
+    "empower": "Duration becomes 1 hour."
+  },
+  {
+    "name": "Fiefdom",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Transmutation",
+      "Earth",
+      "Delayed"
+    ],
+    "cost": "6 AP",
+    "range": "Self (30 foot radius) ",
+    "duration": "Until dispelled",
+    "desc": "You assert dominion over the surrounding area and dislodge it from the ground, causing it to float into the air. It gains a flight speed of 30 feet.<br><br>You can spend 1 AP to move the land with a mental command. You can spend 2 AP to have it attempt to crush all creatures directly underneath. Creatures with a Strength or Constitution below -1 are utterly crushed on hit and have their hit points reduced to 0. All other creatures must make a Strength saving throw or take 10d10 bludgeoning damage, halved on a success.<br><br>While you are on the land, casting this spell again grants the spell a range of 300 feet. A 30 foot radius sphere at the target point within range is carved out and merged with your current airborne land. You can spend 1 AP to separate your controlled land into multiple parts. You must move each part separately.<br><br>If you die, the land you've controlled falls to the ground. Creatures underneath are crushed as if you attacked them with the land.",
+    "empower": "Targets three chunks of land within 300 feet that merge into one."
+  },
+  {
     "name": "Drowned Beckons",
     "tier": 9,
     "tags": [
@@ -10220,6 +10428,20 @@ const SpellDatabase = [
     "empower": "Removes the Ritual tag and sets the AP cost to 3."
   },
   {
+    "name": "Hateful Plague",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Necromancy",
+      "Disease"
+    ],
+    "cost": "2 AP",
+    "range": "Self (30 foot radius) ",
+    "duration": "24 hours",
+    "desc": "Waves of barely-visible spheres of concentrated plague emanate from you and embed themselves into any creature within range other than you, infecting them for the duration. While infected, a creature's maximum hit points is set to their current hit points, and all damage taken is dealt to both current and maximum hit points.<br><br>A creature can't drop below 1 hit point while infected. Taking damage that would cause them to drop below 1 hit point instead causes them to drop prone and writhe in agony for the duration.<br><br>At the start of each of your turns, the plague increases its radius by 30 feet.",
+    "empower": ""
+  },
+  {
     "name": "Hells Unleashed",
     "tier": 9,
     "tags": [
@@ -10232,6 +10454,21 @@ const SpellDatabase = [
     "desc": "You reanimate every corpse within range. They keep all their capabilities they had in life, and are under your direct control for the duration of the spell.<br><br>You also animate 1d6+2 skeletons and 1d6+2 zombies within the area of the spell for the duration of the spell.<br><br>While this spell lasts, creatures you have animated by this spell or other Necromancy spells can't be reduced below 1 hit point.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Lightning",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Evocation",
+      "Lightning",
+      "Delayed"
+    ],
+    "cost": "1-9 AP",
+    "range": "90 feet",
+    "duration": "Instantaneous",
+    "desc": "You target a creature you can see when you begin casting this spell, who knows they have been targeted by you. When you finish casting this spell, a bolt of lightning unerringly strikes the target creature if they are still within range. They take 4d6 lightning damage, plus 4d6 for each AP spent on the spell. The range increases by 90 feet for each AP spent past the first.",
+    "empower": "Range becomes Planar. Damage per AP increases by 1d6. Maximum AP increases to 18."
   },
   {
     "name": "Archon Form",
@@ -10280,6 +10517,37 @@ const SpellDatabase = [
     "empower": "Removes the AP cost on this spell."
   },
   {
+    "name": "Wasteland",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Transmutation",
+      "Acid",
+      "Earth",
+      "Delayed"
+    ],
+    "cost": "5 AP",
+    "range": "Self (60 foot radius) ",
+    "duration": "Instantaneous",
+    "desc": "You grab the earth and infuse it with acid. Any number of spaces you choose erupt with acid, cracking the ground and making it difficult terrain. Creatures on any such space, or who enter a space during their turn, must make a Dexterity saving throw or take 8d10 acid damage, halved on a success.<br><br>The acid remains until another spell restores the terrain.",
+    "empower": ""
+  },
+  {
+    "name": "Fade",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Illusion",
+      "Shadow",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self",
+    "duration": "Until dispelled",
+    "desc": "You become invisible for the duration.",
+    "empower": "Reduces the duration to 24 hours and removes the Concentration tag."
+  },
+  {
     "name": "Autosustaining Summoning",
     "tier": 9,
     "tags": [
@@ -10293,6 +10561,52 @@ const SpellDatabase = [
     "desc": "You touch a magic effect with a duration of 10 minutes or more and attempt to modify the spell to last permanently. While you are casting this spell, the duration of the original effect is suspended.<br><br>After 8 hours of casting, the effect is made permanent. If it required concentration, it no longer requires concentration. It can no longer be ended unless dispelled.<br><br>This spell does not negate any other condition that would end a spell early. A spell that ends if the caster steps out of range will still end if the caster steps out of range even after the spell was made permanent.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Sanctuary of Heavens",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Abjuration",
+      "Lightning",
+      "Concentration",
+      "Delayed"
+    ],
+    "cost": "6 AP",
+    "range": "Self (60 foot radius)",
+    "duration": "Until dispelled",
+    "desc": "A towering spiral of clouds engulfs you and forms a 60 foot radius cylinder centered on you, as tall as the skies. You are hidden inside the clouds.<br><br>Any creature that tries to move into the clouds, or any creature anywhere that tries to attack you or target you with a spell, is immediately struck by lightning, taking 5d6 lightning damage. Their turn immediately ends, and their movement and action is interrupted.<br><br>You can't move or take any actions while concentrating on this spell, except to move vertically up and down the cylinder of clouds. Each time a creature is damaged, you lose 3 MP. If you can't afford the MP cost, the spell ends. If you are above the ground and can't fly when the spell ends, you fall.",
+    "empower": ""
+  },
+  {
+    "name": "Toxic Rapture",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Necromancy",
+      "Poison"
+    ],
+    "cost": "3 AP",
+    "range": "Self (60 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "All poisoned creatures within range are paralyzed for the duration of their poisoned condition.<br><br>A creature that has been damaged can make a Constitution saving throw at the end of their turn. On a success, they are no longer paralyzed and can't be paralyzed by this spell again for 24 hours.",
+    "empower": "Radius increased to 120 feet."
+  },
+  {
+    "name": "Origin Ocean",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Conjuration",
+      "Water",
+      "Delayed",
+      "Sign"
+    ],
+    "cost": "8 AP",
+    "range": "Self (300 foot cube)",
+    "duration": "1 hour",
+    "desc": "The area around you becomes submerged in water for the duration.<br><br>While you remain in the area, Water spells cost 0 AP. You restore 3 MP the first time you cast a Water spell each turn.<br><br>You can spend 3 AP to create up to 10 hit dice worth of beasts with a swim speed anywhere within the water. They are composed of water, and their creature type is changed to elemental. They take their turn after yours and follow your mental command.<br><br>The spell ends if you leave the area.",
+    "empower": "You continuously spread the water as you move, increasing the area accordingly."
   },
   {
     "name": "Time Crash",
@@ -10325,6 +10639,20 @@ const SpellDatabase = [
     "desc": "This spell can be cast as a ritual over the course of eight hours.<br><br>You create a dome of scintillating colors that envelops the area around you. This area is a 120 foot radius dome centered on you, increased by up to 1 mile when cast as a ritual.<br><br>Every spell cast through or within the dome restores MP to you equal to half the MP cost of the spell, rounded up. You can choose to instead expend MP equal to the spell's MP cost to cancel the spell's effect completely.<br><br>The duration when cast normally is 1 minute. When cast as a ritual, the duration is until dispelled.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Domain of the Ice Monarch",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Transmutation",
+      "Cold"
+    ],
+    "cost": "3 AP",
+    "range": "Self (30 foot radius)",
+    "duration": "Permanent",
+    "desc": "When you cast this spell, you permanently assert dominion over a 30 foot radius. Its temperature drops to chilling levels, leaving only you and creatures you choose unaffected. All other creatures in the area that start their turn inside must succeed on a Constitution saving throw or take 4d6 cold damage and have their movement speed halved. A creature that succeeds on their saving throw takes half damage and does not lose movement speed. Objects in this area take 25 cold damage at the start of each of your turns.<br><br>Objects created by your Cold spells inside this area have resistance to all damage and absorb cold damage. If a Cold spell you cast creates an object, it refunds 1 AP and half of its MP cost.<br><br>If you cast this spell again, you can choose to either grow your current effect radius by 30 feet, or discard it completely and start again at a new location.",
+    "empower": "Radius increased to 90 feet. If cast again, you can grow it by 90 feet."
   },
   {
     "name": "Skies of Fire",
@@ -10433,6 +10761,20 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Umbral Split",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Conjuration",
+      "Shadow"
+    ],
+    "cost": "2 AP",
+    "range": "Self ",
+    "duration": "1 minute",
+    "desc": "Your shadow gains a life of its own. It can take its turn after yours, following your mental orders. It can't attack, but it is otherwise an exact copy of you, including your current MP. All spells the shadow casts gain the Silent and Still tags.<br><br>The shadow can't take damage or be affected by anything, but if you are reduced to 0 hit points, the shadow instantly fades away.",
+    "empower": "Your shadow sacrifices itself if you would be reduced to 0 hit points, setting your hit points equal to half your maximum hit points and negating any excess damage."
+  },
+  {
     "name": "Stampede",
     "author": "CrusaderDroid",
     "tier": 9,
@@ -10446,5 +10788,35 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "Summon any number and type of beasts with 5 or fewer hit dice in any number of empty spaces within range. You may additionally summon up to four beasts with a combined hit dice total of forty or less.<br><br>The beasts are permanently charmed by you. They will generally attack your foes, although you cannot command them.",
     "empower": "Radius increased to 90 feet."
+  },
+  {
+    "name": "Ice Age",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Evocation",
+      "Cold",
+      "Delayed"
+    ],
+    "cost": "9 AP",
+    "range": "300 feet",
+    "duration": "1 minute",
+    "desc": "While casting this spell, each time you end your turn having spent at least 1 AP casting this spell, two massive hailstones slam into the ground, each one targeting a different point within range. The hailstones occupy a 10 foot radius and displace creatures into the nearest adjacent empty space, and creatures within 20 feet of each hailstone on arrival must make a Dexterity saving throw or take 6d6 cold and 4d6 bludgeoning damage, halved on a success.<br><br>When you finish casting this spell, for each turn it took to cast this spell, you summon two more hailstones. Hailstones then remain for 1 minute, with AC 10 and 200 hit points. Hailstones are immune to damage before you finish casting the spell, and disappear if your spell is interrupted before you finish casting or you drop a hailstone on top of another hailstone.<br><br>Creatures can only take damage from one hailstone on each of your turns.",
+    "empower": ""
+  },
+  {
+    "name": "Disintegration Field",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Abjuration",
+      "Acid",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "Self (10 foot radius) ",
+    "duration": "1 minute",
+    "desc": "A thin, intensely acidic barrier forms around you out to 10 feet. Ranged projectiles that touch it are instantly disintegrated. Creatures that touch it immediately take 10d6 acid damage and must make a Constitution saving throw or take 10d6 additional acid damage, halved on a success. Damage dealt from this spell is deducted from creatures' maximum hit points.<br><br>You can spend 3 AP to have the field expand to 30 feet, then contract back to 10 feet.<br><br>A creature reduced to 0 hit points by this spell instantly disintegrates without a trace.",
+    "empower": ""
   }
 ];
