@@ -2611,6 +2611,20 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Summon Grems",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Conjuration",
+      "Summoning"
+    ],
+    "cost": "2 AP",
+    "range": "30 feet",
+    "duration": "15 minutes",
+    "desc": "You summon two grems in two empty spaces within range that you can see. You can choose any grem that matches one of your tags. They take their turn after yours and follow your mental commands.<br><br>If you are reduced to 0 or fewer hit points, the grems are banished back to their plane.",
+    "empower": ""
+  },
+  {
     "name": "Greymane's Stonefist",
     "author": "Argavyon ",
     "tier": 2,
@@ -4984,6 +4998,20 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "The earth around you splits, fragments, and cracks as it shakes violently. Creatures other than you within range take 3d6 bludgeoning damage, and must make a Strength saving throw or fall prone and take 2d6 additional bludgeoning damage.<br><br>The area is difficult terrain afterwards. A creature already in difficult terrain takes 2d6 additional damage from falling prone from failing the saving throw.<br><br>This spell has no effect on creatures not touching the ground. Creatures underground are vulnerable to the damage from this spell.",
     "empower": "You can choose which creatures are affected. The terrain beneath unaffected creatures does not become difficult terrain."
+  },
+  {
+    "name": "Summon Anima",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Conjuration",
+      "Summoning"
+    ],
+    "cost": "3 AP",
+    "range": "30 feet",
+    "duration": "15 minutes",
+    "desc": "You summon an anima into an object that represents it within range. You can choose any anima that matches one of your tags. It takes its turn after yours and follows your mental commands.<br><br>If you are reduced to 0 or fewer hit points, the anima is banished back to its plane.",
+    "empower": ""
   },
   {
     "name": "Blooded Spite",
@@ -8941,6 +8969,20 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Future Shift",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Transmutation",
+      "Time"
+    ],
+    "cost": "1 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Target creature's body is shifted 6 seconds into the future, advancing all effect durations on them by 6 seconds and triggering all start of turn and end of turn effects. An unwilling creature can make an Intuition saving throw to avoid the effect on a success.",
+    "empower": "Instead shifts one minute into the future, six seconds at a time. Unwilling creatures can make an Intuition saving throw to stop the effect completely on a success. You can stop at any 6 second interval."
+  },
+  {
     "name": "Summon Sage",
     "tier": 6,
     "tags": [
@@ -8954,6 +8996,21 @@ const SpellDatabase = [
     "desc": "You summon a sage - a benevolent humanoid symbiote from the Sea of Possibility. It establishes a mental connection with you upon arrival.<br><br>The sage is intangible and can't be affected by any effect other than the end of your spell. It takes its turn after yours. It has a walking speed of 20 feet, and knows every spell you know, using your MP to cast. It obeys your mental commands.<br><br>When the spell expires, the sage returns to the Sea of Possibility.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Timeslip",
+    "author": "CrusaderDroid",
+    "tier": 6,
+    "tags": [
+      "Transmutation",
+      "Time",
+      "Delayed"
+    ],
+    "cost": "2 or 5 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "You adjust the initiative of up to three other creatures within range as you please. Unwilling creatures can make an Intuition saving throw to avoid the effect on a success.<br><br>The current initiative count is unchanged, and follows the new initiative order after your turn ends, even if a creature has already taken their turn this round.<br><br>This spell is particularly exhausting. The first time you cast this spell each rest, it costs 2 AP. After you cast it, it costs 5 AP until you finish a break or rest.",
+    "empower": "Range becomes Self (30 foot radius), and you can affect any number of targets within range."
   },
   {
     "name": "Defer",
@@ -9562,6 +9619,20 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Desiccation",
+    "author": "CrusaderDroid",
+    "tier": 7,
+    "tags": [
+      "Transmutation",
+      "Time"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet ",
+    "duration": "Instantaneous",
+    "desc": "Any number of creatures within range must succeed on a Willpower saving throw or take 5d12 damage and lose 1 AP as multiple patches of their body are rapidly aged and reverted. A successful saving throw halves the damage and prevents AP loss.",
+    "empower": "Damage increased to 7d12."
+  },
+  {
     "name": "Echoed Spirit",
     "author": "CrusaderDroid",
     "tier": 7,
@@ -9665,6 +9736,20 @@ const SpellDatabase = [
     "range": "90 feet",
     "duration": "Instantaneous",
     "desc": "As a response to any creature you can see at any time during their turn, you can cause a brief but violent surge in reality. This ends the creature's turn immediately.<br><br>A creature must finish a rest before they can be targeted by this spell again.",
+    "empower": ""
+  },
+  {
+    "name": "Paradox Assault",
+    "author": "CrusaderDroid",
+    "tier": 7,
+    "tags": [
+      "Conjuration",
+      "Time"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "You pull the past self of a creature within range to repeat one of the actions they took last turn, targeting the same creature or area as before and making attack rolls or requiring saving throws as necessary.",
     "empower": ""
   },
   {
@@ -9905,6 +9990,21 @@ const SpellDatabase = [
     "range": "Self (10 mile radius)",
     "duration": "Permanent",
     "desc": "Over the course of 8 hours, you begin to shape the surrounding land into a lush paradise capable of untold biological diversity. It starts with a roughly 10 foot radius around you, then expands by another roughly 10 feet at the end of each of your turns. You determine the exact shape of the land, including the creation or destruction of mountains, caves, valleys, rivers, lakes, and other geological features. As long as you are still casting this spell, you can make changes to anything at any point in time.<br><br>The land is impossibly good for all living creatures. Food and water are always pure and can never be contaminated or poisoned by any means. Creatures that take a break within the area automatically heal for a number of hit points equal to their total hit dice. Food is particularly nutritious - a creature that eats anything from this area is satisfied for 24 hours.<br><br>The spell is an exhausting process. You can't cast this spell as part of a rest. If the spell is interrupted, the area ceases expanding.",
+    "empower": ""
+  },
+  {
+    "name": "Chronoshift",
+    "author": "CrusaderDroid",
+    "tier": 8,
+    "tags": [
+      "Transmutation",
+      "Time",
+      "Delayed"
+    ],
+    "cost": "6 AP",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "desc": "You revert yourself back to your status after your last rest, including hit points, MP, condition, and remaining uses of talents or features. You then lose the MP spent on this spell.<br><br>Casting this spell again before completing a rest instead causes you to get lost in time for 2d4+2 hours, removing you from the current timeline and causing you to vanish. When the duration expires, you reappear in the same location you cast this spell.",
     "empower": ""
   },
   {
@@ -10340,6 +10440,20 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "True Love's Kiss",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Enchantment",
+      "Fey"
+    ],
+    "cost": "2 AP",
+    "range": "Touch",
+    "duration": "Instantaneous",
+    "desc": "You kiss a dead, unconscious, or charmed creature, or a creature affected by Steal Shape, that you have known for at least a month and channel fey magic to rewrite their fate. The creature restores all of their hit points and maximum hit points and hit dice, has all conditions removed from them, and has all negative spell effects dispelled and all curses lifted.<br><br>After using this spell on a creature, casting this spell again instead allows you to channel love to the affected creature from any range as long as you can see them and they can see you. They are healed for half of their maximum hit points and have all conditions removed from them.",
+    "empower": ""
+  },
+  {
     "name": "Impose Reality",
     "author": "CrusaderDroid",
     "tier": 9,
@@ -10383,6 +10497,21 @@ const SpellDatabase = [
     "empower": "Targets three chunks of land within 300 feet that merge into one."
   },
   {
+    "name": "Inferno",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Evocation",
+      "Fire",
+      "Sign"
+    ],
+    "cost": "2 AP",
+    "range": "Self (60 foot radius) ",
+    "duration": "1 minute",
+    "desc": "The area around you combusts and ignites into raging flames. Creatures other than you within range take 6d10 fire damage.<br><br>Your Fire spells that deal damage have their AP cost reduced to 1 AP and refund half the MP cost. Each Fire spell you cast causes the flames from this spell to burn hotter, dealing 3d10 fire damage to all other creatures in the area.<br><br>The spell ends if you leave the area.",
+    "empower": "Fire spells now ignite their area of effect and add it to this spell's area."
+  },
+  {
     "name": "Drowned Beckons",
     "tier": 9,
     "tags": [
@@ -10396,6 +10525,36 @@ const SpellDatabase = [
     "desc": "Target creature must succeed on an Intuition saving throw. On a failure, it becomes charmed as inexplicable calls from the ocean beckon to it. It must use all its actions on each of its turns to find the nearest body of water to submerge itself in.<br><br>A submerged creature can repeat the saving throw at the end of each of its turns. On a success, the spell ends.<br><br>A creature that drowns while affected by this spell does not realize it is dead until another creature interacts with it, preventing it from being revived or reanimated until it realizes it is dead.<br><br>A creature that succeeds on its saving throw can't be targeted by this spell again.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Stunlock",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Enchantment",
+      "Psychic",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "Self (60 foot radius)",
+    "duration": "1 minute ",
+    "desc": "Creatures you choose in the area must succeed on an Intuition saving throw or be stunned for the duration of the spell.<br><br>You can't move, attack, or use any non-Psychic spells while concentrating on this spell.",
+    "empower": ""
+  },
+  {
+    "name": "Lasher Overrun",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Conjuration",
+      "Plant",
+      "Delayed"
+    ],
+    "cost": "1-9 AP",
+    "range": "90 feet",
+    "duration": "1 hour",
+    "desc": "For each AP spent casting this spell, four seeds flow from you to any target point within range and wait. When you finish casting the spell, all seeds bloom into vicious animated spiked vines, called lashers.<br><br>During your turn, you can command any number of lashers for 0 AP to attack. Lashers can attack any creature within 30 feet, using your spellcasting stat and proficiency modifier to determine its attack bonus. On a hit, it deals 1d8 piercing and 1d8 poison damage and pulls the creature to its location. A creature hit by a lasher is subsequently hit by all other lashers that attack it this turn. A lasher can only attack once on each of your turns.<br><br>Lashers have AC 14 and are destroyed if they take any damage.",
+    "empower": "Number of seeds per AP spent increased to 6. Any number of lashers can be revived for 3 AP."
   },
   {
     "name": "Impervious",
@@ -10428,6 +10587,20 @@ const SpellDatabase = [
     "empower": "Removes the Ritual tag and sets the AP cost to 3."
   },
   {
+    "name": "Opposition",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Divination",
+      "Spirit"
+    ],
+    "cost": "1 AP",
+    "range": "90 feet",
+    "duration": "Instantaneous",
+    "desc": "Spirits flood the target creature with visions of failure and destruction. The creature fails every roll it makes until the start of your next turn.<br><br>A creature can't be affected by this spell again until they complete a rest.",
+    "empower": ""
+  },
+  {
     "name": "Hateful Plague",
     "author": "CrusaderDroid",
     "tier": 9,
@@ -10440,6 +10613,20 @@ const SpellDatabase = [
     "duration": "24 hours",
     "desc": "Waves of barely-visible spheres of concentrated plague emanate from you and embed themselves into any creature within range other than you, infecting them for the duration. While infected, a creature's maximum hit points is set to their current hit points, and all damage taken is dealt to both current and maximum hit points.<br><br>A creature can't drop below 1 hit point while infected. Taking damage that would cause them to drop below 1 hit point instead causes them to drop prone and writhe in agony for the duration.<br><br>At the start of each of your turns, the plague increases its radius by 30 feet.",
     "empower": ""
+  },
+  {
+    "name": "Mass Tornado",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Evocation",
+      "Wind"
+    ],
+    "cost": "3 AP",
+    "range": "90 feet ",
+    "duration": "15 minutes",
+    "desc": "This spell is similar to Tornado, except that you summon eight tornadoes instead. You choose the location and direction and size of each tornado.",
+    "empower": "Size can be increased to a 20 foot radius and a 120 foot height. Creatures picked up by any tornado additionally take 3d6 bludgeoning damage."
   },
   {
     "name": "Hells Unleashed",
@@ -10502,6 +10689,36 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Lightform",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Transmutation",
+      "Radiant"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "Until dispelled",
+    "desc": "You transform your body into pure light. Weapon attacks deal no damage to you under any circumstances, and you absorb fire and radiant damage.<br><br>While in this form, your Radiant spells deal +2 damage per damage die rolled, and you can move to any point struck by one of your Radiant spells as part of that spell.<br><br>At the start of each of your turns, you lose 15 MP. If you can't pay that cost, the spell ends.",
+    "empower": ""
+  },
+  {
+    "name": "Steal Shape",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Transmutation",
+      "Beast",
+      "Fey",
+      "Delayed"
+    ],
+    "cost": "9 AP",
+    "range": "Touch",
+    "duration": "1 year and 1 day",
+    "desc": "Target creature must succeed on an Intuition saving throw or be transformed into a beast of your choice with hit dice between 10 to 25. It becomes bound to you and must obey your commands, although it is not charmed.<br><br>The creature uses the beast's capabilities as its own and completely loses access to all of its prior capabilities, including features, talents, spells, and more. The creature replaces the beast's Knowledge, Intuition, and Willpower with its own stats, however. The transformation fully heals the creature in its new form.<br><br>When you cast this spell, you must set a condition that can be reasonably achieved over the course of the spell. \"Win this battle\" and \"Guard me for 6 months\" are a few examples. You cannot set a condition that would overtly lead to the creature's death, such as \"Until you kill yourself\" or \"When you touch lava\". The spell ends when the condition is achieved, and the spell fails if an invalid condition is given.<br><br>If the creature dies, they transform back to their original form.<br><br>If cast on a willing creature, the AP cost is reduced to 3.",
+    "empower": "Add the Ritual tag. The spell now takes 10 minutes to cast regardless of target, and its duration becomes \"Until dispelled\"."
+  },
+  {
     "name": "Sacred Hope",
     "author": "CrusaderDroid",
     "tier": 9,
@@ -10530,6 +10747,21 @@ const SpellDatabase = [
     "range": "Self (60 foot radius) ",
     "duration": "Instantaneous",
     "desc": "You grab the earth and infuse it with acid. Any number of spaces you choose erupt with acid, cracking the ground and making it difficult terrain. Creatures on any such space, or who enter a space during their turn, must make a Dexterity saving throw or take 8d10 acid damage, halved on a success.<br><br>The acid remains until another spell restores the terrain.",
+    "empower": ""
+  },
+  {
+    "name": "Radiant Torrent",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Evocation",
+      "Radiant",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "300 feet",
+    "duration": "1 minute",
+    "desc": "A massive beam of light emerges from your hands and continually blasts a 25 foot wide, 25 foot tall, 300 foot line in target direction. Creatures in this line or who move into it must make a Constitution saving throw or take 14d6 radiant damage, halved on a success.<br><br>You can't do anything during your turns while concentrating on this spell, except for moving and aiming the spell in a new direction. When you move your aim, the beam of light moves from its old direction to the new direction, causing every creature it passes through to make a saving throw to avoid damage.<br><br>Objects in the way of the beam are obliterated at the start of each of your turns.",
     "empower": ""
   },
   {
@@ -10625,6 +10857,21 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Yielded Will",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Enchantment",
+      "Spirit",
+      "Delayed"
+    ],
+    "cost": "7 AP",
+    "range": "90 feet",
+    "duration": "Instantaneous",
+    "desc": "You grip at the spirits of all creatures within a 30 foot radius of target point within range that you can see. All creatures must make an Intuition saving throw. On a failure, you control their next turn.<br><br>A creature can willingly fail the saving throw to have advantage on all rolls it makes during that turn.<br><br>The spell requires you to be able to mentally command the targets, and ends abruptly if you are unconscious, even if there are creatures that failed the saving throw.",
+    "empower": "Reduces the AP cost to 4."
+  },
+  {
     "name": "Apex of the Arcane",
     "tier": 9,
     "tags": [
@@ -10639,6 +10886,21 @@ const SpellDatabase = [
     "desc": "This spell can be cast as a ritual over the course of eight hours.<br><br>You create a dome of scintillating colors that envelops the area around you. This area is a 120 foot radius dome centered on you, increased by up to 1 mile when cast as a ritual.<br><br>Every spell cast through or within the dome restores MP to you equal to half the MP cost of the spell, rounded up. You can choose to instead expend MP equal to the spell's MP cost to cancel the spell's effect completely.<br><br>The duration when cast normally is 1 minute. When cast as a ritual, the duration is until dispelled.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Timerift",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Abjuration",
+      "Time",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "Until dispelled ",
+    "desc": "A 20 foot radius sphere centered on target point within range that you can see is twisted and warped that any creature in the area or touching the area is shunted into a parallel timeline. While the spell lasts, they can't take any action.<br><br>Any creature that enters the area over the duration is similarly affected.<br><br>When the spell ends, all affected creatures reappear in the closest empty space to their original location and must succeed on an Intuition saving throw or be stunned until the end of their next turn.<br><br>At the start of each of your turns, you must pay 20 MP to keep concentrating on the spell. If you can't, the spell ends.",
+    "empower": ""
   },
   {
     "name": "Domain of the Ice Monarch",
@@ -10685,6 +10947,21 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Arsenal of Ages",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Conjuration",
+      "Physical",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "120 feet",
+    "duration": "Until dispelled",
+    "desc": "Roughly five feet above and behind your head, copies of every weapon known to civilization throughout the ages manifest. Now and for 3 AP on each of your turns, you can launch a volley of these weapons at high speeds in a direction. Every creature in a 15 foot wide line starting from you to target point within range must succeed on a Dexterity saving throw or take 6d10 slashing, 6d10 piercing, and 6d10 bludgeoning damage, halved on a success. Creatures can't resist this damage.<br><br>You can freely switch to any weapon you choose while concentrating on this spell by pulling a copy out from the mass of weapons. When you equip a weapon in this way, it has a +3 bonus to attack and damage rolls, and grants you one weapon style of your choice for that weapon.<br><br>At the start of each of your turns, you must pay 10 MP. If you can't, the spell ends, and any weapon created from this spell vanishes.",
+    "empower": "Barrage cost reduced to 2 AP. Barrage can be used for 1 AP when targeting a point within 10 feet."
+  },
+  {
     "name": "Sea Leak",
     "tier": 9,
     "tags": [
@@ -10699,6 +10976,51 @@ const SpellDatabase = [
     "desc": "You puncture a hole that allows the Sea of Possibility to leak through, flooding a 60 foot radius sphere centered on you. Every creature in range loses all damage resistance, immunities, absorptions, and reflects, then must make a Constitution saving throw. On a failure, they become vulnerable to poison damage, then take 5d10 poison damage as the Sea of Possibility poisons their very existence.<br><br>Creatures that start their turn inside the area must repeat the Constitution saving throw. If they have failed the saving throw, they must instead make Willpower saving throws, taking 10d6 poison damage on a failed saving throw, and half damage on a success.<br><br>Creatures regain their damage resistances, immunities, absorptions, and reflects 1 hour after leaving the area.<br><br>A creature reduced to 0 or fewer hit points while inside the spell's area of effect immediately becomes absorbed by the Sea of Possibility.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Future Perfection",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Divination",
+      "Psychic",
+      "Concentration"
+    ],
+    "cost": "0 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "You foresee a victorious future. For the duration, the first time you fail a roll during each creature's turn, instead treat it as if you had rolled a 20.",
+    "empower": ""
+  },
+  {
+    "name": "Grow Nature Guardian",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Transmutation",
+      "Plant",
+      "Summoning",
+      "Delayed"
+    ],
+    "cost": "6 AP",
+    "range": "30 feet",
+    "duration": "Until destroyed",
+    "desc": "You infuse life and intellect into a massive amount of plant matter and create a nature guardian - a towering being devoted to the protection of nature.<br><br>The nature guardian takes a shape you choose, but is always Gargantuan size, displacing everything in its tiles into the nearest adjacent empty tiles upon being summoned. It has AC 24 and 400 hit points, and uses your spellcasting stat for all of its own stats. Beasts and plants within 1 mile are permanently charmed by it.<br><br>The nature guardian takes its turn after yours. It is not under your control. If a creature it can see damages a beast or plant, or destroys terrain, it becomes enraged and targets that creature. It can use 1 AP to lash out with a vine as a weapon attack to deal 4d20 bludgeoning damage on a hit. It can use 2 AP to slam down and send a wave of greenery in a 60 foot wide, 120 foot long line that transforms the terrain into difficult terrain, which requires creatures in this range to make a Dexterity saving throw or take 6d20 bludgeoning damage and be restrained until the end of their next turn, and take half damage and not be restrained on a success. It can cast any Plant spell of tier 7 or lower that you know, ignoring MP costs. It has a movement speed of 20 feet.<br><br>You can't cast this spell again until the first nature guardian is destroyed.",
+    "empower": ""
+  },
+  {
+    "name": "Orbital Exile",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Abjuration",
+      "Wind"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "Target creature must succeed on a Strength saving throw or be propelled by winds into the atmosphere and remain there in geosynchronous orbit for the duration. The winds protect them from any harm they would take from the environment, and safely return the creature to their prior location after the spell ends.",
+    "empower": "Choose one - duration increased to 15 minutes, targets a 15 foot radius within range instead, or the winds do not protect the creature on re-entry."
   },
   {
     "name": "Return to the Feral",
@@ -10817,6 +11139,21 @@ const SpellDatabase = [
     "range": "Self (10 foot radius) ",
     "duration": "1 minute",
     "desc": "A thin, intensely acidic barrier forms around you out to 10 feet. Ranged projectiles that touch it are instantly disintegrated. Creatures that touch it immediately take 10d6 acid damage and must make a Constitution saving throw or take 10d6 additional acid damage, halved on a success. Damage dealt from this spell is deducted from creatures' maximum hit points.<br><br>You can spend 3 AP to have the field expand to 30 feet, then contract back to 10 feet.<br><br>A creature reduced to 0 hit points by this spell instantly disintegrates without a trace.",
+    "empower": ""
+  },
+  {
+    "name": "Divide",
+    "author": "CrusaderDroid",
+    "tier": 9,
+    "tags": [
+      "Abjuration",
+      "Eldritch",
+      "Delayed"
+    ],
+    "cost": "4 AP",
+    "range": "Self (90 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "Divide the current and maximum hit points of all creatures in range, including you, by two. Divide all objects in half.",
     "empower": ""
   }
 ];
