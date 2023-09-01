@@ -562,7 +562,7 @@ const SpellDatabase = [
     "cost": "1 AP",
     "range": "Self (30 foot radius)",
     "duration": "Instantaneous",
-    "desc": "Spirit-filled winds surround you, opening the spirits of all creatures you choose within range.<br>Each affected creature restores 1 hit point for each AP they spend on their next turn.",
+    "desc": "Spirit-filled winds surround you, opening the spirits of all creatures you choose within range. Each affected creature restores 2 hit points for each AP they spend on their next turn.",
     "empower": "Removes the AP cost on this spell.",
     "author": "CrusaderDroid"
   },
