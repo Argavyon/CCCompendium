@@ -1466,13 +1466,12 @@ const SpellDatabase = [
     "tier": 1,
     "tags": [
       "Abjuration",
-      "Eldritch",
-      "Sign"
+      "Eldritch"
     ],
     "cost": "3 AP",
     "range": "60 feet",
     "duration": "1 minute",
-    "desc": "You tear apart a small part of the barrier between realms, causing a brief overlap with the realm of magic in a 30 foot radius centered on target point within range. Creatures in the area that cast spells take arcane damage equal to the MP cost of the spell.<br><br>Eldritch spells cast in this area cost 1 less AP.",
+    "desc": "You tear apart a small part of the barrier between realms, causing a brief overlap with the realm of magic in a 30 foot radius centered on target point within range. Creatures in the area that cast spells take arcane damage equal to the MP cost of the spell.",
     "empower": "",
     "author": "CrusaderDroid"
   },
