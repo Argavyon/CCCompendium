@@ -1612,14 +1612,13 @@ const SpellDatabase = [
     "tier": 1,
     "tags": [
       "Evocation",
-      "Fire",
-      "Holy"
+      "Fire"
     ],
     "cost": "2 AP",
     "range": "60 feet",
     "duration": "Instantaneous",
     "desc": "Blessed fire burns an injury on a creature you can see, healing 1d6+2 hit points. This healing benefits from bonuses to fire damage. In addition, the target is cured of the poisoned condition.",
-    "empower": "Also burns away the weakest negative spell with a duration of 1 minute or less affecting the creature. On a tie, you choose.",
+    "empower": "Also grants the target advantage on saving throws until the start of your next turn.",
     "author": "CrusaderDroid"
   },
   {
