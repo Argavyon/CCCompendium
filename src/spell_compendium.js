@@ -150,6 +150,7 @@ function main() {
         Ritual: 'This spell takes too much time to cast during combat.',
         Silent: 'You do not need to speak to cast this spell.',
         Still: 'You do not need to move to cast this spell.',
+	Deprecated: 'This spell is considered for removal. Please do not select this spell during playtesting.',    
     };
     const compendiumLeft = document.querySelector('#compendium_left');
     SpellDatabase.forEach(spell => spell.tags.forEach(tag => {
