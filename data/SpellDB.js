@@ -169,8 +169,8 @@ const SpellDatabase = [
     "cost": "2 AP",
     "range": "60 feet",
     "duration": "Instantaneous",
-    "desc": "A 10 foot radius area centered on target point explodes into flames. Creatures inside must make a Dexterity saving throw or take 1d6 fire damage.<br>At the start of your next turn, a 20 foot radius area centered on the same point explodes into flames. Creatures inside must make a Dexterity saving throw or take 1d6 fire damage.",
-    "empower": "Damage increases to 2d6 on both explosions. A creature that succeeds on their saving throw takes half damage.",
+    "desc": "A 20 foot radius area centered on target point explodes into flames. Creatures inside must make a Dexterity saving throw or take 2d6 fire damage.<br>At the start of your next turn, a 20 foot radius area centered any point within the previous area explodes into flames. Creatures inside must make a Dexterity saving throw or take 2d6 fire damage.",
+    "empower": "Damage increases to 3d6 on both explosions. A creature that succeeds on their saving throw takes half damage.",
     "author": "CrusaderDroid"
   },
   {
