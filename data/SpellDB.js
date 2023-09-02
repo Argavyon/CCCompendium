@@ -612,7 +612,8 @@ const SpellDatabase = [
     "tier": 1,
     "tags": [
       "Divination",
-      "Psychic"
+      "Psychic",
+      "Delayed"
     ],
     "cost": "4 AP",
     "range": "120 feet",
