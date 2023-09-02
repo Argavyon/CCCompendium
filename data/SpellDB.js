@@ -1085,7 +1085,8 @@ const SpellDatabase = [
     "tier": 1,
     "tags": [
       "Evocation",
-      "Water"
+      "Water",
+      "Deprecated"
     ],
     "cost": "1 AP",
     "range": "Self",
