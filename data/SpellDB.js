@@ -500,7 +500,8 @@ const SpellDatabase = [
     "tier": 1,
     "tags": [
       "Divination",
-      "Holy"
+      "Holy",
+      "Deprecated"
     ],
     "cost": "1 AP",
     "range": "90 feet",
