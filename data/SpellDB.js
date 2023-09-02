@@ -1198,7 +1198,7 @@ const SpellDatabase = [
     "cost": "2 AP",
     "range": "60 feet",
     "duration": "1 minute",
-    "desc": "You create a thin film of water 15 feet long, 5 feet tall, and 1 inch thick anywhere within range that you can see. Ranged attacks that pass through the water have disadvantage, and fire attacks or spells that pass through the water deal half damage.",
+    "desc": "You create two thin films of water 15 feet long, 5 feet tall, and 1 inch thick anywhere within range that you can see. The films cannot overlap in space. Ranged attacks that pass through the water have disadvantage, and fire attacks or spells that pass through the water deal half damage.",
     "empower": "Cost reduced to 1 AP.",
     "author": "CrusaderDroid"
   },
