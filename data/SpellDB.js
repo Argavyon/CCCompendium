@@ -1731,7 +1731,6 @@ const SpellDatabase = [
     "tier": 1,
     "tags": [
       "Illusion",
-      "Summoning",
       "Unholy",
       "Concentration"
     ],
