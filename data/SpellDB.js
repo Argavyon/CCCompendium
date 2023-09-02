@@ -1117,7 +1117,8 @@ const SpellDatabase = [
       "Earth",
       "Space",
       "Concentration",
-      "Sign"
+      "Sign",
+      "Deprecated"
     ],
     "cost": "2 AP",
     "range": "60 feet",
