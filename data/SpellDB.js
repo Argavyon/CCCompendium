@@ -2978,8 +2978,7 @@ const SpellDatabase = [
     "tier": 2,
     "tags": [
       "Evocation",
-      "Plant",
-      "Physical"
+      "Plant"
     ],
     "cost": "3 AP",
     "range": "Self (30 foot cone) ",
