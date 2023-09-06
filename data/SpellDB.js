@@ -2252,7 +2252,8 @@ const SpellDatabase = [
       "Abjuration",
       "Physical",
       "Earth",
-      "Concentration"
+      "Concentration",
+      "Deprecated"
     ],
     "cost": "2 AP",
     "range": "Self",
