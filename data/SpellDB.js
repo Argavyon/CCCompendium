@@ -2618,6 +2618,21 @@ const SpellDatabase = [
     "empower": "Range increases to Self (10 foot radius)."
   },
   {
+    "name": "Downpour",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Conjuration",
+      "Water",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "90 feet",
+    "duration": "1 minute",
+    "desc": "Heavy rain falls in a 20 foot square, adding one foot of water to the area. The rain counts as difficult terrain, and any location with more than one foot of water inside is difficult terrain for creatures without a swim speed.<br><br>At the start of each of your turns, you can choose to move the rain to a new location. After you choose to move it or not, another foot of water builds up on the area.<br><br>Water from this spell is not magical and remains after the spell ends. It is not potable, and does not necessarily remain in the area it fell in, spreading out to adjacent areas as normal water would.",
+    "empower": "Choose one - area increased to 30 foot square, or three feet of water pour out each turn."
+  },
+  {
     "name": "Etched Unveiling",
     "author": "CrusaderDroid",
     "tier": 2,
@@ -2958,6 +2973,20 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Greymane's Stonefists",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Transmutation",
+      "Earth"
+    ],
+    "cost": "2 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "You transform your fists into large stone hands. If your species does not have hands, you instead create two floating stone hands near your front limbs. They are too inflexible to use to wield weapons. Each fist does 2d10 damage on a hit, and uses either your Strength or spellcasting stat to determine their attack and damage bonuses. Your fists do 20 damage to objects made of stone or ice.<br><br>The fists grant you increased power to carry and destroy objects. You can punch a space to transform it into difficult terrain, or clear out difficult terrain with one strike, for 1 AP. Your carrying capacity is tripled so long as you can hold the objects with your fists. Grappled creatures have disadvantage on rolls to break free of the grapple.",
+    "empower": "Duration becomes one hour."
+  },
+  {
     "name": "Bloom Snapdragon",
     "author": "Zombehking",
     "tier": 2,
@@ -3098,6 +3127,20 @@ const SpellDatabase = [
     "desc": "Target object or willing creature cannot be taken from you while you are holding them or in possession of them.<br><br>The spell ends if the target is no longer touching you.",
     "empower": "Affects any number of targets within Touch range.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Wave Blade",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Evocation",
+      "Water"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "You create a horizontal blade of water that spans a 10 foot wide line across the ground, and launch it forward from you to target point within range. Creatures in the blade's path must succeed on a Dexterity saving throw or take 2d6 slashing damage, halved on a success. At the start of each of your successive turns, you can command the blade to move to a new location within 60 feet of you, slashing all creatures in the way. The blade can't travel vertically and must follow the surface of the ground.<br><br>If cast in water or while in a surface with water up to one foot in height, the blade doubles in size.",
+    "empower": "Choose one - damage increased to 3d6, or blade width increases by 5 feet, or the blade can move vertically."
   },
   {
     "name": "Acidify",
@@ -3261,6 +3304,20 @@ const SpellDatabase = [
     "desc": "A powerful aura envelops one of your currently equipped melee weapons. The first time you hit a creature with that weapon during your turns, the aura lashes out at all creatures adjacent to your target other than you, dealing bludgeoning damage equal to half the damage taken by the main target.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Sledrock",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Transmutation",
+      "Earth"
+    ],
+    "cost": "2 AP",
+    "range": "Self (300 foot line)",
+    "duration": "Instantaneous",
+    "desc": "You tear out a 3 foot long rock from the ground underneath you and propel it forward while you are still on the rock. It moves 60 feet in a target horizontal direction, and continues moving 60 feet at the start of each of your turns until it has moved 300 feet. You can jump off at any time, and the rock will continue traveling by itself.<br><br>If the rock hits a creature or object in the way, the obstacle must make a Dexterity saving throw or take 4d10 bludgeoning damage and be knocked prone. The rock then continues through their space. On a successful saving throw, the obstacle takes half damage and is knocked back 5 feet, and the rock is destroyed.",
+    "empower": "Choose one - movement speed increased to 90 feet and range increased to 450 feet, or you can direct the rock in a vertical direction, or you can change the rock's direction once during the spell."
   },
   {
     "name": "Oracle Eyes",
@@ -3992,6 +4049,20 @@ const SpellDatabase = [
     "desc": "You create a small planar realm in your current space that attempts to suck in all creatures within range. Unwilling creatures must succeed on a Willpower saving throw or be drawn into the realm.<br><br>The realm has an exit and entry in both planes in the same space where you cast the spell. All creatures inside the realm are contained within the entrance on the outside. The realm on the inside looks exactly like the plane outside, save that it ends in solid force at the border of the spell. Creatures that were taken inside maintain their relative position.<br><br>When the spell ends, all creatures return to their relative position outside of the realm. If it is occupied, they return to the closest empty space.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Terrain Blast",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Evocation",
+      "Earth"
+    ],
+    "cost": "1 AP",
+    "range": "120 feet",
+    "duration": "Instantaneous",
+    "desc": "A 15 foot radius circle centered on target point within range violently churns. Any creatures on difficult terrain within this area take 2d6 bludgeoning damage.",
+    "empower": ""
   },
   {
     "name": "Spell Vector",
