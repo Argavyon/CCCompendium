@@ -3341,15 +3341,14 @@ const SpellDatabase = [
     "name": "Silver Screen",
     "tier": 2,
     "tags": [
-      "Transmutation",
-      "Physical",
+      "Divination",
       "Earth",
       "Radiant"
     ],
     "cost": "2 AP",
     "range": "Touch ",
     "duration": "1 hour",
-    "desc": "You touch a surface and transform up to a 10 foot square on that surface into a brilliant silver substance. Choose one of the following effects: <br>>The surface becomes perfectly reflective. Light and projectiles bounce off it harmlessly, reflected away at an angle.<br>>The surface becomes transparent, enabling vision past up to 5 feet of solid matter through the surface.",
+    "desc": "You touch a surface and transform up to a 10 foot square on that surface, split into how many parts you choose, into a brilliant silver substance. The surface allows vision through the material to the other side, but does not allow creatures on the other side to see you through the same surface.",
     "empower": "",
     "author": "CrusaderDroid"
   },
