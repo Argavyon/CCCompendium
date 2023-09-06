@@ -3757,7 +3757,6 @@ const SpellDatabase = [
     "tier": 2,
     "tags": [
       "Conjuration",
-      "Physical",
       "Shadow",
       "Silent"
     ],
