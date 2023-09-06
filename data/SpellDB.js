@@ -3252,7 +3252,8 @@ const SpellDatabase = [
     "tags": [
       "Transmutation",
       "Physical",
-      "Concentration"
+      "Concentration",
+      "Deprecated"
     ],
     "cost": "1 AP",
     "range": "Self",
