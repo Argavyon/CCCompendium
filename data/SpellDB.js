@@ -2400,7 +2400,6 @@ const SpellDatabase = [
     "tags": [
       "Evocation",
       "Fire",
-      "Summoning",
       "Plant"
     ],
     "cost": "2 AP",
