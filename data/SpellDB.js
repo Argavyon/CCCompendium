@@ -2843,9 +2843,7 @@ const SpellDatabase = [
     "tier": 2,
     "tags": [
       "Evocation",
-      "Beast",
-      "Fire",
-      "Radiant"
+      "Fire"
     ],
     "cost": "3 AP",
     "range": "Self (30 foot radius) ",
