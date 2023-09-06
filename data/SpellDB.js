@@ -2383,14 +2383,13 @@ const SpellDatabase = [
     "tier": 2,
     "tags": [
       "Abjuration",
-      "Physical",
       "Beast",
       "Spirit"
     ],
-    "cost": "2 AP",
+    "cost": "0 AP",
     "range": "Self (30 foot radius) ",
     "duration": "Instantaneous",
-    "desc": "The spirit of the bear fills you with protective wrath. You can't be affected by effects that would reduce your AP until the start of your next turn, and you are immune to conditions and spells that would prevent you from acting.<br><br>When a creature friendly to you within range takes damage before the start of your next turn, you gain 1 AP until the end of your next turn, to a maximum of 3 AP. You can only spend this AP on weapon attacks or Physical spells.",
+    "desc": "The spirit of the bear fills you with protective wrath. You can't be affected by effects that would reduce your AP until the start of your next turn, and you are immune to conditions and spells that would prevent you from acting.<br><br>When a creature friendly to you within range takes damage before the start of your next turn, you gain 1 AP until the end of your next turn, to a maximum of 3 AP. You can only spend this AP on weapon attacks or Beast spells.",
     "empower": "AP can stack up to 6 AP.",
     "author": "CrusaderDroid"
   },
