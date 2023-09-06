@@ -3882,7 +3882,8 @@ const SpellDatabase = [
     "tags": [
       "Divination",
       "Earth",
-      "Physical"
+      "Physical",
+      "Deprecated"
     ],
     "cost": "1 AP",
     "range": "Self",
