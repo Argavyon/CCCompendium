@@ -3167,7 +3167,8 @@ const SpellDatabase = [
     "tags": [
       "Evocation",
       "Fire",
-      "Holy"
+      "Holy",
+      "Deprecated"
     ],
     "cost": "2 AP",
     "range": "60 feet",
