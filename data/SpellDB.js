@@ -3166,8 +3166,7 @@ const SpellDatabase = [
     "tier": 2,
     "tags": [
       "Enchantment",
-      "Arcane",
-      "Psychic"
+      "Arcane"
     ],
     "cost": "1 AP",
     "range": "Touch",
