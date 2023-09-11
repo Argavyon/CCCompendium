@@ -2277,6 +2277,20 @@ const SpellDatabase = [
     "empower": "The illusory warriors instead increase damage by 1d10."
   },
   {
+    "name": "Stardust Field",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Conjuration",
+      "Space"
+    ],
+    "cost": "2 AP",
+    "range": "120 feet",
+    "duration": "15 minutes",
+    "desc": "You pull a small section of a nebula into a 30 foot radius sphere. It is gorgeous, yet incredibly thick, preventing vision through it and blinding creatures inside of it. It remains for the duration, and is too heavy to blow away with Wind spells.<br><br>Creatures that are not engaged in combat that see the nebula are enamored by it. Creatures without hit dice are compelled to admire it until it ends or they are damaged. Creatures with hit dice must succeed on an Intuition saving throw to avoid doing nothing except admiring it until they take damage or it ends or another creature spends 1 AP to shake them. A creature that made this saving throw can repeat it once per minute to end its enthralling effect on itself.",
+    "empower": "Radius increased to 50 feet. Disables blindsight and other senses inside and through the nebula."
+  },
+  {
     "name": "Disable Sensation",
     "author": "CrusaderDroid",
     "tier": 2,
@@ -2471,6 +2485,20 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Steal Senses",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Enchantment",
+      "Poison"
+    ],
+    "cost": "2 AP",
+    "range": "Self (15 foot cone) ",
+    "duration": "Instantaneous",
+    "desc": "You blow poisonous gas in a 15 foot cone. Creatures inside must make a Constitution saving throw or be blinded and deafened until the end of your next turn, and lose any magical forms of detection. On a success, they are instead blinded and deafened until the start of their next turn, but any magical detection remains.",
+    "empower": ""
+  },
+  {
     "name": "Uri's Little Helper",
     "author": "Uri de Vries",
     "tier": 2,
@@ -2606,6 +2634,20 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Black Breath",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Necromancy",
+      "Disease"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute ",
+    "desc": "Target creature's lungs are filled with blackened, sickening air. They must make a Constitution saving throw, taking 3d10 poison damage on a failure. On a success, they take half damage and cough out all of the air, ending the spell.<br><br>A creature that fails the saving throw coughs and hacks during each of their turns, forcing creatures within 5 feet to make a Constitution saving throw or be affected by the spell for its remaining duration. They can spend up to 3 AP to focus on coughing out the black air and repeat the saving throw at the end of their turn, ending the effect on a success. A creature that spends less than 3 AP takes 1d10 poison damage at the end of their turn per AP not spent on the spell.",
+    "empower": "Damage increases to 4d10 and maximum AP that can be spent coughing increases to 4. Spreads to creatures within 10 feet."
+  },
+  {
     "name": "Caustic Burst",
     "author": "CrusaderDroid",
     "tier": 2,
@@ -2648,6 +2690,20 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "Over the span of one minute, you brush your hand across a surface or object, leaving trace amounts of acid that work their way into the object. After one minute, the acid will have etched the name of all creatures that have touched the object or surface within the past 24 hours.<br><br>If the amount of names exceeds the amount of space on the target, only a blot of acid damage will be shown.",
     "empower": ""
+  },
+  {
+    "name": "Mind to Blades",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Divination",
+      "Psychic"
+    ],
+    "cost": "2 AP",
+    "range": "Sight",
+    "duration": "Instantaneous",
+    "desc": "You must be concentrating on a spell to cast this spell. You end your concentration and transform it into mental blades that directly assault a creature's mind. It must make a Knowledge saving throw or take 6d6 psychic damage, halved on a success. If this damage reduces the creature to 0 or fewer hit points, you refund half the MP of the spell you were concentrating on.",
+    "empower": "Can target two additional creatures."
   },
   {
     "name": "Sorcerous Skinweave",
@@ -2724,6 +2780,22 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Pride's Fall",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Conjuration",
+      "Poison",
+      "Silent",
+      "Still"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "8 hours",
+    "desc": "You conjure and fling a transparent, barely-visible dart of poison at the target creature. It must make a Dexterity saving throw or be struck by the dart. A creature that can't see you or the dart automatically fails the saving throw.<br><br>Once it hits the creature, the dart's poison subtly leaks through. At any time as a response to the creature taking any action, you can spend 1 AP to trigger the poison. The creature takes 2d10 poison damage per AP spent on the triggering action and must make a Constitution saving throw. On a failure, it becomes poisoned until the end of its next turn and has its action canceled.",
+    "empower": "Reduces the AP cost by 1."
+  },
+  {
     "name": "Wildfire",
     "tier": 2,
     "tags": [
@@ -2767,6 +2839,22 @@ const SpellDatabase = [
     "duration": "1 minute ",
     "desc": "You transform a 10 foot square, increased by 5 feet per cast tier, into a pool of acid 5 feet deep. Non-magical objects completely contained in the area sink into the acid and are destroyed. The pool is difficult terrain and deals 3d4 acid damage per 5 feet moved within.",
     "empower": ""
+  },
+  {
+    "name": "Plague of Sorrows",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Enchantment",
+      "Disease",
+      "Psychic",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "Target creature must succeed on an Intuition saving throw or be struck with overwhelming sadness. They are blinded as they cannot stop crying. When a creature within 60 feet is reduced to 0 hit points, they wail uncontrollably, forcing creatures within 20 feet to make an Intuition saving throw or be affected by this spell for the duration.<br><br>An affected creature can repeat the saving throw at the end of each of their turns, ending the effect on them on a success.<br><br>You are unaffected by your own spell and can designate any number of creatures when casting the spell to be unaffected.",
+    "empower": "When a creature wails, all creatures in range take 1d6 psychic damage per wail if they fail the saving throw. The original target must spend 2 AP to attempt the saving throw."
   },
   {
     "name": "Penumbral Chains",
@@ -2897,6 +2985,20 @@ const SpellDatabase = [
     "desc": "You inscribe a magic circle in a 10 foot radius centered on target point. Non-summoned creatures can make a Willpower saving throw to attempt to exit the circle, ending the spell on a success. Unwilling creatures can make a Dexterity saving throw when this spell is cast to avoid being trapped inside the circle, moving to the nearest empty space on a success.<br><br>The circle prevents creatures from leaving. Summoned and reanimated creatures cannot target anything outside the circle with any effect or attack while inside. You can cast spells inside the circle, where they only affect anything inside the circle even if their range would exceed the area of the circle.<br><br>The spell ends if you enter the circle or cast this spell again.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Aura of Clarity",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Enchantment",
+      "Psychic"
+    ],
+    "cost": "1 AP",
+    "range": "Self (60 foot radius) ",
+    "duration": "1 minute",
+    "desc": "You project an aura that calms creatures you choose within range, helping them focus on magical endeavors. They can take the Focus action for 0 AP. Mage weapons used by affected creatures deal additional damage equal to your proficiency modifier.<br><br>You are not affected by this spell.",
+    "empower": ""
   },
   {
     "name": "Rasping Call of the Undead King",
@@ -3204,6 +3306,20 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Viper's Fangs",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Transmutation",
+      "Poison"
+    ],
+    "cost": "1 AP",
+    "range": "Self (30 foot radius)",
+    "duration": "1 minute",
+    "desc": "Any number of creatures you choose have their weapons coated in a quick-acting poison. Their next successful weapon attack while the spell lasts deals an additional 1d6 poison damage on hit, increased to 2d6 against creatures that are poisoned. A creature that ingests the poison from their own weapon takes 50 poison damage instead, ending the spell for them immediately.",
+    "empower": ""
+  },
+  {
     "name": "Fire Cross",
     "tier": 2,
     "tags": [
@@ -3247,6 +3363,20 @@ const SpellDatabase = [
     "duration": "Instant",
     "desc": "You create a grand illusion of an ancient dragon for an instant, and it looses a mighty roar that rattles the minds of those who hear it. All targets in range must make an Intuition saving throw. On a failure, on their next turn they are frightened.",
     "empower": "All targets also take 2d6 psychic damage, halved on a successful save."
+  },
+  {
+    "name": "Photon Barrage",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Evocation",
+      "Radiant"
+    ],
+    "cost": "X AP",
+    "range": "120 feet",
+    "duration": "Instantaneous",
+    "desc": "For every AP spent on this spell, you fire one beam of light at a target creature within range you can see. A creature targeted by at least one beam must succeed on a Dexterity saving throw or take 1d10 radiant damage per beam, halved on a success.",
+    "empower": "Each beam additionally deals bonus damage equal to your spellcasting stat."
   },
   {
     "name": "Crippling Ray",
@@ -3304,6 +3434,37 @@ const SpellDatabase = [
     "desc": "A powerful aura envelops one of your currently equipped melee weapons. The first time you hit a creature with that weapon during your turns, the aura lashes out at all creatures adjacent to your target other than you, dealing bludgeoning damage equal to half the damage taken by the main target.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Sinister Siphon",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Necromancy",
+      "Poison",
+      "Unholy",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet ",
+    "duration": "1 minute",
+    "desc": "You channel a beam of poisonous magic that attacks a target creature within range and stays focused on them. The creature must make a Constitution saving throw now and at the start of each of your turns. On a failure, they take 2d10 poison damage and become poisoned until the start of your next turn, and you are healed for half of the damage done. On a success, they take half damage and are not poisoned, and you do not receive healing.<br><br>You can't take the Attack action while concentrating on this spell. Other creatures or objects that move between you and the target block the beam, causing it to do no damage and have no effect if the beam is obstructed at the start of your turn.",
+    "empower": "Choose one - damage increased to 3d10 and becomes unholy, or healing additionally adds your spellcasting stat to the healing received, or the beam ignores obstructions."
+  },
+  {
+    "name": "Detox",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Abjuration",
+      "Poison",
+      "Potent"
+    ],
+    "cost": "2 AP",
+    "range": "Touch",
+    "duration": "1 hour",
+    "desc": "Removes the poisoned condition and any poison effects, and dispels Poison spells of equal or lower tier than this spell on the target creature you touch. For the duration, the creature has advantage on all saving throws against poison effects and Poison spells, and has resistance to poison damage.",
+    "empower": "AP cost reduced by 1 and range increased to 60 feet."
   },
   {
     "name": "Sledrock",
@@ -3574,6 +3735,22 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Unseen Agent",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Transmutation",
+      "Shadow",
+      "Silent",
+      "Still"
+    ],
+    "cost": "2 AP",
+    "range": "Self",
+    "duration": "1 hour",
+    "desc": "Your shadow separates from yourself. It inherits your movement speed and can move at any time during your turn. You can see and hear through the shadow as if you were in its location.<br><br>Radiant spells that deal damage that strike the shadow immediately end the spell, and you take 4d6 radiant damage that cannot be reduced or negated.<br><br>While this spell is active, an attentive creature can notice you are not currently casting a shadow.",
+    "empower": "The shadow has doubled movement speed."
+  },
+  {
     "name": "Bloodwrack",
     "author": "CrusaderDroid",
     "tier": 2,
@@ -3720,6 +3897,20 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Chemical Coating",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Conjuration",
+      "Acid"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "You fire multiple small globs of acid at a target creature within range that you can see. It must make a Dexterity saving throw or take 3d6 acid damage and be coated in acid. A successful saving throw deals half damage and does not coat the creature in acid.<br><br>Coated creatures take 1d6 acid damage at the start of each of their turns for the duration of the spell. Each time they take acid damage from a source other than this spell, the damage increases by 1d6 for the duration of the spell, to a maximum of 4d6. A coated creature can use 2 AP during their turn to make a Dexterity saving throw, ending the effect on a success.",
+    "empower": "Choose one - initial damage per turn increased to 2d6, or maximum damage increased to 7d6, or you can target two creatures."
+  },
+  {
     "name": "Vital Surge",
     "author": "CrusaderDroid",
     "tier": 2,
@@ -3733,6 +3924,21 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "Target creature is surged with life magic. They are cured of the blinded, deafened, paralyzed, poisoned, and stunned conditions, and any diseases they are suffering from are removed. Dispels Poison and Disease tag spells from the target of equal or lesser tier than the tier this spell is cast at.",
     "empower": "The target also restores the use of one spent hit die and heals 2d8 hit points."
+  },
+  {
+    "name": "Lock Movement",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Enchantment",
+      "Psychic",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "90 feet",
+    "duration": "1 minute ",
+    "desc": "Within a 20 foot radius centered on a target point within range, creatures you choose must succeed on an Intuition saving throw or have their movement bound by you. They cannot move unless they move exactly 15 feet in one direction at a time. If they have insufficient movement speed remaining, they can't move.",
+    "empower": ""
   },
   {
     "name": "Hailstrom",
@@ -3988,6 +4194,36 @@ const SpellDatabase = [
     "desc": "A target creature or object you touch becomes incredibly solid. They can't be moved by any outside force, and gain resistance to physical damage. Objects also become immune to other spells. Creatures have their AP reduced to 1 for the duration. Unwilling creatures can make a Constitution saving throw to avoid the effect, and can repeat it at the end of each of their turns to end the effect early.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Clutch of Madness",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Enchantment",
+      "Eldritch",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet ",
+    "duration": "1 minute",
+    "desc": "An invisible hand grips all creatures in a 10 foot cube centered on target point within range that you can see. Creatures in the area must make a Dexterity saving throw or take 2d6 bludgeoning damage and be restrained until the start of your next turn.<br><br>At the start of your next turn, any creature damaged must then make an Intuition saving throw. On a failure, madness seeps into their minds as the hand releases them. For the duration of the spell, they must do nothing except attack the nearest creature, moving as necessary.<br><br>Creatures that have gone mad can repeat the saving throw at the end of each of their turns. On a success, the effect ends for them.",
+    "empower": "Choose one - damage increased to 4d6, or area increased to 15 foot square, or you can move restrained creatures up to 15 feet at the start of your next turn."
+  },
+  {
+    "name": "Zeno's Division",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Abjuration",
+      "Space",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "Self (60 foot radius) ",
+    "duration": "1 minute",
+    "desc": "Any number of creatures you choose within range must succeed on an Intuition saving throw or be affected by this spell, as you warp space to prevent their escape. Whenever they would move away from you, they must use 2 feet of movement for every 1 foot moved.<br><br>Against affected targets, you can move 2 feet closer per 1 foot moved when you move towards them, and you treat them as if they were half as far away from you for the purposes of attacks and spells targeting them.",
+    "empower": "Reduces the AP cost to 1."
   },
   {
     "name": "Dartskin",
