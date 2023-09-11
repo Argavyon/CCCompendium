@@ -3549,7 +3549,6 @@ const SpellDatabase = [
     "tags": [
       "Illusion",
       "Radiant",
-      "Shadow",
       "Concentration",
       "Silent"
     ],
