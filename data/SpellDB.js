@@ -2433,8 +2433,7 @@ const SpellDatabase = [
     "tags": [
       "Abjuration",
       "Plant",
-      "Fey",
-      "Space"
+      "Fey"
     ],
     "cost": "3 AP",
     "range": "10 feet",
