@@ -3241,8 +3241,7 @@ const SpellDatabase = [
     "tier": 2,
     "tags": [
       "Illusion",
-      "Draconic",
-      "Psychic"
+      "Draconic"
     ],
     "cost": "2 AP",
     "range": "30 foot radius",
