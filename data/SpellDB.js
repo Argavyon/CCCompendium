@@ -3699,8 +3699,7 @@ const SpellDatabase = [
     "tags": [
       "Evocation",
       "Acid",
-      "Arcane",
-      "Poison"
+      "Arcane"
     ],
     "cost": "2 AP",
     "range": "Self (15 foot cone)",
