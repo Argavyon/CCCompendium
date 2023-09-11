@@ -2583,7 +2583,8 @@ const SpellDatabase = [
       "Enchantment",
       "Disease",
       "Beast",
-      "Psychic"
+      "Psychic",
+      "Deprecated"
     ],
     "cost": "3 AP",
     "range": "60 feet ",
