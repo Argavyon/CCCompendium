@@ -2975,7 +2975,7 @@ const SpellDatabase = [
   },
   {
     "name": "Greymane's Stonefists",
-    "author": "CrusaderDroid",
+    "author": "Argavyon",
     "tier": 2,
     "tags": [
       "Transmutation",
