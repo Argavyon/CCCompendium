@@ -2721,7 +2721,7 @@ const SpellDatabase = [
     "cost": "1 AP",
     "range": "60 feet",
     "duration": "Instantaneous",
-    "desc": "A target creature has their thoughts disrupted. On that creature's next turn, they cannot take any action that they took in their previous turn.",
+    "desc": "A target creature must make a Knowledge saving throw or have their thoughts disrupted on a failure. On that creature's next turn, they cannot take any action that they took in their previous turn.",
     "empower": ""
   },
   {
