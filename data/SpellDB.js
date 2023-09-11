@@ -2418,7 +2418,8 @@ const SpellDatabase = [
       "Psychic",
       "Shadow",
       "Concentration",
-      "Silent"
+      "Silent",
+      "Deprecated"
     ],
     "cost": "1 AP",
     "range": "60 feet",
