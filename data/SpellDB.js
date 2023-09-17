@@ -4305,7 +4305,8 @@ const SpellDatabase = [
       "Radiant",
       "Eldritch",
       "Potent",
-      "Sign"
+      "Sign",
+      "Deprecated"
     ],
     "cost": "3 AP",
     "range": "60 feet",
