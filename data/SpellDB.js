@@ -4365,7 +4365,6 @@ const SpellDatabase = [
       "Necromancy",
       "Summoning",
       "Plant",
-      "Physical",
       "Concentration"
     ],
     "cost": "3 AP",
