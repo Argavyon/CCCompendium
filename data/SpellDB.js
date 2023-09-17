@@ -4560,7 +4560,8 @@ const SpellDatabase = [
       "Conjuration",
       "Arcane",
       "Poison",
-      "Concentration"
+      "Concentration",
+      "Deprecated"
     ],
     "cost": "3 AP",
     "range": "90 feet",
