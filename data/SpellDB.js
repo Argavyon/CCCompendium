@@ -5246,7 +5246,7 @@ const SpellDatabase = [
       "Abjuration",
       "Poison"
     ],
-    "cost": "2 AP",
+    "cost": "1 AP",
     "range": "Self",
     "duration": "Instantaneous",
     "desc": "As a response to being targeted by an attack or spell, you shield yourself with a barrier of sharp, poisonous quills. You have advantage on all saving throws and add your spellcasting stat to your AC until the start of your next turn. This can cause incoming attacks to miss.<br><br>If a creature was attempting to attack you in melee and missed, they must make a Constitution saving throw. On a failure, they take 6d4 poison damage and become poisoned for 1 minute. On a success, they take half damage and are not poisoned. They can repeat the saving throw at the end of each of their turns to end the poisoned effect early.",
