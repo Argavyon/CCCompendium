@@ -4651,7 +4651,8 @@ const SpellDatabase = [
       "Wind",
       "Water",
       "Space",
-      "Sign"
+      "Sign",
+      "Deprecated"
     ],
     "cost": "2 AP",
     "range": "60 feet",
