@@ -5391,7 +5391,8 @@ const SpellDatabase = [
     "tags": [
       "Transmutation",
       "Holy",
-      "Poison"
+      "Poison",
+      "Deprecated"
     ],
     "cost": "3 AP",
     "range": "Self (60 foot radius) ",
