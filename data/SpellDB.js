@@ -4482,12 +4482,14 @@ const SpellDatabase = [
     "tier": 3,
     "tags": [
       "Enchantment",
-      "Poison"
+      "Poison",
+      "Ritual",
+      "Silent"
     ],
-    "cost": "3 AP",
+    "cost": "N/A AP",
     "range": "Self",
     "duration": "1 year",
-    "desc": "Target creature must succeed on an Intuition saving throw. On a failure, they become locked in a game of wits against you, as you create two glasses of wine. At least one glass of wine must be poisoned - a creature that drinks the poisoned wine takes 12d6 poison damage and must make a Constitution saving throw or fall unconscious for 1 hour.<br><br>The creature chooses which wine glass to drink from before both you and the creature drink at the same time. You cannot force the creature to choose, but it cannot leave without choosing before the spell ends. Once the creature drinks, you are compelled to drink as well.<br><br>The spell ends immediately if the creature takes damage from any other source other than this spell, or you are reduced to 0 or fewer hit points.<br><br>If you are clearly immune to poison damage, such as if you are undead or a construct, the creature automatically passes its Intuition saving throw.",
+    "desc": "Target creature must succeed on an Intuition saving throw after being engaged in one minute of conversation with you while you cast this spell. On a failure, they become locked in a game of wits against you, as you create two glasses of wine. At least one glass of wine must be poisoned - a creature that drinks the poisoned wine takes 12d6 poison damage and must make a Constitution saving throw or fall unconscious for 1 hour.<br><br>The creature chooses which wine glass to drink from before both you and the creature drink at the same time. You cannot force the creature to choose, but it cannot leave without choosing before the spell ends. Once the creature drinks, you are compelled to drink as well.<br><br>The spell ends immediately if the creature takes damage from any other source other than this spell, or you are reduced to 0 or fewer hit points.<br><br>If you are clearly immune to poison damage, such as if you are undead or a construct, the creature automatically passes its Intuition saving throw.",
     "empower": "Instead of the normal effect, a creature that drinks the poisoned wine is immediately affected by any one of your Poison tag spells.",
     "author": "CrusaderDroid"
   },
