@@ -4420,6 +4420,20 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Snapfrost",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Cold"
+    ],
+    "cost": "1-3 AP",
+    "range": "60 feet ",
+    "duration": "Instantaneous",
+    "desc": "For every AP spent on this spell, a 10 foot radius sphere centered on a point within range suddenly and abruptly freezes. Creatures in the area must succeed on a Constitution saving throw or take 6d4 cold damage and have their movement speed reduced by half on their next turn. A successful saving throw deals half damage and does not reduce movement speed. A creature can only take damage once from this spell, no matter how many spheres they are within.<br><br>The freeze also freezes all water in the area. Creatures standing in water in the area are restrained. They can spend 1 AP to make a Strength saving throw to break free if only their feet are caught, or 2 AP if they are frozen over more of their body. On a success, they break free.",
+    "empower": "Choose one - create two more spheres, or damage increased to 10d4, or movement speed reduced to 5 feet on a failed saving throw."
+  },
+  {
     "name": "The Devourer",
     "tier": 3,
     "tags": [
@@ -4644,6 +4658,21 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Establish Domain",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Abjuration",
+      "Arcane",
+      "Delayed"
+    ],
+    "cost": "5 AP",
+    "range": "Self (60 foot radius) ",
+    "duration": "Until dispelled",
+    "desc": "You assert your magical authority over a 60 foot sphere. When anyone casts a spell in this area, you can do one of the following: <br><br>>You can empower the spell by paying MP equal to its cost.<br>>You can add one target of your choice to a spell that targets a number of creatures. The target must be in range of the original caster.<br>>You can copy a spell with a range of Self to yourself. If it is a Concentration spell, it ends when the original caster loses concentration.<br>>You can spend MP equal to the cost of the spell to cast it yourself for 1 AP. You choose new targets as necessary. You can activate this only once between each of your turns.<br>>You can gain MP equal to the tier of the spell being cast.<br><br>Your domain lasts until it is dispelled, you are reduced to 0 hit points or banished from the current plane, or until another creature casts this spell overlapping your domain. Casting this spell again dispels your prior domain.",
+    "empower": ""
+  },
+  {
     "name": "False Firmament",
     "author": "Levi",
     "tier": 3,
@@ -4695,6 +4724,20 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Arcanist's Smite",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Arcane"
+    ],
+    "cost": "1-3 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Concentrated arcane magic forms a thin beam that you blast at one target creature within range that you can see, triggering an explosion. The primary target must succeed on a Dexterity saving throw or take 3d6 arcane damage, plus 1d6 arcane damage per AP spent on this spell, and be knocked backwards 5 feet per AP spent and fall prone. A successful saving throw inflicts half damage and does not knock the target backwards.<br><br>Creatures within a radius of 5 feet of the target per AP spent on the spell must succeed on a Dexterity saving throw or take 3d6 arcane damage and be knocked back 5 feet away from the target. A successful saving throw deals half damage and does not knock the target backwards.<br><br>AP spent on Arcane spells by you this turn can be counted towards AP spent on this spell.",
+    "empower": "There is no upper limit on how much AP can be spent on this spell. You can use AP from other creatures' Arcane spells cast between each of your turns."
+  },
+  {
     "name": "Summon Harphest",
     "tier": 3,
     "tags": [
@@ -4708,6 +4751,20 @@ const SpellDatabase = [
     "desc": "You summon a Harphest - an intangible yet physical voice from the Sea of Possibility. It speaks honeyed madness into the ears of creatures within range. Now and at the start of each of your turns, up to three random creatures within range must make an Intuition saving throw. On a failure, on their next turn, they roll 1d20 to determine their action:<br>- On a roll of 1 to 5, the creature falls prone, screaming. Their turn ends.<br>- On a roll of 6 to 15, overlaying voices and visions distract the creature. They flail about, making one weapon attack on a random adjacent creature if possible. Their turn ends.<br>- On a roll of 16 to 20, the creature becomes frightened and loses 1 AP, but can act normally.<br><br>You cannot end this spell normally. You must make a DC 15 check with your spellcasting stat during your turn to end the spell. You have advantage on the check if you cast Containment Field during your turn.",
     "empower": "You can choose one target creature each turn.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Beast Roar",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Enchantment",
+      "Beast"
+    ],
+    "cost": "2 AP",
+    "range": "Self (60 foot radius) ",
+    "duration": "1 minute",
+    "desc": "You loose a powerful roar that fills you and beasts you choose with primal power. You add your spellcasting stat to the damage done with weapons and Beast spells for everyone affected.<br><br>Beasts you choose that are not under your control and in range must succeed on an Intuition saving throw or become frightened of you and all affected beasts for the duration. They can repeat the saving throw at the end of each of their turns where they can no longer see you or an affected beast, or when they take damage, to end the effect on a success.",
+    "empower": "Also adds bonus damage to a number of non-Beast creatures equal to your proficiency modifier. Frightened beasts have their movement speed reduced to 0."
   },
   {
     "name": "Distant Pillar",
@@ -4737,6 +4794,21 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "Select two 20-foot cubes in range. These areas must be entirely within the cast range of this spell, cannot overlap, and must touch each other at at least one point, edge, or side. Heat energy is magically sucked out of one area and forcibly injected into the other area.<br><br>In the cold area, all creatures inside must make a Constitution saving throw, taking 4d8 cold damage on failed save or half as much on a success. All exposed water immediately freezes and fires are put out as temperatures drastically drop.<br><br>In the hot area, all creatures inside must make a Constitution saving throw, taking 4d8 fire damage on failed save or half as much on a success. All exposed water immediately vaporizes and most dry flammable materials spontaneously ignite as temperatures sharply rise.<br><br>If the caster has the fire tag, you may now change the size of the hot area to a 15-foot cube or 25-foot cube, and creatures inside take 5d8 damage instead.<br><br>If the caster has the cold tag, you may now change the size of the cold area to a 15-foot cube or 25-foot cube, and creatures inside take 5d8 damage instead.",
     "empower": "The maximum cast range is increased to 120 feet, and the areas no longer need to touch each other."
+  },
+  {
+    "name": "Sunspot",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Radiant",
+      "Delayed"
+    ],
+    "cost": "6 AP",
+    "range": "300 feet",
+    "duration": "Instantaneous",
+    "desc": "As you begin casting this spell, mark a 20 foot radius area on the ground centered on target point within range you can see. Now and at the start of each of your turns, intense light bombards the area, and every creature inside must make a Constitution saving throw or take 2d12 radiant damage, halved on a success.<br><br>At the end of each turn where you spend at least 1 AP casting the spell, you can choose to move the area by up to 10 feet. The area then increases its radius by 10 feet.<br><br>When you finish casting this spell, the area erupts into searing sunlight. Creatures in the area are blinded until the end of your next turn and must succeed on a Constitution saving throw or take 8d12 radiant damage, halved on a success. Undead creatures instead take 12d12 radiant damage.",
+    "empower": "Choose one - damage is increased to 12d12 and 18d12 to undead on eruption, or damage dealt per turn increased to 3d12, or initial radius increased to 30 feet."
   },
   {
     "name": "Vexatious Pilgrimage",
@@ -4771,6 +4843,21 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Hearkening Thunder",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Transmutation",
+      "Lightning",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "You overcharge yourself with lightning magic. Lightning spells without the Delayed tag cost 0 AP but double MP for the duration.<br><br>At the start of each of your turns, you must pay 10 MP if you wish to keep concentrating on this spell. If you can't or don't want to pay the MP, the spell ends.",
+    "empower": ""
+  },
+  {
     "name": "Full Bloom",
     "author": "Levi",
     "tier": 3,
@@ -4800,6 +4887,21 @@ const SpellDatabase = [
     "duration": "1 hour",
     "desc": "You transform yourself into a beast with hit dice equal to or less than your character level. Your equipment merges into your new form and can't be used.<br><br>While you are transformed, you use your new form's stats if they are greater than yours. You lose access to your species features and talents, and gain your form's features and attacks. You can't cast non-Beast spells, and Beast spells have their AP cost increased by 1.<br><br>You are forced back into your original form if reduced to 0 or fewer hit points.",
     "empower": "You gain temporary hit points equal to twice the form's hit dice. While they remain, damage doesn't provoke concentration checks."
+  },
+  {
+    "name": "Serpent Lock",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Conjuration",
+      "Poison",
+      "Silent"
+    ],
+    "cost": "2 AP",
+    "range": "Sight",
+    "duration": "1 hour",
+    "desc": "You loose a transparent snake-like construct of poison magic that targets one creature you can see. Now and at the start of each of your turns, it moves 30 feet towards the target. Upon reaching the target, it \"bites\", subsuming itself into the target. It must make a Constitution saving throw. On a failure, it is paralyzed for the duration. It repeats the saving throw at the end of each of its turns. On the first time it succeeds, it is no longer paralyzed but has its movement set to 0. On the second success, its movement is halved. On the third success, the spell ends. The creature is unaware it has been affected by a spell in this manner, perceiving it as a strange failure of their body.<br><br>A creature that succeeds on the initial saving throw has their movement speed reduced by half for the duration and is aware they have been affected. At the end of each of their turns, they can repeat the saving throw with advantage to end the effect on a success.<br><br>The spell camouflages itself to avoid detection. It takes the closest possible path to reach its target, climbing around obstacles and squeezing through any opening larger than one inch. If it ends its movement in an empty space, a creature can identify it with a DC 20 Intuition saving throw. If the target is aware of the spell, it automatically succeeds on its first saving throw against the spell.",
+    "empower": "After the creature recovers from being paralyzed, it is also poisoned until the spell ends. The spell moves 45 feet per turn instead."
   },
   {
     "name": "Harden Flesh",
@@ -4873,6 +4975,21 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "Target creature immediately moves up to half its movement speed and takes one action that costs 2 AP or less. You choose the target for that action, if applicable.<br><br>Unwilling creatures can make an Intuition saving throw to prevent being controlled.",
     "empower": "Costs 2 AP."
+  },
+  {
+    "name": "Fulmination",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Lightning",
+      "Delayed"
+    ],
+    "cost": "6 AP",
+    "range": "300 feet",
+    "duration": "Instantaneous",
+    "desc": "A massive torrent of lightning crashes down in a 30 foot square area within range. All creatures inside take 10d6 lightning damage.",
+    "empower": ""
   },
   {
     "name": "Standoff",
@@ -4964,6 +5081,20 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Rushing Waves",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Conjuration",
+      "Water"
+    ],
+    "cost": "2 AP",
+    "range": "Self (90 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "With a motion, water erupts from your location and sweeps out to a 90 foot radius around you. Creatures within range must succeed on a Strength saving throw or take 2d6 bludgeoning damage and be swept away 10 feet. A successful saving throw deals half damage and does not knock the creature backwards.<br><br>Creatures on difficult terrain are bashed into the ground and take an additional 4d6 bludgeoning damage.<br><br>The water washes away all difficult terrain and all non-Water spells that affect the ground or an area that includes the ground it washes over. Difficult terrain reverts to normal terrain, and spells affected immediately end.",
+    "empower": "Any number of creatures, terrain, and spells you choose are unaffected."
+  },
+  {
     "name": "Summon Anima",
     "author": "CrusaderDroid",
     "tier": 3,
@@ -5052,6 +5183,20 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Luminous Marring",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Radiant"
+    ],
+    "cost": "2 AP",
+    "range": "300 feet ",
+    "duration": "1 minute",
+    "desc": "Painful light shines down and sears target creature within range that you can see. It must succeed on a Constitution saving throw. On a failure, it takes 4d12 radiant damage and becomes marred through the intense light, becoming vulnerable to your choice of slashing, piercing, or bludgeoning damage until the end of your next turn. A creature that is immune to a damage type cannot be vulnerable, but a resistance is replaced with a vulnerability. On a successful saving throw, the target takes half damage and does not gain a vulnerability.",
+    "empower": "Choose one - Damage increased to 6d12, or you can choose any non-radiant damage type to bestow a vulnerability, or you affect an additional target."
+  },
+  {
     "name": "Epidemic",
     "author": "CrusaderDroid",
     "tier": 3,
@@ -5079,6 +5224,20 @@ const SpellDatabase = [
     "duration": "1 hour",
     "desc": "A tower of black stone rises from the earth at a target empty area, occupying a cylinder with a radius of 10 feet and a height of 20 feet, topped with an ornate, reflective jet black glass obelisk. The spell fails if there is insufficient room for this construction.<br><br>The tower emanates unholy energy. Undead and reanimated creatures that start their turn within 60 feet gain temporary hit points equal to your spellcasting stat at the start of each of their turns.<br><br>You can spend 1 AP once per turn to have the obelisk blast a target creature within 120 feet with a ray of unholy magic. It must make a Constitution saving throw or take 2d6 unholy damage. Undead and reanimated creatures are healed for the same amount instead, even if they don't normally absorb unholy damage.<br><br>The tower has AC 14 and 120 hit points. Casting this spell again while a tower already exists destroys the first tower.",
     "empower": "The obelisk can target a second creature, but it must be Undead or reanimated."
+  },
+  {
+    "name": "Light of Scrutiny",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Divination",
+      "Radiant"
+    ],
+    "cost": "1 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "Target object becomes vulnerable to all damage for the duration, as cracks, flaws, and defects are revealed.",
+    "empower": "Range becomes Self (60 foot cone). You choose what objects are affected."
   },
   {
     "name": "Hellbound Torrent",
@@ -5165,6 +5324,20 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "You begin to sing a song of overconfident heroes becoming complacent in the face of danger. If you spend at least 1 AP during your turn towards casting this spell, this pride begins to seep into the area around you. Creatures you choose within range add your spellcasting stat to their attack rolls, and take additional damage from weapons and spells equal to your spellcasting stat. An unwilling creature can make an Intuition saving throw to avoid being affected each turn.<br><br>Upon completing this spell, that moment of pride sinks into the spirit of affected creatures, for better or worse. For each affected creature, they either add your spellcasting stat to their attack rolls for 1 minute, or add your spellcasting stat to the damage taken from weapons and spells for 1 minute. You choose which effect applies to them.",
     "empower": "Reduces the AP cost by 3."
+  },
+  {
+    "name": "Scorpion's Escape",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Abjuration",
+      "Poison"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "desc": "In response to being targeted by a spell or making a saving throw against a spell currently affecting you, you inject yourself with poison magic, dealing 4d6 poison damage that can't be reduced or negated.<br><br>The poison then travels to the triggering caster, who takes twice as much damage as you and must immediately make a concentration saving throw even if their spell does not have the Concentration tag. On a failure, the spell ends or is lost, and any AP spent on the spell is lost.",
+    "empower": "Self-damage reduced to 2d6, and the reflected damage is instead multiplied by 5."
   },
   {
     "name": "Thornbind",
@@ -5269,6 +5442,20 @@ const SpellDatabase = [
     "duration": "1 minute",
     "desc": "At target point within range, a seed drops into the ground. Within the span of six seconds, it blooms into a towering plant creature of indeterminate type, bristling with spines, vines, carnivorous plants, and heavy bark.<br><br>The flora vindicator is a Large plant creature with AC 16 and 150 hit points, with a movement speed of 20 feet. It takes its turn after yours and uses your spellcasting stat for all of its attack and damage rolls and saving throws. It can fire needles at up to three targets within 60 feet for 1d8 piercing damage for 1 AP, or slam a creature within 15 feet with a vine for 2d8 bludgeoning damage for 2 AP. It tries to automatically grapple creatures that it attacks with its vines or who attack it in melee, and it has no limit to how many creatures it can grapple. It can move freely even when grappling creatures.<br><br>Whenever you take damage outside of your turn, the flora vindicator gains 1 AP on its next turn.",
     "empower": "Removes the Concentration tag from this spell."
+  },
+  {
+    "name": "Waterfall",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Conjuration",
+      "Water"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "1 hour",
+    "desc": "100 feet above a target point within range that you can see, vast amounts of water begin to pour down, covering a line up to 30 feet wide centered on that point. The water douses flames and Fire spells that make contact with it, and heavily obscures creatures on the other side. Creatures that enter the water during their movement have their movement set to 0 for the rest of the turn and must make a Strength saving throw or be knocked prone. Creatures forcibly moved into the water are knocked prone.<br><br>At the start of each of your turns, you can move the waterfall up to 10 feet in any horizontal direction. It can't change its orientation.<br><br>The water vanishes one second upon hitting the ground, instead recycling itself to reappear at the top again. Pollutants and other objects swept up in the water will continue to be a part of the waterfall until the spell ends.",
+    "empower": "Increases the force of the water to inflict 3d6 bludgeoning damage on a failed saving throw, and half of that on a success."
   },
   {
     "name": "Umbral Stalker",
@@ -5592,6 +5779,20 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "Soul-searing unholy magic sinks into the target creature, dealing 2d6 unholy damage.<br><br>At the end of the creature's next turn, that magic explodes outwards in a 20 foot radius. The target and every creature in range must succeed on a Constitution saving throw or take 6d6 unholy damage, halved on a success.<br><br>If the initial damage reduces a creature to 0 or fewer hit points, they immediately trigger the wave.",
     "empower": "You can choose which creatures take damage from either part of this spell."
+  },
+  {
+    "name": "Emerald Knives",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Poison"
+    ],
+    "cost": "2 AP",
+    "range": "Self (60 foot cone)",
+    "duration": "1 minute",
+    "desc": "You hurl a fan of knives crafted from poison magic in a 60 foot cone. Every creature you choose within range must succeed on a Dexterity saving throw. On a failure, the knife harmlessly passes through them and flips around, aimed at their back. On a success, the knife misses completely and vanishes.<br><br>When a creature with a knife at their back attempts to make a weapon attack, you can spend 1 AP as a reaction to cause the knife behind them to stab them, dealing 5d6 poison damage and causing them to be poisoned until the end of your next turn. The creature must then make a Constitution saving throw. On a failure, they lose the attack and all AP spent on it. The knife then vanishes.",
+    "empower": "Choose one - damage increased to 8d6, or damage reduced to 3d6 and response cost reduced to 0 AP, or range increased to Self (60 foot radius)."
   },
   {
     "name": "Blacklight",
