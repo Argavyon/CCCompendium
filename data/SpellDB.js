@@ -5770,6 +5770,7 @@ const SpellDatabase = [
   },
   {
     "name": "Eye of Laplace",
+    "author": "CrusaderDroid",
     "tier": 3,
     "tags": [
       "Divination",
@@ -5780,8 +5781,7 @@ const SpellDatabase = [
     "range": "Sight",
     "duration": "Instant",
     "desc": "You conjure a set of eye-shaped glyphs around a target that fire a burst of psychic energy. The target must make a Wil save. On a failure, they take 3d6 Psychic damage. In addition, one glyph remains attached to the target. You can simultaneously see from your location and from the location of all currently active Laplace glyphs, and locations you can see using a Laplace glyph are valid targeting locations for Sight range spells. If the target succeeds on their save, they take half damage and do not retain a glyph.<br><br>You may have a number of Laplace glyphs active at any one time equal to your spellcasting stat, minimum of 1. If you use Eye of Laplace on another target while at your maximum number of glyphs, the oldest glyph fades. Glyphs fade after 1 hour or if the creature they are attached to is knocked unconscious.<br><br>You may choose to forgo the damage when casting Eye of Laplace. A target may choose not to make a Wil save when targeted in this manner.",
-    "empower": "The damage is increased to 5d6. The target retains a glyph even if they succeed on their Wil save.",
-    "author": "CrusaderDroid"
+    "empower": "The damage is increased to 5d6. The target retains a glyph even if they succeed on their Wil save."
   },
   {
     "name": "Sacrificial Shield",
