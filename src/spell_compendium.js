@@ -99,8 +99,7 @@ function spellBrief(spellData, functional_tags) {
     brief.onclick = function() {
         const card = spellCard(spellData, functional_tags);
         const CR = document.querySelector('#compendium_right');
-        CR.innerHTML = '';
-        CR.appendChild(card);
+        CR.replaceChild(card, CR.firstChild);
     };
     
     return brief;
