@@ -13,6 +13,7 @@ div.navbar button {
 	margin: 0px;
 }
 div.content {
+
 }
 div.flexbox {
 	display: flex;
@@ -123,6 +124,7 @@ input.spelldesc {
 	width: 100%;
 }
 input.spelltext {
+	
 }
 td {
 	padding-left: 12px;

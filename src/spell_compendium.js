@@ -135,9 +135,55 @@ function downloadSpell() {
 	
 }
 
+function tag_buttons(tag_list, tag_set, container, render_callback) {
+    Object.entries(tag_list).sort((a, b) => {
+        if (a[1] == b[1]) {
+            return (a[0] == b[0]) ? 0 : (a[0] > b[0]) ? 1 : -1;
+        } else {
+            return Math.sign(b[1] - a[1]);
+        }
+    }).forEach(([tag, count]) => {
+        const div = container.appendChild(document.createElement('button'));
+        const img = div.appendChild(document.createElement('img'));
+        const text = div.appendChild(document.createElement('div'));
+        
+        img.width = 14;
+        img.style.paddingRight = '2px';
+
+        text.textContent = `${tag} (${count})`;
+        text.style.display = 'inline';
+
+        div.style.display = 'block';
+        div.id = `tag_${tag.replaceAll(' ', '_')}`;
+        div.className = 'selector';
+        div.value = 0;
+        div.onclick = function() {
+            const S = parseInt(div.value);
+            switch (S) {
+                case 0:
+                    div.value = S+1;
+                    tag_set.add(tag);
+                    break;
+                case 1:
+                    div.value = 0;
+                    tag_set.delete(tag);
+                    break;
+            }
+            render_callback();
+        }
+    });
+}
+
 function main() {
+    const compendiumLeft = document.getElementById('compendium_left');
+    const compendiumRight = document.getElementById('compendium_right');
+    const compendiumSchoolList = document.getElementById('left_school_tags');
+    const compendiumTagList = document.getElementById('left_regular_tags');
+
     const tag_list = {};
-    const f_tag_list = {};
+    const functional_tag_list = {};
+    const school_tag_list = {};
+
     const functional_tags = {
         Cantrip: 'When cast, this spell is treated as a tier 1 spell in all regards, including MP cost.',
         Concentration: 'You need to concentrate on this spell. Taking damage forces you to make a Constitution saving throw against DC 10 or half the damage done, whichever is higher. On a failure, the spell ends. When you cast a spell with Concentration while you are concentrating on a different spell, the first spell ends. You lose concentration if you are at 0 hit points.',
@@ -149,57 +195,32 @@ function main() {
         Ritual: 'This spell takes too much time to cast during combat.',
         Silent: 'You do not need to speak to cast this spell.',
         Still: 'You do not need to move to cast this spell.',
-	Deprecated: 'This spell is considered for removal. Please do not select this spell during playtesting.',    
+	    Deprecated: 'This spell is considered for removal. Please do not select this spell during playtesting.',    
     };
-    const compendiumLeft = document.querySelector('#compendium_left');
-    SpellDatabase.forEach(spell => spell.tags.forEach(tag => {
-        if (Object.keys(functional_tags).some(f_tag => tag.includes(f_tag))) {
-            if (!f_tag_list[tag]) f_tag_list[tag] = 1;
-            else f_tag_list[tag] += 1;
-        } else {
-            if (!tag_list[tag]) tag_list[tag] = 1;
-            else tag_list[tag] += 1;
-        }
-    }));
+    const school_tags = ['Conjuration', 'Evocation', 'Transmutation', 'Necromancy', 'Abjuration', 'Enchantment', 'Illusion', 'Divination'];
+
+    SpellDatabase.forEach(spell =>
+        spell.tags.forEach(tag => {
+            if (Object.keys(functional_tags).some(f_tag => tag.includes(f_tag))) {
+                if (!functional_tag_list[tag]) functional_tag_list[tag] = 1;
+                else functional_tag_list[tag] += 1;
+            } else if (school_tags.includes(tag)) {
+                if (!school_tag_list[tag]) school_tag_list[tag] = 1;
+                else school_tag_list[tag] += 1;
+            } else {
+                if (!tag_list[tag]) tag_list[tag] = 1;
+                else tag_list[tag] += 1;
+            }
+        })
+    );
 
     const tag_select = new Set();
     const tier_select = new Set();
     const gen_spelltable = () => generate_brief_spell_table(SpellDatabase, tag_select, tier_select, functional_tags);
 
     // TAGS
-    Object.entries(tag_list).sort((a, b) => {
-        if (a[1] == b[1]) {
-            return (a[0] == b[0]) ? 0 : (a[0] > b[0]) ? 1 : -1;
-        } else {
-            return Math.sign(b[1] - a[1]);
-        }
-    }).forEach(([tag, count]) => {
-        const div = compendiumLeft.appendChild(document.createElement('button'));
-        const img = div.appendChild(document.createElement('img'));
-        const text = div.appendChild(document.createElement('div'));
-        img.width = 14;
-        img.style.paddingRight = '2px';
-        text.textContent = `${tag} (${count})`;
-        text.style.display = 'inline';
-        div.style.display = 'block';
-        div.id = `tag_${tag.replaceAll(' ', '_')}`;
-        div.className = 'selector';
-        div.value = 0;
-        div.onclick = function() {
-            const S = parseInt(div.value);
-            switch (S) {
-                case 0:
-                    div.value = S+1;
-                    tag_select.add(tag);
-                    break;
-                case 1:
-                    div.value = 0;
-                    tag_select.delete(tag);
-                    break;
-            }
-            gen_spelltable();
-        }
-    });
+    tag_buttons(school_tag_list, tag_select, compendiumSchoolList, gen_spelltable);
+    tag_buttons(tag_list, tag_select, compendiumTagList, gen_spelltable);
     
     // TIERS
     for (var i = 1; i <= 9; i++) {
@@ -222,15 +243,13 @@ function main() {
         }
     }
 
-    const CC = document.querySelector('#compendium_right');
-    CC.appendChild(spellCard(SpellDatabase[0], functional_tags));
-
+    compendiumRight.appendChild(spellCard(SpellDatabase[0], functional_tags));
     gen_spelltable();
 	
-	const downloadButton = document.querySelector("#compendium_right")
+	const downloadButton = compendiumRight
 		.appendChild(document.createElement('center'))
 		.appendChild(document.createElement('button'));
-	downloadButton.textContent = "DOWNLOAD";
+	downloadButton.textContent = "SAVE (.png)";
 	downloadButton.style.textAlign = 'center';
 	downloadButton.onclick = downloadSpell;
 }
