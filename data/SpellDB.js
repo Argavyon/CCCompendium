@@ -944,10 +944,10 @@ const SpellDatabase = [
       "Evocation",
       "Disease"
     ],
-    "cost": "3 AP",
+    "cost": "1-3 AP",
     "range": "60 feet",
     "duration": "Instantaneous",
-    "desc": "A 20 foot radius sphere centered on a target point you can see erupts into a thin brown mist. Any creature in the area when it is created, as well as any creature that starts their turn inside of it or moves into it during their turn, must make a Constitution saving throw if they can breathe. On a failure, they lose 2 AP coughing and hacking.<br><br>The mist dissipates at the start of your next turn, or when a Wind spell affects its area.",
+    "desc": "A 10 foot radius sphere, increased by 5 feet per AP spent after the first, centered on a target point you can see erupts into a thin brown mist. Any creature in the area when it is created, as well as any creature that starts their turn inside of it or moves into it during their turn, must make a Constitution saving throw if they can breathe. On a failure, they lose 2 AP coughing and hacking, or 1 AP instead if the spell was cast with fewer than 3 AP.<br><br>The mist dissipates at the start of your next turn, or when a Wind spell affects its area.",
     "empower": "",
     "author": "CrusaderDroid"
   },
