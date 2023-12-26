@@ -1322,11 +1322,11 @@ const SpellDatabase = [
       "Evocation",
       "Radiant"
     ],
-    "cost": "3 AP",
+    "cost": "1-3 AP",
     "range": "120 feet",
     "duration": "Instantaneous",
-    "desc": "You fire a bright beam of light that strikes a target creature you can see within range. It must make a Constitution saving throw or take 2d10 radiant damage.",
-    "empower": "Damage increased to 3d10. A successful saving throw deals half damage.",
+    "desc": "You fire a bright beam of light for each AP spent on this spell, which strikes a target creature you can see within range. It must make a Constitution saving throw or take 2d10 radiant damage, increased by 1d10 radiant damage for each additional beam that strikes it.",
+    "empower": "Creates an additional beam. A successful saving throw deals half damage.",
     "author": "CrusaderDroid"
   },
   {
