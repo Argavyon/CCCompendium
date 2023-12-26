@@ -1501,7 +1501,7 @@ const SpellDatabase = [
     "cost": "1 AP",
     "range": "30 feet",
     "duration": "Instantaneous",
-    "desc": "As a response to any action, you fling a mystic bolt at a target within range, dealing 1d6 arcane damage.",
+    "desc": "As a response to any action, you fling a mystic bolt at a target within range, dealing 1d6 arcane damage plus your spellcasting stat.",
     "empower": "Removes the AP cost on this spell.",
     "author": "CrusaderDroid"
   },
