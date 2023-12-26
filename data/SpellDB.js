@@ -902,11 +902,11 @@ const SpellDatabase = [
       "Necromancy",
       "Unholy"
     ],
-    "cost": "2 AP",
+    "cost": "1-3 AP",
     "range": "90 feet",
     "duration": "Instantaneous",
-    "desc": "A ghostly beam of dark magic extends from your palm to a creature you can sense, passing through all other objects and creatures. The target creature must succeed on a Constitution saving throw or take 3d6 unholy damage. A creature reduced to 0 hit points from this spell has their soul burned out of their body, leaving behind a body perfect for future use. Casting a Necromancy spell on such a body refunds half the MP cost used for the spell.",
-    "empower": "Damage increases to 4d6. A creature that succeeds on the saving throw takes half damage.",
+    "desc": "A ghostly beam of dark magic extends from your palm to a creature you can sense, passing through all other objects and creatures. The target creature must succeed on a Constitution saving throw or take 2d6 unholy damage, plus 1d6 unholy damage for each AP spent past the first. If cast for 3 AP, a creature that succeeds on the saving throw takes half damage. A creature reduced to 0 hit points from this spell has their soul burned out of their body, leaving behind a body perfect for future use. Casting a Necromancy spell on such a body refunds half the MP cost used for the spell.",
+    "empower": "Damage increased by 1d6. A creature that succeeds on the saving throw takes half damage. If cast for 3 AP, additionally prevents a creature that failed the saving throw from healing any hit points until the start of your next turn.",
     "author": "CrusaderDroid"
   },
   {
