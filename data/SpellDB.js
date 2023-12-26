@@ -2132,11 +2132,11 @@ const SpellDatabase = [
       "Evocation",
       "Space"
     ],
-    "cost": "2 AP",
+    "cost": "1-3 AP",
     "range": "60 feet",
     "duration": "Instantaneous",
-    "desc": "A 10 foot radius area of space centered on target point is forcibly distorted for a moment. Creatures in the area must make a Constitution saving throw or take 3d4 damage, which cannot be reduced or negated in any way. A creature that succeeds on the saving throw takes half damage.",
-    "empower": "Radius increases to 15 feet.",
+    "desc": "A 5 foot radius area of space, increased by 5 feet per AP spent past the first, centered on target point is forcibly distorted for a moment. Creatures in the area must make a Constitution saving throw or take 3d4 damage, which cannot be reduced or negated in any way. A creature that succeeds on the saving throw takes half damage.",
+    "empower": "Radius increases by 5 feet. Damage increased to 4d4.",
     "author": "CrusaderDroid"
   },
   {
