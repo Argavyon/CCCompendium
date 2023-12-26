@@ -1396,11 +1396,11 @@ const SpellDatabase = [
       "Necromancy",
       "Disease"
     ],
-    "cost": "2 AP",
+    "cost": "1 to 3 AP",
     "range": "60 feet",
     "duration": "1 minute",
-    "desc": "Target creature must succeed on a Constitution saving throw or take 2d6 poison damage as a horrific boil emerges from their skin.<br><br>A creature that hits the victim with a weapon attack strikes the boil, causing it to burst into a hideous dark cloud that fills a 10 foot radius sphere for 1 minute. Creatures that start their turn in the cloud take 1d6 poison damage and are poisoned until the start of their next turn.",
-    "empower": "",
+    "desc": "Target creature must succeed on a Constitution saving throw or take 1d6 poison damage per AP spent as a horrific boil emerges from their skin. On a successful saving throw, the creature takes half damage but does not have a boil emerge.<br><br>A creature that hits the victim with a weapon attack strikes the boil, causing it to burst into a hideous dark cloud that fills a 5 foot radius sphere, increased by 5 feet per AP spent past the first, for 1 minute. Creatures that start their turn in the cloud take 1d6 poison damage and are poisoned until the start of their next turn.",
+    "empower": "Targets two additional creatures.",
     "author": "CrusaderDroid"
   },
   {
