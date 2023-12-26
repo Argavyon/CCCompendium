@@ -683,11 +683,11 @@ const SpellDatabase = [
       "Eldritch",
       "Space"
     ],
-    "cost": "2 AP",
+    "cost": "1 AP",
     "range": "Self",
     "duration": "Instantaneous",
     "desc": "You conjure a being from beyond that devours the empty space between you and a target creature up to 30 feet away from you. The creature is pulled directly adjacent to you, and everything in a 30 foot long, 5 foot wide line is moved an equal distance towards you. Objects that are not fully contained within the area are unaffected.",
-    "empower": "Reduces the AP cost to 1.",
+    "empower": "Reduces the AP cost to 0.",
     "author": "CrusaderDroid"
   },
   {
