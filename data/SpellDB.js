@@ -1602,11 +1602,11 @@ const SpellDatabase = [
       "Earth",
       "Water"
     ],
-    "cost": "2 AP",
+    "cost": "1 to 3 AP",
     "range": "60 feet",
     "duration": "Instantaneous",
-    "desc": "Thick mud is launched at a 10 foot cube centered on target point within range you can see. Creatures in the area must make a Dexterity saving throw or take 2d8 bludgeoning damage and be blinded until they use 1 AP to clean the mud off their eyes.",
-    "empower": "Damage increased to 2d12. A successful saving throw deals half damage."
+    "desc": "Thick mud is launched at a 5 foot cube, increased by 5 feet per AP spent past the first, centered on target point within range you can see. Creatures in the area must make a Dexterity saving throw or take 2d8 bludgeoning damage and be blinded until they use 1 AP to clean the mud off their eyes. If cast for 3 AP, creatures that succeed on the saving throw take half damage.",
+    "empower": "Damage increased to 2d12. A successful saving throw deals half damage. If cast for 3 AP, creatures that clean the mud off are still blinded until the end of their turn."
   },
   {
     "name": "Simple Ward",
