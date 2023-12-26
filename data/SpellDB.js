@@ -1382,11 +1382,11 @@ const SpellDatabase = [
       "Evocation",
       "Fire"
     ],
-    "cost": "2 AP",
+    "cost": "1-2 AP",
     "range": "60 feet",
     "duration": "Instantaneous",
-    "desc": "A thin wave of fire reaches out from your hand and lashes at a target creature within range. It must make a Dexterity saving throw or take 4d8 fire damage.",
-    "empower": "Damage increases to 5d8. On a successful saving throw, the creature takes half damage instead.",
+    "desc": "A thin wave of fire reaches out from your hand and lashes at a target creature within range. It must make a Dexterity saving throw or take 3d8 fire damage. If cast for 2 AP, it instead deals 4d8 fire damage, and a creature that succeeds on the saving throw takes half damage.",
+    "empower": "Damage increases to 5d8. If cast for 2 AP, also affects an adjacent creature to the target.",
     "author": "CrusaderDroid"
   },
   {
