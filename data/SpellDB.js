@@ -334,11 +334,11 @@ const SpellDatabase = [
       "Necromancy",
       "Physical"
     ],
-    "cost": "2 AP",
+    "cost": "1 or 2 AP",
     "range": "30 feet",
     "duration": "Instantaneous",
-    "desc": "Target creature must succeed on a Constitution saving throw or have bits of their bone pulled through their skin, dealing 2d10 piercing damage. You gain temporary hit points equal to the damage dealt until the start of your next turn.<br><br>This spell is ineffective against creatures without a skeleton, such as elementals or oozes.",
-    "empower": "Damage increased to 3d10. A successful saving throw deals half damage.",
+    "desc": "Target creature must succeed on a Constitution saving throw or have bits of their bone pulled through their skin, dealing 1d10 piercing damage per AP spent on this spell. You gain temporary hit points equal to the damage dealt until the start of your next turn.<br><br>This spell is ineffective against creatures without a skeleton, such as elementals or oozes.",
+    "empower": "Damage increased by 1d10. A successful saving throw deals half damage.",
     "author": "CrusaderDroid"
   },
   {
