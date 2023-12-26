@@ -1046,7 +1046,7 @@ const SpellDatabase = [
     "cost": "2 AP",
     "range": "30 feet",
     "duration": "Instantaneous",
-    "desc": "You spray acid covering a 10 foot cube within range. If it lands on an object that is completely contained within the area, the object becomes vulnerable to all physical damage.",
+    "desc": "You spray acid covering a 10 foot cube within range. If it lands on an object that is completely contained within the area, the object becomes vulnerable to all slashing, piercing, and bludgeoning damage.",
     "empower": "Area increased to a 15 foot cube.",
     "author": "CrusaderDroid"
   },
