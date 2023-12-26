@@ -987,10 +987,10 @@ const SpellDatabase = [
       "Conjuration",
       "Space"
     ],
-    "cost": "1 AP",
+    "cost": "1 or 3 AP",
     "range": "15 feet",
     "duration": "Instantaneous",
-    "desc": "You teleport to target location within range. Any creature in that space is teleported to your former location.",
+    "desc": "You teleport to target location within range. Any creature in that space is teleported to your former location. If cast for 3 AP, range is increased to 45 feet.",
     "empower": "",
     "author": "CrusaderDroid"
   },
