@@ -1882,7 +1882,7 @@ const SpellDatabase = [
     "cost": "1 AP",
     "range": "30 feet ",
     "duration": "Instantaneous",
-    "desc": "You sling a quick splash of acid aimed at a target creature within range that you can see. It must make a Dexterity saving throw or take 1d4 acid damage and become vulnerable to the next source of physical damage it does not resist or null.",
+    "desc": "You sling a quick splash of acid aimed at a target creature within range that you can see. It must make a Dexterity saving throw or take 1d4 acid damage and become vulnerable to the next source of slashing, piercing, or bludgeoning damage it does not resist or negate.",
     "empower": "",
     "author": "CrusaderDroid"
   },
