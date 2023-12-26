@@ -1322,7 +1322,7 @@ const SpellDatabase = [
       "Evocation",
       "Radiant"
     ],
-    "cost": "1-3 AP",
+    "cost": "1 to 3 AP",
     "range": "120 feet",
     "duration": "Instantaneous",
     "desc": "You fire a bright beam of light for each AP spent on this spell, which strikes a target creature you can see within range. It must make a Constitution saving throw or take 2d10 radiant damage, increased by 1d10 radiant damage for each additional beam that strikes it.",
