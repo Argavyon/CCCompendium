@@ -226,6 +226,20 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Pig Iron Charge",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Conjuration",
+      "Forbidden (Forge)"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Molten metal flares into existence and forms a boar that charges forward to an empty space within range that you can see and is on the ground. Every creature in its path must succeed on a Dexterity saving throw or take 2d6 bludgeoning and 1d6 fire damage and be thrown either 15 feet closer to you or 15 feet away from you. On a successful saving throw, creatures take half damage and are not moved.<br><br>When the boar reaches the point, it solidifies into a metallic pillar 5 feet tall, with AC 10 and 20 hit points.",
+    "empower": "Double the distance creatures are moved on a failed saving throw. On a success, creatures are moved 5 feet instead."
+  },
+  {
     "name": "Caustic Volley",
     "tier": 1,
     "tags": [
@@ -3652,6 +3666,21 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Metallurgic Wonder",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Conjuration",
+      "Forbidden (Forge)",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "You instantly fabricate a metal weapon or suit of armor and forcibly equip it to target creature. They can't unequip it unless you choose to allow them to unequip it.<br><br>You can choose to either grant the created item a +1 enhancement, or superheat it to burn the wielder for 2d6 fire damage at the start of each of their turns while it is equipped.",
+    "empower": "Choose one:<br>>The created item has a +2 enhancement instead.<br>>Remove Concentration.<br>>The superheated metal deals 2 additional fire damage, increased by 2 for every turn it has dealt damage. This additional damage reduces maximum hit points by the same amount."
+  },
+  {
     "name": "Rasping Call of the Undead King",
     "author": "Zombehking",
     "tier": 2,
@@ -5641,6 +5670,20 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Furnace Aura",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Forbidden (Forge)"
+    ],
+    "cost": "1 AP",
+    "range": "Self (30 foot radius) ",
+    "duration": "1 minute",
+    "desc": "Intense heat bursts from you out to a 30 foot radius. For each creature and object in range, including you, choose whether they receive temporary hit points equal to your spellcasting stat plus your proficiency modifier until the end of their next turn, or they must make a Constitution saving throw, taking 3d10 fire damage on a failure and half damage on a success.<br><br>For 1 AP on successive turns for the duration of the spell, you can use this effect again. The spell ends if you are reduced to 0 or fewer hit points.",
+    "empower": "The damage increases by 1d10 each time you use the effect again. The temporary hit points increase by your proficiency modifier each time you use the effect again."
+  },
+  {
     "name": "Typhoon Wave",
     "author": "CrusaderDroid",
     "tier": 3,
@@ -6615,6 +6658,20 @@ const SpellDatabase = [
     "duration": "15 minutes",
     "desc": "You take control of the weather in the surrounding area and can change it as you see fit. As part of casting this spell and for 2 AP during any of your turns, choose one of the following effects to take place anywhere in range: <br>>Intense winds blow in either a 30 foot long, 10 foot wide, 15 foot tall line, or a 30 foot radius sphere. Ranged weapon attacks that pass through automatically miss, and creatures that move through the area spend 2 feet of movement for every 1 foot moved.<br>>Hail storms down in a 20 foot radius, 100 foot tall cylinder. Creatures that enter the area or start their turn inside take 2d6 cold and 1d6 bludgeoning damage.<br>>Heavy rains pour down in a 30 foot radius, 100 foot tall cylinder, obscuring vision through the area and extinguishing fires. Creatures inside are resistant to fire damage.<br>>Lightning strikes a creature within range. They must make a Dexterity saving throw or take 8d12 lightning damage.<br>>Dark clouds blot out sunlight in a 60 foot radius area.<br><br>Any effects created by this spell last until the spell ends.",
     "empower": "Reduces the AP cost to 6."
+  },
+  {
+    "name": "Iron Grip",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Conjuration",
+      "Forbidden (Forge)"
+    ],
+    "cost": "1-3 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Twisting metal attempts to entrap a target creature within range that you can see. The creature must make a Dexterity saving throw or be restrained. A creature restrained this way is trapped by the metal - damage it takes is evenly split between itself and the metal.<br><br>If cast for 2 or 3 AP, metal fills all empty spaces within a 5 or 10 foot radius of the target, respectively.<br><br>Metal created by this spell has AC 10 and 40 hit points. It remains until destroyed.",
+    "empower": "The metal gains 5 damage reduction and becomes AC 18."
   },
   {
     "name": "Crystalline Refraction",
@@ -7639,6 +7696,20 @@ const SpellDatabase = [
     "desc": "You channel intense winter magic to craft an object made of ice anywhere within the area of the spell. It can be up to a 10 foot by 10 foot cube in size. You can use 1 AP once on each of your turns for the duration of the spell to create another object.<br><br>Each object has 30 hit points, AC 10, and vulnerability to fire and bludgeoning damage. It is permanent until destroyed.",
     "empower": "You can spend 1 AP to create an object twice per turn.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Blacksmith's Masterpiece",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Transmutation",
+      "Forbidden (Forge)"
+    ],
+    "cost": "2 AP",
+    "range": "Self (30 foot radius) ",
+    "duration": "1 minute",
+    "desc": "A mighty hammer descends upon you and slams into your body, resonating a powerful wave of force and fire outward. All creatures within 30 feet must succeed on a Strength saving throw or take 4d6 bludgeoning and 4d6 fire damage and be knocked back 5 feet and fall prone. A creature that succeeds takes half damage and is not moved.<br><br>You are transformed by the hammer strike into a being of living steel for the duration. Your AC is increased by 4, and you gain resistance to slashing, piercing, bludgeoning, and fire damage. You add your spellcasting stat to your Strength. When you take fire damage, you gain 1 AP at the start of your next turn, to a maximum of 2 AP.",
+    "empower": ""
   },
   {
     "name": "Rite of Rebirth",
