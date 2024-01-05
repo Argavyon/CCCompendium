@@ -460,6 +460,19 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Ephemeral Assailant",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Illusion"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "You create an illusory duplicate of a creature you can see within range. The duplicate appears anywhere within 10 feet of your target. It takes its turns after yours.<br><br>The duplicate is an exact copy of the creature, except that it can't cast spells and deals half damage, and all damage dealt is psychic damage. If it takes any damage, deals any damage, or is targeted by a spell, it vanishes.",
+    "empower": "Creates two duplicates of the target."
+  },
+  {
     "name": "Furry Friend",
     "author": "CrusaderDroid",
     "tier": 1,
@@ -818,6 +831,19 @@ const SpellDatabase = [
     "desc": "The earth rises around you to form a dome with a radius of 15 feet centered on you. One side of the dome, a 90 degree arc, is left open. You choose which side is open.<br><br>The newly formed cave is dark, unless light is inside or can get through the opening. The cave has AC 10 and 50 hit points. If its hit points are reduced to 0, the spell ends immediately as the cave collapses.",
     "empower": "The cave has resistance to physical damage.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Phantom Sound",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Illusion"
+    ],
+    "cost": "1 AP",
+    "range": "90 feet",
+    "duration": "8 hours",
+    "desc": "You create a sound of your choice that emanates from a point within range that you can see. It can be as soft as a whisper or as loud as a dragon's roar, or anything in between. You can choose the exact sound, including intelligible words, and you can choose the duration of the sound, to a maximum of 8 hours.",
+    "empower": ""
   },
   {
     "name": "Prying Mind",
@@ -2745,6 +2771,21 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Blink Swap",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Illusion",
+      "Silent",
+      "Still"
+    ],
+    "cost": "0 AP",
+    "range": "300 feet",
+    "duration": "Instantaneous",
+    "desc": "You switch places with a creature you can see that you have created with an Illusion spell. You take on the shape of that creature, and your target assumes your shape. No observer can tell the spell was cast at all or that anyone or anything moved.",
+    "empower": ""
+  },
+  {
     "name": "Impact Boon",
     "tier": 2,
     "tags": [
@@ -4355,6 +4396,19 @@ const SpellDatabase = [
     "empower": "Range becomes Self (60 foot cone). You choose what objects are affected."
   },
   {
+    "name": "Mass False Image",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Illusion"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "This spell works similarly to False Image, except that you can create an image or images that total up to a 50 foot cube in area.",
+    "empower": "Duration increased to 8 hours."
+  },
+  {
     "name": "Revolution of Shadows",
     "author": "CrusaderDroid",
     "tier": 3,
@@ -4516,6 +4570,21 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "You call upon the spirits of the deceased for restoration to avoid their fate. Every non-reanimated creature you choose within range heals 2d12 hit points. Each corpse and reanimated creature within range adds an additional 1d12 hit points, to a maximum of 6d12 hit points.<br><br>Creatures healed by this spell must finish a rest before they can be healed by it again.",
     "empower": "Also removes the poisoned condition and ends any disease effects on creatures."
+  },
+  {
+    "name": "Sway the Spirits",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Enchantment",
+      "Spirit",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "Self (60 foot radius)",
+    "duration": "1 minute ",
+    "desc": "You entreat the spirits to weigh in your favor and against your foes. Now and at the start of each of your turns, roll 1d6. When a creature starts their turn, choose whether they add or subtract the number rolled from all of their damage rolls.",
+    "empower": "Additionally adds or subtracts 1 damage for every die rolled by the creature for damage."
   },
   {
     "name": "Draconic Effigy",
@@ -4681,6 +4750,21 @@ const SpellDatabase = [
     "empower": "After the creature recovers from being paralyzed, it is also poisoned until the spell ends. The spell moves 45 feet per turn instead."
   },
   {
+    "name": "Blessing of Heroes",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Enchantment",
+      "Holy",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "Target creature is blessed with good fortune and skill that befits a legendary hero. They heal 1d6 hit points at the start of each of their turns. Whenever they make an attack roll, ability check, saving throw, initiative roll, or damage roll, or when they use hit dice to recover hit points, they additionally roll 1d6 and add it to the result.",
+    "empower": ""
+  },
+  {
     "name": "Liquidate",
     "author": "CrusaderDroid",
     "tier": 3,
@@ -4740,6 +4824,20 @@ const SpellDatabase = [
     "desc": "You summon a field of fire and steel that envelops a creature. This field is indestructible and prevents movement as well as attacks and spells through the field. An unwilling creature can make a Dexterity saving throw to avoid being encased in the field.<br><br>The field superheats the area inside, forcibly burning away impurities. At the start of each of the creature's turns, it must make a Constitution saving throw, taking 2d6 fire damage on a failure and half damage on a success. Any conditions on the creature are ended. The creature can use its action to make a Willpower saving throw to break free of the field, ending the field on a success.<br><br>When the field ends, either as the result of a successful Willpower saving throw, or when you choose to end it for 0 AP at any time, the creature within is forged in body and spirit. For each time it took damage from the spell, the creature heals 2d12 hit points and gains 1 AP. This bonus AP remains until the end of the creature's next turn.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Terrestrial Hammer",
+    "author": "The Djinn",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Earth"
+    ],
+    "cost": "1 to 3 AP",
+    "range": "80 feet",
+    "duration": "Instantaneous",
+    "desc": "Target creature touching the earth makes one Dexterity saving throw for each AP spent on this spell. For each failure they take 2d6 bludgeoning damage and are flung 30 feet into the air, taking 1d6 points of damage for each 10 feet of movement obstructed by an object.<br><br>Each round for three rounds (or until they touch the ground, fly, or otherwise have their movement stopped), at the start of their turn, they are forced to use their movement to fall up to 30 feet, taking 1d6 points of damage per 10 feet traveled.",
+    "empower": ""
   },
   {
     "name": "Caustic Plunge",
@@ -4901,6 +4999,21 @@ const SpellDatabase = [
     "empower": "Damage increases to 8d4."
   },
   {
+    "name": "Curse",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Necromancy",
+      "Spirit",
+      "Unholy"
+    ],
+    "cost": "3 AP",
+    "range": "30 feet",
+    "duration": "1 hour",
+    "desc": "You curse a target creature or an object that isn't being carried or worn. A cursed creature must make an Intuition saving throw to avoid the effect. A cursed object has no effect until a creature picks it up, where it becomes impossible to remove from the creature's hand and bestows its effects onto the creature.<br><br>When a target is cursed, choose one of the following effects: <br>One stat you choose is decreased by 2.<br>Three stats you choose are decreased by 1.<br>The creature takes 1d6 unholy damage each time it makes an attack roll.<br>The creature has disadvantage on saving throws with a chosen stat.<br>The creature loses 1 AP at the start of each of its turns.<br><br>The curse on a creature ends if the creature is reduced to 0 or fewer hit points.",
+    "empower": "If cast directly on a creature, you can choose two effects. If cast on an object, the duration becomes \"Until dispelled\"."
+  },
+  {
     "name": "Reposition",
     "author": "CrusaderDroid",
     "tier": 3,
@@ -5048,6 +5161,20 @@ const SpellDatabase = [
     "duration": "1 hour",
     "desc": "You gain a flight speed equal to your walking speed for the duration.",
     "empower": "Also affects all creatures you choose within 5 feet of you. A creature that ends their turn more than 5 feet away from you falls to the ground."
+  },
+  {
+    "name": "Tetraspear",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Conjuration",
+      "Earth"
+    ],
+    "cost": "1 to 3 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "You target one point within range you can see, plus one more point for each AP spent on the spell. With a gesture, a thick earthen spear suddenly juts out of each point, rising to 10 feet tall and occupying the space completely. Each creature within 10 feet must succeed on a Dexterity saving throw or take 3d10 bludgeoning damage. Any creature on the point has disadvantage on the saving throw and is displaced to an adjacent empty space of your choice. A successful saving throw halves the damage, but still displaces creatures. A creature can only take damage from one spear.<br><br>The affected area around each spear becomes difficult terrain. The spears have AC 10 and 15 hit points.",
+    "empower": "Choose one - damage increased to 5d12, or create two additional spears, or radius increases to 15 feet."
   },
   {
     "name": "Luminous Marring",
@@ -5294,6 +5421,35 @@ const SpellDatabase = [
     "empower": "Targets up to five corpses."
   },
   {
+    "name": "Sandgrasp",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Conjuration",
+      "Earth",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 hour",
+    "desc": "You create nine 5 foot cubes of sand anywhere within range, including on top of other cubes of sand. A creature that would be inside a cube of sand can make a Dexterity saving throw to avoid being trapped, moving to the nearest unoccupied space. Otherwise, a creature is restrained by the sand. If they are totally covered and need to breathe, they take 1d6 damage each turn, which increases by 1d6 for each turn they remain trapped. Restrained creatures can spend 2 AP to make a Strength saving throw to break free and move into an adjacent empty space on a success.<br><br>While you are concentrating on the spell, the sand remains in its location. When the spell ends, the sand disperses and is affected normally by gravity and physics, releasing any trapped creatures.",
+    "empower": "Creates 15 cubes instead."
+  },
+  {
+    "name": "Heart to Heart",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Enchantment",
+      "Spirit"
+    ],
+    "cost": "1 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "You connect your spirit to the target creature's spirit and start a conversation shared only between the two of you. The conversation lasts for what feels like 1 minute, though only two seconds pass outside of the spell. No other creature can use telepathy or magic to know what is being communicated.<br><br>You and the creature always understand each other when speaking in this way. The creature is not obligated to speak to you, though it must always hear what you are saying.",
+    "empower": ""
+  },
+  {
     "name": "Eye of Laplace",
     "author": "CrusaderDroid",
     "tier": 3,
@@ -5351,6 +5507,20 @@ const SpellDatabase = [
     "desc": "The target creature's perception on reality subtly changes. They suffer no ill effects until they fail a roll. Upon failing a roll while the spell is active they must make an Intuition saving throw. On a failure, eldritch forms appear to intrude upon reality, driving the creature into a berserk frenzy. It can take no other actions other than to spend all AP on moving and attacking the nearest creature.<br><br>If the creature cannot or does not attack during a turn, it makes an Intuition saving throw. On a success, the eldritch forms fade away until the creature fails another roll and then fails its saving throw.",
     "empower": "The creature can't roll with advantage for the duration of the spell.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Consecrate",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Abjuration",
+      "Holy"
+    ],
+    "cost": "2 AP",
+    "range": "Touch",
+    "duration": "Special",
+    "desc": "You consecrate the touched creature or object, making it proof against evil. Fiends can't move within 30 feet of the consecrated creature or object, and take 4d6 radiant damage if they start their turn within 30 feet of the consecrated creature or object. The target additionally gains 10 temporary hit points at the start of each of its turns and is immune to unholy and psychic damage.<br><br>The duration is one minute if cast on a creature, and until dispelled if cast on an object. The spell ends immediately if the target is reduced to 0 or fewer hit points.",
+    "empower": "The consecrated target is so holy that all creatures other than you within 5 feet of the target take 2d6 radiant damage at the start of their turn."
   },
   {
     "name": "Plasma Chain",
@@ -5551,6 +5721,20 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Fel Nova",
+    "author": "Zombehking",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Unholy"
+    ],
+    "cost": "2 AP",
+    "range": "30 feet",
+    "duration": "Instantaneous",
+    "desc": "Unleash raw fel energy in a burst from a target point within range. Creatures within 10 feet of the point must make an Intuition saving throw, having disadvantage on the saving throw if they are a celestial. Creatures that succeed on the saving throw take 2d8 unholy damage. Creatures that fail the saving throw instead takes 5d8 necrotic damage. This taints the area afterward for 1 minute, rendering it desecrated. Unholy spells cast from this area and attacks that deal unholy damage have +2 to any attack rolls or DCs.",
+    "empower": "Additionally desecrate a 30 foot radius area around yourself, granting the +2 bonus to unholy attacks and Unholy spell DCs. The desecration lasts for 1 hour. If cast as an empowered spell again, any previously desecrated areas become permanently desecrated."
+  },
+  {
     "name": "Crushing Awe",
     "author": "CrusaderDroid",
     "tier": 3,
@@ -5670,6 +5854,21 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Retribution of the Faithful",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Holy",
+      "Delayed"
+    ],
+    "cost": "6 AP",
+    "range": "Self (30 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "Waves of divine light crash down on every creature you choose within range. They must make a Constitution saving throw or take 5d6 radiant damage, increased by 1d6 for each turn you spent casting this spell. On a successful saving throw, creatures take half damage.<br><br>Each time you succeed on a concentration check while casting this spell, increase the damage by 2d6, to a maximum of 6d6. If you hit the maximum, damage no longer forces concentration checks and instead adds 6 AP to the spell.",
+    "empower": "Damage increased to 8d6. Choose one - AP cost reduced to 3, or you gain 15 temporary hit points at the end of each of your turns while casting this spell until the start of your next turn, or creatures that damage you while casting this spell are always damaged."
+  },
+  {
     "name": "Furnace Aura",
     "author": "CrusaderDroid",
     "tier": 3,
@@ -5728,6 +5927,21 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Mastery of the Road",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Transmutation",
+      "Earth",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "Self",
+    "duration": "8 hours",
+    "desc": "The earth itself becomes a road for you. You and all creatures within 30 feet are moved 30 feet at the start of each of your turns in a chosen direction. This movement is almost imperceptible, as if everyone was always at the new location to begin with. This movement never allows response attacks, and creatures moving this way do not activate effects that trigger when moving into certain spaces.<br><br>The spell continues even if you are unable to move, are resting, or are working on another task. It does not interrupt breaks or rests.<br><br>The spell ends if you move into a space you have already moved through before during the spell.",
+    "empower": "Choose one - movement increased to 45 feet, or radius increased to 45 feet, or remove Concentration from this spell."
+  },
+  {
     "name": "Loyal Hound",
     "tier": 3,
     "tags": [
@@ -5770,6 +5984,20 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "In response to being targeted by a spell or making a saving throw against a spell currently affecting you, you inject yourself with poison magic, dealing 4d6 poison damage that can't be reduced or negated.<br><br>The poison then travels to the triggering caster, who takes twice as much damage as you and must immediately make a concentration saving throw even if their spell does not have the Concentration tag. On a failure, the spell ends or is lost, and any AP spent on the spell is lost.",
     "empower": "Self-damage reduced to 2d6, and the reflected damage is instead multiplied by 5."
+  },
+  {
+    "name": "Expert Opinion",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Divination",
+      "Spirit"
+    ],
+    "cost": "2 AP",
+    "range": "Self",
+    "duration": "1 hour",
+    "desc": "You call upon a skilled spirit to assist you with your tasks for the duration. You add +5 to Knowledge, Intuition, and Willpower ability checks, as well as any check made while crafting.",
+    "empower": "Range becomes 30 feet. The targeted creature receives the benefits instead of you."
   },
   {
     "name": "Sunspot",
@@ -5904,6 +6132,20 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "You blast a focused beam of light out in a 15 foot wide, 300 foot long line away from you. Creatures that are not behind cover in this line must make a Constitution saving throw or take 6d10 Radiant damage, halved on a success. Creatures in the center 5 feet of the line are also blinded on a failed saving throw until the end of your next turn.",
     "empower": "Damage increases to 7d10. If any creature is reduced to 0 or fewer hit points by this spell, refund 1 AP."
+  },
+  {
+    "name": "Break Curse",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Abjuration",
+      "Holy"
+    ],
+    "cost": "2 AP",
+    "range": "30 feet",
+    "duration": "Instantaneous",
+    "desc": "You immediately end any curse or Unholy spell affecting the target creature or object. A reanimated creature can make a saving throw using its caster's spellcasting stat to resist the effect. If the reanimated creature has more hit dice than you, and it would otherwise die if the spell ends, it instead takes 5d12 damage on a failed saving throw.",
+    "empower": ""
   },
   {
     "name": "Snapfrost",
@@ -6394,6 +6636,19 @@ const SpellDatabase = [
     "range": "30 feet",
     "duration": "Until cured",
     "desc": "You invisibly contaminate a body of liquid within range. Any creature that drinks this liquid becomes afflicted by Black Bile, a withering disease causing the creature to cough out horrid globs of black bile upon drinking any liquid. The creature is poisoned for the duration, and always rolls the minimum value on all hit dice used for recovery. Each time the creature would drink something, it must make a Constitution saving throw. On a failure, it coughs out the liquid with horrid black bile mixed in, and takes 1d6 poison damage. Damage taken this way reduces the creature's maximum hit points by the same amount.<br><br>A creature that succeeds in three Constitution saving throws within 24 hours without any failures is on the path to recovery and has advantage on all future saving throws against this spell. A creature that achieves this again is cured on the next day.",
+    "empower": ""
+  },
+  {
+    "name": "Splinter Self",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Illusion"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "Seamlessly, you step 5 feet in any direction as an exact copy of you remains in your prior location. The copy is an exact copy of you, but it can't cast spells and is treated as if it was a monster with the Illusory modifier. It takes its turns after yours.",
     "empower": ""
   },
   {
@@ -7304,6 +7559,19 @@ const SpellDatabase = [
     "duration": "1 minute",
     "desc": "You launch a spinning disc of compressed, jagged metal with a radius of 15 feet towards a target point you can see. Every creature in a 15 foot wide line between you and the point must succeed on a Dexterity saving throw or take 7d6 slashing damage. Any object in the way takes 42 damage.<br><br>Upon reaching the point or an object it cannot destroy, the blade embeds itself and sheds sharp shrapnel in a 15 foot radius around itself. Any creature that enters the area during their turn or starts their turn inside takes 3d6 slashing damage. Any creature that makes contact with the blade takes 42 slashing damage.<br><br>Casting this spell again while it is already active removes the first disc.",
     "empower": "You instead launch two discs. They destroy each other if they touch after landing. A creature can only take damage from one disc if they are in range of both."
+  },
+  {
+    "name": "Splinter Soul",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Illusion"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "Target creature becomes flanked by an illusory copy of itself, appearing in the nearest empty adjacent space to the target. The copy is an exact copy with the Illusory modifier applied, takes its turn after the target, and does nothing except attempt to attack and kill the target and moving when necessary. If you are reduced to 0 hit points, the copy disappears.<br><br>Casting this spell again dispels any existing copies.",
+    "empower": "Creates three copies."
   },
   {
     "name": "Vine Whip",
