@@ -2230,11 +2230,11 @@ const SpellDatabase = [
       "Evocation",
       "Water"
     ],
-    "cost": "2 AP",
+    "cost": "1 to 3 AP",
     "range": "60 feet",
     "duration": "1 minute",
-    "desc": "You create a horizontal blade of water that spans a 10 foot wide line across the ground, and launch it forward from you to target point within range. Creatures in the blade's path must succeed on a Dexterity saving throw or take 2d6 slashing damage, halved on a success. At the start of each of your successive turns, you can command the blade to move to a new location within 60 feet of you, slashing all creatures in the way. The blade can't travel vertically and must follow the surface of the ground.<br><br>If cast in water or while in a surface with water up to one foot in height, the blade doubles in size.",
-    "empower": "Choose one - damage increased to 3d6, or blade width increases by 5 feet, or the blade can move vertically."
+    "desc": "You create a horizontal blade of water that spans a 10 foot wide line across the ground, and launch it forward from you to target point within range. Creatures in the blade's path must succeed on a Dexterity saving throw or take 1d6 slashing damage per AP spent, halved on a success. At the start of each of your successive turns, you can command the blade to move to a new location within 60 feet of you, slashing all creatures in the way. The blade can't travel vertically and must follow the surface of the ground.<br><br>If cast in water or while in a surface with water up to one foot in height, the blade doubles in size.",
+    "empower": "Choose one - damage increased by 2 per AP spent, or blade width increases by 5 feet, or the blade can move vertically."
   },
   {
     "name": "Vampiric Touch",
