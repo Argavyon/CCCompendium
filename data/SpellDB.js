@@ -2244,10 +2244,10 @@ const SpellDatabase = [
       "Necromancy",
       "Unholy"
     ],
-    "cost": "2 AP",
+    "cost": "1 to 3 AP",
     "range": "Touch",
     "duration": "Instantaneous",
-    "desc": "Target creature must make a Constitution saving throw or take 4d6 unholy damage, halved on a success. You are healed for half of the damage dealt.",
+    "desc": "Target creature must make a Constitution saving throw or take 2d6 unholy damage per AP spent, halved on a success. You are healed for half of the damage dealt.",
     "empower": "You are healed for the damage dealt instead."
   },
   {
