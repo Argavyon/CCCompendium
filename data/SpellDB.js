@@ -2580,11 +2580,11 @@ const SpellDatabase = [
       "Shadow",
       "Silent"
     ],
-    "cost": "2 AP",
+    "cost": "1 to 3 AP",
     "range": "120 feet",
     "duration": "Instantaneous",
-    "desc": "Five bows of shadow line up and fire one shadowy arrow each down a 25 foot wide line composed of five 5 foot lines. The first creature in each 5 foot line must make a Dexterity saving throw or take 4d8 piercing damage, halved on a success. Each arrow stops after striking a creature.",
-    "empower": "Damage increased to 6d8.",
+    "desc": "Five bows of shadow line up and fire one shadowy arrow each per AP spent down a 25 foot wide line composed of five 5 foot lines. The first creature in each 5 foot line must make a Dexterity saving throw or take 2d8 piercing damage per arrow, halved on a success. Each arrow stops after striking a creature.",
+    "empower": "Choose one - arrows pierce and can hit a second creature in the way for half damage that is negated on a successful Dexterity saving throw, or each bow fires an additional arrow.",
     "author": "CrusaderDroid"
   },
   {
