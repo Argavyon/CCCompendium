@@ -2617,7 +2617,7 @@ const SpellDatabase = [
     "cost": "2 AP",
     "range": "30'",
     "duration": "1 minute",
-    "desc": "Create a 5' tall and wide Snapdragon bush at a target point within range. It's dragon-like flowers bite and snarl at anything that comes within 5' of the bush. Creatures in the area must make a Willpower saving throw against your Spell Save DC, taking 2d8 piercing damage and becoming Frightened of the bush for the duration. They can repeat the saving throw at the end of each of their turns, ending the effect on a success.<br><br>Creatures who are shoved or moved into the bush take double damage without a saving throw.",
+    "desc": "Create a 5' tall and wide Snapdragon bush at a target point within range. Its dragon-like flowers bite and snarl at anything that comes within 5' of the bush. Creatures in the area must make an Intuition saving throw, taking 2d8 piercing damage and becoming Frightened of the bush for the duration. They can repeat the saving throw at the end of each of their turns, ending the effect on a success.<br><br>Creatures who are shoved or moved into the bush take double damage without a saving throw.",
     "empower": "The bush is 10' wide and tall instead. The damage is halved on a successful save instead of negated."
   },
   {
