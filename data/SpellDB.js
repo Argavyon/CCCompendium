@@ -6400,7 +6400,6 @@ const SpellDatabase = [
     "tags": [
       "Conjuration",
       "Beast",
-      "Psychic",
       "Summoning",
       "Concentration"
     ],
