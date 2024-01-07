@@ -2456,16 +2456,16 @@ const SpellDatabase = [
   },
   {
     "name": "Crippling Ray",
+    "author": "CrusaderDroid",
     "tier": 2,
     "tags": [
       "Necromancy"
     ],
     "cost": "2 AP",
     "range": "120'",
-    "duration": "Instantaneous",
+    "duration": "1 minute",
     "desc": "Fire a ray of crippling energy at a creature within range. They must succeed on a Constitution saving throw or have their movement speed reduced by 10', they only have 2 AP per turn, and be unable to make reactions for up to 1 minute. They can reattempt this saving throw at the end of each of their following turns, ending the effect on a success.",
-    "empower": "Fire an additional ray at another target, or fire a second ray at the same target to impose disadvantage on the initial saving throw.",
-    "author": "CrusaderDroid"
+    "empower": "Fire an additional ray at another target, or fire a second ray at the same target to impose disadvantage on the initial saving throw."
   },
   {
     "name": "Pride's Fall",
