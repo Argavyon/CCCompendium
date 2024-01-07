@@ -4482,6 +4482,20 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Wizard's Challenge",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Enchantment",
+      "Arcane"
+    ],
+    "cost": "0 AP",
+    "range": "90 feet",
+    "duration": "1 minute",
+    "desc": "Target creature that can cast spells is compelled to face you in a duel. It can only cast spells that target itself or you for the duration.<br><br>The spell ends if you take any action other than targeting the creature or yourself with a spell, or if you cast this spell again on a different target.",
+    "empower": ""
+  },
+  {
     "name": "Umbral Stalker",
     "tier": 3,
     "tags": [
@@ -4511,6 +4525,20 @@ const SpellDatabase = [
     "duration": "8 hours",
     "desc": "Black blood bursts from your heart, skewering you and attempting to skewer every creature within 30 feet. You take anywhere between 10 to 30 piercing damage as you choose and infect yourself with the Crimson Stain disease, while creatures in the area must succeed on a Dexterity saving throw or take the same damage and also be infected. A successful saving throw deals half damage and avoids infection.<br><br>Creatures with the Crimson Stain visibly have blood seeping through the skin covering the heart. If they spend more than 2 AP during a turn, blood pushes through, forcing the creature to roll one of its remaining hit die, take damage equal to the result, and lose the hit die. A creature without hit dice remaining takes damage equal to half the difference between their maximum hit points and their current hit points.",
     "empower": "You are immune to the Crimson Stain, but are still a carrier of the disease. Damage maximum increased to 45."
+  },
+  {
+    "name": "Punishing Leaves",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Plant"
+    ],
+    "cost": "1 to 3 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "For each AP spent, you launch two multicolored leaves at high speed at creatures within range. Targeted creatures must succeed on a Dexterity saving throw or take 2d10 slashing damage, plus 4 slashing damage for each leaf past the first targeting that creature. Restrained creatures always fail this saving throw.<br><br>The leaves then impart a curse on any creature that failed their saving throw. For the duration of the spell, when they successfully attack you or an object or creature created by a Plant spell and roll for damage, they take damage equal to the highest value rolled on all damage dice. This damage can't be reduced or negated.",
+    "empower": "Choose one - the spell gains Concentration and affected creatures subtract your spellcasting stat from their damage, or the retaliatory damage is triggered whenever the creature damages any other creature, or retaliatory damage taken is deducted from maximum hit points."
   },
   {
     "name": "The Devourer",
@@ -4570,6 +4598,20 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "You call upon the spirits of the deceased for restoration to avoid their fate. Every non-reanimated creature you choose within range heals 2d12 hit points. Each corpse and reanimated creature within range adds an additional 1d12 hit points, to a maximum of 6d12 hit points.<br><br>Creatures healed by this spell must finish a rest before they can be healed by it again.",
     "empower": "Also removes the poisoned condition and ends any disease effects on creatures."
+  },
+  {
+    "name": "Maw of Murghanthus",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Conjuration",
+      "Eldritch"
+    ],
+    "cost": "3 AP",
+    "range": "Self (20 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "The maw of the great Sea Wyrm Murghanthus opens beneath you and closes down on your location. All other creatures within range must succeed on a Dexterity saving throw or take 6d6 slashing damage and be restrained. On a successful saving throw, a creature takes half damage and immediately moves to the nearest empty space outside of the spell's range.<br><br>A restrained creature can make a Strength saving throw for 3 AP to escape the maw, exiting at the nearest empty space outside of the maw. You and creatures restrained by the maw are totally concealed. At the start of each of your turns, the maw chews and deals 3d6 slashing damage to every restrained creature.<br><br>You can't take any action during your turn other than to maintain this spell. You take 5 damage when you cast this spell, and 5 damage at the start of each of your turns while you maintain this spell. Damage taken this way can't be reduced or negated.",
+    "empower": "Self-damage increased to 10 now and at the start of each of your turns. Initial damage increased to 8d6, sustained damage increased to 4d6. Creatures automatically fail their first Strength saving throw. Creatures reduced to 0 or fewer hit points by this spell other than you heal you for 5 hit points."
   },
   {
     "name": "Sway the Spirits",
@@ -4703,6 +4745,21 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "Sheer primal power overtakes you. Make one weapon attack with your currently equipped weapon on every creature you choose within range. You deal an additional 3d6 damage on hit.",
     "empower": "Recover 1 AP for each creature reduced to 0 or fewer hit points, up to 3 AP."
+  },
+  {
+    "name": "Bumper Crop",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Transmutation",
+      "Plant",
+      "Ritual"
+    ],
+    "cost": "N/A AP",
+    "range": "Self (30 foot radius) ",
+    "duration": "24 hours",
+    "desc": "You channel magic into the earth for 15 minutes, causing crops of your choice to take root in the area. They quickly grow to maturity over the span of one hour, regardless of the viability of the soil. Any creature that partakes in eating these crops is healed for the equivalent of three of their hit dice.<br><br>Each space in the area of effect can feed one creature. A creature can only eat once per rest. When the spell ends, the crops wither and die even if they were picked.",
+    "empower": ""
   },
   {
     "name": "Song of Pride",
@@ -4897,6 +4954,20 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "Target creature moves up to 30 feet in any direction. They must end this movement on solid ground.",
     "empower": "You can choose to swap places with the creature instead of moving them."
+  },
+  {
+    "name": "Complex Ward",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Abjuration",
+      "Arcane"
+    ],
+    "cost": "1 to 3 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "For each AP spent, choose whether to grant 10 temporary hit points to a creature within range you can see, or to create a 10 foot radius dome with 20 hit points that absorbs damage for creatures you choose inside the dome until all of its hit points are depleted. If the same target or dome is chosen multiple times, the temporary hit points stack.",
+    "empower": "You additionally gain 5 temporary hit points for each AP spent. If you have more than 30 temporary hit points from this spell at the end of your next turn, it is reduced to 30."
   },
   {
     "name": "Call Flora Vindicator",
@@ -5260,6 +5331,21 @@ const SpellDatabase = [
     "range": "Self",
     "duration": "1 minute (Concentration?)",
     "desc": "State an action, or course of (possible-) actions made by you. If any of the actions made requires checks, attacks or saving throws to be made, you or that creature relevant to the roll makes those rolls.<br><br>You gain insight in what the possible outcome would be, without that either of the events has happened yet or that other costs have been made yet to perform them. The time you can peer ahead can be no larger than 6 (or however long one 'round' is) seconds.<br><br>If or when the forecasted events are to your approval, you may let them enroll as forecast, using all results, before the spell ends. Otherwise, you may discard the forecast and continue the duration of this spell.",
+    "empower": ""
+  },
+  {
+    "name": "Quantum Alteration",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Abjuration",
+      "Space",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "Space bends to your will. During your turn, everything within 30 feet of you can be treated as if it was within 5 feet of you. For distances exceeding 30 feet, subtract 30 feet from the distance for the purposes of calculating range and reach.",
     "empower": ""
   },
   {
@@ -6000,6 +6086,22 @@ const SpellDatabase = [
     "empower": "Range becomes 30 feet. The targeted creature receives the benefits instead of you."
   },
   {
+    "name": "Mystical Spymaster",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Divination",
+      "Arcane",
+      "Psychic",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "Self (30 foot radius)",
+    "duration": "1 hour",
+    "desc": "You gain magical sight out to 30 feet that can see through invisibility for the duration.<br><br>If another Divination spell is cast within range, or if anything within range is targeted by a Divination spell, you gain vision of a 10 foot radius around the caster for the duration. You always know what the spell is revealing to the creature.",
+    "empower": ""
+  },
+  {
     "name": "Sunspot",
     "author": "CrusaderDroid",
     "tier": 3,
@@ -6218,6 +6320,20 @@ const SpellDatabase = [
     "duration": "1 hour",
     "desc": "A tower of black stone rises from the earth at a target empty area, occupying a cylinder with a radius of 10 feet and a height of 20 feet, topped with an ornate, reflective jet black glass obelisk. The spell fails if there is insufficient room for this construction.<br><br>The tower emanates unholy energy. Undead and reanimated creatures that start their turn within 60 feet gain temporary hit points equal to your spellcasting stat at the start of each of their turns.<br><br>You can spend 1 AP once per turn to have the obelisk blast a target creature within 120 feet with a ray of unholy magic. It must make a Constitution saving throw or take 2d6 unholy damage. Undead and reanimated creatures are healed for the same amount instead, even if they don't normally absorb unholy damage.<br><br>The tower has AC 14 and 120 hit points. Casting this spell again while a tower already exists destroys the first tower.",
     "empower": "The obelisk can target a second creature, but it must be Undead or reanimated."
+  },
+  {
+    "name": "Bloodvine Seeding",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Conjuration",
+      "Plant"
+    ],
+    "cost": "1 to 3 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "For every AP spent, you fire two seeds, each aimed at a creature within range. A creature targeted by at least one seed must make a Dexterity saving throw or take 1d6 piercing damage per seed. The seeds embed themselves in creatures that fail their saving throw.<br><br>At any time between the start of your next turn and the end of this spell, you can spend 1 AP to have any number of seeds erupt into a tangle of grasping vines. The victim takes 2d6 piercing damage per seed, and the vines reach out to the nearest creature within 10 feet. If a creature is within range, the vines grapple both their host and the creature, and they remain grappled until either of them spends 2 AP to make a Strength saving throw that destroys them on a success, or until the vines take 20 damage.<br><br>If you would be grappled by vines, you instead heal for 4 hit points per seed in the target.",
+    "empower": "Choose one - number of seeds per AP increases to three, or vine range increases to 20 feet, or healing increased to 6 hit points per seed."
   },
   {
     "name": "Waterfall",
