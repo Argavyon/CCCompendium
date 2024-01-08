@@ -3109,7 +3109,7 @@ const SpellDatabase = [
     "cost": "2 AP",
     "range": "90 feet",
     "duration": "1 minute",
-    "desc": "Soothing water sprinkles down in a 10 foot radius, 100 foot tall cylinder. When a creature starts their turn in the area, they are healed for 1d4 hit points.",
+    "desc": "Soothing water sprinkles down in a 10 foot radius, 100 foot tall cylinder. When a creature starts their turn in the area, you can choose to heal them for 1d6 hit points. At the start of each of your turns, you can choose to move the rain up to 15 feet in any direction. <br> If you cast this spell again, the previously-created rain immediately stops.",
     "empower": "You add your spellcasting stat to healing from this spell.",
     "author": "CrusaderDroid"
   },
