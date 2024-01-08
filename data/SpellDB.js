@@ -3570,7 +3570,7 @@ const SpellDatabase = [
     "cost": "2 AP",
     "range": "Self ",
     "duration": "1 minute",
-    "desc": "You gain the ability to fire deadly spheres of draconic magic. When you cast this spell, choose a damage type other than slashing, piercing, or bludgeoning. You can spend up to 3 AP during your turns to make a ranged attack using your spellcasting modifier. On hit, the attack deals 1d8 damage of that type in a 15 foot long, 5 foot wide line extending through the target per AP spent.",
+    "desc": "You gain the ability to fire deadly spheres of draconic magic. When you cast this spell, choose a damage type other than slashing, piercing, or bludgeoning. You can spend up to 3 AP during your turns to make a ranged attack using your spellcasting modifier. On hit, the attack deals 1d8 damage of that type per AP spent in a 15 foot long, 5 foot wide line extending through the target.",
     "empower": "Base damage increased by 1d8.",
     "author": "CrusaderDroid"
   },
