@@ -3373,11 +3373,11 @@ const SpellDatabase = [
       "Evocation",
       "Lightning"
     ],
-    "cost": "2 AP",
+    "cost": "1 to 3 AP",
     "range": "Self (60 foot cone) ",
     "duration": "Instantaneous",
-    "desc": "You strike out with thin bolts of lightning from your fingertips at up to three targets within range, who must make a Dexterity saving throw or take 3d8 lightning damage, halved on a success.",
-    "empower": "Targets two additional creatures."
+    "desc": "You strike out with thin bolts of lightning from your fingertips at up to three targets within range, who must make a Dexterity saving throw or take 2d8 lightning damage plus 1d8 damage per AP spent past the first, halved on a success. If 3 AP was spent on this spell, a fourth bolt of lightning can target an additional creature.",
+    "empower": "Targets two additional creatures. Damage increased by 1d8."
   },
   {
     "name": "Vital Surge",
