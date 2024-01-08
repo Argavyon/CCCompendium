@@ -3196,7 +3196,7 @@ const SpellDatabase = [
       "Lightning",
       "Psychic"
     ],
-    "cost": "2 AP",
+    "cost": "1 AP",
     "range": "30 feet",
     "duration": "Instantaneous",
     "desc": "As a response to a creature making an attack, you send a large shock through their nervous system, disrupting their movement.  The creature takes 2d6 lightning damage and has disadvantage on attack rolls for the rest of their turn.",
