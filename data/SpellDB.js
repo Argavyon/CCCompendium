@@ -3612,9 +3612,9 @@ const SpellDatabase = [
     ],
     "cost": "X AP",
     "range": "120 feet",
-    "duration": "Instantaneous",
-    "desc": "For every AP spent on this spell, you fire one beam of light at a target creature within range you can see. A creature targeted by at least one beam must succeed on a Dexterity saving throw or take 1d10 radiant damage per beam, halved on a success.",
-    "empower": "Each beam additionally deals bonus damage equal to your spellcasting stat."
+    "duration": "1 minute",
+    "desc": "A 15 foot radius (plus 5 feet for each AP spent past the first), 100 foot tall cylinder centered on target point within range that you can see is bombarded with constant rays of light. Creatures in the area now and at the start of each of their turns must succeed on a Constitution saving throw or take 2d10 radiant damage plus 1d10 radiant damage for each AP spent past the first, halved on a success.",
+    "empower": "Choose one - radius increased by 10 feet and you choose which creatures take damage, or you add your spellcasting stat to the damage roll once per AP spent, or you can spend 1 AP during your turn to move the area up to 30 feet in any direction."
   },
   {
     "name": "Black Breath",
