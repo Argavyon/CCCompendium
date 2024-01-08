@@ -106,3 +106,6 @@
 #tag_Familiar>img {
     content:url(../assets/spells/sitting-dog.png);
 }
+#tag_Forbidden>img {
+    content:url(../assets/spells/hazard-sign.png);
+}

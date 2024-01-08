@@ -4,6 +4,7 @@ function ftag_desc(functional_tags, tag) {
     ];
 }
 
+// Generate full-sized spell description
 function spellCard(spellData, functional_tags) {
 	const card = document.createElement('table');
 	const cardBody = card.appendChild(document.createElement('tbody'));
@@ -78,6 +79,7 @@ function spellCard(spellData, functional_tags) {
 	return card;
 }
 
+// Generate spell table entry
 function spellBrief(spellData, functional_tags) {
     const brief = document.createElement('tr');
     brief.id = `spell_${spellData.name.replaceAll(' ', '_')}`;
@@ -98,13 +100,14 @@ function spellBrief(spellData, functional_tags) {
     
     brief.onclick = function() {
         const card = spellCard(spellData, functional_tags);
-        const CR = document.querySelector('#compendium_right');
-        CR.replaceChild(card, CR.firstChild);
+        const compendiumRight = document.getElementById('compendium_right');
+        compendiumRight.replaceChild(card, compendiumRight.firstElementChild);
     };
     
     return brief;
 }
 
+// Generate spell table
 function generate_brief_spell_table(SpellDatabase, tag_select, tier_select, functional_tags) {
     const oldTable = document.querySelector('#spelltable');
     const newTable = oldTable.cloneNode(false);
@@ -118,6 +121,7 @@ function generate_brief_spell_table(SpellDatabase, tag_select, tier_select, func
     oldTable.parentNode.replaceChild(newTable, oldTable);
 }
 
+// Download spell
 function downloadSpell() {
 	const spell = document.querySelector("#compendium_right table");
 	if (spell) {
@@ -155,6 +159,7 @@ function tag_buttons(tag_list, tag_set, container, render_callback) {
 
         div.style.display = 'block';
         div.id = `tag_${tag.replaceAll(' ', '_')}`;
+        if(tag.includes('Forbidden')) div.id = 'tag_Forbidden';
         div.className = 'selector';
         div.value = 0;
         div.onclick = function() {
@@ -197,11 +202,14 @@ function main() {
         Still: 'You do not need to move to cast this spell.',
 	    Deprecated: 'This spell is considered for removal. Please do not select this spell during playtesting.',    
     };
-    const school_tags = ['Conjuration', 'Evocation', 'Transmutation', 'Necromancy', 'Abjuration', 'Enchantment', 'Illusion', 'Divination'];
+    const school_tags = ['Conjuration', 'Evocation', 'Transmutation', 'Necromancy', 'Abjuration', 'Enchantment', 'Illusion', 'Divination', 'Forbidden'];
 
     SpellDatabase.forEach(spell =>
         spell.tags.forEach(tag => {
-            if (Object.keys(functional_tags).some(f_tag => tag.includes(f_tag))) {
+            if (tag.includes('Forbidden')) {
+                if (!tag_list[tag]) tag_list[tag] = 1;
+                else tag_list[tag] += 1;
+            } else if (Object.keys(functional_tags).includes(tag)) {
                 if (!functional_tag_list[tag]) functional_tag_list[tag] = 1;
                 else functional_tag_list[tag] += 1;
             } else if (school_tags.includes(tag)) {
