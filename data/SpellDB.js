@@ -3600,7 +3600,7 @@ const SpellDatabase = [
     "range": "Touch",
     "duration": "Instantaneous",
     "desc": "Target creature takes 1d6 damage, plus bonus damage equal to the number of spent or destroyed hit dice on the target, per AP spent, as you twist and contort their own blood to damage them from within. Damage dealt by this spell also reduces the target's maximum hit points by the same amount.",
-    "empower": "Also destroys a hit die on the target."
+    "empower": "Before dealing damage, destroys 1 hit die on the target per AP spent. If insufficient hit dice are remaining, the target is vulnerable to the damage from this spell."
   },
   {
     "name": "Photon Barrage",
