@@ -6492,6 +6492,20 @@ const SpellDatabase = [
     "empower": "Binds an additional creature of equal or smaller size adjacent to the target. Only the target can attempt the saving throw."
   },
   {
+    "name": "Mass Heat Shock",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Evocation",
+      "Fire"
+    ],
+    "cost": "1 to 3 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Choose one point within range, plus one more point for every AP spent on this spell. Each point explodes into intense heat that covers a 10 foot radius. Creatures within at least one explosion must make a Dexterity saving throw or take 4d6 fire damage, halved on a success. A creature can only be damaged by one explosion this way.<br><br>At the start of your next turn, choose a point within the radius of any point that exploded before. A 20 foot radius area centered on that point explodes into intense heat. Creatures within must make a Dexterity saving throw or take 6d6 fire damage, halved on a success.",
+    "empower": "Choose one - you can choose two more additional points, or creatures caught within multiple explosions have disadvantage on the saving throw, or the final explosion has its radius increased to 30 feet and its damage increased to 9d6."
+  },
+  {
     "name": "Surging Vessel",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -6707,6 +6721,20 @@ const SpellDatabase = [
     "desc": "You conjure a stream of water that covers a 10 foot wide line up to 90 feet long, which travels forward and away from you. Upon reaching the desired location, it freezes solid. Creatures in the path must make a Dexterity saving throw or be restrained and take 6d6 cold damage. A creature that succeeds takes half damage and moves out of the way of the path into the closest empty space.<br><br>The path remains for the duration of the spell. Each 5 foot square has 10 hit points, AC 10, and vulnerability to fire and bludgeoning damage, and shatters if its hit points are reduced to 0. A creature restrained by the spell can make a weapon attack against the nearest square, freeing itself if the square is destroyed.",
     "empower": "Destroyed squares are restored at the start of each of your turns.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Explode",
+    "author": "Serpexnessie",
+    "tier": 4,
+    "tags": [
+      "Evocation",
+      "Fire"
+    ],
+    "cost": "3 AP",
+    "range": "120 feet",
+    "duration": "Instantaneous",
+    "desc": "You launch a glowing spark at a target point in range, which explodes. The center of the blast engulfs a 15-foot radius sphere, while the spell sends shockwaves out to an additional 15 feet. Creatures in the main area of the blast must make a Dexterity saving throw or take 6d6 fire damage, halved on success, while all creatures in the radius of the spell (including those in the central blast) take 6d6 arcane damage.",
+    "empower": "Fire and arcane damage increased to 8d6. Radius increased to 20 feet. Shockwave range increased to 20 feet."
   },
   {
     "name": "Divine Scourge",
@@ -6947,6 +6975,20 @@ const SpellDatabase = [
     "desc": "You inscribe multiple Circles of Warding onto every creature in range that you choose. These circles move with the owner. They are dispelled if the owner moves in a way that puts a summoned or reanimated creature inside.<br><br>A summoned creature can spend 3 AP to attempt to overcome a circle it is adjacent to. It makes a Willpower saving throw. On a success, the spell ends for that creature.",
     "empower": "Duration increased to 10 minutes.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Blaze Lash",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Evocation",
+      "Fire"
+    ],
+    "cost": "1 to 3 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Long whips of flame extend from your hand and strike at one or several targets within range. You can distribute three hits, plus one per AP spent, between any number of creatures within range that you can see. Each targeted creature must succeed on a Dexterity saving throw for each hit or take 4d8 fire damage, increased by 1d8 for each time they've failed a saving throw from this spell. A creature that succeeds on their saving throw takes half damage from the hit and all successive hits.",
+    "empower": "Choose one - each hit can be split between two targets, or the damage on consecutive hits is increased from 1d8 to 3d8."
   },
   {
     "name": "First Dragon's Breath",
