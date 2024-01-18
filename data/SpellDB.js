@@ -1634,6 +1634,20 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Choking Ash",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Evocation",
+      "Forbidden (Volcanic)"
+    ],
+    "cost": "1 to 3 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "A 10 foot radius sphere, increased by 5 feet for every AP spent past the first, bursts into a cloud of volcanic ash. Creatures inside are blinded, while the ash heavily obscures the area. Creatures inside the ash cloud when it is created and creatures that start their turn inside or enter during their turn must succeed on a Constitution saving throw. On a failure, they lose 2 AP coughing and choking on the ash.<br><br>Creatures that exit the ash cloud are covered in the ash and leave a trail behind as they move. Until they remove the ash by spending 2 AP or being targeted by a Water or Wind spell, they can't hide or become invisible.",
+    "empower": "Also deals 2d8 fire damage on a failed saving throw. A successful saving throw reduces the damage taken by half."
+  },
+  {
     "name": "Mud Spray",
     "author": "CrusaderDroid",
     "tier": 1,
@@ -3575,6 +3589,20 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Lava Flow",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Conjuration",
+      "Forbidden (Volcanic)"
+    ],
+    "cost": "2 AP",
+    "range": "Self (10 foot line) ",
+    "duration": "Special",
+    "desc": "You dredge up a lava flow that covers a 10 foot wide, 10 foot long line extending across the ground in a direction you choose. This lava is magical, an imitation of true lava, and is missing most of the lethal heat.<br><br>The lava counts as difficult terrain for any creature not immune to fire damage. Any creature that makes contact with it or starts their turn inside of it takes 2d6 fire damage and becomes vulnerable to the next source of fire damage before the start of their next turn. Flammable objects in or within 5 feet of the lava burst into flames.<br><br>At the start of each of your turns, the lava flows an additional 10 feet forward. You can choose to adjust the direction of the flow up to forty-five degrees each time.<br><br>After 1 minute, the flow stops expanding. After 1 hour, the flow disappears.",
+    "empower": "Damage increased to 4d6."
+  },
+  {
     "name": "Ice Block",
     "author": "CrusaderDroid",
     "tier": 2,
@@ -4805,6 +4833,20 @@ const SpellDatabase = [
     "duration": "1 hour",
     "desc": "You loose a transparent snake-like construct of poison magic that targets one creature you can see. Now and at the start of each of your turns, it moves 30 feet towards the target. Upon reaching the target, it \"bites\", subsuming itself into the target. It must make a Constitution saving throw. On a failure, it is paralyzed for the duration. It repeats the saving throw at the end of each of its turns. On the first time it succeeds, it is no longer paralyzed but has its movement set to 0. On the second success, its movement is halved. On the third success, the spell ends. The creature is unaware it has been affected by a spell in this manner, perceiving it as a strange failure of their body.<br><br>A creature that succeeds on the initial saving throw has their movement speed reduced by half for the duration and is aware they have been affected. At the end of each of their turns, they can repeat the saving throw with advantage to end the effect on a success.<br><br>The spell camouflages itself to avoid detection. It takes the closest possible path to reach its target, climbing around obstacles and squeezing through any opening larger than one inch. If it ends its movement in an empty space, a creature can identify it with a DC 20 Intuition saving throw. If the target is aware of the spell, it automatically succeeds on its first saving throw against the spell.",
     "empower": "After the creature recovers from being paralyzed, it is also poisoned until the spell ends. The spell moves 45 feet per turn instead."
+  },
+  {
+    "name": "Rupture Earthblood",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Conjuration",
+      "Forbidden (Volcanic)"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "A 20 foot radius area within range begins to heat up and rumble. At the start of your next turn, it explodes into a shower of magma that rains down onto a 40 foot radius centered on the original area. Creatures in the central 20 foot area take 6d6 fire damage and are flung 20 feet into the air, while creatures on the outer 20 feet must make a Dexterity saving throw or take 5d6 fire damage. The 40 foot radius then becomes filled with lava, which acts as per the Lava Flow spell, save that it does not move at the start of your turns. The lava disappears when the spell ends.",
+    "empower": "Also flings three 10 foot radius globs of lava to any three points you choose when the magma bursts."
   },
   {
     "name": "Blessing of Heroes",
@@ -6460,6 +6502,20 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Heroic Echo",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Necromancy",
+      "Spirit"
+    ],
+    "cost": "1 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "You can cast this spell as a response to a creature making an attack roll without advantage. After the attack resolves, a mighty spirit makes the same attack against the same targets with advantage, dealing an additional 4d6 damage on hit. The target creature then recovers 1 AP.<br><br>A creature can only be affected by this spell once on each of their turns. Damage dealt by this spell is treated as if the target creature had dealt the damage.",
+    "empower": ""
+  },
+  {
     "name": "Exile",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -6476,6 +6532,20 @@ const SpellDatabase = [
     "duration": "1 minute",
     "desc": "Target creature must succeed on a Willpower saving throw or be removed from your current plane. If they are a native, they are set in a harmless demiplane and can repeat the saving throw at the end of each of their turns to return to their prior location.<br><br>If the creature is not from this plane, they are instead locked in a battle of wills with you. They are partially phased out of the plane and can't be targeted by anything. At the start of each of its turns, it makes a competing Willpower roll against your spellcasting stat. If it gets two consecutive successes or your concentration is broken, it ends the spell early and deals 4d12 psychic damage to you and stuns you until the end of your next turn from the backlash of the spell. If it gets two consecutive failures, it is banished from the plane for a year and a day, sent back to its native plane, and the spell ends.",
     "empower": "An extraplanar creature is banished if it fails twice, even if it succeeds once after failing."
+  },
+  {
+    "name": "Nemesis",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Enchantment",
+      "Fey"
+    ],
+    "cost": "1 AP",
+    "range": "60 feet ",
+    "duration": "Special",
+    "desc": "You mystically mark yourself as a target creature's fated nemesis. Whenever you are within 120 feet of the creature, it knows your current location. In exchange, you gain the following benefits: <br>>You always know the target's location. <br>>When you deal damage to your target, one damage die you choose is set to its highest value. The value of this die is additionally deducted from their maximum hit points.<br>>When the target is reduced to half of their maximum hit points, it must make an Intuition saving throw with disadvantage to avoid being frightened until it is no longer within 120 feet of you. This ignores a creature's immunity to being frightened.<br>>You have advantage on all saving throws forced by the creature.<br><br>The spell normally lasts for 1 minute. If you reduce a creature to half of their maximum hit points, the spell's duration becomes permanent.<br><br>The spell ends if you are reduced to 0 hit points by the target, or if the target is killed. You can't cast this spell again until it ends.",
+    "empower": "Empower this spell only after ending the spell by killing the target. Up to twelve associates of the target are marked as your nemesis."
   },
   {
     "name": "The Bleeding Cords",
@@ -6615,6 +6685,36 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Shatter Boundaries",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Abjuration",
+      "Eldritch",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "You thrust forward, sending magic at a target point within range, where it explodes forward into a 15 foot wide, 30 foot long, 10 foot tall corridor of haphazardly fragmented space, split between the current plane of existence and the Sea of Possibility.<br><br>Any creature that ends their turn in this warped space rolls two hit dice and takes damage equal to the number rolled, which is additionally deducted from their maximum hit points. Their movement speed is locked to 5 feet while inside. Any other Abjuration spell that was inside the area is dispelled.<br><br>When the spell ends, the sudden shift in dimensional boundaries deals 4d6 damage to all creatures inside.",
+    "empower": ""
+  },
+  {
+    "name": "Pandoric Invocation",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Enchantment",
+      "Eldritch",
+      "Delayed"
+    ],
+    "cost": "4 AP",
+    "range": "Self (30 feet) ",
+    "duration": "Instantaneous",
+    "desc": "Unwanted, unfavorable, unforgettable, unintelligible information floods into the minds of all creatures you choose within range. They lose 1 AP on their next turn and can't take responses until after their next turn. In addition, they must make an Intuition saving throw. On a failure, they lose an additional 1 AP on their next turn as well as 4d6 MP, and can't cast spells during their next turn.",
+    "empower": "Deals 4d6 MP damage to all targets. Creatures that fail their saving throw are instead stunned until the end of their next turn and take 4d6 psychic damage."
+  },
+  {
     "name": "Superposition",
     "author": "Levi",
     "tier": 4,
@@ -6628,6 +6728,21 @@ const SpellDatabase = [
     "range": "Self (600 feet)",
     "duration": "8 hours",
     "desc": "Your body dissociates into two identical phantom images formed of energized particles which you can freely move separately, exploring different possibilities. If used in combat, the two bodies have their own movement speed, though they share your turn. The phantom images are both considered your true body, and share their senses with each other. Due to their uncertain and illusory nature, the phantom images have advantage on skill checks to perceive their surroundings or to hide their presence. Their existence is so thin that creatures more than 30 feet away cannot detect them with non-magical senses.<br><br>If at any point during this spell's duration, another creature becomes aware of one of your phantom images or the two bodies move out of range of each other the spell ends early. When the spell ends, you must choose one of the two bodies to be your true body, and the other phantom image dissipates into nonexistence as probability collapses onto that body and its actions being the true line of reality.<br><br>**Empower:** The range of this spell becomes Self (1 mile).",
+    "empower": ""
+  },
+  {
+    "name": "War Room",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Abjuration",
+      "Fey",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "Self (90 foot radius) ",
+    "duration": "1 hour",
+    "desc": "You create an area of fey space around you that prohibits fighting. For the duration, every creature in the area can't use weapon attacks or spells that deal damage to creatures.<br><br>The spell ends if you leave the area.",
     "empower": ""
   },
   {
@@ -6707,6 +6822,21 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Hunter",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Divination",
+      "Psychic",
+      "Delayed"
+    ],
+    "cost": "9 AP",
+    "range": "600 feet",
+    "duration": "Instantaneous",
+    "desc": "Upon casting this spell, your mind searches for a creature you are familiar with within range that has its own mind. If no such creature is in range, so long as you continue casting the spell, the range increases by 600 feet. A creature is familiar to you if you have damaged it before, it has damaged you, or you've seen it for 1 minute within the past 24 hours, or you've had a conversation with it for 1 minute within the past month.<br><br>Upon finding a creature, you begin to bombard it with constant mental attacks. The target creature must succeed on an Intuition saving throw or take 3d6 psychic damage per AP spent this turn casting this spell. On a successful saving throw, the target takes half damage. Record the result of each saving throw made against this spell.<br><br>Upon completing the spell, check the number of failed saves to the number of succeeded saves. If the successes are greater than the failures, you take 2d6 psychic damage per success. If the failures are equal to or greater than the successes, the target takes 2d6 psychic damage per failure and is stunned until the start of your next turn.",
+    "empower": ""
+  },
+  {
     "name": "Path of Ice",
     "tier": 4,
     "tags": [
@@ -6721,6 +6851,21 @@ const SpellDatabase = [
     "desc": "You conjure a stream of water that covers a 10 foot wide line up to 90 feet long, which travels forward and away from you. Upon reaching the desired location, it freezes solid. Creatures in the path must make a Dexterity saving throw or be restrained and take 6d6 cold damage. A creature that succeeds takes half damage and moves out of the way of the path into the closest empty space.<br><br>The path remains for the duration of the spell. Each 5 foot square has 10 hit points, AC 10, and vulnerability to fire and bludgeoning damage, and shatters if its hit points are reduced to 0. A creature restrained by the spell can make a weapon attack against the nearest square, freeing itself if the square is destroyed.",
     "empower": "Destroyed squares are restored at the start of each of your turns.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Intertwined Selves",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Abjuration",
+      "Eldritch",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "60 feet",
+    "duration": "1 minute ",
+    "desc": "You weave your own possibility into another creature's. Whenever either of you would make an attack roll or saving throw, you choose whether your stats or the creature's stats are used.<br><br>The spell ends if you are more than 60 feet away from the target.",
+    "empower": ""
   },
   {
     "name": "Explode",
@@ -6767,6 +6912,20 @@ const SpellDatabase = [
     "empower": "Damage increased to 6d6."
   },
   {
+    "name": "Rupture Strike",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Transmutation",
+      "Water"
+    ],
+    "cost": "0 AP",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "desc": "When you damage a creature with a melee weapon attack or an attack created by a Water spell, you can cast this spell before rolling damage. The attack painfully ripples through the creature's blood and destroys a number of hit dice equal to your spellcasting stat, dealing 5 damage for each destroyed die. If there are not enough dice left, the damage for each excess die is doubled, and the target must make a Constitution saving throw or be stunned until the start of your next turn.<br><br>The spell can't affect a creature without blood.",
+    "empower": ""
+  },
+  {
     "name": "Black Bile",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -6780,6 +6939,21 @@ const SpellDatabase = [
     "duration": "Until cured",
     "desc": "You invisibly contaminate a body of liquid within range. Any creature that drinks this liquid becomes afflicted by Black Bile, a withering disease causing the creature to cough out horrid globs of black bile upon drinking any liquid. The creature is poisoned for the duration, and always rolls the minimum value on all hit dice used for recovery. Each time the creature would drink something, it must make a Constitution saving throw. On a failure, it coughs out the liquid with horrid black bile mixed in, and takes 1d6 poison damage. Damage taken this way reduces the creature's maximum hit points by the same amount.<br><br>A creature that succeeds in three Constitution saving throws within 24 hours without any failures is on the path to recovery and has advantage on all future saving throws against this spell. A creature that achieves this again is cured on the next day.",
     "empower": ""
+  },
+  {
+    "name": "Aegiskin",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Transmutation",
+      "Physical",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "Touch",
+    "duration": "1 minute",
+    "desc": "Target's skin becomes metallic. Their damage reduction is increased by 10.<br><br>Whenever the target takes damage, the spell loses 1 damage reduction. When the damage reduction becomes 0, the spell ends.",
+    "empower": "Choose one - the target becomes immune to fire and gains +1 damage reduction each time they would take fire damage, or the damage reduction can only be reduced to 5."
   },
   {
     "name": "Splinter Self",
@@ -6807,6 +6981,34 @@ const SpellDatabase = [
     "desc": "Creatures in a 15 foot radius, 300 foot tall cylinder centered on a target point you can see become targeted by a large storm cloud, which strikes down with lightning. Creatures must make a Dexterity saving throw now and each time they spend AP during their next turn. They take 6d8 lightning damage on a failure, halved on a success.",
     "empower": "Radius increased to 20 feet.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Commanding Voice",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Transmutation",
+      "Wind"
+    ],
+    "cost": "0 AP",
+    "range": "Up to 20 miles",
+    "duration": "Until dispelled",
+    "desc": "Your voice becomes clearly audible and intelligible to all creatures within a range you choose.<br><br>When you cast this spell, choose any number of creatures you can see. These creatures can speak to you in the same manner.<br><br>When you choose to end this spell, you refund half of the MP spent on this spell.",
+    "empower": ""
+  },
+  {
+    "name": "Current Lure",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Transmutation",
+      "Water"
+    ],
+    "cost": "2 AP",
+    "range": "Touch",
+    "duration": "Permanent",
+    "desc": "You create a complex network of currents in a body of water. Fish and other aquatic beasts will find themselves drawn to the exact location you touch. Anything with a swim speed triples their movement speed when moving towards the lure.",
+    "empower": ""
   },
   {
     "name": "Power Lock",
@@ -6837,6 +7039,22 @@ const SpellDatabase = [
     "duration": "24 hours",
     "desc": "You touch a plant or patch of dirt and create a fungal phylactery that stores your soul, this phylactery is a softly glowing patch of fungus a foot across that detects as magical, it smells of rot and poison and is inedible to all living creatures. The first time you would die during the duration, your body instead turns to mold and crumbles away as your soul reincarnates in a new body at the site of your Hyphaelactery, destroying it in the process. Reincarnating takes 1 minute after which you are at full health with all conditions cured.",
     "empower": "The duration increases to 1 week."
+  },
+  {
+    "name": "Whirlpool",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Transmutation",
+      "Water",
+      "Concentration",
+      "Delayed"
+    ],
+    "cost": "6 AP",
+    "range": "90 feet",
+    "duration": "1 minute",
+    "desc": "You create a whirlpool of swirling water that occupies a 30 foot radius cylinder 30 feet tall, with the center having a radius of 10 feet. Creatures in the area and who enter the area must succeed on a Strength saving throw or be dragged as close to the center as possible.<br><br>A creature that starts their turn while totally submerged must make a Constitution saving throw. On a failure, they take 6d6 damage and have 1d4 hit dice destroyed. On a success, they take half damage and only have half the hit dice destroyed, rounded down. A creature with insufficient hit dice is vulnerable to the damage taken and has that damage deducted from maximum hit points.<br><br>The whirlpool is difficult terrain. Creatures without a swim speed must succeed on a Strength saving throw at the end of each turn while inside or be dragged back 5 feet closer to the center.<br><br>If created in water, the whirlpool's radius becomes 60 feet instead. Vehicles trapped in the center of the whirlpool take damage equal to one quarter of their maximum hit points every 6 seconds.",
+    "empower": ""
   },
   {
     "name": "Profound Disappointment",
@@ -6886,6 +7104,20 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Jade Familiar",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Conjuration",
+      "Poison"
+    ],
+    "cost": "3 AP",
+    "range": "Self",
+    "duration": "Until dispelled",
+    "desc": "You create a noxious being of poison magic which takes the form of a cobra made of solid jade. It accompanies you by hanging on your person.<br><br>While your familiar remains, it is fiercely protective of you. When a creature attacks you within 60 feet for the first time during its turn, your familiar lashes out, making a magic weapon attack using your stats. On a hit, the target takes 3d12 poison damage and becomes poisoned until the end of their turn. When a creature targets you with a spell that deals damage, the familiar leaps forward and follows the magic back to the caster, strangling and biting at them. The caster loses 1 AP and takes 1d12 poison damage at the start of each of its turns until it uses 2 AP to make a Strength saving throw to throw the familiar off on a success, whereupon it returns to you.<br><br>The familiar has AC 15 and 30 hit points, and vanishes when reduced to 0 hit points. It uses your spellcasting stat for all saving throws.",
+    "empower": ""
+  },
+  {
     "name": "Falling Leaves",
     "author": "Levi",
     "tier": 4,
@@ -6918,6 +7150,20 @@ const SpellDatabase = [
     "empower": "No longer requires vision of any targets. You become aware of all possible targets when choosing who to affect, although you lose this awareness after casting the spell."
   },
   {
+    "name": "Wildbless",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Enchantment",
+      "Beast"
+    ],
+    "cost": "1 or 2 AP",
+    "range": "30 feet ",
+    "duration": "1 minute",
+    "desc": "Target creature becomes filled with wild ferocity. Their Strength and Dexterity are increased by 2 and their movement speed is increased by 20 feet, but their Knowledge and Willpower are reduced by 2. A creature affected by this spell does not take excess damage to maximum hit points or fall unconscious after being reduced to 0 hit points until after their next turn ends. An unwilling creature can make an Intuition saving throw to resist the effect.<br><br>The spell costs 1 AP when used on a beast, and 2 AP when used on another creature.",
+    "empower": "Choose one - either Strength or Dexterity is increased by 4 instead of 2, or you can target two additional creatures as long as they are beasts, or the creature gains 5 damage reduction."
+  },
+  {
     "name": "Trance of Shared Minds",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -6948,6 +7194,50 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Optimized Casting",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Enchantment",
+      "Psychic",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "Self (30 foot radius) ",
+    "duration": "1 minute",
+    "desc": "You place a fragment of your mind in any number of creatures you choose within range, which helps them to cast spells. When they cast a spell, subtract the tier of the spell from the MP cost. As a response to an affected creature casting a spell, you can grant them 1 AP. This response costs 0 AP the first time you use it between each of your turns, and 1 AP afterwards.<br><br>A creature that is out of range is not affected by this spell until they return into range. You are not affected by this spell.",
+    "empower": ""
+  },
+  {
+    "name": "Molten Sieve",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Transmutation",
+      "Forbidden (Volcanic)"
+    ],
+    "cost": "1 AP",
+    "range": "Self (60 foot radius) ",
+    "duration": "Instantaneous",
+    "desc": "You transform ruptured earth into pores for primordial lava. Any difficult terrain you choose within range becomes lava, as per the Lava Flow spell. It can't spread when created this way.",
+    "empower": "Intense heat burns all creatures within 5 feet of lava for 4d6 fire damage upon initial cast. Can only damage a creature once this way."
+  },
+  {
+    "name": "Arcane Barrier",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Abjuration",
+      "Arcane",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "You project a wall of shimmering magic up to 25 feet wide, 10 feet tall, and 1 inch thick. You can orient this wall however you please, so long as the wall is totally contained within the range of the spell.<br><br>The wall is utterly indestructible and impassible. Nothing can go through it.",
+    "empower": "Choose one - create two walls, or duration increased to 1 hour."
+  },
+  {
     "name": "Menagerie",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -6961,6 +7251,36 @@ const SpellDatabase = [
     "duration": "1 minute",
     "desc": "You summon between two to four beasts whose combined number of hit dice cannot exceed 12. They take their turns after yours in any order you choose, and obey your mental commands.<br><br>For each tier higher this spell is cast at, the maximum number of hit dice increases by 3, and the maximum number of creatures summoned increases by 1.<br><br>Casting this spell again causes all previous creatures to vanish. The creatures vanish if they are reduced to 0 hit points or the spell ends.",
     "empower": ""
+  },
+  {
+    "name": "Mirage Shroud",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Illusion",
+      "Radiant",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self (up to 10 foot radius)",
+    "duration": "1 hour",
+    "desc": "You bend light around yourself, or a radius of up to 10 feet centered on yourself that moves with you. Light moves around these bends, such that the space appears to be blurred. You and all other creatures within this area are invisible.<br><br>Since light cannot reach inside, you and all other creatures within this area are also blinded.",
+    "empower": "Radius increases to 30 feet."
+  },
+  {
+    "name": "Magic Resistance",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Abjuration",
+      "Arcane",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "Touch",
+    "duration": "1 minute",
+    "desc": "Target creature becomes highly resistant to magic. They have advantage on all saving throws against spells and gain resistance to damage taken from spells for the duration.<br><br>Affected creatures can't be healed by magic for the duration.",
+    "empower": "Choose one - Range becomes 60 feet, or creatures automatically succeed whenever they repeat a saving throw."
   },
   {
     "name": "Warding Sphere",
@@ -7007,6 +7327,21 @@ const SpellDatabase = [
     "empower": "Every failed saving throw deals 1d6+2 poison damage."
   },
   {
+    "name": "Sculpt",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Transmutation",
+      "Earth",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self (5 foot radius) ",
+    "duration": "1 hour",
+    "desc": "For the duration of the spell, you can adjust stone within range into any shape you please, as if it were clay. You can do this once on each of your turns. You can choose to create or remove difficult terrain on stone surfaces.",
+    "empower": "Radius increased to 15 feet."
+  },
+  {
     "name": "Toxic Burst",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -7019,6 +7354,21 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "You cause additional poison to burst into the body of a poisoned creature within range. For each AP spent on the spell, they take 2d4 poison damage and have one hit die destroyed. If no hit dice are left, damage is increased to 2d12.",
     "empower": "Destroys an additional hit die."
+  },
+  {
+    "name": "Forced Painlink",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Enchantment",
+      "Psychic",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "90 feet",
+    "duration": "1 minute",
+    "desc": "You connect the minds of up to four creatures within range. Whenever any connected creature takes damage, all connected creatures take damage equal to half the damage of the source, or two times your spellcasting stat, whichever is lower. A creature can only take shared damage once from any given source of damage.<br><br>You never take damage from this spell.<br><br>At the start of each of your turns, every affected creature (except you, if you are a target) must make an Intuition saving throw. On a success, they are no longer affected.",
+    "empower": "Instead affects all creatures you choose within 30 feet."
   },
   {
     "name": "Doppelganger",
@@ -7086,6 +7436,20 @@ const SpellDatabase = [
     "empower": "The metal gains 5 damage reduction and becomes AC 18."
   },
   {
+    "name": "Death Fog",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Conjuration",
+      "Poison"
+    ],
+    "cost": "1 to 3 AP",
+    "range": "90 feet",
+    "duration": "1 minute ",
+    "desc": "You create a sphere of dark purple fog with a radius of 10 feet, plus 5 feet per AP spent past the first, at target point within range that you can see. The fog heavily obscures all vision into and out of it, and creatures inside when it is created and when they end their turns inside must succeed on a Constitution saving throw or take 6d4 poison damage and be poisoned for 1 minute. A creature that succeeds takes half damage and is not poisoned. <br><br>Damage from this spell is treated as if it had the lethal property. Creatures that are not within the fog but were poisoned by it can repeat the saving throw at the end of each of their turns, removing it on a success.",
+    "empower": "Radius increased to 20 feet, plus 10 feet per AP spent."
+  },
+  {
     "name": "Crystalline Refraction",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -7130,6 +7494,50 @@ const SpellDatabase = [
     "duration": "1 minute",
     "desc": "Ethereal white flames fill the air in a 30 foot radius and 30 foot high cylinder rising from target point. The flames provide bright light in the area and cast dim light out to a radius of an additional 90 feet.<br><br>For Undead, Fiends, and Urthings, or any creature whose body is inhabited by a soul or other external consciousness that is not their original, the flames cause intense debilitating pain. When one of these creatures enters or touches the flames for the first time on each of their turns, they immediately lose concentration, their AP is lowered by 3, and their movement is lowered by half of their speed. Additionally the flames are difficult terrain for these creatures, and these creatures cannot gain HP, temporary HP, MP, AP, or additional movement as long as they are touching the flames.<br><br>For any other creature, touching the flames gives them advantage on saving throws against all magical effects as long as they are touching the flames.<br><br>While inside the area, your Fire and Holy spells apply the effects of being touched by this spell's purifying flames to targets hit until the start of their next turn.<br><br>Note: I wrote Tier 4 but it might be worth much more than that in certain circumstances, so idk.",
     "empower": ""
+  },
+  {
+    "name": "Stillness and Rage",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Transmutation",
+      "Wind",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self (60 foot radius) ",
+    "duration": "1 minute",
+    "desc": "You take control of the wind in a 60 foot radius around you, which stays centered on you as you move. Now and at the start of each of your turns, choose one of the following effects: <br>>Everything is unnaturally still. Sound does not carry. Everything in range is silenced.<br>>Winds rampage all around you. Everything in range is deafened, and your Wind spells that deal damage deal 2 additional damage per die rolled.<br>>Winds echo everything they catch. Every single action and word that makes noise within the radius is heard by everything within range.",
+    "empower": ""
+  },
+  {
+    "name": "Universal Communion",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Enchantment",
+      "Spirit",
+      "Ritual"
+    ],
+    "cost": "N/A AP",
+    "range": "Self (300 foot radius) ",
+    "duration": "24 hours",
+    "desc": "You spend 15 minutes preparing the space around you. At the completion, you become seated as everything in the area within range of the spell becomes connected on an existential level to everything else within the area. Everything can communicate with everything else, regardless of shared language or even ability to communicate.<br><br>Most things are unremarkable. The average stone and plant has nothing to say and can only communicate in images if it did. Stones meant as a memorial may tell the history behind them, while plants that have witnessed creatures recently may do the same. Deceased creatures may vary in their willingness and capability to speak - most will not communicate with their killers, while some may have been driven to madness by their death. The spell does not compel anything to speak, only grant it the opportunity to speak.<br><br>A creature that physically harms another creature within the area of the spell is excluded from the spell's effect for the duration. This has no effect on creatures that can cause damage through speaking or merely existing.",
+    "empower": "The spell is instead cast in 15 seconds."
+  },
+  {
+    "name": "Ebon Severing",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Evocation",
+      "Unholy"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "A 10 foot tall, 1 foot wide blade of unholy magic erupts from the ground at target point within range, then sweeps forward up to 30 feet in any horizontal direction you choose. Creatures in the way must succeed on a Dexterity saving throw or take 10d6 unholy damage, plus 1d6 unholy damage for every used or destroyed hit die. A creature that succeeds takes half damage.<br><br>For each die that rolls a 6, one hit die is destroyed on every damaged creature. The spell cuts through any Abjuration spell that would be in the way, ignoring its effects as if it was never cast.",
+    "empower": "Doubles the number of hit dice destroyed. Blade width increased to 10 feet."
   },
   {
     "name": "Warshade",
@@ -7181,6 +7589,20 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Rushed Demise",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Necromancy",
+      "Unholy"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Target creature takes unholy damage equal to half its missing hit points.<br><br>A creature can only be targeted by this spell once. It must finish a rest before it can be targeted again.",
+    "empower": "Targets two additional creatures."
+  },
+  {
     "name": "Apostolic Fever",
     "tier": 4,
     "tags": [
@@ -7209,6 +7631,20 @@ const SpellDatabase = [
     "desc": "You ignite a magical effect in an attempt to utterly burn it away. Against a spell of tier 4 or lower, the effect ends immediately and the caster must make an Intuition saving throw, taking 4d6 fire and 4d6 arcane damage on a failure as the flames travel from the effect back to the caster. A successful saving throw deals half damage.<br><br>Against a spell of tier 5 or higher, you must succeed on a spellcasting check with a DC of 10 + the tier of the spell. On a failure, your spell has no effect.",
     "empower": "Automatically succeeds the spellcasting check.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Devilish Deal",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Transmutation",
+      "Unholy"
+    ],
+    "cost": "1 to 3 AP",
+    "range": "Touch",
+    "duration": "Special",
+    "desc": "You shake the hand (or hand analogue) of a willing creature, sealing an unholy pact. For each AP spent on the spell, choose one of the following effects: <br>>Record the creature's current hit points, then fully restore the creature's hit points. After 1 minute, the creature is set back to its current hit points if it would be lower, and suffers a -2 penalty to Constitution until it completes a rest.<br>>The creature has a +5 bonus on every ability check it makes for 1 hour, then suffers a -10 penalty to every ability check until it completes a rest.<br>>The creature immediately ends all effects it chooses that are affecting itself save for effects from this spell. It has disadvantage on all saving throws and can't gain advantage on saving throws until it completes a rest.<br>>The creature fully recovers all of its hit dice and gains an additional bonus hit die for each hit die it normally has, which is only used for recovery and does not factor into maximum hit points. The creature can't rest for 24 hours.<br>>The creature rolls its weapon damage dice an additional time whenever it deals damage for 1 minute. After 1 minute, the creature's Strength and Dexterity are set to -3 until they complete a rest.",
+    "empower": ""
   },
   {
     "name": "Light Trickster",
@@ -7243,6 +7679,21 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Clarity",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Enchantment",
+      "Arcane",
+      "Concentration"
+    ],
+    "cost": "0 AP",
+    "range": "Self ",
+    "duration": "1 minute",
+    "desc": "You gain 30 temporary MP that can only be used on Arcane spells of tier 3 or lower. When the spell ends, all temporary MP is lost.<br><br>You can't benefit from this spell again until you complete a rest.",
+    "empower": "You gain 60 temporary MP instead."
+  },
+  {
     "name": "Outbreak",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -7272,6 +7723,21 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "You and everything you are carrying streak into the sky as a bolt of pure lightning envelops you harmlessly. During this time you gain a birds eye view of the area around you and must select a point open to the sky. This point crackles with static electricity that nearby creatures can intuitively sense danger from.<br><br>At the start of your next turn, you crash down with a lightning bolt at the target point, dealing 4d6 lightning damage to creatures within 5 feet, and emitting a shockwave for 30 feet. Creatures hit by the shockwave are pushed back 5 feet if possible and must make a Dexterity saving throw, taking 8d6 force damage on a failed save or half as much on a success. Creatures that fail the save are knocked prone.<br><br>If cast at a higher tier you may bring 1 other creature with you for each tier past 4. These creatures must be touching you when this spell is cast, and will arrive at the target location harmlessly in the same relative position.",
     "empower": ""
+  },
+  {
+    "name": "Mass Puppeteer",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Necromancy",
+      "Unholy",
+      "Summoning"
+    ],
+    "cost": "1 to 3 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "This spell is identical to Puppeteer, except that it targets two corpses per AP spent casting this spell.<br><br>Casting this spell again destroys all prior creatures reanimated by this spell.",
+    "empower": "Duration increased to 1 hour."
   },
   {
     "name": "Disdain",
@@ -7379,6 +7845,63 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Celebration of Ancient Saints",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Necromancy",
+      "Spirit",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self (60 foot radius) ",
+    "duration": "1 minute",
+    "desc": "You call upon a procession of venerable spirits to praise the efforts of the new generation. When a creature within range succeeds on an attack roll or ability check with advantage, you can choose to heal them for 1d6 hit points. When a creature within range succeeds on an attack roll or ability check with disadvantage, you can choose to heal them for 3d6 hit points and grant advantage on all of their rolls until the end of their next turn.",
+    "empower": ""
+  },
+  {
+    "name": "Perfect Sight",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Transmutation",
+      "Radiant"
+    ],
+    "cost": "2 AP",
+    "range": "10 feet",
+    "duration": "8 hours",
+    "desc": "You enhance a target creature's eyes to have vision as perfect as possible for mortals. They can see and identify creatures out to 1 mile as if they were within 30 feet, they are immune to the blinded condition, and they can see perfectly in normal and magical darkness.",
+    "empower": "Targets three additional creatures."
+  },
+  {
+    "name": "Arrester Bolt",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Evocation",
+      "Lightning"
+    ],
+    "cost": "3 AP",
+    "range": "Self (120 foot line) ",
+    "duration": "Instantaneous",
+    "desc": "A powerful bolt of lightning shoots forth in a 120 foot long, 5 foot wide line. Every creature in the way must make a Dexterity saving throw. On a failure, they take 6d6 lightning damage and are paralyzed until the start of your next turn.<br><br>A creature that takes damage while paralyzed this way can make a Constitution saving throw. On a success, they are no longer paralyzed.",
+    "empower": "Creatures can't make Constitution saving throws to end the paralysis early."
+  },
+  {
+    "name": "True Loyalties",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Enchantment",
+      "Poison"
+    ],
+    "cost": "1 AP",
+    "range": "90 feet",
+    "duration": "Instantaneous",
+    "desc": "You target a summoned or reanimated creature. Its original caster must succeed on a saving throw using its spellcasting stat. On a success, the creature is stunned until the start of your next turn. On a failure, the creature's loyalties are subverted, and it falls under your control as if you had cast the spell.",
+    "empower": "Targets either three creatures or a 15 foot radius within range. Each affected creature requires a separate saving throw."
+  },
+  {
     "name": "Shadow Caster",
     "tier": 4,
     "tags": [
@@ -7408,6 +7931,20 @@ const SpellDatabase = [
     "duration": "15 minutes",
     "desc": "You call forth an ashen, pale tree that occupies a 10 foot radius, 20 foot tall cylinder at target location you can see. This tree has no greenery, but a hollow in the center of the tree emits an unearthly wailing that causes the infinite ashen vines within to shake and rattle.<br><br>At the start of each of your turns, the haunthollow sends a vine out to a creature corpse within 60 feet of it and reanimates the creature under its control. At the end of each of your turns, the haunthollow commands each creature to move up to half its movement speed and optionally make one weapon attack. You choose where each creature moves and who each creature attacks.<br><br>If no corpses are within range, the haunthollow instead launches a vine at whatever creature is in range with the lowest hit point count. The creature must make a Dexterity saving throw or take 3d6 unholy damage. A creature reduced to 0 hit points from this damage is instantly reanimated.<br><br>The haunthollow has AC 12 and 120 hit points. Its vines have AC 12, 10 hit points and are vulnerable to slashing, fire and radiant damage. Destroying a vine immediately ends the reanimation effect on that creature. Destroying the haunthollow ends the spell.<br><br>If your concentration is broken, the haunthollow no longer regards you as an ally or obeys your commands, and will command reanimated creatures to defend itself and attack the nearest living creature to itself.",
     "empower": ""
+  },
+  {
+    "name": "Sunlight Serenade",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Evocation",
+      "Radiant"
+    ],
+    "cost": "3 AP",
+    "range": "Special",
+    "duration": "Instantaneous",
+    "desc": "Immediately cast a tier 1, tier 2, and tier 3 Radiant spell you know. They must deal damage and can't require concentration. You do not pay MP costs for these spells and treat them all as if you spent 3 AP to cast them. You choose the order in which each spell takes effect.<br><br>After using this spell once, the MP cost is doubled until you take a break or rest.",
+    "empower": "Empowers the chosen spells."
   },
   {
     "name": "Acidic Hail",
@@ -7452,6 +7989,21 @@ const SpellDatabase = [
     "range": "60 feet",
     "duration": "1 hour",
     "desc": "You craft nonmagical stone within a 10 foot radius centered on a target point within range and turn it into an altar of holiness. Undead and reanimated creatures within 60 feet of the altar lose 1 hit die for every time they end their turn within range, and take damage equal to one-quarter of their maximum hit points if they have no more hit dice remaining.<br><br>When you cast a spell that restores hit points to a creature, the altar stores the MP cost of the spell. You can spend 1 AP during your turn to have the altar manifest all stored MP as a sphere of divine energy. The first creature to pick it up heals a number of hit points equal to the MP that was stored.<br><br>A creature that has died within range of the altar can be placed on the altar. When the spell ends, the creature is returned to life with 1 hit point.",
+    "empower": ""
+  },
+  {
+    "name": "Spacial Anchor",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Conjuration",
+      "Space",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "Touch",
+    "duration": "1 minute",
+    "desc": "Target creature is locked either to your position or to their current location. You must choose one effect upon casting the spell. At the start of each of your turns, if the creature has moved, it is teleported either adjacent to you or to its original point, optionally taking 3d10 damage that can't be reduced or negated.<br><br>After a creature is teleported this way, it can choose to make a Willpower saving throw. On a success, the spell ends.",
     "empower": ""
   },
   {
@@ -7503,6 +8055,35 @@ const SpellDatabase = [
     "empower": "When the pillar moves through the targeted creature, it takes half damage on a successful saving throw instead of no damage."
   },
   {
+    "name": "Words of Life",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Evocation",
+      "Holy",
+      "Still"
+    ],
+    "cost": "1 to 3 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "You speak healing words that restore 3d6 hit points, plus 2d6 hit points for each AP spent past the first, to any number of creatures within range.",
+    "empower": "Healing is increased by 2 per hit die missing or destroyed. Restores one hit die on each healed creature afterwards."
+  },
+  {
+    "name": "Mass Storm Spear",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Evocation",
+      "Lightning"
+    ],
+    "cost": "2 AP",
+    "range": "120 feet",
+    "duration": "1 minute",
+    "desc": "You hurl a spear of lightning at a target creature within range that you can see, who must make a Dexterity saving throw or take 3d10 lightning damage, halved on a successful saving throw.<br><br>For the duration of the spell, you can throw additional spears for 2 AP. Each time you throw a spear, you throw one more spear than the last. These additional spears can target different creatures or the same creature. A creature targeted by multiple spears takes 1d10 additional lightning damage for each spear past the first, halved on a successful saving throw.",
+    "empower": "Starts at four spears instead of one."
+  },
+  {
     "name": "Harbinger of Ill Futures",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -7519,6 +8100,34 @@ const SpellDatabase = [
     "range": "30 feet",
     "duration": "1 minute",
     "desc": "You summon a humanoid-shaped mass of rocks, each of which is imbued with a sickly green core. It shines this pale light out to 30 feet.<br><br>Creatures that start their turn in the light lose 1d6 maximum hit points and must make a Constitution saving throw. On a failure, they are poisoned, and lose 3d6 maximum hit points for each turn they start in range while poisoned in this way. A creature can repeat the saving throw if they end a turn out of the light, ending the poisoned effect on a success.<br><br>You can command the creature to move up to 30 feet at the start of each of your turns. It has AC 14 and 100 hit points, and crumbles into nothingness if destroyed. If it suffers fire damage, it begins to critically overheat. At the end of your next turn if it is still alive, it explodes, and every creature within 90 feet must succeed on a Constitution saving throw or take 12d6 fire damage, halved on a success. Damage taken this way can't be negated, and reduces your maximum hit points by twice the damage taken. The explosion area becomes permanently affected, causing creatures that end their turn inside to lose 1d6 maximum hit points.",
+    "empower": ""
+  },
+  {
+    "name": "Mass Rock Fling",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Conjuration",
+      "Earth"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "This spell is identical to Rock Fling, except it is cast six times in rapid succession. You can choose a new target each time.",
+    "empower": "Range increases to 300 feet. A rock that targets a creature further than 60 feet additionally targets all other creatures within 5 feet of the original target."
+  },
+  {
+    "name": "Windstep",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Evocation",
+      "Wind"
+    ],
+    "cost": "0 AP",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "desc": "As a response to any action, you move 30 feet. This can cause attacks aimed at you to miss. Spells that target you will still be targeting you, but spells that target an area can be avoided if you are out of range.<br><br>If you used this in response to an action that would not affect you, you regain half the MP spent on this spell.",
     "empower": ""
   },
   {
@@ -7567,6 +8176,20 @@ const SpellDatabase = [
     "empower": "The first time the creature rolls a hit die, they roll three instead."
   },
   {
+    "name": "Magician's Trick",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Conjuration",
+      "Space"
+    ],
+    "cost": "0 AP",
+    "range": "Self (60 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "You and any number of creatures you choose within range can freely change their equipment amongst their possessions as well as every unattended object in range.<br><br>If you only affect yourself, refund half the MP cost spent on this spell.",
+    "empower": "Range increased to 120 feet."
+  },
+  {
     "name": "Verminous Wave",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -7581,6 +8204,35 @@ const SpellDatabase = [
     "duration": "1 minute",
     "desc": "A wave of clinging miasma emanates out in a 20 foot radius, centered on a target point in range that you can see. Creatures caught in the wave become afflicted by the miasma.<br><br>At the start of each afflicted creature's turn, all matter of vermin seem to appear from nowhere and swarm over all creatures within a 15 foot radius of the target. Everyone must make a Dexterity saving throw or take 3d4 poison and 3d4 piercing damage, halved on a success. Creatures afflicted with the miasma have disadvantage on the saving throw.<br><br>A creature able to submerge their body in water removes the miasma, ending the effect on them immediately.",
     "empower": ""
+  },
+  {
+    "name": "Viper Pit Stratagem",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Enchantment",
+      "Poison",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "You imbue yourself and up to four other creatures you choose within range with cunning instinct. Whenever any affected creature is attacked, it provokes a response attack from all other affected creatures. Affected creatures deal an additional 2d6 poison damage with their response attacks.",
+    "empower": ""
+  },
+  {
+    "name": "For a Greater Purpose",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Enchantment",
+      "Eldritch"
+    ],
+    "cost": "0 AP",
+    "range": "Touch",
+    "duration": "1 hour",
+    "desc": "You lose 1 AP on all of your turns for the duration. Target creature instead gains 1 AP on all of its turns for the duration.<br><br>The spell ends if the target is reduced to 0 hit points.",
+    "empower": "You can adjust how much AP you lose each turn. Your target gains as much AP on their next turn. Whenever your target hits with a weapon attack or damages at least one creature with a spell, you regain 1 MP, to a maximum of 30 MP."
   },
   {
     "name": "Offering for the Young",
@@ -7613,6 +8265,20 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Mass Healing Rains",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Evocation",
+      "Water"
+    ],
+    "cost": "2 AP",
+    "range": "Self (120 foot radius) ",
+    "duration": "1 minute",
+    "desc": "This spell is similar to Healing Rains, except that it affects a 120 foot radius centered on you.",
+    "empower": "You add your spellcasting stat to healing from this spell."
+  },
+  {
     "name": "Crush",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -7640,6 +8306,21 @@ const SpellDatabase = [
     "range": "Touch",
     "duration": "Instantaneous",
     "desc": "You instantly evaporate an amount of water that can fill a 40 foot cube, increased by 20 feet for each tier higher this spell is cast at. The water does not need to fit completely within the cube, but it must be from the same body of water.",
+    "empower": ""
+  },
+  {
+    "name": "Superimpose",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Abjuration",
+      "Space",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "120 feet ",
+    "duration": "1 minute",
+    "desc": "Up to a 20 foot cube centered on a point within range you can see becomes superimposed onto an equally sized space adjacent to you. Any effect that affects a space in the area next to you also affects its corresponding space at the target location.",
     "empower": ""
   },
   {
@@ -8213,6 +8894,21 @@ const SpellDatabase = [
     "duration": "1 minute",
     "desc": "The touched creature has their sense of pain deadened for the duration. When they would take damage, write down the amount of damage they would take and then prevent the damage. The target automatically succeeds on all Constitution saving throws for the duration as well, and is immune to the poisoned condition.<br><br>When the spell ends, apply all damage prevented to the target creature.",
     "empower": "Removes the AP cost on this spell."
+  },
+  {
+    "name": "Primordial Godwrath",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Evocation",
+      "Forbidden (Volcanic)",
+      "Delayed"
+    ],
+    "cost": "X AP",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "desc": "You can only spend 1 AP each turn casting this spell. When you take damage, the spell gains 1 AP. You can cast the spell at any amount of AP.<br><br>When you cast this spell, lava erupts from beneath you, engulfing you and a 5 foot radius cylinder 20 feet tall centered on you. For each AP the spell has, the radius  increases by 5 feet and the cylinder height by 20 feet. Creatures in range other than you must succeed on a Dexterity saving throw or take 1d6+4 fire damage per AP spent, halved on a success.<br><br>The affected area becomes lava as per the Lava Flow spell, remaining for 1 hour. You gain 5 temporary hit points per AP spent as well as fire immunity for 1 minute.<br><br>You can cast this spell at any AP count.",
+    "empower": "Adds 3 AP to the spell. Your concentration can't be broken while casting this spell."
   },
   {
     "name": "Melt",
