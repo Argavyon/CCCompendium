@@ -231,7 +231,7 @@ function main() {
     tag_buttons(tag_list, tag_select, compendiumTagList, gen_spelltable);
     
     // TIERS
-    for (var i = 1; i <= 9; i++) {
+    for (let i = 1; i <= 9; i++) {
         const tier_button = document.querySelector(`#tier${i}`);
         tier_button.dataset.i = i;
         const tier = i;
