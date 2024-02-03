@@ -1,16 +1,20 @@
-import glob
+from argparse import ArgumentParser
+from glob import glob
 import json
-from pathlib import Path
-import sys
 
-if len(sys.argv) < 3: exit -1
-DBname = sys.argv[1]
-DataFolder = sys.argv[2]
+parser = ArgumentParser(
+    prog='CreateDB.py',
+    description='Handles the creation of json-like file-based databases.'
+)
+parser.add_argument('DBname', type=str)
+parser.add_argument('DataFolder', type=str)
+args = parser.parse_args()
 
-with open(f'data/{DBname}DB.js', 'w') as DBfile:
-    D = dict()
-    for i in glob.iglob(f'data/{DataFolder}/*.json'):
-        with open(i, 'r') as spellJSON:
-            D[Path(i).stem] = json.load(spellJSON)
-    DBjson = json.dumps(D, indent=2)
-    print(f'const {DBname}Database = ', DBjson, ';', sep = '', file = DBfile)
+data = []
+for file in sorted(glob(f'data/{args.DataFolder}/*.json')):
+    with open(file, 'r') as itemJSON:
+        data.append(json.load(itemJSON))
+
+DBjson = json.dumps(data, indent=2)
+with open(f'data/{args.DBname}DB.js', 'w') as DBfile:
+    print(f'const {args.DBname}Database = ', DBjson, ';', sep = '', file = DBfile)

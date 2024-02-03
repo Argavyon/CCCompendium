@@ -40,7 +40,7 @@ jobs:
         run: python3 .github/workflows/createDB.py Maneuver maneuvers
       
       - if: ${{github.events.type == 'WorkflowDispatch' || steps.changes.outputs.spells == 'true'}} 
-        run: python3 .github/workflows/createSpellDB.py
+        run: python3 .github/workflows/createDB.py Spell spells
       
       - if: ${{github.events.type == 'WorkflowDispatch' || steps.changes.outputs.talents == 'true'}} 
         run: python3 .github/workflows/createDB.py Talent talents
