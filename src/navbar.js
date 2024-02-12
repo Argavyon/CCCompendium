@@ -1,5 +1,6 @@
 const tabs = [
     'spell_compendium',
+    'spell_compendium_2',
     'create_spell',
     'class_compendium',
     'character_builder',

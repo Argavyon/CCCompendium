@@ -141,3 +141,14 @@ td {
 .selector[value="2"] {
 	background-color: Red;
 }
+
+#spell_creation {
+	text-align: center;
+}
+#spell_parse {
+	text-align: center;
+}
+#character_builder table {
+	margin: auto;
+	text-align: center;
+}

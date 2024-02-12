@@ -1,5 +1,5 @@
 function classCard(Class) {
-    const classData = ClassDatabase[Class];
+    const classData = ClassDatabase.find( (classData) => classData.name === Class );
     
     const card = document.createElement('table');
 	const cardBody = card.appendChild(document.createElement('tbody'));
@@ -13,7 +13,7 @@ function classCard(Class) {
 	const classtype = cardBody.appendChild(document.createElement('tr')).appendChild(document.createElement('td'));
 	classtype.className = 'classtype';
 	classtype.colSpan = 2;
-	classtype.textContent = `d${classData.Dice} ${classData.Type}`;
+	classtype.textContent = `d${classData.hit_dice} ${classData.class_type}`;
     
     const defensiveRow = cardBody.appendChild(document.createElement('tr'));
 	const defensiveH = defensiveRow.appendChild(document.createElement('td'));
@@ -21,7 +21,7 @@ function classCard(Class) {
     defensiveH.className = 'classheaders';
     defensiveD.className = 'classdata';
 	defensiveH.textContent = 'Defensive Stat:';
-	defensiveD.textContent = classData.Defensive.join(', ');
+	defensiveD.textContent = classData.defensive_stat.join(', ');
     
     const proficienciesRow = cardBody.appendChild(document.createElement('tr'));
 	const proficienciesH = proficienciesRow.appendChild(document.createElement('td'));
@@ -29,24 +29,24 @@ function classCard(Class) {
 	proficienciesH.className = 'classheaders';
 	proficienciesD.className = 'classdata';
 	proficienciesH.textContent = 'Proficiencies:';
-	proficienciesD.textContent = classData.Proficiencies.join(', ');
+	proficienciesD.textContent = classData.proficiencies.join(', ');
     
     const gameplay = cardBody.appendChild(document.createElement('tr')).appendChild(document.createElement('td'));
 	gameplay.className = 'classdata';
 	gameplay.colSpan = 2;
-	gameplay.textContent = classData.Gameplay;
+	gameplay.textContent = classData.gameplay;
     gameplay.style.fontStyle = "italic";
     
     const flair = cardBody.appendChild(document.createElement('tr')).appendChild(document.createElement('td'));
 	flair.className = 'classdata';
 	flair.colSpan = 2;
-	flair.textContent = classData.Flair;
+	flair.textContent = classData.flair;
 	
 	return card;
 }
 
 function featureCard(Class, Feature) {
-    const featureData = ClassDatabase[Class].Features[Feature];
+    const featureData = ClassDatabase.find( (classData) => classData.name === Class ).features.find( (featureData) => featureData.name === Feature );
     
     const card = document.createElement('table');
 	const cardBody = card.appendChild(document.createElement('tbody'));
@@ -172,11 +172,11 @@ content.appendChild(featureCard('Dragonlord', 'Spellcasting'));
 content.appendChild(featureCard('Dragonlord', 'Draconic Rage'));
 content.appendChild(featureCard('Dragonlord', 'Ambient Power'));
 
-content.appendChild(talentCard('Dragon Breath'));
-content.appendChild(talentCard('Mind and Soul'));
+// content.appendChild(talentCard('Dragon Breath'));
+// content.appendChild(talentCard('Mind and Soul'));
 
-content.appendChild(weaponStyleCard('Dagger'));
+// content.appendChild(weaponStyleCard('Dagger'));
 
-content.appendChild(combatStyleCard('Skirmisher'));
+// content.appendChild(combatStyleCard('Skirmisher'));
 
-content.appendChild(maneuverCard('Quick Draw'));
+// content.appendChild(maneuverCard('Quick Draw'));

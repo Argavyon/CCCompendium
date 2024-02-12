@@ -9,22 +9,26 @@
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://argavyon.github.io/CCCompendium/">
 	<meta property="og:title" content="Conquest & Creation Compendium">
+	<meta property="og:determiner" content="the">
 	<meta property="og:description" content="Browse Conquest & Creation spells and other features">
 	<meta property="og:image" content="https://argavyon.github.io/CCCompendium/preview.png">
+	
+	<meta http-equiv="Cache-Control" content="max-age:86400" />
 </head>
 
 <body>
 <div class="navbar" id="navbar">
 	<button id="navbar_spell_compendium">Spell Compendium</button>
+	<button id="navbar_spell_compendium_2">Spell Compendium v2 (WIP)</button>
 	<button id="navbar_create_spell">Create New Spell</button>
 	<button id="navbar_class_compendium">Class Compendium</button>
 	<button id="navbar_character_builder">Character Builder (WIP)</button>
 	<button id="navbar_metrics">Metrics (WIP)</button>
 </div>
 <div class="content" id="content">
-	<div id="div_spell_compendium">
+	<div id="spell_compendium">
 		<h2 class="title">Spell Compendium</h2>
-		<div id="compendium_content" class="flexbox">
+		<div id="spell_compendium-content" class="flexbox">
 			<div id="compendium_left">
 				<br>
 				<div style="font-weight: bold; width:100%; text-align:center">SCHOOLS</div>
@@ -61,9 +65,13 @@
 			<div id="compendium_right"></div>
 		</div>
 	</div>
-	<div id="div_create_spell" hidden>
+	<div id="spell_compendium_2" hidden>
+		<h2 class="title">Spell Compendium</h2>
+		<div id="spell_compendium_2-content"></div>
+	</div>
+	<div id="create_spell" hidden>
 		<h2 class="title">Spell Creation</h2>
-		<form id="spell_creation" align="center">
+		<form id="spell_creation">
 			<table class="spell"><tbody>
 				<tr><td class="spellname" colspan=2><input type="text" class="spellname" name="name"></input></td></tr>
 				<tr><td class="spelltier" colspan=2>Author <input type="text" class="spelltier" name="author"></input></td></tr>
@@ -78,77 +86,71 @@
 			<button type="submit">Create Spell</button>
 			<button type="reset">Clear</button>
 		</form>
-		<form id="spell_parse" align="center">
+		<form id="spell_parse">
 			<div><textarea class="spelltext" name="spelltext" rows=16 cols=120></textarea></div>
 			<button type="submit">Parse Spell</button>
 			<button type="reset">Clear</button>
 		</form>
 	</div>
-	<div id="div_class_compendium" hidden>
+	<div id="class_compendium" hidden>
 		<h2 class="title">Class Compendium</h2>
 		<div id="class_compendium_content">
 		</div>
 	</div>
-	<div id="div_character_builder" hidden>
+	<div id="character_builder" hidden>
 		<h2 class="title">Character Builder</h2>
-		<center>
-			<table>
-				<style>
-					#div_character_builder th, #div_character_builder td {
-						width: 20%;
-						padding: 4px;
-						text-align: center;
-					}
-				</style>
-				<tbody id="character_builder_header_row"></tbody>
-				<tbody id="character_builder_content"></tbody>
-			</table>
-		</center>
+		<table>
+			<style>
+				#div_character_builder th, #div_character_builder td {
+					width: 20%;
+					padding: 4px;
+					text-align: center;
+				}
+			</style>
+			<tbody id="character_builder_header_row"></tbody>
+			<tbody id="character_builder_content"></tbody>
+		</table>
 	</div>
-	<div id="div_metrics" hidden>
+	<div id="metrics" hidden>
 		<h2 class="title">Metrics</h2>
-		<center>
-			<table id="metrics_spell_tag_tiers"></table>
-		</center>
+		<table id="metrics_spell_tag_tiers" style="margin: auto;"></table>
 	</div>
 </div>
-<footer style="padding:10px">
-    <center>
-		<table style="text-align: center;">
-			<tr>
-				<td style="padding: 6px; width: 50%;">
-					<b>Conquest & Creation</b>
-					<div><b>Copyright © 2022-2024</b></div>
-					<div>CrusaderDroid</div>
-					<div>Soreile</div>
-					<br>
-					<b>Conquest & Creation Compendium</b>
-					<div><b>Copyright © 2022-2024</b></div>
-					<div>Argavyon</div>
-				</td>
-				<td style="padding: 6px; width: 50%;">
-					<b>Conquest & Creation Spells</b>
-					<div><b>Copyright © 2022-2024</b></div>
-					<div>Argavyon</div>
-					<div>BFHNV</div>
-					<div>CrusaderDroid</div>
-					<div>Levi</div>
-					<div>Soreile</div>
-					<div>Uri de Vries</div>
-					<div>Zombehking</div>
+<footer style="padding:10px; text-align: center;">
+	<table style="margin: auto;">
+		<tr>
+			<td style="padding: 6px; width: 50%;">
+				<b>Conquest & Creation</b>
+				<div><b>Copyright &copy; 2022-2024</b></div>
+				<div>CrusaderDroid</div>
+				<div>Soreile</div>
+				<br>
+				<b>Conquest & Creation Compendium</b>
+				<div><b>Copyright &copy; 2022-2024</b></div>
+				<div>Argavyon</div>
+			</td>
+			<td style="padding: 6px; width: 50%;">
+				<b>Conquest & Creation Spells</b>
+				<div><b>Copyright &copy; 2022-2024</b></div>
+				<div>Argavyon</div>
+				<div>BFHNV</div>
+				<div>CrusaderDroid</div>
+				<div>Levi</div>
+				<div>Soreile</div>
+				<div>Uri de Vries</div>
+				<div>Zombehking</div>
 
-				</td>
-			</tr>
-		</table>
+			</td>
+		</tr>
+	</table>
 
-		<div><b>All Rights Reserved</b></div>
-		<br>
+	<div><b>All Rights Reserved</b></div>
+	<br>
 
-		<b>Icons</b>
-		<div>Licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></div>
-		<div>By <a href="https://lorcblog.blogspot.com">Lorc</a>, <a href="https://delapouite.com/">Delapouite</a>,  <a href="https://game-icons.net/">Skoll</a>,  <a href="http://wjbstories.blogspot.com/"> Willdabeast</a></div>
-		<br>
-	</center>
+	<b>Icons</b>
+	<div>Licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></div>
+	<div>By <a href="https://lorcblog.blogspot.com">Lorc</a>, <a href="https://delapouite.com/">Delapouite</a>,  <a href="https://game-icons.net/">Skoll</a>,  <a href="http://wjbstories.blogspot.com/"> Willdabeast</a></div>
+	<br>
 </footer>
 <script src="src/navbar.js"></script>
 
@@ -161,6 +163,7 @@
 
 <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 <script src="src/spell_compendium.js"></script>
+<script src="src/spell_compendium_v2.js" type="module"></script>
 <script src="src/spell_creation.js"></script>
 <script src="src/class_compendium.js"></script>
 <script src="src/character_builder.js"></script>
