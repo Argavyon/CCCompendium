@@ -106,13 +106,18 @@ const functionalTags = {
 SpellDatabase.sort( (a, b) => (a.tier === b.tier ? a.name - b.name : a.tier - b.tier) );
 
 const start = performance.now();
-const spellIndex = spellDatabaseIndex();
+const SpellIndex = spellDatabaseIndex();
 const end = performance.now();
 console.debug(`Indexing spells v2: ${end-start}ms`);
 
-const tierTags = [1,2,3,4,5,6,7,8,9];
-const spellTags = Object.keys(spellIndex.tags);
-const forbiddenTags = Object.keys(spellIndex.forbidden);
-const spellList = SpellDatabase;
+const SpellList = SpellDatabase;
+const TagList = Object.freeze({
+    Tier: [1,2,3,4,5,6,7,8,9],
+    School: schoolTags,
+    Functional: functionalTags,
+    Effect: [],
+    Tags: Object.keys(SpellIndex.tags),
+    Forbidden: Object.keys(SpellIndex.forbidden),
+});
 
-export { spellList, spellIndex, tierTags, schoolTags, spellTags, functionalTags, forbiddenTags };
+export { SpellList, SpellIndex, TagList };
