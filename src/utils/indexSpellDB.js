@@ -1,6 +1,6 @@
 function makeTagDict(tags) {
     const dict = {};
-    tags.forEach( (tag) => { dict[tag] = []; } );
+    tags.forEach( (tag) => { dict[tag] = new Set(); } );
     return dict;
 };
 
@@ -44,45 +44,45 @@ function spellDatabaseIndex() {
 
         // Add it to the indices
         if (!(spellData.author in index.author))
-            index.author[spellData.author] = [];
-        index.author[spellData.author].push(spell);
+            index.author[spellData.author] = new Set();
+        index.author[spellData.author].add(spell);
 
-        index.tier[spellData.tier].push(spell);
+        index.tier[spellData.tier].add(spell);
 
         if (spellData.school) {
-            index.school[spellData.school].push(spell);
+            index.school[spellData.school].add(spell);
         } else {
-            console.warn(`The '${spell.name}' spell is missing a spellcasting school!`);
+            // console.warn(`The '${spell.name}' spell is missing a spellcasting school!`);
         }
 
         spellData.tags.forEach( (tag) => {
             if (!(tag in index.tags))
-                index.tags[tag] = [];
-            index.tags[tag].push(spell);
+                index.tags[tag] = new Set();
+            index.tags[tag].add(spell);
         });
 
         if (spellData.forbidden) {
             if (!(spellData.forbidden in index.forbidden))
-                index.forbidden[spellData.forbidden] = [];
-            index.forbidden[spellData.forbidden].push(spell);
-            index.school['Forbidden'].push(spell);
+                index.forbidden[spellData.forbidden] = new Set();
+            index.forbidden[spellData.forbidden].add(spell);
+            index.school['Forbidden'].add(spell);
         }
 
         spellData.functional.forEach( (tag) => {
-            index.functional[tag].push(spell);
+            index.functional[tag].add(spell);
         });
 
         if (!(spellData.cost in index.cost))
-            index.cost[spellData.cost] = [];
-        index.cost[spellData.cost].push(spell);
+            index.cost[spellData.cost] = new Set();
+        index.cost[spellData.cost].add(spell);
 
         if (!(spellData.range in index.range))
-            index.range[spellData.range] = [];
-        index.range[spellData.range].push(spell);
+            index.range[spellData.range] = new Set();
+        index.range[spellData.range].add(spell);
 
         if (!(spellData.duration in index.duration))
-            index.duration[spellData.duration] = [];
-        index.duration[spellData.duration].push(spell);
+            index.duration[spellData.duration] = new Set();
+        index.duration[spellData.duration].add(spell);
     });
 
     return index;
@@ -105,7 +105,11 @@ const functionalTags = {
 
 SpellDatabase.sort( (a, b) => (a.tier === b.tier ? a.name - b.name : a.tier - b.tier) );
 
+const start = performance.now();
 const spellIndex = spellDatabaseIndex();
+const end = performance.now();
+console.debug(`Indexing spells v2: ${end-start}ms`);
+
 const tierTags = [1,2,3,4,5,6,7,8,9];
 const spellTags = Object.keys(spellIndex.tags);
 const forbiddenTags = Object.keys(spellIndex.forbidden);

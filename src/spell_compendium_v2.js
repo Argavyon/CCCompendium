@@ -10,7 +10,7 @@ import { download } from './utils/download.js';
 import * as Spells from './utils/indexSpellDB.js';
 
 console.group('Indices for the spell database');
-Object.entries(Spells.spellIndex).forEach( ([key, value]) => console.debug(`${key}:`, value) );
+Object.entries(Spells.spellIndex).forEach(([key, value]) => console.debug(`${key}:`, value));
 console.groupEnd();
 
 console.group('Download element function');
@@ -20,7 +20,7 @@ console.groupEnd();
 const Controller = {
     Selectors: {
         click(state, clickedCategory) {
-            return state.withMutations( (mutableState) => {
+            return state.withMutations((mutableState) => {
                 const previouslyExpanded = mutableState.getIn(['UIControl', 'Selectors', 'ExpandedCategory']);
                 mutableState.setIn(['UIControl', 'Selectors', 'ExpandedCategory'], clickedCategory === previouslyExpanded ? '' : clickedCategory);
 
@@ -35,18 +35,20 @@ const Controller = {
         Tags: {
             view(categoryState, category, name, idx) {
                 return button({
-                        class: `selector${categoryState.getIn([idx, 'selected']) ? ' selected' : ''}`,
-                        onclick: [this.click, [category, name, idx]],
-                    }, [ text( category === 'Tier' ? `Tier ${name}` : `${name}` ) ]
+                    class: `selector${categoryState.getIn([idx, 'selected']) ? ' selected' : ''}`,
+                    onclick: [this.click, [category, name, idx]],
+                }, [text(category === 'Tier' ? `Tier ${name}` : `${name}`)]
                 );
             },
             click(state, [category, name, idx]) {
-                return state.withMutations( (mutableState) => {
+                return state.withMutations((mutableState) => {
                     const selected = !mutableState.getIn(['UIControl', 'Selectors', category, name]);
                     mutableState.setIn(['UIControl', 'Selectors', category, name], selected);
                     mutableState.setIn(['UIState', 'Selectors', category, idx, 'selected'], selected);
 
                     // Calculate spell table
+                    const start = performance.now();
+
                     const filterBy = [];
                     for (const category of ['Tier', 'School', 'Tags', 'Forbidden']) {
                         if (mutableState.getIn(['UIControl', 'Selectors', category]).includes(true)) {
@@ -57,22 +59,26 @@ const Controller = {
                     let newSpellTable;
                     if (filterBy.length > 0) {
                         let newSpellSet;
-                        filterBy.forEach( (category, idx) => {
+                        filterBy.forEach((category, idx) => {
                             const indexName = category.toLowerCase();
-                            const activeSelectors = [...mutableState.getIn(['UIControl', 'Selectors', category]).filter( (v) => v ).keys()];
-                            const filterSet = new Set(activeSelectors.map( (name) => Spells.spellIndex[indexName][name] ).flat());
+                            const activeSelectors = mutableState.getIn(['UIControl', 'Selectors', category]).filter((v) => v).keySeq();
+                            const filterSet = activeSelectors.map((name) => Spells.spellIndex[indexName][name]).reduce((prev, curr) => prev.union(curr));
+
                             if (idx === 0) {
                                 newSpellSet = filterSet;
                             } else {
                                 newSpellSet = newSpellSet.intersection(filterSet);
                             }
                         });
-                        newSpellTable = Immutable.fromJS([...newSpellSet]);
+                        newSpellTable = [...newSpellSet];
                     } else {
-                        newSpellTable = Immutable.fromJS(Spells.spellList);
+                        newSpellTable = Spells.spellList;
                     }
 
                     mutableState.setIn(['UIState', 'SpellTable'], newSpellTable);
+
+                    const end = performance.now();
+                    console.debug(`Calculating Spelltable v2: ${end - start}ms`);
                 });
             },
         },
@@ -83,10 +89,10 @@ const CompendiumState = Immutable.fromJS({
     UIControl: {
         Selectors: {
             ExpandedCategory: '',
-            Tier: Object.fromEntries(Spells.tierTags.map( (name) => [name, false] )),
-            School: Object.fromEntries(Spells.schoolTags.map( (name) => [name, false] )),
-            Tags: Object.fromEntries(Spells.spellTags.map( (name) => [name, false] )),
-            Forbidden: Object.fromEntries(Spells.forbiddenTags.map( (name) => [name, false] )),
+            Tier: Object.fromEntries(Spells.tierTags.map((name) => [name, false])),
+            School: Object.fromEntries(Spells.schoolTags.map((name) => [name, false])),
+            Tags: Object.fromEntries(Spells.spellTags.map((name) => [name, false])),
+            Forbidden: Object.fromEntries(Spells.forbiddenTags.map((name) => [name, false])),
         },
     },
     UIState: {
@@ -97,14 +103,13 @@ const CompendiumState = Immutable.fromJS({
                 Tags: { collapsed: true },
                 Forbidden: { collapsed: true }
             },
-            Tier: Spells.tierTags.map( () => ({ selected: false }) ),
-            School: Spells.schoolTags.map( () => ({ selected: false }) ),
-            Tags: Spells.spellTags.map( () => ({ selected: false }) ),
-            Forbidden: Spells.forbiddenTags.map( () => ({ selected: false }) ),
+            Tier: Spells.tierTags.map(() => ({ selected: false })),
+            School: Spells.schoolTags.map(() => ({ selected: false })),
+            Tags: Spells.spellTags.map(() => ({ selected: false })),
+            Forbidden: Spells.forbiddenTags.map(() => ({ selected: false })),
         },
-        SpellTable: Spells.spellList,
     },
-});
+}).setIn(['UIState', 'SpellTable'], Spells.spellList);
 
 const style = `
     #SC-selectors .selector_category {
@@ -155,18 +160,43 @@ const style = `
     }
 `;
 
+function DispatchInitializer(dispatch, before, after) {
+    return function CustomDispatch(action, payload) {
+        if (Array.isArray(action) && typeof action[0] !== 'function') {
+            action = [before(action[0], payload), ...action.slice(1)]
+        } else if (!Array.isArray(action) && typeof action !== 'function') {
+            action = before(action, payload);
+        }
+
+        dispatch(action, payload);
+
+        if (Array.isArray(action) && typeof action[0] !== 'function') {
+            action = [after(action[0], payload), ...action.slice(1)]
+        } else if (!Array.isArray(action) && typeof action !== 'function') {
+            action = after(action, payload);
+        }
+
+        return action;
+    }
+}
+
 const dispatch = app({
     init: CompendiumState,
-    view: (state) => div({ id: 'SC-content', class:'flexbox' }, [
-        memo( () => makeHTML('style', {}, text(style)) ),
-        memo( (selectorsState) =>
+    dispatch: (dispatch) => DispatchInitializer(
+        dispatch,
+        (state, payload) => state,
+        (state, payload) => state
+    ),
+    view: (state) => div({ id: 'SC-content', class: 'flexbox' }, [
+        memo(() => makeHTML('style', {}, text(style))),
+        memo((selectorsState) =>
             div({ id: 'SC-selectors' }, [
                 div({ id: 'SC-selectors-tier' }, [
                     div({}, [
                         button({ class: 'selector_category', onclick: [Controller.Selectors.click, 'Tier'] }, text('SPELL TIERS')),
                         !selectorsState.getIn(['Categories', 'Tier', 'collapsed'])
-                        && memo( (categoryState) =>
-                            div({}, Spells.tierTags.map( (name, idx) =>
+                        && memo((categoryState) =>
+                            div({}, Spells.tierTags.map((name, idx) =>
                                 Controller.Selectors.Tags.view(categoryState, 'Tier', name, idx)
                             )),
                             selectorsState.get('Tier')
@@ -177,8 +207,8 @@ const dispatch = app({
                     div({}, [
                         button({ class: 'selector_category', onclick: [Controller.Selectors.click, 'School'] }, text('SPELL SCHOOLS')),
                         !selectorsState.getIn(['Categories', 'School', 'collapsed'])
-                        && memo( (categoryState) =>
-                            div({}, Spells.schoolTags.map( (name, idx) =>
+                        && memo((categoryState) =>
+                            div({}, Spells.schoolTags.map((name, idx) =>
                                 Controller.Selectors.Tags.view(categoryState, 'School', name, idx)
                             )),
                             selectorsState.get('School')
@@ -189,8 +219,8 @@ const dispatch = app({
                     div({}, [
                         button({ class: 'selector_category', onclick: [Controller.Selectors.click, 'Tags'] }, text('SPELL TAGS')),
                         !selectorsState.getIn(['Categories', 'Tags', 'collapsed'])
-                        && memo( (categoryState) =>
-                            div({}, Spells.spellTags.map( (name, idx) =>
+                        && memo((categoryState) =>
+                            div({}, Spells.spellTags.map((name, idx) =>
                                 Controller.Selectors.Tags.view(categoryState, 'Tags', name, idx)
                             )),
                             selectorsState.get('Tags')
@@ -201,8 +231,8 @@ const dispatch = app({
                     div({}, [
                         button({ class: 'selector_category', onclick: [Controller.Selectors.click, 'Forbidden'] }, text('FORBIDDEN SPELLS')),
                         !selectorsState.getIn(['Categories', 'Forbidden', 'collapsed'])
-                        && memo( (categoryState) =>
-                            div({}, Spells.forbiddenTags.map( (name, idx) =>
+                        && memo((categoryState) =>
+                            div({}, Spells.forbiddenTags.map((name, idx) =>
                                 Controller.Selectors.Tags.view(categoryState, 'Forbidden', name, idx)
                             )),
                             selectorsState.get('Forbidden')
@@ -212,15 +242,15 @@ const dispatch = app({
             ]),
             state.getIn(['UIState', 'Selectors'])
         ),
-        memo( (SpellTable) =>
+        memo((SpellTable) =>
             div({ id: 'SC-spell_table', class: 'spell_table' },
-                SpellTable.toJS().map(
-                    (spell) => div({ key: `${spell.tier}-${spell.name}`, class: 'spell_brief' }, [
+                SpellTable.map((spell) =>
+                    div({ key: `${spell.tier}-${spell.name}`, class: 'spell_brief' }, [
                         div({ class: 'spell_name' }, text(spell.name)),
                         div({ class: 'spell_tier' }, text(`Tier ${spell.tier}`)),
                         div({ class: 'spell_range' }, text(spell.range)),
                         div({ class: 'spell_duration' }, text(spell.duration)),
-                        div({ class: 'spell_tags' }, spell.tags.map( (tag) => div({ class: 'spell_tag' }, text(tag)) )),
+                        div({ class: 'spell_tags' }, spell.tags.map((tag) => div({ class: 'spell_tag' }, text(tag)))),
                     ])
                 )
             ),
