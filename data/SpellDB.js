@@ -9814,7 +9814,8 @@ const SpellDatabase = [
     "tags": [
       "Enchantment",
       "Acid",
-      "Spirit"
+      "Spirit",
+      "Deprecated"
     ],
     "cost": "3 AP",
     "range": "Self (60 foot radius)",
