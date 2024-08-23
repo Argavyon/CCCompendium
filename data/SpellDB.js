@@ -8040,7 +8040,8 @@ const SpellDatabase = [
       "Enchantment",
       "Draconic",
       "Cantrip",
-      "Concentration"
+      "Concentration",
+      "Deprecated"
     ],
     "cost": "1 AP",
     "range": "Self",
