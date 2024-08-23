@@ -222,6 +222,20 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Alchemical Overload",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Transmutation",
+      "Acid"
+    ],
+    "cost": "2 AP",
+    "range": "Touch",
+    "duration": "1 minute",
+    "desc": "You shift the material of a non-magical object you are touching to any solid material you choose.<br><br>If you so choose, you can make the object magical. Magical weapons have a +3 to hit and damage rolls, and magical armor has a +3 to its AC.<br><br>When the spell ends, the object breaks up into acid and melts away.",
+    "empower": ""
+  },
+  {
     "name": "Alchemical Waste",
     "tier": 1,
     "tags": [
@@ -247,6 +261,35 @@ const SpellDatabase = [
     "range": "Sight",
     "duration": "Until ended",
     "desc": "You replace your vision with that of a source of light you can see. Anything the light can reach, you can see. Your body is blinded, and you have disadvantage on attack rolls and Strength and Dexterity rolls in this state.<br><br>The spell does not give you extraordinary range of vision - targeting the sun, for instance, will prevent you from seeing anything happening in the world, on account of being too small to see.",
+    "empower": ""
+  },
+  {
+    "name": "All to Gold",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Transmutation",
+      "Acid",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "Self (30 foot cone)",
+    "duration": "1 minute",
+    "desc": "You spray an alchemical compound in a 30 foot cone. Objects struck by this cone turn to gold. Creatures hit must make a Constitution saving throw or be transformed into gold. On a successful saving throw, they instead take 4d6 acid damage and must make a Dexterity saving throw. On a failure, their equipment is affected.<br><br>Golden objects and creatures can't move or take action and have a damage reduction of -5. Affected weapons deal 1 damage on hit instead of their normal damage dice, and affected armor has its AC set to 10. An affected creature that is damaged can repeat the saving throw at the end of their turn to end the effect early on a success. Magical objects that are affected revert to normal at the end of your next turn.<br><br>If the spell ends without losing concentration, creatures with 5 or fewer total hit dice as well as objects still affected are permanently transformed into gold. Gold created this way is visibly marked - a DC 10 Knowledge ability check reveals it is magically created.",
+    "empower": "Choose one - cone size increased to 45 feet, or deals 6d6 acid damage on a failed Constitution saving throw and half as much on a success, or the spell instead gains a range of 60 feet, targets a 30 foot cube, and only affects objects and equipment."
+  },
+  {
+    "name": "Allcolor",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Illusion",
+      "Radiant"
+    ],
+    "cost": "2 AP",
+    "range": "Self (Sight)",
+    "duration": "8 hours",
+    "desc": "While the spell lasts, you can freely manipulate the color of anything you can see. You can do this any number of times without requiring any AP. You can change the pattern of colors as well as the colors themselves.<br><br>When the spell ends, all colors revert to their normal state.",
     "empower": ""
   },
   {
@@ -383,6 +426,20 @@ const SpellDatabase = [
     "empower": "Range increased to 90 feet."
   },
   {
+    "name": "Arboreal Wardens",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Conjuration",
+      "Plant"
+    ],
+    "cost": "3 AP",
+    "range": "30 feet",
+    "duration": "1 hour",
+    "desc": "You summon two beasts of your choice, each of which must have no more than 6 hit dice, to empty spaces within range. These beasts retain their normal statistics, but they are made of vines and leaves and are plant creatures instead of beast creatures. They take their turn after yours and obey your mental commands.",
+    "empower": "Removes the AP cost on this spell."
+  },
+  {
     "name": "Arcane Barrier",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -441,6 +498,35 @@ const SpellDatabase = [
     "desc": "You reach out to all creatures and prepare to take in some of the magic they expend on their spells. Every time a creature within 60 feet casts a spell, you restore hit points and MP equal to the tier of the spell. You can spend 1 AP as a response to double the MP restored, dealing arcane damage to the target equal to twice the tier of the spell in the process.<br><br>In addition, you have resistance to damage from spells. When you are targeted by a spell, you restore hit points and MP equal to the tier of the spell.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Arcane Storm",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Evocation",
+      "Arcane"
+    ],
+    "cost": "1-3 AP",
+    "range": "90 feet",
+    "duration": "Instantaneous",
+    "desc": "Ten arcane bolts, plus five per AP spent past the first, home in on any number of targets you choose within range that you can see. Each bolt unerringly strikes the target for 1d4+2 arcane damage. The bolts can be divided as you choose between all targets you choose.",
+    "empower": "Any creature targeted by at least one bolt triggers two additional bolts that target the same creature."
+  },
+  {
+    "name": "Arcaniform",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Transmutation",
+      "Arcane",
+      "Eldritch"
+    ],
+    "cost": "0 AP",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "desc": "You damage yourself for up to 100 hit points, which can't be reduced or negated in any way and half of which reduces your maximum hit points by the same amount. For every 2 damage taken this way, you restore 1 MP.<br><br>This spell costs no MP.",
+    "empower": ""
   },
   {
     "name": "Arcanist's Mist",
@@ -661,6 +747,22 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Avalanche",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Conjuration",
+      "Cold",
+      "Earth",
+      "Delayed"
+    ],
+    "cost": "9 AP",
+    "range": "300 feet",
+    "duration": "Instantaneous",
+    "desc": "Numerous rocks descend on an area with a radius between 40 to 60 feet, chosen by you. Creatures in the area must succeed on a Dexterity saving throw. On a failure, they take 12d10 bludgeoning damage and are buried underneath the rocks. On a success, they take half damage and are restrained until the end of their next turn.<br><br>Buried creatures are restrained and heavily obscured, and can take no actions except actions that only affect themselves, as well as making a Strength saving throw for 2 AP. A creature that succeeds on the first Strength saving throw is no longer heavily obscured and can take other actions again. A creature that succeeds on the second Strength saving throw is no longer restrained.<br><br>The rocks remain and cause the area to be difficult terrain.",
+    "empower": ""
+  },
+  {
     "name": "Baleful Glare",
     "author": "CrusaderDroid",
     "tier": 5,
@@ -735,6 +837,21 @@ const SpellDatabase = [
     "desc": "You call an ethereal banshee to aid you, which appears in a target area. The banshee can do one of three effects, which you can switch between during your turn for 1 AP:<br>>All sound in a 30 foot radius around the banshee is silenced.<br>>The banshee shrieks, deafening all creatures other than you in a 30 foot radius around the banshee. At the start of your turn, any deafened creature still in the area takes 1d10 psychic damage.<br>>The banshee suppresses its presence and becomes invisible.<br><br>You can move the banshee up to 15 feet during your turn for 1 AP.",
     "empower": "Removes the AP cost on changing effects and movement.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Battle Brew",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Transmutation",
+      "Acid",
+      "Ritual"
+    ],
+    "cost": "N/A AP",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "desc": "Over the course of 15 minutes, you brew four potions. Each potion is a type selected from the following list. You can have multiple potions of the same type. Casting this spell again destroys all previously created potions. Using the same potion twice replaces the effect of the first potion.<br><br>Mending: The user heals 15 hit points. The user also gains temporary hit points equal to the same amount of healing received, lasting for 8 hours.<br>Adrenaline: The user gains 3 AP, which carries over between turns for 1 minute. This AP is spent only after the normal AP the user gets each turn.<br>Nutrition: The user immediately repeats any saving throws for effects currently affecting it, and has advantage on saving throws for 1 minute.<br>Acid: The user can coat a weapon or 12 pieces of ammunition to add 2d6 acid damage on hit. The acid loses its potency 1 minute after application. Applying acid dissolves any other non-magical substance applied to the weapon or ammunition, such as poison.",
+    "empower": ""
   },
   {
     "name": "Battle Sense",
@@ -1555,6 +1672,20 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Carve",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Transmutation",
+      "Earth"
+    ],
+    "cost": "1-3 AP",
+    "range": "Touch",
+    "duration": "Instantaneous",
+    "desc": "You touch a 10 foot cube of stone or earth, increased by 5 feet for every 1 AP spent past the first, and manipulate it into any shape you please, destroying or creating matter as necessary.<br><br>If used to create spikes, creatures that are forcibly pushed into the spikes take an additional 3d12 piercing damage.",
+    "empower": "Range becomes 60 feet. You can affect two areas at once, each area being the same size."
+  },
+  {
     "name": "Castigation of the Unworthy",
     "author": "CrusaderDroid",
     "tier": 7,
@@ -1687,6 +1818,21 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Changeling's Guise",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Illusion",
+      "Fey",
+      "Silent"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 year",
+    "desc": "You pull from the target creature's memories the identity of a loved one, and assume that identity for yourself. You can choose which form you take amongst the target's loved ones. The spell fails if your assumed identity would have more hit dice than you.<br><br>You become an exact copy of your assumed identity, including features, spells, and proficiencies. You gain knowledge of all of the creature's memories about you, but do not gain your identity's memories. You lose access to all of your normal features, talents, proficiencies, and spells, except for the ability to end this spell.<br><br>The spell ends if your target damages you. If you are reduced to 0 or fewer hit points, deduct the maximum hit points of your assumed identity from your current hit points, then the spell ends.",
+    "empower": ""
+  },
+  {
     "name": "Chatter Curse",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -1702,6 +1848,19 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Cheat",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Fey"
+    ],
+    "cost": "2 AP",
+    "range": "Self (120 feet)",
+    "duration": "Instantaneous",
+    "desc": "Roll 2d6 and adjust any number of in-range creatures' hit points by the number rolled, either increasing or decreasing their hit points. You can choose for each creature. This is not damage or healing and cannot be increased or decreased or negated by any possible method.",
+    "empower": "Roll 3d8 instead."
+  },
+  {
     "name": "Chemical Coating",
     "author": "CrusaderDroid",
     "tier": 2,
@@ -1714,6 +1873,21 @@ const SpellDatabase = [
     "duration": "1 minute",
     "desc": "You fire multiple small globs of acid at a target creature within range that you can see. It must make a Dexterity saving throw or take 3d6 acid damage and be coated in acid. A successful saving throw deals half damage and does not coat the creature in acid.<br><br>Coated creatures take 1d6 acid damage at the start of each of their turns for the duration of the spell. Each time they take acid damage from a source other than this spell, the damage increases by 1d6 for the duration of the spell, to a maximum of 4d6. A coated creature can use 2 AP during their turn to make a Dexterity saving throw, ending the effect on a success.",
     "empower": "Choose one - initial damage per turn increased to 2d6, or maximum damage increased to 7d6, or you can target two creatures."
+  },
+  {
+    "name": "Chemical Screen",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Abjuration",
+      "Acid",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "You create a field around yourself that violently repels weapon attacks. If you are attacked by a weapon attack, roll 1d20. On a roll of 11 or better, the attack is negated as acid flares from the shield, and all creatures within 5 feet of you that you choose must succeed on a Dexterity saving throw or take 3d6 acid damage, halved on a success.",
+    "empower": ""
   },
   {
     "name": "Chimerize",
@@ -1846,6 +2020,20 @@ const SpellDatabase = [
     "desc": "The earth rises up to entrap a target creature within range that you can see. They must make a Dexterity saving throw or be encased in earth, unable to move or take actions until the encasing earth is destroyed.<br><br>The earth casing has 20 hit points and AC 10. It can be destroyed by other creatures attacking it, and all damage that creature would take is redirected to the casing. A trapped creature can make a Strength saving throw at the end of each of its turns. On a success, they instantly break free.",
     "empower": "The earth casing has resistance to physical damage.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Cleansing Drop",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Evocation",
+      "Water"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "A drop of pure water falls on the target, restoring 4 hit points times their total hit dice. It also ends all conditions affecting them and dispels any spell effects you choose affecting them.",
+    "empower": ""
   },
   {
     "name": "Cloud Blessing",
@@ -2183,6 +2371,20 @@ const SpellDatabase = [
     "empower": "Damage increased to 5d8."
   },
   {
+    "name": "Court Favor",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Enchantment",
+      "Fey"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "1 hour",
+    "desc": "You court the fey for their aid in your endeavors. Roll 1d6 + your spellcasting stat. Add this number to any roll you choose for the duration.<br><br>Each time you add the number to a roll, reduce it by 1. The spell ends when it reaches 0.<br><br>Attempting to cast this spell again before you complete a rest will result in a chilly reception. You roll 1d6 only and do not add your spellcasting stat.",
+    "empower": "Choose one - die roll increased to 1d12, or range becomes 30 feet and your target gains the effects of the spell instead of you."
+  },
+  {
     "name": "Create Hyphaelactery",
     "author": "Lupusam",
     "tier": 4,
@@ -2438,6 +2640,22 @@ const SpellDatabase = [
     "empower": "Choose one - movement speed increases by 20 feet for the duration, or damage is increased to 10d6, or radius is increased to 20 feet."
   },
   {
+    "name": "Dark Mirage",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Illusion",
+      "Shadow",
+      "Silent",
+      "Still"
+    ],
+    "cost": "0 AP",
+    "range": "Self (10 feet) ",
+    "duration": "Instantaneous",
+    "desc": "As a response to any action outside of your turn, you become invisible and move up to 10 feet horizontally. In your place, a shadow copy of yourself remains. It is an exact copy of you, except that it vanishes if it takes damage.<br><br>At the start of your turn, your shadow copy first takes a full turn under your control, then vanishes. You then become visible and take your turn normally.",
+    "empower": ""
+  },
+  {
     "name": "Dark Pact",
     "tier": 3,
     "tags": [
@@ -2554,6 +2772,35 @@ const SpellDatabase = [
     "empower": "Choose one: range increased to 120 feet, or target two more creatures, or increase threshold to 150 hit points."
   },
   {
+    "name": "Deathslaying Scalpel",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Conjuration",
+      "Disease",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "1 hour",
+    "desc": "You create a magical scalpel that can cut through flesh to get at problems that lie beyond. The scalpel itself is treated as a dagger with a +1 bonus to attack and damage rolls, dealing 2d6 additional radiant damage to undead in hit.<br><br>While adjacent to a creature affected by a spell, you can make an attack on the spell itself. Make an ability check with your spellcasting stat against the spell's DC. On a success, you sever the spell and excise it from the creature, removing its effect. Against Disease and Poison spells, no roll is required.<br><br>While taking a break, you can use the duration of the break to operate on a creature with reduced maximum hit points. At the end of the break, the creature recovers 4d6 maximum hit points. Creatures can't be affected by this spell in this way again until they complete a rest.",
+    "empower": ""
+  },
+  {
+    "name": "Debilitate",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Necromancy",
+      "Disease"
+    ],
+    "cost": "2 AP",
+    "range": "Touch",
+    "duration": "1 minute",
+    "desc": "Target creature must succeed on a Constitution saving throw. On a failure, choose a stat. That creature treats that stat as if it was 4 points lower for the duration. This can cause the creature's maximum hit points or AC to change, but can't deal damage by itself - hit points over the maximum are treated as temporary hit points.<br><br>The creature can repeat the saving throw at the end of each of its turns, ignoring the spell for the purposes of this saving throw only. On a success, the spell ends.",
+    "empower": "Choose one - choose a second stat, which is treated as if it was 2 points lower, or range increased to 60 feet."
+  },
+  {
     "name": "Deceleration",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -2581,6 +2828,20 @@ const SpellDatabase = [
     "desc": "You learn the properties of a specific magical effect in range. You know the spell's name, its effects, and the level or overall strength of its original caster. When cast on a magic item, you gain knowledge of its enchantment and any applicable conditions. When cast on a creature, you can discern any spell effects affecting the creature as well as their properties.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Deepsea Blade",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Evocation",
+      "Water"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "You create in your hand an incredibly thin blade of highly-pressurized water. You can attack with it as a mage weapon. It has a range of 60 feet, and when it strikes a target, deals 6d4 slashing damage to creatures within 10 feet, 4d4 slashing damage to creatures between 10 to 30 feet, and 2d4 slashing damage to creatures between 30 to 60 feet.<br><br>If the blade passes through any water or Water spell during an attack, the cavitation caused by the blade's sheer pressure additionally deals 2d12 fire damage to all creatures within 10 feet of the points of impact. You can't damage yourself in this manner.<br><br>If you know the Streaming Needle spell, you can cast it at the same time as this spell without additional AP or MP cost.",
+    "empower": "Grants the Lethal property to the blade. Also grants the Lethal property to Streaming Needle, if active."
   },
   {
     "name": "Defenestrate",
@@ -2689,6 +2950,19 @@ const SpellDatabase = [
     "duration": "1 hour",
     "desc": "Removes the poisoned condition and any poison effects, and dispels Poison spells of equal or lower tier than this spell on the target creature you touch. For the duration, the creature has advantage on all saving throws against poison effects and Poison spells, and has resistance to poison damage.",
     "empower": "AP cost reduced by 1 and range increased to 60 feet."
+  },
+  {
+    "name": "Devastation",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Fire"
+    ],
+    "cost": "3 AP",
+    "range": "Special",
+    "duration": "Instantaneous",
+    "desc": "Immediately cast up to four Fire spells you know of tier 4 or lower. Each spell must be of a different tier and must deal damage. You must pay the spell's full MP cost for each spell you choose, ignoring all MP discounts. Spells cost 0 AP but are treated as you having spent 3 AP for any spell with variable AP costs.",
+    "empower": "Spells can be of the same tier."
   },
   {
     "name": "Devilish Deal",
@@ -3213,6 +3487,19 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Edit",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Eldritch"
+    ],
+    "cost": "3 AP",
+    "range": "Touch",
+    "duration": "Instantaneous",
+    "desc": "Target non-magical object is forcibly edited into another object you choose. Both objects must be able to fit within a 5 foot cube.",
+    "empower": "Possible size increased to a 10 foot cube."
+  },
+  {
     "name": "Elder's Rebuke",
     "tier": 2,
     "tags": [
@@ -3344,6 +3631,22 @@ const SpellDatabase = [
     "duration": "1 minute",
     "desc": "You create an illusory duplicate of a creature you can see within range. The duplicate appears anywhere within 10 feet of your target. It takes its turns after yours.<br><br>The duplicate is an exact copy of the creature, except that it can't cast spells and deals half damage, and all damage dealt is psychic damage. If it takes any damage, deals any damage, or is targeted by a spell, it vanishes.",
     "empower": "Creates two duplicates of the target."
+  },
+  {
+    "name": "Ephemeral Mark",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Conjuration",
+      "Shadow",
+      "Silent",
+      "Still"
+    ],
+    "cost": "1 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "You mark two objects or creatures of similar shape, one of which can be yourself. Marked targets become washed out in color, appearing as a bland gray.<br><br>On successive turns, you can use 1 AP to switch the location of the marked targets with each other.<br><br>The spell ends early if a target moves 300 feet away from you or another target.",
+    "empower": "You can target up to five objects or creatures this way. Each one must be of similar shape. You can switch the locations of any or all targets."
   },
   {
     "name": "Epidemic",
@@ -3789,6 +4092,21 @@ const SpellDatabase = [
     "empower": "Each plant can reach up to 20 feet."
   },
   {
+    "name": "Featherweight",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Transmutation",
+      "Wind",
+      "Concentration"
+    ],
+    "cost": "1 to 3 AP",
+    "range": "90 feet",
+    "duration": "1 minute",
+    "desc": "Two creatures within range per AP spent become light as a feather. When moved by an effect or spell, they are moved three times as far. Affected creatures are also immune to fall damage, falling at a rate of 60 feet each turn. Unwilling creatures can make a Constitution saving throw to avoid the effect.",
+    "empower": "Duration increases to 8 hours."
+  },
+  {
     "name": "Feedback Blast",
     "author": "CrusaderDroid",
     "tier": 2,
@@ -3846,6 +4164,21 @@ const SpellDatabase = [
     "duration": "Until dispelled",
     "desc": "You assert dominion over the surrounding area and dislodge it from the ground, causing it to float into the air. It gains a flight speed of 30 feet.<br><br>You can spend 1 AP to move the land with a mental command. You can spend 2 AP to have it attempt to crush all creatures directly underneath. Creatures with a Strength or Constitution below -1 are utterly crushed on hit and have their hit points reduced to 0. All other creatures must make a Strength saving throw or take 10d10 bludgeoning damage, halved on a success.<br><br>While you are on the land, casting this spell again grants the spell a range of 300 feet. A 30 foot radius sphere at the target point within range is carved out and merged with your current airborne land. You can spend 1 AP to separate your controlled land into multiple parts. You must move each part separately.<br><br>If you die, the land you've controlled falls to the ground. Creatures underneath are crushed as if you attacked them with the land.",
     "empower": "Targets three chunks of land within 300 feet that merge into one."
+  },
+  {
+    "name": "Field of Stasis",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Abjuration",
+      "Cold",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "Self (10 foot radius)",
+    "duration": "1 minute",
+    "desc": "You create a 10 foot sphere centered on yourself that moves with you. This sphere is filled with cold magic so intense that it seeps into everything inside. Projectiles, weapon attacks, and spells cast from outside the sphere stop at the sphere's edge and fail to affect anyone inside, and creatures inside can't gain or lose hit points. If a creature would move into the sphere's space when it is not your turn, they are briefly frozen in place and end their movement and their turn, if applicable, immediately.<br><br>Even though you can't lose hit points while inside the sphere, you must still make concentration saving throws when hit by attacks.",
+    "empower": "Radius increases to 20 feet. You can shrink or expand the radius to any amount between 5 and 20 feet once during each of your turns."
   },
   {
     "name": "Finality and Flame",
@@ -4468,6 +4801,21 @@ const SpellDatabase = [
     "empower": "Damage increases to 7d10. If any creature is reduced to 0 or fewer hit points by this spell, refund 1 AP."
   },
   {
+    "name": "Grasp of Ghiarant",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Conjuration",
+      "Eldritch",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "Self (60 feet)",
+    "duration": "1 minute",
+    "desc": "Two 5 foot radius portals open on either side of you, unleashing a mass of tendrils from each portal. Each portal attempts to latch onto one creature of your choice within range, who must succeed on a Dexterity saving throw or become grappled by the portal. On a success, you can choose a new target for the portal at the start of each of your turns.<br><br>A creature grappled by the tendrils takes 3d6 bludgeoning damage at the start of each of its turns and must make a Strength saving throw or become restrained until the start of their next turn. It can break the grapple as normal, and you treat the portal's Strength as equal to your spellcasting stat plus 2 for the purpose of this roll. <br><br>At the start of your turns, grappled creatures are pulled 10 feet closer to the portal, increased to 20 feet if they are restrained. A creature that would be pulled through the portal while having more than 0 hit points takes an additional 4d6 bludgeoning damage.<br><br>A creature reduced to 0 hit points while grappled by this spell is pulled through the portal to an indescribable fate. Their body cannot be retrieved by any means.",
+    "empower": "Creates a third portal 5 feet above you."
+  },
+  {
     "name": "Grasping Growth",
     "author": "Levi",
     "tier": 4,
@@ -4586,6 +4934,20 @@ const SpellDatabase = [
     "empower": "Duration becomes one hour."
   },
   {
+    "name": "Grim Augury",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Divination",
+      "Unholy"
+    ],
+    "cost": "2 AP",
+    "range": "30 feet",
+    "duration": "1 hour",
+    "desc": "You glimpse into the misfortune of a dead creature within range that you can see, and use it to fuel a glimpse into the future to avoid that misfortune. Over the duration, you gain 1d4+2 uses of this spell, which can be used to grant a +5 bonus to any roll you make. You can only use this bonus once per turn.<br><br>You can target a reanimated creature with this spell, but it imposes harsh misfortune upon them, inflicting them with a -5 to their next roll each time you gain a bonus. An unwilling creature can make a Willpower saving throw to avoid the effect and negate the spell's benefits for you completely.",
+    "empower": "Amount of uses becomes 1d6+3. You can also affect other creatures' rolls within 30 feet of you, once per turn."
+  },
+  {
     "name": "Grotesque Patchwork",
     "author": "CrusaderDroid",
     "tier": 2,
@@ -4662,6 +5024,21 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Guide from the Afterlife",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Divination",
+      "Spirit",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self (30 foot radius)",
+    "duration": "1 hour",
+    "desc": "You call upon a spirit guide that can aid and warn you and your allies. You and creatures you choose in range have a +4 to all ability checks and saving throws.",
+    "empower": ""
+  },
+  {
     "name": "Guide to the Slain",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -4690,6 +5067,20 @@ const SpellDatabase = [
     "desc": "You create gentle winds at a target point within range that extends out in a 30 foot long, 5 foot wide line, with the winds blowing in one direction you choose. When a creature you choose moves within the line in that same direction, all their movement while within the line only costs 5 feet.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Guise of Innocence",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Enchantment",
+      "Poison"
+    ],
+    "cost": "2 AP",
+    "range": "Touch ",
+    "duration": "8 hours",
+    "desc": "The target creature appears to all other creatures as an innocent creature that can do no wrong for the duration of the spell. Misdeeds are instantly forgiven, and any who express anger at the target become scorned by all others.<br><br>Egregious crimes, such as murder or theft of an ancient artifact, cause witnesses to make an Intuition saving throw. On a success, they are no longer affected by the spell. On a failure, they rationalize away the crime. A creature that witnesses two such crimes automatically succeeds on the saving throw.<br><br>This spell does not have any effect on creatures immune to being charmed.",
+    "empower": ""
   },
   {
     "name": "Hailstrom",
@@ -4861,6 +5252,20 @@ const SpellDatabase = [
     "desc": "A target creature you can see must make a Constitution saving throw or become haunted by a clinging chill. The next three times they take damage before the start of your next turn, they take an additional 1d6 cold damage. A creature that takes damage from this spell three times has their movement speed reduced to 0 until the start of your next turn, and can't use AP outside of their turn.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Healing Embrace",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Evocation",
+      "Holy"
+    ],
+    "cost": "1-3 AP",
+    "range": "Self (30 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "Any number of creatures in the area heal for 3d6 hit points per AP spent. You receive only half as much healing.",
+    "empower": "Add your spellcasting stat to every die rolled, and remove the blinded, deafened, poisoned, and paralyzed conditions."
   },
   {
     "name": "Healing Rains",
@@ -6313,6 +6718,20 @@ const SpellDatabase = [
     "empower": "Choose one - initial damage increased to 10d12, or the first three targets hit take the original damage."
   },
   {
+    "name": "Magnetic Nova",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Evocation",
+      "Lightning"
+    ],
+    "cost": "2 AP",
+    "range": "Self (30 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "You unleash a burst of magnetic electricity that violently flings away every creature within the area, moving them 60 feet directly away from you. If an affected creature has metal equipment, they must succeed on a Strength saving throw at the start of their turn to be able to move it. On a failure, they can't move that equipment during their turn and must repeat the saving throw each turn until they succeed. If a creature can't move their armor, they are considered to be restrained.<br><br>Creatures that collide with an object or another creature, or creatures that are struck by thrown creatures from this spell, must succeed on a Strength saving throw or take 8d6 bludgeoning damage, halved on a success. A creature can only take damage from this spell once.",
+    "empower": "Choose one - reduce the cost to 1 AP, or range is increased to 60 feet."
+  },
+  {
     "name": "Magnetic Whip",
     "author": "CrusaderDroid",
     "tier": 5,
@@ -6370,6 +6789,20 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "You end any number of spell effects or conditions on you. You heal 1d6 hit points for each effect or condition ended, and 1d6 hit points per tier of each Draconic spell ended.<br><br>Each time you cast this spell, the AP cost increases by 1 until you take a break or rest.",
     "empower": "You don't need to concentrate on this spell, even when you can't pay the full cost immediately."
+  },
+  {
+    "name": "Manawarp",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Conjuration",
+      "Arcane"
+    ],
+    "cost": "3 AP",
+    "range": "Planar",
+    "duration": "Instantaneous",
+    "desc": "You instantly teleport up to 300 feet in any direction, or to any empty space adjacent to any spell effect you control anywhere in the same plane.",
+    "empower": "Removes the AP cost from this spell."
   },
   {
     "name": "Maneater",
@@ -6699,17 +7132,16 @@ const SpellDatabase = [
   },
   {
     "name": "Maximize",
-    "tier": 8,
+    "author": "CrusaderDroid",
+    "tier": 5,
     "tags": [
-      "Transmutation",
       "Arcane"
     ],
     "cost": "0 AP",
     "range": "Self",
     "duration": "Instantaneous",
-    "desc": "The next spell you cast that affects an area has its area of effect tripled.",
-    "empower": "",
-    "author": "CrusaderDroid"
+    "desc": "Your next damaging or healing spell cast before the end of your next turn treats all dice rolled as if they had rolled their highest possible value.<br><br>If a spell deals or heals damage more than once, only the first roll is affected.",
+    "empower": "Choose one: applies to all spells cast before the end of your next turn, or range becomes 30 feet and it affects the target creature instead of you."
   },
   {
     "name": "Maxwell's Convulsion",
@@ -6922,6 +7354,20 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Mindreave",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Divination",
+      "Psychic"
+    ],
+    "cost": "2 AP",
+    "range": "120 feet",
+    "duration": "Instantaneous",
+    "desc": "Target creature must succeed on three Intuition saving throws. For each failed saving throw, they take 3d8 psychic damage and lose 1 AP now and 1 AP on their next turn.",
+    "empower": "Damage increased to 4d8. Targets Knowledge, Intuition, and Willpower in that order instead of Intuition three times."
+  },
+  {
     "name": "Minor Nightmare",
     "tier": 1,
     "tags": [
@@ -7131,6 +7577,22 @@ const SpellDatabase = [
     "empower": "Damage increased to 2d12. A successful saving throw deals half damage. If cast for 3 AP, creatures that clean the mud off are still blinded until the end of their turn."
   },
   {
+    "name": "Mute Magic",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Abjuration",
+      "Shadow",
+      "Silent",
+      "Still"
+    ],
+    "cost": "0 AP",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "desc": "The next spell you cast this turn has the Silent tag. It also suppresses all noise that would be caused by the spell's effect. Refund half of this spell's MP cost afterwards.",
+    "empower": "Range becomes 60 feet. When cast on another creature, the next spell they cast before the end of their next turn gains the Silent tag."
+  },
+  {
     "name": "Myriad Scales",
     "author": "CrusaderDroid",
     "tier": 5,
@@ -7277,6 +7739,22 @@ const SpellDatabase = [
     "range": "30'",
     "duration": "Instantaneous",
     "desc": "You wash a creature with a mild acid and base, neutralizing everything about them. The target creature loses all persistent effects (not permanent effects), whether they are good or bad. An unwilling target can make a Dexterity saving throw to avoid the effect.",
+    "empower": ""
+  },
+  {
+    "name": "New Moon's Shade",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Illusion",
+      "Shadow",
+      "Silent",
+      "Still"
+    ],
+    "cost": "2 AP",
+    "range": "Self (30 foot radius) ",
+    "duration": "1 hour",
+    "desc": "Any number of creatures you choose within range become invisible. They remain invisible for the duration or until they attack, cast a spell, or end their turn in bright light.",
     "empower": ""
   },
   {
@@ -7589,6 +8067,20 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Oxygenize",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Transmutation",
+      "Acid"
+    ],
+    "cost": "3 AP",
+    "range": "Self (60 feet) ",
+    "duration": "Instantaneous",
+    "desc": "You project intense amounts of oxygen in a line 60 feet long, 15 feet wide, and 15 feet tall. Creatures in the area must succeed on a Constitution saving throw or choke and wheeze from inhaling too much oxygen, losing 3 AP on their next turn. On a success, they lose 1 AP instead.<br><br>The excess oxygen rapidly rusts all metal equipment in the area. Rusted weapons do 1 damage instead of rolling their damage die, and rusted armor has its AC set to 10 and its damage reduction to -2. Magical weapons and armor remove this rust at the end of your next turn.<br><br>The excess oxygen disperses at the end of your next turn. If anything takes fire damage in the area, the entire area explodes, dealing 4d6 fire damage to all creatures in the area and immediately removing the excess oxygen.",
+    "empower": ""
+  },
+  {
     "name": "Pain Swap",
     "author": "CrusaderDroid",
     "tier": 7,
@@ -7652,6 +8144,20 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Peak Performance",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Transmutation",
+      "Physical"
+    ],
+    "cost": "1 AP",
+    "range": "Touch",
+    "duration": "1 minute",
+    "desc": "Target creature gains 2 Strength and Dexterity, and +4 to Strength and Dexterity ability checks for the duration.",
+    "empower": "Duration becomes 1 hour."
+  },
+  {
     "name": "Penumbral Chains",
     "author": "CrusaderDroid",
     "tier": 2,
@@ -7693,6 +8199,20 @@ const SpellDatabase = [
     "duration": "1 minute",
     "desc": "A 10 foot radius becomes encased in impossibly thick, cold ice. Any creatures inside must make a Dexterity saving throw. On a failure, they are frozen solid. On a success, they move to the nearest empty space out of range.<br><br>Frozen creatures take 5d10 cold damage instead of taking a turn. Damage taken this way bypasses temporary hit points. They gain 50 temporary hit points and a vulnerability to fire damage. If their temporary hit points are reduced to 0, the ice breaks and they can take turns normally.<br><br>Creatures immune to cold damage are immune to this spell.",
     "empower": "Choose one - damage increased to 8d10, or radius increased to 20 feet, or temporary hit points increased to 125."
+  },
+  {
+    "name": "Persona Fragment",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Divination",
+      "Psychic"
+    ],
+    "cost": "3 AP",
+    "range": "30 feet",
+    "duration": "Until dispelled",
+    "desc": "You create a copy of your mental self and embed it in a target creature's psyche. Unwilling creatures can make an Intuition saving throw to prevent the effect.<br><br>While the copy is embedded, you always know where the target is, and can communicate with them. You can choose to communicate verbally, in any imagery you so choose, or mentally. The target in turn can communicate with you verbally, but not mentally.<br><br>During their turn, you can spend 1 AP as a response to do any of the following: <br>Grant advantage or disadvantage on their attack rolls this turn.<br>Subtract or add the tier of a spell they are casting from the MP required to cast it.<br>Subtract or add 1 AP to the cost of a spell they are casting. Spells that now cost more than 3 AP gain the Delayed tag for that cast only.<br>Add or subtract your spellcasting stat from the damage dealt with an attack or spell. This change is applied to all targets of the attack or spell.<br><br>Casting this spell a second time removes the first copy. A creature that is targeted with Break Curse can choose to make an Intuition saving throw to remove the copy.<br><br>If you die, the copy remains in the target's mind until dispelled. You are still aware of it even while dead, and have 1 AP that can only be used for the actions listed here. You can still communicate to the creature.",
+    "empower": "You instead imbue the spell in an object. Anyone holding the object is affected by the spell. You can choose whether or not they can unequip the object at any given time."
   },
   {
     "name": "Petal Dance",
@@ -8393,6 +8913,21 @@ const SpellDatabase = [
     "empower": "Creatures that fail the saving throw are additionally frightened of you."
   },
   {
+    "name": "Recall",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Conjuration",
+      "Space",
+      "Ritual"
+    ],
+    "cost": "N/A AP",
+    "range": "Special",
+    "duration": "Instantaneous",
+    "desc": "Over the course of one hour, you prepare to teleport everything you choose within 30 feet of yourself. Any objects must fit completely within a 30 foot sphere centered on yourself. During this time, you focus on a location you have visited or seen before.<br><br>When you cast the spell, you and everything you choose within range teleport to the focused location. All creatures and objects preserve their relative location. There must be room at the location for each passenger - if there is no empty space at the same location, the creature or object that would be there does not teleport with you.",
+    "empower": "Removes the Ritual tag, adds the Delayed tag, and sets the AP cost to 9."
+  },
+  {
     "name": "Reflection of Night",
     "author": "CrusaderDroid",
     "tier": 7,
@@ -8481,6 +9016,20 @@ const SpellDatabase = [
     "desc": "Creatures in a 15 foot radius, 300 foot tall cylinder centered on a target point you can see become targeted by a large storm cloud, which strikes down with lightning. Creatures must make a Dexterity saving throw now and each time they spend AP during their next turn. They take 6d8 lightning damage on a failure, halved on a success.",
     "empower": "Radius increased to 20 feet.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Remote Detonation",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Transmutation",
+      "Fire"
+    ],
+    "cost": "3 AP",
+    "range": "Touch",
+    "duration": "24 hours",
+    "desc": "You charge an object no heavier than 20 pounds with an intense amount of fire magic. This magic is loosed when you spend 1 AP to detonate it, when the object is destroyed, or when the object is in the area of another Remote Detonation spell.<br><br>When you detonate the object or it is caught in another Remote Detonation spell, every creature within 10 feet of the object must succeed on a Dexterity saving throw or take 8d10 fire damage, halved on a success.<br><br>If the object is destroyed, the fire magic is disrupted. Creatures within 5 feet must make a Dexterity saving throw or take 4d10 fire damage, halved on a success.<br><br>The spell harmlessly dissipates after 24 hours.",
+    "empower": "Choose one - targets three objects with a range of 30 feet, or detonation explosion radius increased to 20 feet and damage increased to 8d12."
   },
   {
     "name": "Rend",
@@ -9180,6 +9729,20 @@ const SpellDatabase = [
     "empower": "Creates two additional suns."
   },
   {
+    "name": "Severing",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Abjuration",
+      "Eldritch"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "You deal up to 50 damage to yourself, which can't be reduced or negated, and half of which is deducted from your maximum hit points. This damage bypasses temporary hit points.<br><br>For every 10 damage you take this way, choose a creature within range. It takes 3d6 damage as you use your own essence to forcibly sever its connection to existence, and must succeed on a Willpower saving throw or lose 1 AP and half of its movement speed during its next turn.<br><br>You can target a creature multiple times with one cast of this spell. Once a creature fails a saving throw from this spell, further saving throws are automatically succeeded.",
+    "empower": "Choose one - damage increased to 4d8, or range becomes Self (15 foot radius) and automatically targets all creatures within range, or self-damage cap increased to 120."
+  },
+  {
     "name": "Shade's Vengeance",
     "author": "CrusaderDroid",
     "tier": 2,
@@ -9537,6 +10100,20 @@ const SpellDatabase = [
     "duration": "1 hour",
     "desc": "You gain the ability to move at high speed across a surface of water. As soon as you touch a surface of water, your movement speed quadruples so long as you maintain contact with the water.<br><br>The spell ends if you do anything other than using all your movement speed each turn, or if you are not in contact with the surface of water.",
     "empower": "Range becomes Self (5 foot radius). Each affected creature has an independent version of the spell that ends separately from yours."
+  },
+  {
+    "name": "Skin Shift",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Transmutation",
+      "Disease"
+    ],
+    "cost": "2 AP",
+    "range": "Touch",
+    "duration": "1 minute",
+    "desc": "A target creature has its skin deadened, dealing 3 poison damage per hit die of the creature which can't be reduced. In exchange, the dead skin acts as almost impenetrable armor, granting 3 damage reduction per hit die of the creature for the duration. Unwilling creatures can make a Constitution saving throw to avoid the effect on a success.<br><br>This spell has no effect on creatures without a skin or creatures immune to poison damage.",
+    "empower": ""
   },
   {
     "name": "Skinrot",
@@ -10191,6 +10768,21 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Stasis",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Abjuration",
+      "Cold",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Touch",
+    "duration": "8 hours",
+    "desc": "You freeze the target creature's body with magical frost. It can't gain or lose hit points for the duration.<br><br>The spell ends if you are more than 30 feet from the target.",
+    "empower": ""
+  },
+  {
     "name": "Steal Senses",
     "author": "CrusaderDroid",
     "tier": 2,
@@ -10733,6 +11325,21 @@ const SpellDatabase = [
     "empower": "Removes the AP cost of this spell."
   },
   {
+    "name": "Teleportation",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Conjuration",
+      "Space",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "Touch",
+    "duration": "15 minutes",
+    "desc": "The target creature gains a teleport speed equal to two times its walking speed for the duration of the spell.",
+    "empower": "Duration increased to 8 hours."
+  },
+  {
     "name": "Tell the Tale",
     "author": "CrusaderDroid",
     "tier": 8,
@@ -11004,6 +11611,20 @@ const SpellDatabase = [
     "duration": "1 minute",
     "desc": "You transform into a copy of the target creature, except distinctly more nightmarish. You gain access to all of the creature's features, actions, spells, talents, proficiencies, and weapon styles.<br><br>You must attack or cast a spell that affects the target creature at least once on each of your subsequent turns. If you do not, the spell ends.<br><br>If the target is reduced to 0 hit points, the duration is increased to 15 minutes, and you no longer need to attack the target.",
     "empower": ""
+  },
+  {
+    "name": "Theft of Air",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Transmutation",
+      "Wind"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "In a 15 foot radius sphere, you steal away all air in the location. Creatures that need to breathe and are fully within the area must make a Constitution saving throw, having 1d6+2 hit dice destroyed on a failure and half as much on a success. If a creature has insufficient hit dice, they immediately drop to 0 hit points and pass out, unconscious.<br><br>Any creature that ends their turn in the area must repeat the saving throw.",
+    "empower": "Hit die loss increased to 1d6+4. Radius increased to 20 feet. Also reduces the movement speed of creatures in the area by 10 feet."
   },
   {
     "name": "Thief of Talents",
@@ -11318,6 +11939,20 @@ const SpellDatabase = [
     "empower": "Range increased to 60 feet."
   },
   {
+    "name": "Treason",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Enchantment",
+      "Poison"
+    ],
+    "cost": "2 AP",
+    "range": "Touch",
+    "duration": "Special",
+    "desc": "Target creature you touch must succeed on an Intuition saving throw. On a success, they lose 2 AP during their next turn as they reel from the sudden mental assault, and can't be targeted by this spell again until they complete a rest. On a failure, you quickly suborn their mind and implant a condition and a command. The condition can be any event you desire, or any passage of time you desire, while the command can be anything the creature can achieve within one turn, including movement, multiple uses of AP, or known spells. The creature is then stunned until the end of their next turn.<br><br>For the next 15 minutes, if the condition becomes true, the creature immediately interrupts the current turn to take its command. The spell then ends. The creature is aware of the actions they took, but not that you were the one who cast the spell on them.<br><br>You can cast this spell over 1 minute on the target creature. If you do so, the duration extends to 24 hours.<br><br>The spell can't target creatures immune to being charmed.",
+    "empower": "The creature gains 3 additional AP when deciding what command it should take."
+  },
+  {
     "name": "Treasure Sense",
     "tier": 1,
     "tags": [
@@ -11519,6 +12154,21 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "A 5 foot wide, 10 foot tall wave appears either in front of you or 90 feet ahead of you. If it appears in front of you, it rushes out in a 90 foot long line. Otherwise, the wave rushes towards you and stops before it touches you.<br><br>Creatures caught in the wave must make a Strength saving throw or take 3d6 bludgeoning damage and be dragged 15 feet in the direction of the wave. A creature that succeeds takes half damage and is not moved. Objects that completely fit within the wave are dragged 15 feet as well. An object moved into the same space as a creature knocks the creature prone.",
     "empower": "You can start the wave at any point along the line in either direction."
+  },
+  {
+    "name": "Unearth Treasure",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Transmutation",
+      "Earth",
+      "Ritual"
+    ],
+    "cost": "N/A AP",
+    "range": "Self (100 mile radius)",
+    "duration": "Instantaneous",
+    "desc": "Over the course of eight hours, you gradually dredge up precious gems and metals in the area, pulling them from deep within the ground or mountains until they are just beneath the surface. The newfound valuables are centered in 2d6+4 locations within the area, at least one of which is located within 1 mile of your position. Each such trove covers an area with a radius of roughly 40 feet and a depth of roughly 5 feet.<br><br>This spell can only affect a given area once every decade.",
+    "empower": ""
   },
   {
     "name": "Unfailing Host of Light",
@@ -12127,6 +12777,22 @@ const SpellDatabase = [
     "empower": "You target three corpses instead."
   },
   {
+    "name": "Wall of Snow",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Conjuration",
+      "Cold",
+      "Concentration",
+      "Delayed"
+    ],
+    "cost": "9 AP",
+    "range": "90 feet",
+    "duration": "8 hours",
+    "desc": "For each AP spent on this spell, you create two massive piles of snow that each occupy an area 10 foot long, 5 foot wide, and 15 feet tall. Each pile must be adjacent to at least one other pile.<br><br>The snow is thick enough to prevent movement and block sight and projectiles through it. Creatures in the area when it is created must succeed on a Dexterity saving throw or be buried in the snow, restraining them if they are small enough to be completely contained by the snow. Creatures restrained this way take 3d6 cold damage at the start of each of their turns and can use 2 AP to make a Strength saving throw to break free and move into an adjacent empty space on a success. If a creature succeeds on the Dexterity saving throw, they move to the nearest empty space of your choice.<br><br>Creatures can climb on the snow normally. If they fall through the snow for whatever reason, they become restrained as if they failed the Dexterity saving throw. Other creatures can use 3 AP to dig out adjacent restrained creatures. Fire damage causes a 5 foot cube of snow to melt, once per pile per attack.<br><br>You can cast this spell early, without gathering the maximum amount of AP.",
+    "empower": "The snow piles increase to 25 feet tall and 10 feet wide. You summon an additional pile per AP spent."
+  },
+  {
     "name": "War Machine",
     "tier": 3,
     "tags": [
@@ -12259,6 +12925,21 @@ const SpellDatabase = [
     "range": "Self (60 foot radius)",
     "duration": "Instantaneous",
     "desc": "You grab the earth and infuse it with acid. Any number of spaces you choose erupt with acid, cracking the ground and making it difficult terrain. Creatures on any such space, or who enter a space during their turn, must make a Dexterity saving throw or take 8d10 acid damage, halved on a success.<br><br>The acid remains until another spell restores the terrain.",
+    "empower": ""
+  },
+  {
+    "name": "Water Manipulation",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Transmutation",
+      "Water",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self (60 foot radius) ",
+    "duration": "1 hour",
+    "desc": "You freely manipulate water as you please in the area around you, allowing you to move water in and out of the area as well as change the direction of its flow.<br><br>In addition, once per turn, now and for 2 AP on subsequent turns, you can choose one of the following attack methods:<br><br>>Rushing water slams into a target creature within range, who must make a Strength saving throw or take 6d6 bludgeoning damage, be knocked back 10 feet in any horizontal direction you choose, and fall prone. On a success, they take half damage, move 5 feet, and are not knocked prone.<br>>A 5 foot cube of water is transformed into an aquatic prison for a target creature within range that you can see, who must succeed on a Dexterity saving throw or be trapped in the bubble. They are restrained until they spend 3 AP to make a Strength saving throw to break free. The requisite size of water needed increases by 5 feet for each size category above Medium.<br>>While totally submerged, you use the surrounding water to blast away from you, attempting to damage all creatures you choose in range. Each creature must succeed on a Dexterity saving throw or take 4d10 bludgeoning damage, halved on a success.",
     "empower": ""
   },
   {
@@ -12583,6 +13264,20 @@ const SpellDatabase = [
     "duration": "1 minute",
     "desc": "A 30 foot radius sphere centered on target point within range becomes subject to the whims of the fey. Creatures that start their turn inside must succeed on a Constitution saving throw or have their movement speed reduced to 5 feet until the end of their turn, as the temperature appears to drop precipitously. Whenever a creature in the area takes damage, they additionally take 2d6 additional cold damage. A creature reduced to 0 hit points while inside is frozen solid, and dies if shattered.",
     "empower": ""
+  },
+  {
+    "name": "Winter's Imposition",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Evocation",
+      "Cold"
+    ],
+    "cost": "2 AP",
+    "range": "Self (30 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "You blast chilling air in a 30 foot radius sphere around yourself. Roll 1d6+4 - creatures other than you within range subtract this number from their initiative, then make a Constitution saving throw. On a failure, they take 1d6 cold damage per point of lost initiative, halved on a success.",
+    "empower": "Deals 10 additional cold damage. You can additionally choose an object within 90 feet created by a different Cold spell and cause this spell to be repeated, centered on that object."
   },
   {
     "name": "Winter's Welcome",
