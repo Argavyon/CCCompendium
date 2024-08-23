@@ -1531,7 +1531,8 @@ const SpellDatabase = [
     "tier": 5,
     "tags": [
       "Necromancy",
-      "Fey"
+      "Fey",
+      "Deprecated"
     ],
     "cost": "2 AP",
     "range": "60 feet",
