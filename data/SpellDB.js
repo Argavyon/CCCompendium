@@ -6749,7 +6749,8 @@ const SpellDatabase = [
     "tags": [
       "Transmutation",
       "Acid",
-      "Cantrip"
+      "Cantrip",
+      "Deprecated"
     ],
     "cost": "1 AP",
     "range": "Touch",
