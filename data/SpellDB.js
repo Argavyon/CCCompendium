@@ -5633,7 +5633,8 @@ const SpellDatabase = [
     "tags": [
       "Abjuration",
       "Cold",
-      "Cantrip"
+      "Cantrip",
+      "Deprecated"
     ],
     "cost": "1 AP",
     "range": "Self (30 foot radius)",
