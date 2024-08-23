@@ -5959,10 +5959,7 @@ const SpellDatabase = [
     "tier": 4,
     "tags": [
       "Illusion",
-      "Fey",
-      "Radiant",
-      "Shadow",
-      "Summoning"
+      "Fey"
     ],
     "cost": "2 AP",
     "range": "Self (300 foot radius)",
