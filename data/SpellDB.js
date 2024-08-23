@@ -7649,22 +7649,6 @@ const SpellDatabase = [
     "empower": ""
   },
   {
-    "name": "Path of Ice",
-    "tier": 4,
-    "tags": [
-      "Conjuration",
-      "Cold",
-      "Water",
-      "Concentration"
-    ],
-    "cost": "2 AP",
-    "range": "Self (90 foot long line)",
-    "duration": "10 minutes",
-    "desc": "You conjure a stream of water that covers a 10 foot wide line up to 90 feet long, which travels forward and away from you. Upon reaching the desired location, it freezes solid. Creatures in the path must make a Dexterity saving throw or be restrained and take 6d6 cold damage. A creature that succeeds takes half damage and moves out of the way of the path into the closest empty space.<br><br>The path remains for the duration of the spell. Each 5 foot square has 10 hit points, AC 10, and vulnerability to fire and bludgeoning damage, and shatters if its hit points are reduced to 0. A creature restrained by the spell can make a weapon attack against the nearest square, freeing itself if the square is destroyed.",
-    "empower": "Destroyed squares are restored at the start of each of your turns.",
-    "author": "CrusaderDroid"
-  },
-  {
     "name": "Penumbral Chains",
     "author": "CrusaderDroid",
     "tier": 2,
@@ -12596,6 +12580,22 @@ const SpellDatabase = [
     "duration": "1 minute",
     "desc": "A 30 foot radius sphere centered on target point within range becomes subject to the whims of the fey. Creatures that start their turn inside must succeed on a Constitution saving throw or have their movement speed reduced to 5 feet until the end of their turn, as the temperature appears to drop precipitously. Whenever a creature in the area takes damage, they additionally take 2d6 additional cold damage. A creature reduced to 0 hit points while inside is frozen solid, and dies if shattered.",
     "empower": ""
+  },
+  {
+    "name": "Winter's Welcome",
+    "tier": 4,
+    "tags": [
+      "Conjuration",
+      "Cold",
+      "Water",
+      "Concentration"
+    ],
+    "cost": "2 AP",
+    "range": "Self (90 foot long line)",
+    "duration": "10 minutes",
+    "desc": "You conjure a stream of water that covers a 10 foot wide line up to 90 feet long, which travels forward and away from you. Upon reaching the desired location, it freezes solid. Creatures in the path must make a Dexterity saving throw or be restrained and take 6d6 cold damage. A creature that succeeds takes half damage and moves out of the way of the path into the closest empty space.<br><br>The path remains for the duration of the spell. Each 5 foot square has 10 hit points, AC 10, and vulnerability to fire and bludgeoning damage, and shatters if its hit points are reduced to 0. A creature restrained by the spell can make a weapon attack against the nearest square, freeing itself if the square is destroyed.",
+    "empower": "Destroyed squares are restored at the start of each of your turns.",
+    "author": "CrusaderDroid"
   },
   {
     "name": "Wintercloak",
