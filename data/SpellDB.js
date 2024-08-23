@@ -4004,7 +4004,7 @@ const SpellDatabase = [
     "cost": "2 AP",
     "range": "30 feet",
     "duration": "Instantaneous",
-    "desc": "You create a white bulb at target point within range that you can see. At the start of your next turn, it blooms and spreads out a thick, white fog within a 30 foot radius around itself.<br><br>Creatures inside the fog can't see out of the fog and can only see 5 feet inside the fog. If they attempt to leave the fog, they must first make a Knowledge saving throw. On a failure, they instead use their remaining movement to move back towards the center of the fog. On a success, they can leave the fog.",
+    "desc": "You create a white bulb at target point within range that you can see. At the start of your next turn, it blooms and spreads out a thick, white fog within a 30 foot radius around itself.<br><br>Creatures inside the fog can't see out of the fog and can only see 5 feet inside the fog. If they attempt to leave the fog, they must first make a Knowledge saving throw. On a failure, they instead use their remaining movement to move back towards the center of the fog. On a success, they can leave the fog. The blossom requires an Intuition ability check against your spell DC to be detected, and can be attacked or targeted with spells, which destroys it if it takes any damage. If the blossom is destroyed, the spell ends immediately.",
     "empower": "Range increased to 90 feet."
   },
   {
