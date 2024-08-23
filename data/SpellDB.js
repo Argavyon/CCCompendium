@@ -7854,11 +7854,10 @@ const SpellDatabase = [
   {
     "name": "Plague Burst",
     "author": "CrusaderDroid",
-    "tier": 5,
+    "tier": 1,
     "tags": [
       "Necromancy",
-      "Disease",
-      "Cantrip"
+      "Disease"
     ],
     "cost": "1 AP",
     "range": "Self (15 foot radius)",
