@@ -69,7 +69,7 @@ const SpellDatabase = [
       "Cold",
       "Concentration"
     ],
-    "cost": "2 AP",
+    "cost": "3 AP",
     "range": "90 feet",
     "duration": "1 minute",
     "desc": "Acidic hailstones fall from the sky, striking a 20 foot radius cylinder 100 feet tall. Creatures in the area when it is created and who start their turn in the area must succeed on a Dexterity saving throw or take 4d4 cold and 4d4 acid damage, halved on a success. The hailstones break apart on impact and transform the terrain into difficult terrain.<br><br>During your turn, you can spend 1 AP to move the hail up to 30 feet.",
