@@ -1123,6 +1123,21 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Blade Art: Doom Arrival",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Transmutation",
+      "Physical",
+      "Forbidden (Ninja)"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "desc": "Your weapon attacks become incredibly lethal. Until the start of your next turn, your equipped weapons gain the lethal property, and destroy 1d4 hit dice on hit.<br><br>You can't cast this spell unless it is from a ninja scroll.",
+    "empower": "Destroys 1d6 hit dice on hit instead."
+  },
+  {
     "name": "Blaze Lash",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -2595,6 +2610,20 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Curse Art: Essence Transfer",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Abjuration",
+      "Forbidden (Ninja)"
+    ],
+    "cost": "1 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "You move a magic effect or condition currently affecting one creature within range to another creature within range.<br><br>You can't cast this spell unless it is from a ninja scroll.",
+    "empower": "You can move one magic effect or condition from both creatures targeted, trading them for each other."
+  },
+  {
     "name": "Curse of Incineration",
     "author": "CrusaderDroid",
     "tier": 7,
@@ -3232,6 +3261,22 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Dragon Art: Reaving Roar",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Enchantment",
+      "Draconic",
+      "Psychic",
+      "Forbidden (Ninja)"
+    ],
+    "cost": "1 AP",
+    "range": "Self (60 foot long line) ",
+    "duration": "Instantaneous",
+    "desc": "You unleash the echo of a mighty roar that rumbles through a 60 foot long, 15 foot wide, 15 foot tall line. Every creature you choose within the area becomes frightened until the end of your next turn, and must succeed on an Intuition saving throw or take 6d6 psychic damage, halved on a success.<br><br>You can't cast this spell unless it is from a ninja scroll.",
+    "empower": "Creatures that fail their saving throw and are frightened immediately use all their movement at the start of their next turn to flee from you."
+  },
+  {
     "name": "Dragon Aspect",
     "author": "CrusaderDroid",
     "tier": 9,
@@ -3350,6 +3395,21 @@ const SpellDatabase = [
     "duration": "15 minutes",
     "desc": "You call forth a benign ethereal spirit from the earth, granted great power over the earth.<br><br>At the start of each of your turns, the spirit can do one of the following, as chosen by you: <br><br>>The spirit raises up to three stone pillars, each occupying a 5 foot cube, within 30 feet of you. It can raise the same pillar multiple times, and it can target occupied spaces. It can't raise a pillar that would crush a creature due to insufficient space.<br>>The spirit creates or removes difficult terrain in a 20 foot cube within 30 feet of you.<br>>The spirit carves a 15 foot cube area within 30 feet. It can take any shape you desire, such as stairs or a sculpture.<br>>The spirit imbues you with earth magic, granting you temporary hit points equal to twice your spellcasting stat until the start of your next turn. While the temporary hit points remain, you are resistant to slashing, piercing, and bludgeoning damage and immune to Earth spells, but your movement speed is halved.",
     "empower": ""
+  },
+  {
+    "name": "Earth Art: Stone Shield",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Transmutation",
+      "Earth",
+      "Forbidden (Ninja)"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "You surround yourself with stones that intercept attacks. You gain damage reduction equal to two times your proficiency modifier for the duration. Each time you take damage from a weapon attack, this damage reduction is reduced by 1. The spell ends if it drops to 0.<br><br>You can't take the Hide action while this spell is in effect.<br><br>You can't cast this spell unless it is from a ninja scroll.",
+    "empower": "Range becomes 60 feet. When cast on any other creature, the damage reduction is reduced to be equal to your proficiency modifier."
   },
   {
     "name": "Earthfriend",
@@ -3512,6 +3572,20 @@ const SpellDatabase = [
     "desc": "As a response to a creature you can see that has either attacked or made a saving throw, you can force the creature to make a Willpower saving throw. On a failure, they take 2d8 psychic damage and repeat their last roll, taking the worse of the two results. If this would turn a success into a failure, they take an additional 2d8 psychic damage.",
     "empower": "Damage increased to 3d8 on the initial saving throw and the failed roll.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Element Art: Energy Blade",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Transmutation",
+      "Forbidden (Ninja)"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "You transform your weapon into pure energy. Choose a damage type from fire, cold, or lightning. Your weapon's damage type changes to that type, and it deals an additional 1d6 damage on hit. Your weapon bypasses damage reduction, though it is affected normally by resistances.<br><br>You can't cast this spell unless it is from a ninja scroll.",
+    "empower": "Bonus damage increased to 2d6."
   },
   {
     "name": "Emerald Knives",
@@ -4196,6 +4270,21 @@ const SpellDatabase = [
     "empower": "Pay the empower cost in hit points instead of MP, and deduct it from your maximum hit points. You instead target up to three creatures, all of whom must be within 10 feet of each other."
   },
   {
+    "name": "Fire Art: Skyward Fire",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Evocation",
+      "Fire",
+      "Forbidden (Ninja)"
+    ],
+    "cost": "1 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "You trigger an upward blast of fire in a 20 foot radius area centered on target point within range, which creates a cylinder of fire that rises up to 60 feet. Creatures in the area must succeed on a Dexterity saving throw or take 1d6 fire damage per point of proficiency modifier you have, halved on a success.<br><br>You can't cast this spell unless it is from a ninja scroll.",
+    "empower": "Damage die increased to d8. If you are 9th level or higher, damage die increased to d10 instead."
+  },
+  {
     "name": "Fire Cross",
     "tier": 2,
     "tags": [
@@ -4369,6 +4458,22 @@ const SpellDatabase = [
     "duration": "1 hour",
     "desc": "You lose 1 AP on all of your turns for the duration. Target creature instead gains 1 AP on all of its turns for the duration.<br><br>The spell ends if the target is reduced to 0 hit points.",
     "empower": "You can adjust how much AP you lose each turn. Your target gains as much AP on their next turn. Whenever your target hits with a weapon attack or damages at least one creature with a spell, you regain 1 MP, to a maximum of 30 MP."
+  },
+  {
+    "name": "Forbidden Art: Soul Evocation",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Evocation",
+      "Unholy",
+      "Forbidden (Ninja)",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "You fragment part of your essence, destroying up to 4 hit dice and taking 5 unholy damage for each hit die destroyed, reducing your maximum hit points by the same amount. This damage can't be reduced or negated. If you have no hit dice remaining, you can choose to take an additional 10 damage to act as if you had destroyed a hit die.<br><br>For each destroyed hit die, a dragon-shaped, pale flame pours out of you and incinerates a 10 foot radius cylinder 100 feet high, centered on a point within range. Any creature inside at least one flame must succeed on a Dexterity saving throw or take 6d6 unholy damage, halved on a success.<br><br>At the start of each of your turns, you can move each flame up to 30 feet. Then, any creatures inside the flames must repeat the saving throw.<br><br>If the damage taken by casting this spell would kill you, the flames increase in size to cover a 20 foot radius, and deal 12d6 unholy damage instead.<br><br>You can't cast this spell unless it is from a ninja scroll.",
+    "empower": "There is no way to remove your concentration from this spell. Even if you are unconscious or dead, the spell continues, and you can move them as normal when it would be your turn."
   },
   {
     "name": "Force of Will",
@@ -5709,6 +5814,21 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Ice Art: Frost Breath",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Evocation",
+      "Cold",
+      "Forbidden (Ninja)"
+    ],
+    "cost": "1 AP",
+    "range": "Self (30 foot cone)",
+    "duration": "Instantaneous",
+    "desc": "You exhale a cone of freezing air in a 30 foot cone. Creatures within the area must succeed on a Constitution saving throw or take 1d4 cold damage per point of proficiency modifier you have and have their movement speed reduced to 0 until the end of their next turn. On a successful saving throw, the creature takes half damage and has their movement speed halved instead. This spell bypasses damage reduction and resistance.<br><br>You can't cast this spell unless it is from a ninja scroll.",
+    "empower": "Damage die increased to d6. If you are 13th level or higher, creatures are paralyzed until the start of their next turn on a failed saving throw."
+  },
+  {
     "name": "Ice Block",
     "author": "CrusaderDroid",
     "tier": 2,
@@ -6433,6 +6553,21 @@ const SpellDatabase = [
     "duration": "Until dispelled",
     "desc": "You transform your body into pure light. Weapon attacks deal no damage to you under any circumstances, and you absorb fire and radiant damage.<br><br>While in this form, your Radiant spells deal +2 damage per damage die rolled, and you can move to any point struck by one of your Radiant spells as part of that spell.<br><br>At the start of each of your turns, you lose 15 MP. If you can't pay that cost, the spell ends.",
     "empower": ""
+  },
+  {
+    "name": "Lightning Art: Storm Hammer",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Evocation",
+      "Lightning",
+      "Forbidden (Ninja)"
+    ],
+    "cost": "1 AP",
+    "range": "120 feet",
+    "duration": "Instantaneous",
+    "desc": "Lightning falls from the sky onto target creature within range you can see. It takes 1d8 lightning damage per point of proficiency modifier you have.<br><br>You can't cast this spell unless it is from a ninja scroll.",
+    "empower": "Damage die increased to d10. If you are 13th level or higher, damage die increased to d12."
   },
   {
     "name": "Lightning Cannon",
@@ -9375,6 +9510,21 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Sacred Art: Wound Sealing",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Evocation",
+      "Holy",
+      "Forbidden (Ninja)"
+    ],
+    "cost": "1 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Target creature you can see within range heals 1d4 hit points per point of proficiency modifier you have.<br><br>You can't cast this spell unless it is from a ninja scroll.",
+    "empower": "Healing die increased to d6. If you are 9th level or higher, healing die increased to d8 instead."
+  },
+  {
     "name": "Sacred Border",
     "tier": 1,
     "tags": [
@@ -9640,6 +9790,21 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Sealing Art: Stasis Talisman",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Abjuration",
+      "Space",
+      "Forbidden (Ninja)"
+    ],
+    "cost": "1 AP",
+    "range": "Touch ",
+    "duration": "Special ",
+    "desc": "You create and place a talisman that freezes the target creature or object in place so long as the talisman is attached. You must hit with a magic attack roll against unwilling creatures.<br><br>Frozen targets completely stop. They can't take damage, receive healing, take any turn at all, or be targeted by anything. All other active effects with a duration on them have their duration paused.<br><br>The spell ends when the talisman is removed for 1 AP by an adjacent creature or destroyed when it takes damage from any source. For unwilling creatures, they can make a Willpower saving throw at the end of each of their turns, destroying the talisman on a success or after 1 minute of resistance.<br><br>You can't cast this spell unless it is from a ninja scroll.",
+    "empower": "Range becomes 30 feet."
+  },
+  {
     "name": "Seed Burst",
     "author": "CrusaderDroid",
     "tier": 5,
@@ -9755,6 +9920,21 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "Target corpse within range has its shadow reanimated to make one weapon attack on a creature within the attack's range. It uses the creature's statistics to determine its attack and damage.",
     "empower": ""
+  },
+  {
+    "name": "Shadow Art: Night Cloak",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Illusion",
+      "Shadow",
+      "Forbidden (Ninja)"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "Instantaneous",
+    "desc": "You and all creatures you choose within a radius around you become Hidden and invisible. The radius is equal to 5 feet times your proficiency modifier. At the end of your next turn, affected creatures are no longer invisible.<br><br>You can't cast this spell unless it is from a ninja scroll.",
+    "empower": "Doubles the radius."
   },
   {
     "name": "Shadow Caster",
@@ -10604,6 +10784,21 @@ const SpellDatabase = [
     "desc": "The target's creature's eyes are opened to the realm of magic. For the duration of this spell, they can perceive all active spell effects on creatures they can see. Each spell is a discrete object to the target, with a transparent thread tracing back towards the general direction of the caster if they are within 120 feet.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Spirit Art: Ascendant Leap",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Transmutation",
+      "Spirit",
+      "Forbidden (Ninja)"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "Your jump distance is tripled for the duration.<br><br>You can't cast this spell unless it is from a ninja scroll.",
+    "empower": "Duration becomes 1 hour."
   },
   {
     "name": "Spirit Artery",
@@ -11744,6 +11939,21 @@ const SpellDatabase = [
     "desc": "Massive amounts of water swell beneath you to form a towering tidal wave that covers a 90 foot square in front of you. You are raised 150 feet into the air upon the wave as it gathers. All creatures in the area of effect are aware they are in the area.<br><br>At the start of your next turn, the wave crashes down on the target area, dealing 14d8 bludgeoning damage to everything in the area. Any object totally covered by the wave takes maximum damage. You move to any empty space within the area of effect.",
     "empower": "",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Time Art: Moon Clock",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Transmutation",
+      "Time",
+      "Forbidden (Ninja)"
+    ],
+    "cost": "1 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Target creature immediately takes a turn. You can't target yourself, and you can't target the same creature more than once per rest.<br><br>You can't cast this spell unless it is from a ninja scroll.",
+    "empower": "The target gains 1 AP on their turn."
   },
   {
     "name": "Time Crash",
@@ -12928,6 +13138,21 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Water Art: Sea Burst",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Conjuration",
+      "Water",
+      "Forbidden (Ninja)"
+    ],
+    "cost": "1 AP",
+    "range": "Self (15 foot radius) ",
+    "duration": "Instantaneous",
+    "desc": "Water bursts from below you in a 15 foot radius surrounding you. Every creature you choose within this range must succeed on a Dexterity saving throw or take 1d6 bludgeoning damage per point of proficiency modifier you have and fall prone. On a success, they take half damage and are not knocked prone.<br><br>You can't cast this spell unless it is from a ninja scroll.",
+    "empower": "Damage die increased to d8. If you are 9th level or higher, damage die increased to d10 instead."
+  },
+  {
     "name": "Water Manipulation",
     "author": "CrusaderDroid",
     "tier": 5,
@@ -13146,6 +13371,21 @@ const SpellDatabase = [
     "duration": "1 hour",
     "desc": "You bind the wind to serve target creature within range. They gain the following benefits:<br><br>>Their movement speed increases by 10 feet. If they have a flying speed, it increases by 20 feet instead.<br>>Their ranged weapon attacks have advantage and can't have disadvantage.<br>>Creatures attacking this creature with ranged weapon attacks have disadvantage and can't have advantage.<br>>The creature is immune to damage from your Wind spells, and your Wind spells that target the creature or include them in the area refund MP equal to their tier.",
     "empower": "Duration becomes 8 hours."
+  },
+  {
+    "name": "Wind Art: Sky Lance",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Transmutation",
+      "Wind",
+      "Forbidden (Ninja)"
+    ],
+    "cost": "1 AP",
+    "range": "Self (60 foot line) ",
+    "duration": "Instantaneous",
+    "desc": "You propel a lance of wind forward from you to target point you can see. Every creature in the way must make a Strength saving throw or take 1d4 bludgeoning damage per point of proficiency modifier you have, halved on a success. The first creature targeted is dragged along up to 30 feet on a failed saving throw, reduced to 5 feet on a success.<br><br>You can move to any point of the spell's area of effect as part of the spell.<br><br>You can't cast this spell unless it is from a ninja scroll.",
+    "empower": "Damage die increased to d6. If you are 9th level or higher, damage die increased to d8 instead."
   },
   {
     "name": "Wind Dome",
