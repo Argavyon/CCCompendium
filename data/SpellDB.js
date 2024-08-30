@@ -2596,6 +2596,20 @@ const SpellDatabase = [
     "empower": "Targets an additional two creatures."
   },
   {
+    "name": "Curative Burst",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Holy"
+    ],
+    "cost": "2 AP",
+    "range": "120 feet",
+    "duration": "Instantaneous",
+    "desc": "Divine magic bursts from target point within range that you can see and covers a 20 foot radius. All creatures within heal 3d6 hit points. Creatures you choose within the area heal an additional 3d6 hit points.",
+    "empower": "Choose one - radius increased to 40 feet and all targets heal an additional 3d6 hit points, or you can choose which creatures receive no healing, or undead and reanimated creatures in the area take 6d6 radiant damage instead of healing."
+  },
+  {
     "name": "Current Lure",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -5399,6 +5413,20 @@ const SpellDatabase = [
     "desc": "A creature you touch heals 1d6 hit points per AP spent.",
     "empower": "You add your spellcasting stat to each die rolled.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Healing Wave",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Evocation",
+      "Holy"
+    ],
+    "cost": "1 to 3 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Healing magic extends from you to a target creature within range that you can see, healing 3d6 hit points, plus an additional amount equal to your spellcasting stat.<br><br>For every AP spent on this spell past the first, you can choose an additional target to receive healing. Each additional target receives 1d6 less healing than the last target.",
+    "empower": "Heals 4d10 hit points plus your spellcasting stat instead and can bounce to an additional target. Each additional target reduces the healing by 1d10."
   },
   {
     "name": "Hearkening Thunder",
@@ -8277,6 +8305,22 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "You pull the past self of a creature within range to repeat one of the actions they took last turn, targeting the same creature or area as before and making attack rolls or requiring saving throws as necessary.",
     "empower": ""
+  },
+  {
+    "name": "Peaceful Zephyrs",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Evocation",
+      "Holy",
+      "Wind",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "Self (120 foot radius) ",
+    "duration": "1 minute",
+    "desc": "Gentle, calming winds pour over the battlefield. Now and at the start of your turn, all creatures you choose heal 1d4 hit points, plus your spellcasting stat.<br><br>Creatures at 0 hit points are unaffected.",
+    "empower": "Healing increased to 2d4."
   },
   {
     "name": "Peak Performance",
