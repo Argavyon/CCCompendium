@@ -945,6 +945,22 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Beckons to Yomi",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Abjuration",
+      "Forbidden (Death)",
+      "Concentration",
+      "Delayed"
+    ],
+    "cost": "5 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "Target creature must succeed on a Willpower saving throw if they are unwilling. On a failure, they are transported into the afterlife of your choice and removed from the current plane for the duration. Choose one of two effects for the creature:<br><br>Heaven: The creature heals itself of all conditions, and heals 10 hit points at the start of each of its turns. For every 30 hit points healed this way, they recover one hit die.<br>Hell: The creature has two hit dice destroyed at the start of each of its turns. If it has no more hit dice remaining, it instead loses 30 maximum hit points.<br><br>Creatures in hell can repeat the saving throw at the end of each of their turns to end the effect early on a success. When the spell ends, the target reappears at their prior location. Creatures sent to heaven can't be targeted by this spell again until they complete a rest.",
+    "empower": "Reduces the AP cost to 3."
+  },
+  {
     "name": "Before the Divine",
     "author": "CrusaderDroid",
     "tier": 8,
@@ -4990,6 +5006,20 @@ const SpellDatabase = [
     "duration": "1 minute",
     "desc": "The touched creature must succeed on a Constitution saving throw or be overtaken by a chill that grips their very soul. They take 6d10 cold damage, can't regain hit points or gain temporary hit points, and take 5 cold damage per 5 feet they move on their turn. A successful saving throw deals half damage and no other effect. The creature can repeat the saving throw at the end of each of their turns, ending the effect early on a success.<br><br>A creature that is reduced to 0 hit points while affected by this spell has their body freeze where it stands, preserving it in good condition. If a spell would reanimate this creature, it refunds MP equal to its tier to its caster.<br><br>If you are controlling a reanimated creature, you can have them deliver this spell with a touch instead of you.",
     "empower": "Initial damage increased to 9d10."
+  },
+  {
+    "name": "Graveyard Toll",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Necromancy",
+      "Forbidden (Death)"
+    ],
+    "cost": "1 to 3 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "A harshly resonant toll echoes through one creature per AP spent. They have one hit die destroyed, then take 1d6 radiant or unholy damage, chosen by you. Each destroyed hit die the creature has causes them to take 2 more damage.",
+    "empower": "Targets an equal number of allies and heals 1d6 hit points, plus 1 per hit die spent or destroyed."
   },
   {
     "name": "Greetings of Gravity",
@@ -9092,6 +9122,20 @@ const SpellDatabase = [
     "empower": "Creatures that fail the saving throw are additionally frightened of you."
   },
   {
+    "name": "Reaper's Breath",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Forbidden (Death)"
+    ],
+    "cost": "3 AP",
+    "range": "Self (30 foot cone)",
+    "duration": "Instantaneous",
+    "desc": "You exhale a 30 foot long cone of breath, which seeps into the being of all creatures within the area of effect. Creatures you choose have one hit die destroyed and must make a Constitution saving throw or take 4d6 radiant or unholy damage, chosen by you. On a successful saving throw, they take half damage.<br><br>Creatures you don't choose to damage are instead healed. Divide the total damage dealt to all creatures by this spell as healing amongst all other creatures in range.",
+    "empower": "Range increases to 60 foot cone, damage increases to 5d8."
+  },
+  {
     "name": "Recall",
     "author": "CrusaderDroid",
     "tier": 5,
@@ -9732,6 +9776,21 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Scales of Judgment",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Abjuration",
+      "Forbidden (Death)",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "The impending judgment of the afterlife settles in the air around you. If a creature wishes to attack you, it must destroy one of its hit dice or take damage equal to your proficiency modifier times your spellcasting stat. If it doesn't, it loses the attack and any AP spent on the action.",
+    "empower": "For the duration, when you destroy a hit die with a Death spell, a creature you choose within 60 feet other than yourself heals for 2d6 hit points."
+  },
+  {
     "name": "Scarlet String",
     "author": "Levi",
     "tier": 1,
@@ -10294,6 +10353,20 @@ const SpellDatabase = [
     "duration": "Indefinite",
     "desc": "Spending ten minutes with a door, you create a magical key attuned to that door. <br><br>This key may be placed in any door; if you do so, the key will disappear and the door it is placed in will open into a one-way portal to the attuned door for the next hour, or until either door is closed or destroyed.<br><br>A caster may only maintain one instance of Skeleton Key, and only one instance of Skeleton Key may be attuned to a given door.",
     "empower": ""
+  },
+  {
+    "name": "Skewed Mortality",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Necromancy",
+      "Forbidden (Death)"
+    ],
+    "cost": "0 AP",
+    "range": "Self (30 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "You assert dominion over the mortality of creatures within range. You can choose to destroy any number of your hit dice, or take 15 damage any number of times. Each time you destroy a hit die or take 15 damage, choose a creature other than yourself within range, and either prevent them from healing or receiving temporary hit points, or prevent them from taking damage. Either effect lasts until the end of your next turn.",
+    "empower": "For each destroyed hit die or damage taken, you can heal a creature of your choice within range other than yourself for 10 hit points."
   },
   {
     "name": "Skies of Fire",
