@@ -9527,6 +9527,76 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Rune of Aversion",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Transmutation",
+      "Forbidden (Rune)"
+    ],
+    "cost": "3 AP",
+    "range": "Touch",
+    "duration": "1 hour",
+    "desc": "You magically inscribe a rune on an object, weapon, shield, or armor. While the rune remains, any creature that would move within 5 feet of it during its turn must make an Intuition saving throw. On a failure, they cannot move within 5 feet of the rune during their turn.<br><br>If the inscribed object would be destroyed, the rune is instead destroyed, leaving the object at 1 hit point and ending the spell.<br><br>Ammunition inscribed with this rune will remain lodged wherever it lands.<br><br>You can maintain a total number of runes of this type equal to your proficiency modifier. You can choose any number of creatures, including yourself, to be unaffected by this rune. Creatures carrying an inscribed object are never affected by the rune, even if they were not specifically exempt by you.",
+    "empower": "The area of the rune's effect increases to 10 feet."
+  },
+  {
+    "name": "Rune of Doom",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Transmutation",
+      "Forbidden (Rune)"
+    ],
+    "cost": "3 AP",
+    "range": "Touch",
+    "duration": "1 hour",
+    "desc": "You inscribe a rune on an object, weapon, shield, or armor that imbues it with a great destiny. The effect varies depending on the item type.<br><br>Weapon: The weapon doubles its weapon damage die and gains the keen property.<br>Shield: The shield increases its AC and DR by 2.<br>Armor: The armor increases its DR by 4, and the wearer can't be critically hit.<br>Object: Any creature holding the object in their hands or touching the object with one of their empty hands has a +4 bonus to all saving throws.<br><br>Creatures can't benefit from more than one such inscribed item at a time.",
+    "empower": "Any inscribed item also grants a +1 to all rolls."
+  },
+  {
+    "name": "Rune of Judgment",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Transmutation",
+      "Forbidden (Rune)"
+    ],
+    "cost": "3 AP",
+    "range": "Touch",
+    "duration": "1 hour",
+    "desc": "You inscribe a rune on an object that covers at least a 5 foot cube. When you do so, choose any number of creatures to be exempt from its effects.<br><br>When a creature within 60 feet of the rune starts their turn, they must make a Willpower saving throw. On a failure, the weight of judgment falls upon them - if they damage a creature during their turn, they take 3d10 damage and immediately end their turn, losing all remaining AP. This damage can't be reduced or negated.<br><br>If the object is destroyed or if the rune is scratched out by an adjacent creature for 2 AP, the spell ends.<br><br>You can only inscribe one such rune. Inscribing a new rune of this type destroys all existing runes of this type.",
+    "empower": "The object gains resistance to damage. It takes 6 AP to scratch out the rune."
+  },
+  {
+    "name": "Rune of Preservation",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Transmutation",
+      "Forbidden (Rune)"
+    ],
+    "cost": "3 AP",
+    "range": "Touch ",
+    "duration": "24 hours",
+    "desc": "You magically inscribe a rune on an object, weapon, shield, or armor. When you do so, choose one spell effect that is currently affecting either the item or the wearer of the item. So long as the item is not destroyed, and so long as the affected creature holds the item if applicable, the chosen spell effect has its duration set to be equal to this spell's duration.<br><br>If the rune is destroyed by being dispelled or scratched out, the associated spell immediately ends.",
+    "empower": "Can instead create a runestone that occupies a 5 foot radius, targeting a spell effect that is currently affecting the area. The runestone has AC 10 and 50 hit points, and the associated spell immediately ends if the runestone is destroyed."
+  },
+  {
+    "name": "Rune of Sacrifice",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Transmutation",
+      "Forbidden (Rune)"
+    ],
+    "cost": "3 AP",
+    "range": "Touch",
+    "duration": "1 hour",
+    "desc": "You inscribe a rune on an object that isn't currently being carried or held, and which weighs no more than 10 pounds. The object's hit points are set to 1. When you inscribe this rune, choose any number of creatures within 30 feet of you.<br><br>If the object is destroyed, all chosen creatures heal 10d10 hit points, evenly divided amongst them. A creature can't be healed this way more than once per rest.",
+    "empower": "Healing is instead 5d12+50. Affected creatures will always heal for at least 20 hit points."
+  },
+  {
     "name": "Rupture Earthblood",
     "author": "CrusaderDroid",
     "tier": 3,
