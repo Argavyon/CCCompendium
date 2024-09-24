@@ -339,6 +339,23 @@ const SpellDatabase = [
     "empower": "Deals an additional 3d6 damage on both a successful save and a failed save."
   },
   {
+    "name": "Antagonize Comrades",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Enchantment",
+      "Forbidden (Ruin)",
+      "Concentration",
+      "Silent",
+      "Still"
+    ],
+    "cost": "3 AP",
+    "range": "120 feet",
+    "duration": "1 minute",
+    "desc": "Any number of creatures you choose within a 30 foot radius centered on target point within range you can see must succeed on an Intuition saving throw. On a failure, they are infuriated. Any creature that moves within reach of a target immediately and forcibly provokes a response attack for 0 AP. Affected creatures making a response attack take 2d10 psychic damage each time they do so.<br><br>While you are concentrating on this spell, you can use 1 AP to force an affected creature to move up to their movement speed towards any other creature.",
+    "empower": ""
+  },
+  {
     "name": "Anticipate",
     "tier": 1,
     "tags": [
@@ -3884,6 +3901,20 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Exhaust Mind",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Enchantment",
+      "Forbidden (Ruin)"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Target creature takes 1 psychic damage per 1 MP they have spent, to a maximum of 10 times their proficiency modifier. They must make an Intuition saving throw. On a failure, they double all MP costs and ignore all MP discount effects they may have during their next turn.",
+    "empower": ""
+  },
+  {
     "name": "Exile to the Sky",
     "author": "CrusaderDroid",
     "tier": 3,
@@ -6198,6 +6229,20 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Inflict Despair",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Enchantment",
+      "Forbidden (Ruin)"
+    ],
+    "cost": "1 to 3 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "One creature within range per AP spent is inflicted with despair. They suffer a -2 penalty to attack and damage rolls. They can make an Intuition saving throw at the end of each of their turns to end the effect early.",
+    "empower": "The penalty increases to -3."
+  },
+  {
     "name": "Ingest",
     "author": "Uri de Vries",
     "tier": 2,
@@ -6299,6 +6344,22 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "Twisting metal attempts to entrap a target creature within range that you can see. The creature must make a Dexterity saving throw or be restrained. A creature restrained this way is trapped by the metal - damage it takes is evenly split between itself and the metal.<br><br>If cast for 2 or 3 AP, metal fills all empty spaces within a 5 or 10 foot radius of the target, respectively.<br><br>Metal created by this spell has AC 10 and 40 hit points. It remains until destroyed.",
     "empower": "The metal gains 5 damage reduction and becomes AC 18."
+  },
+  {
+    "name": "Isolate Victim",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Enchantment",
+      "Forbidden (Ruin)",
+      "Silent",
+      "Still"
+    ],
+    "cost": "2 AP",
+    "range": "120 feet",
+    "duration": "1 hour",
+    "desc": "Target creature within range that you can see must succeed on an Intuition saving throw. On a failure, you subtly twist their mind and implant an aversion to all creatures other than you. They are considered an unwilling target for all effects and can't be targeted or affected by effects from other creatures that would grant a benefit to them. When another creature that isn't hostile to them ends their turn within 5 feet of the target, the target immediately moves 5 feet away from that creature if possible.<br><br>If the target creature sees you, it is charmed by you for the duration. It is not charmed if it can see you cast the spell.<br><br>The spell ends early if you damage the creature.",
+    "empower": ""
   },
   {
     "name": "Jaculus",
@@ -9489,6 +9550,22 @@ const SpellDatabase = [
     "range": "90 feet",
     "duration": "15 minutes",
     "desc": "You create six roses on any surface within range. Each rose must be at least 10 feet apart from any other rose created by this spell. You can choose any number of creatures when casting this spell to be unaffected.<br><br>When a creature moves within 10 feet of a rose, it triggers and bursts into a mass of writhing vines, reducing the triggering creature's movement to 0 for the  turn and forcing it to stop moving. Creatures within 20 feet must make a Dexterity saving throw or take 6d8 piercing damage and be restrained. Creatures that succeed take half damage and are not restrained.<br><br>A restrained creature can spend 1 AP to take 2d8 piercing damage and make a Strength saving throw. On a success, they break free from the entrapping rose. A restrained creature that takes slashing or fire damage is freed from being restrained.<br><br>The roses can be destroyed if the surface they are on is destroyed. If the rose is destroyed after being triggered, all affected creatures are freed.",
+    "empower": ""
+  },
+  {
+    "name": "Ruin Hope",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Enchantment",
+      "Forbidden (Ruin)",
+      "Silent",
+      "Still"
+    ],
+    "cost": "3 AP",
+    "range": "120 feet",
+    "duration": "8 hours",
+    "desc": "You attempt to crush the hope in a creature so thoroughly that they lose faith in their original goals and align themselves to you out of depression and hopelessness. The target must make an Intuition saving throw. On a failure, they become charmed by you for the duration, and align themselves with your goals. You can't control them, but they will generally fight for you against their former allies. This may not necessarily cause the creature to take up arms directly - depending on the creature, they may simply choose not to act against you, or provide information in lieu of direct combat support.<br><br>At the end of the duration, the creature repeats the saving throw if they are within 120 feet of you. On a success, the spell ends. On a failure, the spell is extended for 8 more hours. A creature not within 120 feet at the end of the duration is no longer affected by the spell. A creature that is affected for 24 hours by this spell has its effects become permanent, even if they leave the range of the spell.",
     "empower": ""
   },
   {
