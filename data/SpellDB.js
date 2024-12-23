@@ -1,5 +1,21 @@
 const SpellDatabase = [
   {
+    "name": "A Card to Play",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Divination",
+      "Forbidden (Fate)",
+      "Silent",
+      "Still"
+    ],
+    "cost": "0 AP",
+    "range": "90 feet",
+    "duration": "8 hours",
+    "desc": "Target willing creature other than yourself has an action preordained. If it is a spell, it spends the MP to cast the spell, and it must cost 2 or fewer AP.<br><br>At any time over the spell\u2019s duration, you can cause the action to take place. The creature chooses all applicable targets and does not need AP for the action. It must be able to take the action, or the spell fails and is lost.<br><br>You can't target a creature with this spell again until it finishes a rest.",
+    "empower": ""
+  },
+  {
     "name": "A Single Path",
     "author": "neitherrhyme",
     "tier": 8,
@@ -11,6 +27,21 @@ const SpellDatabase = [
     "duration": "Until Dispelled",
     "desc": "Designate an area of up to 50ft by 50ft. Over the course of an hour, you walk a path, entering this space at one point and leaving at another, which is determined to be the 'Correct' path. Any creature who enters the space afterwards who does not follow the 'Correct' path will find themselves back at the entry point. A creature subject to this effect may make a Knowledge save to notice something amiss. If they succeed at this save, they may make a Knowledge save to ignore the effect. Both saves can be made each time a creature finds itself at the entry point.",
     "empower": ""
+  },
+  {
+    "name": "Abundant Life",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Evocation",
+      "Forbidden (Abundance)",
+      "Potent"
+    ],
+    "cost": "2 AP",
+    "range": "Touch",
+    "duration": "Instantaneous",
+    "desc": "The touched creature heals 5d6 hit points. When casting at a higher tier, increase the healing by 2d6 per tier above 1. Unwilling creatures can make a Constitution saving throw to negate the effect.<br><br>A creature healed past their maximum hit points has their body wracked by life magic growing past the confines of their mortal shell. They take maximum hit point damage equal to the amount of excess healing, and their current hit points drop to the new maximum. A creature that takes damage this way can't be targeted by this spell again for 24 hours.",
+    "empower": "Choose one - Unwilling creatures are healed for half as much hit points on a successful saving throw, or range increased to 30 feet."
   },
   {
     "name": "Abyssal Call",
@@ -1967,6 +1998,21 @@ const SpellDatabase = [
     "empower": "Also deals 2d8 fire damage on a failed saving throw. A successful saving throw reduces the damage taken by half."
   },
   {
+    "name": "Chosen of Storms",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Abjuration",
+      "Forbidden (Tempest)",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "The target creature is enveloped in raging wind and lightning that extends to a 5 foot radius around them. At the start of each of their turns, they gain 3 temporary hit points for every creature, including themselves, in the area, then deal 1d8 lightning damage to every creature they choose in the area. The temporary hit points remain until the start of their next turn.<br><br>Whenever the creature is targeted with a spell, the area increases by 5 feet.",
+    "empower": "Immediately after being cast, the area expands once."
+  },
+  {
     "name": "Chronoshift",
     "author": "CrusaderDroid",
     "tier": 8,
@@ -2326,6 +2372,20 @@ const SpellDatabase = [
     "desc": "Your eyes become portals that welcome stellar beings. You are blinded while the spell remains active, but you can precisely sense the presence of creatures within 60 feet, increased by 30 feet for each AP spent past the first. Once on each of your turns, you can spend 1 AP to fix your gaze upon a creature, who must succeed on an Intuition saving throw or take 2d6 radiant damage and be frightened of you until the start of your next turn.",
     "empower": "Creatures remain frightened as long as they can see you. They can repeat the saving throw at the end of each of their turns to end the effect early. A creature that is frightened and targeted again takes an additional 1d6 psychic damage.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Consuming Rage",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Enchantment",
+      "Forbidden (Tempest)"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "An intense desire to destroy the enemy floods the minds of all creatures you choose within a 20 foot radius area. Unwilling creatures must succeed on an Intuition saving throw to avoid the effect.<br><br>Creatures affected by this spell deal an additional 1d4 damage per hit on all weapon attacks, but have a -2 to AC. When any affected creature is affected by a different spell, all affected creatures gain an additional +1d4 damage and -2 AC, to a maximum of +3d4 damage and -6 AC. This can only happen once per spell, even if the triggering spell hits multiple affected targets.<br><br>This spell can't be ended early. If a creature is knocked unconscious, the spell immediately ends for them.",
+    "empower": "Bonus damage becomes +1d6 instead."
   },
   {
     "name": "Containment Field",
@@ -3279,6 +3339,20 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Doubling Boon",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Transmutation",
+      "Forbidden (Abundance)"
+    ],
+    "cost": "3 AP",
+    "range": "Self (60 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "All creatures within range are given an abundant boon. The next source of damage or healing they take before the end of your next turn, after all modifiers, is doubled.",
+    "empower": ""
+  },
+  {
     "name": "Downpour",
     "author": "CrusaderDroid",
     "tier": 2,
@@ -3813,6 +3887,20 @@ const SpellDatabase = [
     "empower": "Range increased to 60 feet. Line length increased to 20 feet."
   },
   {
+    "name": "Essence Tribute",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Necromancy",
+      "Forbidden (Abundance)"
+    ],
+    "cost": "3 AP",
+    "range": "Touch",
+    "duration": "1 minute",
+    "desc": "Target creature at 0 hit points is killed if it is not already dead. Its normal value of maximum hit points are then evenly divided between all creatures you choose within 60 feet, increasing their maximum hit points and their current hit points to match.<br><br>When the spell ends, all affected creatures return to their normal maximum hit points. This kills any creature that falls below 0 maximum hit points.",
+    "empower": ""
+  },
+  {
     "name": "Establish Domain",
     "author": "CrusaderDroid",
     "tier": 3,
@@ -4036,6 +4124,20 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Eyesore",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Transmutation",
+      "Disease"
+    ],
+    "cost": "1 to 3 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "One creature that you can see within range per AP spent must make a Constitution saving throw or have their eyes attacked, harshly reducing their vision. They become only able to see creatures within 10 feet, and are considered blinded to anything outside of that range.<br><br>At the end of each of their turns, a creature can repeat the saving throw. On a success, the spell ends for that creature. On a failure, their range of vision is increased by 10 feet.",
+    "empower": "The target is blinded instead and fails their first repeated saving throw against this spell automatically."
+  },
+  {
     "name": "Fade",
     "author": "CrusaderDroid",
     "tier": 9,
@@ -4210,6 +4312,22 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "Four bolts of black magic spring out from your hands, each homing in on a different creature you choose within range. They must make a Dexterity saving throw or take 8d6 damage, split evenly between arcane and unholy damage. A successful saving throw deals half damage.<br><br>If a reanimated creature is targeted, or if the target creature is reduced to 0 hit points, an additional bolt springs from them at any other creature within range you choose. You can target a previously targeted creature with these additional bolts. A creature that fails a saving throw against this spell fails all successive saving throws against this spell. These bolts cannot trigger additional bolts.",
     "empower": "Fires two more bolts."
+  },
+  {
+    "name": "Fated Thread",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Necromancy",
+      "Forbidden (Fate)",
+      "Silent",
+      "Still"
+    ],
+    "cost": "0 AP",
+    "range": "120 feet",
+    "duration": "8 hours",
+    "desc": "You weave together the fates of two target creatures other than yourself. Unwilling creatures can make a Willpower saving throw to negate the effect, immediately ending the spell. When either of them receives healing or damage, or is affected by a spell or condition, you can end the spell as a response to duplicate the effect onto the other creature. You are always aware when either creature would be affected. <br><br>You can't activate this spell if both creatures are targeted by the same effect. You can't target the same creature with this spell again until they complete a rest.<br><br>Damage and healing duplicated is limited to a maximum of 25.",
+    "empower": "Maximum duplicated damage or healing increased to 40"
   },
   {
     "name": "Feasting Forest",
@@ -4635,6 +4753,81 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "You strike out with thin bolts of lightning from your fingertips at up to three targets within range, who must make a Dexterity saving throw or take 2d8 lightning damage plus 1d8 damage per AP spent past the first, halved on a success. If 3 AP was spent on this spell, a fourth bolt of lightning can target an additional creature.",
     "empower": "Targets two additional creatures. Damage increased by 1d8."
+  },
+  {
+    "name": "Form: Martyr",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Transmutation",
+      "Forbidden (Shapeshift)",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "Self ",
+    "duration": "1 minute",
+    "desc": "You transform yourself into benevolence beyond death. You can't be healed, but each time you take damage, heal any number of creatures within 60 feet for half the damage you take.<br><br>You never fail concentration saving throws for this spell.",
+    "empower": "Removes the Concentration function."
+  },
+  {
+    "name": "Form: Pillar",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Transmutation",
+      "Forbidden (Shapeshift)",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "You transform yourself into organic stone, trading mobility for defense. Your Dexterity is reduced by 2 and your movement speed is halved, but you gain a +5 bonus to all saving throws and DR, 30 temporary hit points, and immunity to being forcefully moved. Creatures can't move through you in this state, and you are treated as cover for creatures of the same size or smaller.",
+    "empower": "Removes the Concentration function."
+  },
+  {
+    "name": "Form: Raptor",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Transmutation",
+      "Forbidden (Shapeshift)",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "You transform yourself into hollow bone and plentiful wings, sacrificing defense for mobility. You take 3 more damage from all sources of damage, but you gain a fly speed equal to your walking speed plus 20. After taking any action, you can move 10 feet as part of that action. This movement does not provoke responses.",
+    "empower": "Choose one - Duration increased to 1 hour, or remove the Concentration function."
+  },
+  {
+    "name": "Form: Reflection",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Transmutation",
+      "Forbidden (Shapeshift)",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "Self (90 feet)",
+    "duration": "1 minute",
+    "desc": "You transform into an exact copy of a target creature within 90 feet that you can see. Your hit points are unchanged - you gain temporary hit points equal to half the target's current hit points instead. You otherwise lose access to all of your normal statistics and equipment and use the target's statistics and equipment instead. If the target can cast spells, you only have access to those spells.<br><br>You can concentrate on a spell your target has as well as this spell.<br><br>This spell ends early when your temporary hit points are depleted.",
+    "empower": "Removes the Concentration function."
+  },
+  {
+    "name": "Form: Terror",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Transmutation",
+      "Forbidden (Shapeshift)",
+      "Concentration"
+    ],
+    "cost": "1 AP",
+    "range": "Self",
+    "duration": "1 minute",
+    "desc": "You transform yourself into whirling blades, grasping tendrils, and gaping maws. Now and at the start of each of your turns, make a magic weapon attack on every creature within 10 feet, dealing 3d10 damage of a type of your choice on hit. Creatures that end their turn within 10 feet of you must succeed on an Intuition saving throw or be frightened of you for the duration.",
+    "empower": "Removes the Concentration function."
   },
   {
     "name": "Fourfold Mirage",
@@ -5186,6 +5379,20 @@ const SpellDatabase = [
     "duration": "Until destroyed",
     "desc": "You infuse life and intellect into a massive amount of plant matter and create a nature guardian - a towering being devoted to the protection of nature.<br><br>The nature guardian takes a shape you choose, but is always Gargantuan size, displacing everything in its tiles into the nearest adjacent empty tiles upon being summoned. It has AC 24 and 400 hit points, and uses your spellcasting stat for all of its own stats. Beasts and plants within 1 mile are permanently charmed by it.<br><br>The nature guardian takes its turn after yours. It is not under your control. If a creature it can see damages a beast or plant, or destroys terrain, it becomes enraged and targets that creature. It can use 1 AP to lash out with a vine as a weapon attack to deal 4d20 bludgeoning damage on a hit. It can use 2 AP to slam down and send a wave of greenery in a 60 foot wide, 120 foot long line that transforms the terrain into difficult terrain, which requires creatures in this range to make a Dexterity saving throw or take 6d20 bludgeoning damage and be restrained until the end of their next turn, and take half damage and not be restrained on a success. It can cast any Plant spell of tier 7 or lower that you know, ignoring MP costs. It has a movement speed of 20 feet.<br><br>You can't cast this spell again until the first nature guardian is destroyed.",
     "empower": ""
+  },
+  {
+    "name": "Growing Squall",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Transmutation",
+      "Forbidden (Tempest)"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet ",
+    "duration": "1 minute",
+    "desc": "A 10 foot radius sphere is bombarded with harsh winds that throw about debris. Creatures in the area must succeed on a Dexterity saving throw or take 3d8 bludgeoning damage. On a successful saving throw, they take half damage.<br><br>The winds remain for the duration of the spell. When you cast a spell that targets a creature in the area, the radius of the winds increases by 5 feet, then everything in the area takes 1d8 lightning damage.",
+    "empower": "Immediately after being cast, expands once, as if you had already cast a spell inside of it."
   },
   {
     "name": "Guardian Angel",
@@ -7413,6 +7620,22 @@ const SpellDatabase = [
     "empower": "The maximum cast range is increased to 120 feet, and the areas no longer need to touch each other."
   },
   {
+    "name": "Measured Life",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Necromancy",
+      "Forbidden (Fate)",
+      "Silent",
+      "Still"
+    ],
+    "cost": "0 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "When the spell ends, target creature dies unless they succeed on a Willpower saving throw. On a success, they take damage equal to one quarter of their current hit points. If you are reduced to 0 or fewer hit points, the spell fails and is canceled to no effect.<br><br>You can't target the creature with this spell again. You can't end this spell early.",
+    "empower": ""
+  },
+  {
     "name": "Megalo Shadow",
     "author": "CrusaderDroid",
     "tier": 7,
@@ -7534,6 +7757,20 @@ const SpellDatabase = [
     "duration": "1 minute",
     "desc": "You instantly fabricate a metal weapon or suit of armor and forcibly equip it to target creature. They can't unequip it unless you choose to allow them to unequip it.<br><br>You can choose to either grant the created item a +1 enhancement, or superheat it to burn the wielder for 2d6 fire damage at the start of each of their turns while it is equipped.",
     "empower": "Choose one:<br>>The created item has a +2 enhancement instead.<br>>Remove Concentration.<br>>The superheated metal deals 2 additional fire damage, increased by 2 for every turn it has dealt damage. This additional damage reduces maximum hit points by the same amount."
+  },
+  {
+    "name": "Microbiotic Control",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Transmutation",
+      "Disease"
+    ],
+    "cost": "2 AP",
+    "range": "30 feet",
+    "duration": "Variable",
+    "desc": "Choose two of the following effects. You can't target a creature or area twice with the same effect, but you can still choose the same effect twice otherwise.<br>* Target creature heals 1 hit point as microbes accelerate the natural healing process. After 1 minute, the target heals an additional 1d4 hit points.<br>* Target creature takes 1 damage as microbes work to attack it from the inside. This damage can't be prevented, reduced, or increased.<br>* You cause a 10 foot area of earth to become either more or less fertile. Fertile earth is sure to grow any plants placed in the area. Unfertile earth will never yield plants, and any non-magical plants in the area wither and die over 1 minute.<br>* You inflict or remove a simple sickness on a target creature, such as the common cold. This sickness imposes a -2 penalty on ability checks, and remains for 24 hours. Creatures can make a Constitution saving throw to prevent the effect.<br>* You contaminate or decontaminate up to five pieces of food. Contaminated food grants no benefit when eaten, and forces the target to make a Constitution saving throw or be poisoned for 8 hours. The victim can repeat the saving throw once every 15 minutes to overcome the effect early.",
+    "empower": ""
   },
   {
     "name": "Microrealm",
@@ -7829,6 +8066,20 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "Thick mud is launched at a 5 foot cube, increased by 5 feet per AP spent past the first, centered on target point within range you can see. Creatures in the area must make a Dexterity saving throw or take 2d8 bludgeoning damage and be blinded until they use 1 AP to clean the mud off their eyes. If cast for 3 AP, creatures that succeed on the saving throw take half damage.",
     "empower": "Damage increased to 2d12. A successful saving throw deals half damage. If cast for 3 AP, creatures that clean the mud off are still blinded until the end of their turn."
+  },
+  {
+    "name": "Muscle Burst",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Transmutation",
+      "Forbidden (Abundance)"
+    ],
+    "cost": "1-3 AP",
+    "range": "Touch",
+    "duration": "1 minute",
+    "desc": "Target creature gains +1 to your choice of Strength or Dexterity per AP spent for the duration. Unwilling creatures can make a Constitution saving throw to negate the effect. <br><br>If Strength or Dexterity would be increased above +6, the creature's muscles or similar equivalent burst from the infusion of power and become weakened. The chosen stat is instead set equal to the negative value of the AP spent to cast this spell - spending 3 AP would leave the creature at -3 Strength or Dexterity, for instance. They can make a Constitution saving throw at the end of each of their turns to end the spell early.",
+    "empower": "The spell gains the Delayed function, and you can spend up to 5 AP on the spell."
   },
   {
     "name": "Mute Magic",
@@ -9136,6 +9387,20 @@ const SpellDatabase = [
     "empower": "Reduces the AP cost to 2."
   },
   {
+    "name": "Rampant Growth",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Transmutation",
+      "Forbidden (Abundance)"
+    ],
+    "cost": "2 AP",
+    "range": "30 feet",
+    "duration": "1 minute",
+    "desc": "Target creature within range you can see grows to the next size category, and gains 2 damage reduction and 10 feet movement speed. Their unarmed strikes and natural weapons do an additional 1d6 damage. Unwilling creatures can make a Constitution saving throw to negate the effect.<br><br>If the target is affected by the spell again, they grow an additional size category and collapse prone, as their body can no longer support them. Their movement speed is set to 0 for the duration, and they lose 1 AP at the start of their turn. Creatures affected this way make a Constitution saving throw at the end of each of their turns. On a success, they return to their normal size, and the spell ends.",
+    "empower": "Choose one - range becomes 60 feet, or range becomes 15 feet and targets three creatures."
+  },
+  {
     "name": "Rannach's Stalwart Fellows",
     "tier": 2,
     "tags": [
@@ -9492,6 +9757,21 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "In a 30 foot area centered on a target point you can see, every creature you choose within that area has their shadow rise up to stab them in the back. They must make a Dexterity saving throw or take 5d6 piercing damage, halved on a success.<br><br>A creature reduced to 0 or fewer hit points from this spell is overtaken by their shadow instead. For 1 minute, they are reanimated and become a puppet under your control, able to either move or make one weapon attack during their turn, but not both.",
     "empower": "Damage increased to 7d6."
+  },
+  {
+    "name": "Rile the Restless",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Necromancy",
+      "Forbidden (Tempest)",
+      "Concentration"
+    ],
+    "cost": "3 AP",
+    "range": "Self (30 foot radius)",
+    "duration": "1 minute",
+    "desc": "You compel the restless dead to rise back to action. Target corpse within range is reanimated by you. It takes action after your turn, commanded by you. It is invulnerable, but its movement speed is halved, and it can't cast spells.<br><br>Each time you cast a spell, increase the radius of the area by 10 feet, then reanimate another corpse within range.<br><br>When the spell ends, all reanimated creatures collapse, once again dead.",
+    "empower": "Immediately after being cast, the area expands once, possibly reanimating a second target."
   },
   {
     "name": "Rite of Rebirth",
@@ -10053,6 +10333,22 @@ const SpellDatabase = [
     "duration": "Special ",
     "desc": "You create and place a talisman that freezes the target creature or object in place so long as the talisman is attached. You must hit with a magic attack roll against unwilling creatures.<br><br>Frozen targets completely stop. They can't take damage, receive healing, take any turn at all, or be targeted by anything. All other active effects with a duration on them have their duration paused.<br><br>The spell ends when the talisman is removed for 1 AP by an adjacent creature or destroyed when it takes damage from any source. For unwilling creatures, they can make a Willpower saving throw at the end of each of their turns, destroying the talisman on a success or after 1 minute of resistance.<br><br>You can't cast this spell unless it is from a ninja scroll.",
     "empower": "Range becomes 30 feet."
+  },
+  {
+    "name": "Second Chance",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Necromancy",
+      "Forbidden (Fate)",
+      "Silent",
+      "Still"
+    ],
+    "cost": "0 AP",
+    "range": "120 feet",
+    "duration": "8 hours",
+    "desc": "Target creature is revived with 1 hit point when the spell ends if the creature is dead.<br><br>If the creature would be subject to an effect that would destroy the body or prevent resurrection, the spell immediately ends and negates the effect completely, including any damage.<br><br>You can't target the creature with this spell again until they complete a rest.<br><br>This spell can't be dispelled or negated by anything.",
+    "empower": ""
   },
   {
     "name": "Seed Burst",
@@ -11829,6 +12125,21 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Tempest",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Evocation",
+      "Forbidden (Tempest)",
+      "Delayed"
+    ],
+    "cost": "99 AP",
+    "range": "Self (300 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "Immediately as you begin casting this spell, harsh winds and crackling lightning gather in the spell's area. For every AP spent on casting any spell, a target within range must make a Dexterity saving throw or take 2d8 bludgeoning and 1d8 lightning damage. A successful saving throw causes the target to take half damage. Creatures targeted multiple times make one save for each time they would take damage.<br><br>For each turn that passes since you began casting this spell, the number of targets increases by 2. You must choose all possible targets unless no more remaining targets are in range.",
+    "empower": ""
+  },
+  {
     "name": "Terraform",
     "author": "CrusaderDroid",
     "tier": 6,
@@ -12278,6 +12589,22 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "You adjust the initiative of up to three other creatures within range as you please. Unwilling creatures can make an Intuition saving throw to avoid the effect on a success.<br><br>The current initiative count is unchanged, and follows the new initiative order after your turn ends, even if a creature has already taken their turn this round.<br><br>This spell is particularly exhausting. The first time you cast this spell each rest, it costs 2 AP. After you cast it, it costs 5 AP until you finish a break or rest.",
     "empower": "Range becomes Self (30 foot radius), and you can affect any number of targets within range."
+  },
+  {
+    "name": "Tip the Scales",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Divination",
+      "Forbidden (Fate)",
+      "Silent",
+      "Still"
+    ],
+    "cost": "0 AP",
+    "range": "Self",
+    "duration": "8 hours",
+    "desc": "When you cast this spell, you gain three charges. As a response to any roll from any creature you can see, you can add or subtract 5 from that roll at the cost of one charge.<br><br>Affected creatures are unaware of your influence.<br><br>You can't cast this spell again until you finish a rest.",
+    "empower": "The number of charges increases to five."
   },
   {
     "name": "Titan Vine",
