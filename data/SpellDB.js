@@ -4028,7 +4028,7 @@ const SpellDatabase = [
     "tier": 1,
     "tags": [
       "Transmutation",
-      "Electric"
+      "Lightning"
     ],
     "cost": "1 to 3 AP",
     "range": "90 feet",
