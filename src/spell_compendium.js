@@ -1,11 +1,12 @@
-function ftag_desc(functional_tags, tag) {
+class SpellCompendium {
+static ftag_desc(functional_tags, tag) {
     return functional_tags[
         Object.keys(functional_tags).find(f_tag => tag.includes(f_tag))
     ];
 }
 
 // Generate full-sized spell description
-function spellCard(spellData, functional_tags) {
+static spellCard(spellData, functional_tags) {
 	const card = document.createElement('table');
 	const cardBody = card.appendChild(document.createElement('tbody'));
 	card.className = 'spell';
@@ -34,7 +35,7 @@ function spellCard(spellData, functional_tags) {
 	tagsD.className = 'spelltags';
 	tagsH.textContent = 'Tags:';
 	tagsD.innerHTML = spellData.tags
-        .map(tag => Object.keys(functional_tags).some(f_tag => tag.includes(f_tag)) ? `<span class='fTag' title='${ftag_desc(functional_tags, tag)}'>${tag}</span>` : tag)
+        .map(tag => Object.keys(functional_tags).some(f_tag => tag.includes(f_tag)) ? `<span class='fTag' title='${SpellCompendium.ftag_desc(functional_tags, tag)}'>${tag}</span>` : tag)
         .join(', ')
     ;
 	
@@ -80,7 +81,7 @@ function spellCard(spellData, functional_tags) {
 }
 
 // Generate spell table entry
-function spellBrief(spellData, functional_tags) {
+static spellBrief(spellData, functional_tags) {
     const brief = document.createElement('tr');
     brief.id = `spell_${spellData.name.replaceAll(' ', '_')}`;
     
@@ -90,7 +91,7 @@ function spellBrief(spellData, functional_tags) {
         spellData.range,
         spellData.duration,
         spellData.tags
-            .map(tag => Object.keys(functional_tags).some(f_tag => tag.includes(f_tag)) ? `<span class='fTag' title='${ftag_desc(functional_tags, tag)}'>${tag}</span>` : tag)
+            .map(tag => Object.keys(functional_tags).some(f_tag => tag.includes(f_tag)) ? `<span class='fTag' title='${SpellCompendium.ftag_desc(functional_tags, tag)}'>${tag}</span>` : tag)
             .join(', ')
     ].forEach(data => {
         const td = brief.appendChild(document.createElement('td'));
@@ -99,7 +100,7 @@ function spellBrief(spellData, functional_tags) {
     });
     
     brief.onclick = function() {
-        const card = spellCard(spellData, functional_tags);
+        const card = SpellCompendium.spellCard(spellData, functional_tags);
         const compendiumRight = document.getElementById('compendium_right');
         compendiumRight.replaceChild(card, compendiumRight.firstElementChild);
     };
@@ -108,21 +109,21 @@ function spellBrief(spellData, functional_tags) {
 }
 
 // Generate spell table
-function generate_brief_spell_table(SpellDatabase, tag_select, tier_select, functional_tags) {
+static generate_brief_spell_table(SpellDatabase, tag_select, tier_select, functional_tags) {
     const oldTable = document.querySelector('#spelltable');
     const newTable = oldTable.cloneNode(false);
 
     SpellDatabase.forEach(spell => {
         if (tag_select.size > 0 && !spell.tags.some(tag => tag_select.has(tag))) return;
         if (tier_select.size > 0 && !tier_select.has(spell.tier)) return;
-        newTable.appendChild(spellBrief(spell, functional_tags));
+        newTable.appendChild(SpellCompendium.spellBrief(spell, functional_tags));
     });
 
     oldTable.parentNode.replaceChild(newTable, oldTable);
 }
 
 // Download spell
-function downloadSpell() {
+static downloadSpell() {
 	const spell = document.querySelector("#compendium_right table");
 	if (spell) {
 		html2canvas(spell, { allowTaint: true }).then(function (canvas) {
@@ -139,7 +140,7 @@ function downloadSpell() {
 	
 }
 
-function tag_buttons(tag_list, tag_set, container, render_callback) {
+static tag_buttons(tag_list, tag_set, container, render_callback) {
     Object.entries(tag_list).sort((a, b) => {
         if (a[1] == b[1]) {
             return (a[0] == b[0]) ? 0 : (a[0] > b[0]) ? 1 : -1;
@@ -179,7 +180,7 @@ function tag_buttons(tag_list, tag_set, container, render_callback) {
     });
 }
 
-function main() {
+static render() {
     const compendiumLeft = document.getElementById('compendium_left');
     const compendiumRight = document.getElementById('compendium_right');
     const compendiumSchoolList = document.getElementById('left_school_tags');
@@ -224,11 +225,11 @@ function main() {
 
     const tag_select = new Set();
     const tier_select = new Set();
-    const gen_spelltable = () => generate_brief_spell_table(SpellDatabase, tag_select, tier_select, functional_tags);
+    const gen_spelltable = () => SpellCompendium.generate_brief_spell_table(SpellDatabase, tag_select, tier_select, functional_tags);
 
     // TAGS
-    tag_buttons(school_tag_list, tag_select, compendiumSchoolList, gen_spelltable);
-    tag_buttons(tag_list, tag_select, compendiumTagList, gen_spelltable);
+    SpellCompendium.tag_buttons(school_tag_list, tag_select, compendiumSchoolList, gen_spelltable);
+    SpellCompendium.tag_buttons(tag_list, tag_select, compendiumTagList, gen_spelltable);
     
     // TIERS
     for (let i = 1; i <= 9; i++) {
@@ -251,7 +252,7 @@ function main() {
         }
     }
 
-    compendiumRight.appendChild(spellCard(SpellDatabase[0], functional_tags));
+    compendiumRight.appendChild(SpellCompendium.spellCard(SpellDatabase[0], functional_tags));
     gen_spelltable();
 	
 	const downloadButton = compendiumRight
@@ -259,7 +260,8 @@ function main() {
 		.appendChild(document.createElement('button'));
 	downloadButton.textContent = "SAVE (.png)";
 	downloadButton.style.textAlign = 'center';
-	downloadButton.onclick = downloadSpell;
+	downloadButton.onclick = SpellCompendium.downloadSpell;
+}
 }
 
-main();
+SpellCompendium.render();
