@@ -1,3 +1,19 @@
+/**
+ * @typedef {object} SpellData
+ * @property {string} name
+ * @property {string} author
+ * @property {number} tier
+ * @property {string[]} tags
+ * @property {string} cost
+ * @property {string} range
+ * @property {string} duration
+ * @property {string} desc
+ * @property {string} empower
+ */
+/**
+ * @var {SpellData[]} SpellDatabase
+ */
+
 class SpellCompendium {
     static UI = {
         LeftDiv: document.getElementById('compendium_left'),
@@ -40,21 +56,27 @@ class SpellCompendium {
         School: {},
         Forbidden: {},
     };
+    static ProcessedTags = {};
     static {
         SpellDatabase.forEach( (spell) => {
+            SpellCompendium.ProcessedTags[spell.name] = [];
             spell.tags.forEach( (tag) => {
                 if (tag.includes('Forbidden')) {
                     SpellCompendium.TagCounts.Forbidden[tag] ??= 0;
                     SpellCompendium.TagCounts.Forbidden[tag] ++;
+                    SpellCompendium.ProcessedTags[spell.name].push({ type: 'Forbidden', tag: tag.match(/Forbidden \((.+)\)/)[1] });
                 } else if (tag in SpellCompendium.TagDescriptions.Functional) {
                     SpellCompendium.TagCounts.Functional[tag] ??= 0;
                     SpellCompendium.TagCounts.Functional[tag] ++;
+                    SpellCompendium.ProcessedTags[spell.name].push({ type: 'Functional', tag: tag });
                 } else if (tag in SpellCompendium.TagDescriptions.School) {
                     SpellCompendium.TagCounts.School[tag] ??= 0;
                     SpellCompendium.TagCounts.School[tag] ++;
+                    SpellCompendium.ProcessedTags[spell.name].push({ type: 'School', tag: tag });
                 } else {
                     SpellCompendium.TagCounts.Regular[tag] ??= 0;
                     SpellCompendium.TagCounts.Regular[tag] ++;
+                    SpellCompendium.ProcessedTags[spell.name].push({ type: 'Regular', tag: tag });
                 }
             })
         });
@@ -63,10 +85,24 @@ class SpellCompendium {
     static tagSelection = new Set();
     static tierSelection = new Set();
 
-    static tagDescription(tag) {
-        return SpellCompendium.TagDescriptions.Functional[
-            Object.keys(SpellCompendium.TagDescriptions.Functional).find(fTag => tag.includes(fTag))
-        ];
+    // Generate tag description for functional tags
+    static tagDescription(tag, type) {
+        if (type === 'Forbidden') {
+            return SpellCompendium.TagDescriptions.Functional['Forbidden'];
+        } else if (type === 'Functional') {
+            return SpellCompendium.TagDescriptions.Functional[tag];
+        } else {
+            return '';
+        }
+    }
+
+    static tagSpan(tag, type) {
+        const span = document.createElement('span');
+        const fTag = ['Functional', 'Forbidden'].includes(type);
+        span.className = fTag ? 'fTag' : '';
+        span.textContent = (type === 'Forbidden') ? `Forbidden (${tag})` : tag;
+        span.title = SpellCompendium.tagDescription(tag, type);
+        return span;
     }
 
     // Generate full-sized spell description
@@ -98,10 +134,12 @@ class SpellCompendium {
         tagsH.className = 'spellheaders';
         tagsD.className = 'spelltags';
         tagsH.textContent = 'Tags:';
-        tagsD.innerHTML = spell.tags
-            .map(tag => Object.keys(SpellCompendium.TagDescriptions.Functional).some(fTag => tag.includes(fTag)) ? `<span class='fTag' title='${SpellCompendium.tagDescription(tag)}'>${tag}</span>` : tag)
-            .join(', ')
-        ;
+        SpellCompendium.ProcessedTags[spell.name].forEach( ({ type, tag }, index) => {
+            if (index > 0) {
+                tagsD.appendChild(document.createTextNode(', '));
+            }
+            tagsD.appendChild(SpellCompendium.tagSpan(tag, type));
+        });
 
         const costRow = cardBody.appendChild(document.createElement('tr'));
         const costH = costRow.appendChild(document.createElement('td'));
@@ -144,30 +182,49 @@ class SpellCompendium {
         return card;
     }
 
+    static spellDatum(parent, text) {
+        const datum = parent.appendChild(document.createElement('td'));
+        datum.className = 'spelldata';
+        datum.textContent = text;
+    }
+
     // Generate spell table entry
     static spellBrief(spell) {
+        const processedTags = SpellCompendium.ProcessedTags[spell.name];
+
         const brief = document.createElement('tr');
         brief.id = `spell_${spell.name.replaceAll(' ', '_')}`;
-
-        [
-            spell.name,
-            spell.tier,
-            spell.range,
-            spell.duration,
-            spell.tags
-                .map(tag => Object.keys(SpellCompendium.TagDescriptions.Functional).some(fTag => tag.includes(fTag)) ? `<span class='fTag' title='${SpellCompendium.tagDescription(tag)}'>${tag}</span>` : tag)
-                .join(', ')
-        ].forEach(data => {
-            const td = brief.appendChild(document.createElement('td'));
-            td.className = 'spelldata';
-            td.innerHTML = data;
+        brief.classList.add('spellbrief');
+        processedTags.forEach( ({ type, tag }) => {
+            if (type == 'Regular') {
+                brief.classList.add(`tag-${tag}`);
+            } else if (type == 'Forbidden') {
+                brief.classList.add(`tag-${type}-${tag}`);
+                brief.classList.add(`spell-Forbidden`);
+            } else {
+                brief.classList.add(`tag-${type}-${tag}`);
+            }
         });
 
-        brief.onclick = function() {
-            const card = SpellCompendium.spellCard(spell, SpellCompendium.TagDescriptions.Functional);
+        SpellCompendium.spellDatum(brief, spell.name);
+        SpellCompendium.spellDatum(brief, spell.tier);
+        SpellCompendium.spellDatum(brief, spell.range);
+        SpellCompendium.spellDatum(brief, spell.duration);
+
+        const spellTags = brief.appendChild(document.createElement('td'));
+        spellTags.className = 'spelldata';
+        processedTags.forEach( ({ type, tag }, index) => {
+            if (index > 0) {
+                spellTags.appendChild(document.createTextNode(', '));
+            }
+            spellTags.appendChild(SpellCompendium.tagSpan(tag, type));
+        });
+
+        brief.addEventListener('click', function() {
+            const card = SpellCompendium.spellCard(spell);
             const compendiumRight = document.getElementById('compendium_right');
             compendiumRight.replaceChild(card, compendiumRight.firstElementChild);
-        };
+        });
 
         return brief;
     }
@@ -177,10 +234,10 @@ class SpellCompendium {
         const oldTable = document.querySelector('#spelltable');
         const newTable = oldTable.cloneNode(false);
 
-        SpellDatabase.forEach(spell => {
-            if (SpellCompendium.tagSelection.size > 0 && !spell.tags.some(tag => SpellCompendium.tagSelection.has(tag))) return;
+        SpellDatabase.forEach( (spell) => {
+            if (SpellCompendium.tagSelection.size > 0 && !spell.tags.some( (tag) => SpellCompendium.tagSelection.has(tag) )) return;
             if (SpellCompendium.tierSelection.size > 0 && !SpellCompendium.tierSelection.has(spell.tier)) return;
-            newTable.appendChild(SpellCompendium.spellBrief(spell, SpellCompendium.TagDescriptions.Functional));
+            newTable.appendChild(SpellCompendium.spellBrief(spell));
         });
 
         oldTable.parentNode.replaceChild(newTable, oldTable);
@@ -205,27 +262,26 @@ class SpellCompendium {
     }
 
     static tagButtons(tags, container) {
-        Object.entries(tags).sort((a, b) => {
+        Object.entries(tags).sort( (a, b) => {
             if (a[1] == b[1]) {
                 return (a[0] == b[0]) ? 0 : (a[0] > b[0]) ? 1 : -1;
             } else {
                 return Math.sign(b[1] - a[1]);
             }
-        }).forEach(([tag, count]) => {
+        }).forEach( ([tag, count]) => {
             const div = container.appendChild(document.createElement('button'));
-            const img = div.appendChild(document.createElement('img'));
+            div.appendChild(document.createElement('img'));
             const text = div.appendChild(document.createElement('div'));
 
-            img.width = 14;
-            img.style.paddingRight = '2px';
-
             text.textContent = `${tag} (${count})`;
-            text.style.display = 'inline';
 
-            div.style.display = 'block';
-            div.id = `tag_${tag.replaceAll(' ', '_')}`;
-            if(tag.includes('Forbidden')) div.id = 'tag_Forbidden';
-            div.className = 'selector';
+            div.classList.add('selector');
+            if (tag.includes('Forbidden')) {
+                div.classList.add('tag-Forbidden');
+            } else {
+                div.classList.add(`tag-${tag.replaceAll(' ', '_')}`);
+            }
+
             div.value = 0;
             div.onclick = function() {
                 const S = parseInt(div.value);
@@ -244,41 +300,57 @@ class SpellCompendium {
         });
     }
 
+    static tierButtonClickHandler(event) {
+        const tier = parseInt(event.target.dataset.tier);
+        const state = parseInt(event.target.value);
+        const maxState = 1;
+        let newState;
+
+        // change state
+        switch (event.shiftKey) {
+            // case true:
+            //     newState = state - 1;
+            //     if (newState < 0) newState = maxState;
+            //     break;
+            default:
+                newState = state + 1;
+                if (newState > maxState) newState = 0;
+                break;
+        }
+        event.target.value = newState;
+
+        switch (newState) {
+            case 0:
+                SpellCompendium.tierSelection.delete(tier);
+                break;
+            case 1:
+                SpellCompendium.tierSelection.add(tier);
+                break;
+        }
+        SpellCompendium.generateSpellTable();
+    }
+
     static render() {
         // TAGS
         SpellCompendium.tagButtons(SpellCompendium.TagCounts.School, SpellCompendium.UI.SchoolList);
         SpellCompendium.tagButtons(SpellCompendium.TagCounts.Regular, SpellCompendium.UI.TagList);
+        SpellCompendium.tagButtons(SpellCompendium.TagCounts.Forbidden, SpellCompendium.UI.ForbiddenList);
 
         // TIERS
         for (let i = 1; i <= 9; i++) {
             const tierButton = document.querySelector(`#tier${i}`);
-            tierButton.dataset.i = i;
-            const tier = i;
-            tierButton.onclick = function() {
-                const S = parseInt(tierButton.value);
-                switch (S) {
-                    case 0:
-                        tierButton.value = S+1;
-                        SpellCompendium.tierSelection.add(tier);
-                        break;
-                    case 1:
-                        tierButton.value = 0;
-                        SpellCompendium.tierSelection.delete(tier);
-                        break;
-                }
-                SpellCompendium.generateSpellTable();
-            }
+            tierButton.dataset.tier = i;
+            tierButton.addEventListener('click', SpellCompendium.tierButtonClickHandler);
         }
 
-        SpellCompendium.UI.RightDiv.appendChild(SpellCompendium.spellCard(SpellDatabase[0], SpellCompendium.TagDescriptions.Functional));
+        SpellCompendium.UI.RightDiv.appendChild(SpellCompendium.spellCard(SpellDatabase[0]));
         SpellCompendium.generateSpellTable();
 
-        const downloadButton = SpellCompendium.UI.RightDiv
-            .appendChild(document.createElement('center'))
-            .appendChild(document.createElement('button'));
-        downloadButton.textContent = "SAVE (.png)";
-        downloadButton.style.textAlign = 'center';
-        downloadButton.onclick = SpellCompendium.downloadSpell;
+        const downloadButton = document.createElement('button');
+        downloadButton.className = 'compendium-donwload';
+        downloadButton.textContent = 'SAVE (.png)';
+        downloadButton.addEventListener('click', SpellCompendium.downloadSpell);
+        SpellCompendium.UI.RightDiv.appendChild(downloadButton);
     }
 }
 

@@ -87,6 +87,21 @@ table.spell {
 	width: 600px;
 	background-color: Ivory;
 }
+table.spelltable {
+	border: 2px solid transparent;
+	border-collapse: collapse;
+}
+table.spelltable td {
+	border: 2px solid transparent;
+}
+tr.spellbrief.tag-Functional-Deprecated {
+	font-size: 0.8em;
+	font-style: italic;
+	background-color: #bbbbbb44;
+}
+tr.spellbrief.spell-Forbidden {
+	background-color: #ffaa0044;
+}
 td.spellname {
 	font-weight: bold;
 	text-align: center;
@@ -135,11 +150,26 @@ td {
 .tierselect .selector {
 	width: 20%;
 }
+.tagselect .selector {
+	display: block;
+}
+.tagselect .selector img {
+	width: 14px;
+	padding-right: 2px;
+}
+.tagselect .selector div {
+	display: inline;
+}
 .selector[value="1"] {
 	background-color: Cyan;
 }
 .selector[value="2"] {
 	background-color: Red;
+}
+button.compendium-donwload {
+	display: block;
+	margin: 0.5em auto;
+	padding: 0.2em 1em;
 }
 
 #spell_creation {

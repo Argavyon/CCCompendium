@@ -1,111 +1,111 @@
-#tag_Evocation>img {
+.selector.tag-Evocation>img {
     content:url(../assets/spells/corner-explosion.png);
 }
-#tag_Conjuration>img {
+.selector.tag-Conjuration>img {
     content:url(../assets/spells/orb-wand.png);
 }
-#tag_Transmutation>img {
+.selector.tag-Transmutation>img {
     content:url(../assets/spells/cycle.png);
 }
-#tag_Abjuration>img {
+.selector.tag-Abjuration>img {
     content:url(../assets/spells/magic-shield.png);
 }
-#tag_Enchantment>img {
+.selector.tag-Enchantment>img {
     content:url(../assets/spells/paranoia.png);
 }
-#tag_Divination>img {
+.selector.tag-Divination>img {
     content:url(../assets/spells/all-seeing-eye.png);
 }
-#tag_Necromancy>img {
+.selector.tag-Necromancy>img {
     content:url(../assets/spells/death-note.png);
 }
-#tag_Physical>img {
+.selector.tag-Physical>img {
     content:url(../assets/spells/strong.png);
 }
-#tag_Fire>img {
+.selector.tag-Fire>img {
     content:url(../assets/spells/burning-embers.png);
 }
-#tag_Summoning>img {
+.selector.tag-Summoning>img {
     content:url(../assets/spells/cursed-star.png);
 }
-#tag_Holy>img {
+.selector.tag-Holy>img {
     content:url(../assets/spells/holy-grail.png);
 }
-#tag_Arcane>img {
+.selector.tag-Arcane>img {
     content:url(../assets/spells/triple-yin.png);
 }
-#tag_Eldritch>img {
+.selector.tag-Eldritch>img {
     content:url(../assets/spells/warlock-eye.png);
 }
-#tag_Illusion>img {
+.selector.tag-Illusion>img {
     content:url(../assets/spells/two-shadows.png);
 }
-#tag_Water>img {
+.selector.tag-Water>img {
     content:url(../assets/spells/wave-crest.png);
 }
-#tag_Fey>img {
+.selector.tag-Fey>img {
     content:url(../assets/spells/star-cycle.png);
 }
-#tag_Spirit>img {
+.selector.tag-Spirit>img {
     content:url(../assets/spells/spark-spirit.png);
 }
-#tag_Unholy>img {
+.selector.tag-Unholy>img {
     content:url(../assets/spells/pentagram-rose.png);
 }
-#tag_Wind>img {
+.selector.tag-Wind>img {
     content:url(../assets/spells/whirlwind.png);
 }
-#tag_Poison>img {
+.selector.tag-Poison>img {
     content:url(../assets/spells/poison-bottle.png);
 }
-#tag_Psychic>img {
+.selector.tag-Psychic>img {
     content:url(../assets/spells/psychic-waves.png);
 }
-#tag_Radiant>img {
+.selector.tag-Radiant>img {
     content:url(../assets/spells/beams-aura.png);
 }
-#tag_Beast>img {
+.selector.tag-Beast>img {
     content:url(../assets/spells/bear-head.png);
 }
-#tag_Cold>img {
+.selector.tag-Cold>img {
     content:url(../assets/spells/ice-bolt.png);
 }
-#tag_Earth>img {
+.selector.tag-Earth>img {
     content:url(../assets/spells/rock.png);
 }
-#tag_Lightning>img {
+.selector.tag-Lightning>img {
     content:url(../assets/spells/lightning-trio.png);
 }
-#tag_Acid>img {
+.selector.tag-Acid>img {
     content:url(../assets/spells/bubbling-flask.png);
 }
-#tag_Plant>img {
+.selector.tag-Plant>img {
     content:url(../assets/spells/oak.png);
 }
-#tag_Shadow>img {
+.selector.tag-Shadow>img {
     content:url(../assets/spells/moon-claws.png);
 }
-#tag_Space>img {
+.selector.tag-Space>img {
     content:url(../assets/spells/compass.png);
 }
-#tag_Disease>img {
+.selector.tag-Disease>img {
     content:url(../assets/spells/deathcab.png);
 }
-#tag_Draconic>img {
+.selector.tag-Draconic>img {
     content:url(../assets/spells/spiked-dragon-head.png);
 }
-#tag_Apocalyptic>img {
+.selector.tag-Apocalyptic>img {
     content:url(../assets/spells/nuclear-bomb.png);
 }
-#tag_Time>img {
+.selector.tag-Time>img {
     content:url(../assets/spells/time-trap.png);
 }
-#tag_Universal>img {
+.selector.tag-Universal>img {
     content:url(../assets/spells/magic-swirl.png);
 }
-#tag_Familiar>img {
+.selector.tag-Familiar>img {
     content:url(../assets/spells/sitting-dog.png);
 }
-#tag_Forbidden>img {
+.selector.tag-Forbidden>img {
     content:url(../assets/spells/hazard-sign.png);
 }
