@@ -695,6 +695,20 @@ const SpellDatabase = [
     "empower": "There is no upper limit on how much AP can be spent on this spell. You can use AP from other creatures' Arcane spells cast between each of your turns."
   },
   {
+    "name": "Archer of Storms",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Evocation",
+      "Lightning"
+    ],
+    "cost": "2 AP",
+    "range": "300 feet",
+    "duration": "Instantaneous",
+    "desc": "You take aim at a target creature within range that you can see, then create a bow of lightning and loose a sparking arrow into the air, where it descends on the target. Make a magic attack roll. On a hit, the target takes 1d8 lightning damage, plus your spellcasting stat. The damage is doubled if the target is between 31 to 60 feet away, tripled if they are between 61 to 90 feet away, and quadrupled if they are more than 90 feet away.",
+    "empower": "Critical hit threshold increased by 2. With no other bonuses, it would score a critical hit on a roll of 18 or better."
+  },
+  {
     "name": "Archon Form",
     "tier": 9,
     "tags": [
@@ -1492,6 +1506,20 @@ const SpellDatabase = [
     "empower": "Reduces the AP cost to 3."
   },
   {
+    "name": "Boulder Slam",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Conjuration",
+      "Earth"
+    ],
+    "cost": "2 AP",
+    "range": "Touch",
+    "duration": "Instantaneous",
+    "desc": "You thrust forward with a large boulder. Make a magic attack roll.  On a hit, the target takes 2d12 bludgeoning damage, plus your spellcasting stat, and is knocked prone.",
+    "empower": "The target is additionally knocked back 5 feet. If they are moved, the boulder falls in the vacated space and blocks movement through the space until it takes any damage and is destroyed."
+  },
+  {
     "name": "Boundary of Death",
     "tier": 3,
     "tags": [
@@ -2142,6 +2170,20 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Chilling Entombment",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Cold"
+    ],
+    "cost": "2 AP",
+    "range": "15 feet",
+    "duration": "8 hours",
+    "desc": "You attempt to entomb a target creature within range in ice, bringing forth chilling cold. Make a magic attack roll. On a hit, the target takes 4d8 cold damage, plus your spellcasting stat, and loses 10 feet of movement speed for the duration, or until they take fire damage.<br><br>A creature reduced to 0 movement speed as a result of this spell is frozen solid for the duration as long as they have 0 movement speed. They are treated as if they were petrified. Taking fire damage ends the effect early.",
+    "empower": "On a critical hit, the target's movement speed is decreased to 0. You can empower this spell after you score a critical hit."
+  },
+  {
     "name": "Chimerize",
     "author": "CrusaderDroid",
     "tier": 5,
@@ -2301,6 +2343,20 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "A drop of pure water falls on the target, restoring 4 hit points times their total hit dice. It also ends all conditions affecting them and dispels any spell effects you choose affecting them.",
     "empower": ""
+  },
+  {
+    "name": "Cloud Arrows",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Conjuration",
+      "Wind"
+    ],
+    "cost": "1 to 3 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "You fire one arrow per AP spent at a target creature within range you can see. Make a magic attack roll. On a hit, the target takes 1d4 piercing damage per arrow. Hit or miss, each arrow explodes into a thick cloud that covers a 5 foot cube in a space adjacent to the target that you choose. The cloud blocks vision and dissipates at the start of your next turn.",
+    "empower": "You add your spellcasting stat to the damage done with each arrow. You create an additional cloud."
   },
   {
     "name": "Cloud Blessing",
@@ -2722,6 +2778,20 @@ const SpellDatabase = [
     "empower": "Choose one - die roll increased to 1d12, or range becomes 30 feet and your target gains the effects of the spell instead of you."
   },
   {
+    "name": "Crashing Assault",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Transmutation",
+      "Earth"
+    ],
+    "cost": "2 AP",
+    "range": "Touch",
+    "duration": "Instantaneous",
+    "desc": "You launch into a flurry of blows with limbs of stone and hurled rocks. Make magic attack rolls until you miss or hit five times. Each hit deals 1d8 bludgeoning damage, plus your spellcasting stat. The fifth hit is a critical hit that additionally stuns the target until the start of their next turn.",
+    "empower": "You add your proficiency modifier to the damage done with each hit. If any hit is a critical hit, all subsequent hits are also critical hits."
+  },
+  {
     "name": "Create Hyphaelactery",
     "author": "Lupusam",
     "tier": 4,
@@ -2958,6 +3028,20 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "You move a magic effect or condition currently affecting one creature within range to another creature within range.<br><br>You can't cast this spell unless it is from a ninja scroll.",
     "empower": "You can move one magic effect or condition from both creatures targeted, trading them for each other."
+  },
+  {
+    "name": "Curse of Hail",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Conjuration",
+      "Cold"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "1 minute",
+    "desc": "You pronounce a curse upon target creature within range that you can see, causing precisely-aimed hail to rain from above at that creature. Make a magic attack roll with advantage. The target takes 1d6 bludgeoning damage and 1d6 cold damage on a hit.<br><br>At the start of each of your turns, you can repeat the attack for 1 AP.",
+    "empower": "You add your spellcasting stat to the damage dealt by this spell. On a critical hit, the target is dazed and loses 1 AP and 10 feet movement speed during their next turn, and can't take responses until the end of their next turn."
   },
   {
     "name": "Curse of Incineration",
@@ -3329,6 +3413,20 @@ const SpellDatabase = [
     "empower": "Damage increased to 7d12."
   },
   {
+    "name": "Destructive Blast",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Evocation",
+      "Fire"
+    ],
+    "cost": "2 AP",
+    "range": "15 feet",
+    "duration": "Instantaneous",
+    "desc": "You superheat the air around a target creature within range you can see, causing a localized explosion. Make a magic attack roll. On a hit, the target takes 5d12 fire damage, and has their DR reduced by an amount equal to your spellcasting stat until the end of your next turn. On a miss, the target takes half damage and doesn't have its DR reduced.",
+    "empower": "On a hit, you can make one weapon attack or cast a spell of 1st or 2nd level. The target must be the sole target of your attack or spell."
+  },
+  {
     "name": "Destructive Grasp",
     "author": "CrusaderDroid",
     "tier": 5,
@@ -3488,6 +3586,20 @@ const SpellDatabase = [
     "desc": "You end one spell effect of equal or lower tier than the tier you cast Dispel Magic at. You can use this as a response to another creature within range that you can see casting a spell to cancel the spell, preventing it from being cast. The casting creature still expends MP as normal.<br><br>You can cast this spell at any tier even if you cannot normally cast spells of that tier. You know what tier the target spell is when casting this spell.",
     "empower": "Dispel Magic gains the Silent and Still tags.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Disruptor",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Necromancy",
+      "Lightning"
+    ],
+    "cost": "2 AP",
+    "range": "10 feet",
+    "duration": "Instantaneous",
+    "desc": "You reach out and attempt to distort the electrical field of a target creature within range. Make a magic attack roll. On a hit, the target takes 1d6 lightning damage, plus your spellcasting stat, and loses an equal amount of MP.",
+    "empower": "Damage increased to 2d6."
   },
   {
     "name": "Distant Pillar",
@@ -5288,6 +5400,36 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Frost Regent's Monument",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Conjuration",
+      "Cold",
+      "Concentration",
+      "Delayed"
+    ],
+    "cost": "1-9 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "For every AP spent casting this spell, you create a 5 foot tall ice pillar in a space within range you can see, or increase the size of a pillar created by this spell by 5 feet. If a creature is in a space occupied by a pillar, you can force them to either move into an adjacent empty space or be carried upward on top of the pillar. Pillars block movement and can't be destroyed.<br><br>At the start of each of your turns, you can use 1 AP to cause a pillar to launch shards of ice at up to three target creatures within 30 feet of the pillar. Make a magic attack roll. On a hit, a shard deals 1d8 piercing damage and 1d8 cold damage plus your spellcasting stat. The pillar then shrinks by 1 foot. A pillar that has shrunk to 4 or fewer feet no longer obstructs movement, and a pillar that has shrunk to 0 feet is destroyed.<br><br>You can attack with this spell any number of times during your turn, as long as you attack with a different pillar each time.",
+    "empower": "You can attack an additional target with each pillar."
+  },
+  {
+    "name": "Frozen Pike",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Conjuration",
+      "Cold"
+    ],
+    "cost": "2 AP",
+    "range": "10 feet",
+    "duration": "Instantaneous",
+    "desc": "You create and then thrust a pike made of solid ice through the target. Make a magic attack roll. On a hit, the target takes 1d10 piercing damage, plus your spellcasting stat, and 1d10 cold damage.<br><br>If the creature is caught between you and a wall or obstacle, the pike pins them to that wall or obstacle, restraining them until they spend 1 AP during their turn to break the pike.",
+    "empower": "Range increased to 15 feet."
+  },
+  {
     "name": "Full Bloom",
     "author": "Levi",
     "tier": 3,
@@ -6413,6 +6555,20 @@ const SpellDatabase = [
     "duration": "1 minute",
     "desc": "With a bloodcurling howl, you call for wolves to join you in battle. Two wolves appear anywhere within range, and remain for the duration of the spell. They take their turn after yours, and cannot be commanded. They will not attack any creatures you choose, and will otherwise attack the closest non-chosen creatures to them during their turn. They vanish upon being reduced to 0 hit points.<br><br>At the start of each of your turns, two more wolves appear.<br><br>When the spell ends, all wolves summoned by this spell vanish.",
     "empower": "Summons an additional three wolves immediately."
+  },
+  {
+    "name": "Howling Thunder",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Transmutation",
+      "Lightning"
+    ],
+    "cost": "0 AP",
+    "range": "300 feet",
+    "duration": "Instantaneous",
+    "desc": "Immediately after dealing lightning damage to a creature within range, you can cast this spell to transform yourself into lightning and teleport into an empty space adjacent to that creature. Make a magic attack roll. On a hit, the target takes 5d6 lightning damage and is deafened for 1 minute.<br><br>Hit or miss, all creatures within 15 feet of the path traveled by you to your target must make a Constitution saving throw or be deafened for 1 minute. Creatures deafened by this spell can repeat the saving throw at the end of each of their turns to end the effect early.",
+    "empower": "The target takes half damage even on a miss."
   },
   {
     "name": "Hundred Needles",
@@ -8349,6 +8505,22 @@ const SpellDatabase = [
     "empower": "Choose one:<br>>The created item has a +2 enhancement instead.<br>>Remove Concentration.<br>>The superheated metal deals 2 additional fire damage, increased by 2 for every turn it has dealt damage. This additional damage reduces maximum hit points by the same amount."
   },
   {
+    "name": "Meteor Summons",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Conjuration",
+      "Earth",
+      "Fire",
+      "Space"
+    ],
+    "cost": "2 AP",
+    "range": "120 feet",
+    "duration": "Instantaneous",
+    "desc": "A small meteor appears from a portal overhead, aimed at target creature within range. Make a magic attack roll. On a hit, the target takes 2d6 bludgeoning damage, and 2d6 fire damage plus your spellcasting stat.<br><br>Hit or miss, the meteor breaks apart into 1d4+1 pieces that land in empty spaces of your choice within 10 feet. The meteor pieces are destroyed when they take damage, and prevent creatures from moving through the occupied spaces.",
+    "empower": "Creates an additional 2 pieces. On hit, the target falls prone."
+  },
+  {
     "name": "Microbiotic Control",
     "author": "CrusaderDroid",
     "tier": 1,
@@ -9072,6 +9244,21 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "Spirits flood the target creature with visions of failure and destruction. The creature fails every roll it makes until the start of your next turn.<br><br>A creature can't be affected by this spell again until they complete a rest.",
     "empower": ""
+  },
+  {
+    "name": "Oppressing Harrier",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Enchantment",
+      "Spirit",
+      "Wind"
+    ],
+    "cost": "2 AP",
+    "range": "Touch",
+    "duration": "1 minute",
+    "desc": "You attempt to curse the target by slashing with the talons of a wind spirit. Make a magic attack roll. On a hit, the target takes 1d8 slashing damage, plus your spellcasting stat, and is haunted by the spirit for the duration of the spell. At the start of each of its turns, and whenever the target is forcefully moved, you can move the target 5 feet in any direction.",
+    "empower": "The target additionally loses 10 feet of movement speed for the duration."
   },
   {
     "name": "Optimized Casting",
@@ -9975,6 +10162,20 @@ const SpellDatabase = [
     "empower": "Additionally works on creatures. You learn up to one year of a creature's history. This can be used on a creature's corpse as well."
   },
   {
+    "name": "Pulse Wave",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Evocation",
+      "Lightning"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "Destructive electrical pulses gather around your arm as you loose them upon a target creature within range. Make a magic attack roll, which unerringly seeks the target and can't have disadvantage. On a hit, the target takes 2d6 lightning damage, plus your spellcasting stat.",
+    "empower": "Range increased to 120 feet."
+  },
+  {
     "name": "Punishing Leaves",
     "author": "CrusaderDroid",
     "tier": 3,
@@ -10122,6 +10323,34 @@ const SpellDatabase = [
     "empower": "Reduces the AP cost to 2."
   },
   {
+    "name": "Rainstrike",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Conjuration",
+      "Water"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "You bring forth a sudden downpour of rain upon a target within range. Make a magic attack roll. On a hit, the target takes 2d6 bludgeoning damage, plus your spellcasting stat.<br><br>Hit or miss, the target's space is flooded with two feet of water. The water remains in place for the duration of the spell, acting as difficult terrain for creatures without a swimming speed. When the spell ends, the water is no longer suspended and spreads evenly.",
+    "empower": "Water floods all adjacent spaces to the target. You add your proficiency modifier to the damage dealt."
+  },
+  {
+    "name": "Raking Wings",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Conjuration",
+      "Wind"
+    ],
+    "cost": "2 AP",
+    "range": "90 feet",
+    "duration": "Instantaneous",
+    "desc": "Razor sharp wings of wind slice through target creature within range you can see. Make a magic attack roll. On a hit, the creature takes 5d6 slashing damage, plus your spellcasting stat. Creatures that are flying immediately fall 50 feet.<br><br>This spell has an increased critical hit threshold. Without any other modifiers, it scores a critical hit on a roll of 17 or better.",
+    "empower": "Creatures hit by this spell lose their flying speed until the end of your next turn."
+  },
+  {
     "name": "Rally Spirit",
     "author": "CrusaderDroid",
     "tier": 1,
@@ -10195,6 +10424,20 @@ const SpellDatabase = [
     "duration": "1 minute",
     "desc": "Conjure the fetid breath from the First Zombie, spreading it around you indiscriminately. In a line from you, creatures must make a Constitution saving throw. On a failure, they take 4d8 cold damage, and for the duration of the concentration take an additional 2d8 cold damage from undead and spells with the Necromancy tag. On a success, they take half damage and no other effect.",
     "empower": "Creatures that fail the saving throw are additionally frightened of you."
+  },
+  {
+    "name": "Razing Torch",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Evocation",
+      "Fire"
+    ],
+    "cost": "2 AP",
+    "range": "30 feet",
+    "duration": "Instantaneous",
+    "desc": "Flames gather around you and rush from your outstretched hand towards target creature within range you can see. Make a magic attack roll. On a hit, the target takes 2d6 fire damage, plus your spellcasting stat.<br><br>Fire washes over the area around you and the target. Any difficult terrain within 5 feet of you or the target is reverted to normal, hit or miss.",
+    "empower": "Each 5 foot square of difficult terrain removed adds 2 damage to the target. On a miss, the target takes half of this additional damage instead."
   },
   {
     "name": "Reaper's Bane",
@@ -11127,6 +11370,20 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Sea Skewer",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Evocation",
+      "Water"
+    ],
+    "cost": "1 to 3 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "One thin spear of water per AP spent is created and quickly thrown at a target creature within range that you can see. Make a magic attack roll. On a hit, the target takes 1d4 piercing damage, plus your spellcasting stat, per AP spent, and has one hit die destroyed. On a critical hit, an additional number of hit dice are destroyed equal to the number of AP spent. If the creature has no remaining hit dice, it takes an additional 5 damage per hit die that would be destroyed.",
+    "empower": "Critical hit threshold increased by 5. Without any other modifiers, the spell scores a critical hit on a roll of 15 or better. You add your proficiency modifier to the damage dealt per AP spent."
+  },
+  {
     "name": "Sealed Fate",
     "tier": 9,
     "tags": [
@@ -11215,6 +11472,20 @@ const SpellDatabase = [
     "desc": "You fire a large solid bolt of lightning that locks on to a creature within range and moves 30 feet closer. At the start of each of your turns, if it has not collided with a creature or object, it moves 30 feet closer to the target. On impact with anything, it deals 3d10 lightning damage to the creature or object it impacts. Seeker Bolt's damage is reduced to 1d10 if it hits a creature within 30 feet. A creature can make a ranged attack targeting the bolt to destroy it. The bolt has AC 16 and discharges on impact with any ranged projectile, destroying the bolt.",
     "empower": "At the start of your next turn, the bolt flies 120 feet towards the target.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Seismic Strike",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Transmutation",
+      "Earth"
+    ],
+    "cost": "2 AP",
+    "range": "60 feet",
+    "duration": "Instantaneous",
+    "desc": "As you cast this spell, you emit a nearly-imperceptible tremor that briefly reveals the location of all creatures within range of this spell that are on solid ground. You can then strike a surface to send a powerful shockwave through the earth to attack a creature within range. Make a magic attack roll. On a hit, the target takes 3d10 damage, which can't be reduced or negated.<br><br>Burrowed creatures are vulnerable to the damage dealt by this spell. A creature hit by this spell loses their burrow speed until the end of your next turn and is forced to the surface.",
+    "empower": "The target loses their burrow speed for 1 minute on a hit instead. They can make a Constitution saving throw at the end of each of their turns to end this effect early."
   },
   {
     "name": "Seize",
@@ -11726,6 +11997,20 @@ const SpellDatabase = [
     "empower": "Duration increases to 8 hours. Restrained creatures must use 3 AP to make a saving throw."
   },
   {
+    "name": "Skyslam",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Conjuration",
+      "Wind"
+    ],
+    "cost": "2 AP",
+    "range": "15 feet",
+    "duration": "Instantaneous",
+    "desc": "You attempt to conjure a powerful column of wind beneath a target within range that you can see. Make a magic attack roll. On a hit, the target takes 2d6 bludgeoning damage and is flung 20 feet into the air.<br><br>A creature that slams into a ceiling or other obstacle while rising takes an additional 2d6 bludgeoning damage and immediately falls back down.",
+    "empower": "A target that doesn't hit a ceiling or obstacle is suspended in the air until the start of your next turn. You add your spellcasting stat to the damage dealt whenever a creature takes damage from this spell or by falling as a result of this spell."
+  },
+  {
     "name": "Skyward",
     "author": "CrusaderDroid",
     "tier": 5,
@@ -11738,6 +12023,20 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "All creatures you choose within a 60 foot radius centered on target point within range you can see are flung up to 60 feet into the air by strong winds. You can choose to manipulate the winds to cause any number of affected creatures to glide gently to the ground at the end of their next turn instead of immediately falling. Unwilling creatures can make a Strength saving throw to halve the distance moved.<br><br> Huge creatures and larger only move half as far.",
     "empower": "Gliding creatures can choose to descend at any rate they choose at the end of their turn, to a minimum descent of 10 feet per turn. Huge creatures and larger now move the full distance."
+  },
+  {
+    "name": "Slashing Current",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Evocation",
+      "Water"
+    ],
+    "cost": "2 AP",
+    "range": "5 feet",
+    "duration": "Instantaneous",
+    "desc": "You form and slash with a thin, pressurized blade of water. Make a magic attack roll. On a hit, the target takes 2d8 slashing damage, plus your spellcasting stat. This damage ignores resistance to slashing damage and DR.<br><br>If this spell reduces a creature to 0 or fewer hit points, you can use this spell again for 0 MP and AP on your next turn. You can't empower this spell when used in this way.",
+    "empower": "Range increased to 15 feet."
   },
   {
     "name": "Sledrock",
@@ -13047,6 +13346,20 @@ const SpellDatabase = [
     "empower": ""
   },
   {
+    "name": "Terra Spike",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Transmutation",
+      "Earth"
+    ],
+    "cost": "1 AP",
+    "range": "30 feet",
+    "duration": "Instantaneous",
+    "desc": "You quickly form a spike of earth that erupts beneath the target. Make a magic attack roll. On a hit, the target takes 1d8 piercing damage, plus your spellcasting stat. You can't target creatures not on a solid surface.",
+    "empower": "Choose one - The target's movement speed is halved on a hit until the end of your next turn, or you can cast this spell again this turn."
+  },
+  {
     "name": "Terraform",
     "author": "CrusaderDroid",
     "tier": 6,
@@ -13569,6 +13882,20 @@ const SpellDatabase = [
     "duration": "1 minute",
     "desc": "You create a tornado centered on target point within range that you can see, with a radius of 5, 10, or 15 feet, and a height of 30, 60, or 90 feet. The spell fails if the tornado has no room to reach its full size. When you cast this spell, designate a direction across the ground for the tornado to move in. <br><br>Whenever any creature or object touches the tornado and can be fully contained inside of it, including when the tornado is created, they are swept up and flung 30 feet in a random direction. If they collide with an object or creature, they stop moving, land in the nearest adjacent empty space, and take 6d6 bludgeoning damage and fall prone. The blocking object or creature must succeed on a Strength saving throw or take 6d6 bludgeoning damage, halved on a success.<br><br>At the start of each of your turns, the tornado moves 10 feet in the designated direction.",
     "empower": "Size can be increased to a 20 foot radius and a 120 foot height."
+  },
+  {
+    "name": "Touch of Cinders",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Evocation",
+      "Fire"
+    ],
+    "cost": "2 AP",
+    "range": "Touch",
+    "duration": "1 minute",
+    "desc": "You reach out with a burning hand against a target within range. Make a magic attack roll. On a hit, the target takes 2d4 fire damage, plus your spellcasting stat, and has cinders cling to their skin for the duration. Each time they take fire damage, but no more than once per turn, they take additional fire damage equal to your spellcasting stat.",
+    "empower": "Additional fire damage dealt by this spell also damages all other creatures adjacent to the target."
   },
   {
     "name": "Touch of Snow",
@@ -15180,6 +15507,20 @@ const SpellDatabase = [
     "author": "CrusaderDroid"
   },
   {
+    "name": "Wintry Disfavor",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Evocation",
+      "Cold"
+    ],
+    "cost": "1 AP",
+    "range": "30 feet",
+    "duration": "Instantaneous",
+    "desc": "You intensify cold in the air around a target creature. Make a magic attack roll. On a hit, the target takes 1d4 cold damage, plus your spellcasting stat.<br><br>A creature with reduced movement speed, or a creature affected by a Cold spell, is vulnerable to the damage from this spell.",
+    "empower": "Damage increased to 1d8."
+  },
+  {
     "name": "Wisp's Light",
     "tier": 2,
     "tags": [
@@ -15284,6 +15625,20 @@ const SpellDatabase = [
     "desc": "You unleash a small portion of the world's pain upon a 15 foot cube adjacent to you. Creatures inside must make an Intuition saving throw or take 1d10 damage per AP spent, halved on a success. This damage has no type and cannot be reduced or negated in any way.",
     "empower": "Damage increased by 1d10. If the creature is vulnerable to a damage type, they are vulnerable to damage from this spell.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Wrathtide",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Conjuration",
+      "Water"
+    ],
+    "cost": "2 AP",
+    "range": "5 feet",
+    "duration": "Instantaneous",
+    "desc": "You bring about a rushing wave of water aimed at a creature within range. Make a magic attack roll. On a hit, the target takes 4d10 bludgeoning damage and is thrown 30 feet away from you, moving through any creatures in the way. On impact with an obstacle, the creature takes damage equal to your spellcasting stat for every 5 feet moved and is knocked prone.<br><br>Creatures of Huge size or larger are not knocked prone.",
+    "empower": "You add your proficiency modifier to the damage dealt per 5 feet moved when the target hits an obstacle. The target must also make a Constitution saving throw or be stunned until the end of their next turn, unless they are Huge size or larger."
   },
   {
     "name": "Writ",
