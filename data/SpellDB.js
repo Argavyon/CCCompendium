@@ -1376,6 +1376,20 @@ const SpellDatabase = [
     "empower": "Immediately creates two areas when you begin to cast this spell."
   },
   {
+    "name": "Blood to Flesh",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Necromancy",
+      "Eldritch"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "You fling your blood across up to three corpses within range, taking 4 damage per corpse. This damage can't be reduced or negated. Each creature targeted is reanimated by you, returning to their maximum hit points. They take their turns after you, and follow your mental commands.<br><br>The creatures are connected to you. When they take damage, you also take half as much damage. If you are reduced to 0 or fewer hit points, all creatures reanimated by this spell disintegrate.<br><br>Casting this spell again destroys all creatures reanimated by the first spell.",
+    "empower": "When your reanimated creature takes damage, reduce the shared damage by 2."
+  },
+  {
     "name": "Blood to Poison",
     "author": "CrusaderDroid",
     "tier": 4,
@@ -2054,6 +2068,20 @@ const SpellDatabase = [
     "range": "Self (60 foot radius) ",
     "duration": "1 minute",
     "desc": "You call upon a procession of venerable spirits to praise the efforts of the new generation. When a creature within range succeeds on an attack roll or ability check with advantage, you can choose to heal them for 1d6 hit points. When a creature within range succeeds on an attack roll or ability check with disadvantage, you can choose to heal them for 3d6 hit points and grant advantage on all of their rolls until the end of their next turn.",
+    "empower": ""
+  },
+  {
+    "name": "Cessation",
+    "author": "CrusaderDroid",
+    "tier": 7,
+    "tags": [
+      "Abjuration",
+      "Arcane"
+    ],
+    "cost": "3 AP",
+    "range": "Self (60 foot radius)",
+    "duration": "Instantaneous",
+    "desc": "Every creature in range loses all AP and can't gain AP until the start of your next turn.",
     "empower": ""
   },
   {
@@ -3044,6 +3072,20 @@ const SpellDatabase = [
     "empower": "You add your spellcasting stat to the damage dealt by this spell. On a critical hit, the target is dazed and loses 1 AP and 10 feet movement speed during their next turn, and can't take responses until the end of their next turn."
   },
   {
+    "name": "Curse of Hunger",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Necromancy",
+      "Unholy"
+    ],
+    "cost": "3 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "Target creature becomes cursed with ravenous hunger. If they are reduced to 0 or fewer hit points before the spell ends, they are instantly reanimated as a ghoul under your control for the remaining duration. It follows your mental commands and takes its turn after yours.",
+    "empower": "Targets up to 3 creatures within a 5 foot radius centered on target point."
+  },
+  {
     "name": "Curse of Incineration",
     "author": "CrusaderDroid",
     "tier": 7,
@@ -3071,6 +3113,21 @@ const SpellDatabase = [
     "duration": "1 hour",
     "desc": "You curse a target creature or an object that isn't being carried or worn. A cursed creature must make an Intuition saving throw to avoid the effect. A cursed object has no effect until a creature picks it up, where it becomes impossible to remove from the creature's hand and bestows its effects onto the creature.<br><br>When a target is cursed, choose one of the following effects: <br>One stat you choose is decreased by 2.<br>Three stats you choose are decreased by 1.<br>The creature takes 1d6 unholy damage each time it makes an attack roll.<br>The creature has disadvantage on saving throws with a chosen stat.<br>The creature loses 1 AP at the start of each of its turns.<br><br>The curse on a creature ends if the creature is reduced to 0 or fewer hit points.",
     "empower": "If cast directly on a creature, you can choose two effects. If cast on an object, the duration becomes \"Until dispelled\"."
+  },
+  {
+    "name": "Cursed Imbuement",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Necromancy",
+      "Physical",
+      "Unholy"
+    ],
+    "cost": "1 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "The target weapon is cursed with unholy magic. For the duration, as long as it's held, the wielder takes unholy damage equal to your spellcasting stat at the end of each of their turns. On a successful attack with the weapon, you can choose to discharge the curse, dealing an additional 4d10 unholy damage to the attacked creature, and half of that unholy damage back to the wielder. The spell then ends.<br><br>Casting this spell on a weapon ends any other spells affecting that weapon.",
+    "empower": "Unholy damage dealt by this spell reduces maximum hit points by the same amount."
   },
   {
     "name": "Cyclone of Steel",
@@ -4469,6 +4526,20 @@ const SpellDatabase = [
     "duration": "Instantaneous",
     "desc": "Target creature takes 1 psychic damage per 1 MP they have spent, to a maximum of 10 times their proficiency modifier. They must make an Intuition saving throw. On a failure, they double all MP costs and ignore all MP discount effects they may have during their next turn.",
     "empower": ""
+  },
+  {
+    "name": "Exhume",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Necromancy",
+      "Unholy"
+    ],
+    "cost": "3 AP",
+    "range": "30 feet",
+    "duration": "1 minute",
+    "desc": "You either reanimate a long-dead corpse or all corpses of creatures killed over the last hour within a 10 foot radius at target point. Each creature becomes a skeleton or zombie, chosen by you. They take their turns after you and follow your mental orders.<br><br>Casting this spell again destroys any remaining creatures reanimated by the first spell.<br><br>Reanimated creatures destroyed turn to dust.",
+    "empower": "Choose one - duration increased to 1 hour, or radius increased to 15 feet."
   },
   {
     "name": "Exile to the Sky",
@@ -6868,6 +6939,111 @@ const SpellDatabase = [
     "empower": "The spell affects both a radius and a line."
   },
   {
+    "name": "Imbuement of Deceit",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Illusion",
+      "Physical",
+      "Fey"
+    ],
+    "cost": "1 AP",
+    "range": "Touch",
+    "duration": "1 minute",
+    "desc": "The touched melee weapon becomes imbued with fey trickery. When a creature you see attacks and hits another creature you can see, you can choose to replace the attack with one from your equipped weapon, as if you had struck that creature. You can use applicable weapon styles as normal, and the attack deals an additional 1d6 psychic damage. <br><br>Casting this spell on a weapon ends any other spells affecting that weapon.",
+    "empower": "Removes the AP cost on this spell."
+  },
+  {
+    "name": "Imbuement of Fire",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Transmutation",
+      "Physical",
+      "Fire"
+    ],
+    "cost": "1 AP",
+    "range": "Touch",
+    "duration": "1 minute",
+    "desc": "The touched weapon becomes imbued with fire. The next successful weapon attack with that weapon over its duration deals an additional 1d4 fire damage, increased to 1d10 if it was a melee or thrown weapon. Half of this damage is dealt to creatures you choose within 5 feet of the target.<br><br>Casting this spell on a weapon ends any other spells affecting that weapon.",
+    "empower": "Range becomes Self (5 foot radius), targeting any number of weapons you choose."
+  },
+  {
+    "name": "Imbuement of Ice",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Transmutation",
+      "Physical",
+      "Cold"
+    ],
+    "cost": "1 AP",
+    "range": "Touch ",
+    "duration": "1 minute",
+    "desc": "The touched melee weapon becomes imbued with ice. The next successful weapon attack with that weapon over its duration deals an additional 1d6 cold damage and reduces the target's movement speed by 15 feet until the end of your next turn, and by 5 feet for 1 minute afterwards.<br><br>Casting this spell on a weapon ends any other spells affecting that weapon.",
+    "empower": "Range becomes Self (5 foot radius), targeting any number of melee weapons you choose."
+  },
+  {
+    "name": "Imbuement of Light",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Transmutation",
+      "Physical",
+      "Radiant"
+    ],
+    "cost": "1 AP",
+    "range": "Touch",
+    "duration": "1 minute",
+    "desc": "The touched melee weapon becomes imbued with light. During the wielder's turn, they can make one attack with it, targeting a 60 foot long line with one attack roll. Weapon styles can't be used with this attack. The first creature in the way takes normal weapon damage, plus 2d6 radiant damage, while all other creatures in the way only take the radiant damage.<br><br>Casting this spell on a weapon ends any other spells affecting that weapon.",
+    "empower": "Removes the AP cost on this spell."
+  },
+  {
+    "name": "Imbuement of Lightning",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Transmutation",
+      "Physical",
+      "Lightning"
+    ],
+    "cost": "1 AP",
+    "range": "Touch ",
+    "duration": "1 minute",
+    "desc": "The touched melee weapon becomes imbued with electricity. The next successful weapon attack with that weapon over its duration deals an additional 1d6 lightning damage and removes 1 AP from the target until the start of their next turn.<br><br>Casting this spell on a weapon ends any other spells affecting that weapon.",
+    "empower": "Range becomes Self (5 foot radius), targeting any number of melee weapons you choose."
+  },
+  {
+    "name": "Imbuement of Sorcery",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Evocation",
+      "Physical",
+      "Arcane"
+    ],
+    "cost": "1 AP",
+    "range": "Touch",
+    "duration": "1 minute",
+    "desc": "The touched mage weapon overflows with arcane power. Its next attack within the duration can target a number of additional creatures equal to your spellcasting stat, and it deals an additional 2d6 arcane damage to all creatures targeted, hit or miss. If a weapon style is used, only one target is affected by any effects from that style's attack.<br><br>Casting this spell on a weapon ends any other spells affecting that weapon.",
+    "empower": "Removes the AP cost on this spell."
+  },
+  {
+    "name": "Imbuement of Venom",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Transmutation",
+      "Physical",
+      "Poison"
+    ],
+    "cost": "1 AP",
+    "range": "Touch ",
+    "duration": "1 minute",
+    "desc": "The touched weapon becomes imbued with poison. Its next successful attack within the duration deals an additional 1d6 poison damage. The target takes additional poison damage equal to your spellcasting stat for each AP they spend until the start of your next turn, becoming poisoned for 1 minute if it would take 10 or more poison damage in this way.<br><br>Casting this spell on a weapon ends any other spells affecting that weapon.",
+    "empower": "Removes the AP cost on this spell."
+  },
+  {
     "name": "Imitation",
     "author": "CrusaderDroid",
     "tier": 3,
@@ -7373,6 +7549,20 @@ const SpellDatabase = [
     "desc": "From your palm, vines burst forth and target up to three creatures within range, no two of which can be more than 10 feet apart from each other. Each target must make a Dexterity saving throw or become grappled. At the start of each of their turns while grappled, they take 1d8 piercing damage.<br><br>You can't move as long as at least one creature is grappled. A grappled creature can make a Strength saving throw at the end of each of its turns, breaking the grapple on a success.<br><br>For 1 AP, you can pull a grappled creature up to 15 feet towards you.",
     "empower": "Pull range increases to 30 feet.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Last Regards",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Necromancy",
+      "Spirit"
+    ],
+    "cost": "1 AP",
+    "range": "60 feet",
+    "duration": "1 minute",
+    "desc": "As a response to a creature within range dying, you reanimate their spirit to continue the battle.  It returns to maximum hit points and takes its turn after yours.<br><br>The reanimated creature loses one-quarter of its maximum hit points at the end of each of its turns. Its spirit vanishes when reduced to 0 hit points.<br><br>You can't target the same creature with this spell again.",
+    "empower": ""
   },
   {
     "name": "Lava Flow",
@@ -8027,6 +8217,21 @@ const SpellDatabase = [
     "desc": "A target creature you can see must succeed on a Willpower saving throw or have their fate forcibly edited and then foretold to amplify their failures. Each time the creature fails an attack roll or saving throw, they suffer 1d10 damage.",
     "empower": "The creature has disadvantage on their next attack roll or saving throw.",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Manikin of the Wood",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Necromancy",
+      "Plant",
+      "Potent"
+    ],
+    "cost": "2 AP",
+    "range": "30 feet",
+    "duration": "Until dispelled",
+    "desc": "Swarms of tiny vines rush from your fingers and slip into one corpse within range per tier this spell is cast at, reanimating the creature and setting its hit points to maximum.<br><br>The reanimated creature has no ability to take action on its own. You can use 1 AP to move all affected creatures up to 15 feet in any direction, but all creatures affected this way must move in the same direction. You can use 2 AP to cause an affected creature to take an action that costs 2 AP or less.<br><br>The spell ends on a creature if they are more than 30 feet away. A corpse can't be targeted by this spell again unless it is returned to life.",
+    "empower": "Creatures can now move up to 90 feet away before the spell ends."
   },
   {
     "name": "March Order",
@@ -10661,6 +10866,22 @@ const SpellDatabase = [
     "desc": "You push out arcane power in a 30 foot line. Creatures and objects in this line are pushed up to 30 feet away from you, stopping their movement early if they would enter an occupied space. Unwilling creatures can make a Strength saving throw to reduce the movement to 5 feet.",
     "empower": "The range becomes Self (15 foot radius).",
     "author": "CrusaderDroid"
+  },
+  {
+    "name": "Restoration of the Earthchild",
+    "author": "CrusaderDroid",
+    "tier": 7,
+    "tags": [
+      "Conjuration",
+      "Earth",
+      "Spirit",
+      "Ritual"
+    ],
+    "cost": "N/A AP",
+    "range": "Self (600 foot radius) ",
+    "duration": "Until destroyed",
+    "desc": "After 8 hours, the land around you in a 600 foot radius comes to life as it is lifted up on the back of a 100 foot tall tortoise made of solid earth, eyes glowing a bright amber - the Earthchild. Handholds form along its legs, allowing for safe traversal up and down the Earthchild.<br><br>The Earthchild can only move 120 feet at a time. It is incapable of moving in smaller increments of movement. It has a movement speed of 240 feet. It obeys your mental commands as long as you are conscious and on the same plane. If you are unconscious, it follows your last order and then remains still.<br><br>The Earthchild has AC 10, 2500 hit points, and DR 20. It fails all Dexterity saving throws but passes all other saving throws. It moves too predictably to trample mobile creatures. It deals 200 bludgeoning damage to any object or immobile creature it moves through.<br><br>You can't cast this spell again until the Earthchild is destroyed. You can't end this spell early.",
+    "empower": ""
   },
   {
     "name": "Restore Health",
@@ -14321,6 +14542,80 @@ const SpellDatabase = [
     "duration": "24 hours",
     "desc": "You spend 15 minutes preparing the space around you. At the completion, you become seated as everything in the area within range of the spell becomes connected on an existential level to everything else within the area. Everything can communicate with everything else, regardless of shared language or even ability to communicate.<br><br>Most things are unremarkable. The average stone and plant has nothing to say and can only communicate in images if it did. Stones meant as a memorial may tell the history behind them, while plants that have witnessed creatures recently may do the same. Deceased creatures may vary in their willingness and capability to speak - most will not communicate with their killers, while some may have been driven to madness by their death. The spell does not compel anything to speak, only grant it the opportunity to speak.<br><br>A creature that physically harms another creature within the area of the spell is excluded from the spell's effect for the duration. This has no effect on creatures that can cause damage through speaking or merely existing.",
     "empower": "The spell is instead cast in 15 seconds."
+  },
+  {
+    "name": "Unleash Ankylosaurus",
+    "author": "CrusaderDroid",
+    "tier": 3,
+    "tags": [
+      "Necromancy",
+      "Forbidden (Dinosaur)"
+    ],
+    "cost": "3 AP",
+    "range": "30 feet",
+    "duration": "15 minutes",
+    "desc": "You summon an ankylosaurus to an empty space within range that you can see. It takes its turn after yours and obeys your mental orders.<br><br>Creatures summoned by this spell count as beasts in addition to their normal typing. They are treated as reanimated creatures.<br><br>Casting this spell again causes the previous ankylosaurus to vanish.",
+    "empower": "The summoned ankylosaurus gains +3 DR, +20 hit points, and applies DR to damage taken from spells."
+  },
+  {
+    "name": "Unleash Triceratops",
+    "author": "CrusaderDroid",
+    "tier": 4,
+    "tags": [
+      "Necromancy",
+      "Forbidden (Dinosaur)",
+      "Delayed"
+    ],
+    "cost": "5 AP",
+    "range": "30 feet",
+    "duration": "15 minutes",
+    "desc": "You summon a triceratops to an empty space within range you can see. It takes its turn after yours and obeys your mental orders.<br><br>Creatures summoned by this spell count as beasts in addition to their normal typing. They are treated as reanimated creatures.<br><br>Casting this spell again causes the previous triceratops to vanish.",
+    "empower": "The summoned triceratops gains 20 feet movement speed and +2 Strength."
+  },
+  {
+    "name": "Unleash Troodons",
+    "author": "CrusaderDroid",
+    "tier": 1,
+    "tags": [
+      "Necromancy",
+      "Forbidden (Dinosaur)",
+      "Potent"
+    ],
+    "cost": "3 AP",
+    "range": "30 feet",
+    "duration": "15 minutes",
+    "desc": "You summon two troodons, plus two for every tier above 1 this spell was cast at, to empty spaces within range that you can see. They take their turn after yours and obey your mental orders.<br><br>Creatures summoned by this spell count as beasts in addition to their normal typing. They are treated as reanimated creatures.<br><br>Casting this spell again causes any remaining troodons to vanish.",
+    "empower": "No longer causes prior troodons to vanish."
+  },
+  {
+    "name": "Unleash Tyrannosaurus",
+    "author": "CrusaderDroid",
+    "tier": 5,
+    "tags": [
+      "Necromancy",
+      "Forbidden (Dinosaur)",
+      "Delayed"
+    ],
+    "cost": "7 AP",
+    "range": "30 feet",
+    "duration": "1 minute",
+    "desc": "You summon a tyrannosaurus to an empty space within range that you can see. It takes its turn after yours and obeys your mental orders.<br><br>Creatures summoned by this spell count as beasts in addition to their normal typing. They are treated as reanimated creatures.<br><br>Casting this spell again causes the previous tyrannosaurus to vanish.",
+    "empower": "Reduces the AP cost by 3."
+  },
+  {
+    "name": "Unleash Velociraptors",
+    "author": "CrusaderDroid",
+    "tier": 2,
+    "tags": [
+      "Necromancy",
+      "Forbidden (Dinosaur)",
+      "Potent"
+    ],
+    "cost": "3 AP",
+    "range": "30 feet",
+    "duration": "15 minutes",
+    "desc": "You summon a velociraptor, plus an additional velociraptor for every tier above 2 this spell was cast at, to empty spaces within range that you can see. They take their turn after yours and obey your mental orders.<br><br>Creatures summoned by this spell count as beasts in addition to their normal typing. They are treated as reanimated creatures.<br><br>Casting this spell again causes any remaining velociraptors to vanish.",
+    "empower": "No longer causes prior velociraptors to vanish."
   },
   {
     "name": "Unruly Spectators",
